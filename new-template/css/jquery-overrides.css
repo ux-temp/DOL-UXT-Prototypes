@@ -1,0 +1,131 @@
+/**************
+**  jQuery UI Style Overrides
+***************/
+.ui-tabs {
+	border:0;
+	padding:0
+}
+
+.ui-tabs .ui-widget-header {
+	background:none;
+	border:none
+}
+
+.ui-tabs-panel {
+	border:1px solid #AAA!important;
+	margin:0 0 0 3px;
+	padding:0!important
+}
+
+.ui-tabs .ui-tabs-nav li {
+	border:1px solid #E1E1E1;
+	margin-left: 1px;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-size: 12px;
+}
+
+.ie6 .ui-tabs .ui-tabs-nav li,.ie7 .ui-tabs .ui-tabs-nav li,.ie8 .ui-tabs .ui-tabs-nav li {
+	margin-left:0
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-default.ui-tabs-selected {
+	background:#FFF;
+	border-color:#999
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-default.ui-state-hover {
+	border-color:#B4B4B4
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-default a,.ui-tabs .ui-tabs-nav li.ui-state-default a:link,.ui-tabs .ui-tabs-nav li.ui-state-default a:visited {
+	color:#4D4D4D
+}
+
+.ie7 .ui-tabs .ui-tabs-nav li {
+	padding-bottom:1px;
+	top:0
+}
+
+.ie7 .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+	top:1px
+}
+
+/* SIMPLE TABS */
+.ux-simple-tabs .ui-tabs-panel {
+border-style:solid;
+border-width:1px 0 0!important
+}
+
+.ux-simple-tabs .ui-tabs-nav li {
+margin-left:5px!important
+}
+
+/* jQ tabs */
+.jqtabs p {
+color:#606060
+}
+
+.jqtabs p,.jqtabs li {
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px
+}
+
+/**************
+**  jQuery Form Enhancements Overrides
+***************/
+
+.ux-form-top .password-wrapper input {
+	display: inline;
+	float: none;
+}
+
+.char-limit-text-box, .char-limit-display {
+	font-weight: normal !important;
+	color: #606060 !important;
+}
+.char-limit-display {
+	border-color: #A5A5A5;
+}
+.ux-form-top .count-input-container.posx-left.posy-top  {
+	margin-top:15px;
+}
+
+/* ux-form-side overrides */
+.ux-form-side span.char-limit-text-box, .ux-form-side span.char-limit-display {
+	/* this is to override .ux-form-side .label .span */
+	float: none !important;
+	width: auto !important;
+}
+.ux-form-side span.char-limit-text-box {
+	display: block !important;
+	height: 16px;
+}
+.ux-form-side span.char-limit-display {
+	display: inline !important;
+}
+.ux-form-side  .posx-right .char-limit-text-box {
+	right: 0;
+}
+.ux-form-side  .posx-left .char-limit-text-box {
+	right: 0;	
+}
+.ux-form-side  .posy-top .char-limit-text-box {
+	top: 3px;
+}
+.ux-form-side  .posy-bottom .char-limit-text-box {
+	bottom: 0;
+	top: 3px;
+}
+.ux-form-side .count-input-container.posy-bottom {
+	margin-bottom: 0px; /*add some space when bottom*/
+}
+
+/**************
+**  jQuery Full Calendar
+***************/
+table.fc-header, .fc-header td, table.fc-border-separate {
+	border: 0px solid transparent !important;
+	xborder: none !important;
+}
