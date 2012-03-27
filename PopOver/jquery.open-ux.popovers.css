@@ -1,0 +1,56 @@
+.ux-popover-container {
+  display:none;
+}
+
+.popover, .arrow:after {
+  background: black;
+  border: 2px solid white;
+}
+
+.popover {
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 0 3px 7px black;
+  z-index: 600;
+}
+
+.popover ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.arrow {
+  width: 70px;
+  height: 32px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  margin-top: -32px;
+  top: 0;
+}
+
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 25px;
+  width: 10px;
+  height: 10px;
+  -webkit-box-shadow: 6px 5px 9px -9px black,
+                      5px 6px 9px -9px black;
+  -moz-box-shadow: 6px 5px 9px -9px black,
+                   5px 6px 9px -9px black;
+  box-shadow: 6px 5px 9px -9px black,
+              5px 6px 9px -9px black;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+}
