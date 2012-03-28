@@ -1,28 +1,62 @@
+/*MY ACCOUNT*/
+
+.icon-person {
+  background-image: url(icon_person.png);
+  background-repeat: no-repeat;
+  background-position: 0 1px;
+  padding: 2px 0 0 18px;
+}
+
+
+/*POPOVER*/
+
 .ux-popover-container {
   display:none;
 }
 
 .popover, .arrow:after {
-  background: black;
-  border: 2px solid white;
+  background: #2f2f2f;
+  border: 1px solid #5b5b5b;
 }
 
 .popover {
   display: inline-block;
-  padding: 10px;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 10px;
   text-align: center;
-  box-shadow: 0 3px 7px black;
+  box-shadow: 0 1px 1px 0px rgba(0,0,0, .5);
   z-index: 600;
+/*  overflow: hidden;*/
 }
 
 .popover ul {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 5px 0 0 0;
+  line-height: 26px;
 }
+
+.popover ul li {
+  
+}
+
+.popover ul li a {
+  color: #cecece;
+  font-weight: bold;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-top: 1px solid #5b5b5b;
+}
+
+.popover ul li:first-child a {
+  border-top: none;
+}
+
+.popover ul li a:hover, .popover ul li a:active {
+  color: white;
+}
+
 
 .arrow {
   width: 70px;
