@@ -42,7 +42,7 @@
 }
 
 .popover ul li a {
-  color: #cecece;
+  color: #ffffff;
   font-weight: bold;
   padding: 8px 15px;
   text-decoration: none;
@@ -52,11 +52,6 @@
 .popover ul li:first-child a {
   border-top: none;
 }
-
-.popover ul li a:hover, .popover ul li a:active {
-  color: white;
-}
-
 
 .arrow {
   width: 70px;
