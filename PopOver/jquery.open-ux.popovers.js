@@ -21,12 +21,21 @@
 				//Current method can not be used until header is cleaned up
 				//var newPopover = el.next('.ux-popover-container').attr('id','popover-' + i).addClass('popover').prepend(arrow.clone().addClass('top'));
 
-				var position = el.offset();
+				var position = el.offset(), top, left;
+				
+				if ((el.parent('div.arrow-down').length)) {
+					var position = el.parent('div.arrow-down').offset();
+					top = position.top + el.parent('div.arrow-down').height();
+					left = position.left - (newPopover.outerWidth()/2) + (el.parent('div.arrow-down').width()/2);
+				} else {
+					top = position.top + el.height();
+					left = position.left - (newPopover.outerWidth()/2) + (el.width()/2);
+				}
 
 				// Position popover
 				newPopover.css({
-					top: position.top + el.height(),
-					left: position.left - (newPopover.outerWidth()/2) + (el.width()/2)
+					top: top,
+					left: left
 				});
 
 				// Setup click event to bind the items to click/touch
