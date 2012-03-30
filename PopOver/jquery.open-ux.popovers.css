@@ -1,12 +1,36 @@
 /*MY ACCOUNT*/
 
-.icon-person {
-  background-image: url(icon_person.png);
+.ux-popover-alignment {
+  display: inline-block;
+  padding: 0 5px;
+  position: relative;
+}
+
+
+.ux-popover.icon {
   background-repeat: no-repeat;
   background-position: 0 1px;
   padding: 2px 0 0 18px;
 }
 
+.ux-popover.icon.person {
+  background-image: url(icon_person.png);
+}
+
+.ux-popover.icon.mail {
+  background-image: url(mail.png);
+  background-position: 0 4px;
+}
+
+.ux-popover.icon.signout {
+    background-image: url(signout.png);
+    background-position: 0 2px;
+    padding: 2px 0 0 20px;
+}
+
+.ux-popover.icon.apps {
+    background-image: url(apps.png);
+}
 
 /*POPOVER*/
 
@@ -34,19 +58,19 @@
 	list-style: none;
 	margin: 0;
 	padding: 5px 0 0 0;
-  line-height: 26px;
+  line-height: 20px;
 }
 
 .popover ul li {
-  
+  margin: 0;
+  text-align: left;
 }
 
 .popover ul li a {
   color: #ffffff;
   font-weight: bold;
-  padding: 8px 15px;
+  padding: 0 10px;
   text-decoration: none;
-  border-top: 1px solid #5b5b5b;
 }
 
 .popover ul li:first-child a {
@@ -82,4 +106,39 @@
   -moz-transform:    rotate(45deg);
   -ms-transform:     rotate(45deg);
   -o-transform:      rotate(45deg);
+}
+
+.arrow-down {
+  background: url(arrow-down.png) no-repeat transparent;
+  background-position: right 7px;
+}
+
+.arrow-down .ux-popover {
+  padding-right: 12px;
+}
+
+/* Badge Messages */
+.badge {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  background-color: #336699;
+  border-radius: 10px;
+  font-size: 8px;
+  height: 10px;
+  width: 10px;
+  top: -4px;
+  left: 12px;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.badge-large {
+  display: inline-block;
+  background-color: #336699;
+  border-radius: 10px;
+  height: 18px;
+  width: 18px;
+  text-align: center;
+  margin-right: 2px;
 }

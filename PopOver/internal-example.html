@@ -75,16 +75,40 @@
 			</h1>
 
 			<div id="dol-header-user" class="notranslate">
-				<a href="#" class="ux-popover icon-person">My Account</a>
-					<div class="ux-popover-container" >
-						<ul>
-							<li><a href="#">Individual Account</a></li>
-							<li><a href="#">Business Account</a></li>
-						</ul>
+				<div class="ux-popover-alignment">
+					<div class="arrow-down">
+						<a href="#" class="ux-popover icon apps">Applications</a>
+						<div class="ux-popover-container" >
+							<ul>
+								<li><a href="#">TAA</a></li>
+								<li><a href="#">Shared Work</a></li>
+							</ul>
+						</div>
 					</div>
+				</div>
 				|
-				<a href="/main/a-z-index.shtm">A-Z Index</a>
-				<span class="ux-hide-nojs"> | <a href="#" title="Google" class="gtranslate-link">Translate</a></span>
+				<div class="ux-popover-alignment">
+					<a href="#" class="ux-popover icon mail">Messages</a>
+					<span class="badge">5</span>
+				</div>
+				|
+				<div class="ux-popover-alignment">
+					<div class="arrow-down">
+						<a href="#" class="ux-popover icon person">My Account</a>
+						<div class="ux-popover-container" >
+							<ul class="menu-container-list" id="mycommonaccountcontent_container_list_1">
+								<li><a href="#" class="mega-menu-link"><span class="badge-large"><span class="new-mail">5</span></span> Messages</a></li>
+								<li><a href="#" class="mega-menu-link">Account Profile</a></li>
+								<li><a href="#" class="mega-menu-link">Password Hint Questions</a></li>
+								<li><a href="#" class="mega-menu-link">Change Password</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				|
+				<div class="ux-popover-alignment padding-right-none">
+					<a href="#" class="ux-popover icon signout">Sign Out</a>
+				</div>
 			</div>
 			
 						
@@ -163,13 +187,7 @@
 					<!-- =================== CONTENT STARTS HERE ===================== -->
 					<!-- ============================================================= -->
 
-					<a class="ux-popover" href="#"/>in</a>
-					<div class="ux-popover-container" style="display:none;">
-						<ul>
-							<li><a href="#">abcdefghijklmnopqrstuvwxyz</a></li>
-							<li><a href="#">abcdefghijklmnopqrstuvwxyz</a></li>
-						</ul>
-					</div>
+
 
 					<!-- ============================================================= -->
 					<!-- =================== CONTENT ENDS HERE ======================= -->
@@ -200,6 +218,7 @@
 		<script src="jquery.open-ux.popovers.js"></script>
 
 		<script>
+
 
 			$(document).ready(function() {
 				$('.ux-popover').popover();
