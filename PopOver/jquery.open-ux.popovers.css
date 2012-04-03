@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.ie7 .ux-popover-alignment {
+  display: inline;
+}
+
 
 .ux-popover.icon {
   background-repeat: no-repeat;
@@ -51,7 +55,10 @@
   text-align: center;
   box-shadow: 0 1px 1px 0px rgba(0,0,0, .5);
   z-index: 600;
-/*  overflow: hidden;*/
+}
+
+.ie7 .popover, .i8 .popover {
+  margin-top: 50px;
 }
 
 .popover ul {
@@ -96,10 +103,6 @@
   top: 25px;
   width: 10px;
   height: 10px;
-  -webkit-box-shadow: 6px 5px 9px -9px black,
-                      5px 6px 9px -9px black;
-  -moz-box-shadow: 6px 5px 9px -9px black,
-                   5px 6px 9px -9px black;
   box-shadow: 6px 5px 9px -9px black,
               5px 6px 9px -9px black;
   -webkit-transform: rotate(45deg);
@@ -110,7 +113,11 @@
 
 .arrow-down {
   background: url(arrow-down.png) no-repeat transparent;
-  background-position: right 7px;
+  background-position: right 6px;
+}
+
+.ie7 .arrow-down {
+  background-position: right 5px;
 }
 
 .arrow-down .ux-popover {
@@ -140,5 +147,15 @@
   height: 18px;
   width: 18px;
   text-align: center;
-  margin-right: 2px;
+  margin-left: 3px;
+}
+
+.ie7 .badge-large {
+  display: inline;
+  height: 16px;
+  width: 16px;
+}
+
+.ie7 .new-mail {
+  line-height: 15px;
 }
