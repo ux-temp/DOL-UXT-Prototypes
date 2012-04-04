@@ -14,7 +14,7 @@
 .ux-popover.icon {
   background-repeat: no-repeat;
   background-position: 0 1px;
-  padding: 2px 0 0 18px;
+  padding: 4px 0 0 18px;
 }
 
 .ux-popover.icon.person {
@@ -64,8 +64,8 @@
 .popover ul {
 	list-style: none;
 	margin: 0;
-	padding: 5px 0 0 0;
-  line-height: 20px;
+	padding: 5px 0 5px 0;
+  line-height: 24px;
 }
 
 .popover ul li {
@@ -75,9 +75,16 @@
 
 .popover ul li a {
   color: #ffffff;
+  cursor: pointer;
+  display: block;
   font-weight: bold;
-  padding: 0 10px;
+  padding: 3px 10px;
   text-decoration: none;
+}
+
+.popover ul li a:hover {
+  background: #4c4c4c;
+  cursor: pointer;
 }
 
 .popover ul li:first-child a {
@@ -121,7 +128,7 @@
 }
 
 .arrow-down .ux-popover {
-  padding-right: 12px;
+  padding-right: 10px;
 }
 
 /* Badge Messages */
@@ -144,8 +151,8 @@
   display: inline-block;
   background-color: #336699;
   border-radius: 10px;
-  height: 18px;
-  width: 18px;
+  height: 22px;
+  width: 22px;
   text-align: center;
   margin-left: 3px;
 }
