@@ -4,6 +4,7 @@
 	$.fn.popover = function() {
 		
 		var container = $('<div class="popover" style="display:none;"></div>');
+		var subcontainer = "";
 		var arrow = $('<div class="arrow"></div>');
 
 		// Loop through all passed elements in the selector array.
