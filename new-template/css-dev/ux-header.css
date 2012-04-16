@@ -1,11 +1,36 @@
 #ux-header {
-	color: #FFF;
+	xcolor: #FFF;
 	width:100%;
 }
 
+/* New York Stat Govoner banner styling
+----------------------------------------------------------------------------------------------------*/
 #gov-banner {
 	background-color: #036;
+}
+
+#gov-banner, #gov-banner .header-content, .gov-img {
 	height: 28px;
+	overflow: hidden;
+}
+
+.gov-img {
+	display: inline-block;
+}
+
+.img1 {
+	background: url(../images/nys-banner-img.png) no-repeat -16px 0 transparent;
+	width: 170px;
+}
+
+.img2 {
+	background: url(../images/nys-banner-img.png) no-repeat 0 -28px transparent;
+	width: 140px;	
+}
+
+.img3 {
+	background: url(../images/nys-banner-img.png) no-repeat 0 -56px transparent;
+	width: 145px;
 }
 
 /* Large Size Header
@@ -18,9 +43,10 @@
 	height: 64px;
 }
 
-#main-header #site-logo {
-	background-color: #FFF;
+#site-logo {
+	background: url(../images/dol-test.png) no-repeat 0 0 transparent;
 	display: block;
+	margin: 0;
 	width: 150px;
 }
 

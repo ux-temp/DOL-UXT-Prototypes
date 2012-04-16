@@ -1,4 +1,22 @@
-.ux-hide, .ux-nojs-hide, .ux-js-hide {
+/* Floating elements
+----------------------------------------------------------------------------------------------------*/
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
+/* Controling visibility of elements
+----------------------------------------------------------------------------------------------------*/
+.ux-hide, html.nojs .ux-hide-nojs, .ux-js-hide, {
 	display: none;
 }
 
+.ux-hide-text {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE7 fix */
+  clip: rect(1px, 1px, 1px, 1px);
+}

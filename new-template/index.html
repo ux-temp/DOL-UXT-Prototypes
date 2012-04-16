@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 	<head>
 		<title>Application Menu Prototype</title>
 
@@ -10,18 +10,34 @@
 		<link rel="stylesheet" type="text/css" href="css-dev/style.css" >
 
 		<!-- Modernizer support -->
-		<script type="js/modernizer.min.js"></script>
+		<script src="js/modenizr.min.js"></script>
 	</head>
 	<body>
 		<div id="ux-header">
 			<div id="gov-banner">
 				<div class="header-contents">
-					<a href="http://www.ny.gov/" alt="" class="">New York State Home Page</a>
+					<a href="http://www.ny.gov/" class="gov-img img1 left">
+						<span class="ux-hide-text">New York State Home Page</span>
+					</a>
+					<a href="http://www.nysegov.com/citGuide.cfm?superCat=102&cat=449&content=main" class="gov-img img2 left">
+						<span class="ux-hide-text">New York State Agencies List</span>
+					</a>
+					<div class="right">
+						<div id="gov-search-img" class=>
+							<a href="#" class="gov-img img3">
+								<span class="ux-hide-text">Search all of New York State</span>
+							</a>
+						</div>
+						<div id="gov-search-form">
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="main-header" class="">
 				<div class="header-contents">
-					<span id="site-logo">New York State Department of Labor</span>
+					<h1 id="site-logo">
+						<span class="ux-hide-text">New York State Department of Labor</span>
+					</h1>
 				</div>
 			</div>
 			<div id="global-nav">
