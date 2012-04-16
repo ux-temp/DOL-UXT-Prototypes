@@ -1,0 +1,145 @@
+.ux-website #dol-footer {
+margin-top:10px!important
+}
+
+.ux-website #dol-footer-inner {
+text-align:left
+}
+
+.ux-website #dol-footer ul {
+float:none;
+padding:0;
+width:auto
+}
+
+.ux-website #dol-footer ul li {
+border:none;
+display:block;
+float:none;
+line-height:1.2;
+margin-bottom:5px;
+padding:0
+}
+
+.ux-website #dol-footer p {
+line-height:1.5;
+margin-left:10px
+}
+
+/*new*/
+.ux-website #dol-footer p.ux-msg {
+margin-left:0
+}
+
+/*new*/
+.ux-website #dol-footer #fraud-foil {
+margin-top:15px
+}
+
+.ux-website #dol-footer #dol-footer-policies {
+margin:10px 0 0;
+padding:0
+}
+
+.ux-website #dol-footer #dol-footer-policies ul {
+padding:0
+}
+
+.ux-website #dol-footer #dol-footer-equal {
+color:#AAA;
+float:right;
+font-size:9px;
+text-align:left!important;
+width:350px
+}
+
+.ux-website #dol-footer #ux-footer-dol-contact {
+margin-top:0;
+padding-bottom:15px
+}
+
+.ux-website #dol-footer #ux-footer-dol-contact p {
+margin-left:0
+}
+
+.ux-website #dol-footer #dol-footer-contact-wrapper {
+background:url(../images/background-footer-separator.jpg) no-repeat 30px 20px;
+margin:0!important;
+padding:25px 0 0
+}
+
+.ux-website hr.footer-row {
+background-color:#C3D5DF;
+border:0 none;
+color:#C3D5DF;
+display:block;
+height:1px;
+width:90%
+}
+
+.ux-website .footer-list {
+list-style:none;
+padding-left:10px
+}
+
+.ux-website .footer-list li {
+padding-bottom:2px
+}
+
+.ux-website #stay-connected li {
+margin-top:12px;
+padding-bottom:5px
+}
+
+.ux-website #stay-connected li a {
+padding:1px 0 4px 20px
+}
+
+.icon {
+width:16px;
+height:16px
+}
+
+.ux-website #stay-connected li a#facebook {
+background:url(../images/icons/icon-social-sprite.gif) no-repeat scroll left top transparent
+}
+
+.ux-website #stay-connected li a#twitter {
+background:url(../images/icons/icon-social-sprite.gif) no-repeat scroll left -192px transparent
+}
+
+.ux-website #stay-connected li a#youtube {
+background:url(../images/icons/icon-social-sprite.gif) no-repeat scroll left -288px transparent
+}
+
+.ux-website #stay-connected li a#flickr {
+background:url(../images/icons/icon-social-sprite.gif) no-repeat scroll left -96px transparent
+}
+
+.ux-website #stay-connected li a#facebook:hover {
+background:url(../images/icons/icon-social-sprite.gif) no-repeat scroll left -48px transparent
+}
+
+.ux-website #stay-connected li a#twitter:hover {
+background:url(../images/icons/icon-social-sprite.gif) no-repeat scroll left -240px transparent
+}
+
+.ux-website #stay-connected li a#youtube:hover {
+background:url(../images/icons/icon-social-sprite.gif) no-repeat scroll left -336px transparent
+}
+
+.ux-website #stay-connected li a#flickr:hover {
+background:url(../images/icons/icon-social-sprite.gif) no-repeat scroll left -144px transparent
+}
+
+.ux-website .mega-foot-top {
+margin-top:0!important
+}
+
+.ux-website #dol-footer #ux-footer-dol-contact h4 {
+margin-top:0!important
+}
+
+.ux-website #dol-footer {
+margin-bottom:50px
+}

@@ -1,0 +1,51 @@
+#ux-header {
+	color: #FFF;
+	width:100%;
+}
+
+#gov-banner {
+	background-color: #036;
+	height: 28px;
+}
+
+/* Large Size Header
+----------------------------------------------------------------------------------------------------*/
+#main-header {
+	background-color: #771C2D;
+}
+
+#main-header, #main-header #site-logo {
+	height: 64px;
+}
+
+#main-header #site-logo {
+	background-color: #FFF;
+	display: block;
+	width: 150px;
+}
+
+/* Normal Size Header
+----------------------------------------------------------------------------------------------------*/
+#main-header.skinny, #main-header.sknny #site-logo {
+	height: 48px;
+}
+
+#main-header.skinny #site-logo {
+	width: 125px;
+}
+
+/* Tiny Header
+----------------------------------------------------------------------------------------------------*/
+#main-header.tiny, #main-header.tiny #site-logo {
+	height: 32px;
+}
+
+#main-header.tiny #site-logo {
+	width: 200px;
+}
+
+#global-nav {
+	background-color: #696969;
+	height: 28px;
+	border-bottom: 1px solid #C3C3C3;
+}

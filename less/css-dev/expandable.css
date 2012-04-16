@@ -1,0 +1,153 @@
+/**************
+**  Content Expandables
+***************/
+.dol-container .ux-content-expandable ul,.dol-container .ux-content-expandable ol,.dol-container .ux-content-expandable p {
+margin-left:0!important
+}
+
+.ux-expandable {
+	list-style-type: none
+}
+
+.ux-content-expandable {
+	list-style: none;
+	margin:0;
+	padding:0
+}
+
+.dol-container .ux-content-expandable {
+margin-left:3px
+}
+
+.ux-content-expandable ul,.ux-content-expandable ol,.ux-content-expandable dl {
+margin-left:18px
+}
+
+.ux-content-expandable ul li ul,.ux-content-expandable ol li ul,.ux-content-expandable dl li ul,.ux-content-expandable ol li ul,.ux-content-expandable ol li ol,.ux-content-expandable ol li dl,.ux-content-expandable dl li ul,.ux-content-expandable dl li ol,.ux-content-expandable dl li dl,.ux-content-expandable ul li dl {
+margin-left:0
+}
+
+.ux-expandable ul li,.ux-expandable ol li,.ux-expandable dl li {
+margin-left:-7px
+}
+
+li.ux-expandable div {
+margin-left:18px
+}
+
+.ux-a-expandable {
+margin-left:-18px;
+padding-left:18px
+}
+
+.ux-a-expandable h3,.ux-a-expandable h4,.ux-a-expandable h5,.ux-a-expandable h6 {
+margin-bottom:0
+}
+
+.ux-a-expandable h3 {
+margin-top:-5px
+}
+
+.ux-a-expandable h4 {
+margin-top:-3px
+}
+
+.ux-a-expandable h5 {
+margin-top:-2px
+}
+
+.ux-a-expandable h6 {
+margin-top:-1px
+}
+
+/* Over rides */
+.ie6 .ux-a-expandable,.ie7 .ux-a-expandable {
+margin-left:-19px;
+padding-left:18px
+}
+
+.ux-arrow-open {
+background:url(../images/icons/expandable-ux-arrows-gray-close.gif) no-repeat left 0 transparent
+}
+
+.ux-arrow-close {
+background:url(../images/icons/expandable-ux-arrows-gray-open.gif) no-repeat left 0 transparent
+}
+
+.js .ux-expandable > div {
+display:none
+}
+
+.js .ux-a-expandable.ux-expanded > div {
+display:block
+}
+
+/**************
+**  Container Expandables
+***************/
+.ux-container-expandable-icon {
+background:url(../images/icons/wrench.png) no-repeat scroll 0 3px #EFEFEF;
+display:block
+}
+
+.ux-container-expandable h3,.ux-container-expandable h4,.ux-container-expandable h5,.ux-container-expandable h6 {
+margin:0;
+text-align:left;
+padding-left:30px
+}
+
+a.ux-expandable-click {
+text-decoration:none
+}
+
+h3.ux-expandable-header,h4.ux-expandable-header,h5.ux-expandable-header,h6.ux-expandable-header {
+background:url(../images/icons/expandable-ux-arrows-gray-close.gif) no-repeat scroll 0 0 #EFEFEF
+}
+
+a.ux-expandable-click h3.ux-expandable-header {
+background-position:6px 5px
+}
+
+a.ux-expandable-click h4.ux-expandable-header {
+background-position:6px 4px
+}
+
+a.ux-expandable-click h5.ux-expandable-header {
+background-position:6px 2px
+}
+
+a.ux-expandable-click h6.ux-expandable-header {
+background-position:6px 2px
+}
+
+h3.ux-expandable-header.ux-expanded,h4.ux-expandable-header.ux-expanded,h5.ux-expandable-header.ux-expanded,h6.ux-expandable-header.ux-expanded {
+background:url(../images/icons/expandable-ux-arrows-gray-open.gif) no-repeat scroll 0 0 #EFEFEF
+}
+
+a.ux-expandable-click h3.ux-expandable-header.ux-expanded {
+background-position:6px 5px
+}
+
+a.ux-expandable-click h4.ux-expandable-header.ux-expanded {
+background-position:6px 4px
+}
+
+a.ux-expandable-click h5.ux-expandable-header.ux-expanded {
+background-position:6px 2px
+}
+
+a.ux-expandable-click h6.ux-expandable-header.ux-expanded {
+background-position:6px 2px
+}
+
+.ux-container-expandable div {
+margin-top:10px
+}
+
+.ux-container-expandable div div {
+margin-top:0
+}
+
+.js .ux-container-expandable.ux-closed > div {
+display:none
+}
