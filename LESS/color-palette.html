@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="//www.labor.ny.gov/css/apps/v.0.4.0/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css-dev/style.css" >
+<link rel="stylesheet" type="text/css" href="css-dev/style2.css" >	
+<link rel="stylesheet" type="text/css" href="css-dev/jsf.css" >
+<link rel="stylesheet" type="text/css" href="color-type.css" />
+<title>Color Palette | User Experience</title>
+</head>
+
+	<!--[if lt IE 7 ]> <body class=" ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <body class=" ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <body class=" ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <body class=" ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!--> 
+<body class=" " >
+	<!--<![endif]-->
+
+<div id="dol-skip-navigation">
+	<a tabindex="1" id="skip-to-content" href="#content-anchor" class="ux-no-block">Skip to Content</a>	
+	<a tabindex="2" id="skip-to-nav" href="#navigation-anchor" class="ux-no-block" >Skip to Navigation</a>
+</div>
+		
+<div id="ux-notification-container">
+	<div class="ux-content-wrapper">
+		<div id="ux-action-required-notifications" class="ux-notice-outer">
+				<div class="arn-tray ux-notice-inner">
+				</div>
+		</div>
+		<div id="ux-generic-notifications">
+		</div>
+	</div>
+</div>
+	
+	<div id="gov-banner-outer" class="container_16">
+		<div id="gov-banner-inner">
+			<a href="http://www.ny.gov/"><img id="nys-image" src="http://www.labor.ny.gov/css/apps/v.0.3.5/images/banner_img1.png" alt="NY.gov Portal" /></a>
+			<a href="http://www.nysegov.com/citGuide.cfm?superCat=102&cat=449&content=main"><img id="nys-agency-listing" src="http://www.labor.ny.gov/css/apps/v.0.3.5/images/banner_img2.png" alt="State Agency Listing" /></a>
+			<!-- search graphic-->
+			<a onclick="document.getElementById('sw_searchbox').style.visibility= 'visible'; document.getElementById('searchgraphic').style.visibility= 'hidden';" href="#">
+			<img alt="Search all of NY.gov" src="http://www.labor.ny.gov/css/apps/v.0.3.5/images/banner_img3.png" style="float: right; border: medium none; visibility: hidden;" id="searchgraphic"></a>
+			<!--state wide search box-->
+			<form method="get" action="http://www.search.state.ny.us/search" style="float: right; position: relative; top: 2px; left: 155px; visibility: visible;" id="sw_searchbox" target="_blank">
+				<p>
+					<input type="hidden" name="sort" value="date:D:L:d1" />
+					<input type="hidden" name="output" value="xml_no_dtd" />
+					<input type="hidden" name="ie" value="UTF-8" />
+					<input type="hidden" name="oe" value="UTF-8" />
+					<input type="hidden" name="client" value="default_frontend" />
+					<input type="hidden" name="proxystylesheet" value="default_frontend" />
+					<input type="hidden" name="site" value="default_collection" />
+					<label for="searchbox"><input type="text" title="Search" id="searchbox" maxlength="256" name="q" size="15" style="position: relative; top: -10px; cursor: pointer;"/></label>
+					<label for="searchbutton"><input type="submit" value="Search NY.GOV" id="searchbutton" style="position: relative; width: 110px; top: -10px;"/></label>
+				</p>
+			</form>
+			<!--end wide search box-->
+			<script type="text/javascript">
+				// If JavaScript is on, manipulate search control objects.  
+				// Otherwise this will be ignored and search controls will be shown by default
+				document.getElementById('sw_searchbox').style.visibility = 'hidden';
+				document.getElementById('searchgraphic').style.visibility= 'visible';         
+			</script> 
+		</div>
+	</div>
+	
+	<div id="dol-header" class="container_16">
+		<h1 id="dol-header-nys-labor">
+			<a href="http://www.labor.ny.gov" class="accessibility-text">New York State Department of Labor</a>
+			<span id="dol-header-application">User Experience (UX) Guide</span>
+		</h1>
+		<div id="dol-header-user">
+
+	<a href="javascript:void(d);"
+		title="username">username@domain.com</a> | <a
+		href="javascript:void(d);" title="logout link">logout</a>
+		
+		</div>
+		
+			<div id="site-wide-search">
+				<form name="_ipsubmit" id="search-box-form" method="get" action="http://qa.search.state.ny.us/search" autocomplete="off" target="_blank" >
+					<label for="q" id="search-label" class="accessibility-text">Search Department of Labor:</label>
+					<input type="text" id="q" name="q" value="" size="21" title="Input Search" alt="search text" class="text_box site-wide-search-text-box" placeholder="Search DOL" autocomplete="off">
+					<input type="submit" title="Submit Search" value="GO" name="submit" class="submit site-wide-search-button accessibility-text" id="search-submit" />
+					<input type="hidden" name="entqr" value="0" />
+					<input type="hidden" name="ud" value="1" />
+					<input type="hidden" name="sort" value="date:D:L:d1" />
+					<input type="hidden" name="output" value="xml_no_dtd" />
+					<input type="hidden" name="oe" value="UTF-8" />
+					<input type="hidden" name="ie" value="UTF-8" />
+					<input type="hidden" name="client" value="labor_frontend"/>
+					<input type="hidden" name="proxystylesheet" value="labor_frontend"/>
+					<input type="hidden" name="site" value="labor_collection"/>
+				</form>
+			</div>
+		
+			
+	 	<div id="header-mega-menu">
+	   	<div id="mega-menu">
+	   		<a name="mega-menu-anchor" id="mega-menu-anchor" tabindex="-1"></a>
+	   		<ul id="menu">
+	   			<li class="top-level non-mega"><a href="http://www.labor.ny.gov/">Home</a></li>
+				<li class="top-level non-mega active"><a href="/UXGuide/">Development Standards</a></li>
+				<li class="top-level non-mega"><a href="/UXContentStrategy/">Content Standards</a></li>
+	   		</ul>
+	   	</div>
+		</div>
+	</div> 
+
+	<div id="page-wrap" class="group">
+		<div id="content" class="container_16 group">
+		<noscript><div class="grid_16">
+			<div class="ux-msg warning">
+				<ul>
+					<li><strong>Javascript is currently disabled or restricted on your computer. </strong> Certain functionalities of this application may be limited. </li>
+				</ul>
+			</div>
+		</div></noscript>
+		
+			<a name="navigation-anchor" id="navigation-anchor" tabindex="-1"></a>
+			<div id="dol-content-navigation" class="grid_4">
+				<div id="navigation-vertical">
+					<ul>
+						<li><a title="" href="/UXGuide/" >Home</a></li>
+						<li><a title="" href="/UXGuide/" >Templates</a></li>
+						<li><a title="" class=" selected" href="/UXGuide/" >Color Palette</a></li>
+						<li><a title="" href="/UXGuide/" >Wonderful World of Color</a></li>
+					</ul>	   
+				</div>
+			</div>
+		
+		<a name="content-anchor" id="content-anchor" tabindex="-1"></a>		
+			<div class="grid_12 ux-content-grid ">
+				<div id="page-info">
+				<ul class="dol-breadcrumbs group">
+
+			<li class="home breadcrumb-external"><a href="http://www.labor.ny.gov">Home</a></li>
+			<li><a href="/UXGuide/">Labor Online Services</a></li>
+			<li><a href="/UXGuide/">User Experience (UX) Guide</a></li>
+			<li>Color Palette</li>
+	
+		        </ul>
+				</div> <!-- end #page info-->
+				<h2>Color Palette</h2>
+<!-- 
+============================================================
+==================== START CONTENT AREA ====================
+============================================================
+ -->
+<!-- <h3>This {LESS} CSS will be a major hit with all of the the Web Designers!</h3>
+<h4>How Awesome is That!</h4>
+	<p>
+		So as you have heard LESS CSS is winning the hearts of web designers everywhere. It's not
+		because of simple code but it's ease of using CSS and being able to apply values easily
+		throughout the code. A task that took half an hour now taks only 5 mins. How wonderful is that!!
+		With that being said <a href="http://lesscss.org/">{LESS} CSS</a> can show you a more in depth look at 
+		this new and fun way to code your css!
+	</p> -->
+	<div class="grid_12 alpha omega">
+		<div class="grid_6 alpha">	
+			<table class="table data-table row-stripe">
+				<caption style="margin-right: 0px;">Graphic Primary Colors</caption>
+				<thead>
+					<tr>
+						<th>{LESS}</th>
+						<th class="hex-width">HEX Color</th>
+						<th class="swatch-col">Swatch</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>@primary-blue</td>
+						<td class="hex-col">#44687D</td>
+						<td><span class="swatch" style="background-color: #44687D;"></span></td>
+					</tr>
+					<tr>
+						<td>@primary-red</td>
+						<td class="hex-col">#771C2D</td>
+						<td><span class="swatch" style="background-color: #771C2D;"></span></td>
+					</tr>
+					<tr>
+						<td>@primary-grey</td>
+						<td class="hex-col">#D5D5D5</td>
+						<td><span class="swatch" style="background-color: #D5D5D5;"></span></td>
+					</tr>
+				</tbody>										
+			</table><br>
+			<table class="table data-table row-stripe">
+				<caption style="margin-right: 0px;">Revised Primary Colors</caption>
+				<thead>
+					<tr>
+						<th>{LESS}</th>
+						<th class="hex-width">HEX Color</th>
+						<th class="swatch-col">Swatch</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>@primaryBlue</td>
+						<td class="hex-col">#003366</td>
+						<td><span class="swatch" style="background-color: #003366;"></span></td>
+					</tr>
+					<tr>
+						<td>@primaryRed</td>
+						<td class="hex-col">#960007</td>
+						<td><span class="swatch" style="background-color: #960007;"></span></td>
+					</tr>
+					<tr>
+						<td>@primaryGrey</td>
+						<td class="hex-col">#C3C3C3</td>
+						<td><span class="swatch" style="background-color: #C3C3C3;"></span></td>
+					</tr>
+				</tbody>										
+			</table><br>
+			<table class="table data-table row-stripe">
+				<caption style="margin-right: 0px;">Greyscale Colors</caption>
+				<thead>
+					<tr>
+						<th>{LESS}</th>
+						<th class="hex-width">HEX Color</th>
+						<th class="swatch-col">Swatch</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>@black</td>
+						<td class="hex-col">#000</td>
+						<td><span class="swatch" style="background-color: #000;"></span></td>
+					</tr>
+					<tr>
+						<td>@darkerGrey</td>
+						<td class="hex-col">#3C3C3C</td>
+						<td><span class="swatch" style="background-color: #3C3C3C;"></span></td>
+					</tr>
+					<tr>
+						<td>@darkGrey</td>
+						<td class="hex-col">#696969</td>
+						<td><span class="swatch" style="background-color: #696969;"></span></td>
+					</tr>
+					<tr>
+						<td>@grey</td>
+						<td class="hex-col">#969696</td>
+						<td><span class="swatch" style="background-color: #969696;"></span></td>
+					</tr>
+					<tr>
+						<td>@lightGrey</td>
+						<td class="hex-col">#C3C3C3</td>
+						<td><span class="swatch" style="background-color: #C3C3C3;"></span></td>
+					</tr>
+					<tr>
+						<td>@lighterGrey</td>
+						<td class="hex-col">#F0F0F0</td>
+						<td><span class="swatch" style="background-color: #F0F0F0;"></span></td>
+					</tr>
+					<tr>
+						<td>@white</td>
+						<td class="hex-col">#FFF</td>
+						<td><span class="swatch" style="background-color: #FFF;"></span></td>
+					</tr>
+				</tbody>
+			</table><br>			
+		</div>
+		<div class="grid_6 omega">
+		<table class="table data-table row-stripe">
+				<caption style="margin-right: 0px;">Graphic Secondary Colors</caption>
+				<thead>
+					<tr>
+						<th>{LESS}</th>
+						<th class="hex-width">HEX Color</th>
+						<th class="swatch-col">Swatch</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>@secondary-blue1</td>
+						<td class="hex-col">#062942</td>
+						<td><span class="swatch" style="background-color: #062942;"></span></td>
+					</tr>
+					<tr>
+						<td>@secondary-blue2</td>
+						<td class="hex-col">#6491B0</td>
+						<td><span class="swatch" style="background-color: #6491B0;"></span></td>
+					</tr>
+					<tr>
+						<td>@secondary-blue3</td>
+						<td class="hex-col">#98B5C7</td>
+						<td><span class="swatch" style="background-color: #98B5C7;"></span></td>
+					</tr>
+				</tbody>										
+			</table><br>
+			<table class="table data-table row-stripe">
+				<caption style="margin-right: 0px;">Revised Secondary Colors</caption>
+				<thead>
+					<tr>
+						<th>{LESS}</th>
+						<th class="hex-width">HEX Color</th>
+						<th class="swatch-col">Swatch</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>@secondaryBlue</td>
+						<td class="hex-col">#1A5A9F</td>
+						<td><span class="swatch" style="background-color: #1A5A9F;"></span></td>
+					</tr>
+					<tr>
+						<td>@secondaryRed</td>
+						<td class="hex-col">#962E35</td>
+						<td><span class="swatch" style="background-color: #962E35;"></span></td>
+					</tr>
+					<tr>
+						<td>@secondaryGrey</td>
+						<td class="hex-col">#F0F0F0</td>
+						<td><span class="swatch" style="background-color: #F0F0F0;"></span></td>
+					</tr>
+				</tbody>
+			</table><br>
+			<table class="table data-table row-stripe">
+				<caption style="margin-right: 0px;">Accent Colors</caption>
+				<thead>
+					<tr>
+						<th>{LESS}</th>
+						<th class="hex-width">HEX Color</th>
+						<th class="swatch-col">Swatch</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>@blue</td>
+						<td class="hex-col">#049CDB</td>
+						<td><span class="swatch" style="background-color: #049cdb;"></span></td>
+					</tr>
+					<tr>
+						<td>@green</td>
+						<td class="hex-col">#46A546</td>
+						<td><span class="swatch" style="background-color: #46a546;"></span></td>
+					</tr>
+					<tr>
+						<td>@red</td>
+						<td class="hex-col">#9D261D</td>
+						<td><span class="swatch" style="background-color: #9d261d;"></span></td>
+					</tr>
+					<tr>
+						<td>@yellow</td>
+						<td class="hex-col">#FFC40D</td>
+						<td><span class="swatch" style="background-color: #ffc40d;"></span></td>
+					</tr>
+					<tr>
+						<td>@orange</td>
+						<td class="hex-col">#F89406</td>
+						<td><span class="swatch" style="background-color: #f89406;"></span></td>
+					</tr>
+					<tr>
+						<td>@pink</td>
+						<td class="hex-col">#C3325F</td>
+						<td><span class="swatch" style="background-color: #c3325f;"></span></td>
+					</tr>
+					<tr>
+						<td>@purple</td>
+						<td class="hex-col">#7A43B6</td>
+						<td><span class="swatch" style="background-color: #7a43b6;"></span></td>
+					</tr>
+				</tbody>										
+			</table>			
+		</div>	
+	</div>
+<!-- 
+============================================================
+===================== END CONTENT AREA =====================
+============================================================
+ -->
+ </div>
+		</div> <!-- end #content -->
+	</div>	 <!-- end #page-wrap -->
+
+<div id="dol-footer">
+	<div id="dol-footer-inner" class="container_12">
+	<div id="dol-footer-wrapper">
+	<!-- begin global footer area -->
+		<ul id="global-footer-menu">
+
+
+			<li><a href="http://www.labor.ny.gov/agencyinfo/aicontactus.shtm" target="_blank">Contact Us</a></li>
+			<li><a href="http://www.labor.ny.gov/agencyinfo/accessibility.shtm" target="_blank">Accessibility Policy</a></li>
+			<li><a href="http://www.labor.ny.gov/privacy.shtm" target="_blank">Privacy Policy</a></li>
+			<li><a href="http://www.adobe.com/accessibility/products/reader/" target="_blank">Get Adobe Reader</a></li>
+		</ul>
+	<!-- end global footer area -->
+	</div>
+	</div>
+</div> <!-- end #footer -->
+<script type="text/javascript" src="http://www.labor.ny.gov/css/apps/v.0.3.5/js/ux-script.min.js"></script>
+</body>
+</html>

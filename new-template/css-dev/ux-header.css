@@ -1,5 +1,5 @@
 #ux-header {
-	xcolor: #FFF;
+	color: #FFF;
 	width:100%;
 }
 
@@ -16,6 +16,7 @@
 
 .gov-img {
 	display: inline-block;
+	float: left;
 }
 
 .img1 {
@@ -30,7 +31,24 @@
 
 .img3 {
 	background: url(../images/nys-banner-img.png) no-repeat 0 -56px transparent;
+	float: right;
 	width: 145px;
+}
+
+#gov-search-form {
+	display: none;
+}
+
+#gov-search-form form {
+	margin-top: 2px;
+}
+
+#gov-search-form #searchbutton {
+	border-color: #036;
+}
+
+#gov-search-form #searchbox, #gov-search-form #searchbutton {
+	font-size: 12px;
 }
 
 /* Large Size Header
@@ -46,9 +64,29 @@
 #site-logo {
 	background: url(../images/dol-test.png) no-repeat 0 0 transparent;
 	display: block;
+	float: left;
 	margin: 0;
 	width: 150px;
 }
+
+#app-name {
+	float: left;
+	margin-left: 200px;
+	margin-top: 10px;
+	text-shadow: 1px 2px 1px black;
+	width: 350%;
+}
+
+#gov-name {
+	color: #c4c4c4;
+	float: left;
+	font-size: 10px;
+	margin-top: -5px;
+	margin-left: 22px;
+	width: 400%;
+}
+
+
 
 /* Normal Size Header
 ----------------------------------------------------------------------------------------------------*/
@@ -57,6 +95,7 @@
 }
 
 #main-header.skinny #site-logo {
+	background: url(../images/dol-test2.png) no-repeat 0 0 transparent;
 	width: 125px;
 }
 
@@ -67,6 +106,7 @@
 }
 
 #main-header.tiny #site-logo {
+	background: url(../images/dol-test3.png) no-repeat 0 0 transparent;
 	width: 200px;
 }
 
@@ -74,4 +114,14 @@
 	background-color: #696969;
 	height: 28px;
 	border-bottom: 1px solid #C3C3C3;
+}
+
+/* Odds and Ends
+----------------------------------------------------------------------------------------------------*/
+.skipto {
+	display: none;
+}
+
+.skipto:focus {
+	display: block;
 }
