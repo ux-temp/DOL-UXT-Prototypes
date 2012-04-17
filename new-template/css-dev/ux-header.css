@@ -1,6 +1,5 @@
-#ux-header {
+#ux-header, #ux-header a {
 	color: #FFF;
-	width:100%;
 }
 
 /* New York Stat Govoner banner styling
@@ -37,17 +36,14 @@
 
 #gov-search-form {
 	display: none;
-}
-
-#gov-search-form form {
 	margin-top: 2px;
 }
 
-#gov-search-form #searchbutton {
+#gov-search-form #search-button {
 	border-color: #036;
 }
 
-#gov-search-form #searchbox, #gov-search-form #searchbutton {
+#gov-search-form #search-box, #gov-search-form #search-button {
 	font-size: 12px;
 }
 
@@ -57,36 +53,80 @@
 	background-color: #771C2D;
 }
 
-#main-header, #main-header #site-logo {
+#main-header h1 {
+	float: left;
+	margin: 0;
+	width: 75%;
+}
+
+#main-header {
 	height: 64px;
 }
 
-#site-logo {
+#home-link {
 	background: url(../images/dol-test.png) no-repeat 0 0 transparent;
-	display: block;
+	height: 64px;
 	float: left;
-	margin: 0;
 	width: 150px;
 }
 
-#app-name {
-	float: left;
-	margin-left: 200px;
+#ux-app-name {
+	display: inline-block;
+	font-size: 26px;
+	margin: 15px 0 0 30px;
+	text-shadow: 1px 1px 2px #000;
+}
+
+#ux-header-functions {
+	float: right;
+	list-style: none;
 	margin-top: 10px;
-	text-shadow: 1px 2px 1px black;
-	width: 350%;
 }
 
-#gov-name {
-	color: #c4c4c4;
+#ux-header-functions li {
+	display: inline;
 	float: left;
-	font-size: 10px;
-	margin-top: -5px;
-	margin-left: 22px;
-	width: 400%;
+	padding-left: 10px;
 }
 
+#ux-header-functions li a {
+	text-decoration: none;
+}
 
+#ux-site-search {
+	float: right;
+	margin-top: 6px;
+}
+
+/* Outer search give the rounded corner appearance */
+#search-outer {
+	background: #FFF;
+	border-radius: 10px;
+	display: inline-block;
+	padding: 0 10px;
+	height: 22px;
+}
+
+.ux-search-box {
+	border: 0;
+	margin-top: 3px;
+	width: 85%;
+}
+
+.ux-search-button {
+	background: url(../images/icons/magnifier_disabled.png);
+	border: 0;
+	height: 16px;
+	text-indent: -9999px;
+	width: 16px;
+}
+
+#ux-exe-names {
+	display: inline-block;
+	float: right;
+	font-size: 10px;
+	margin: -15px 0 0 160px;
+}
 
 /* Normal Size Header
 ----------------------------------------------------------------------------------------------------*/

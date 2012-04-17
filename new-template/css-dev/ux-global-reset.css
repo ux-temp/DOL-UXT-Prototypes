@@ -5,7 +5,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
-body { margin: 0; font-size: 1em; line-height: 1.4; }
+body { margin: 0; font-size: 0.75em; line-height: 1.4; }
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { color: #fff; text-shadow: none; }
@@ -32,7 +32,7 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+ul, ol { margin: 0; padding: 0; }
 dd { margin: 0 0 0 40px; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 

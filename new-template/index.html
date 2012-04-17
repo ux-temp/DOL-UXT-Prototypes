@@ -18,43 +18,64 @@
 		<div id="ux-header">
 			<div id="gov-banner">
 				<div class="header-contents">
-					<a href="http://www.ny.gov/" class="gov-img img1">
-						<span class="ux-hide-text">New York State Home Page</span>
-					</a>
-					<a href="http://www.nysegov.com/citGuide.cfm?superCat=102&cat=449&content=main" class="gov-img img2">
-						<span class="ux-hide-text">New York State Agencies List</span>
-					</a>
+					<a href="http://www.ny.gov/" alt="New York State Home Page" class="gov-img img1"></a>
+					<a href="http://www.nysegov.com/citGuide.cfm?superCat=102&cat=449&content=main" alt="New York State Agencies List" class="gov-img img2"></a>
 					<div class="right">
-						<div id="gov-search-img" class=>
-							<a href="#" class="gov-img img3">
-								<span class="ux-hide-text">Search all of New York State</span>
-							</a>
-						</div>
-						<div id="gov-search-form">
-							<form method="get" action="http://search.cio.ny.gov/" target="_blank">
-								<input type="hidden" name="sort" value="date:D:L:d1" />
-								<input type="hidden" name="output" value="xml_no_dtd" />
-								<input type="hidden" name="ie" value="UTF-8" />
-								<input type="hidden" name="oe" value="UTF-8" />
-								<input type="hidden" name="client" value="default_frontend" />
-								<input type="hidden" name="proxystylesheet" value="default_frontend" />
-								<input type="hidden" name="site" value="default_collection" />
-								<label for="searchbox">
-									<input type="text" title="Search" id="searchbox" maxlength="256" name="q" size="15" />
-								</label>
-								<input type="submit" value="Search NY.GOV" id="searchbutton" />
-							</form>
-						</div>
+						<a href="#" id="gov-search-img" class="gov-img img3">
+							<span class="ux-hide-508">Search all of New York State</span>
+						</a>
+						<form method="get" id="gov-search-form" action="http://search.cio.ny.gov/" target="_blank">
+							<input type="hidden" name="sort" value="date:D:L:d1" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="ie" value="UTF-8" />
+							<input type="hidden" name="oe" value="UTF-8" />
+							<input type="hidden" name="client" value="default_frontend" />
+							<input type="hidden" name="proxystylesheet" value="default_frontend" />
+							<input type="hidden" name="site" value="default_collection" />
+							<label for="searchbox">
+								<input type="text" title="Search" id="search-box" maxlength="256" name="q" size="15" />
+							</label>
+							<input type="submit" value="Search NY.GOV" id="search-button" />
+						</form>
 					</div>
 				</div>
 			</div>
 			<div id="main-header" class="">
 				<div class="header-contents">
-					<h1 id="site-logo">
-						<span class="ux-hide-text">New York State Department of Labor</span>
-						<span id="app-name">UX Template v.0.4.1 </span>
-						<span id="gov-name">Andrew M. Cuomo, Governor | Colleen C. Gardner, Commissione</span>
+					<h1>
+						<a href="http://labor.ny.gov" id="home-link">
+							<span class="ux-hide-508">New York State Department of Labor<span>
+						</a>
+						<span id="ux-app-name">
+							User Experiance Template v.0.5.0
+						</span>
 					</h1>
+					<ul id="ux-header-functions">
+						<li><a href="#">Sign in</a></li>
+						<li><a href="#">A-Z Index</a></li>
+						<li><a href="#">Translate</a></li>
+					</ul>
+					<form method="get" id="ux-site-search" action="http://search.cio.ny.gov" target="_blank" >
+						<span id="search-outer">
+							<label for="q" class="ux-hide-508">Search Department of Labor:</label>
+							<input type="text" class="ux-search-box" id="q" name="q" placeholder="Search DOL" />
+							<input type="submit" value="Search" class="ux-search-button" />
+						</span>
+						<input type="hidden" name="entqr" value="0" />
+						<input type="hidden" name="ud" value="1" />
+						<input type="hidden" name="sort" value="date:D:L:d1" />
+						<input type="hidden" name="output" value="xml_no_dtd" />
+						<input type="hidden" name="oe" value="UTF-8" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="hidden" name="client" value="labor_frontend" />
+						<input type="hidden" name="proxystylesheet" value="labor_frontend" />
+						<input type="hidden" name="site" value="labor_collection" />
+					</form>
+					<!--
+					<span id="ux-exe-names">
+						Andrew M. Cuomo, Governor | Colleen C. Gardner, Commissioner
+					</span>
+					-->
 				</div>
 			</div>
 			<div id="global-nav">

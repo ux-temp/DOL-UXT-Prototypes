@@ -6,7 +6,7 @@
  * lazy loading for optimal use.
  */
 var uxVar = {
-	ver: "v.0.4.0",
+	ver: "v.0.5.0",
 	core: {
 		browser: "",
 		protocol: "",
@@ -1076,9 +1076,9 @@ var ux = {
 		 this.load("placeHolder");
 
 		 if(jQuery('#gov-banner')) {
-		 	$('#gov-search-img a').on('click', function(){
+		 	$('#gov-search-img').on('click', function(){
 		 		// Hide the parent div
-		 		$(this).parent('div').hide();
+		 		$(this).hide();
 		 		$('#gov-search-form').show();
 		 	})
 		 }
