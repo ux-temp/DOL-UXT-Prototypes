@@ -7,12 +7,22 @@
 		<!--<link rel="stylesheet" type="text/css" href="css/ux-style-min.css">-->
 
 		<!-- Development -->
-		<link rel="stylesheet" type="text/css" href="css-dev/style.css" >
+		<link rel="stylesheet" type="text/css" media="screen" href="css-dev/style.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="css-dev/ux-print.css" />
 
 		<!-- Modernizer support -->
 		<script src="js-dev/modernizr.js"></script>
 	</head>
+
+
+	<!--[if lt IE 7 ]> <body class=" ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <body class=" ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <body class=" ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <body class=" ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!--> 
 	<body>
+	<!--<![endif]-->
+		
 		<a href="#" class="skipto">Skip to Navigation</a>
 		<a href="#" class="skipto">Skip to Content</a>
 		<div id="ux-header">
@@ -50,27 +60,29 @@
 							User Experiance Template v.0.5.0
 						</span>
 					</h1>
-					<ul id="ux-header-functions">
-						<li><a href="#">Sign in</a></li>
-						<li><a href="#">A-Z Index</a></li>
-						<li><a href="#">Translate</a></li>
-					</ul>
-					<form method="get" id="ux-site-search" action="http://search.cio.ny.gov" target="_blank" >
-						<span id="search-outer">
-							<label for="q" class="ux-hide-508">Search Department of Labor:</label>
-							<input type="text" class="ux-search-box" id="q" name="q" placeholder="Search DOL" />
-							<input type="submit" value="Search" class="ux-search-button" />
-						</span>
-						<input type="hidden" name="entqr" value="0" />
-						<input type="hidden" name="ud" value="1" />
-						<input type="hidden" name="sort" value="date:D:L:d1" />
-						<input type="hidden" name="output" value="xml_no_dtd" />
-						<input type="hidden" name="oe" value="UTF-8" />
-						<input type="hidden" name="ie" value="UTF-8" />
-						<input type="hidden" name="client" value="labor_frontend" />
-						<input type="hidden" name="proxystylesheet" value="labor_frontend" />
-						<input type="hidden" name="site" value="labor_collection" />
-					</form>
+					<div id="ux-functions">
+						<ul id="ux-header-menu">
+							<li><a href="#" class="ux-popover icon person">Sign in</a></li>
+							<li><a href="#">A-Z Index</a></li>
+							<li><a href="#">Translate</a></li>
+						</ul>
+						<form method="get" id="ux-site-search" action="http://search.cio.ny.gov" target="_blank" >
+							<span id="search-outer">
+								<label for="q" class="ux-hide-508">Search Department of Labor:</label>
+								<input type="text" class="ux-search-box" id="q" name="q" placeholder="Search DOL" />
+								<input type="submit" value="Search" class="ux-search-button" />
+							</span>
+							<input type="hidden" name="entqr" value="0" />
+							<input type="hidden" name="ud" value="1" />
+							<input type="hidden" name="sort" value="date:D:L:d1" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="oe" value="UTF-8" />
+							<input type="hidden" name="ie" value="UTF-8" />
+							<input type="hidden" name="client" value="labor_frontend" />
+							<input type="hidden" name="proxystylesheet" value="labor_frontend" />
+							<input type="hidden" name="site" value="labor_collection" />
+						</form>
+					</div>
 					<!--
 					<span id="ux-exe-names">
 						Andrew M. Cuomo, Governor | Colleen C. Gardner, Commissioner
