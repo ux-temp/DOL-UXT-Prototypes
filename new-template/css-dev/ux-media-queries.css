@@ -1,0 +1,111 @@
+/* Smart Phones */
+@media handheld, only screen and (max-width: 320px) {
+
+	.fluid #page-wrap {
+		width: 100%;
+	}
+}
+
+@media handheld, only screen and (max-width: 600px) {
+
+	.fluid #page-wrap {
+		width: 100%;
+	}
+
+	.fluid .container_12 [class*="suffix_"],
+	.fluid .container_16 [class*="suffix_"],
+	.fluid .container_24 [class*="suffix_"] {
+		padding-right: 0;
+	}
+
+	.fluid .container_12 [class*="grid_"],
+	.fluid .container_16 [class*="grid_"],
+	.fluid .container_24 [class*="grid_"] {
+		display: block;
+		float: none;
+		width: auto;
+		margin: 0 5%;
+	}
+
+	.fluid .container_12 [class*="prefix_"],
+	.fluid .container_16 [class*="prefix_"],
+	.fluid .container_24 [class*="prefix_"] {
+		padding-left: 0;
+	}
+
+	.fluid .container_12 [class*="push_"],
+	.fluid .container_16 [class*="push_"],
+	.fluid .container_24 [class*="push_"],
+	.fluid .container_12 [class*="pull_"],
+	.fluid .container_16 [class*="pull_"],
+	.fluid .container_24 [class*="pull_"] {
+		left: 0;
+	}
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+
+	.fluid  #ux-header .header-contents {
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	.fluid #gov-banner {
+		background: #FFF;
+	}
+
+	.fluid #main-header h1 {
+		width: 65%;
+	}
+
+	.fluid #ux-app-name {
+		font-size: 18px;
+		width: 50%;
+		margin-top: 7px;
+	}
+
+	.fluid #ux-functions {
+		width: 35%;
+	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px)  {
+
+	.fluid #ux-header .header-contents {
+		width: 768px;
+		margin: 0 auto;
+	}
+
+	.fluid #ux-header #gov-banner {
+		background: #000;
+	}
+
+	.fluid #main-header h1 {
+		width: 75%;
+	}
+
+	.fluid #ux-app-name {
+		font-size: 20px;
+	}
+
+	.fluid #ux-functions {
+		width: 25%;
+	}
+
+
+}
+
+@media screen and (min-width: 960px) {
+
+	.fluid #ux-header .header-contents {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	.fluid #ux-header #gov-banner {
+		background: #003366;
+	}
+
+}

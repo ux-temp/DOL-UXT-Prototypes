@@ -77,19 +77,24 @@
 	text-shadow: 1px 1px 2px #000;
 }
 
-#ux-header-functions {
+#ux-functions {
+	float: right;
+	width: 25%;
+}
+
+#ux-header-menu {
 	float: right;
 	list-style: none;
 	margin-top: 10px;
 }
 
-#ux-header-functions li {
+#ux-header-menu li {
 	display: inline;
 	float: left;
 	padding-left: 10px;
 }
 
-#ux-header-functions li a {
+#ux-header-menu li a {
 	text-decoration: none;
 }
 
@@ -121,23 +126,39 @@
 	width: 16px;
 }
 
-#ux-exe-names {
-	display: inline-block;
-	float: right;
-	font-size: 10px;
-	margin: -15px 0 0 160px;
-}
-
 /* Normal Size Header
 ----------------------------------------------------------------------------------------------------*/
 #main-header.skinny, #main-header.sknny #site-logo {
 	height: 48px;
 }
 
-#main-header.skinny #site-logo {
+#main-header.skinny #home-link {
 	background: url(../images/dol-test2.png) no-repeat 0 0 transparent;
 	width: 125px;
 }
+
+
+#main-header.skinny h1 {
+	width: 50%;
+}
+
+#main-header.skinny #ux-app-name {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+#main-header.skinny #ux-functions {
+	width: 50%;
+}
+
+#main-header.skinny #ux-header-menu {
+	margin-top: 15px;
+}
+
+#main-header.skinny #ux-site-search {
+	margin-top: 12px;
+}
+
 
 /* Tiny Header
 ----------------------------------------------------------------------------------------------------*/
@@ -145,10 +166,13 @@
 	height: 32px;
 }
 
-#main-header.tiny #site-logo {
+#main-header.tiny #home-link {
 	background: url(../images/dol-test3.png) no-repeat 0 0 transparent;
 	width: 200px;
 }
+
+/* Global menu (Mega menu)
+----------------------------------------------------------------------------------------------------*/
 
 #global-nav {
 	background-color: #696969;
@@ -158,6 +182,7 @@
 
 /* Odds and Ends
 ----------------------------------------------------------------------------------------------------*/
+
 .skipto {
 	display: none;
 }
