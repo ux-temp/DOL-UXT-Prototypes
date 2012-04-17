@@ -82,6 +82,10 @@
 		background: #000;
 	}
 
+	.fluid #main-header {
+		
+	}
+
 	.fluid #main-header h1 {
 		width: 75%;
 	}
