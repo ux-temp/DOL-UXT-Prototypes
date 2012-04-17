@@ -117,6 +117,7 @@
 	background: url(../images/icons/magnifier_disabled.png);
 	border: 0;
 	height: 16px;
+	/* This method of hidding text must be used inorder to show background image */
 	text-indent: -9999px;
 	width: 16px;
 }
