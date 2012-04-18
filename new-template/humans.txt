@@ -1,20 +1,38 @@
-This website layout and design was created by the New York State Department of Labor User Experiance / Web Teams
+This website layout and design was created by the New York State Department of Labor User Experience and Web Teams
 
 
 Members include:
 =============================================================================================
+
+=== UX ===
 Luke Charde - luke.charde@labor.ny.gov
 Victor Ng - victor.ng@labor.ny.gov
 Jeff Herb - jeffrey.herb@labor.ny.gov
 Keith Dyer - keith.dyer@labor.ny.gov
+Paul Pulcher - paul.pulcher@labor.ny.gov
+
+=== Web ===
 Courtney Jordan - courtney.jordan@labor.ny.gov
+Ben Greenberg - benjamin.greenberg@labor.ny.gov
+Roger Uyvn - roger.uvyn@labor.ny.gov
+Sean Grice - sean.grice@labor.ny.gov
 
 Credit to project/resources used to build/implement this sites
 =============================================================================================
 
 The Noun Project (http://thenounproject.com) - Icon Libary
 
+	- Specific Mentions
+	Walking Person - http://thenounproject.com/noun/walking/#icon-No250
+	Door - http://thenounproject.com/noun/door/#icon-No1168
+
+
+
 Pictos (http://pictos.cc) - Icon Libary
+	
+	- Set one
 
 Glyphish (http://glyphish.com/) - Icon Libary
+
+
 
