@@ -1,20 +1,34 @@
 /* Override to the header menu section to allow the acceptance of icons.
 ----------------------------------------------------------------------------------------------------*/
-#ux-header-menu li a.icon {
+#ux-header-menu li a.icon-small {
+	background: url(../images/icons/16x16-icons.png) no-repeat 0 0 transparent;
 	padding-left: 20px;
 }
 
 /* Icons related to the request header menu
 ----------------------------------------------------------------------------------------------------*/
 
-.icon.person {
-	background: url(../images/icons/icon_person.png) no-repeat left 0 transparent;
+.icon-small.person {
+	background-position: 0 -4px;
 }
 
-.icon.apps {
-	background: url(../images/icons/apps.png) no-repeat left 0 transparent;
+.icon-small.icon.apps {
+	background-position: 0 -24px transparent;
 }
 
-.icon.signout {
-	background: url(../images/icons/apps.png) no-repeat left 0 transparent;
+.icon-small.icon.mail {
+	background-position: 0 -45px transparent;
+}
+
+.icon-small.icon.gear {
+	background-position: 0 -66px transparent;
+}
+
+.icon-small.icon.signout {
+	background-position: 0 0 transparent;
+}
+
+.ux-popover .arrow-down {
+	background: url(../images/icons/arrow-down.png) no-repeat right 7px transparent;
+	padding-right: 10px;
 }

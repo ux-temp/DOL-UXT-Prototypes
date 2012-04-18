@@ -61,7 +61,7 @@
 }
 
 #home-link {
-	background: url(../images/dol-test.png) no-repeat 0 0 transparent;
+	background: url(../images/dol-header-sprite.png) no-repeat 0 0 transparent;
 	float: left;
 	height: 64px;
 	width: 150px;
@@ -131,7 +131,7 @@
 }
 
 #main-header.skinny #home-link {
-	background: url(../images/dol-test2.png) no-repeat 0 0 transparent;
+	background-position: 0 -64px;
 	height: 48px;
 	width: 125px;
 }
@@ -141,7 +141,7 @@
 }
 
 #main-header.skinny #ux-app-name {
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 10px;
 }
 
@@ -165,7 +165,7 @@
 }
 
 #main-header.tiny #home-link {
-	background: url(../images/dol-test3.png) no-repeat 0 0 transparent;
+	background-position: 0 -112px;
 	height: 32px;
 	width: 150px;
 }
@@ -194,6 +194,7 @@
 /* Header Search Transition
 ----------------------------------------------------------------------------------------------------*/
 
+.fluid #main-header .ux-search-box,
 #main-header.skinny .ux-search-box,
 #main-header.tiny .ux-search-box {
 	width: 42px;
@@ -205,6 +206,7 @@
 	-ms-transition:width 20s ease;
 }
 
+.fluid #main-header .ux-search-box:focus,
 #main-header.skinny .ux-search-box:focus,
 #main-header.tiny .ux-search-box:focus {
 	width: 85%;

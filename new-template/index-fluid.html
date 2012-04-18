@@ -13,35 +13,42 @@
 		<!-- Modernizer support -->
 		<script src="js-dev/modernizr.js"></script>
 	</head>
+
+
+	<!--[if lt IE 7 ]> <body class="fluid ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <body class="fluid ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <body class="fluid ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <body class="fluid ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!--> 
 	<body class="fluid">
-		<a href="#" class="skipto">Skip to Navigation</a>
-		<a href="#" class="skipto">Skip to Content</a>
+	<!--<![endif]-->
+
 		<div id="ux-header">
+			<a tabindex="1" href="#" class="skipto ux-hide-508">Skip to Navigation</a>
+			<a tabindex="1" href="#" class="skipto ux-hide-508">Skip to Content</a>
 			<div id="gov-banner">
 				<div class="header-contents">
 					<a href="http://www.ny.gov/" alt="New York State Home Page" class="gov-img img1"></a>
 					<a href="http://www.nysegov.com/citGuide.cfm?superCat=102&cat=449&content=main" alt="New York State Agencies List" class="gov-img img2"></a>
-					<div class="right">
-						<a href="#" id="gov-search-img" class="gov-img img3">
-							<span class="ux-hide-508">Search all of New York State</span>
-						</a>
-						<form method="get" id="gov-search-form" action="http://search.cio.ny.gov/" target="_blank">
-							<input type="hidden" name="sort" value="date:D:L:d1" />
-							<input type="hidden" name="output" value="xml_no_dtd" />
-							<input type="hidden" name="ie" value="UTF-8" />
-							<input type="hidden" name="oe" value="UTF-8" />
-							<input type="hidden" name="client" value="default_frontend" />
-							<input type="hidden" name="proxystylesheet" value="default_frontend" />
-							<input type="hidden" name="site" value="default_collection" />
-							<label for="searchbox">
-								<input type="text" title="Search" id="search-box" maxlength="256" name="q" size="15" />
-							</label>
-							<input type="submit" value="Search NY.GOV" id="search-button" />
-						</form>
-					</div>
+					<a href="#" id="gov-search-img" class="gov-img img3">
+						<span class="ux-hide-508">Search all of New York State</span>
+					</a>
+					<form method="get" id="gov-search-form" action="http://search.cio.ny.gov/" target="_blank">
+						<input type="hidden" name="sort" value="date:D:L:d1" />
+						<input type="hidden" name="output" value="xml_no_dtd" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="hidden" name="oe" value="UTF-8" />
+						<input type="hidden" name="client" value="default_frontend" />
+						<input type="hidden" name="proxystylesheet" value="default_frontend" />
+						<input type="hidden" name="site" value="default_collection" />
+						<label for="searchbox">
+							<input type="text" title="Search" id="search-box" maxlength="256" name="q" size="15" />
+						</label>
+						<input type="submit" value="Search NY.GOV" id="search-button" />
+					</form>
 				</div>
 			</div>
-			<div id="main-header" class="skinny">
+			<div id="main-header" class="">
 				<div class="header-contents">
 					<h1>
 						<a href="http://labor.ny.gov" id="home-link">
@@ -60,7 +67,7 @@
 						<form method="get" id="ux-site-search" action="http://search.cio.ny.gov" target="_blank" >
 							<span id="search-outer">
 								<label for="q" class="ux-hide-508">Search Department of Labor:</label>
-								<input type="text" class="ux-search-box" id="q" name="q" placeholder="Search DOL" />
+								<input type="text" class="ux-search-box" accesskey="s" id="q" name="q" placeholder="Search DOL" />
 								<input type="submit" value="Search" class="ux-search-button" />
 							</span>
 							<input type="hidden" name="entqr" value="0" />
@@ -74,11 +81,6 @@
 							<input type="hidden" name="site" value="labor_collection" />
 						</form>
 					</div>
-					<!--
-					<span id="ux-exe-names">
-						Andrew M. Cuomo, Governor | Colleen C. Gardner, Commissioner
-					</span>
-					-->
 				</div>
 			</div>
 			<div id="global-nav">
