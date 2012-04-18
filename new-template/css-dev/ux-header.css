@@ -36,15 +36,12 @@
 
 #gov-search-form {
 	display: none;
-	margin-top: 2px;
+	float: right;
+	margin-top: 3px;
 }
 
 #gov-search-form #search-button {
 	border-color: #036;
-}
-
-#gov-search-form #search-box, #gov-search-form #search-button {
-	font-size: 12px;
 }
 
 /* Large Size Header
@@ -65,8 +62,8 @@
 
 #home-link {
 	background: url(../images/dol-test.png) no-repeat 0 0 transparent;
-	height: 64px;
 	float: left;
+	height: 64px;
 	width: 150px;
 }
 
@@ -129,15 +126,15 @@
 
 /* Normal Size Header
 ----------------------------------------------------------------------------------------------------*/
-#main-header.skinny, #main-header.sknny #site-logo {
+#main-header.skinny {
 	height: 48px;
 }
 
 #main-header.skinny #home-link {
 	background: url(../images/dol-test2.png) no-repeat 0 0 transparent;
+	height: 48px;
 	width: 125px;
 }
-
 
 #main-header.skinny h1 {
 	width: 50%;
@@ -160,18 +157,60 @@
 	margin-top: 12px;
 }
 
-
-
 /* Tiny Header
 ----------------------------------------------------------------------------------------------------*/
-#main-header.tiny, #main-header.tiny #site-logo {
+
+#main-header.tiny {
 	height: 32px;
 }
 
 #main-header.tiny #home-link {
 	background: url(../images/dol-test3.png) no-repeat 0 0 transparent;
-	width: 200px;
+	height: 32px;
+	width: 150px;
 }
+
+#main-header.tiny h1 {
+	width: 50%;
+}
+
+#main-header.tiny #ux-app-name {
+	font-size: 20px;
+	margin: 0;
+}
+
+#main-header.tiny #ux-functions {
+	width: 50%;
+}
+
+#main-header.tiny #ux-header-menu {
+	margin-top: 9px;
+}
+
+#main-header.tiny #ux-site-search {
+	margin-top: 5px;
+}
+
+/* Header Search Transition
+----------------------------------------------------------------------------------------------------*/
+
+#main-header.skinny .ux-search-box,
+#main-header.tiny .ux-search-box {
+	width: 42px;
+	padding-right: 3px;
+	transition:width 20s ease;
+	-moz-transition:width 20s ease;
+	-webkit-transition:width 20s ease;
+	-o-transition:width 20s ease;
+	-ms-transition:width 20s ease;
+}
+
+#main-header.skinny .ux-search-box:focus,
+#main-header.tiny .ux-search-box:focus {
+	width: 85%;
+	margin-right: 1px;
+}
+
 
 /* Global menu (Mega menu)
 ----------------------------------------------------------------------------------------------------*/
@@ -184,11 +223,21 @@
 
 /* Odds and Ends
 ----------------------------------------------------------------------------------------------------*/
-
 .skipto {
-	display: none;
+	left:0;
+	position: absolute;
+	top: 0;
 }
 
 .skipto:focus {
-	display: block;
+	background: #000;
+	border: 2px solid #FFF;
+	border-radius: 7px;
+	clip: auto;
+	height: auto;
+	margin: 3px;
+	padding: 3px;
+	text-align: center;
+	width: auto;
+	z-index: 100;
 }
