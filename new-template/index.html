@@ -15,25 +15,33 @@
 	</head>
 
 
-	<!--[if lt IE 7 ]> <body class=" ie6"> <![endif]-->
-	<!--[if IE 7 ]>    <body class=" ie7"> <![endif]-->
-	<!--[if IE 8 ]>    <body class=" ie8"> <![endif]-->
-	<!--[if IE 9 ]>    <body class=" ie9"> <![endif]-->
+	<!--[if lt IE 7 ]> <body class=" ie ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <body class=" ie ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <body class=" ie ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <body class=" ie ie9"> <![endif]-->
 	<!--[if (gt IE 9)|!(IE)]><!--> 
 	<body>
 	<!--<![endif]-->
 
-		<div id="ux-header">
+		<header id="ux">
 			<a tabindex="1" href="#" class="skipto ux-hide-508">Skip to Navigation</a>
 			<a tabindex="1" href="#" class="skipto ux-hide-508">Skip to Content</a>
-			<div id="gov-banner">
-				<div class="header-contents">
-					<a href="http://www.ny.gov/" alt="New York State Home Page" class="gov-img img1"></a>
-					<a href="http://www.nysegov.com/citGuide.cfm?superCat=102&cat=449&content=main" alt="New York State Agencies List" class="gov-img img2"></a>
-					<a href="#" id="gov-search-img" class="gov-img img3">
-						<span class="ux-hide-508">Search all of New York State</span>
+			<div id="gov-bar">
+				<div class="content">
+					<a href="#" class="gb-img img1">
+						<span class="ux-hide-508">New York State Home Page</span>
+					</a>
+					<a href="#" class="gb-img img2">
+						<span class="ux-hide-508">New York State Agencies List</span>
+					</a>
+					<a href="#" class="gb-img img3" id="gov-search-img">
+						<span class="ux-hide-508">Search New York State</span>
 					</a>
 					<form method="get" id="gov-search-form" action="http://search.cio.ny.gov/" target="_blank">
+						<label for="gov-search-box">
+							<input type="text" title="Search" id="gov-search-box" class="search-box" maxlength="256" name="q" size="15" />
+						</label>
+						<input type="submit" value="Search NY.GOV" class="search-button" />
 						<input type="hidden" name="sort" value="date:D:L:d1" />
 						<input type="hidden" name="output" value="xml_no_dtd" />
 						<input type="hidden" name="ie" value="UTF-8" />
@@ -41,31 +49,27 @@
 						<input type="hidden" name="client" value="default_frontend" />
 						<input type="hidden" name="proxystylesheet" value="default_frontend" />
 						<input type="hidden" name="site" value="default_collection" />
-						<label for="searchbox">
-							<input type="text" title="Search" id="search-box" maxlength="256" name="q" size="15" />
-						</label>
-						<input type="submit" value="Search NY.GOV" id="search-button" />
 					</form>
 				</div>
 			</div>
-			<div id="main-header" class="">
-				<div class="header-contents">
+			<div id="ux-main" class="skinny">
+				<div class="content">
 					<h1>
-						<a href="http://labor.ny.gov" id="home-link">
-							<span class="ux-hide-508">New York State Department of Labor<span>
+						<a href="#" id="ux-logo">
+							<span class="ux-hide-508">New York State Deparment of Labor</span>
 						</a>
-						<span id="ux-app-name">
-							User Experiance Template v.0.5.0
-						</span>
 					</h1>
-					<div id="ux-functions">
-						<ul id="ux-header-menu">
-							<li><a href="#" class="ux-popover icon-small person"><span class="arrow-down">Sign in</span></a></li>
-							<li><a href="#">A-Z Index</a></li>
-							<li><a href="#">Translate</a></li>
+					<span id="ux-app-name">
+						User Experience Template v.0.5.0
+					</span>
+					<div id="ux-global-menu">
+						<ul>
+							<li><a href="#" class="icon-small person">Sign in</a></li>
+							<li><a href="#" class="icon-small index">A-Z Index</a></li>
+							<li><a href="#" class="icon-small translate">Translate</a></li>
 						</ul>
 						<form method="get" id="ux-site-search" action="http://search.cio.ny.gov" target="_blank" >
-							<span id="search-outer">
+							<span id="ux-search-wrap">
 								<label for="q" class="ux-hide-508">Search Department of Labor:</label>
 								<input type="text" class="ux-search-box" accesskey="s" id="q" name="q" placeholder="Search DOL" />
 								<input type="submit" value="Search" class="ux-search-button" />
@@ -79,20 +83,21 @@
 							<input type="hidden" name="client" value="labor_frontend" />
 							<input type="hidden" name="proxystylesheet" value="labor_frontend" />
 							<input type="hidden" name="site" value="labor_collection" />
-						</form>
+						</form>						
 					</div>
 				</div>
 			</div>
-			<div id="global-nav">
-				<div class="header-contents">
-
+			<nav id="ux-global">
+				<div class="content">
 				</div>
-			</div>
-		</div>
+			</nav>
+		</header>
+
 		<div id="ux-body">
 		</div>
 		<div id="ux-footer">
 		</div>
+
 		<script src="js-dev/ux-script/jquery.js"></script>
 		<script src="js-dev/ux-script/lazyloader.js"></script>
 		<script src="js-dev/ux-script/ux-object.js"></script>

@@ -1,203 +1,142 @@
-#ux-header, #ux-header a {
+/* Header Shared Styles
+-----------------------------------------------------*/
+
+header, #ux-global-menu a {
 	color: #FFF;
 }
 
-/* New York Stat Govoner banner styling
-----------------------------------------------------------------------------------------------------*/
-#gov-banner {
+header .content {
+	height: 28px;
+}
+
+
+/* Govoner Banner
+-----------------------------------------------------*/
+#gov-bar {
 	background-color: #036;
 }
 
-#gov-banner, #gov-banner .header-content, .gov-img {
-	height: 28px;
-	overflow: hidden;
-}
-
-.gov-img {
-	display: inline-block;
+.gb-img {
+	background: url(../images/nys-banner-img.png);
+	display: block;
 	float: left;
-}
-
-.img1 {
-	background: url(../images/nys-banner-img.png) no-repeat -16px 0 transparent;
-	width: 170px;
+	height: 28px;
+	width: 197px;
 }
 
 .img2 {
-	background: url(../images/nys-banner-img.png) no-repeat 0 -28px transparent;
-	width: 140px;	
+	background-position: 0 -28px;
+	width: 134px;
 }
 
 .img3 {
-	background: url(../images/nys-banner-img.png) no-repeat 0 -56px transparent;
+	background-position: 0 -56px;
 	float: right;
-	width: 145px;
+	width: 159px;
 }
+
 
 #gov-search-form {
-	display: none;
 	float: right;
-	margin-top: 3px;
+	display: none;
+	margin-top: 4px;
 }
 
-#gov-search-form #search-button {
-	border-color: #036;
+#gov-search-form .search-button {
+	border: none;
 }
 
-/* Large Size Header
-----------------------------------------------------------------------------------------------------*/
-#main-header {
+/* Department Header (Large)
+-----------------------------------------------------*/
+#ux-main {
 	background-color: #771C2D;
-}
-
-#main-header h1 {
-	float: left;
-	margin: 0;
-	width: 75%;
-}
-
-#main-header {
 	height: 64px;
+	overflow: hidden;
 }
 
-#home-link {
+#ux-main h1 a {
 	background: url(../images/dol-header-sprite.png) no-repeat 0 0 transparent;
+	display: block;
 	float: left;
 	height: 64px;
 	width: 150px;
 }
 
 #ux-app-name {
-	display: inline-block;
-	font-size: 26px;
-	margin: 15px 0 0 30px;
+	float: left;
+	font-size: 28px;
+	font-weight: bold;
 	text-shadow: 1px 1px 2px #000;
+	margin-left: 20px;
+	margin-top: 12px;
+	width: 50%;
 }
 
-#ux-functions {
-	float: right;
-	width: 25%;
-}
-
-#ux-header-menu {
-	float: right;
+#ux-global-menu ul {
 	list-style: none;
+	float: right;
 	margin-top: 10px;
 }
 
-#ux-header-menu li {
-	display: inline;
+#ux-global-menu ul li {
 	float: left;
-	padding-left: 10px;
+	padding: 0 5px;
 }
 
-#ux-header-menu li a {
+#ux-global-menu a {
 	text-decoration: none;
 }
 
 #ux-site-search {
 	float: right;
-	margin-top: 6px;
+	margin-top: 5px;
 }
 
-/* Outer search give the rounded corner appearance */
-#search-outer {
+#ux-search-wrap {
 	background: #FFF;
-	border-radius: 10px;
+	border-radius: 8px;
 	display: inline-block;
-	padding: 0 10px;
-	height: 22px;
+	padding: 0 7px;
+	margin-right: 7px;
 }
 
 .ux-search-box {
 	border: 0;
-	margin-top: 3px;
-	width: 85%;
+	padding: 2px 0;
 }
 
 .ux-search-button {
-	background: url(../images/icons/magnifier_disabled.png);
+	background: url(../images/icons/magnifier_disabled.png) no-repeat 0 0 transparent;
 	border: 0;
 	height: 16px;
-	/* This method of hidding text must be used inorder to show background image */
 	text-indent: -9999px;
 	width: 16px;
 }
 
-/* Normal Size Header
-----------------------------------------------------------------------------------------------------*/
-#main-header.skinny {
+.ie7 .ux-search-button {
+	display: inline-block;
+	line-height: 99px;
+}
+
+/* Department Header (Skinny)
+-----------------------------------------------------*/
+#ux-main.skinny {
 	height: 48px;
 }
 
-#main-header.skinny #home-link {
+#ux-main.skinny h1 a {
 	background-position: 0 -64px;
-	height: 48px;
-	width: 125px;
 }
 
-#main-header.skinny h1 {
-	width: 50%;
-}
-
-#main-header.skinny #ux-app-name {
-	font-size: 18px;
-	margin-top: 10px;
-}
-
-#main-header.skinny #ux-functions {
-	width: 50%;
-}
-
-#main-header.skinny #ux-header-menu {
-	margin-top: 15px;
-}
-
-#main-header.skinny #ux-site-search {
-	margin-top: 12px;
-}
-
-/* Tiny Header
-----------------------------------------------------------------------------------------------------*/
-
-#main-header.tiny {
-	height: 32px;
-}
-
-#main-header.tiny #home-link {
-	background-position: 0 -112px;
-	height: 32px;
-	width: 150px;
-}
-
-#main-header.tiny h1 {
-	width: 50%;
-}
-
-#main-header.tiny #ux-app-name {
+#ux-main.skinny #ux-app-name {
 	font-size: 20px;
-	margin: 0;
+	margin-left: 5px;
+	width: 40%;
 }
 
-#main-header.tiny #ux-functions {
-	width: 50%;
-}
-
-#main-header.tiny #ux-header-menu {
-	margin-top: 9px;
-}
-
-#main-header.tiny #ux-site-search {
-	margin-top: 5px;
-}
-
-/* Header Search Transition
-----------------------------------------------------------------------------------------------------*/
-
-.fluid #main-header .ux-search-box,
-#main-header.skinny .ux-search-box,
-#main-header.tiny .ux-search-box {
-	width: 42px;
+#ux-main.skinny .ux-search-box,
+#ux-main.tiny .ux-search-box {
+	width: 39px;
 	padding-right: 3px;
 	transition:width 20s ease;
 	-moz-transition:width 20s ease;
@@ -206,40 +145,19 @@
 	-ms-transition:width 20s ease;
 }
 
-.fluid #main-header .ux-search-box:focus,
-#main-header.skinny .ux-search-box:focus,
-#main-header.tiny .ux-search-box:focus {
+#ux-main.skinny .ux-search-box:focus,
+#ux-main.tiny .ux-search-box:focus {
 	width: 85%;
 	margin-right: 1px;
 }
 
+.ie #ux-main.skinny .ux-search-box {
+	width: 75%;
+}
 
-/* Global menu (Mega menu)
-----------------------------------------------------------------------------------------------------*/
 
-#global-nav {
+/* Global Navigation
+-----------------------------------------------------*/
+#ux-global {
 	background-color: #696969;
-	height: 28px;
-	border-bottom: 1px solid #C3C3C3;
-}
-
-/* Odds and Ends
-----------------------------------------------------------------------------------------------------*/
-.skipto {
-	left:0;
-	position: absolute;
-	top: 0;
-}
-
-.skipto:focus {
-	background: #000;
-	border: 2px solid #FFF;
-	border-radius: 7px;
-	clip: auto;
-	height: auto;
-	margin: 3px;
-	padding: 3px;
-	text-align: center;
-	width: auto;
-	z-index: 100;
 }
