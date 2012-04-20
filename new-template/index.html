@@ -14,7 +14,6 @@
 		<script src="js-dev/modernizr.js"></script>
 	</head>
 
-
 	<!--[if lt IE 7 ]> <body class=" ie ie6"> <![endif]-->
 	<!--[if IE 7 ]>    <body class=" ie ie7"> <![endif]-->
 	<!--[if IE 8 ]>    <body class=" ie ie8"> <![endif]-->
@@ -52,7 +51,7 @@
 					</form>
 				</div>
 			</div>
-			<div id="ux-main" class="skinny">
+			<div id="ux-main" class="">
 				<div class="content">
 					<h1>
 						<a href="#" id="ux-logo">
@@ -62,29 +61,27 @@
 					<span id="ux-app-name">
 						User Experience Template v.0.5.0
 					</span>
-					<div id="ux-global-menu">
-						<ul>
-							<li><a href="#" class="icon-small person">Sign in</a></li>
-							<li><a href="#" class="icon-small index">A-Z Index</a></li>
-							<li><a href="#" class="icon-small translate">Translate</a></li>
-						</ul>
-						<form method="get" id="ux-site-search" action="http://search.cio.ny.gov" target="_blank" >
-							<span id="ux-search-wrap">
-								<label for="q" class="ux-hide-508">Search Department of Labor:</label>
-								<input type="text" class="ux-search-box" accesskey="s" id="q" name="q" placeholder="Search DOL" />
-								<input type="submit" value="Search" class="ux-search-button" />
-							</span>
-							<input type="hidden" name="entqr" value="0" />
-							<input type="hidden" name="ud" value="1" />
-							<input type="hidden" name="sort" value="date:D:L:d1" />
-							<input type="hidden" name="output" value="xml_no_dtd" />
-							<input type="hidden" name="oe" value="UTF-8" />
-							<input type="hidden" name="ie" value="UTF-8" />
-							<input type="hidden" name="client" value="labor_frontend" />
-							<input type="hidden" name="proxystylesheet" value="labor_frontend" />
-							<input type="hidden" name="site" value="labor_collection" />
-						</form>						
-					</div>
+					<ul id="ux-global-menu">
+						<li><a href="#" class="icon person"><span>Sign in</span></a></li>
+						<li><a href="#" class="icon person"><span>A-Z Index</span></a></li>
+						<li><a href="#" class="icon person"><span>Translate</span></a></li>
+					</ul>
+					<form method="get" id="ux-site-search" action="http://search.cio.ny.gov" target="_blank" >
+						<span id="ux-search-wrap">
+							<label for="q" class="ux-hide-508">Search Department of Labor:</label>
+							<input type="text" class="ux-search-box" accesskey="s" id="q" name="q" placeholder="Search DOL" />
+							<input type="submit" value="Search" class="ux-search-button" />
+						</span>
+						<input type="hidden" name="entqr" value="0" />
+						<input type="hidden" name="ud" value="1" />
+						<input type="hidden" name="sort" value="date:D:L:d1" />
+						<input type="hidden" name="output" value="xml_no_dtd" />
+						<input type="hidden" name="oe" value="UTF-8" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="hidden" name="client" value="labor_frontend" />
+						<input type="hidden" name="proxystylesheet" value="labor_frontend" />
+						<input type="hidden" name="site" value="labor_collection" />
+					</form>						
 				</div>
 			</div>
 			<nav id="ux-global">

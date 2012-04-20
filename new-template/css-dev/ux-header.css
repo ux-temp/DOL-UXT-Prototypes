@@ -72,13 +72,13 @@ header .content {
 	width: 50%;
 }
 
-#ux-global-menu ul {
+#ux-global-menu  {
 	list-style: none;
 	float: right;
-	margin-top: 10px;
+	margin-top: 12px;
 }
 
-#ux-global-menu ul li {
+#ux-global-menu li {
 	float: left;
 	padding: 0 5px;
 }
@@ -131,7 +131,11 @@ header .content {
 #ux-main.skinny #ux-app-name {
 	font-size: 20px;
 	margin-left: 5px;
-	width: 40%;
+	width: 35%;
+}
+
+#ux-main.skinny #ux-site-search {
+	margin-top: 15px;
 }
 
 #ux-main.skinny .ux-search-box,
