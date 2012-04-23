@@ -4,16 +4,13 @@
 	padding-left: 20px;
 }
 
-#ux-main.skinny #ux-global-menu a.icon {
-	background: url(../images/icons/24x24-icons.png) no-repeat 0 0 transparent;
-	padding-left: 28px;
-	height: 28px;
+#ux-global-menu .icon span {
+	background: url(../images/icons/arrow-down.png) no-repeat right 7px transparent;
+	cursor: pointer;
+	padding-right: 10px;
+	pointer-events: none;
 }
 
-#ux-main.skinny #ux-global-menu a.icon span{
-	display: inline-block;
-	margin-top: 5px;
-}
 
 
 /* Small Icons (defualt for large header).
@@ -43,37 +40,5 @@
 }
 
 #ux-global-menu .icon.index {
-	background-position: 0 -136px;
-}
-
-
-/* Small Icons (defualt for large header).
------------------------------------------------------*/
-
-#ux-main.skinny #ux-global-menu .icon.person {
-	background-position: 0 1px;
-}
-
-#ux-main.skinny #ux-global-menu .icon.gear {
-	background-position: 0 -26px;
-}
-
-#ux-main.skinny #ux-global-menu .icon.door {
-	background-position: 0 -48px;
-}
-
-#ux-main.skinny #ux-global-menu .icon.apps {
-	background-position: 0 -70px;
-}
-
-#ux-main.skinny #ux-global-menu .icon.message {
-	background-position: 0 -91px;
-}
-
-#ux-main.skinny #ux-global-menu .icon.translate {
-	background-position: 0 -113px;
-}
-
-#ux-main.skinny #ux-global-menu .icon.index {
 	background-position: 0 -136px;
 }

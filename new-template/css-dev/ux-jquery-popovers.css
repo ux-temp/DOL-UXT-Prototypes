@@ -1,35 +1,35 @@
-a.icon-small {
+a.icon {
 	background: url(../images/icons/16x16-icons.png) no-repeat 0 0 transparent;
 	padding-left: 20px;
 }
 
 
-/* Small Icons.
+/* Small Icons (defualt for large header).
 -----------------------------------------------------*/
-.icon-small.person {
+.icon.person {
 	background-position: 0 -4px;
 }
 
-.icon-small.gear {
+.icon.gear {
 	background-position: 0 -26px;
 }
 
-.icon-small.door {
+.icon.door {
 	background-position: 0 -48px;
 }
 
-.icon-small.apps {
+.icon.apps {
 	background-position: 0 -70px;
 }
 
-.icon-small.message {
+.icon.message {
 	background-position: 0 -91px;
 }
 
-.icon-small.translate {
+.icon.translate {
 	background-position: 0 -113px;
 }
 
-.icon-small.index {
+.icon.index {
 	background-position: 0 -136px;
 }

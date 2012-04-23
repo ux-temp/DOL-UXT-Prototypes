@@ -1,12 +1,126 @@
 /* Smart Phones */
-@media handheld, only screen and (max-width: 320px) {
+@media handheld, only screen and (max-width: 600px) {
 
-	.fluid #page-wrap {
+	.fluid #page-wrap, .fluid #ux .content {
+		height: auto;
 		width: 100%;
 	}
+
+	/* Fluid Header
+	------------------------------------------------------- */
+
+	/* Global rules
+	--------------------- */
+	.fluid #ux a,
+	.fluid #ux form {
+		color: #FFF;
+		text-align: center;
+		text-decoration: none;
+		height: auto;
+		width: auto;
+	}
+
+	header .ux-hide-508 {
+		clip: auto;
+		position: relative;
+	}
+
+	.fluid #gov-bar, .fluid #ux-main {
+		height: auto;
+	}
+
+	/* Govoner Banner
+	--------------------- */
+
+	.fluid #gov-bar {
+		padding-top: 20px;
+	}
+
+	.fluid #gov-bar .gb-img,
+	.fluid #gov-bar #gov-search-form  {
+		background: none;
+		float: none;
+		text-align: center;
+	}
+
+
+	/* Department Header
+	--------------------- */
+
+	.fluid #ux-main h1 a {
+		background: none;
+		display: block;
+		font-size: 16px;
+		width: 100%;
+	}
+
+	.fluid #ux-app-name {
+		font-size: 14px;
+		width:100%;
+		margin: 5px 0;
+		text-align: center;
+	}
+
+	.fluid #ux-global-menu,
+	.fluid #ux-global-menu li {
+		float: none;
+		text-align: center;
+	}
+
+	.fluid #ux-global-menu {
+		margin: 15px 0 10px 0;
+	}
+
+	.fluid #ux-global-menu li {
+		display: inline;
+	}
+
+	.fluid #ux-site-search {
+		float: none;
+		margin: 0 0 5px 0;
+		width: 100%;
+	}
+
+	.fluid #ux-search-wrap {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	/* Re-add the clip */
+	.fluid #ux-search-wrap label {
+		position: absolute;
+		clip: rect(1px, 1px, 1px, 1px);
+	}
+
+	.fluid #ux-search-wrap .ux-search-box {
+		width: 90%;
+	}
+
+	/* Global Menu
+	---------------- */
+
+	.fluid #ux-global {
+		display: none;
+	}
+
+	/* Misu Header
+	---------------- */
+
+	#skipNav {
+		float: left;
+	}
+
+	#skipContent {
+		float: right;
+	}
+
 }
 
-@media handheld, only screen and (max-width: 600px) {
+@media handheld, only screen and (min-width: 600px) {
+
+	.fluid #gov-bar {
+		background: green;
+	}
 
 	.fluid #page-wrap {
 		width: 100%;
@@ -44,112 +158,15 @@
 }
 
 
-@media screen and (max-width: 600px) {
-
-	.fluid  #ux-header .header-contents {
-		width: 600px;
-		margin: 0 auto;
-	}
-
-	.fluid #gov-banner {
-		background: #FFF;
-	}
-
-	.fluid #main-header h1 {
-		width: 65%;
-	}
-
-	.fluid #ux-app-name {
-		font-size: 18px;
-		width: 50%;
-		margin-top: 7px;
-	}
-
-	.fluid #ux-functions {
-		width: 35%;
-	}
+@media screen and (min-width: 600px) {
 
 }
 
-@media screen and (max-width: 959px) {
-
-	.fluid #ux-header #gov-banner {
-		background: #000;
-	}
-
-	.fluid #ux-header .header-contents {
-		width: 768px;
-		margin: 0 auto;
-	}
-
-	/* Force smaller users to using the skinny header once they are this small.
-	----------------------------------------------------------------------------------------------------*/
-
-	.fluid #main-header {
-		height: 48px;
-	}
-
-	.fluid #main-header #home-link {
-		background-position: 0 -64px;
-		height: 48px;
-		width: 125px;
-	}
-
-	.fluid #main-header h1 {
-		width: 50%;
-	}
-
-	.fluid #main-header #ux-app-name {
-		font-size: 18px;
-		margin: 10px 0 0 0;
-	}
-
-	.fluid #main-header #ux-functions {
-		width: 50%;
-	}
-
-	.fluid #main-header #ux-header-menu {
-		margin-top: 15px;
-	}
-
-	.fluid #main-header #ux-site-search {
-		margin-top: 12px;
-	}
-
-	/* Header Search Transition
-	----------------------------------------------------------------------------------------------------*/
-
-	.fluid #main-header .ux-search-box {
-		width: 42px;
-		padding-right: 3px;
-		transition: width 20s ease;
-		-moz-transition: width 20s ease;
-		-webkit-transition: width 20s ease;
-		-o-transition: width 20s ease;
-		-ms-transition: width 20s ease;
-	}
-
-	.fluid #main-header .ux-search-box:focus {
-		width: 85%;
-		margin-right: 1px;
-	}
+@media screen and (min-width: 768px) {
 
 }
 
 @media screen and (min-width: 960px) {
 
-	.fluid #ux-header .header-contents {
-		width: 960px;
-		margin: 0 auto;
-	}
-
-	.fluid #ux-header #gov-banner {
-		background: #003366;
-	}
-
-	.fluid #main-header .ux-search-box {
-		width: 85%;
-		margin-right: 1px;
-	}
 	
 }

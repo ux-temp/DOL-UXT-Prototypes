@@ -134,30 +134,44 @@ header .content {
 	width: 35%;
 }
 
+#ux-main.skinny #ux-global-menu {
+	margin-top: 17px;
+}
+
 #ux-main.skinny #ux-site-search {
-	margin-top: 15px;
-}
-
-#ux-main.skinny .ux-search-box,
-#ux-main.tiny .ux-search-box {
-	width: 39px;
-	padding-right: 3px;
-	transition:width 20s ease;
-	-moz-transition:width 20s ease;
-	-webkit-transition:width 20s ease;
-	-o-transition:width 20s ease;
-	-ms-transition:width 20s ease;
-}
-
-#ux-main.skinny .ux-search-box:focus,
-#ux-main.tiny .ux-search-box:focus {
-	width: 85%;
-	margin-right: 1px;
+	margin: 15px 10px 0 0;
 }
 
 .ie #ux-main.skinny .ux-search-box {
 	width: 75%;
 }
+
+
+/* Department Header (Tiny)
+-----------------------------------------------------*/
+
+#ux-main.tiny {
+	height: 32px;
+}
+
+#ux-main.tiny h1 a {
+	background-position: 0 -112px;
+}
+
+#ux-main.tiny #ux-app-name {
+	font-size: 16px;
+	margin: 7px 0 0 0;
+	width: 35%;
+}
+
+#ux-main.tiny #ux-global-menu {
+	margin: 9px 0 0 0; 
+}
+
+#ux-main.tiny #ux-site-search {
+	margin: 7px 5px 0 0; 
+}
+
 
 
 /* Global Navigation

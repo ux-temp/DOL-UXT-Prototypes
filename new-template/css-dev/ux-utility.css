@@ -20,7 +20,7 @@
 
 /* Hide text but still make it accessible for screen readers */
 .ux-hide-508 {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE7 fix */
-  clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE7 fix */
+	clip: rect(1px, 1px, 1px, 1px);
 }
