@@ -1,9 +1,42 @@
 /* Smart Phones */
-@media handheld, only screen and (min-width: 320px) and (max-width: 599px) {
+@media handheld, only screen and (min-width: 200px) and (max-width: 599px) {
 
 	.fluid #page-wrap, .fluid #ux .content {
 		height: auto;
-		max-width: 320px
+		width: 100%;
+	}
+
+	/* Grid System
+	------------------------------------------------------- */
+
+	.fluid .container_12 [class*="suffix_"],
+	.fluid .container_16 [class*="suffix_"],
+	.fluid .container_24 [class*="suffix_"] {
+		padding-right: 0;
+	}
+
+	.fluid .container_12 [class*="grid_"],
+	.fluid .container_16 [class*="grid_"],
+	.fluid .container_24 [class*="grid_"] {
+		display: block;
+		float: none;
+		width: auto;
+		margin: 0 5%;
+	}
+
+	.fluid .container_12 [class*="prefix_"],
+	.fluid .container_16 [class*="prefix_"],
+	.fluid .container_24 [class*="prefix_"] {
+		padding-left: 0;
+	}
+
+	.fluid .container_12 [class*="push_"],
+	.fluid .container_16 [class*="push_"],
+	.fluid .container_24 [class*="push_"],
+	.fluid .container_12 [class*="pull_"],
+	.fluid .container_16 [class*="pull_"],
+	.fluid .container_24 [class*="pull_"] {
+		left: 0;
 	}
 
 	/* Fluid Header
@@ -32,7 +65,7 @@
 	.fluid #gov-bar .gb-img,
 	.fluid #gov-bar #gov-search-form,
 	.fluid #ux-global-menu,
-	.fluid #ux-global-menu  {
+	.fluid #ux-global-menu li {
 		background: none;
 		float: none;
 		text-align: center;
@@ -112,53 +145,55 @@
 
 @media handheld, only screen and (min-width: 600px) {
 
+	/* Force Users to use tiny header here and no title
+	---------------------------------------------------- */
+
 	.fluid #page-wrap, .fluid #ux .content {
-		width: 100%;
+		width: 600px;
 	}
 
-	
-
-	.fluid .container_12 [class*="suffix_"],
-	.fluid .container_16 [class*="suffix_"],
-	.fluid .container_24 [class*="suffix_"] {
-		padding-right: 0;
+	.fluid #ux-main {
+		height: 32px;
 	}
 
-	.fluid .container_12 [class*="grid_"],
-	.fluid .container_16 [class*="grid_"],
-	.fluid .container_24 [class*="grid_"] {
-		display: block;
-		float: none;
-		width: auto;
-		margin: 0 5%;
+	.fluid #ux-main h1 a {
+		background-position: 0 -112px;
 	}
 
-	.fluid .container_12 [class*="prefix_"],
-	.fluid .container_16 [class*="prefix_"],
-	.fluid .container_24 [class*="prefix_"] {
-		padding-left: 0;
+	.fluid #ux-app-name {
+		display: none;
 	}
 
-	.fluid .container_12 [class*="push_"],
-	.fluid .container_16 [class*="push_"],
-	.fluid .container_24 [class*="push_"],
-	.fluid .container_12 [class*="pull_"],
-	.fluid .container_16 [class*="pull_"],
-	.fluid .container_24 [class*="pull_"] {
-		left: 0;
+	.fluid #ux-global-menu {
+		margin-top: 10px;
 	}
-}
 
+	.fluid #ux-site-search {
+		margin-top: 7px;
+	}
 
-@media screen and (min-width: 600px) {
+	body {
+		background: #000;
+	}
 
 }
 
 @media screen and (min-width: 768px) {
 
+	.fluid #page-wrap, .fluid #ux .content {
+		width: 768px;
+	}
+
+	body {
+		background: red;
+	}
+
 }
 
 @media screen and (min-width: 960px) {
 
+	.fluid #page-wrap, .fluid #ux .content {
+		width: 960px;
+	}
 	
 }
