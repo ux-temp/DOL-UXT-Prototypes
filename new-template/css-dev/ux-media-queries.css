@@ -1,9 +1,9 @@
 /* Smart Phones */
-@media handheld, only screen and (max-width: 600px) {
+@media handheld, only screen and (min-width: 320px) {
 
 	.fluid #page-wrap, .fluid #ux .content {
 		height: auto;
-		width: 100%;
+		max-width: 320px
 	}
 
 	/* Fluid Header
