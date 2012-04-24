@@ -1,5 +1,5 @@
 /* Smart Phones */
-@media handheld, only screen and (min-width: 320px) {
+@media handheld, only screen and (min-width: 320px) and (max-width: 599px) {
 
 	.fluid #page-wrap, .fluid #ux .content {
 		height: auto;
@@ -29,18 +29,20 @@
 		height: auto;
 	}
 
+	.fluid #gov-bar .gb-img,
+	.fluid #gov-bar #gov-search-form,
+	.fluid #ux-global-menu,
+	.fluid #ux-global-menu  {
+		background: none;
+		float: none;
+		text-align: center;
+	}
+
 	/* Govoner Banner
 	--------------------- */
 
 	.fluid #gov-bar {
 		padding-top: 20px;
-	}
-
-	.fluid #gov-bar .gb-img,
-	.fluid #gov-bar #gov-search-form  {
-		background: none;
-		float: none;
-		text-align: center;
 	}
 
 
@@ -49,7 +51,6 @@
 
 	.fluid #ux-main h1 a {
 		background: none;
-		display: block;
 		font-size: 16px;
 		width: 100%;
 	}
@@ -58,12 +59,6 @@
 		font-size: 14px;
 		width:100%;
 		margin: 5px 0;
-		text-align: center;
-	}
-
-	.fluid #ux-global-menu,
-	.fluid #ux-global-menu li {
-		float: none;
 		text-align: center;
 	}
 
@@ -117,13 +112,11 @@
 
 @media handheld, only screen and (min-width: 600px) {
 
-	.fluid #gov-bar {
-		background: green;
-	}
-
-	.fluid #page-wrap {
+	.fluid #page-wrap, .fluid #ux .content {
 		width: 100%;
 	}
+
+	
 
 	.fluid .container_12 [class*="suffix_"],
 	.fluid .container_16 [class*="suffix_"],
