@@ -1,7 +1,11 @@
 #ux-global-menu .icon {
 	background: url(../images/icons/16x16-icons.png) no-repeat 0 0 transparent;
 	display: inline-block;
-	padding-left: 20px;
+	padding: 0 10px 0 20px;
+}
+
+#ux-global-menu li:last-child .icon {
+	padding: 0 5px 0 20px;
 }
 
 #ux-global-menu .icon span {

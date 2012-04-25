@@ -1,181 +1,138 @@
-/* Header Shared Styles
------------------------------------------------------*/
-
-header, #ux-global-menu a {
+header a, header a:link, header a:visited {
 	color: #FFF;
-}
-
-header .ux-content {
-	height: 28px;
-}
-
-
-/* Govoner Banner
------------------------------------------------------*/
-#gov-bar {
-	background-color: #036;
-}
-
-.gb-img {
-	background: url(../images/nys-banner-img.png);
-	display: block;
-	float: left;
-	height: 28px;
-	width: 197px;
-}
-
-.img2 {
-	background-position: 0 -28px;
-	width: 134px;
-}
-
-.img3 {
-	background-position: 0 -56px;
-	float: right;
-	width: 159px;
-}
-
-
-#gov-search-form {
-	float: right;
-	display: none;
-	margin-top: 4px;
-}
-
-#gov-search-form .search-button {
-	border: none;
-}
-
-/* Department Header (Large)
------------------------------------------------------*/
-#ux-main {
-	background-color: #771C2D;
-	height: 64px;
-	overflow: hidden;
-}
-
-#ux-main h1 a {
-	background: url(../images/dol-header-sprite.png) no-repeat 0 0 transparent;
-	display: block;
-	float: left;
-	height: 64px;
-	width: 150px;
-}
-
-#ux-app-name {
-	float: left;
-	font-size: 28px;
-	font-weight: bold;
-	text-shadow: 1px 1px 2px #000;
-	margin-left: 20px;
-	margin-top: 12px;
-	width: 50%;
-}
-
-#ux-global-menu  {
-	list-style: none;
-	float: right;
-	margin-top: 12px;
-}
-
-#ux-global-menu li {
-	float: left;
-	padding: 0 5px;
-}
-
-#ux-global-menu a {
 	text-decoration: none;
 }
 
-#ux-site-search {
-	float: right;
-	margin-top: 5px;
+/* Govoner Banner
+----------------------------------- */
+
+#gov-bar, #gov-bar .ux-content {
+	background: #036;
+	height: 28px;
 }
 
+.gov-img {
+	background: url(../images/nys-banner-img.png) no-repeat 0 0 transparent;
+	display: inline-block;
+	height: 28px;
+}
+
+#gov-link1, #gov-link2 {
+	float: left;
+}
+
+#gov-link1 {
+	width: 197px;
+}
+
+#gov-link2 {
+	background-position: 0 -28px;
+	width: 145px;
+}
+
+#gov-link3 {
+	background-position: 0 -56px;
+	float: right;
+	width: 150px;
+}
+
+/* Govoner Search 
+----------------------- */
+#gov-search-form {
+	display: none;
+	float: right;
+	margin-top: 4px;
+	padding-right: 5px;
+}
+
+#gov-search-wrap,
 #ux-search-wrap {
 	background: #FFF;
-	border-radius: 8px;
+	border-radius: 7px;
 	display: inline-block;
+	height: 20px;
 	padding: 0 7px;
-	margin-right: 7px;
 }
 
-.ux-search-box {
+#gov-search-box,
+#ux-search-box {
 	border: 0;
-	padding: 2px 0;
+	float: left;
+	font-size: 12px;
+	margin: 3px 0 0 0;
+	padding: 0;
+	width: 84%;
 }
 
-.ux-search-button {
-	background: url(../images/icons/magnifier_disabled.png) no-repeat 0 0 transparent;
+#gov-search-button,
+#ux-search-button {
+	background: url(../images/icons/magnifier_disabled.png) no-repeat 0 2px transparent;
 	border: 0;
+	float: right;
 	height: 16px;
 	text-indent: -9999px;
-	width: 16px;
+	width: 16px
 }
 
-.ie7 .ux-search-button {
+.ie #gov-search-wrap,
+.ie #ux-search-wrap {
+	width: 175px;
+}
+.ie #gov-search-box,
+.ie #ux-search-box {
+	width: 150px;
+}
+
+.ie7 #gov-search-button,
+.ie7 #ux-search-button {
 	display: inline-block;
 	line-height: 99px;
 }
 
-/* Department Header (Skinny)
------------------------------------------------------*/
-#ux-main.skinny {
+
+/* Department Header
+----------------------- */
+
+#ux-main, #ux-main .ux-content {
+	background: #771C2D;;
 	height: 48px;
 }
 
-#ux-main.skinny h1 a {
-	background-position: 0 -64px;
+#ux-logo a {
+	background: url(../images/dol-header-sprite.png) no-repeat 0 -64px transparent;
+	display: block;
+	float: left;
+	height: 48px;
+	width: 125px;
 }
 
-.skinny #ux-app-name {
+#ux-app-name {
+	color: #FFF;
+	float: left;
 	font-size: 20px;
-	margin-left: 5px;
-	width: 35%;
+	margin: 10px 0 0 20px;
+	text-shadow: 1px 1px 2px #000;
 }
 
-.skinny #ux-global-menu {
-	margin-top: 17px;
+/* Department Global Menu
+-------------------------- */
+
+#ux-global-menu {
+	float: right;
+	list-style: none;
+	margin: 18px 0 5px 15px;
 }
 
-.skinny #ux-site-search {
-	margin: 15px 10px 0 0;
+#ux-global-menu li {
+	display: inline;	
 }
 
-.ie .skinny .ux-search-box {
-	width: 75%;
-}
+/* Department Site Search
+-------------------------- */
 
-
-/* Department Header (Tiny)
------------------------------------------------------*/
-
-#ux-main.tiny {
-	height: 32px;
-}
-
-#ux-main.tiny h1 a {
-	background-position: 0 -112px;
-}
-
-.tiny #ux-app-name {
-	font-size: 16px;
-	margin: 7px 0 0 0;
-	width: 35%;
-}
-
-.tiny #ux-global-menu {
-	margin: 9px 0 0 0; 
-}
-
-.tiny #ux-site-search {
-	margin: 7px 5px 0 0; 
+#ux-site-search {
+	float: right;
+	margin: 15px 0;
 }
 
 
-
-/* Global Navigation
------------------------------------------------------*/
-#ux-global {
-	background-color: #696969;
-}

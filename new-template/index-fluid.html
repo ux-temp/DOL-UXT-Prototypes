@@ -10,9 +10,6 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="css-dev/style.css" />
 		<link rel="stylesheet" type="text/css" media="print" href="css-dev/ux-print.css" />
 
-		<meta name="viewport" ux-content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-
 		<!-- Modernizer support -->
 		<script src="js-dev/modernizr.js"></script>
 	</head>
@@ -25,26 +22,27 @@
 	<!--<![endif]-->
 		<a tabindex="1" href="#" id="skipNav" class="skipto ux-hide-508">Skip to Navigation</a>
 		<a tabindex="1" href="#" id="skipContent" class="skipto ux-hide-508">Skip to Content</a>
+
 		<header id="ux">
 			<div id="gov-bar">
 				<div class="ux-content">
 					<div id="gov-links">
-						<a href="#" class="gb-img img1">
+						<a href="#" id="gov-link1" class="gov-img">
 							<span class="ux-hide-508">New York State Home</span>
 						</a>
-						<a href="#" class="gb-img img2">
-							<span class="ux-hide-508">State Agencies List</span>
+						<a href="#" id="gov-link2" class="gov-img">
+							<span class="ux-hide-508">Stage Agencies List</span>
 						</a>
 					</div>
 					<div id="gov-search">
-						<a href="#" class="gb-img img3" id="gov-search-img">
-							<span class="ux-hide-508">Search New York State</span>
+						<a href="#" id="gov-link3" class="gov-img">
+							<span class="ux-hide-508">Search all of New York State</span>
 						</a>
 						<form method="get" id="gov-search-form" action="http://search.cio.ny.gov/" target="_blank">
 							<span id="gov-search-wrap">
 								<label for="gov-search-box" class="ux-hide-508">Search all of New York State</label>
-								<input type="text" title="Search" id="gov-search-box" class="search-box" maxlength="256" name="q" size="15" />
-								<input type="submit" value="Search NY.GOV" class="search-button" />
+								<input type="text" title="Search" id="gov-search-box" class="search-box" maxlength="256" name="q" size="15" placeholder="Search NY.Gov" />
+								<input type="submit" value="Search NY.GOV" id="gov-search-button" />
 							</span>
 							<input type="hidden" name="sort" value="date:D:L:d1" />
 							<input type="hidden" name="output" value="xml_no_dtd" />
@@ -57,33 +55,35 @@
 					</div>
 				</div>
 			</div>
-			<div id="ux-main" class="tiny">
+			<div id="ux-main">
 				<div class="ux-content">
-					<h1>
-						<a href="#" id="ux-logo">
-							<span class="ux-hide-508">New York State Deparment of Labor</span>
+					<h1 id="ux-logo">
+						<a href="#">
+							<span class="ux-hide-508">
+								New York State Department of Labor
+							</span>
 						</a>
 					</h1>
 					<span id="ux-app-name">
 						User Experience Template v.0.5.0
 					</span>
 					<ul id="ux-global-menu">
-						<li class="dropdown">
+						<li>
 							<a href="#" class="icon person">
 								<span>Sign in</span>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="icon index">
-								<span>A-Z Index</span>
+								A-Z Index
 							</a>
-						</li>
+						</li>					
 					</ul>
 					<form method="get" id="ux-site-search" action="http://search.cio.ny.gov" target="_blank" >
 						<span id="ux-search-wrap">
 							<label for="q" class="ux-hide-508">Search Department of Labor:</label>
-							<input type="text" class="ux-search-box" accesskey="s" id="q" name="q" placeholder="Search DOL" />
-							<input type="submit" value="Search" class="ux-search-button" />
+							<input type="text" id="ux-search-box" accesskey="s" id="q" name="q" placeholder="Search DOL" />
+							<input type="submit" value="Search" id="ux-search-button" />
 						</span>
 						<input type="hidden" name="entqr" value="0" />
 						<input type="hidden" name="ud" value="1" />
@@ -94,13 +94,9 @@
 						<input type="hidden" name="client" value="labor_frontend" />
 						<input type="hidden" name="proxystylesheet" value="labor_frontend" />
 						<input type="hidden" name="site" value="labor_collection" />
-					</form>						
+					</form>	
 				</div>
 			</div>
-			<nav id="ux-global">
-				<div class="ux-content">
-				</div>
-			</nav>
 		</header>
 
 		<div id="ux-body">
