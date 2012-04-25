@@ -128,21 +128,21 @@ header .content {
 	background-position: 0 -64px;
 }
 
-#ux-main.skinny #ux-app-name {
+.skinny #ux-app-name {
 	font-size: 20px;
 	margin-left: 5px;
 	width: 35%;
 }
 
-#ux-main.skinny #ux-global-menu {
+.skinny #ux-global-menu {
 	margin-top: 17px;
 }
 
-#ux-main.skinny #ux-site-search {
+.skinny #ux-site-search {
 	margin: 15px 10px 0 0;
 }
 
-.ie #ux-main.skinny .ux-search-box {
+.ie .skinny .ux-search-box {
 	width: 75%;
 }
 
@@ -158,17 +158,17 @@ header .content {
 	background-position: 0 -112px;
 }
 
-#ux-main.tiny #ux-app-name {
+.tiny #ux-app-name {
 	font-size: 16px;
 	margin: 7px 0 0 0;
 	width: 35%;
 }
 
-#ux-main.tiny #ux-global-menu {
+.tiny #ux-global-menu {
 	margin: 9px 0 0 0; 
 }
 
-#ux-main.tiny #ux-site-search {
+.tiny #ux-site-search {
 	margin: 7px 5px 0 0; 
 }
 

@@ -74,8 +74,17 @@
 	/* Govoner Banner
 	--------------------- */
 
-	.fluid #gov-bar {
-		padding-top: 20px;
+	.fluid #gov-bar .img1 {
+		float: left;
+	}
+
+	.fluid #gov-bar .img2 {
+		float: right;
+	}
+
+	.fluid #gov-search-form {
+		margin: 0;
+		padding: 0 0 5px 0;
 	}
 
 
@@ -89,10 +98,7 @@
 	}
 
 	.fluid #ux-app-name {
-		font-size: 14px;
-		width:100%;
-		margin: 5px 0;
-		text-align: center;
+		display: none;
 	}
 
 	.fluid #ux-global-menu {
@@ -126,19 +132,6 @@
 
 	.fluid #ux-global {
 		display: none;
-	}
-
-	/* Misu Header
-	---------------- */
-
-	.fluid #skipNav {
-		float: left;
-		padding-left: 5px;
-	}
-
-	.fluid #skipContent {
-		float: right;
-		padding-right: 5px;
 	}
 
 }
@@ -184,6 +177,27 @@
 		width: 768px;
 	}
 
+	.fluid #ux-main {
+		height: 48px;
+	}
+
+	.fluid #ux-main h1 a {
+		background-position: 0 -64px;
+	}
+
+	.fluid #ux-app-name {
+		display: none;
+	}
+
+	#ux-main #ux-global-menu {
+		margin-top: 17px;
+	}
+
+	#ux-main.skinny #ux-site-search {
+		margin: 15px 10px 0 0;
+	}
+
+
 	body {
 		background: red;
 	}
@@ -194,6 +208,10 @@
 
 	.fluid #page-wrap, .fluid #ux .content {
 		width: 960px;
+	}
+
+	body {
+		background: #FFF;
 	}
 	
 }

@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Dynatree Example | User Experience (UX) Guide</title>
+
+				<link rel="shortcut icon" href="http://labor.ny.gov/css/apps/v.0.4.3/favicon.ico" type="image/x-icon">
+				<link rel="stylesheet" type="text/css" href="http://labor.ny.gov/css/apps/v.0.4.3/css/ux-style.min.css" >	
+				<script src="http://labor.ny.gov/css/apps/v.0.4.3/js/modernizr.min.js"></script>
+		
+			<!-- Additional <head> items below this line -->
+
+	</head>
+
+	<!--[if lt IE 7 ]> <body class=" ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <body class=" ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <body class=" ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <body class=" ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!--> 
+	<body class=" " >
+	<!--<![endif]-->
+
+		<div id="dol-skip-navigation">
+			<a tabindex="1" id="skip-to-content" href="#content-anchor" class="ux-no-block">Skip to Content</a>	
+			<a tabindex="2" 
+							id="skip-to-nav" href="#navigation-anchor"
+			 class="ux-no-block" >Skip to Navigation</a>
+		</div>
+			
+		<div id="ux-notification-container">
+			<div class="ux-content-wrapper">
+				<div id="ux-action-required-notifications" class="ux-notice-outer">
+						<div class="arn-tray ux-notice-inner">
+						</div>
+				</div>
+				<div id="ux-generic-notifications">
+				</div>
+			</div>
+		</div>
+		
+		<div id="gov-banner-outer" class="container_16">
+			<div id="gov-banner-inner">
+				<a href="http://www.ny.gov/"><img id="nys-image" src="http://labor.ny.gov/css/apps/v.0.4.3/images/banner_img1.png" alt="NY.gov Portal" /></a>
+				<a href="http://www.nysegov.com/citGuide.cfm?superCat=102&cat=449&content=main"><img id="nys-agency-listing" src="http://labor.ny.gov/css/apps/v.0.4.3/images/banner_img2.png" alt="State Agency Listing" /></a>
+				<!-- search graphic-->
+				<a onclick="document.getElementById('sw_searchbox').style.visibility= 'visible'; document.getElementById('searchgraphic').style.visibility= 'hidden';" href="#">
+				<img alt="Search all of NY.gov" src="http://labor.ny.gov/css/apps/v.0.4.3/images/banner_img3.png" style="float: right; border: medium none; visibility: hidden;" id="searchgraphic"></a>
+				<!--state wide search box-->
+				<form method="get" action="http://search.cio.ny.gov/" style="float: right; position: relative; top: 2px; left: 155px; visibility: visible;" id="sw_searchbox" target="_blank">
+					<p>
+						<input type="hidden" name="sort" value="date:D:L:d1" />
+						<input type="hidden" name="output" value="xml_no_dtd" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="hidden" name="oe" value="UTF-8" />
+						<input type="hidden" name="client" value="default_frontend" />
+						<input type="hidden" name="proxystylesheet" value="default_frontend" />
+						<input type="hidden" name="site" value="default_collection" />
+						<label for="searchbox"><input type="text" title="Search" id="searchbox" maxlength="256" name="q" size="15" style="position: relative; top: -10px; cursor: pointer;" /></label>
+						<label for="searchbutton"><input type="submit" value="Search NY.GOV" id="searchbutton" style="position: relative; width: 110px; top: -10px;" /></label>
+					</p>
+				</form>
+			<!--end wide search box-->
+				<script type="text/javascript">
+					// If JavaScript is on, manipulate search control objects.  
+					// Otherwise this will be ignored and search controls will be shown by default
+					document.getElementById('sw_searchbox').style.visibility = 'hidden';
+					document.getElementById('searchgraphic').style.visibility= 'visible';         
+				</script> 
+			</div>
+		</div>
+		<div id="dol-header" class="container_16">
+			<h1 id="dol-header-nys-labor">
+				<a href="http://www.labor.ny.gov" class="accessibility-text">New York State Department of Labor</a>
+				<span id="dol-header-application">Dynatree Example </span>
+			</h1>
+			
+						
+			<div id="site-wide-search">
+				<form name="_ipsubmit" id="search-box-form" method="get" action="http://search.cio.ny.gov" autocomplete="off" target="_blank" >
+					<label for="q" id="search-label" class="accessibility-text">Search Department of Labor:</label>
+					<input type="text" id="q" name="q" value="" size="21" title="Input Search" class="text_box site-wide-search-text-box" placeholder="Search DOL" autocomplete="off" />
+					<input type="submit" title="Submit Search" value="GO" name="submit" class="submit site-wide-search-button accessibility-text" id="search-submit" />
+					<input type="hidden" name="entqr" value="0" />
+					<input type="hidden" name="ud" value="1" />
+					<input type="hidden" name="sort" value="date:D:L:d1" />
+					<input type="hidden" name="output" value="xml_no_dtd" />
+					<input type="hidden" name="oe" value="UTF-8" />
+					<input type="hidden" name="ie" value="UTF-8" />
+					<input type="hidden" name="client" value="labor_frontend" />
+					<input type="hidden" name="proxystylesheet" value="labor_frontend" />
+					<input type="hidden" name="site" value="labor_collection" />
+				</form>
+			</div>
+			
+			
+		 	<div id="header-mega-menu">
+		   		<div id="mega-menu">
+		   			<a name="mega-menu-anchor" id="mega-menu-anchor" tabindex="-1"></a>
+		   			<ul id="menu">
+		   			</ul>
+		   		</div>
+			</div>
+		</div>	<!-- Mega menu entry below this line if needed -->
+
+		<div id="page-wrap" class="group">
+			<div id="content" class="container_16 group">
+				<noscript>
+					<div class="grid_16">
+						<div class="ux-msg warning">
+							<ul>
+								<li><strong>Javascript is currently disabled or restricted on your computer. </strong> Certain functionalities of this application may be limited. </li>
+							</ul>
+						</div>
+					</div>
+				</noscript>
+				<a name="navigation-anchor" id="navigation-anchor" tabindex="-1"></a>
+				<div id="dol-content-navigation" class="grid_4">
+										
+					<div id="navigation-vertical">
+						<ul>
+							<li>
+								<a href="#">Nav goes here</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			   	<a name="content-anchor" id="content-anchor" tabindex="-1"></a>		
+				<div class="grid_12 ux-content-grid ">
+					<div id="page-info">
+						<ul class="dol-breadcrumbs group">
+							<li class="home breadcrumb-external"><a href="http://www.labor.ny.gov">Home</a></li>
+					        <li>Dynatree Example</li>
+						</ul>
+					</div>
+					<h2>Dynatree Example</h2>	
+					<!-- ============================================================= -->
+					<!-- =================== CONTENT STARTS HERE ===================== -->
+					<!-- ============================================================= -->
+
+                    <div class="grid_12 alpha omega">
+                        <div class="dol-container">
+                            <h3>NAICS Industry</h3>
+                                <div id="naicsTree">
+                                </div>
+                        </div>
+                        <!-- end .dol-container -->
+                    </div>
+                    <div class="grid_12 alpha omega">
+                        <div class="dol-container">
+                            <h3>SOC Occupation</h3>
+                                <div id="socTree">
+                                </div>
+                        </div>
+                        <!-- end .dol-container -->
+                    </div>
+
+					<!-- ============================================================= -->
+					<!-- =================== CONTENT ENDS HERE ======================= -->
+					<!-- ============================================================= -->
+
+				</div>
+			</div>
+		</div>	 
+
+		<div id="dol-footer">
+			<div id="dol-footer-inner" class="container_12">
+				<div id="dol-footer-wrapper">
+					<!-- begin global footer area -->
+						<ul id="global-footer-menu">
+							<li><a href="http://labor.ny.gov/secure/contact/" target="_blank">Contact Us</a></li>
+							<li><a href="http://www.labor.ny.gov/agencyinfo/accessibility.shtm" target="_blank">Accessibility Policy</a></li>
+							<li><a href="http://labor.ny.gov/privacy.shtm" target="_blank">Privacy Policy</a></li>
+							<li><a href="http://labor.ny.gov/utilities/document-readers.shtm" target="_blank">Document Readers</a></li>
+						</ul>
+					<!-- end global footer area -->
+				</div>
+			</div>
+		</div> <!-- end #footer -->
+
+						<script type="text/javascript" src="http://labor.ny.gov/css/apps/v.0.4.3/js/ux-script.min.js"></script>
+
+			<!-- Additional scripts below this line -->
+
+	<!-- Additional scripts items below this line -->
+<script>
+        $(document).ready(function () {
+            ux.load(["jqueryTabs","dataTables"]);
+        });
+    </script>
+
+    <!-- Dynatree data and additional script -->
+    <script type="text/javascript">
+      var naicsData = [
+
+{ title: "Agriculture, Forestry, Fishing and Hunting", key: "11",
+    children: [
+{ title: "Crop Production", key: "111",
+    children: [
+{ title: "Oilseed and Grain Farming", key: "1111" },
+{ title: "Vegetable and Melon Farming", key: "1112" },
+{ title: "Fruit and Tree Nut Farming", key: "1113" },
+{ title: "Greenhouse, Nursery, and Floriculture Production", key: "1114" },
+{ title: "Other Crop Farming", key: "1119" }
+]
+},
+{ title: "Animal Production", key: "112",
+    children: [
+{ title: "Cattle Ranching and Farming", key: "1121" },
+{ title: "Hog and Pig Farming", key: "1122" },
+{ title: "Poultry and Egg Production", key: "1123" },
+{ title: "Sheep and Goat Farming", key: "1124" },
+{ title: "Aquaculture", key: "1125" },
+{ title: "Other Animal Production", key: "1129" }
+]
+},
+{ title: "Forestry and Logging", key: "113",
+    children: [
+{ title: "Timber Tract Operations", key: "1131" },
+{ title: "Forest Nurseries and Gathering of Forest Products", key: "1132" },
+{ title: "Logging", key: "1133" }
+]
+},
+{ title: "Fishing, Hunting and Trapping", key: "114",
+    children: [
+{ title: "Fishing", key: "1141" },
+{ title: "Hunting and Trapping", key: "1142" }
+]
+},
+{ title: "Support Activities for Agriculture and Forestry", key: "115",
+    children: [
+{ title: "Support Activities for Crop Production", key: "1151" },
+{ title: "Support Activities for Animal Production", key: "1152" },
+{ title: "Support Activities for Forestry", key: "1153" }
+]
+}
+]
+},
+{ title: "Mining, Quarrying, and Oil and Gas Extraction", key: "21",
+    children: [
+{ title: "Oil and Gas Extraction", key: "211",
+    children: [
+{ title: "Oil and Gas Extraction", key: "2111" }
+]
+},
+{ title: "Mining (except Oil and Gas)", key: "212",
+    children: [
+{ title: "Coal Mining", key: "2121" },
+{ title: "Metal Ore Mining", key: "2122" },
+{ title: "Nonmetallic Mineral Mining and Quarrying", key: "2123" }
+]
+},
+{ title: "Support Activities for Mining", key: "213",
+    children: [
+{ title: "Support Activities for Mining", key: "2131" }
+]
+}
+]
+},
+{ title: "Utilities", key: "22",
+    children: [
+{ title: "Utilities", key: "221",
+    children: [
+{ title: "Electric Power Generation, Transmission and Distribution", key: "2211" },
+{ title: "Natural Gas Distribution", key: "2212" },
+{ title: "Water, Sewage and Other Systems", key: "2213" }
+]
+}
+]
+},
+{ title: "Construction", key: "23",
+    children: [
+{ title: "Construction of Buildings", key: "236",
+    children: [
+{ title: "Residential Building Construction", key: "2361" },
+{ title: "Nonresidential Building Construction", key: "2362" }
+]
+},
+{ title: "Heavy and Civil Engineering Construction", key: "237",
+    children: [
+{ title: "Utility System Construction", key: "2371" },
+{ title: "Land Subdivision", key: "2372" },
+{ title: "Highway, Street, and Bridge Construction", key: "2373" },
+{ title: "Other Heavy and Civil Engineering Construction", key: "2379" }
+]
+},
+{ title: "Specialty Trade Contractors", key: "238",
+    children: [
+{ title: "Foundation, Structure, and Building Exterior Contractors", key: "2381" },
+{ title: "Building Equipment Contractors", key: "2382" },
+{ title: "Building Finishing Contractors", key: "2383" },
+{ title: "Other Specialty Trade Contractors", key: "2389" }
+]
+},
+{ title: "Food Manufacturing", key: "311",
+    children: [
+{ title: "Animal Food Manufacturing", key: "3111" },
+{ title: "Grain and Oilseed Milling", key: "3112" },
+{ title: "Sugar and Confectionery Product Manufacturing", key: "3113" },
+{ title: "Fruit and Vegetable Preserving and Specialty Food Manufacturing", key: "3114" },
+{ title: "Dairy Product Manufacturing", key: "3115" },
+{ title: "Animal Slaughtering and Processing", key: "3116" },
+{ title: "Seafood Product Preparation and Packaging", key: "3117" },
+{ title: "Bakeries and Tortilla Manufacturing", key: "3118" },
+{ title: "Other Food Manufacturing", key: "3119" }
+]
+},
+{ title: "Beverage and Tobacco Product Manufacturing", key: "312",
+    children: [
+{ title: "Beverage Manufacturing", key: "3121" },
+{ title: "Tobacco Manufacturing", key: "3122" }
+]
+},
+{ title: "Textile Mills", key: "313",
+    children: [
+{ title: "Fiber, Yarn, and Thread Mills", key: "3131" },
+{ title: "Fabric Mills", key: "3132" },
+{ title: "Textile and Fabric Finishing and Fabric Coating Mills", key: "3133" }
+]
+},
+{ title: "Textile Product Mills", key: "314",
+    children: [
+{ title: "Textile Furnishings Mills", key: "3141" },
+{ title: "Other Textile Product Mills", key: "3149" }
+]
+},
+{ title: "Apparel Manufacturing", key: "315",
+    children: [
+{ title: "Apparel Knitting Mills", key: "3151" },
+{ title: "Cut and Sew Apparel Manufacturing", key: "3152" },
+{ title: "Apparel Accessories and Other Apparel Manufacturing", key: "3159" }
+]
+},
+{ title: "Leather and Allied Product Manufacturing", key: "316",
+    children: [
+{ title: "Leather and Hide Tanning and Finishing", key: "3161" },
+{ title: "Footwear Manufacturing", key: "3162" },
+{ title: "Other Leather and Allied Product Manufacturing", key: "3169" }
+]
+},
+{ title: "Wood Product Manufacturing", key: "321",
+    children: [
+{ title: "Sawmills and Wood Preservation", key: "3211" },
+{ title: "Veneer, Plywood, and Engineered Wood Product Manufacturing", key: "3212" },
+{ title: "Other Wood Product Manufacturing", key: "3219" }
+]
+},
+{ title: "Paper Manufacturing", key: "322",
+    children: [
+{ title: "Pulp, Paper, and Paperboard Mills", key: "3221" },
+{ title: "Converted Paper Product Manufacturing", key: "3222" }
+]
+},
+{ title: "Printing and Related Support Activities", key: "323",
+    children: [
+{ title: "Printing and Related Support Activities", key: "3231" }
+]
+},
+{ title: "Petroleum and Coal Products Manufacturing", key: "324",
+    children: [
+{ title: "Petroleum and Coal Products Manufacturing", key: "3241" }
+]
+},
+{ title: "Chemical Manufacturing", key: "325",
+    children: [
+{ title: "Basic Chemical Manufacturing", key: "3251" },
+{ title: "Resin, Synthetic Rubber, and Artificial Synthetic Fibers and Filaments Manufacturing", key: "3252" },
+{ title: "Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing", key: "3253" },
+{ title: "Pharmaceutical and Medicine Manufacturing", key: "3254" },
+{ title: "Paint, Coating, and Adhesive Manufacturing", key: "3255" },
+{ title: "Soap, Cleaning Compound, and Toilet Preparation Manufacturing", key: "3256" },
+{ title: "Other Chemical Product and Preparation Manufacturing", key: "3259" }
+]
+},
+{ title: "Plastics and Rubber Products Manufacturing", key: "326",
+    children: [
+{ title: "Plastics Product Manufacturing", key: "3261" },
+{ title: "Rubber Product Manufacturing", key: "3262" }
+]
+},
+{ title: "Nonmetallic Mineral Product Manufacturing", key: "327",
+    children: [
+{ title: "Clay Product and Refractory Manufacturing", key: "3271" },
+{ title: "Glass and Glass Product Manufacturing", key: "3272" },
+{ title: "Cement and Concrete Product Manufacturing", key: "3273" },
+{ title: "Lime and Gypsum Product Manufacturing", key: "3274" },
+{ title: "Other Nonmetallic Mineral Product Manufacturing", key: "3279" }
+]
+},
+{ title: "Primary Metal Manufacturing", key: "331",
+    children: [
+{ title: "Iron and Steel Mills and Ferroalloy Manufacturing", key: "3311" },
+{ title: "Steel Product Manufacturing from Purchased Steel", key: "3312" },
+{ title: "Alumina and Aluminum Production and Processing", key: "3313" },
+{ title: "Nonferrous Metal (except Aluminum) Production and Processing", key: "3314" },
+{ title: "Foundries", key: "3315" }
+]
+},
+{ title: "Fabricated Metal Product Manufacturing", key: "332",
+    children: [
+{ title: "Forging and Stamping", key: "3321" },
+{ title: "Cutlery and Handtool Manufacturing", key: "3322" },
+{ title: "Architectural and Structural Metals Manufacturing", key: "3323" },
+{ title: "Boiler, Tank, and Shipping Container Manufacturing", key: "3324" },
+{ title: "Hardware Manufacturing", key: "3325" },
+{ title: "Spring and Wire Product Manufacturing", key: "3326" },
+{ title: "Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing", key: "3327" },
+{ title: "Coating, Engraving, Heat Treating, and Allied Activities", key: "3328" },
+{ title: "Other Fabricated Metal Product Manufacturing", key: "3329" }
+]
+},
+{ title: "Machinery Manufacturing", key: "333",
+    children: [
+{ title: "Agriculture, Construction, and Mining Machinery Manufacturing", key: "3331" },
+{ title: "Industrial Machinery Manufacturing", key: "3332" },
+{ title: "Commercial and Service Industry Machinery Manufacturing", key: "3333" },
+{ title: "Ventilation, Heating, Air-Conditioning, and Commercial Refrigeration Equipment Manufacturing", key: "3334" },
+{ title: "Metalworking Machinery Manufacturing", key: "3335" },
+{ title: "Engine, Turbine, and Power Transmission Equipment Manufacturing", key: "3336" },
+{ title: "Other General Purpose Machinery Manufacturing", key: "3339" }
+]
+},
+{ title: "Computer and Electronic Product Manufacturing", key: "334",
+    children: [
+{ title: "Computer and Peripheral Equipment Manufacturing", key: "3341" },
+{ title: "Communications Equipment Manufacturing", key: "3342" },
+{ title: "Audio and Video Equipment Manufacturing", key: "3343" },
+{ title: "Semiconductor and Other Electronic Component Manufacturing", key: "3344" },
+{ title: "Navigational, Measuring, Electromedical, and Control Instruments Manufacturing", key: "3345" },
+{ title: "Manufacturing and Reproducing Magnetic and Optical Media", key: "3346" }
+]
+},
+{ title: "Electrical Equipment, Appliance, and Component Manufacturing", key: "335",
+    children: [
+{ title: "Electric Lighting Equipment Manufacturing", key: "3351" },
+{ title: "Household Appliance Manufacturing", key: "3352" },
+{ title: "Electrical Equipment Manufacturing", key: "3353" },
+{ title: "Other Electrical Equipment and Component Manufacturing", key: "3359" }
+]
+},
+{ title: "Transportation Equipment Manufacturing", key: "336",
+    children: [
+{ title: "Motor Vehicle Manufacturing", key: "3361" },
+{ title: "Motor Vehicle Body and Trailer Manufacturing", key: "3362" },
+{ title: "Motor Vehicle Parts Manufacturing", key: "3363" },
+{ title: "Aerospace Product and Parts Manufacturing", key: "3364" },
+{ title: "Railroad Rolling Stock Manufacturing", key: "3365" },
+{ title: "Ship and Boat Building", key: "3366" },
+{ title: "Other Transportation Equipment Manufacturing", key: "3369" }
+]
+},
+{ title: "Furniture and Related Product Manufacturing", key: "337",
+    children: [
+{ title: "Household and Institutional Furniture and Kitchen Cabinet Manufacturing", key: "3371" },
+{ title: "Office Furniture (including Fixtures) Manufacturing", key: "3372" },
+{ title: "Other Furniture Related Product Manufacturing", key: "3379" }
+]
+},
+{ title: "Miscellaneous Manufacturing", key: "339",
+    children: [
+{ title: "Medical Equipment and Supplies Manufacturing", key: "3391" },
+{ title: "Other Miscellaneous Manufacturing", key: "3399" }
+]
+}
+]
+},
+{ title: "Wholesale Trade", key: "42",
+    children: [
+{ title: "Merchant Wholesalers, Durable Goods", key: "423",
+    children: [
+{ title: "Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers", key: "4231" },
+{ title: "Furniture and Home Furnishing Merchant Wholesalers", key: "4232" },
+{ title: "Lumber and Other Construction Materials Merchant Wholesalers", key: "4233" },
+{ title: "Professional and Commercial Equipment and Supplies Merchant Wholesalers", key: "4234" },
+{ title: "Metal and Mineral (except Petroleum) Merchant Wholesalers", key: "4235" },
+{ title: "Electrical and Electronic Goods Merchant Wholesalers", key: "4236" },
+{ title: "Hardware, and Plumbing and Heating Equipment and Supplies Merchant Wholesalers", key: "4237" },
+{ title: "Machinery, Equipment, and Supplies Merchant Wholesalers", key: "4238" },
+{ title: "Miscellaneous Durable Goods Merchant Wholesalers", key: "4239" }
+]
+},
+{ title: "Merchant Wholesalers, Nondurable Goods", key: "424",
+    children: [
+{ title: "Paper and Paper Product Merchant Wholesalers", key: "4241" },
+{ title: "Drugs and Druggists' Sundries Merchant Wholesalers", key: "4242" },
+{ title: "Apparel, Piece Goods, and Notions Merchant Wholesalers", key: "4243" },
+{ title: "Grocery and Related Product Merchant Wholesalers", key: "4244" },
+{ title: "Farm Product Raw Material Merchant Wholesalers", key: "4245" },
+{ title: "Chemical and Allied Products Merchant Wholesalers", key: "4246" },
+{ title: "Petroleum and Petroleum Products Merchant Wholesalers", key: "4247" },
+{ title: "Beer, Wine, and Distilled Alcoholic Beverage Merchant Wholesalers", key: "4248" },
+{ title: "Miscellaneous Nondurable Goods Merchant Wholesalers", key: "4249" }
+]
+},
+{ title: "Wholesale Electronic Markets and Agents and Brokers", key: "425",
+    children: [
+{ title: "Wholesale Electronic Markets and Agents and Brokers", key: "4251" }
+]
+},
+{ title: "Motor Vehicle and Parts Dealers", key: "441",
+    children: [
+{ title: "Automobile Dealers", key: "4411" },
+{ title: "Other Motor Vehicle Dealers", key: "4412" },
+{ title: "Automotive Parts, Accessories, and Tire Stores", key: "4413" }
+]
+},
+{ title: "Furniture and Home Furnishings Stores", key: "442",
+    children: [
+{ title: "Furniture Stores", key: "4421" },
+{ title: "Home Furnishings Stores", key: "4422" }
+]
+},
+{ title: "Electronics and Appliance Stores", key: "443",
+    children: [
+{ title: "Electronics and Appliance Stores", key: "4431" }
+]
+},
+{ title: "Building Material and Garden Equipment and Supplies Dealers", key: "444",
+    children: [
+{ title: "Building Material and Supplies Dealers", key: "4441" },
+{ title: "Lawn and Garden Equipment and Supplies Stores", key: "4442" }
+]
+},
+{ title: "Food and Beverage Stores", key: "445",
+    children: [
+{ title: "Grocery Stores", key: "4451" },
+{ title: "Specialty Food Stores", key: "4452" },
+{ title: "Beer, Wine, and Liquor Stores", key: "4453" }
+]
+},
+{ title: "Health and Personal Care Stores", key: "446",
+    children: [
+{ title: "Health and Personal Care Stores", key: "4461" }
+]
+},
+{ title: "Gasoline Stations", key: "447",
+    children: [
+{ title: "Gasoline Stations", key: "4471" }
+]
+},
+{ title: "Clothing and Clothing Accessories Stores", key: "448",
+    children: [
+{ title: "Clothing Stores", key: "4481" },
+{ title: "Shoe Stores", key: "4482" },
+{ title: "Jewelry, Luggage, and Leather Goods Stores", key: "4483" }
+]
+},
+{ title: "Sporting Goods, Hobby, Book, and Music Stores", key: "451",
+    children: [
+{ title: "Sporting Goods, Hobby, and Musical Instrument Stores", key: "4511" },
+{ title: "Book, Periodical, and Music Stores", key: "4512" }
+]
+},
+{ title: "General Merchandise Stores", key: "452",
+    children: [
+{ title: "Department Stores", key: "4521" },
+{ title: "Other General Merchandise Stores", key: "4529" }
+]
+},
+{ title: "Miscellaneous Store Retailers", key: "453",
+    children: [
+{ title: "Florists", key: "4531" },
+{ title: "Office Supplies, Stationery, and Gift Stores", key: "4532" },
+{ title: "Used Merchandise Stores", key: "4533" },
+{ title: "Other Miscellaneous Store Retailers", key: "4539" }
+]
+},
+{ title: "Nonstore Retailers", key: "454",
+    children: [
+{ title: "Electronic Shopping and Mail-Order Houses", key: "4541" },
+{ title: "Vending Machine Operators", key: "4542" },
+{ title: "Direct Selling Establishments", key: "4543" }
+]
+},
+{ title: "Air Transportation", key: "481",
+    children: [
+{ title: "Scheduled Air Transportation", key: "4811" },
+{ title: "Nonscheduled Air Transportation", key: "4812" }
+]
+},
+{ title: "Rail Transportation", key: "482",
+    children: [
+{ title: "Rail Transportation", key: "4821" }
+]
+},
+{ title: "Water Transportation", key: "483",
+    children: [
+{ title: "Deep Sea, Coastal, and Great Lakes Water Transportation", key: "4831" },
+{ title: "Inland Water Transportation", key: "4832" }
+]
+},
+{ title: "Truck Transportation", key: "484",
+    children: [
+{ title: "General Freight Trucking", key: "4841" },
+{ title: "Specialized Freight Trucking", key: "4842" }
+]
+},
+{ title: "Transit and Ground Passenger Transportation", key: "485",
+    children: [
+{ title: "Urban Transit Systems", key: "4851" },
+{ title: "Interurban and Rural Bus Transportation", key: "4852" },
+{ title: "Taxi and Limousine Service", key: "4853" },
+{ title: "School and Employee Bus Transportation", key: "4854" },
+{ title: "Charter Bus Industry", key: "4855" },
+{ title: "Other Transit and Ground Passenger Transportation", key: "4859" }
+]
+},
+{ title: "Pipeline Transportation", key: "486",
+    children: [
+{ title: "Pipeline Transportation of Crude Oil", key: "4861" },
+{ title: "Pipeline Transportation of Natural Gas", key: "4862" },
+{ title: "Other Pipeline Transportation", key: "4869" }
+]
+},
+{ title: "Scenic and Sightseeing Transportation", key: "487",
+    children: [
+{ title: "Scenic and Sightseeing Transportation, Land", key: "4871" },
+{ title: "Scenic and Sightseeing Transportation, Water", key: "4872" },
+{ title: "Scenic and Sightseeing Transportation, Other", key: "4879" }
+]
+},
+{ title: "Support Activities for Transportation", key: "488",
+    children: [
+{ title: "Support Activities for Air Transportation", key: "4881" },
+{ title: "Support Activities for Rail Transportation", key: "4882" },
+{ title: "Support Activities for Water Transportation", key: "4883" },
+{ title: "Support Activities for Road Transportation", key: "4884" },
+{ title: "Freight Transportation Arrangement", key: "4885" },
+{ title: "Other Support Activities for Transportation", key: "4889" }
+]
+},
+{ title: "Postal Service", key: "491",
+    children: [
+{ title: "Postal Service", key: "4911" }
+]
+},
+{ title: "Couriers and Messengers", key: "492",
+    children: [
+{ title: "Couriers and Express Delivery Services", key: "4921" },
+{ title: "Local Messengers and Local Delivery", key: "4922" }
+]
+},
+{ title: "Warehousing and Storage", key: "493",
+    children: [
+{ title: "Warehousing and Storage", key: "4931" }
+]
+}
+]
+},
+{ title: "Information", key: "51",
+    children: [
+{ title: "Publishing Industries (except Internet)", key: "511",
+    children: [
+{ title: "Newspaper, Periodical, Book, and Directory Publishers", key: "5111" },
+{ title: "Software Publishers", key: "5112" }
+]
+},
+{ title: "Motion Picture and Sound Recording Industries", key: "512",
+    children: [
+{ title: "Motion Picture and Video Industries", key: "5121" },
+{ title: "Sound Recording Industries", key: "5122" }
+]
+},
+{ title: "Broadcasting (except Internet)", key: "515",
+    children: [
+{ title: "Radio and Television Broadcasting", key: "5151" },
+{ title: "Cable and Other Subscription Programming", key: "5152" }
+]
+},
+{ title: "Telecommunications", key: "517",
+    children: [
+{ title: "Wired Telecommunications Carriers", key: "5171" },
+{ title: "Wireless Telecommunications Carriers (except Satellite)", key: "5172" },
+{ title: "Satellite Telecommunications", key: "5174" },
+{ title: "Other Telecommunications", key: "5179" }
+]
+},
+{ title: "Data Processing, Hosting and Related Services", key: "518",
+    children: [
+{ title: "Data Processing, Hosting, and Related Services", key: "5182" }
+]
+},
+{ title: "Other Information Services", key: "519",
+    children: [
+{ title: "Other Information Services", key: "5191" }
+]
+}
+]
+},
+{ title: "Finance and Insurance", key: "52",
+    children: [
+{ title: "Monetary Authorities-Central Bank", key: "521",
+    children: [
+{ title: "Monetary Authorities-Central Bank", key: "5211" }
+]
+},
+{ title: "Credit Intermediation and Related Activities", key: "522",
+    children: [
+{ title: "Depository Credit Intermediation", key: "5221" },
+{ title: "Nondepository Credit Intermediation", key: "5222" },
+{ title: "Activities Related to Credit Intermediation", key: "5223" }
+]
+},
+{ title: "Securities, Commodity Contracts, and Other Financial Investments and Related Activities", key: "523",
+    children: [
+{ title: "Securities and Commodity Contracts Intermediation and Brokerage", key: "5231" },
+{ title: "Securities and Commodity Exchanges", key: "5232" },
+{ title: "Other Financial Investment Activities", key: "5239" }
+]
+},
+{ title: "Insurance Carriers and Related Activities", key: "524",
+    children: [
+{ title: "Insurance Carriers", key: "5241" },
+{ title: "Agencies, Brokerages, and Other Insurance Related Activities", key: "5242" }
+]
+},
+{ title: "Funds, Trusts, and Other Financial Vehicles", key: "525",
+    children: [
+{ title: "Insurance and Employee Benefit Funds", key: "5251" },
+{ title: "Other Investment Pools and Funds", key: "5259" }
+]
+}
+]
+},
+{ title: "Real Estate and Rental and Leasing", key: "53",
+    children: [
+{ title: "Real Estate", key: "531",
+    children: [
+{ title: "Lessors of Real Estate", key: "5311" },
+{ title: "Offices of Real Estate Agents and Brokers", key: "5312" },
+{ title: "Activities Related to Real Estate", key: "5313" }
+]
+},
+{ title: "Rental and Leasing Services", key: "532",
+    children: [
+{ title: "Automotive Equipment Rental and Leasing", key: "5321" },
+{ title: "Consumer Goods Rental", key: "5322" },
+{ title: "General Rental Centers", key: "5323" },
+{ title: "Commercial and Industrial Machinery and Equipment Rental and Leasing", key: "5324" }
+]
+},
+{ title: "Lessors of Nonfinancial Intangible Assets (except Copyrighted Works)", key: "533",
+    children: [
+{ title: "Lessors of Nonfinancial Intangible Assets (except Copyrighted Works)", key: "5331" }
+]
+}
+]
+},
+{ title: "Professional, Scientific, and Technical Services", key: "54",
+    children: [
+{ title: "Professional, Scientific, and Technical Services", key: "541",
+    children: [
+{ title: "Legal Services", key: "5411" },
+{ title: "Accounting, Tax Preparation, Bookkeeping, and Payroll Services", key: "5412" },
+{ title: "Architectural, Engineering, and Related Services", key: "5413" },
+{ title: "Specialized Design Services", key: "5414" },
+{ title: "Computer Systems Design and Related Services", key: "5415" },
+{ title: "Management, Scientific, and Technical Consulting Services", key: "5416" },
+{ title: "Scientific Research and Development Services", key: "5417" },
+{ title: "Advertising, Public Relations, and Related Services", key: "5418" },
+{ title: "Other Professional, Scientific, and Technical Services", key: "5419" }
+]
+}
+]
+},
+{ title: "Management of Companies and Enterprises", key: "55",
+    children: [
+{ title: "Management of Companies and Enterprises", key: "551",
+    children: [
+{ title: "Management of Companies and Enterprises", key: "5511" }
+]
+}
+]
+},
+{ title: "Administrative and Support and Waste Management and Remediation Services", key: "56",
+    children: [
+{ title: "Administrative and Support Services", key: "561",
+    children: [
+{ title: "Office Administrative Services", key: "5611" },
+{ title: "Facilities Support Services", key: "5612" },
+{ title: "Employment Services", key: "5613" },
+{ title: "Business Support Services", key: "5614" },
+{ title: "Travel Arrangement and Reservation Services", key: "5615" },
+{ title: "Investigation and Security Services", key: "5616" },
+{ title: "Services to Buildings and Dwellings", key: "5617" },
+{ title: "Other Support Services", key: "5619" }
+]
+},
+{ title: "Waste Management and Remediation Services", key: "562",
+    children: [
+{ title: "Waste Collection", key: "5621" },
+{ title: "Waste Treatment and Disposal", key: "5622" },
+{ title: "Remediation and Other Waste Management Services", key: "5629" }
+]
+}
+]
+},
+{ title: "Educational Services", key: "61",
+    children: [
+{ title: "Educational Services", key: "611",
+    children: [
+{ title: "Elementary and Secondary Schools", key: "6111" },
+{ title: "Junior Colleges", key: "6112" },
+{ title: "Colleges, Universities, and Professional Schools", key: "6113" },
+{ title: "Business Schools and Computer and Management Training", key: "6114" },
+{ title: "Technical and Trade Schools", key: "6115" },
+{ title: "Other Schools and Instruction", key: "6116" },
+{ title: "Educational Support Services", key: "6117" }
+]
+}
+]
+},
+{ title: "Health Care and Social Assistance", key: "62",
+    children: [
+{ title: "Ambulatory Health Care Services", key: "621",
+    children: [
+{ title: "Offices of Physicians", key: "6211" },
+{ title: "Offices of Dentists", key: "6212" },
+{ title: "Offices of Other Health Practitioners", key: "6213" },
+{ title: "Outpatient Care Centers", key: "6214" },
+{ title: "Medical and Diagnostic Laboratories", key: "6215" },
+{ title: "Home Health Care Services", key: "6216" },
+{ title: "Other Ambulatory Health Care Services", key: "6219" }
+]
+},
+{ title: "Hospitals", key: "622",
+    children: [
+{ title: "General Medical and Surgical Hospitals", key: "6221" },
+{ title: "Psychiatric and Substance Abuse Hospitals", key: "6222" },
+{ title: "Specialty (except Psychiatric and Substance Abuse) Hospitals", key: "6223" }
+]
+},
+{ title: "Nursing and Residential Care Facilities", key: "623",
+    children: [
+{ title: "Nursing Care Facilities", key: "6231" },
+{ title: "Residential Mental Retardation, Mental Health and Substance Abuse Facilities", key: "6232" },
+{ title: "Community Care Facilities for the Elderly", key: "6233" },
+{ title: "Other Residential Care Facilities", key: "6239" }
+]
+},
+{ title: "Social Assistance", key: "624",
+    children: [
+{ title: "Individual and Family Services", key: "6241" },
+{ title: "Community Food and Housing, and Emergency and Other Relief Services", key: "6242" },
+{ title: "Vocational Rehabilitation Services", key: "6243" },
+{ title: "Child Day Care Services", key: "6244" }
+]
+}
+]
+},
+{ title: "Arts, Entertainment, and Recreation", key: "71",
+    children: [
+{ title: "Performing Arts, Spectator Sports, and Related Industries", key: "711",
+    children: [
+{ title: "Performing Arts Companies", key: "7111" },
+{ title: "Spectator Sports", key: "7112" },
+{ title: "Promoters of Performing Arts, Sports, and Similar Events", key: "7113" },
+{ title: "Agents and Managers for Artists, Athletes, Entertainers, and Other Public Figures", key: "7114" },
+{ title: "Independent Artists, Writers, and Performers", key: "7115" }
+]
+},
+{ title: "Museums, Historical Sites, and Similar Institutions", key: "712",
+    children: [
+{ title: "Museums, Historical Sites, and Similar Institutions", key: "7121" }
+]
+},
+{ title: "Amusement, Gambling, and Recreation Industries", key: "713",
+    children: [
+{ title: "Amusement Parks and Arcades", key: "7131" },
+{ title: "Gambling Industries", key: "7132" },
+{ title: "Other Amusement and Recreation Industries", key: "7139" }
+]
+}
+]
+},
+{ title: "Accommodation and Food Services", key: "72",
+    children: [
+{ title: "Accommodation", key: "721",
+    children: [
+{ title: "Traveler Accommodation", key: "7211" },
+{ title: "RV (Recreational Vehicle) Parks and Recreational Camps", key: "7212" },
+{ title: "Rooming and Boarding Houses", key: "7213" }
+]
+},
+{ title: "Food Services and Drinking Places", key: "722",
+    children: [
+{ title: "Full-Service Restaurants", key: "7221" },
+{ title: "Limited-Service Eating Places", key: "7222" },
+{ title: "Special Food Services", key: "7223" },
+{ title: "Drinking Places (Alcoholic Beverages)", key: "7224" }
+]
+}
+]
+},
+{ title: "Other Services (except Public Administration)", key: "81",
+    children: [
+{ title: "Repair and Maintenance", key: "811",
+    children: [
+{ title: "Automotive Repair and Maintenance", key: "8111" },
+{ title: "Electronic and Precision Equipment Repair and Maintenance", key: "8112" },
+{ title: "Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance", key: "8113" },
+{ title: "Personal and Household Goods Repair and Maintenance", key: "8114" }
+]
+},
+{ title: "Personal and Laundry Services", key: "812",
+    children: [
+{ title: "Personal Care Services", key: "8121" },
+{ title: "Death Care Services", key: "8122" },
+{ title: "Drycleaning and Laundry Services", key: "8123" },
+{ title: "Other Personal Services", key: "8129" }
+]
+},
+{ title: "Religious, Grantmaking, Civic, Professional, and Similar Organizations", key: "813",
+    children: [
+{ title: "Religious Organizations", key: "8131" },
+{ title: "Grantmaking and Giving Services", key: "8132" },
+{ title: "Social Advocacy Organizations", key: "8133" },
+{ title: "Civic and Social Organizations", key: "8134" },
+{ title: "Business, Professional, Labor, Political, and Similar Organizations", key: "8139" }
+]
+},
+{ title: "Private Households", key: "814",
+    children: [
+{ title: "Private Households", key: "8141" }
+]
+}
+]
+},
+{ title: "Public Administration", key: "92",
+    children: [
+{ title: "Executive, Legislative, and Other General Government Support", key: "921",
+    children: [
+{ title: "Executive, Legislative, and Other General Government Support", key: "9211" }
+]
+},
+{ title: "Justice, Public Order, and Safety Activities", key: "922",
+    children: [
+{ title: "Justice, Public Order, and Safety Activities", key: "9221" }
+]
+},
+{ title: "Administration of Human Resource Programs", key: "923",
+    children: [
+{ title: "Administration of Human Resource Programs", key: "9231" }
+]
+},
+{ title: "Administration of Environmental Quality Programs", key: "924",
+    children: [
+{ title: "Administration of Environmental Quality Programs", key: "9241" }
+]
+},
+{ title: "Administration of Housing Programs, Urban Planning, and Community Development", key: "925",
+    children: [
+{ title: "Administration of Housing Programs, Urban Planning, and Community Development", key: "9251" }
+]
+},
+{ title: "Administration of Economic Programs", key: "926",
+    children: [
+{ title: "Administration of Economic Program", key: "9261" }
+]
+},
+{ title: "Space Research and Technology", key: "927",
+    children: [
+{ title: "Space Research and Technology", key: "9271" }
+]
+},
+{ title: "National Security and International Affairs", key: "928",
+    children: [
+{ title: "National Security and International Affairs", key: "9281" }
+]
+}
+]
+}
+      ];
+
+
+    var socData = [
+
+{ title: "Management Occupations", key: "11-0000",
+    children: [
+{ title: "Top Executives", key: "11-1000",
+    children: [
+{ title: "Chief Executives", key: "11-1010" },
+{ title: "General and Operations Managers", key: "11-1020" },
+{ title: "Legislators", key: "11-1030" }
+]
+},
+{ title: "Advertising, Marketing, Promotions, Public Relations, and Sales Managers", key: "11-2000",
+    children: [
+{ title: "Advertising and Promotions Managers", key: "11-2010" },
+{ title: "Marketing and Sales Managers", key: "11-2020" },
+{ title: "Public Relations and Fundraising Managers", key: "11-2030" }
+]
+},
+{ title: "Operations Specialties Managers", key: "11-3000",
+    children: [
+{ title: "Administrative Services Managers", key: "11-3010" },
+{ title: "Computer and Information Systems Managers", key: "11-3020" },
+{ title: "Financial Managers", key: "11-3030" },
+{ title: "Industrial Production Managers", key: "11-3050" },
+{ title: "Purchasing Managers", key: "11-3060" },
+{ title: "Transportation, Storage, and Distribution Managers", key: "11-3070" },
+{ title: "Compensation and Benefits Managers", key: "11-3110" },
+{ title: "Human Resources Managers", key: "11-3120" },
+{ title: "Training and Development Managers", key: "11-3130" }
+]
+},
+{ title: "Other Management Occupations", key: "11-9000",
+    children: [
+{ title: "Farmers, Ranchers, and Other Agricultural Managers", key: "11-9010" },
+{ title: "Construction Managers", key: "11-9020" },
+{ title: "Education Administrators", key: "11-9030" },
+{ title: "Architectural and Engineering Managers", key: "11-9040" },
+{ title: "Food Service Managers", key: "11-9050" },
+{ title: "Funeral Service Managers", key: "11-9060" },
+{ title: "Gaming Managers", key: "11-9070" },
+{ title: "Lodging Managers", key: "11-9080" },
+{ title: "Medical and Health Services Managers", key: "11-9110" },
+{ title: "Natural Sciences Managers", key: "11-9120" },
+{ title: "Postmasters and Mail Superintendents", key: "11-9130" },
+{ title: "Property, Real Estate, and Community Association Managers", key: "11-9140" },
+{ title: "Social and Community Service Managers", key: "11-9150" },
+{ title: "Emergency Management Directors", key: "11-9160" },
+{ title: "Miscellaneous Managers", key: "11-9190" }
+]
+}
+]
+},
+{ title: "Business and Financial Operations Occupations", key: "13-0000",
+    children: [
+{ title: "Business Operations Specialists", key: "13-1000",
+    children: [
+{ title: "Agents and Business Managers of Artists, Performers, and Athletes", key: "13-1010" },
+{ title: "Buyers and Purchasing Agents", key: "13-1020" },
+{ title: "Claims Adjusters, Appraisers, Examiners, and Investigators", key: "13-1030" },
+{ title: "Compliance Officers", key: "13-1040" },
+{ title: "Cost Estimators", key: "13-1050" },
+{ title: "Human Resources Workers", key: "13-1070" },
+{ title: "Logisticians", key: "13-1080" },
+{ title: "Management Analysts", key: "13-1110" },
+{ title: "Meeting, Convention, and Event Planners", key: "13-1120" },
+{ title: "Fundraisers", key: "13-1130" },
+{ title: "Compensation, Benefits, and Job Analysis Specialists", key: "13-1140" },
+{ title: "Training and Development Specialists", key: "13-1150" },
+{ title: "Market Research Analysts and Marketing Specialists", key: "13-1160" },
+{ title: "Miscellaneous Business Operations Specialists", key: "13-1190" }
+]
+},
+{ title: "Financial Specialists", key: "13-2000",
+    children: [
+{ title: "Accountants and Auditors", key: "13-2010" },
+{ title: "Appraisers and Assessors of Real Estate", key: "13-2020" },
+{ title: "Budget Analysts", key: "13-2030" },
+{ title: "Credit Analysts", key: "13-2040" },
+{ title: "Financial Analysts and Advisors", key: "13-2050" },
+{ title: "Financial Examiners", key: "13-2060" },
+{ title: "Credit Counselors and Loan Officers", key: "13-2070" },
+{ title: "Tax Examiners, Collectors and Preparers, and Revenue Agents", key: "13-2080" },
+{ title: "Miscellaneous Financial Specialists", key: "13-2090" }
+]
+}
+]
+},
+{ title: "Computer and Mathematical Occupations", key: "15-0000",
+    children: [
+{ title: "Computer Occupations", key: "15-1100",
+    children: [
+{ title: "Computer and Information Research Scientists", key: "15-1110" },
+{ title: "Computer and Information Analysts", key: "15-1120" },
+{ title: "Software Developers and Programmers", key: "15-1130" },
+{ title: "Database and Systems Administrators and Network Architects", key: "15-1140" },
+{ title: "Computer Support Specialists", key: "15-1150" },
+{ title: "Miscellaneous Computer Occupations", key: "15-1190" }
+]
+},
+{ title: "Mathematical Science Occupations", key: "15-2000",
+    children: [
+{ title: "Actuaries", key: "15-2010" },
+{ title: "Mathematicians", key: "15-2020" },
+{ title: "Operations Research Analysts", key: "15-2030" },
+{ title: "Statisticians", key: "15-2040" },
+{ title: "Miscellaneous Mathematical Science Occupations", key: "15-2090" }
+]
+}
+]
+},
+{ title: "Architecture and Engineering Occupations", key: "17-0000",
+    children: [
+{ title: "Architects, Surveyors, and Cartographers", key: "17-1000",
+    children: [
+{ title: "Architects, Except Naval", key: "17-1010" },
+{ title: "Surveyors, Cartographers, and Photogrammetrists", key: "17-1020" }
+]
+},
+{ title: "Engineers", key: "17-2000",
+    children: [
+{ title: "Aerospace Engineers", key: "17-2010" },
+{ title: "Agricultural Engineers", key: "17-2020" },
+{ title: "Biomedical Engineers", key: "17-2030" },
+{ title: "Chemical Engineers", key: "17-2040" },
+{ title: "Civil Engineers", key: "17-2050" },
+{ title: "Computer Hardware Engineers", key: "17-2060" },
+{ title: "Electrical and Electronics Engineers", key: "17-2070" },
+{ title: "Environmental Engineers", key: "17-2080" },
+{ title: "Industrial Engineers, Including Health and Safety", key: "17-2110" },
+{ title: "Marine Engineers and Naval Architects", key: "17-2120" },
+{ title: "Materials Engineers", key: "17-2130" },
+{ title: "Mechanical Engineers", key: "17-2140" },
+{ title: "Mining and Geological Engineers, Including Mining Safety Engineers", key: "17-2150" },
+{ title: "Nuclear Engineers", key: "17-2160" },
+{ title: "Petroleum Engineers", key: "17-2170" },
+{ title: "Miscellaneous Engineers", key: "17-2190" }
+]
+},
+{ title: "Drafters, Engineering Technicians, and Mapping Technicians", key: "17-3000",
+    children: [
+{ title: "Drafters", key: "17-3010" },
+{ title: "Engineering Technicians, Except Drafters", key: "17-3020" },
+{ title: "Surveying and Mapping Technicians", key: "17-3030" }
+]
+}
+]
+},
+{ title: "Life, Physical, and Social Science Occupations", key: "19-0000",
+    children: [
+{ title: "Life Scientists", key: "19-1000",
+    children: [
+{ title: "Agricultural and Food Scientists", key: "19-1010" },
+{ title: "Biological Scientists", key: "19-1020" },
+{ title: "Conservation Scientists and Foresters", key: "19-1030" },
+{ title: "Medical Scientists", key: "19-1040" },
+{ title: "Miscellaneous Life Scientists", key: "19-1090" }
+]
+},
+{ title: "Physical Scientists", key: "19-2000",
+    children: [
+{ title: "Astronomers and Physicists", key: "19-2010" },
+{ title: "Atmospheric and Space Scientists", key: "19-2020" },
+{ title: "Chemists and Materials Scientists", key: "19-2030" },
+{ title: "Environmental Scientists and Geoscientists", key: "19-2040" },
+{ title: "Miscellaneous Physical Scientists", key: "19-2090" }
+]
+},
+{ title: "Social Scientists and Related Workers", key: "19-3000",
+    children: [
+{ title: "Economists", key: "19-3010" },
+{ title: "Survey Researchers", key: "19-3020" },
+{ title: "Psychologists", key: "19-3030" },
+{ title: "Sociologists", key: "19-3040" },
+{ title: "Urban and Regional Planners", key: "19-3050" },
+{ title: "Miscellaneous Social Scientists and Related Workers", key: "19-3090" }
+]
+},
+{ title: "Life, Physical, and Social Science Technicians", key: "19-4000",
+    children: [
+{ title: "Agricultural and Food Science Technicians", key: "19-4010" },
+{ title: "Biological Technicians", key: "19-4020" },
+{ title: "Chemical Technicians", key: "19-4030" },
+{ title: "Geological and Petroleum Technicians", key: "19-4040" },
+{ title: "Nuclear Technicians", key: "19-4050" },
+{ title: "Social Science Research Assistants", key: "19-4060" },
+{ title: "Miscellaneous Life, Physical, and Social Science Technicians", key: "19-4090" }
+]
+}
+]
+},
+{ title: "Community and Social Service Occupations", key: "21-0000",
+    children: [
+{ title: "Counselors, Social Workers, and Other Community and Social Service Specialists", key: "21-1000",
+    children: [
+{ title: "Counselors", key: "21-1010" },
+{ title: "Social Workers", key: "21-1020" },
+{ title: "Miscellaneous Community and Social Service Specialists", key: "21-1090" }
+]
+},
+{ title: "Religious Workers", key: "21-2000",
+    children: [
+{ title: "Clergy", key: "21-2010" },
+{ title: "Directors, Religious Activities and Education", key: "21-2020" },
+{ title: "Miscellaneous Religious Workers", key: "21-2090" }
+]
+}
+]
+},
+{ title: "Legal Occupations", key: "23-0000",
+    children: [
+{ title: "Lawyers, Judges, and Related Workers", key: "23-1000",
+    children: [
+{ title: "Lawyers and Judicial Law Clerks", key: "23-1010" },
+{ title: "Judges, Magistrates, and Other Judicial Workers", key: "23-1020" }
+]
+},
+{ title: "Legal Support Workers", key: "23-2000",
+    children: [
+{ title: "Paralegals and Legal Assistants", key: "23-2010" },
+{ title: "Miscellaneous Legal Support Workers", key: "23-2090" }
+]
+}
+]
+},
+{ title: "Education, Training, and Library Occupations", key: "25-0000",
+    children: [
+{ title: "Postsecondary Teachers", key: "25-1000",
+    children: [
+{ title: "Business Teachers, Postsecondary", key: "25-1010" },
+{ title: "Math and Computer Teachers, Postsecondary", key: "25-1020" },
+{ title: "Engineering and Architecture Teachers, Postsecondary", key: "25-1030" },
+{ title: "Life Sciences Teachers, Postsecondary", key: "25-1040" },
+{ title: "Physical Sciences Teachers, Postsecondary", key: "25-1050" },
+{ title: "Social Sciences Teachers, Postsecondary", key: "25-1060" },
+{ title: "Health Teachers, Postsecondary", key: "25-1070" },
+{ title: "Education and Library Science Teachers, Postsecondary", key: "25-1080" },
+{ title: "Law, Criminal Justice, and Social Work Teachers, Postsecondary", key: "25-1110" },
+{ title: "Arts, Communications, and Humanities Teachers, Postsecondary", key: "25-1120" },
+{ title: "Miscellaneous Postsecondary Teachers", key: "25-1190" }
+]
+},
+{ title: "Preschool, Primary, Secondary, and Special Education School Teachers", key: "25-2000",
+    children: [
+{ title: "Preschool and Kindergarten Teachers", key: "25-2010" },
+{ title: "Elementary and Middle School Teachers", key: "25-2020" },
+{ title: "Secondary School Teachers", key: "25-2030" },
+{ title: "Special Education Teachers", key: "25-2050" }
+]
+},
+{ title: "Other Teachers and Instructors", key: "25-3000",
+    children: [
+{ title: "Adult Basic and Secondary Education and Literacy Teachers and Instructors ", key: "25-3010" },
+{ title: "Self-Enrichment Education Teachers", key: "25-3020" },
+{ title: "Miscellaneous Teachers and Instructors", key: "25-3090" }
+]
+},
+{ title: "Librarians, Curators, and Archivists", key: "25-4000",
+    children: [
+{ title: "Archivists, Curators, and Museum Technicians", key: "25-4010" },
+{ title: "Librarians", key: "25-4020" },
+{ title: "Library Technicians", key: "25-4030" }
+]
+},
+{ title: "Other Education, Training, and Library Occupations", key: "25-9000",
+    children: [
+{ title: "Audio-Visual and Multimedia Collections Specialists", key: "25-9010" },
+{ title: "Farm and Home Management Advisors", key: "25-9020" },
+{ title: "Instructional Coordinators", key: "25-9030" },
+{ title: "Teacher Assistants", key: "25-9040" },
+{ title: "Miscellaneous Education, Training, and Library Workers", key: "25-9090" }
+]
+}
+]
+},
+{ title: "Arts, Design, Entertainment, Sports, and Media Occupations", key: "27-0000",
+    children: [
+{ title: "Art and Design Workers", key: "27-1000",
+    children: [
+{ title: "Artists and Related Workers", key: "27-1010" },
+{ title: "Designers", key: "27-1020" }
+]
+},
+{ title: "Entertainers and Performers, Sports and Related Workers", key: "27-2000",
+    children: [
+{ title: "Actors, Producers, and Directors", key: "27-2010" },
+{ title: "Athletes, Coaches, Umpires, and Related Workers", key: "27-2020" },
+{ title: "Dancers and Choreographers", key: "27-2030" },
+{ title: "Musicians, Singers, and Related Workers", key: "27-2040" },
+{ title: "Miscellaneous Entertainers and Performers, Sports and Related Workers", key: "27-2090" }
+]
+},
+{ title: "Media and Communication Workers", key: "27-3000",
+    children: [
+{ title: "Announcers", key: "27-3010" },
+{ title: "News Analysts, Reporters and Correspondents", key: "27-3020" },
+{ title: "Public Relations Specialists", key: "27-3030" },
+{ title: "Writers and Editors", key: "27-3040" },
+{ title: "Miscellaneous Media and Communication Workers", key: "27-3090" }
+]
+},
+{ title: "Media and Communication Equipment Workers", key: "27-4000",
+    children: [
+{ title: "Broadcast and Sound Engineering Technicians and Radio Operators", key: "27-4010" },
+{ title: "Photographers", key: "27-4020" },
+{ title: "Television, Video, and Motion Picture Camera Operators and Editors", key: "27-4030" },
+{ title: "Miscellaneous Media and Communication Equipment Workers", key: "27-4090" }
+]
+}
+]
+},
+{ title: "Healthcare Practitioners and Technical Occupations", key: "29-0000",
+    children: [
+{ title: "Health Diagnosing and Treating Practitioners", key: "29-1000",
+    children: [
+{ title: "Chiropractors", key: "29-1010" },
+{ title: "Dentists", key: "29-1020" },
+{ title: "Dietitians and Nutritionists", key: "29-1030" },
+{ title: "Optometrists", key: "29-1040" },
+{ title: "Pharmacists", key: "29-1050" },
+{ title: "Physicians and Surgeons", key: "29-1060" },
+{ title: "Physician Assistants", key: "29-1070" },
+{ title: "Podiatrists", key: "29-1080" },
+{ title: "Therapists", key: "29-1120" },
+{ title: "Veterinarians", key: "29-1130" },
+{ title: "Registered Nurses", key: "29-1140" },
+{ title: "Nurse Anesthetists", key: "29-1150" },
+{ title: "Nurse Midwives", key: "29-1160" },
+{ title: "Nurse Practitioners", key: "29-1170" },
+{ title: "Audiologists", key: "29-1180" },
+{ title: "Miscellaneous Health Diagnosing and Treating Practitioners", key: "29-1190" }
+]
+},
+{ title: "Health Technologists and Technicians", key: "29-2000",
+    children: [
+{ title: "Clinical Laboratory Technologists and Technicians", key: "29-2010" },
+{ title: "Dental Hygienists", key: "29-2020" },
+{ title: "Diagnostic Related Technologists and Technicians", key: "29-2030" },
+{ title: "Emergency Medical Technicians and Paramedics", key: "29-2040" },
+{ title: "Health Practitioner Support Technologists and Technicians", key: "29-2050" },
+{ title: "Licensed Practical and Licensed Vocational Nurses", key: "29-2060" },
+{ title: "Medical Records and Health Information Technicians", key: "29-2070" },
+{ title: "Opticians, Dispensing", key: "29-2080" },
+{ title: "Miscellaneous Health Technologists and Technicians", key: "29-2090" }
+]
+},
+{ title: "Other Healthcare Practitioners and Technical Occupations", key: "29-9000",
+    children: [
+{ title: "Occupational Health and Safety Specialists and Technicians", key: "29-9010" },
+{ title: "Miscellaneous Health Practitioners and Technical Workers", key: "29-9090" }
+]
+}
+]
+},
+{ title: "Healthcare Support Occupations", key: "31-0000",
+    children: [
+{ title: "Nursing, Psychiatric, and Home Health Aides", key: "31-1000",
+    children: [
+{ title: "Nursing, Psychiatric, and Home Health Aides", key: "31-1010" }
+]
+},
+{ title: "Occupational Therapy and Physical Therapist Assistants and Aides", key: "31-2000",
+    children: [
+{ title: "Occupational Therapy Assistants and Aides", key: "31-2010" },
+{ title: "Physical Therapist Assistants and Aides", key: "31-2020" }
+]
+},
+{ title: "Other Healthcare Support Occupations", key: "31-9000",
+    children: [
+{ title: "Massage Therapists", key: "31-9010" },
+{ title: "Miscellaneous Healthcare Support Occupations", key: "31-9090" }
+]
+}
+]
+},
+{ title: "Protective Service Occupations", key: "33-0000",
+    children: [
+{ title: "Supervisors of Protective Service Workers", key: "33-1000",
+    children: [
+{ title: "First-Line Supervisors of Law Enforcement Workers", key: "33-1010" },
+{ title: "First-Line Supervisors of Fire Fighting and Prevention Workers", key: "33-1020" },
+{ title: "Miscellaneous First-Line Supervisors, Protective Service Workers", key: "33-1090" }
+]
+},
+{ title: "Fire Fighting and Prevention Workers", key: "33-2000",
+    children: [
+{ title: "Firefighters", key: "33-2010" },
+{ title: "Fire Inspectors", key: "33-2020" }
+]
+},
+{ title: "Law Enforcement Workers", key: "33-3000",
+    children: [
+{ title: "Bailiffs, Correctional Officers, and Jailers", key: "33-3010" },
+{ title: "Detectives and Criminal Investigators", key: "33-3020" },
+{ title: "Fish and Game Wardens", key: "33-3030" },
+{ title: "Parking Enforcement Workers", key: "33-3040" },
+{ title: "Police Officers", key: "33-3050" }
+]
+},
+{ title: "Other Protective Service Workers", key: "33-9000",
+    children: [
+{ title: "Animal Control Workers", key: "33-9010" },
+{ title: "Private Detectives and Investigators", key: "33-9020" },
+{ title: "Security Guards and Gaming Surveillance Officers", key: "33-9030" },
+{ title: "Miscellaneous Protective Service Workers", key: "33-9090" }
+]
+}
+]
+},
+{ title: "Food Preparation and Serving Related Occupations", key: "35-0000",
+    children: [
+{ title: "Supervisors of Food Preparation and Serving Workers", key: "35-1000",
+    children: [
+{ title: "Supervisors of Food Preparation and Serving Workers", key: "35-1010" }
+]
+},
+{ title: "Cooks and Food Preparation Workers", key: "35-2000",
+    children: [
+{ title: "Cooks", key: "35-2010" },
+{ title: "Food Preparation Workers", key: "35-2020" }
+]
+},
+{ title: "Food and Beverage Serving Workers", key: "35-3000",
+    children: [
+{ title: "Bartenders", key: "35-3010" },
+{ title: "Fast Food and Counter Workers", key: "35-3020" },
+{ title: "Waiters and Waitresses", key: "35-3030" },
+{ title: "Food Servers, Nonrestaurant", key: "35-3040" }
+]
+},
+{ title: "Other Food Preparation and Serving Related Workers", key: "35-9000",
+    children: [
+{ title: "Dining Room and Cafeteria Attendants and Bartender Helpers", key: "35-9010" },
+{ title: "Dishwashers", key: "35-9020" },
+{ title: "Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop", key: "35-9030" },
+{ title: "Miscellaneous Food Preparation and Serving Related Workers", key: "35-9090" }
+]
+}
+]
+},
+{ title: "Building and Grounds Cleaning and Maintenance Occupations", key: "37-0000",
+    children: [
+{ title: "Supervisors of Building and Grounds Cleaning and Maintenance Workers", key: "37-1000",
+    children: [
+{ title: "First-Line Supervisors of Building and Grounds Cleaning and Maintenance Workers", key: "37-1010" }
+]
+},
+{ title: "Building Cleaning and Pest Control Workers", key: "37-2000",
+    children: [
+{ title: "Building Cleaning Workers", key: "37-2010" },
+{ title: "Pest Control Workers", key: "37-2020" }
+]
+},
+{ title: "Grounds Maintenance Workers", key: "37-3000",
+    children: [
+{ title: "Grounds Maintenance Workers", key: "37-3010" }
+]
+}
+]
+},
+{ title: "Personal Care and Service Occupations", key: "39-0000",
+    children: [
+{ title: "Supervisors of Personal Care and Service Workers", key: "39-1000",
+    children: [
+{ title: "First-Line Supervisors of Gaming Workers", key: "39-1010" },
+{ title: "First-Line Supervisors of Personal Service Workers", key: "39-1020" }
+]
+},
+{ title: "Animal Care and Service Workers", key: "39-2000",
+    children: [
+{ title: "Animal Trainers", key: "39-2010" },
+{ title: "Nonfarm Animal Caretakers", key: "39-2020" }
+]
+},
+{ title: "Entertainment Attendants and Related Workers", key: "39-3000",
+    children: [
+{ title: "Gaming Services Workers", key: "39-3010" },
+{ title: "Motion Picture Projectionists", key: "39-3020" },
+{ title: "Ushers, Lobby Attendants, and Ticket Takers", key: "39-3030" },
+{ title: "Miscellaneous Entertainment Attendants and Related Workers", key: "39-3090" }
+]
+},
+{ title: "Funeral Service Workers", key: "39-4000",
+    children: [
+{ title: "Embalmers", key: "39-4010" },
+{ title: "Funeral Attendants", key: "39-4020" },
+{ title: "Morticians, Undertakers, and Funeral Directors", key: "39-4030" }
+]
+},
+{ title: "Personal Appearance Workers", key: "39-5000",
+    children: [
+{ title: "Barbers, Hairdressers, Hairstylists and Cosmetologists", key: "39-5010" },
+{ title: "Miscellaneous Personal Appearance Workers", key: "39-5090" }
+]
+},
+{ title: "Baggage Porters, Bellhops, and Concierges", key: "39-6000",
+    children: [
+{ title: "Baggage Porters, Bellhops, and Concierges", key: "39-6010" }
+]
+},
+{ title: "Tour and Travel Guides", key: "39-7000",
+    children: [
+{ title: "Tour and Travel Guides", key: "39-7010" }
+]
+},
+{ title: "Other Personal Care and Service Workers", key: "39-9000",
+    children: [
+{ title: "Childcare Workers", key: "39-9010" },
+{ title: "Personal Care Aides", key: "39-9020" },
+{ title: "Recreation and Fitness Workers", key: "39-9030" },
+{ title: "Residential Advisors", key: "39-9040" },
+{ title: "Miscellaneous Personal Care and Service Workers", key: "39-9090" }
+]
+}
+]
+},
+{ title: "Sales and Related Occupations", key: "41-0000",
+    children: [
+{ title: "Supervisors of Sales Workers", key: "41-1000",
+    children: [
+{ title: "First-Line Supervisors of Sales Workers", key: "41-1010" }
+]
+},
+{ title: "Retail Sales Workers", key: "41-2000",
+    children: [
+{ title: "Cashiers", key: "41-2010" },
+{ title: "Counter and Rental Clerks and Parts Salespersons", key: "41-2020" },
+{ title: "Retail Salespersons", key: "41-2030" }
+]
+},
+{ title: "Sales Representatives, Services", key: "41-3000",
+    children: [
+{ title: "Advertising Sales Agents", key: "41-3010" },
+{ title: "Insurance Sales Agents", key: "41-3020" },
+{ title: "Securities, Commodities, and Financial Services Sales Agents", key: "41-3030" },
+{ title: "Travel Agents", key: "41-3040" },
+{ title: "Miscellaneous Sales Representatives, Services", key: "41-3090" }
+]
+},
+{ title: "Sales Representatives, Wholesale and Manufacturing", key: "41-4000",
+    children: [
+{ title: "Sales Representatives, Wholesale and Manufacturing", key: "41-4010" }
+]
+},
+{ title: "Other Sales and Related Workers", key: "41-9000",
+    children: [
+{ title: "Models, Demonstrators, and Product Promoters", key: "41-9010" },
+{ title: "Real Estate Brokers and Sales Agents", key: "41-9020" },
+{ title: "Sales Engineers", key: "41-9030" },
+{ title: "Telemarketers", key: "41-9040" },
+{ title: "Miscellaneous Sales and Related Workers", key: "41-9090" }
+]
+}
+]
+},
+{ title: "Office and Administrative Support Occupations", key: "43-0000",
+    children: [
+{ title: "Supervisors of Office and Administrative Support Workers", key: "43-1000",
+    children: [
+{ title: "First-Line Supervisors of Office and Administrative Support Workers", key: "43-1010" }
+]
+},
+{ title: "Communications Equipment Operators", key: "43-2000",
+    children: [
+{ title: "Switchboard Operators, Including Answering Service", key: "43-2010" },
+{ title: "Telephone Operators", key: "43-2020" },
+{ title: "Miscellaneous Communications Equipment Operators", key: "43-2090" }
+]
+},
+{ title: "Financial Clerks", key: "43-3000",
+    children: [
+{ title: "Bill and Account Collectors", key: "43-3010" },
+{ title: "Billing and Posting Clerks", key: "43-3020" },
+{ title: "Bookkeeping, Accounting, and Auditing Clerks", key: "43-3030" },
+{ title: "Gaming Cage Workers", key: "43-3040" },
+{ title: "Payroll and Timekeeping Clerks", key: "43-3050" },
+{ title: "Procurement Clerks", key: "43-3060" },
+{ title: "Tellers", key: "43-3070" },
+{ title: "Miscellaneous Financial Clerks", key: "43-3090" }
+]
+},
+{ title: "Information and Record Clerks", key: "43-4000",
+    children: [
+{ title: "Brokerage Clerks", key: "43-4010" },
+{ title: "Correspondence Clerks", key: "43-4020" },
+{ title: "Court, Municipal, and License Clerks", key: "43-4030" },
+{ title: "Credit Authorizers, Checkers, and Clerks", key: "43-4040" },
+{ title: "Customer Service Representatives", key: "43-4050" },
+{ title: "Eligibility Interviewers, Government Programs", key: "43-4060" },
+{ title: "File Clerks", key: "43-4070" },
+{ title: "Hotel, Motel, and Resort Desk Clerks", key: "43-4080" },
+{ title: "Interviewers, Except Eligibility and Loan", key: "43-4110" },
+{ title: "Library Assistants, Clerical", key: "43-4120" },
+{ title: "Loan Interviewers and Clerks", key: "43-4130" },
+{ title: "New Accounts Clerks", key: "43-4140" },
+{ title: "Order Clerks", key: "43-4150" },
+{ title: "Human Resources Assistants, Except Payroll and Timekeeping", key: "43-4160" },
+{ title: "Receptionists and Information Clerks", key: "43-4170" },
+{ title: "Reservation and Transportation Ticket Agents and Travel Clerks", key: "43-4180" },
+{ title: "Miscellaneous Information and Record Clerks", key: "43-4190" }
+]
+},
+{ title: "Material Recording, Scheduling, Dispatching, and Distributing Workers", key: "43-5000",
+    children: [
+{ title: "Cargo and Freight Agents", key: "43-5010" },
+{ title: "Couriers and Messengers", key: "43-5020" },
+{ title: "Dispatchers", key: "43-5030" },
+{ title: "Meter Readers, Utilities", key: "43-5040" },
+{ title: "Postal Service Workers", key: "43-5050" },
+{ title: "Production, Planning, and Expediting Clerks", key: "43-5060" },
+{ title: "Shipping, Receiving, and Traffic Clerks", key: "43-5070" },
+{ title: "Stock Clerks and Order Fillers", key: "43-5080" },
+{ title: "Weighers, Measurers, Checkers, and Samplers, Recordkeeping", key: "43-5110" }
+]
+},
+{ title: "Secretaries and Administrative Assistants", key: "43-6000",
+    children: [
+{ title: "Secretaries and Administrative Assistants", key: "43-6010" }
+]
+},
+{ title: "Other Office and Administrative Support Workers", key: "43-9000",
+    children: [
+{ title: "Computer Operators", key: "43-9010" },
+{ title: "Data Entry and Information Processing Workers", key: "43-9020" },
+{ title: "Desktop Publishers", key: "43-9030" },
+{ title: "Insurance Claims and Policy Processing Clerks", key: "43-9040" },
+{ title: "Mail Clerks and Mail Machine Operators, Except Postal Service", key: "43-9050" },
+{ title: "Office Clerks, General", key: "43-9060" },
+{ title: "Office Machine Operators, Except Computer", key: "43-9070" },
+{ title: "Proofreaders and Copy Markers", key: "43-9080" },
+{ title: "Statistical Assistants", key: "43-9110" },
+{ title: "Miscellaneous Office and Administrative Support Workers", key: "43-9190" }
+]
+}
+]
+},
+{ title: "Farming, Fishing, and Forestry Occupations", key: "45-0000",
+    children: [
+{ title: "Supervisors of Farming, Fishing, and Forestry Workers", key: "45-1000",
+    children: [
+{ title: "First-Line Supervisors of Farming, Fishing, and Forestry Workers", key: "45-1010" }
+]
+},
+{ title: "Agricultural Workers", key: "45-2000",
+    children: [
+{ title: "Agricultural Inspectors", key: "45-2010" },
+{ title: "Animal Breeders", key: "45-2020" },
+{ title: "Graders and Sorters, Agricultural Products", key: "45-2040" },
+{ title: "Miscellaneous Agricultural Workers", key: "45-2090" }
+]
+},
+{ title: "Fishing and Hunting Workers", key: "45-3000",
+    children: [
+{ title: "Fishers and Related Fishing Workers", key: "45-3010" },
+{ title: "Hunters and Trappers", key: "45-3020" }
+]
+},
+{ title: "Forest, Conservation, and Logging Workers", key: "45-4000",
+    children: [
+{ title: "Forest and Conservation Workers", key: "45-4010" },
+{ title: "Logging Workers", key: "45-4020" }
+]
+}
+]
+},
+{ title: "Construction and Extraction Occupations", key: "47-0000",
+    children: [
+{ title: "Supervisors of Construction and Extraction Workers", key: "47-1000",
+    children: [
+{ title: "First-Line Supervisors of Construction Trades and Extraction Workers", key: "47-1010" }
+]
+},
+{ title: "Construction Trades Workers", key: "47-2000",
+    children: [
+{ title: "Boilermakers", key: "47-2010" },
+{ title: "Brickmasons, Blockmasons, and Stonemasons", key: "47-2020" },
+{ title: "Carpenters", key: "47-2030" },
+{ title: "Carpet, Floor, and Tile Installers and Finishers", key: "47-2040" },
+{ title: "Cement Masons, Concrete Finishers, and Terrazzo Workers", key: "47-2050" },
+{ title: "Construction Laborers", key: "47-2060" },
+{ title: "Construction Equipment Operators", key: "47-2070" },
+{ title: "Drywall Installers, Ceiling Tile Installers, and Tapers", key: "47-2080" },
+{ title: "Electricians", key: "47-2110" },
+{ title: "Glaziers", key: "47-2120" },
+{ title: "Insulation Workers", key: "47-2130" },
+{ title: "Painters and Paperhangers", key: "47-2140" },
+{ title: "Pipelayers, Plumbers, Pipefitters, and Steamfitters", key: "47-2150" },
+{ title: "Plasterers and Stucco Masons", key: "47-2160" },
+{ title: "Reinforcing Iron and Rebar Workers", key: "47-2170" },
+{ title: "Roofers", key: "47-2180" },
+{ title: "Sheet Metal Workers", key: "47-2210" },
+{ title: "Structural Iron and Steel Workers", key: "47-2220" },
+{ title: "Solar Photovoltaic Installers", key: "47-2230" }
+]
+},
+{ title: "Helpers, Construction Trades", key: "47-3000",
+    children: [
+{ title: "Helpers, Construction Trades", key: "47-3010" }
+]
+},
+{ title: "Other Construction and Related Workers", key: "47-4000",
+    children: [
+{ title: "Construction and Building Inspectors", key: "47-4010" },
+{ title: "Elevator Installers and Repairers", key: "47-4020" },
+{ title: "Fence Erectors", key: "47-4030" },
+{ title: "Hazardous Materials Removal Workers", key: "47-4040" },
+{ title: "Highway Maintenance Workers", key: "47-4050" },
+{ title: "Rail-Track Laying and Maintenance Equipment Operators", key: "47-4060" },
+{ title: "Septic Tank Servicers and Sewer Pipe Cleaners", key: "47-4070" },
+{ title: "Miscellaneous Construction and Related Workers", key: "47-4090" }
+]
+},
+{ title: "Extraction Workers", key: "47-5000",
+    children: [
+{ title: "Derrick, Rotary Drill, and Service Unit Operators, Oil, Gas, and Mining", key: "47-5010" },
+{ title: "Earth Drillers, Except Oil and Gas", key: "47-5020" },
+{ title: "Explosives Workers, Ordnance Handling Experts, and Blasters", key: "47-5030" },
+{ title: "Mining Machine Operators", key: "47-5040" },
+{ title: "Rock Splitters, Quarry", key: "47-5050" },
+{ title: "Roof Bolters, Mining", key: "47-5060" },
+{ title: "Roustabouts, Oil and Gas", key: "47-5070" },
+{ title: "Helpers--Extraction Workers", key: "47-5080" },
+{ title: "Miscellaneous Extraction Workers", key: "47-5090" }
+]
+}
+]
+},
+{ title: "Installation, Maintenance, and Repair Occupations", key: "49-0000",
+    children: [
+{ title: "Supervisors of Installation, Maintenance, and Repair Workers", key: "49-1000",
+    children: [
+{ title: "First-Line Supervisors of Mechanics, Installers, and Repairers", key: "49-1010" }
+]
+},
+{ title: "Electrical and Electronic Equipment Mechanics, Installers, and Repairers", key: "49-2000",
+    children: [
+{ title: "Computer, Automated Teller, and Office Machine Repairers", key: "49-2010" },
+{ title: "Radio and Telecommunications Equipment Installers and Repairers", key: "49-2020" },
+{ title: "Miscellaneous Electrical and Electronic Equipment Mechanics, Installers, and Repairers", key: "49-2090" }
+]
+},
+{ title: "Vehicle and Mobile Equipment Mechanics, Installers, and Repairers", key: "49-3000",
+    children: [
+{ title: "Aircraft Mechanics and Service Technicians", key: "49-3010" },
+{ title: "Automotive Technicians and Repairers", key: "49-3020" },
+{ title: "Bus and Truck Mechanics and Diesel Engine Specialists", key: "49-3030" },
+{ title: "Heavy Vehicle and Mobile Equipment Service Technicians and Mechanics", key: "49-3040" },
+{ title: "Small Engine Mechanics", key: "49-3050" },
+{ title: "Miscellaneous Vehicle and Mobile Equipment Mechanics, Installers, and Repairers", key: "49-3090" }
+]
+},
+{ title: "Other Installation, Maintenance, and Repair Occupations", key: "49-9000",
+    children: [
+{ title: "Control and Valve Installers and Repairers", key: "49-9010" },
+{ title: "Heating, Air Conditioning, and Refrigeration Mechanics and Installers", key: "49-9020" },
+{ title: "Home Appliance Repairers", key: "49-9030" },
+{ title: "Industrial Machinery Installation, Repair, and Maintenance Workers", key: "49-9040" },
+{ title: "Line Installers and Repairers", key: "49-9050" },
+{ title: "Precision Instrument and Equipment Repairers", key: "49-9060" },
+{ title: "Maintenance and Repair Workers, General", key: "49-9070" },
+{ title: "Wind Turbine Service Technicians", key: "49-9080" },
+{ title: "Miscellaneous Installation, Maintenance, and Repair Workers", key: "49-9090" }
+]
+}
+]
+},
+{ title: "Production Occupations", key: "51-0000",
+    children: [
+{ title: "Supervisors of Production Workers", key: "51-1000",
+    children: [
+{ title: "First-Line Supervisors of Production and Operating Workers", key: "51-1010" }
+]
+},
+{ title: "Assemblers and Fabricators", key: "51-2000",
+    children: [
+{ title: "Aircraft Structure, Surfaces, Rigging, and Systems Assemblers", key: "51-2010" },
+{ title: "Electrical, Electronics, and Electromechanical Assemblers", key: "51-2020" },
+{ title: "Engine and Other Machine Assemblers", key: "51-2030" },
+{ title: "Structural Metal Fabricators and Fitters", key: "51-2040" },
+{ title: "Miscellaneous Assemblers and Fabricators", key: "51-2090" }
+]
+},
+{ title: "Food Processing Workers", key: "51-3000",
+    children: [
+{ title: "Bakers", key: "51-3010" },
+{ title: "Butchers and Other Meat, Poultry, and Fish Processing Workers", key: "51-3020" },
+{ title: "Miscellaneous Food Processing Workers", key: "51-3090" }
+]
+},
+{ title: "Metal Workers and Plastic Workers", key: "51-4000",
+    children: [
+{ title: "Computer Control Programmers and Operators", key: "51-4010" },
+{ title: "Forming Machine Setters, Operators, and Tenders, Metal and Plastic", key: "51-4020" },
+{ title: "Machine Tool Cutting Setters, Operators, and Tenders, Metal and Plastic", key: "51-4030" },
+{ title: "Machinists", key: "51-4040" },
+{ title: "Metal Furnace Operators, Tenders, Pourers, and Casters", key: "51-4050" },
+{ title: "Model Makers and Patternmakers, Metal and Plastic", key: "51-4060" },
+{ title: "Molders and Molding Machine Setters, Operators, and Tenders, Metal and Plastic", key: "51-4070" },
+{ title: "Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic", key: "51-4080" },
+{ title: "Tool and Die Makers", key: "51-4110" },
+{ title: "Welding, Soldering, and Brazing Workers", key: "51-4120" },
+{ title: "Miscellaneous Metal Workers and Plastic Workers", key: "51-4190" }
+]
+},
+{ title: "Printing Workers", key: "51-5100",
+    children: [
+{ title: "Printing Workers", key: "51-5110" }
+]
+},
+{ title: "Textile, Apparel, and Furnishings Workers", key: "51-6000",
+    children: [
+{ title: "Laundry and Dry-Cleaning Workers", key: "51-6010" },
+{ title: "Pressers, Textile, Garment, and Related Materials", key: "51-6020" },
+{ title: "Sewing Machine Operators", key: "51-6030" },
+{ title: "Shoe and Leather Workers", key: "51-6040" },
+{ title: "Tailors, Dressmakers, and Sewers", key: "51-6050" },
+{ title: "Textile Machine Setters, Operators, and Tenders", key: "51-6060" },
+{ title: "Miscellaneous Textile, Apparel, and Furnishings Workers", key: "51-6090" }
+]
+},
+{ title: "Woodworkers", key: "51-7000",
+    children: [
+{ title: "Cabinetmakers and Bench Carpenters", key: "51-7010" },
+{ title: "Furniture Finishers", key: "51-7020" },
+{ title: "Model Makers and Patternmakers, Wood", key: "51-7030" },
+{ title: "Woodworking Machine Setters, Operators, and Tenders", key: "51-7040" },
+{ title: "Miscellaneous Woodworkers", key: "51-7090" }
+]
+},
+{ title: "Plant and System Operators", key: "51-8000",
+    children: [
+{ title: "Power Plant Operators, Distributors, and Dispatchers", key: "51-8010" },
+{ title: "Stationary Engineers and Boiler Operators", key: "51-8020" },
+{ title: "Water and Wastewater Treatment Plant and System Operators", key: "51-8030" },
+{ title: "Miscellaneous Plant and System Operators", key: "51-8090" }
+]
+},
+{ title: "Other Production Occupations", key: "51-9000",
+    children: [
+{ title: "Chemical Processing Machine Setters, Operators, and Tenders", key: "51-9010" },
+{ title: "Crushing, Grinding, Polishing, Mixing, and Blending Workers", key: "51-9020" },
+{ title: "Cutting Workers", key: "51-9030" },
+{ title: "Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders", key: "51-9040" },
+{ title: "Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders", key: "51-9050" },
+{ title: "Inspectors, Testers, Sorters, Samplers, and Weighers", key: "51-9060" },
+{ title: "Jewelers and Precious Stone and Metal Workers", key: "51-9070" },
+{ title: "Medical, Dental, and Ophthalmic Laboratory Technicians", key: "51-9080" },
+{ title: "Packaging and Filling Machine Operators and Tenders", key: "51-9110" },
+{ title: "Painting Workers", key: "51-9120" },
+{ title: "Semiconductor Processors", key: "51-9140" },
+{ title: "Photographic Process Workers and Processing Machine Operators", key: "51-9150" },
+{ title: "Miscellaneous Production Workers", key: "51-9190" }
+]
+}
+]
+},
+{ title: "Transportation and Material Moving Occupations", key: "53-0000",
+    children: [
+{ title: "Supervisors of Transportation and Material Moving Workers", key: "53-1000",
+    children: [
+{ title: "Aircraft Cargo Handling Supervisors", key: "53-1010" },
+{ title: "First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand", key: "53-1020" },
+{ title: "First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators", key: "53-1030" }
+]
+},
+{ title: "Air Transportation Workers", key: "53-2000",
+    children: [
+{ title: "Aircraft Pilots and Flight Engineers", key: "53-2010" },
+{ title: "Air Traffic Controllers and Airfield Operations Specialists", key: "53-2020" },
+{ title: "Flight Attendants", key: "53-2030" }
+]
+},
+{ title: "Motor Vehicle Operators", key: "53-3000",
+    children: [
+{ title: "Ambulance Drivers and Attendants, Except Emergency Medical Technicians", key: "53-3010" },
+{ title: "Bus Drivers", key: "53-3020" },
+{ title: "Driver/Sales Workers and Truck Drivers", key: "53-3030" },
+{ title: "Taxi Drivers and Chauffeurs", key: "53-3040" },
+{ title: "Miscellaneous Motor Vehicle Operators", key: "53-3090" }
+]
+},
+{ title: "Rail Transportation Workers", key: "53-4000",
+    children: [
+{ title: "Locomotive Engineers and Operators", key: "53-4010" },
+{ title: "Railroad Brake, Signal, and Switch Operators", key: "53-4020" },
+{ title: "Railroad Conductors and Yardmasters", key: "53-4030" },
+{ title: "Subway and Streetcar Operators", key: "53-4040" },
+{ title: "Miscellaneous Rail Transportation Workers", key: "53-4090" }
+]
+},
+{ title: "Water Transportation Workers", key: "53-5000",
+    children: [
+{ title: "Sailors and Marine Oilers", key: "53-5010" },
+{ title: "Ship and Boat Captains and Operators", key: "53-5020" },
+{ title: "Ship Engineers", key: "53-5030" }
+]
+},
+{ title: "Other Transportation Workers", key: "53-6000",
+    children: [
+{ title: "Bridge and Lock Tenders", key: "53-6010" },
+{ title: "Parking Lot Attendants", key: "53-6020" },
+{ title: "Automotive and Watercraft Service Attendants", key: "53-6030" },
+{ title: "Traffic Technicians", key: "53-6040" },
+{ title: "Transportation Inspectors", key: "53-6050" },
+{ title: "Transportation Attendants, Except Flight Attendants", key: "53-6060" },
+{ title: "Miscellaneous Transportation Workers", key: "53-6090" }
+]
+},
+{ title: "Material Moving Workers", key: "53-7000",
+    children: [
+{ title: "Conveyor Operators and Tenders", key: "53-7010" },
+{ title: "Crane and Tower Operators", key: "53-7020" },
+{ title: "Dredge, Excavating, and Loading Machine Operators", key: "53-7030" },
+{ title: "Hoist and Winch Operators", key: "53-7040" },
+{ title: "Industrial Truck and Tractor Operators", key: "53-7050" },
+{ title: "Laborers and Material Movers, Hand", key: "53-7060" },
+{ title: "Pumping Station Operators", key: "53-7070" },
+{ title: "Refuse and Recyclable Material Collectors", key: "53-7080" },
+{ title: "Mine Shuttle Car Operators", key: "53-7110" },
+{ title: "Tank Car, Truck, and Ship Loaders", key: "53-7120" },
+{ title: "Miscellaneous Material Moving Workers", key: "53-7190" }
+]
+}
+]
+},
+{ title: "Military Specific Occupations", key: "55-0000",
+    children: [
+{ title: "Military Officer Special and Tactical Operations Leaders", key: "55-1000",
+    children: [
+{ title: "Military Officer Special and Tactical Operations Leaders", key: "55-1010" }
+]
+},
+{ title: "First-Line Enlisted Military Supervisors", key: "55-2000",
+    children: [
+{ title: "First-Line Enlisted Military Supervisors", key: "55-2010" }
+]
+},
+{ title: "Military Enlisted Tactical Operations and Air/Weapons Specialists and Crew Members", key: "55-3000",
+    children: [
+{ title: "Military Enlisted Tactical Operations and Air/Weapons Specialists and Crew Members", key: "55-3010" }
+]
+}
+]
+}
+      ];
+
+    $(document).ready(function() {
+
+       ux.load("jqueryDynaTree", function(){
+
+              $(function() {
+                // --- Initialize sample trees
+                $("#naicsTree").dynatree({
+                  checkbox: true,
+                  selectMode: 3,
+                  children: naicsData,
+                  onSelect: function(select, node) {
+                    // Get a list of all selected nodes, and convert to a key array:
+                    var selKeys = $.map(node.tree.getSelectedNodes(), function(node){
+                      return node.data.key;
+                    });
+                    $("#echoSelection3").text(selKeys.join(", "));
+
+                    // Get a list of all selected TOP nodes
+                    var selRootNodes = node.tree.getSelectedNodes(true);
+                    // ... and convert to a key array:
+                    var selRootKeys = $.map(selRootNodes, function(node){
+                      return node.data.key;
+                    });
+                    $("#echoSelectionRootKeys3").text(selRootKeys.join(", "));
+                    $("#echoSelectionRoots3").text(selRootNodes.join(", "));
+                  },
+                  onDblClick: function(node, event) {
+                    node.toggleSelect();
+                  },
+                  onKeydown: function(node, event) {
+                    if( event.which == 32 ) {
+                      node.toggleSelect();
+                      return false;
+                    }
+                  }
+                });
+
+              $("#socTree").dynatree({
+                  checkbox: true,
+                  selectMode: 3,
+                  children: socData,
+                  onSelect: function (select, node) {
+                      // Get a list of all selected nodes, and convert to a key array:
+                      var selKeys = $.map(node.tree.getSelectedNodes(), function (node) {
+                          return node.data.key;
+                      });
+                      $("#echoSelection3").text(selKeys.join(", "));
+
+                      // Get a list of all selected TOP nodes
+                      var selRootNodes = node.tree.getSelectedNodes(true);
+                      // ... and convert to a key array:
+                      var selRootKeys = $.map(selRootNodes, function (node) {
+                          return node.data.key;
+                      });
+                      $("#echoSelectionRootKeys3").text(selRootKeys.join(", "));
+                      $("#echoSelectionRoots3").text(selRootNodes.join(", "));
+                  },
+                  onDblClick: function (node, event) {
+                      node.toggleSelect();
+                  },
+                  onKeydown: function (node, event) {
+                      if (event.which == 32) {
+                          node.toggleSelect();
+                          return false;
+                      }
+                  }
+              });
+
+            });
+
+        });
+
+    });
+
+
+    </script>
+    
+    <!-- Additional scripts below this line -->
+    <script type="text/javascript">
+
+        function PopulatePeriods() {
+            var periodTypeList = document.frmParams.periodtype;
+
+            // Clear out the list of teams
+            ClearOptions(document.frmParams.periodstart);
+
+            if (periodTypeList[periodTypeList.selectedIndex].value == "1") {
+                AddToOptionList(document.frmParams.periodstart, "1", "2012");
+                AddToOptionList(document.frmParams.periodstart, "1", "2011");
+                AddToOptionList(document.frmParams.periodstart, "1", "2010");
+                AddToOptionList(document.frmParams.periodstart, "1", "2009");
+                AddToOptionList(document.frmParams.periodstart, "1", "2008");
+            }
+
+            if (periodTypeList[periodTypeList.selectedIndex].value == "2") {
+                AddToOptionList(document.frmParams.periodstart, "1", "2012 Q1");
+                AddToOptionList(document.frmParams.periodstart, "1", "2012 Q2");
+                AddToOptionList(document.frmParams.periodstart, "1", "2012 Q3");
+                AddToOptionList(document.frmParams.periodstart, "1", "2012 Q4");
+                AddToOptionList(document.frmParams.periodstart, "1", "2011 Q1");
+                AddToOptionList(document.frmParams.periodstart, "1", "2011 Q2");
+                AddToOptionList(document.frmParams.periodstart, "1", "2011 Q3");
+                AddToOptionList(document.frmParams.periodstart, "1", "2011 Q4");
+                AddToOptionList(document.frmParams.periodstart, "1", "2010 Q1");
+                AddToOptionList(document.frmParams.periodstart, "1", "2010 Q2");
+                AddToOptionList(document.frmParams.periodstart, "1", "2010 Q3");
+                AddToOptionList(document.frmParams.periodstart, "1", "2010 Q4");
+            }
+
+            if (periodTypeList[periodTypeList.selectedIndex].value == "3") {
+                AddToOptionList(document.frmParams.periodstart, "1", "January");
+                AddToOptionList(document.frmParams.periodstart, "1", "February");
+                AddToOptionList(document.frmParams.periodstart, "1", "March");
+                AddToOptionList(document.frmParams.periodstart, "1", "April");
+                AddToOptionList(document.frmParams.periodstart, "1", "May");
+                AddToOptionList(document.frmParams.periodstart, "1", "June");
+                AddToOptionList(document.frmParams.periodstart, "1", "July");
+                AddToOptionList(document.frmParams.periodstart, "1", "August");
+                AddToOptionList(document.frmParams.periodstart, "1", "September");
+                AddToOptionList(document.frmParams.periodstart, "1", "October");
+                AddToOptionList(document.frmParams.periodstart, "1", "November");
+                AddToOptionList(document.frmParams.periodstart, "1", "December");
+            }
+
+            if (periodTypeList[periodTypeList.selectedIndex].value == "4") {
+                AddToOptionList(document.frmParams.periodstart, "1", "Week 1");
+                AddToOptionList(document.frmParams.periodstart, "1", "Week 2");
+                AddToOptionList(document.frmParams.periodstart, "1", "Week 3");
+                AddToOptionList(document.frmParams.periodstart, "1", "Week 4");
+                AddToOptionList(document.frmParams.periodstart, "1", "Week 5");
+                AddToOptionList(document.frmParams.periodstart, "1", "Week 6");
+            }
+
+        }
+
+
+        function PopulateGeographies() {
+            var regionTypeList = document.frmParams.regiontype;
+
+            // Clear out the list of teams
+            ClearOptions(document.frmParams.listofchoices);
+
+            if (regionTypeList[regionTypeList.selectedIndex].value == "1") {
+                AddToOptionList(document.frmParams.listofchoices, "1", "Albany");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Allegany");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Bronx");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Broome");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Cattaraugus");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Cayuga");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Chautauqua");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Chemung");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Chenango");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Clinton");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Columbia");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Cortland");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Delaware");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Dutchess");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Erie");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Essex");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Franklin");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Fulton");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Genesee");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Greene");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Hamilton");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Herkimer");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Jefferson");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Kings");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Lewis");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Livingston");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Madison");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Monroe");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Montgomery");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Nassau");
+                AddToOptionList(document.frmParams.listofchoices, "1", "New York");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Niagara");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Oneida");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Onondaga");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Ontario");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Orange");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Orleans");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Oswego");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Otsego");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Putnam");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Queens");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Rensselaer");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Richmond");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Rockland");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Saint Lawrence");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Saratoga");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Schenectady");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Schoharie");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Schuyler");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Seneca");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Steuben");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Suffolk");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Sullivan");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Tioga");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Tompkins");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Ulster");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Warren");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Washington");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Wayne");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Westchester");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Wyoming");
+                AddToOptionList(document.frmParams.listofchoices, "1", "Yates");
+            }
+
+            if (regionTypeList[regionTypeList.selectedIndex].value == "2") {
+                AddToOptionList(document.frmParams.listofchoices, "2", "Capital Region");
+                AddToOptionList(document.frmParams.listofchoices, "2", "Central New York");
+                AddToOptionList(document.frmParams.listofchoices, "2", "Finger Lakes");
+                AddToOptionList(document.frmParams.listofchoices, "2", "Hudson Valley");
+                AddToOptionList(document.frmParams.listofchoices, "2", "Long Island");
+                AddToOptionList(document.frmParams.listofchoices, "2", "Mohawk Valley");
+                AddToOptionList(document.frmParams.listofchoices, "2", "New York City");
+                AddToOptionList(document.frmParams.listofchoices, "2", "North Country");
+                AddToOptionList(document.frmParams.listofchoices, "2", "Southern Tier");
+                AddToOptionList(document.frmParams.listofchoices, "2", "Western New York");
+            }
+        }
+
+
+        function ClearOptions(OptionList) {
+            // Always clear an option list from the last entry to the first
+            for (x = OptionList.length; x >= 0; x = x - 1) {
+                OptionList[x] = null;
+            }
+        }
+
+
+        function AddToOptionList(OptionList, OptionValue, OptionText) {
+            // Add option to the bottom of the list
+            OptionList[OptionList.length] = new Option(OptionText, OptionValue);
+        }
+
+        PopulateGeographies();
+        PopulatePeriods();
+    </script>
+		
+	</body>
+</html>
