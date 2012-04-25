@@ -1080,6 +1080,7 @@ var ux = {
 		 		// Hide the parent div
 		 		$(this).hide();
 		 		$('#gov-search-form').show();
+		 		$('#gov-search-box').focus();
 		 	})
 		 }
 		 

@@ -38,11 +38,11 @@
 						<a href="#" id="gov-link3" class="gov-img">
 							<span class="ux-hide-508">Search all of New York State</span>
 						</a>
-						<form method="get" id="gov-search-form" action="http://search.cio.ny.gov/" target="_blank">
+						<form method="get" id="gov-search-form" action="http://search.cio.ny.gov/" target="_blank" autocomplete="off">
 							<span id="gov-search-wrap">
 								<label for="gov-search-box" class="ux-hide-508">Search all of New York State</label>
 								<input type="text" title="Search" id="gov-search-box" class="search-box" maxlength="256" name="q" size="15" placeholder="Search NY.Gov" />
-								<input type="submit" value="Search NY.GOV" id="gov-search-button" />
+								<input type="submit" value="Search NY.GOV" id="gov-search-button" autocomplete="off"/>
 							</span>
 							<input type="hidden" name="sort" value="date:D:L:d1" />
 							<input type="hidden" name="output" value="xml_no_dtd" />
@@ -79,10 +79,10 @@
 							</a>
 						</li>					
 					</ul>
-					<form method="get" id="ux-site-search" action="http://search.cio.ny.gov" target="_blank" >
+					<form method="get" id="ux-site-search" action="http://search.cio.ny.gov" target="_blank" autocomplete="off">
 						<span id="ux-search-wrap">
 							<label for="q" class="ux-hide-508">Search Department of Labor:</label>
-							<input type="text" id="ux-search-box" accesskey="s" id="q" name="q" placeholder="Search DOL" />
+							<input type="text" id="ux-search-box" accesskey="s" id="q" name="q" placeholder="Search DOL" autocomplete="off"/>
 							<input type="submit" value="Search" id="ux-search-button" />
 						</span>
 						<input type="hidden" name="entqr" value="0" />
@@ -97,6 +97,27 @@
 					</form>	
 				</div>
 			</div>
+			<nav id="global-nav">
+				<div class="ux-content">
+					<ul>
+						<li>
+							<a href="#"><span>Option 1</span></a>
+						</li>
+						<li>
+							<a href="#"><span>Option 2</span></a>
+						</li>
+						<li>
+							<a href="#"><span>Option 3</span></a>
+						</li>
+						<li>
+							<a href="#"><span>Option 4</span></a>
+						</li>
+						<li>
+							<a href="#"><span>Option 5</span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</header>
 
 		<div id="ux-body">

@@ -24,3 +24,9 @@
 	clip: rect(1px 1px 1px 1px); /* IE7 fix */
 	clip: rect(1px, 1px, 1px, 1px);
 }
+
+/* Contents only display on a mobile device (smart-phone) 
+want speak for screen readers */
+.ux-mobile-only {
+	display: none;
+}

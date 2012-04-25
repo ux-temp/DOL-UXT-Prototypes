@@ -88,7 +88,8 @@
 	}
 
 	.fluid #ux-global-menu,
-	.fluid #ux-global-menu li {
+	.fluid #ux-global-menu li,
+	.fluid #ux-site-search {
 		float: none;
 		text-align: center;
 	}
@@ -97,10 +98,27 @@
 		margin: 0;
 	}
 
-
-	body.fluid {
-		background: blue;
+	.fluid #ux-site-search {
+		margin: 5px 0;
+		padding-bottom: 3px;
 	}
+
+	.fluid #ux-search-wrap {
+		width: 90%;
+	}
+
+	.fluid #gov-search-box,
+	.fluid #ux-search-box {
+		font-size: 16px;
+	}
+
+	/* Mobile Only Content
+	----------------------------------- */
+
+	.fluid .ux-mobile-only {
+		display: block;
+	}
+
 }
 
 @media handheld, only screen and (min-width: 600px) {
@@ -117,6 +135,6 @@
 
 @media screen and (min-width: 960px) {
 	body.fluid {
-		background: green;
+		background: orange;
 	}
 }

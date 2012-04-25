@@ -50,7 +50,6 @@ header a, header a:link, header a:visited {
 	background: #FFF;
 	border-radius: 7px;
 	display: inline-block;
-	height: 20px;
 	padding: 0 7px;
 }
 
@@ -59,14 +58,14 @@ header a, header a:link, header a:visited {
 	border: 0;
 	float: left;
 	font-size: 12px;
-	margin: 3px 0 0 0;
+	margin: 1px 0 0 0;
 	padding: 0;
 	width: 84%;
 }
 
 #gov-search-button,
 #ux-search-button {
-	background: url(../images/icons/magnifier_disabled.png) no-repeat 0 2px transparent;
+	background: url(../images/icons/magnifier_disabled.png) no-repeat 0 0 transparent;
 	border: 0;
 	float: right;
 	height: 16px;
@@ -114,8 +113,7 @@ header a, header a:link, header a:visited {
 	text-shadow: 1px 1px 2px #000;
 }
 
-/* Department Global Menu
--------------------------- */
+/* Department Global Menu */
 
 #ux-global-menu {
 	float: right;
@@ -127,12 +125,39 @@ header a, header a:link, header a:visited {
 	display: inline;	
 }
 
-/* Department Site Search
--------------------------- */
+/* Department Site Search */
 
 #ux-site-search {
 	float: right;
-	margin: 15px 0;
+	margin: 17px 0;
 }
 
+/* Global Navigation
+----------------------- */
+
+#global-nav, #global-nav .ux-content {
+	background: #3C3C3C;;
+	height: 28px;
+}
+
+#global-nav ul {
+	float: left;
+	list-style: none;
+	margin: 7px 0 0 10px;
+}
+
+#global-nav ul li {
+	display: inline;
+}
+
+#global-nav ul li a {
+	color: #FFF;
+	font-size: 12px;
+	padding: 0 7px;
+}
+
+#global-nav ul li a span {
+	background: url(../images/icons/arrow-down.png) no-repeat right 7px transparent;
+	padding-right: 10px;
+}
 
