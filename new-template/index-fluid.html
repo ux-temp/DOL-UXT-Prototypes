@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="css-dev/style.css" />
 		<link rel="stylesheet" type="text/css" media="print" href="css-dev/ux-print.css" />
 
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="viewport" ux-content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 		<!-- Modernizer support -->
@@ -27,33 +27,37 @@
 		<a tabindex="1" href="#" id="skipContent" class="skipto ux-hide-508">Skip to Content</a>
 		<header id="ux">
 			<div id="gov-bar">
-				<div class="content">
-					<a href="#" class="gb-img img1">
-						<span class="ux-hide-508">New York State Home</span>
-					</a>
-					<a href="#" class="gb-img img2">
-						<span class="ux-hide-508">State Agencies List</span>
-					</a>
-					<a href="#" class="gb-img img3" id="gov-search-img">
-						<span class="ux-hide-508">Search New York State</span>
-					</a>
-					<form method="get" id="gov-search-form" action="http://search.cio.ny.gov/" target="_blank">
-						<label for="gov-search-box">
-							<input type="text" title="Search" id="gov-search-box" class="search-box" maxlength="256" name="q" size="15" />
-						</label>
-						<input type="submit" value="Search NY.GOV" class="search-button" />
-						<input type="hidden" name="sort" value="date:D:L:d1" />
-						<input type="hidden" name="output" value="xml_no_dtd" />
-						<input type="hidden" name="ie" value="UTF-8" />
-						<input type="hidden" name="oe" value="UTF-8" />
-						<input type="hidden" name="client" value="default_frontend" />
-						<input type="hidden" name="proxystylesheet" value="default_frontend" />
-						<input type="hidden" name="site" value="default_collection" />
-					</form>
+				<div class="ux-content">
+					<div id="gov-links">
+						<a href="#" class="gb-img img1">
+							<span class="ux-hide-508">New York State Home</span>
+						</a>
+						<a href="#" class="gb-img img2">
+							<span class="ux-hide-508">State Agencies List</span>
+						</a>
+					</div>
+					<div id="gov-search">
+						<a href="#" class="gb-img img3" id="gov-search-img">
+							<span class="ux-hide-508">Search New York State</span>
+						</a>
+						<form method="get" id="gov-search-form" action="http://search.cio.ny.gov/" target="_blank">
+							<label for="gov-search-box">
+								<input type="text" title="Search" id="gov-search-box" class="search-box" maxlength="256" name="q" size="15" />
+							</label>
+							<input type="submit" value="Search NY.GOV" class="search-button" />
+							<input type="hidden" name="sort" value="date:D:L:d1" />
+							<input type="hidden" name="output" value="xml_no_dtd" />
+							<input type="hidden" name="ie" value="UTF-8" />
+							<input type="hidden" name="oe" value="UTF-8" />
+							<input type="hidden" name="client" value="default_frontend" />
+							<input type="hidden" name="proxystylesheet" value="default_frontend" />
+							<input type="hidden" name="site" value="default_collection" />
+						</form>
+					</div>
 				</div>
 			</div>
 			<div id="ux-main" class="tiny">
-				<div class="content">
+				<div class="ux-content">
 					<h1>
 						<a href="#" id="ux-logo">
 							<span class="ux-hide-508">New York State Deparment of Labor</span>
@@ -71,11 +75,6 @@
 						<li>
 							<a href="#" class="icon index">
 								<span>A-Z Index</span>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="icon translate">
-								<span>Translate</span>
 							</a>
 						</li>
 					</ul>
@@ -98,7 +97,7 @@
 				</div>
 			</div>
 			<nav id="ux-global">
-				<div class="content">
+				<div class="ux-content">
 				</div>
 			</nav>
 		</header>

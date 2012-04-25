@@ -6,7 +6,7 @@
 
 /* Containers
 ----------------------------------------------------------------------------------------------------*/
-#page-wrap, .content,
+#page-wrap, .ux-content,
 [class*="container_"] {
 	margin: 0 auto;
 	width: 960px;
