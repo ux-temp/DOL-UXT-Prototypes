@@ -1075,7 +1075,7 @@ var ux = {
 		 */
 		 this.load("placeHolder");
 
-		 if(jQuery('#gov-banner')) {
+		 if(jQuery('#gov-bar')) {
 		 	$('#gov-search-img').on('click', function(){
 		 		// Hide the parent div
 		 		$(this).hide();

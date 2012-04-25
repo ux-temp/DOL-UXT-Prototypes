@@ -41,10 +41,11 @@
 							<span class="ux-hide-508">Search New York State</span>
 						</a>
 						<form method="get" id="gov-search-form" action="http://search.cio.ny.gov/" target="_blank">
-							<label for="gov-search-box">
+							<span id="gov-search-wrap">
+								<label for="gov-search-box" class="ux-hide-508">Search all of New York State</label>
 								<input type="text" title="Search" id="gov-search-box" class="search-box" maxlength="256" name="q" size="15" />
-							</label>
-							<input type="submit" value="Search NY.GOV" class="search-button" />
+								<input type="submit" value="Search NY.GOV" class="search-button" />
+							</span>
 							<input type="hidden" name="sort" value="date:D:L:d1" />
 							<input type="hidden" name="output" value="xml_no_dtd" />
 							<input type="hidden" name="ie" value="UTF-8" />
