@@ -133,12 +133,24 @@
 		text-align: center;
 	}
 
+	/*
 	.fluid #global-nav ul li:after {
 		content: "\2022";
 		font-weight: bold;
 	}
 
 	.fluid #global-nav ul li:last-child:after {
+		content: none;
+		padding: 0;
+	}
+	*/
+
+	.fluid #global-nav ul li:before {
+		content: "\2022";
+		font-weight: bold;
+	}
+
+	.fluid #global-nav ul li:first-child:before {
 		content: none;
 		padding: 0;
 	}
