@@ -1,77 +1,41 @@
 (function($){
 	
-	// Create the plugin
-	$.fn.popover = function() {
-		
-		var container = $('<div class="popover" style="display:none;"></div>');
-		var subcontainer = "";
-		var arrow = $('<div class="arrow"></div>');
 
-		// Loop through all passed elements in the selector array.
-		return this.each(function(i){
+	// Attach the new plugin onto the jQuery object.
+	$.fn.extend({
 
-			// Disable default click events
-			var el = $(this);
+		popover: function() {
 
-			// Check to see if the popover data is under it.
-			if (el.next('.ux-popover-container').length) {
-
-				// Copy the basic structure
-				var newPopover = container.clone().attr('id','popover-' + i).html( el.next('.ux-popover-container').html()).prepend(arrow.clone().addClass('top')).appendTo('body');
-
-				//Current method can not be used until header is cleaned up
-				//var newPopover = el.next('.ux-popover-container').attr('id','popover-' + i).addClass('popover').prepend(arrow.clone().addClass('top'));
-
-				var position = el.offset(), top, left;
+			return this.each(function() {
 				
-				if ((el.parent('div.arrow-down').length)) {
-					var position = el.parent('div.arrow-down').offset();
-					top = position.top + el.parent('div.arrow-down').height();
-					left = position.left - (newPopover.outerWidth()/2) + (el.parent('div.arrow-down').width()/2);
-				} else {
-					top = position.top + el.height();
-					left = position.left - (newPopover.outerWidth()/2) + (el.width()/2);
-				}
+				// Save off the current popover container info
+				var container = $(this);
 
-				// Position popover
-				newPopover.css({
-					top: top,
-					left: left
-				});
+				// Save of the binding link... Should be declared right above the popover container
+				var link = container.prev('a');
 
-				// Setup click event to bind the items to click/touch
-				el.on("click",function(e){
+				// Setup the click event that runs every time a popover is clicked
+				link.on("click", function(e){
 
+					// Prevent the original click action
 					e.preventDefault();
+					
+					// Get the links current location
+					var linkPos = link.offset(), top, left;
 
-					// Check to see if the current linked click is active
-					if ($('#popover-'+i).hasClass('active')) {
+					top = linkPos.top + link.height();
+					left = linkPos.left - (container.outerWidth()/2) + (link.width()/2);
 
-						// The current item is active, close it.
-						$('#popover-'+i).removeClass('active').hide();
-					} else {
-						
-						// Check to see if anther popover is showing
-						$('.popover.active').removeClass('active').hide();
+					container.css({top:top,left:left}).show();
 
-						// Activate the new popover
-						$('#popover-'+i).addClass('active').show();
-					}
-
-					// Stop the clicks from going down further layers
-					e.stopPropagation();
-
-					// Bind the html to have a new click even just incase the user clicks somewhere else.
-					$('html').on("click", function() {
-						$('.popover.active').removeClass('active').hide();
-					});	
+					//alert(linkPos);
 
 				});
 
-			}
-			
-		});
+			});
 
-	}
+		}
+
+	});
 
 })( jQuery );

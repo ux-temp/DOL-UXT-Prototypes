@@ -233,3 +233,20 @@
 		background: orange;
 	}
 }
+
+
+@media screen and (min-width: 1200px) {
+
+	.fluid #page-wrap, .fluid .ux-content {
+		width: 1200px !important;
+	}
+
+	.fluid #ux-app-name {
+		font-size: 20px;
+		margin: 10px 0 0 20px;
+	}
+
+	body.fluid {
+		background: blue;
+	}
+}

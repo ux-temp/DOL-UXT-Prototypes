@@ -346,6 +346,10 @@ var uxVar = {
 		},
 		popover: {
 			scripts: "jquery.open-ux.popovers",
+			defaultElement: ".ux-popovers",
+			defaultFunction: function() {
+				$(this.defaultElement).popover();
+			},
 			loadStatus: false
 		},
 		/*
