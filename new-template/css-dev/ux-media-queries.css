@@ -160,9 +160,8 @@
 		font-weight: bold;
 	}	
 
-	.fluid #global-nav ul li:after:last-child {
-		content: none;
-		padding: 0;
+	.fluid #global-nav ul li::last-child {
+		background-color: #DDD;
 	}
 
 	.fluid #global-nav ul li a span {
