@@ -145,19 +145,23 @@
 	}
 	*/
 
-	.fluid #global-nav ul li:before {
-		content: "\2022";
-		font-weight: bold;
-	}
-
-	.fluid #global-nav ul li:first-child:before {
-		content: none;
-		padding: 0;
+	.fluid #global-nav ul li a {
+		color: #3C3C3C;
+		font-size: 14px;
 	}
 
 	.fluid #global-nav ul li a {
 		color: #3C3C3C;
 		font-size: 14px;
+	}	
+
+	.fluid #global-nav ul li a:after {
+		content: "\2022";
+		font-weight: bold;
+	}	
+
+	.fluid #global-nav ul li a:last-child {
+		background: #000;
 	}
 
 	.fluid #global-nav ul li a span {
