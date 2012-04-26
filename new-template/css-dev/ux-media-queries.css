@@ -5,7 +5,9 @@
 	.fluid #gov-bar .ux-content,
 	.fluid #gov-bar,
 	.fluid #ux-main .ux-content,
-	.fluid #ux-main {
+	.fluid #ux-main,
+	.fluid #global-nav .ux-content,
+	.fluid #global-nav {
 		height: auto;
 		width: auto;
 	}
@@ -64,10 +66,6 @@
 		padding: 0 0 5px 0;
 	}
 
-	.fluid #gov-search-wrap {
-		width: 90%;
-	}
-
 	/* Department Header
 	----------------------------------- */
 
@@ -99,18 +97,62 @@
 	}
 
 	.fluid #ux-site-search {
-		margin: 5px 0;
+		margin: 5px 0 0 0;
 		padding-bottom: 3px;
 	}
 
+	.fluid #gov-search-wrap,
 	.fluid #ux-search-wrap {
+		border-radius: 10px;
 		width: 90%;
 	}
 
 	.fluid #gov-search-box,
 	.fluid #ux-search-box {
-		font-size: 16px;
+		font-size: 18px;
+		padding: 5px 0;
+		width: 94%;
 	}
+
+	.fluid #gov-search-button,
+	.fluid #ux-search-button {
+		margin: 8px 0 0 0;
+	}
+
+	/* Global Navigation
+	----------------------------------- */
+
+	.fluid #global-nav,
+	.fluid #global-nav .ux-content {
+		background: none;
+	}
+
+	.fluid #global-nav ul {
+		float: none;
+		list-style: disc;
+		text-align: center;
+	}
+
+	.fluid #global-nav ul li:after {
+		content: "\2022";
+		font-weight: bold;
+	}
+
+	.fluid #global-nav ul li:last-child:after {
+		content: none;
+		padding: 0;
+	}
+
+	.fluid #global-nav ul li a {
+		color: #3C3C3C;
+		font-size: 14px;
+	}
+
+	.fluid #global-nav ul li a span {
+		background: none;
+		padding: 0;
+	}
+
 
 	/* Mobile Only Content
 	----------------------------------- */
@@ -122,18 +164,56 @@
 }
 
 @media handheld, only screen and (min-width: 600px) {
+	
+	.fluid #page-wrap, .fluid .ux-content {
+		width: 600px !important;
+	}
+
+	.fluid #ux-app-name {
+		display: none;
+	}
+
+	.fluid #global-nav ul {
+		margin-top: 1px;
+	}
+
 	body.fluid {
 		background: red;
 	}
 }
 
 @media screen and (min-width: 768px) {
+
+	.fluid #page-wrap, .fluid .ux-content {
+		width: 768px !important;
+	}
+
+	.fluid #ux-app-name {
+		display: block;
+		font-size: 16px;
+		margin-top: 15px;
+	}
+
+	.fluid #global-nav ul {
+		margin: 7px 0 0 10px
+	}
+
 	body.fluid {
 		background: black;
 	}
 }
 
 @media screen and (min-width: 960px) {
+
+	.fluid #page-wrap, .fluid .ux-content {
+		width: 960px !important;
+	}
+
+	.fluid #ux-app-name {
+		font-size: 20px;
+		margin: 10px 0 0 20px;
+	}
+
 	body.fluid {
 		background: orange;
 	}
