@@ -6,15 +6,15 @@
 
 /* Containers
 ----------------------------------------------------------------------------------------------------*/
+.fluid [class*="container_"] {
+	width: 99%;
+	margin: 0 0.5%;
+}
+
 #page-wrap, .ux-content,
 [class*="container_"] {
 	margin: 0 auto;
 	width: 960px;
-}
-
-.fluid [class*="container_"] {
-	width: 99%;
-	margin: 0 0.5%;
 }
 
 /* Grid >> Global
