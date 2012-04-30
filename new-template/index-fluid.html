@@ -76,6 +76,12 @@
 							<a href="#" class="icon person">
 								<span>Sign in</span>
 							</a>
+							<div class="ux-popover">
+								<ul>
+									<li><a href="#">Individual Account</a></li>
+									<li><a href="#">Business Account</a></li>
+								</ul>
+							</div>
 						</li>
 						<li>
 							<a href="#" class="icon index">
@@ -125,7 +131,56 @@
 		</header>
 
 		<div id="ux-body">
+			<div id="page-wrap" class="container_16 clearfix">
+				<div class="page-content">
+					<h2>Welcome to the New User Experience Template</h2>
+
+					<h3>Things to be worked on</h3>
+					<div class="grid_8 alpha">
+						<h4>CSS Styles</h4>
+						<ul>
+							<li>Popovers</li>
+							<li>Form Layout</li>
+							<li>Typography</li>
+							<li>
+								Header
+								<ul>
+									<li>Tiny Header</li>
+									<li>Large (Home Page) Headers</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="grid_8 omega">
+						<h4>Javascript Functions</h4>
+						<ul>
+							<li>
+								Popovers
+							</li>
+							<li>
+								Expandables
+								<ul>
+									<li>Side Nav</li>
+									<li>Expandable Content</li>
+									<li>Expandable Containers</li>
+								</ul>
+							</li>
+							<li>
+								Mega menu
+							</li>
+							<li>
+								Notifictions
+							</li>
+							<li>
+								Header/Application Bar
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
+
 		<div id="ux-footer">
 		</div>
 
@@ -134,5 +189,13 @@
 		<script src="js-dev/ux-script/ux-object.js"></script>
 		<script src="js-dev/ux-script/default.js"></script>
 		<script src="js-dev/dev-only-script.js"></script>
+
+		<script src="js-dev/jquery.open-ux.popovers.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$('.ux-popover').popover();
+			});
+		</script>
 	</body>
 </html>
