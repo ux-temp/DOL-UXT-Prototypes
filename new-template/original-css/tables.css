@@ -1,0 +1,70 @@
+/**************
+**  HTML Tables
+***************/
+table {
+background-color:#D5D5D5;
+width:100%
+}
+
+table thead th {
+text-align:left;
+text-shadow:0 1px 0 #FFF;
+text-transform:capitalize
+}
+
+table,th,td {
+border:1px solid #D5D5D5
+}
+
+table caption {
+background-color:#EFEFEF;
+border-bottom:none;
+border:1px solid #D5D5D5;
+color:#3D6683;
+font-size:14px;
+font-weight:700;
+line-height:1.1;
+padding:5px;
+text-align:center;
+text-shadow:0 1px 0 #FFF;
+text-transform:capitalize
+}
+
+table tr {
+background-color:#FFF
+}
+
+table th,.column-label,.column-input {
+color:#656565;
+padding:4px 7px!important;
+vertical-align:top!important
+}
+
+table th,.column-label {
+background-color:#EFEFEF;
+font-weight:700;
+text-align:left
+}
+
+table th {
+padding:4px
+}
+
+table td {
+overflow:hidden;
+padding:3px 6px;
+vertical-align:middle
+}
+
+.chrome table caption,.safari table caption {
+margin-right:-1px
+}
+
+/* WebKit fix! */
+table tr.section-start {
+border-top:3px solid #D5D5D5
+}
+
+table ul,table li {
+margin:0
+}

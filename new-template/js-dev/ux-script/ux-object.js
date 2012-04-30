@@ -1046,7 +1046,7 @@ var ux = {
 		jQuery('table.row-stripe tr:even').addClass('table-row-even');
 		
 		if (temp == "ie") {
-			if (jQuery('body').hasClass('ie6') || jQuery('body').hasClass('ie7')) {
+			if (jQuery('body').hasClass('ie7')) {
 				jQuery('.ie7 tfoot tr:last-child').addClass('last-child');
 				jQuery('.ie7 .ux-wizard li:last-child').addClass('last-child');
 			}
