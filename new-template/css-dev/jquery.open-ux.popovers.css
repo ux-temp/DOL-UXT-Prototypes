@@ -1,9 +1,9 @@
-.ux-popover, .arrow:after {
+.ux-popover ~ div, .arrow:after {
   background: #2f2f2f;
   border: 1px solid #5b5b5b;
 }
 
-.ux-popover {
+.ux-popover ~ div {
   display: none;
   position: absolute;
   border-radius: 5px;
@@ -14,19 +14,19 @@
   z-index: 600;
 }
 
-.ux-popover ul {
+.ux-popover ~ div ul {
 	list-style: none;
 	margin: 0;
 	padding: 5px 0 5px 0;
   line-height: 24px;
 }
 
-.ux-popover ul li {
+.ux-popover ~ div ul li {
   margin: 0;
   text-align: left;
 }
 
-.ux-popover ul li a {
+.ux-popover ~ div ul li a {
   color: #ffffff;
   cursor: pointer;
   display: block;
@@ -35,16 +35,16 @@
   text-decoration: none;
 }
 
-.ux-popover ul li a:hover {
+.ux-popover ~ div ul li a:hover {
   background: #4c4c4c;
   cursor: pointer;
 }
 
-.ux-popover ul li:first-child a {
+.ux-popover ~ div ul li:first-child a {
   border-top: none;
 }
 
-.arrow {
+.ux-popover ~ div .arrow {
   width: 70px;
   height: 32px;
   overflow: hidden;
@@ -56,7 +56,7 @@
   top: 0;
 }
 
-.arrow:after {
+.ux-popover ~ div .arrow:after {
   content: "";
   position: absolute;
   left: 28px;
@@ -69,6 +69,16 @@
   -moz-transform:    rotate(45deg);
   -ms-transform:     rotate(45deg);
   -o-transform:      rotate(45deg);
+}
+
+.ie .ux-popover ~ div .arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #2f2f2f;
+
+  margin: -10px 0 0 -10px;
 }
 
 
