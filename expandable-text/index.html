@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>UX Template v.0.4.2 | User Experience (UX) Guide</title>
+
+				<link rel="shortcut icon" href="http://labor.ny.gov/css/apps/v.0.4.2/favicon.ico" type="image/x-icon">
+				<link rel="stylesheet" type="text/css" href="http://labor.ny.gov/css/apps/v.0.4.2/css/ux-style.min.css" >	
+				<script src="http://labor.ny.gov/css/apps/v.0.4.2/js/modernizr.min.js"></script>
+		
+			<!-- Additional <head> items below this line -->
+
+	</head>
+
+	<!--[if lt IE 7 ]> <body class=" ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <body class=" ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <body class=" ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <body class=" ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!--> 
+	<body class=" " >
+	<!--<![endif]-->
+
+		<div id="dol-skip-navigation">
+			<a tabindex="1" id="skip-to-content" href="#content-anchor" class="ux-no-block">Skip to Content</a>	
+			<a tabindex="2" 
+							id="skip-to-nav" href="#navigation-anchor"
+			 class="ux-no-block" >Skip to Navigation</a>
+		</div>
+			
+		<div id="ux-notification-container">
+			<div class="ux-content-wrapper">
+				<div id="ux-action-required-notifications" class="ux-notice-outer">
+						<div class="arn-tray ux-notice-inner">
+						</div>
+				</div>
+				<div id="ux-generic-notifications">
+				</div>
+			</div>
+		</div>
+		
+		<div id="gov-banner-outer" class="container_16">
+			<div id="gov-banner-inner">
+				<a href="http://www.ny.gov/"><img id="nys-image" src="http://labor.ny.gov/css/apps/v.0.4.2/images/banner_img1.png" alt="NY.gov Portal" /></a>
+				<a href="http://www.nysegov.com/citGuide.cfm?superCat=102&cat=449&content=main"><img id="nys-agency-listing" src="http://labor.ny.gov/css/apps/v.0.4.2/images/banner_img2.png" alt="State Agency Listing" /></a>
+				<!-- search graphic-->
+				<a onclick="document.getElementById('sw_searchbox').style.visibility= 'visible'; document.getElementById('searchgraphic').style.visibility= 'hidden';" href="#">
+				<img alt="Search all of NY.gov" src="http://labor.ny.gov/css/apps/v.0.4.2/images/banner_img3.png" style="float: right; border: medium none; visibility: hidden;" id="searchgraphic"></a>
+				<!--state wide search box-->
+				<form method="get" action="http://search.cio.ny.gov/" style="float: right; position: relative; top: 2px; left: 155px; visibility: visible;" id="sw_searchbox" target="_blank">
+					<p>
+						<input type="hidden" name="sort" value="date:D:L:d1" />
+						<input type="hidden" name="output" value="xml_no_dtd" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="hidden" name="oe" value="UTF-8" />
+						<input type="hidden" name="client" value="default_frontend" />
+						<input type="hidden" name="proxystylesheet" value="default_frontend" />
+						<input type="hidden" name="site" value="default_collection" />
+						<label for="searchbox"><input type="text" title="Search" id="searchbox" maxlength="256" name="q" size="15" style="position: relative; top: -10px; cursor: pointer;" /></label>
+						<label for="searchbutton"><input type="submit" value="Search NY.GOV" id="searchbutton" style="position: relative; width: 110px; top: -10px;" /></label>
+					</p>
+				</form>
+			<!--end wide search box-->
+				<script type="text/javascript">
+					// If JavaScript is on, manipulate search control objects.  
+					// Otherwise this will be ignored and search controls will be shown by default
+					document.getElementById('sw_searchbox').style.visibility = 'hidden';
+					document.getElementById('searchgraphic').style.visibility= 'visible';         
+				</script> 
+			</div>
+		</div>
+		<div id="dol-header" class="container_16">
+			<h1 id="dol-header-nys-labor">
+				<a href="http://www.labor.ny.gov" class="accessibility-text">New York State Department of Labor</a>
+				<span id="dol-header-application">UX Template v.0.4.2 </span>
+			</h1>
+			
+						
+			<div id="site-wide-search">
+				<form name="_ipsubmit" id="search-box-form" method="get" action="http://search.cio.ny.gov" autocomplete="off" target="_blank" >
+					<label for="q" id="search-label" class="accessibility-text">Search Department of Labor:</label>
+					<input type="text" id="q" name="q" value="" size="21" title="Input Search" class="text_box site-wide-search-text-box" placeholder="Search DOL" autocomplete="off" />
+					<input type="submit" title="Submit Search" value="GO" name="submit" class="submit site-wide-search-button accessibility-text" id="search-submit" />
+					<input type="hidden" name="entqr" value="0" />
+					<input type="hidden" name="ud" value="1" />
+					<input type="hidden" name="sort" value="date:D:L:d1" />
+					<input type="hidden" name="output" value="xml_no_dtd" />
+					<input type="hidden" name="oe" value="UTF-8" />
+					<input type="hidden" name="ie" value="UTF-8" />
+					<input type="hidden" name="client" value="labor_frontend" />
+					<input type="hidden" name="proxystylesheet" value="labor_frontend" />
+					<input type="hidden" name="site" value="labor_collection" />
+				</form>
+			</div>
+			
+			
+		 	<div id="header-mega-menu">
+		   		<div id="mega-menu">
+		   			<a name="mega-menu-anchor" id="mega-menu-anchor" tabindex="-1"></a>
+		   			<ul id="menu">
+		   			</ul>
+		   		</div>
+			</div>
+		</div>	<!-- Mega menu entry below this line if needed -->
+
+		<div id="page-wrap" class="group">
+			<div id="content" class="container_16 group">
+				<noscript>
+					<div class="grid_16">
+						<div class="ux-msg warning">
+							<ul>
+								<li><strong>Javascript is currently disabled or restricted on your computer. </strong> Certain functionalities of this application may be limited. </li>
+							</ul>
+						</div>
+					</div>
+				</noscript>
+				<a name="navigation-anchor" id="navigation-anchor" tabindex="-1"></a>
+				<div id="dol-content-navigation" class="grid_4">
+										
+					<div id="navigation-vertical">
+						<ul>
+							<li>
+								<a href="#">Nav goes here</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			   	<a name="content-anchor" id="content-anchor" tabindex="-1"></a>		
+				<div class="grid_12 ux-content-grid ">
+					<div id="page-info">
+						<ul class="dol-breadcrumbs group">
+							<li class="home breadcrumb-external"><a href="http://www.labor.ny.gov">Home</a></li>
+					        <li>Page Title</li>
+						</ul>
+					</div>
+					<h2>Page Title</h2>	
+					<!-- ============================================================= -->
+					<!-- =================== CONTENT STARTS HERE ===================== -->
+					<!-- ============================================================= -->
+
+					<div class="article">
+					    <h2>Article Heading 1</h2>
+					    <div>
+					        <p>The first paragraph shows</strong></p>
+					        <p>The Second Paragraph Hides</strong></p>
+					        <p>The third paragraph  Hides too</strong></p>
+					        <p>Only the first paragraph ever shows, no matter how long or short it is!</strong>
+					    </div>
+					</div>
+
+					<div class="expandable">
+					    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
+					     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+					    </p>
+					    <p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					    Excepteur sint occaecat cupidatat non proident, sunt inre culpa qui
+					    officia deserunt mollit anim id est laborum.
+					    </p>
+					  </div>
+
+					<!-- ============================================================= -->
+					<!-- =================== CONTENT ENDS HERE ======================= -->
+					<!-- ============================================================= -->
+
+				</div>
+			</div>
+		</div>	 
+
+		<div id="dol-footer">
+			<div id="dol-footer-inner" class="container_12">
+				<div id="dol-footer-wrapper">
+					<!-- begin global footer area -->
+						<ul id="global-footer-menu">
+							<li><a href="http://labor.ny.gov/secure/contact/" target="_blank">Contact Us</a></li>
+							<li><a href="http://www.labor.ny.gov/agencyinfo/accessibility.shtm" target="_blank">Accessibility Policy</a></li>
+							<li><a href="http://labor.ny.gov/privacy.shtm" target="_blank">Privacy Policy</a></li>
+							<li><a href="http://labor.ny.gov/utilities/document-readers.shtm" target="_blank">Document Readers</a></li>
+						</ul>
+					<!-- end global footer area -->
+				</div>
+			</div>
+		</div> <!-- end #footer -->
+
+						<script type="text/javascript" src="http://labor.ny.gov/css/apps/v.0.4.2/js/ux-script.min.js"></script>
+
+			<!-- Additional scripts below this line -->
+						<script type="text/javascript">
+							(function($) {
+
+								$.fn.articleExpander = function(settings) {
+
+									// thanks to Mike Alsup at http://www.learningjquery.com/2007/10/a-plugin-development-pattern
+									var config = $.extend({}, $.fn.articleExpander.defaults, settings);
+
+									this.each(function() {
+										// store a ref to the current element for use in the click event later
+										var el = this;
+										// Find the article's direct child div
+										$(this).find(config.contentSelector)
+											// Create a container for the expanded article content
+											.append("<div class='jQAEContent'></div>")
+											// Create a 'read more' para at the end
+											.append("<button class='jQAEMore'>" + config.expandText + "</button>")
+											// Move all the article div's content into the container except for
+											// the first element and the last two we just created. This leaves the
+											// first part of the article always visible, while the rest is hidden
+											// until revealed in the click handler below.
+											.each(function() {
+												var c = $(this).find("> *").slice(1, -2);
+												var d = $(this).find(".jQAEContent");
+												d.css('display', 'none').append(c);
+											})
+											// set display:inline on the first child and .jQAEMore initially.
+											.find("> :first-child, .jQAEMore").css('display', 'inline')
+												.end()
+											.end()
+										// Find the first child of each article and its 'read more' button.
+
+
+										// (or collapse it to nothing if it's curently expanded).
+										.find((config.headingClickable ? config.headingSelector + ", " : "") +
+										      (config.contentClickable ? config.contentSelector + ", " : "") +
+										      ".jQAEMore")
+											.css('cursor', config.cursor)
+											.click(function(event) {
+												event.stopPropagation();
+												var more = $(this).parent().find(".jQAEMore")[0];
+												// workaround to convert entities inside _expandText before compare
+												var op = $(more).text() == $("<div/>").html(config.expandText).text();
+												// switch the 'read more' button to the correct piece of text
+												$(more).html(op ? config.collapseText : config.expandText);
+												// set display:block on the first child and .jQAEMore if we're expanding.
+												if (op) $(el).find(config.contentSelector + " > :first-child, .jQAEMore").css('display', 'block');
+												$(this).parent().find(".jQAEContent").stop(true,true).animate(
+													{opacity: 'toggle', height: 'toggle'},
+													config.speedInMilliseconds,
+													"swing",
+													function() {
+														// set display:inline on the first child and .jQAEMore if we just collapsed.
+														if (!op) $(el).find(config.contentSelector + " > :first-child, .jQAEMore").css('display', 'inline');
+													}
+												);
+											});
+									});
+									return this;	
+								};
+									
+								$.fn.articleExpander.defaults = {
+									expandText: "&darr; Expand article",
+									collapseText: "&uarr; Collapse article",
+									headingSelector: "> :first-child",
+									contentSelector: "> div",
+									headingClickable: true,
+									contentClickable: false,
+									speedInMilliseconds: 200,
+									cursor: 'pointer'
+								};
+
+							})(jQuery);
+
+							(function($) {
+								  $.expander = {
+								    version: '1.4.2',
+								    defaults: {
+								      // the number of characters at which the contents will be sliced into two parts.
+								      slicePoint: 20,
+
+								      // whether to keep the last word of the summary whole (true) or let it slice in the middle of a word (false)
+								      preserveWords: true,
+
+								      // a threshold of sorts for whether to initially hide/collapse part of the element's contents.
+								      // If after slicing the contents in two there are fewer words in the second part than
+								      // the value set by widow, we won't bother hiding/collapsing anything.
+								      widow: 0,
+
+								      // text displayed in a link instead of the hidden part of the element.
+								      // clicking this will expand/show the hidden/collapsed text
+								      expandText: 'read more',
+								      expandPrefix: '&hellip; ',
+
+								      expandAfterSummary: false,
+
+								      // class names for summary element and detail element
+								      summaryClass: 'summary',
+								      detailClass: 'details',
+
+								      // class names for <span> around "read-more" link and "read-less" link
+								      moreClass: 'read-more',
+								      lessClass: 'read-less',
+
+								      // number of milliseconds after text has been expanded at which to collapse the text again.
+								      // when 0, no auto-collapsing
+								      collapseTimer: 0,
+
+								      // effects for expanding and collapsing
+								      expandEffect: 'slideDown',
+								      expandSpeed: 250,
+								      collapseEffect: 'slideUp',
+								      collapseSpeed: 200,
+
+								      // allow the user to re-collapse the expanded text.
+								      userCollapse: true,
+
+								      // text to use for the link to re-collapse the text
+								      userCollapseText: 'read less',
+								      userCollapsePrefix: ' ',
+
+
+								      // all callback functions have the this keyword mapped to the element in the jQuery set when .expander() is called
+
+								      onSlice: null, // function() {}
+								      beforeExpand: null, // function() {},
+								      afterExpand: null, // function() {},
+								      onCollapse: null // function(byUser) {}
+								    }
+								  };
+
+								  $.fn.expander = function(options) {
+								    var meth = 'init';
+
+								    if (typeof options == 'string') {
+								      meth = options;
+								      options = {};
+								    }
+
+								    var opts = $.extend({}, $.expander.defaults, options),
+								        rSelfClose = /^<(?:area|br|col|embed|hr|img|input|link|meta|param).*>$/i,
+								        rAmpWordEnd = opts.wordEnd || /(&(?:[^;]+;)?|[a-zA-Z\u00C0-\u0100]+)$/,
+								        rOpenCloseTag = /<\/?(\w+)[^>]*>/g,
+								        rOpenTag = /<(\w+)[^>]*>/g,
+								        rCloseTag = /<\/(\w+)>/g,
+								        rLastCloseTag = /(<\/[^>]+>)\s*$/,
+								        rTagPlus = /^<[^>]+>.?/,
+								        delayedCollapse;
+
+								    var methods = {
+								      init: function() {
+								        this.each(function() {
+								          var i, l, tmp, newChar, summTagless, summOpens, summCloses,
+								              lastCloseTag, detailText, detailTagless,
+								              $thisDetails, $readMore,
+								              openTagsForDetails = [],
+								              closeTagsForsummaryText = [],
+								              defined = {},
+								              thisEl = this,
+								              $this = $(this),
+								              $summEl = $([]),
+								              o = $.meta ? $.extend({}, opts, $this.data()) : opts,
+								              hasDetails = !!$this.find('.' + o.detailClass).length,
+								              hasBlocks = !!$this.find('*').filter(function() {
+								                var display = $(this).css('display');
+								                return (/^block|table|list/).test(display);
+								              }).length,
+								              el = hasBlocks ? 'div' : 'span',
+								              detailSelector = el + '.' + o.detailClass,
+								              moreSelector = 'span.' + o.moreClass,
+								              expandSpeed = o.expandSpeed || 0,
+								              allHtml = $.trim( $this.html() ),
+								              allText = $.trim( $this.text() ),
+								              summaryText = allHtml.slice(0, o.slicePoint);
+
+								          // bail out if we've already set up the expander on this element
+								          if ( $.data(this, 'expander') ) {
+								            return;
+								          }
+
+								          $.data(this, 'expander', true);
+
+								          // determine which callback functions are defined
+								          $.each(['onSlice','beforeExpand', 'afterExpand', 'onCollapse'], function(index, val) {
+								            defined[val] = $.isFunction(o[val]);
+								          });
+
+								          // back up if we're in the middle of a tag or word
+								          summaryText = backup(summaryText);
+
+								          // summary text sans tags length
+								          summTagless = summaryText.replace(rOpenCloseTag, '').length;
+
+								          // add more characters to the summary, one for each character in the tags
+								          while (summTagless < o.slicePoint) {
+								            newChar = allHtml.charAt(summaryText.length);
+								            if (newChar == '<') {
+								              newChar = allHtml.slice(summaryText.length).match(rTagPlus)[0];
+								            }
+								            summaryText += newChar;
+								            summTagless++;
+								          }
+
+								          summaryText = backup(summaryText, o.preserveWords);
+
+								          // separate open tags from close tags and clean up the lists
+								          summOpens = summaryText.match(rOpenTag) || [];
+								          summCloses = summaryText.match(rCloseTag) || [];
+
+								          // filter out self-closing tags
+								          tmp = [];
+								          $.each(summOpens, function(index, val) {
+								            if ( !rSelfClose.test(val) ) {
+								              tmp.push(val);
+								            }
+								          });
+								          summOpens = tmp;
+
+								          // strip close tags to just the tag name
+								          l = summCloses.length;
+								          for (i = 0; i < l; i++) {
+								            summCloses[i] = summCloses[i].replace(rCloseTag, '$1');
+								          }
+
+								          // tags that start in summary and end in detail need:
+								          // a). close tag at end of summary
+								          // b). open tag at beginning of detail
+								          $.each(summOpens, function(index, val) {
+								            var thisTagName = val.replace(rOpenTag, '$1');
+								            var closePosition = $.inArray(thisTagName, summCloses);
+								            if (closePosition === -1) {
+								              openTagsForDetails.push(val);
+								              closeTagsForsummaryText.push('</' + thisTagName + '>');
+
+								            } else {
+								              summCloses.splice(closePosition, 1);
+								            }
+								          });
+
+								          // reverse the order of the close tags for the summary so they line up right
+								          closeTagsForsummaryText.reverse();
+
+								          // create necessary summary and detail elements if they don't already exist
+								          if ( !hasDetails ) {
+
+								            // end script if there is no detail text or if detail has fewer words than widow option
+								            detailText = allHtml.slice(summaryText.length);
+								            detailTagless = $.trim( detailText.replace(rOpenCloseTag, '') );
+
+								            if ( detailTagless === '' || detailTagless.split(/\s+/).length < o.widow ) {
+								              return;
+								            }
+								            // otherwise, continue...
+								            lastCloseTag = closeTagsForsummaryText.pop() || '';
+								            summaryText += closeTagsForsummaryText.join('');
+								            detailText = openTagsForDetails.join('') + detailText;
+
+								          } else {
+								            // assume that even if there are details, we still need readMore/readLess/summary elements
+								            // (we already bailed out earlier when readMore el was found)
+								            // but we need to create els differently
+
+								            // remove the detail from the rest of the content
+								            detailText = $this.find(detailSelector).remove().html();
+
+								            // The summary is what's left
+								            summaryText = $this.html();
+
+								            // allHtml is the summary and detail combined (this is needed when content has block-level elements)
+								            allHtml = summaryText + detailText;
+
+								            lastCloseTag = '';
+								          }
+								          o.moreLabel = $this.find(moreSelector).length ? '' : buildMoreLabel(o);
+
+								          if (hasBlocks) {
+								            detailText = allHtml;
+								          }
+								          summaryText += lastCloseTag;
+
+								          // onSlice callback
+								          o.summary = summaryText;
+								          o.details = detailText;
+								          o.lastCloseTag = lastCloseTag;
+
+								          if (defined.onSlice) {
+								            // user can choose to return a modified options object
+								            // one last chance for user to change the options. sneaky, huh?
+								            // but could be tricky so use at your own risk.
+								            tmp = o.onSlice.call(thisEl, o);
+
+								          // so, if the returned value from the onSlice function is an object with a details property, we'll use that!
+								            o = tmp && tmp.details ? tmp : o;
+								          }
+
+								          // build the html with summary and detail and use it to replace old contents
+								          var html = buildHTML(o, hasBlocks);
+
+								          $this.html( html );
+
+								          // set up details and summary for expanding/collapsing
+								          $thisDetails = $this.find(detailSelector);
+								          $readMore = $this.find(moreSelector);
+								          $thisDetails.hide();
+								          $readMore.find('a').unbind('click.expander').bind('click.expander', expand);
+
+								          $summEl = $this.find('div.' + o.summaryClass);
+
+								          if ( o.userCollapse && !$this.find('span.' + o.lessClass).length ) {
+								            $this
+								            .find(detailSelector)
+								            .append('<span class="' + o.lessClass + '">' + o.userCollapsePrefix + '<a href="#">' + o.userCollapseText + '</a></span>');
+								          }
+
+								          $this
+								          .find('span.' + o.lessClass + ' a')
+								          .unbind('click.expander')
+								          .bind('click.expander', function(event) {
+								            event.preventDefault();
+								            clearTimeout(delayedCollapse);
+								            var $detailsCollapsed = $(this).closest(detailSelector);
+								            reCollapse(o, $detailsCollapsed);
+								            if (defined.onCollapse) {
+								              o.onCollapse.call(thisEl, true);
+								            }
+								          });
+
+								          function expand(event) {
+								            event.preventDefault();
+								            $readMore.hide();
+								            $summEl.hide();
+								            if (defined.beforeExpand) {
+								              o.beforeExpand.call(thisEl);
+								            }
+
+								            $thisDetails.stop(false, true)[o.expandEffect](expandSpeed, function() {
+								              $thisDetails.css({zoom: ''});
+								              if (defined.afterExpand) {o.afterExpand.call(thisEl);}
+								              delayCollapse(o, $thisDetails, thisEl);
+								            });
+								          }
+
+								        }); // this.each
+								      },
+								      destroy: function() {
+								        if ( !this.data('expander') ) {
+								          return;
+								        }
+								        this.removeData('expander');
+								        this.each(function() {
+								          var $this = $(this),
+								              o = $.meta ? $.extend({}, opts, $this.data()) : opts,
+								              details = $this.find('.' + o.detailClass).contents();
+
+								          $this.find('.' + o.moreClass).remove();
+								          $this.find('.' + o.summaryClass).remove();
+								          $this.find('.' + o.detailClass).after(details).remove();
+								          $this.find('.' + o.lessClass).remove();
+
+								        });
+								      }
+								    };
+
+								    // run the methods (almost always "init")
+								    if ( methods[meth] ) {
+								      methods[ meth ].call(this);
+								    }
+
+								    // utility functions
+								    function buildHTML(o, blocks) {
+								      var el = 'span',
+								          summary = o.summary;
+								      if ( blocks ) {
+								        el = 'div';
+								        // if summary ends with a close tag, tuck the moreLabel inside it
+								        if ( rLastCloseTag.test(summary) && !o.expandAfterSummary) {
+								          summary = summary.replace(rLastCloseTag, o.moreLabel + '$1');
+								        } else {
+								        // otherwise (e.g. if ends with self-closing tag) just add moreLabel after summary
+								        // fixes #19
+								          summary += o.moreLabel;
+								        }
+
+								        // and wrap it in a div
+								        summary = '<div class="' + o.summaryClass + '">' + summary + '</div>';
+								      } else {
+								        summary += o.moreLabel;
+								      }
+
+								      return [
+								        summary,
+								        '<',
+								          el + ' class="' + o.detailClass + '"',
+								        '>',
+								          o.details,
+								        '</' + el + '>'
+								        ].join('');
+								    }
+
+								    function buildMoreLabel(o) {
+								      var ret = '<span class="' + o.moreClass + '">' + o.expandPrefix;
+								      ret += '<a href="#">' + o.expandText + '</a></span>';
+								      return ret;
+								    }
+
+								    function backup(txt, preserveWords) {
+								      if ( txt.lastIndexOf('<') > txt.lastIndexOf('>') ) {
+								        txt = txt.slice( 0, txt.lastIndexOf('<') );
+								      }
+								      if (preserveWords) {
+								        txt = txt.replace(rAmpWordEnd,'');
+								      }
+
+								      return $.trim(txt);
+								    }
+
+								    function reCollapse(o, el) {
+								      el.stop(true, true)[o.collapseEffect](o.collapseSpeed, function() {
+								        var prevMore = el.prev('span.' + o.moreClass).show();
+								        if (!prevMore.length) {
+								          el.parent().children('div.' + o.summaryClass).show()
+								            .find('span.' + o.moreClass).show();
+								        }
+								      });
+								    }
+
+								    function delayCollapse(option, $collapseEl, thisEl) {
+								      if (option.collapseTimer) {
+								        delayedCollapse = setTimeout(function() {
+								          reCollapse(option, $collapseEl);
+								          if ( $.isFunction(option.onCollapse) ) {
+								            option.onCollapse.call(thisEl, false);
+								          }
+								        }, option.collapseTimer);
+								      }
+								    }
+
+								    return this;
+								  };
+
+								  // plugin defaults
+								  $.fn.expander.defaults = $.expander.defaults;
+								})(jQuery);
+
+						</script>
+	<!-- Additional scripts items below this line -->
+			<script type="text/javascript">
+				 $(function() {
+			    $(".article").articleExpander();
+			   	 });
+				$('div.expandable p').expander();
+			</script>
+
+		
+	</body>
+</html>
