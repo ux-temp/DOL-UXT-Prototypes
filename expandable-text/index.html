@@ -139,6 +139,7 @@
 
 					<div class="article">
 					    <h2>Article Heading 1</h2>
+					 <br/>
 					    <div>
 					        <p>The first paragraph shows</strong></p>
 					        <p>The Second Paragraph Hides</strong></p>
@@ -146,6 +147,11 @@
 					        <p>Only the first paragraph ever shows, no matter how long or short it is!</strong>
 					    </div>
 					</div>
+					<br/>
+					<div>
+					  	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+					  </div>
+					 <br/>
 
 					<div class="expandable">
 					    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
@@ -157,6 +163,55 @@
 					    officia deserunt mollit anim id est laborum.
 					    </p>
 					  </div>
+
+					  <div>
+					  	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+					  </div>
+					  	<table>
+					  		<tr> 
+					  			<th> Column XX </th>
+					  			<th> Column XX </th>
+					  			<th> Column XX </th>
+					  			<th> Column XX </th>
+					  			<th> Column XX </th>
+					  			<th> Column XX </th>
+					  			<th> Column XX </th>
+					  			<th> Column XX </th>
+					  			<th> Column XX </th>
+					  			<th> Column XX </th>
+					  			<th> Column XX </th>
+					  		</tr>
+					  		
+
+						    <tr ><td ><span class="ex1">SC77861</span></td>
+								<td ><span class="ex1">HEALTH CARE ENTERPRISES INC OF AMERICA IS THE BEST HEALTH CARE ENTERPRISE IN THE NORTH</span></td>
+								<td ><span class="ex1">TestingTask- 150</span></td>
+								<td ><span class="ex1">Lorem ipsum dolor sit amet, coconsequat. Duis aute irure dolor.</span></td>
+								<td ><span class="ex1">Lorem ipsum dolor si ex ea conim veniam, quis nostrud
+					     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</span></td>
+								<td ><span class="ex1">READY</span></td>
+								<td ><span class="ex1">Lorem ipsum dolor siim ad minim veniam, quis nostrud
+					     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</span></td>
+								<td ><span class="ex1">Lorem ipsum dolor a commodo consequat. Duis aute irure dolor.</span></td>
+								<td ><span class="ex1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
+					     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</span></td>
+								<td ><span class="ex1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
+					     incididunt ut labore et dolore magna aliqua. Ut eommodo consequat. Duis aute irure dolor.</span></td>
+							</tr>
+							<tr ><td ><span class="ex1">SC77861HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
+								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC </span></td>
+								<td ><span class="ex1">TestingTask- 150</span></td>
+								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
+								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
+								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISLTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
+								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEAARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCREADY</span></td>
+								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
+								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
+								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
+								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEAS INCHEALTH CARE ENTERPRISES INCClaim|Transfer|Suspend|Terminate|Update</span></td>
+							</tr>
+						</table>
 
 					<!-- ============================================================= -->
 					<!-- =================== CONTENT ENDS HERE ======================= -->
@@ -263,7 +318,7 @@
 								    version: '1.4.2',
 								    defaults: {
 								      // the number of characters at which the contents will be sliced into two parts.
-								      slicePoint: 20,
+								      slicePoint: 10,
 
 								      // whether to keep the last word of the summary whole (true) or let it slice in the middle of a word (false)
 								      preserveWords: true,
@@ -271,11 +326,11 @@
 								      // a threshold of sorts for whether to initially hide/collapse part of the element's contents.
 								      // If after slicing the contents in two there are fewer words in the second part than
 								      // the value set by widow, we won't bother hiding/collapsing anything.
-								      widow: 0,
+								      widow: 4,
 
 								      // text displayed in a link instead of the hidden part of the element.
 								      // clicking this will expand/show the hidden/collapsed text
-								      expandText: 'read more',
+								      expandText: 'more',
 								      expandPrefix: '&hellip; ',
 
 								      expandAfterSummary: false,
@@ -294,7 +349,7 @@
 
 								      // effects for expanding and collapsing
 								      expandEffect: 'slideDown',
-								      expandSpeed: 250,
+								      expandSpeed: 1,
 								      collapseEffect: 'slideUp',
 								      collapseSpeed: 200,
 
@@ -302,7 +357,7 @@
 								      userCollapse: true,
 
 								      // text to use for the link to re-collapse the text
-								      userCollapseText: 'read less',
+								      userCollapseText: 'less',
 								      userCollapsePrefix: ' ',
 
 
@@ -635,6 +690,7 @@
 			    $(".article").articleExpander();
 			   	 });
 				$('div.expandable p').expander();
+				$(".ex1").expander();
 			</script>
 
 		
