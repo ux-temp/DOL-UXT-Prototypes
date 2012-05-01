@@ -295,8 +295,10 @@
 
 					<div class="grid_16 alpha omega">
 
+						<h3> Data Tables </h3>
+
 						<table class="data-table row-stripe">
-							<caption>Data table Sample - Server-side Row Striping</caption>
+							<caption>Data table Sample - Client Side</caption>
 								<thead>
 									<tr>
 										<th>header 1</th>
@@ -329,6 +331,44 @@
 										<td>Four two</td>
 										<td>Four three</td>
 										<td>Four four</td>
+									</tr>
+								</tbody>
+						</table>
+
+						<table class="data-table">
+							<caption>Data table Sample - Server-side Row Striping</caption>
+								<thead>
+									<tr class="last-child">
+										<th>header 1</th>
+										<th>header 2</th>
+										<th>header 3</th>
+										<th class="last-child">header 4</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="table-row-odd">
+										<td>One One</td>
+										<td>One Two</td>
+										<td>One Three</td>
+										<td class="last-child">One Four</td>
+									</tr>
+									<tr class="table-row-even">
+										<td>Two one</td>
+										<td>Two two</td>
+										<td>Two three</td>
+										<td class="last-child">Two four</td>
+									</tr>
+									<tr class="table-row-odd">
+										<td>Three one</td>
+										<td>Three two</td>
+										<td>Three three</td>
+										<td class="last-child">Three four</td>
+									</tr>
+									<tr class="table-row-even last-child">
+										<td>Four one</td>
+										<td>Four two</td>
+										<td>Four three</td>
+										<td class="last-child">Four four</td>
 									</tr>
 								</tbody>
 						</table>

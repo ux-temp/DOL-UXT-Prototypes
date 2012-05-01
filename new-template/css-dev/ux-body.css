@@ -283,58 +283,59 @@ legend .ux-msg.ux-msg-inline {
 ------------------- */
 
 table {
-background-color:#D5D5D5;
-width:100%
+	background-color:#D5D5D5;
+	margin-bottom: 10px;
+	width:100%
 }
 
 table thead th {
-text-align:left;
-text-shadow:0 1px 0 #FFF;
-text-transform:capitalize
+	text-align:left;
+	text-shadow:0 1px 0 #FFF;
+	text-transform:capitalize
 }
 
 table,th,td {
-border:1px solid #D5D5D5
+	border:1px solid #D5D5D5
 }
 
 table caption {
-background-color:#EFEFEF;
-border-bottom:none;
-border:1px solid #D5D5D5;
-color:#3D6683;
-font-size:14px;
-font-weight:700;
-line-height:1.1;
-padding:5px;
-text-align:center;
-text-shadow:0 1px 0 #FFF;
-text-transform:capitalize
+	background-color:#EFEFEF;
+	border-bottom:none;
+	border:1px solid #D5D5D5;
+	color:#3D6683;
+	font-size:14px;
+	font-weight:700;
+	line-height:1.1;
+	padding:5px;
+	text-align:center;
+	text-shadow:0 1px 0 #FFF;
+	text-transform:capitalize
 }
 
 table tr {
-background-color:#FFF
+	background-color:#FFF
 }
 
 table th,.column-label,.column-input {
-color:#656565;
-padding:4px 7px!important;
-vertical-align:top!important
+	color: #656565;
+	padding: 4px 7px;
+	vertical-align: top
 }
 
 table th,.column-label {
-background-color:#EFEFEF;
-font-weight:700;
-text-align:left
+	background-color:#EFEFEF;
+	font-weight:700;
+	text-align:left
 }
 
 table th {
-padding:4px
+	padding:4px
 }
 
 table td {
-overflow:hidden;
-padding:3px 6px;
-vertical-align:middle
+	overflow: hidden;
+	padding: 3px 6px;
+	vertical-align: middle
 }
 
 /* Data Tables 

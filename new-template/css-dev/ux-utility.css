@@ -30,3 +30,9 @@ want speak for screen readers */
 .ux-mobile-only {
 	display: none;
 }
+
+/* Restore text to normal font styling and weight */
+.ux-font-normal {
+	font-style: normal;
+	font-weight: normal;
+}
