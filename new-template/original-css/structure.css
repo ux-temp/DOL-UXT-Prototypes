@@ -102,11 +102,6 @@ width:auto;
 z-index:50
 }
 
-/* Google Translate Fix */
-.translated-ltr body {
-background-position:0 40px
-}
-
 /* Auto Clearing of floats */
 .ux-button-section:after,.group:after,.dol-container:after,.button-header:after,p:after,.ux-flex-grid div:after,.ux-content-wrapper:after {
 clear:both;

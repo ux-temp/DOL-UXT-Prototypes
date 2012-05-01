@@ -58,9 +58,9 @@ header a, header a:link, header a:visited {
 	border: 0;
 	float: left;
 	font-size: 12px;
-	margin: 1px 0 0 0;
+	margin: 3px 0 0 0;
 	padding: 0;
-	width: 84%;
+	width: 80%;
 }
 
 #gov-search-button,
@@ -147,7 +147,7 @@ header a, header a:link, header a:visited {
 #global-nav ul {
 	float: left;
 	list-style: none;
-	margin: 7px 0 0 0;
+	margin: 7px 0 0 10px;
 }
 
 #global-nav ul li {

@@ -231,7 +231,7 @@
 	}
 
 	.fluid #global-nav ul {
-		margin-top: 1px;
+		margin: 1px 0 0 8px;
 	}
 
 	body.fluid {
@@ -252,7 +252,7 @@
 	}
 
 	.fluid #global-nav ul {
-		margin: 7px 0 0 10px
+		margin: 7px 0 0 8px;
 	}
 
 	body.fluid {
@@ -286,6 +286,10 @@
 	.fluid #ux-app-name {
 		font-size: 20px;
 		margin: 10px 0 0 20px;
+	}
+
+	.fluid #global-nav ul {
+		margin: 7px 0 0 12px;
 	}
 
 	body.fluid {
