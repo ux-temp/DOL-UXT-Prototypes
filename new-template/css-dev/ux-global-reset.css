@@ -129,7 +129,9 @@ sup {
 	top:-5px
 }
 
-sub { bottom: -0.25em; }
+sub { 
+	bottom: -0.25em; 
+}
 
 /* Lists
 ----------- */
@@ -153,14 +155,16 @@ ul {
 	list-style-type:disc;
 }
 
+ul ul, ul ul ul {
+	margin: 0 0 0 20px;
+}
+
 ul ul {
 	list-style-type:circle;
-	margin: 0 0 0 20px;
 }
 
 ul ul ul {
 	list-style-type:square;
-	margin: 0 0 0 20px;
 }
 
 ul li {
@@ -186,7 +190,6 @@ dd {
 
 nav ul, nav ol { 
 	list-style: none; 
-	list-style-image: none; 
 	margin: 0; 
 	padding: 0; 
 }
@@ -261,12 +264,12 @@ textarea {
 /* psuedo classes
 -------------------- */
 :focus {
-outline:1px dotted #fc6;
-overflow:visible
+	outline:1px dotted #fc6;
+	overflow:visible
 }
 
 :hover,:active {
-outline:none
+	outline:none
 }
 
 ::-moz-selection, ::selection { 

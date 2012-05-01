@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" lang="en">
 	<head>
 		<title>Application Name | New York State Department of Labor</title>
 
@@ -160,6 +160,9 @@
 									<li>DOL/UX Containers</li>
 									<li>Messages</li>
 								</ul>
+								<p class="ux-weak">
+									More to come in time... 
+								</p>
 							</div>
 						</div>
 
@@ -171,6 +174,9 @@
 										Popovers
 									</li>
 								</ul>
+								<p class="ux-strong">
+									Requires some special re-work in some cases.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -222,74 +228,74 @@
 					</div>
 
 					<div class="grid_16 alpha omega">
-							<h3> Message Test Styling </h3>
+						<h3> Message Test Styling </h3>
 
-							<h4> Paragraph Tests </h4>
+						<h4> Paragraph Tests </h4>
 
-							<p class="ux-msg">
-								Information Message Test
-							</p>
+						<p class="ux-msg">
+							Information Message Test <a href="#"> Message Test Link</a>
+						</p>
 
-							<p class="ux-msg warning">
-								Information Message Test
-							</p>
+						<p class="ux-msg warning">
+							Information Message Test <a href="#"> Message Test Link</a>
+						</p>
 
-							<p class="ux-msg error">
-								Information Message Test
-							</p>
+						<p class="ux-msg error">
+							Information Message Test <a href="#"> Message Test Link</a>
+						</p>
 
-							<p class="ux-msg success">
-								Information Message Test
-							</p>
+						<p class="ux-msg success">
+							Information Message Test <a href="#"> Message Test Link</a>
+						</p>
 
-							<p class="ux-msg system">
-								Information Message Test
-							</p>
+						<p class="ux-msg system">
+							Information Message Test <a href="#"> Message Test Link</a>
+						</p>
 
-							<p class="ux-strong">
-								This is a strong message
-							</p>
+						<p class="ux-strong">
+							This is a strong message <a href="#"> Message Test Link</a>
+						</p>
 
-							<p class="ux-weak">
-								This is a weak message
-							</p>
+						<p class="ux-weak">
+							This is a weak message <a href="#"> Message Test Link</a>
+						</p>
 
-							<h4> Unordered List Tests </h4>
+						<h4> Unordered List Tests </h4>
 
-							<div class="ux-msg">
-								<ul>
-									<li>An Information Message</li>
-									<li>Another Information Message</li>
-								</ul>
-							</div>
+						<div class="ux-msg">
+							<ul>
+								<li>An Information Message</li>
+								<li>Another Information Message <a href="#">Message Test Link</a></li>
+							</ul>
+						</div>
 
-							<div class="ux-msg warning">
-								<ul>
-									<li>An Warning Message</li>
-									<li>Another Warning Message</li>
-								</ul>
-							</div>
+						<div class="ux-msg warning">
+							<ul>
+								<li>An Warning Message</li>
+								<li>Another Warning Message <a href="#">Message Test Link</a></li>
+							</ul>
+						</div>
 
-							<div class="ux-msg error">
-								<ul>
-									<li>An Error Message</li>
-									<li>Another Error Message</li>
-								</ul>
-							</div>
+						<div class="ux-msg error">
+							<ul>
+								<li>An Error Message</li>
+								<li>Another Error Message <a href="#">Message Test Link</a></li>
+							</ul>
+						</div>
 
-							<div class="ux-msg success">
-								<ul>
-									<li>An Success Message</li>
-									<li>Another Success Message</li>
-								</ul>
-							</div>
+						<div class="ux-msg success">
+							<ul>
+								<li>An Success Message</li>
+								<li>Another Success Message <a href="#">Message Test Link</a></li>
+							</ul>
+						</div>
 
-							<div class="ux-msg system">
-								<ul>
-									<li>An System Message</li>
-									<li>Another System Message</li>
-								</ul>
-							</div>
+						<div class="ux-msg system">
+							<ul>
+								<li>An System Message</li>
+								<li>Another System Message <a href="#">Message Test Link</a></li>
+							</ul>
+						</div>
 
 					</div>
 
@@ -307,6 +313,12 @@
 										<th>header 4</th>
 									</tr>
 								</thead>
+								<tfoot>
+									<td>footer 1</td>
+									<td>footer 2</td>
+									<td>footer 3</td>
+									<td>footer 4</td>
+								</tfoot>
 								<tbody>
 									<tr>
 										<td>One One</td>
@@ -336,7 +348,7 @@
 						</table>
 
 						<table class="data-table">
-							<caption>Data table Sample - Server-side Row Striping</caption>
+							<caption>Data table Sample - Server-side</caption>
 								<thead>
 									<tr class="last-child">
 										<th>header 1</th>
@@ -373,6 +385,198 @@
 								</tbody>
 						</table>
 
+						<div class="ux-container">
+							<h4>Table in UX-Container</h4>
+
+							<table class="data-table row-stripe">
+								<caption>Table in UX-Container test</caption>
+									<thead>
+										<tr>
+											<th>header 1</th>
+											<th>header 2</th>
+											<th>header 3</th>
+											<th>header 4</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>One One</td>
+											<td>One Two</td>
+											<td>One Three</td>
+											<td>One Four</td>
+										</tr>
+										<tr>
+											<td>Two one</td>
+											<td>Two two</td>
+											<td>Two three</td>
+											<td>Two four</td>
+										</tr>
+										<tr>
+											<td>Three one</td>
+											<td>Three two</td>
+											<td>Three three</td>
+											<td>Three four</td>
+										</tr>
+										<tr>
+											<td>Four one</td>
+											<td>Four two</td>
+											<td>Four three</td>
+											<td>Four four</td>
+										</tr>
+									</tbody>
+							</table>
+
+						</div>
+
+
+						<h4>jQDataTables Test</h4>
+
+						<table class="data-table jQDataTables">
+							<caption>jQDataTables Test</caption>
+								<thead>
+									<tr>
+										<th>header 1</th>
+										<th>header 2</th>
+										<th>header 3</th>
+										<th>header 4</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>One One</td>
+										<td>One Two</td>
+										<td>One Three</td>
+										<td>One Four</td>
+									</tr>
+									<tr>
+										<td>Two one</td>
+										<td>Two two</td>
+										<td>Two three</td>
+										<td>Two four</td>
+									</tr>
+									<tr>
+										<td>Three one</td>
+										<td>Three two</td>
+										<td>Three three</td>
+										<td>Three four</td>
+									</tr>
+									<tr>
+										<td>Four one</td>
+										<td>Four two</td>
+										<td>Four three</td>
+										<td>Four four</td>
+									</tr>
+									<tr>
+										<td>One One</td>
+										<td>One Two</td>
+										<td>One Three</td>
+										<td>One Four</td>
+									</tr>
+									<tr>
+										<td>Two one</td>
+										<td>Two two</td>
+										<td>Two three</td>
+										<td>Two four</td>
+									</tr>
+									<tr>
+										<td>Three one</td>
+										<td>Three two</td>
+										<td>Three three</td>
+										<td>Three four</td>
+									</tr>
+									<tr>
+										<td>Four one</td>
+										<td>Four two</td>
+										<td>Four three</td>
+										<td>Four four</td>
+									</tr>
+									<tr>
+										<td>One One</td>
+										<td>One Two</td>
+										<td>One Three</td>
+										<td>One Four</td>
+									</tr>
+									<tr>
+										<td>Two one</td>
+										<td>Two two</td>
+										<td>Two three</td>
+										<td>Two four</td>
+									</tr>
+									<tr>
+										<td>Three one</td>
+										<td>Three two</td>
+										<td>Three three</td>
+										<td>Three four</td>
+									</tr>
+									<tr>
+										<td>Four one</td>
+										<td>Four two</td>
+										<td>Four three</td>
+										<td>Four four</td>
+									</tr>
+									<tr>
+										<td>One One</td>
+										<td>One Two</td>
+										<td>One Three</td>
+										<td>One Four</td>
+									</tr>
+									<tr>
+										<td>Two one</td>
+										<td>Two two</td>
+										<td>Two three</td>
+										<td>Two four</td>
+									</tr>
+									<tr>
+										<td>Three one</td>
+										<td>Three two</td>
+										<td>Three three</td>
+										<td>Three four</td>
+									</tr>
+									<tr>
+										<td>Four one</td>
+										<td>Four two</td>
+										<td>Four three</td>
+										<td>Four four</td>
+									</tr>
+								</tbody>
+						</table>				
+
+					</div>
+
+					<div class="grid_16 alpha omega">
+
+						<h3>A-Z Index</h3>
+
+						<div class="ux-a-z-index">
+							<a href="#A" id="A-index" class="selected">A</a> 
+							<a href="#B" id="B-index">B</a> 
+							<a href="#C" id="C-index">C</a> 
+							<a href="#D" id="D-index">D</a> 
+							<a href="#E" id="E-index">E</a> 
+							<a href="#F" id="F-index">F</a> 
+							<a href="#G" id="G-index">G</a> 
+							<a href="#H" id="H-index">H</a> 
+							<a href="#I" id="I-index">I</a> 
+							<a href="#J" id="J-index">J</a> 
+							<a href="#K" id="K-index">K</a> 
+							<a href="#L" id="L-index">L</a> 
+							<a href="#M" id="M-index">M</a> 
+							<a href="#N" id="N-index">N</a> 
+							<a href="#O" id="O-index">O</a> 
+							<a href="#P" id="P-index">P</a> 
+							<a href="#Q" id="Q-index">Q</a> 
+							<a href="#R" id="R-index">R</a> 
+							<a href="#S" id="S-index">S</a> 
+							<a href="#T" id="T-index">T</a> 
+							<a href="#U" id="U-index">U</a> 
+							<a href="#V" id="V-index">V</a> 
+							<a href="#W" id="W-index">W</a> 
+							<a href="#X" id="X-index">X</a> 
+							<a href="#Y" id="Y-index">Y</a> 
+							<a href="#Z" id="Z-index">Z</a> 
+							<a href="#numbers" id="numbers-index">#</a>
+						</div>
+
 					</div>
 
 				</div>
@@ -393,6 +597,9 @@
 		<script>
 			$(document).ready(function() {
 				$('.ux-popover').popover();
+
+				ux.load("dataTables");
+
 			});
 		</script>
 	</body>

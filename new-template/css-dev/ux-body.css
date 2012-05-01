@@ -2,12 +2,12 @@
 --------------------------------- */
 
 #ux-breadcrumbs {
-color:#888;
-font-size:9px;
-line-height:1.2;
-margin: 3px 0 7px 0;
-padding:0;
-vertical-align:top
+	color:#888;
+	font-size:9px;
+	line-height:1.2;
+	margin: 3px 0 7px 0;
+	padding:0;
+	vertical-align:top
 }
 
 #ux-breadcrumbs ul {
@@ -15,22 +15,22 @@ vertical-align:top
 }
 
 #ux-breadcrumbs li {
-color:#696969;
-float:left;
-list-style:none;
-padding:0
+	color:#696969;
+	float:left;
+	list-style:none;
+	padding:0
 }
 
 #ux-breadcrumbs li a {
-background:url(../images/breadcrumb-icon.gif) no-repeat scroll right 2px transparent;
-color:#696969;
-margin-right:3px;
-padding-right:8px
+	background:url(../images/breadcrumb-icon.gif) no-repeat scroll right 2px transparent;
+	color:#696969;
+	margin-right:3px;
+	padding-right:8px
 }
 
 #ux-breadcrumbs li a:hover {
-color:#6491B0;
-text-decoration:underline
+	color:#6491B0;
+	text-decoration:underline
 }
 
 /* DOL Container
@@ -50,12 +50,8 @@ text-decoration:underline
 	border:1px solid #d5d5d5; 
 	border-radius: 3px;
 	font-weight: normal; 
-	margin-bottom:10px; 
-}
-
-.ux-container .ux-container, 	
-.dol-container .dol-container { 
-	margin: 10px; 
+	margin-bottom:10px;
+	min-height: 1px; /* IE7 Collapse margin-bottom fix */
 }
 
 .ux-container ul, .ux-container p, .ux-container ol, 
@@ -106,16 +102,14 @@ div:hover.dol-container {
 
 .ux-container li.link,
 .dol-container li.link {
-	background-image:url(../images/icons/arrow_right.png);
-	background-position:0 .1em;
-	background-repeat:no-repeat;
+	background:url(../images/icons/arrow_right.png) no-repeat 0 .1em transparent;
 	list-style-type:none;
 	padding:.2em .2em .2em 1.6em
 }
 
 .ux-container li.link-list.disabled,
 .dol-container li.link.disabled {
-	background-image:url(../images/icons/arrow_right_disabled.png);
+	background: url(../images/icons/arrow_right_disabled.png);
 }
 
 .ux-container li.link.disabled a,
@@ -125,8 +119,15 @@ div:hover.dol-container {
 
 .ux-container .data-table, .ux-container .key-value-table,
 .dol-container .data-table,.dol-container .key-value-table {
-	margin: 0 auto 15px auto;
+	margin: 15px auto;
 	width:96%
+}
+
+.ux-container .ux-container, 	
+.dol-container .dol-container,
+.ux-container .ux-msg,
+.dol-container .ux-msg {
+	margin:10px
 }
 
 /* Messages
@@ -145,123 +146,119 @@ div:hover.dol-container {
 	padding:6px 6px 6px 30px
 }
 
-.dol-container .ux-msg {
-margin:10px
-}
-
 .ux-msg a {
-color:#0055B5
+	color:#0055B5
 }
 
 .ux-msg ul {
-list-style:none;
-margin:0 0 -5px;
-padding:0 0 0 5px
+	list-style:none;
+	margin:0 0 -5px;
+	padding:0 0 0 5px
 }
 
 .ux-msg ul li {
-font-weight:700;
-margin:0 0 4px
+	font-weight:700;
+	margin:0 0 4px
 }
 
 .ux-msg.error {
-background-color:#F9E5E6;
-background-image:url(../images/icons/exclamation.png);
-border-color:#E8AAAD;
-color:#B50007
+	background-color:#F9E5E6;
+	background-image:url(../images/icons/exclamation.png) #F9E5E6;
+	border-color:#E8AAAD;
+	color:#B50007
 }
 
 .ux-msg.error a {
-color:#B50007
+	color:#B50007
 }
 
 .ux-msg.success {
-background-color:#E9F9E5;
-background-image:url(../images/icons/tick.png);
-border-color:#B4E8AA;
-color:#1C8400
+	background-color:#E9F9E5;
+	background-image:url(../images/icons/tick.png);
+	border-color:#B4E8AA;
+	color:#1C8400
 }
 
 .ux-msg.success a {
-color:#1C8400
+	color:#1C8400
 }
 
 .ux-msg.system {
-background-color:#FCF3DE;
-background-image:url(../images/icons/wrench.png);
-border-color:#E5C47B;
-color:#A5874A
+	background-color:#FCF3DE;
+	background-image:url(../images/icons/wrench.png) ;
+	border-color:#E5C47B;
+	color:#A5874A
 }
 
 .ux-msg.system a {
-color:#A5874A
+	color:#A5874A
 }
 
 .ux-msg.warning,.ux-inline-msg.mandatory {
-background-color:#F9F9E5;
-background-image:url(../images/icons/warning.png);
-border-color:#E8E3AA;
-color:#828400
+	background-color:#F9F9E5;
+	background-image:url(../images/icons/warning.png);
+	border-color:#E8E3AA;
+	color:#828400
 }
 
 .ux-msg.warning a {
-color:#828400
+	color:#828400
 }
 
 .ux-msg.access,.ux-inline-msg.optional {
-background-color:#F0F0F0;
-background-image:url(../images/icons/accessibility.png);
-border-color:#B4B4B4;
-color:#3C3C3C
+	background-color:#F0F0F0;
+	background-image:url(../images/icons/accessibility.png);
+	border-color:#B4B4B4;
+	color:#3C3C3C
 }
 
 .ux-msg.access a {
-color:#3C3C3C
+	color:#3C3C3C
 }
 
 .ux-inline-msg {
-background-image:none!important;
-display:inline-block;
-font-size:10px;
-margin:0 6px;
-padding:0 5px
+	background-image:none!important;
+	display:inline-block;
+	font-size:10px;
+	margin:0 6px;
+	padding:0 5px
 }
 
-.ux-msg a:hover,.ux-msg.error a:hover,.ux-msg.success a:hover,.ux-msg.system a:hover,.ux-msg.warning a:hover,.ux-msg.access a:hover {
-color:#5683A2
+.ux-msg a:hover {
+	color:#5683A2
 }
 
 .ux-weak {
-background:none repeat scroll 0 0 #F6F6F6;
-border:1px solid #CCC;
-border-radius:3px;
-color:#4c4c4c;
-font-size:10px;
-margin-bottom:15px;
-padding:5px 7px
+	background:none repeat scroll 0 0 #F6F6F6;
+	border:1px solid #CCC;
+	border-radius:3px;
+	color:#4c4c4c;
+	font-size:10px;
+	margin-bottom:15px;
+	padding:5px 7px
 }
 
 table .ux-weak {
-background:none;
-border:none;
-display:block;
-font-weight:400;
-margin:0;
-padding:0;
-text-align:left
+	border:none;
+	display:block;
+	font-weight:400;
+	margin:0;
+	padding:0;
+	text-align:left
 }
 
 .ux-strong {
-background:none repeat scroll 0 0 #EFEFEF;
-border:2px solid #CCC;
-border-radius:3px;
-font-weight:700;
-margin-bottom:15px;
-padding:8px 12px
+	background:none repeat scroll 0 0 #EFEFEF;
+	border:2px solid #CCC;
+	border-radius:3px;
+	font-weight:700;
+	margin-bottom:15px;
+	padding:8px 12px
 }
 
-.dol-container .ux-weak,.dol-container .ux-strong {
-margin-top:10px
+.dol-container .ux-weak,
+.dol-container .ux-strong {
+	margin-top:10px
 }
 
 /* Form inline message */
@@ -274,43 +271,25 @@ margin-top:10px
 
 legend .ux-msg.ux-msg-inline {
 	display: block;
-	background-position: 3px 3px;
-	margin: 2px 0;
-	padding: 2px 6px 1px 24px;
 }
 
 /* Tables
 ------------------- */
 
 table {
-	background-color:#D5D5D5;
 	margin-bottom: 10px;
 	width:100%
 }
 
-table thead th {
-	text-align:left;
-	text-shadow:0 1px 0 #FFF;
-	text-transform:capitalize
+table thead th, table caption {
+	text-shadow: 0 1px 0 #FFF;
+	text-transform: capitalize
 }
 
-table,th,td {
+table,th,td, caption {
 	border:1px solid #D5D5D5
 }
 
-table caption {
-	background-color:#EFEFEF;
-	border-bottom:none;
-	border:1px solid #D5D5D5;
-	color:#3D6683;
-	font-size:14px;
-	font-weight:700;
-	line-height:1.1;
-	padding:5px;
-	text-align:center;
-	text-shadow:0 1px 0 #FFF;
-	text-transform:capitalize
-}
 
 table tr {
 	background-color:#FFF
@@ -322,10 +301,19 @@ table th,.column-label,.column-input {
 	vertical-align: top
 }
 
-table th,.column-label {
+table th,.column-label, table caption {
 	background-color:#EFEFEF;
 	font-weight:700;
 	text-align:left
+}
+
+table caption {
+	border-bottom:none;
+	color:#3D6683;
+	font-size:14px;
+	line-height:1.1;
+	padding:5px;
+	text-align:center;
 }
 
 table th {
@@ -342,37 +330,27 @@ table td {
 -------------------- */
 
 .data-table {
-	table-layout:fixed;
-	word-wrap:break-word
-}
-
-.data-table tr.table-row-odd, .dataTables_wrapper tr.odd {
-	background-color:#FFF
+	table-layout: fixed;
+	word-wrap: break-word
 }
 
 .data-table tr.table-row-even, .dataTables_wrapper tr.even {
 	background-color:#f7f7f7
 }
 
-.data-table tr.table-row-odd:hover,
-.data-table tr.table-row-odd:hover th,
-.data-table tr.table-row-even:hover,
-.data-table tr.table-row-even:hover th,
-.dataTables_wrapper tr.odd:hover,
-.dataTables_wrapper tr.odd:hover th,
-.dataTables_wrapper tr.even:hover,
-.dataTables_wrapper tr.even:hover th {
-	background-color:#FFFFE5!important
+.data-table tr:hover,
+.dataTables_wrapper tr:hover {
+	background-color: #FFFFE5
 }
 
 /*on-hover image on table rows. Just a subtle difference to make the current row noticeable*/
-.data-table thead th,.data-table thead .column-label {
-	text-align:left;
+.data-table thead th,
+.data-table thead .column-label {
 	width:auto
 }
 
 .data-table td.numeric {
-text-align:right
+	text-align:right
 }
 
 .data-table caption .button_header {
@@ -382,10 +360,7 @@ text-align:right
 	right:-4px
 }
 
-.data-table tfoot {
-	border-top:solid 2px #D5D5D5!important
-}
-
+.data-table tfoot,
 .ie7 .data-table tfoot tr:first-child td {
 	border-top:solid 2px #D5D5D5!important
 }
@@ -406,43 +381,66 @@ text-align:right
 
 /* jqDataTables */
 .ux-jqdt-row-expandable img {
-left:-4px;
-margin:0;
-position:relative;
-top:3px
+	left:-4px;
+	margin:0;
+	position:relative;
+	top:3px
 }
 
 .ux-jqdt-row-expandable .ux-jqdt-row-expand-trigger {
-text-decoration:none
+	text-decoration:none
 }
 
 li.ux-jqdt-row-expandable {
-list-style:none
+	list-style:none
 }
 
 .js .ux-jqdt-row-expandable .ux-jqdt-row-expand-content {
-display:none
+	display:none
 }
 
-/* ======================= */
-/* = Widget : DataTables = */
-/* ======================= */
-.dataTables_length {
+/* Data Tables (jQ)
+----------------------- */
+.dataTables_length, 
+.dataTables_filter,
+.dataTables_info, 
+.dataTables_paginate {
 	float: left;
 	display: inline-block;
 	margin: 3px 0;
 	text-align: left;
-	padding-left: 5px;
 	width: 45%
+}
+
+.dataTables_length {
+	padding-left: 5px;
 }
 
 .dataTables_filter {
 	float: right;
-	display: inline-block;
-	margin: 3px 0;
 	text-align: right;
-	width: 45%
 }
+
+.dataTables_info, .dataTables_paginate {
+	padding: 3px 0 0 10px;
+}
+
+.datatables_length {
+	float:left;
+	left:10px;
+	position:relative;
+	top:2px
+}
+
+.dataTables_paginate {
+	float: right;
+	text-align: right;
+}
+
+.datatables_paginate .ui-buttonset .ui-button {
+	padding:2px 5px!important
+}
+
 
 .DataTables_sort_wrapper img {
 	margin:0;
@@ -470,31 +468,6 @@ div.dataTables_wrapper {
 	margin-bottom:10px
 }
 
-.datatables_length {
-	float:left;
-	left:10px;
-	position:relative;
-	top:2px
-}
-
-.dataTables_info {
-	float: left;
-	padding: 3px 0 0 10px;
-	text-align: left;
-	width: 45%;
-}
-
-.dataTables_paginate {
-	float: right;
-	text-align: right;
-	padding: 3px 0 10px 0;
-	width: 45%;
-}
-
-.datatables_paginate .ui-buttonset .ui-button {
-	padding:2px 5px!important
-}
-
 
 li.ux-jQDT-row-expandable {
 	list-style: none;
@@ -507,4 +480,66 @@ li.ux-jQDT-row-expandable a {
 li.ux-jQDT-row-expandable a img {
     margin: 0 0 -3px;
     padding-right: 5px;
+}
+
+
+/* A-Z Index
+------------------------- */
+.ux-a-z-index {
+display:block;
+text-align:center
+}
+
+.ux-a-z-index a {
+background:#EFEFEF;
+border:1px solid #D2D2D2;
+border-radius:3px;
+color:#3D6683;
+display:inline-block;
+font-size:14px;
+font-weight:700;
+padding-top:2px;
+text-align:center;
+text-decoration:none;
+width:20px!important
+}
+
+.ux-a-z-index a.selected {
+background:#3D6683!important;
+bottom-border:none;
+color:#FFF!important
+}
+
+.ux-a-z-item-container {
+display:none;
+min-height:4px 0;
+padding:15px 25px
+}
+
+.no-js .ux-a-z-item-container {
+display:block;
+min-height:0;
+padding:15px 25px
+}
+
+.ux-a-z-item-container .ux-weak {
+margin:25px auto;
+text-align:center;
+width:300px
+}
+
+.ux-a-z-item-container ul {
+list-style:none;
+padding-left:0
+}
+
+.ux-a-z-item-container.selected {
+display:block
+}
+
+.ux-a-z-index a:hover {
+background:#D2D2D2;
+border:1px solid #B4B4B4;
+box-shadow:0 0 1px #A5A5A5;
+color:#3D6683
 }
