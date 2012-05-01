@@ -36,61 +36,7 @@ header a, header a:link, header a:visited {
 	width: 150px;
 }
 
-/* Govoner Search 
------------------------ */
-#gov-search-form {
-	display: none;
-	float: right;
-	margin-top: 6px;
-	padding-right: 5px;
-}
-
-#gov-search-wrap,
-#ux-search-wrap {
-	background: #FFF;
-	border-radius: 7px;
-	display: inline-block;
-	padding: 0 7px;
-}
-
-#gov-search-box,
-#ux-search-box {
-	border: 0;
-	float: left;
-	font-size: 12px;
-	margin: 3px 0 0 0;
-	padding: 0;
-	width: 80%;
-}
-
-#gov-search-button,
-#ux-search-button {
-	background: url(../images/icons/magnifier_disabled.png) no-repeat 0 0 transparent;
-	border: 0;
-	float: right;
-	height: 16px;
-	text-indent: -9999px;
-	width: 16px
-}
-
-.ie #gov-search-wrap,
-.ie #ux-search-wrap {
-	width: 175px;
-}
-.ie #gov-search-box,
-.ie #ux-search-box {
-	width: 150px;
-}
-
-.ie7 #gov-search-button,
-.ie7 #ux-search-button {
-	display: inline-block;
-	line-height: 99px;
-}
-
-
-/* Department Header
------------------------ */
+/* Department Header */
 
 #ux-main, #ux-main .ux-content {
 	background: #771C2D;;
@@ -129,11 +75,62 @@ header a, header a:link, header a:visited {
 	display: inline;	
 }
 
-/* Department Site Search */
+/* Search  Boxes
+----------------------- */
+#gov-search-form {
+	display: none;
+	float: right;
+	margin-top: 6px;
+	padding-right: 5px;
+}
 
 #ux-site-search {
 	float: right;
-	margin: 17px 0;
+	margin: 15px 0;
+}
+
+#gov-search-wrap,
+#ux-search-wrap {
+	background: #FFF;
+	border-radius: 7px;
+	display: inline-block;
+	padding: 0 7px;
+}
+
+#gov-search-box,
+#ux-search-box {
+	border: 0;
+	float: left;
+	font-size: 12px;
+	margin: 3px 0 0 0;
+	padding: 0;
+	width: 80%;
+}
+
+#gov-search-button,
+#ux-search-button {
+	background: url(../images/icons/magnifier_disabled.png) no-repeat 0 0 transparent;
+	border: 0;
+	float: right;
+	height: 16px;
+	text-indent: -9999px;
+	width: 16px
+}
+
+.ie #gov-search-wrap,
+.ie #ux-search-wrap {
+	width: 175px;
+}
+
+.ie #gov-search-box,
+.ie #ux-search-box {
+	width: 150px;
+}
+
+.ie7 #gov-search-button,
+.ie7 #ux-search-button {
+	display: inline-block;
+	line-height: 99px;
 }
 
 /* Global Navigation

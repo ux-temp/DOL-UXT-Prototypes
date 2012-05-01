@@ -28,3 +28,99 @@ padding-right:8px
 color:#787878;
 text-decoration:underline
 }
+
+/* DOL Container
+--------------------------------- */
+
+/****************************
+
+	DEPRICATEDING dol-container for ux-container
+
+	Remove in template v.0.8.0 | v.1.0
+
+****************************/
+
+.ux-container,
+.dol-container { 
+	background-color: #FFF;
+	border:1px solid #d5d5d5; 
+	border-radius: 3px;
+	font-weight: normal; 
+	margin-bottom:10px; 
+}
+
+.ux-container .ux-container, 	
+.dol-container .dol-container { 
+	margin: 10px; 
+}
+
+.ux-container ul, .ux-container p, .ux-container ol, 
+.dol-container ul, .dol-container p, .dol-container ol { 
+	margin: 0 10px 10px 10px; 
+} 
+
+.ux-container ul ul, .ux-container ul ul ul,
+.dol-container ul ul, .dol-container ul ul ul {
+	margin-bottom: 0;
+}
+
+div:hover.ux-container,
+div:hover.dol-container { 
+	background-color: #FBFBFB; 
+} 
+
+.ux-container h3, .ux-container h4, .ux-container h5, .ux-container h6,
+.dol-container h3, .dol-container h4, .dol-container h5, .dol-container h6 {
+	background-color:#EFEFEF;
+	line-height: 1.1;
+	margin-top: 0px;  
+	padding: 5px; 
+	text-align: center; 
+}
+
+.ux-container .button_header, 
+.dol-container .button_header { 
+	float: right; 
+	position: relative; 
+	right: -4px; 
+	top: 2px; 
+}
+
+.ux-container .ux-header-plain,
+.dol-container .ux-header-plain {
+	background:none;
+	margin-left:5px;
+	text-align:left
+}
+
+.ux-container ul.link-list,
+.dol-container ul.link-list {
+	color:#F33;
+	font-weight:700;
+	padding:6px 2px 4px 4px
+}
+
+.ux-container li.link,
+.dol-container li.link {
+	background-image:url(../images/icons/arrow_right.png);
+	background-position:0 .1em;
+	background-repeat:no-repeat;
+	list-style-type:none;
+	padding:.2em .2em .2em 1.6em
+}
+
+.ux-container li.link-list.disabled,
+.dol-container li.link.disabled {
+	background-image:url(../images/icons/arrow_right_disabled.png);
+}
+
+.ux-container li.link.disabled a,
+.dol-container li.link.disabled a {
+	color:#c4c4c4
+}
+
+.ux-container .data-table, .ux-container .key-value-table,
+.dol-container .data-table,.dol-container .key-value-table {
+	margin: 0 auto 15px auto;
+	width:96%
+}
