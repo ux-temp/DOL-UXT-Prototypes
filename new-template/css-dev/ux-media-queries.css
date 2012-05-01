@@ -51,6 +51,11 @@
 		left: 0;
 	}
 
+	/* Fix margin of grids in grids */
+	.fluid [class*="grid_"] [class*="grid_"] {
+		margin: 0;
+	}
+
 
 	.fluid .gov-img span,
 	.fluid h1 span {
@@ -193,6 +198,16 @@
 	.fluid #global-nav ul li a span {
 		background: none;
 		padding: 0;
+	}
+
+	/* Page Body Overrides
+	----------------------------------- */
+	.fluid #ux-breadcrumbs {
+		display: none;
+	}
+
+	.fluid #ux-body h2 {
+		margin-top: 5px;
 	}
 
 

@@ -43,11 +43,11 @@
 /* Grid >> Children (Alpha ~ First, Omega ~ Last)
 ----------------------------------------------------------------------------------------------------*/
 
-.alpha {
+.alpha, .fluid .alpha {
 	margin-left: 0;
 }
 
-.omega {
+.omega, .fluid .omega {
 	margin-right: 0;
 }
 

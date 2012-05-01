@@ -1,102 +1,4 @@
-body.internal {
-background:#EDF2F5 url(../images/background-header-internal.jpg) repeat-x 0 0
-}
 
-
-#page-wrap {
-background:#FFF;
-border:2px solid #ECECEC;
-border-top:none;
-line-height:1.6;
-margin:0 auto;
-padding-top:3px;
-padding:0 0 20px;
-width:976px
-}
-
-/* Header */
-#dol-header {
-background:#671927 url(../images/background-dol-header.jpg) repeat-x;
-height:104px;
-margin-bottom: 1px;
-position:relative;
-z-index:500
-}
-body.internal #dol-header {
-background:#416275 url(../images/background-dol-header-internal.jpg) repeat-x
-}
-
-
-body.internal #dol-header-nys-labor a {
-background:url(../images/background-header-logo-internal.jpg) no-repeat
-}
-
-#dol-header span#dol-header-application {
-color:#FFF;
-display:block;
-font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
-/* TODO: Better font stack for header */
-font-size:32px;
-font-weight:700;
-margin:40px 0 0 150px;
-text-shadow:1px 2px 1px #000
-}
-
-#dol-header-user a:hover {
-color:#c9e0ec
-}
-
-/*override*/
-
-#header-secondary-text li {
-color:#efefef;
-float:right;
-font-size:9px;
-list-style:none
-}
-
-#header-secondary-text li a {
-color:#efefef;
-padding:0 5px 0 7px
-}
-
-.internal #dol-header-user,.internal #dol-header-user a {
-color:#FFF
-}
-
-/* Breadcrumb */
-.dol-breadcrumbs {
-color:#888;
-font-size:9px;
-line-height:1.2;
-margin:0 0 7px;
-padding:0;
-vertical-align:top
-}
-
-.dol-breadcrumbs li {
-color:#696969;
-float:left;
-list-style:none;
-padding:0
-}
-
-.dol-breadcrumbs li a {
-background:url(../images/breadcrumb-icon.gif) no-repeat scroll right 2px transparent;
-color:#696969;
-margin-right:3px;
-padding-right:8px
-}
-
-.dol-breadcrumbs li a:hover {
-color:#787878;
-text-decoration:underline
-}
-
-#page-info h2 {
-clear:both;
-margin:0
-}
 
 #content-navigation {
 background:#BBB;
@@ -212,14 +114,6 @@ content:".";
 display:block;
 height:0;
 visibility:hidden
-}
-
-.ie6 .group,.ie6 .dol-container,.ie6 .button-header,.ie6 .ux-button-section,.ie6 p,.ie6 .ux-flex-grid div,.ie6 .ux-content-wrapper div {
-height:1%
-}
-
-.ie6 .dol-container h3,.ie6 .dol-container h4,.ie6 .dol-container h5,.ie6 .dol-container h6 {
-height:100%
 }
 
 .ie7 .group,.ie7 .dol-container,.ie7 .button-header,.ie7 .ux-button-section,.ie7 p,ie7 .ux-flex-grid div,.ie7 .ux-content-wrapper div {

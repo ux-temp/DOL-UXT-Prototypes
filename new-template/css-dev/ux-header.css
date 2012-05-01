@@ -12,7 +12,7 @@ header a, header a:link, header a:visited {
 }
 
 .gov-img {
-	background: url(../images/nys-banner-img.png) no-repeat 0 0 transparent;
+	background: url(../images/nys-banner-img.png) no-repeat -5px 0 transparent;
 	display: inline-block;
 	height: 28px;
 }
@@ -22,7 +22,7 @@ header a, header a:link, header a:visited {
 }
 
 #gov-link1 {
-	width: 197px;
+	width: 192px;
 }
 
 #gov-link2 {
@@ -41,7 +41,7 @@ header a, header a:link, header a:visited {
 #gov-search-form {
 	display: none;
 	float: right;
-	margin-top: 4px;
+	margin-top: 6px;
 	padding-right: 5px;
 }
 
@@ -97,6 +97,10 @@ header a, header a:link, header a:visited {
 	height: 48px;
 }
 
+.internal #ux-main, .internal #ux-main .ux-content {
+	background: #334f5d;
+}
+
 #ux-logo a {
 	background: url(../images/dol-header-sprite.png) no-repeat 0 -64px transparent;
 	display: block;
@@ -143,7 +147,7 @@ header a, header a:link, header a:visited {
 #global-nav ul {
 	float: left;
 	list-style: none;
-	margin: 7px 0 0 10px;
+	margin: 7px 0 0 0;
 }
 
 #global-nav ul li {
@@ -153,7 +157,7 @@ header a, header a:link, header a:visited {
 #global-nav ul li a {
 	color: #FFF;
 	font-size: 12px;
-	padding: 0 7px;
+	padding-right: 7px;
 }
 
 #global-nav ul li a span {

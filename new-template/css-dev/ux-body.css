@@ -1,0 +1,30 @@
+/* Breadcrumb
+--------------------------------- */
+
+#ux-breadcrumbs {
+color:#888;
+font-size:9px;
+line-height:1.2;
+margin: 3px 0 7px 0;
+padding:0;
+vertical-align:top
+}
+
+#ux-breadcrumbs li {
+color:#696969;
+float:left;
+list-style:none;
+padding:0
+}
+
+#ux-breadcrumbs li a {
+background:url(../images/breadcrumb-icon.gif) no-repeat scroll right 2px transparent;
+color:#696969;
+margin-right:3px;
+padding-right:8px
+}
+
+#ux-breadcrumbs li a:hover {
+color:#787878;
+text-decoration:underline
+}
