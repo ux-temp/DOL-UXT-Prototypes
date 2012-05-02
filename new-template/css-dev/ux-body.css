@@ -130,6 +130,28 @@ div:hover.dol-container {
 	margin:10px
 }
 
+
+/* Content Wrappters */
+.ux-content-wrapper,
+.ie7 .dol-container.ux-content-wrapper {
+	margin:10px
+}
+
+,.ie7 .ux-content-wrapper {
+	margin:0;
+	padding:10px
+}
+
+.ux-content-wrapper .dol-container {
+	margin:0
+}
+
+.dol-container,.ie7 .ux-content-wrapper .dol-container {
+	margin:0;
+	padding:0
+}
+
+
 /* Messages
 --------------------------------- */
 
@@ -486,60 +508,103 @@ li.ux-jQDT-row-expandable a img {
 /* A-Z Index
 ------------------------- */
 .ux-a-z-index {
-display:block;
-text-align:center
+	display:block;
+	text-align:center
 }
 
 .ux-a-z-index a {
-background:#EFEFEF;
-border:1px solid #D2D2D2;
-border-radius:3px;
-color:#3D6683;
-display:inline-block;
-font-size:14px;
-font-weight:700;
-padding-top:2px;
-text-align:center;
-text-decoration:none;
-width:20px!important
+	background:#EFEFEF;
+	border:1px solid #D2D2D2;
+	border-radius:3px;
+	color:#3D6683;
+	display:inline-block;
+	font-size:14px;
+	font-weight:700;
+	padding-top:2px;
+	text-decoration:none;
+	width:20px
 }
 
 .ux-a-z-index a.selected {
-background:#3D6683!important;
-bottom-border:none;
-color:#FFF!important
+	background:#3D6683;
+	color:#FFF
 }
 
 .ux-a-z-item-container {
-display:none;
-min-height:4px 0;
-padding:15px 25px
+	display:none;
+	padding:15px 25px
 }
 
-.no-js .ux-a-z-item-container {
-display:block;
-min-height:0;
-padding:15px 25px
+.no-js .ux-a-z-item-container,
+.ux-a-z-item-container.selected {
+	display:block;
 }
 
 .ux-a-z-item-container .ux-weak {
-margin:25px auto;
-text-align:center;
-width:300px
+	margin:25px auto;
+	width:300px
 }
 
 .ux-a-z-item-container ul {
-list-style:none;
-padding-left:0
-}
-
-.ux-a-z-item-container.selected {
-display:block
+	list-style:none;
+	padding-left:0
 }
 
 .ux-a-z-index a:hover {
-background:#D2D2D2;
-border:1px solid #B4B4B4;
-box-shadow:0 0 1px #A5A5A5;
-color:#3D6683
+	background:#D2D2D2;
+	border:1px solid #B4B4B4;
+	box-shadow:0 0 1px #A5A5A5;
+}
+
+/* jQueryless Modal
+--------------------- */
+
+#modal-background,.modal-background {
+	background-color:#000;
+	filter:alpha(opacity=50);
+	height:100%;
+	left:0;
+	margin:0 px;
+	min-height:100%;
+	opacity:0.6;
+	position:absolute;
+	text-align:center;
+	top:0;
+	width:100%;
+	z-index:600;
+	zoom:1
+}
+
+.ie7 #modal-background,.ie7 .modal-background {
+	position:fixed
+}
+
+#modal-div {
+	background-color:#FFF;
+	border-radius:6px;
+	position:absolute;
+	text-align:center;
+	width:200px;
+	z-index:650
+}
+
+#loading-div {
+	margin:40px 10px
+}
+
+#loading-div p {
+	font-weight:700;
+	margin:20px 0
+}
+
+#new-mediaspace {
+	left:30px;
+	position:relative;
+	top:30px
+}
+
+#close-button {
+	cursor:pointer;
+	position:absolute;
+	z-index:35
 }
