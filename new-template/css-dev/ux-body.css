@@ -348,10 +348,11 @@ table td {
 	vertical-align: middle
 }
 
-/* Data Tables 
--------------------- */
+/* Data Tables / Key Value
+----------------------------- */
 
-.data-table {
+.data-table,
+.key-value-table {
 	table-layout: fixed;
 	word-wrap: break-word
 }
@@ -375,7 +376,8 @@ table td {
 	text-align:right
 }
 
-.data-table caption .button_header {
+.data-table caption .button_header,
+.key-value-table caption .button_header {
 	float:right;
 	margin-left:-1000px;
 	position:relative;
@@ -397,7 +399,8 @@ table td {
 }
 
 /* override */
-.ie7 .data-table caption .button_header {
+.ie7 .data-table caption .button_header,
+.ie7 .key-value-table caption .button_header {
 	margin-left:0
 }
 
@@ -420,6 +423,29 @@ li.ux-jqdt-row-expandable {
 .js .ux-jqdt-row-expandable .ux-jqdt-row-expand-content {
 	display:none
 }
+
+/* Key Value Table
+----------------------- */
+
+.key-value-table td {
+border-right:none
+}
+
+.key-value-table th,.key-value-table .column-label {
+text-align:right;
+width:25%
+}
+
+.key-value-table thead th,.key-value-table thead .column-label {
+width:auto;
+text-align:left
+}
+
+.chrome .key-value-table caption .button_header,
+.safari .key-value-table caption .button_header {
+	top:-2px
+}
+
 
 /* Data Tables (jQ)
 ----------------------- */
