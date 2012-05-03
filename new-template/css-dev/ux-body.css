@@ -633,3 +633,146 @@ li.ux-jQDT-row-expandable a img {
 	position:absolute;
 	z-index:35
 }
+
+
+/* Credit Card Styling
+------------------------ */
+.ux-credit-cards {
+	padding: 0;
+}
+
+.ux-credit-cards li {
+	background: url(../images/icons/icon-master-sprite.gif) no-repeat #FFF;
+	height: 32px;
+	float: left;
+	list-style: none;
+	text-indent: -9999px;
+	margin: 0 5px 0 0;
+	width: 32px
+}
+
+.ux-credit-cards li.master-card {
+	background-position: 0 0
+}
+
+.ux-credit-cards li.master-card-disabled {
+	background-position: 0 -32px
+}
+
+.ux-credit-cards li.visa {
+	background-position: -32px 0
+}
+
+.ux-credit-cards li.visa-disabled {
+	background-position: -32px -32px
+}
+
+.ux-credit-cards li.american-express {
+	background-position: -64px 0
+}
+
+.ux-credit-cards li.american-express-disabled {
+	background-position: -64px -32px
+}
+
+.ux-credit-cards li.discover {
+	background-position: -96px 0
+}
+
+.ux-credit-cards li.discover-disabled {
+	background-position: -96px -32px
+}
+
+.ux-credit-cards li.pay-pal {
+	background-position: -128px 0
+}
+
+.ux-credit-cards li.pay-pal-disabled {
+	background-position: -128px -32px
+}
+
+
+/* Fake Tabs
+-------------- */
+
+.ux-fake-tabs {
+	margin: 0 0 5px 0;
+	min-height: 0;
+	border-bottom: 1px solid #999;
+	display: block
+}
+
+.ux-fake-tabs:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.ux-fake-tabs li {
+	background: #FFF;
+	border: 1px solid #E1E1E1;
+	border-bottom: none;
+	border-radius: 4px 4px 0 0;
+	float: left;
+	list-style: none;
+	margin: 0 0.2em 0 0;
+	position: relative
+}
+
+.ux-fake-tabs li.selected {
+	border-color: #999 #999 #FFF #999;
+	padding: 0.5em 1em;
+	top: 1px
+}
+
+.ux-fake-tabs li a {
+	background: #FBFBFB;
+	display: block;
+	padding: 0.5em 1em
+}
+
+.ux-fake-tabs li:hover {
+	border-color: #B4B4B4;
+}
+
+.ux-fake-tabs li a:hover {
+	background: #E1E1E1;
+}
+
+/* Link icons
+--------------- */
+
+/**************
+**  Link Icons
+***************/
+.icon-link {
+	display:inline-block;
+	text-decoration:none
+}
+
+.icon-link-text {
+	text-decoration:underline
+}
+
+.icon-link-span {
+	display:inline;
+	text-decoration:none
+}
+
+.ie7 .icon-link-span {
+	width:auto
+}
+
+.icon-link-span-icons {
+	margin:0 3px -2px 0;
+	padding-left:3px;
+	text-align:right;
+	text-decoration:none
+}
+
+#global-footer-menu .icon-link-span-icons {
+	margin-top:-2px;
+	padding-top:0
+}

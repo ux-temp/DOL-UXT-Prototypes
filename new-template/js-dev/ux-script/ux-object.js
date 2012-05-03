@@ -990,15 +990,11 @@ var ux = {
 		var devScript = "js-dev/ux-script/ux-object.js"; // for dev
 		if ((jQuery( 'script[src$="'+mainScript+'"]' ).length) == 1) {
 
-		uxVar.core.resourcePath = jQuery( 'script[src$="'+mainScript+'"]' ).attr('src')
-																		   .substr(0, ( jQuery( 'script[src$="'+mainScript+'"]' )
-																		   .attr('src').indexOf( mainScript )));
+			uxVar.core.resourcePath = "http://bor.ny.gov/css/apps/" + uxVar.core.ver;
 			
 		} else {
 
-		uxVar.core.resourcePath = jQuery( 'script[src$="'+devScript+'"]' ).attr('src')
-																		   .substr(0, ( jQuery( 'script[src$="'+devScript+'"]' )
-																		   .attr('src').indexOf( devScript )));
+			uxVar.core.resourcePath = "http://localhost:8080/UX-Prototype/new-template/";
 			
 		}
 
@@ -1110,7 +1106,7 @@ var ux = {
 		 * Saves of an array that can be used later for any process that needs to affect all links on the page.
 		 * We do this by default because a lot of our internal functions need to traverse these links.
 		 */
-		this.domSaver('.ux-content-grid a, #dol-footer-inner a',"pageAnchors");
+		this.domSaver('#ux-body a, #ux-footer a',"pageAnchors");
 		/*
 		 * Run linkIcons
 		 */
