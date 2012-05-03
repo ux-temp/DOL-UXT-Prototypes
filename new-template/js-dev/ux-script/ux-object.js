@@ -988,13 +988,18 @@ var ux = {
 		// resource path from this. script specifically.
 		var mainScript = "js/ux-script.min.js"; // for production
 		var devScript = "js-dev/ux-script/ux-object.js"; // for dev
+
 		if ((jQuery( 'script[src$="'+mainScript+'"]' ).length) == 1) {
 
-			uxVar.core.resourcePath = "http://bor.ny.gov/css/apps/" + uxVar.core.ver;
+		uxVar.core.resourcePath = jQuery( 'script[src$="'+mainScript+'"]' ).attr('src')
+																		   .substr(0, ( jQuery( 'script[src$="'+mainScript+'"]' )
+																		   .attr('src').indexOf( mainScript )));
 			
 		} else {
 
-			uxVar.core.resourcePath = "http://localhost:8080/UX-Prototype/new-template/";
+		uxVar.core.resourcePath = jQuery( 'script[src$="'+devScript+'"]' ).attr('src')
+																		   .substr(0, ( jQuery( 'script[src$="'+devScript+'"]' )
+																		   .attr('src').indexOf( devScript )));
 			
 		}
 
