@@ -308,7 +308,7 @@ table thead th, table caption {
 	text-transform: capitalize
 }
 
-table,th,td, caption {
+table, th, td, caption {
 	border:1px solid #D5D5D5
 }
 
@@ -330,7 +330,6 @@ table th,.column-label, table caption {
 }
 
 table caption {
-	border-bottom:none;
 	color:#3D6683;
 	font-size:14px;
 	line-height:1.1;

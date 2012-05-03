@@ -1,14 +1,16 @@
-/* ========================= */
-/* = BUTTON basic styles   = */
-/* ========================= */
+/* Buttons
+---------------- */
 
-
-
-
-a.button, input.button, span.button, a.button_mini, input.button_mini, span.button_mini, button.button, button.button_mini, input.pagerGoto {
+a.button, 
+input.button, 
+span.button, 
+a.button_mini, 
+input.button_mini, 
+span.button_mini, 
+button.button, 
+button.button_mini, 
+input.pagerGoto {
 	background: url(../images/icons/icon-button-sprite.png) no-repeat #f5f5f5;
-	border-left:1px solid #EEE;
-	border-top:1px solid #EEE;
 	border:1px solid #DEDEDE;
 	border-radius: 3px;
 	color: #369;
@@ -60,14 +62,13 @@ a.button, span.button, input.button, button.button{
 		
 /* spacing regular no-icon */	
 a.button.no-icon, span.button.no-icon, input.button.no-icon, button.button.no-icon { 
-	background-image: none !important;
-	padding-left: 8px !important; 
-	padding-right: 6px !important
+	background-image: none;
+	padding-left: 8px; 
+	padding-right: 6px
 }
 	/* override */
 	.ie7 input.button.no-icon, .ie7 button.button.no-icon {
-		padding-left: 7px !important; 
-		padding-right: 6px !important 
+		padding-left: 7px
 	}
 
 /* spacing mini */
@@ -84,32 +85,36 @@ a.button_mini, span.button_mini, input.button_mini, button.button_mini {
 	
 /* Spacing in a caption tag with IE */
 /* overide */
-.ie7 caption a.button_mini, .ie6 caption a.button_mini, .ie7 caption span.button_mini .ie6 caption span.button_mini, .ie7 caption input.button_mini, .ie6 caption input.button_mini, .ie7 caption button.button_mini {
-	float: right !important;
+.ie7 caption a.button_mini, 
+.ie7 caption span.button_mini, 
+.ie7 caption input.button_mini, 
+.ie7 caption button.button_mini {
+	float: right;
 	margin-top: -15px;
 	vertical-align: middle
 }
 	
 /* spacing mini no-icon */
 a.button_mini.no-icon, span.button_mini.no-icon, input.button_mini.no-icon, button.button_mini.no-icon { 
-	background-image: none !important;
-	padding-left: 8px !important; 
-	padding-right: 6px !important
+	background-image: none;
+	padding-left: 8px; 
+	padding-right: 6px 
 }
 	/* override */
 	.ie7 input.button_mini.no-icon, .ie7 button.button_mini.no-icon {
-		padding-left: 7px !important; 
-		padding-right: 5px !important
+		padding-left: 7px; 
+		padding-right: 5px
 	}
+
 
 /* disabled */
 .button[disabled], .button_mini[disabled], .button.disabled, .button_mini.disabled, span.button, span.button_mini {
-	color: #CCC !important; 
+	color: #CCC; 
 	cursor:not-allowed
 }  
 .button[disabled]:hover, .button[disabled]:focus, .button_mini[disabled]:hover, .button_mini[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button_mini.disabled:hover, .button_mini.disabled:focus {
 	background-color:#f5f5f5; 
-	color: #CCC
+	border:1px solid #E5E5E5;
 }
 
 .button.primary, .button_mini.primary {
@@ -123,9 +128,8 @@ a.button_mini.no-icon, span.button_mini.no-icon, input.button_mini.no-icon, butt
 	border-color: #6D94AF
 }
 
-/* =========== */
-/* == Icons == */
-/* =========== */
+/* Button Icons
+----------------------- */
 
 /* Save */
 .button.save {
@@ -623,8 +627,8 @@ a.button_mini.no-icon, span.button_mini.no-icon, input.button_mini.no-icon, butt
 	display: block;
 	font-size: 11px;
 	font-weight: normal;
-	margin: 0 !important;
-	padding: 0 !important;
+	margin: 0;
+	padding: 0;
 	text-align: left
 }
 
@@ -635,14 +639,12 @@ a.button_mini.no-icon, span.button_mini.no-icon, input.button_mini.no-icon, butt
 }
 
 /* overrides */
-
-.primary-button-set {
+.primary-button-set, .secondary-button-sets  {
 	display: block;
-	margin-bottom: 5px
 }
 
-.secondary-button-sets {
-	display: block
+.primary-button-set {
+	margin-bottom: 5px
 }
 
 /* ===================== */
@@ -670,7 +672,6 @@ a.button.next.icon-right, span.button.next.icon-right, input.button.next.icon-ri
 		padding: 4px 21px 3px 6px;
 	}
 	.ie7 input.button.next.icon-right {
-		background-position: right center;
 		padding: 3px 20px 1px 6px;
 	}	
 	
@@ -680,66 +681,20 @@ a.button_mini.next.icon-right, span.button_mini.next.icon-right, input.button_mi
 	padding: 2px 16px 2px 5px;
 }
 	/* override */
-	.ie7 a.button_mini.next.icon-right, .ie7 span.button_mini.next.icon-right {
-	    padding: 2px 16px 2px 5px;
-	}
 	.ie7 input.button_mini.next.icon-right {
-		background-position: right center;
 		padding: 1px 16px 0 4px; 
 	}
 
-/* ========================= */
-/* =   IE6 ICON REMOVAL    = */
-/* ========================= */
-.ie6 .button, .ie6 .button_mini, .ie6 .icon-right .ie6 button.button {
-	background-image: none;
-}
-	
-/* IE6 No Icons Regular */
-.ie6 a.button, .ie6 span.button {
-	padding-left: 8px !important; 
-	padding-right: 6px !important; 
-}
-.ie6 input.button, .ie6 button.button{
-	padding-left: 7px !important; 
-	padding-right: 6px !important; 
-}
-
-/* IE6 No Icons Mini */
-.ie6 a.button_mini, .ie6 span.button_mini {
-    padding-left: 8px !important; 
-    padding-right: 6px !important;
-}
-.ie6 input.button_mini, .ie6 button.button_mini{
-	padding-left: 7px !important; 
-	padding-right: 5px !important;
-}
-
-/* ===================== */
-/* ==== Icons Only  ==== */
-/* ===================== */
+/* Icon Only */
 .button.icon-only {
 	text-indent: -9999px;
-}
-
-a.button.icon-only, input.button.icon-only {
 	display: block;
 	width: 22px;
 	height: 22px;
 	padding: 0;
 }
 
-.ie6 .button.icon-only {
-	text-indent: 0;
-	width: inherit;
-	height: inherit;
-}
-
-
-/* ===================== */
-/* = Button containers = */
-/* ===================== */
-
+/* Button Containers */
 .ux-button-section {
 	margin-top: 20px;
 	margin-bottom: 30px;
@@ -751,108 +706,114 @@ a.button.icon-only, input.button.icon-only {
 	margin:0
 }
 
+.ux-container .ux-button-container,
 .dol-container .ux-button-container {
 	margin: 0 15px
 }
 
-/* ========================= */
-/* = Call-To-Action Button = */
-/* ========================= */
+/* Call to Action
+----------------------- */
 
-
-.ux-action-button {
-        border-radius: 11px;
-        color: #FFF !important;
-        display: block;
-        height: 60px !important;
-        line-height: 1.0 !important;
-        overflow: hidden !important;
-        position: relative !important;
-        text-decoration: none;
-        width:100%;
-        
-        /*  GRADIENT*/
-        background-color: #3D6683;
-        background: -moz-linear-gradient(top, #004f84 0%, #2a6893 36%, #003463 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004f84), color-stop(36%,#2a6893), color-stop(100%,#003463));
+a.call-to-action, input.call-to-action {
+	display: inline-block;
+	color: #000 !important;
+	margin: 4px;
+	padding: 10px 14px;
+	text-align: center;
+	vertical-align: text-middle;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px #888;
+	cursor: pointer;
+	text-decoration: none;
+	text-shadow: 0px 0px #777;
+	background: #a1a1a1; 
+	
+	background: -moz-linear-gradient(top, #D5D5D5 0%, #a1a1a1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D5D5D5), color-stop(100%,#a1a1a1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #D5D5D5 0%,#a1a1a1 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #D5D5D5 0%,#a1a1a1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D5D5D5', endColorstr='#a1a1a1',GradientType=0 ); /* IE6-8 */
 }
 
-a.ux-action-button {
-		margin: 0 !important;
-		padding: 0 !important
-	}
+/* Overrides */
 
-.ux-action-button, .ux-action-button:link, .ux-action-button:visited  {
-        background-color: #3D6683;
-        background: -moz-linear-gradient(top, #004f84 0%, #2a6893 36%, #003463 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004f84), color-stop(36%,#2a6893), color-stop(100%,#003463));
+.firefox input.call-to-action, .safari input.call-to-action {
+	padding: 12px 14px;
 }
 
-.ux-action-button:hover {
-        color: #FFF !important;
-        background-color: #A5A5A5;
-        background: -moz-linear-gradient(top, #A5A5A5 0%, #787878 36%, #3C3C3C 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A5A5A5), color-stop(36%,#787878), color-stop(100%,#3C3C3C));
+.chrome input.call-to-action {
+	padding: 13px 11px;
 }
 
-.ux-action-button:active {
-        background-color: #3C3C3C;
-        background: -moz-linear-gradient(top, #3C3C3C 0%, #787878 36%, #A5A5A5 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3C3C3C), color-stop(36%,#787878), color-stop(100%,#A5A5A5));
+input.call-to-action {
+	border: 0;
+	padding: 12px 14px ;
 }
 
-.ux-action-button .ux-action-title {
-        display: block;
-        font-size: 14pt;
-        font-weight: bold;
-        height: 22px;
-		left: 12px;  
-        line-height: 22px;
-		margin:0;
-		overflow: hidden;
-		padding:0;
-		position: absolute;
-        top: 12px;
-		width: 100%;
-        z-index: 2
+.ie7 input.call-to-action,
+.ie8 input.call-to-action
+{
+	margin-top: 0;
+	margin-bottom: 1px;
+	padding: 12px 0 10px 0px;
 }
 
-.ux-action-button .ux-action-subtitle {
-        display: block;
-        font-size: 10pt;
-        font-weight: bold;
-        height: 15px;
-	 	left: 12px;
-        letter-spacing: -1px;
-	 	line-height: 15px;
-		margin:0;
-		overflow: hidden;
-		padding:0;
-		position: absolute;
-		top: 35px;
-		width: 100%;
-        z-index: 1
+.call-to-action span.call-sub-text {
+	display: block;
+	font-size: 11px;
+	font-weight: normal;
 }
 
-.ie7 a.ux-action-button {
-		background-color: #3D6683
-}
-.ie7 a.ux-action-button:hover { 
-		background-color: #A5A5A5
-}
-
-.ux-action-button .ux-action-icon {
-		background: url("../images/action-arrow-light.png") no-repeat 0 0 transparent;
-		height: 38px;
-		margin:0;
-		padding:0;
-        position: absolute;
-        right: 8px;
-        top: 12px;
-        width: 38px;
-        z-index: 0
+.call-to-action:hover {
+	background: #888; /* IE-9 */
+	background: -moz-linear-gradient(top, #D5D5D5 0%, #888 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D5D5D5), color-stop(100%,#888)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #D5D5D5 0%,#888 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #D5D5D5 0%,#888 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D5D5D5', endColorstr='#878787',GradientType=0 ); /* IE6-8 */
 }
 
-.ux-action-button:hover .ux-action-icon {
-        background: url("../images/action-arrow.png") no-repeat 0 0 transparent
+.call-to-action:active {
+	background: #D5D5D5; /* IE-9 */
+	background: -moz-linear-gradient(top, #a1a1a1 0%, #D5D5D5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a1a1a1), color-stop(100%,#D5D5D5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a1a1a1 0%,#D5D5D5 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #a1a1a1 0%,#D5D5D5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1a1a1', endColorstr='#D5D5D5',GradientType=0 ); /* IE6-8 */
+	position: relative;
+	top: 1px;
+}
+
+/* Call to action Primary button */
+.call-to-action.primary {
+	color: #fff !important;
+	text-shadow: 0px -1px #777;
+	background: #415866; 
+	
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #688BA0 0%, #415866 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#688BA0), color-stop(100%,#415866)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #688BA0 0%,#415866 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #688BA0 0%,#415866 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#688BA0', endColorstr='#415866',GradientType=0 ); /* IE6-8 */
+}
+
+.call-to-action.primary:hover {
+	background: #374B57; /* IE9 */
+	background: -moz-linear-gradient(top, #688BA0 0%, #374B57 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#688BA0), color-stop(100%,#374B57)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #688BA0 0%,#374B57 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #688BA0 0%,#374B57 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#688BA0', endColorstr='#374B57',GradientType=0 ); /* IE6-8 */
+}
+
+.call-to-action.primary:active {
+	background: #688BA0; /* IE9 */
+	background: -moz-linear-gradient(top, #415866 0%, #688BA0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#415866), color-stop(100%,#688BA0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #415866 0%,#688BA0 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #415866 0%,#688BA0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#415866', endColorstr='#688BA0',GradientType=0 ); /* IE6-8 */
 }

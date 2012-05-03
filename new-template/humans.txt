@@ -20,19 +20,5 @@ Sean Grice - sean.grice@labor.ny.gov
 Credit to project/resources used to build/implement this sites
 =============================================================================================
 
-The Noun Project (http://thenounproject.com) - Icon Libary
-
-	- Specific Mentions
-	Walking Person - http://thenounproject.com/noun/walking/#icon-No250
-	Door - http://thenounproject.com/noun/door/#icon-No1168
-
-
-
-Pictos (http://pictos.cc) - Icon Libary
-	
-	- Set one
-
-Glyphish (http://glyphish.com/) - Icon Libary
-
 
 
