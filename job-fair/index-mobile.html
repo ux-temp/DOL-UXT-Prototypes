@@ -66,182 +66,186 @@
             </div>
         </div>
         <div data-role="page" id="page2">
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-type="horizontal">
-                    <legend>
-                        Gender
-                    </legend>
-                    <input name="radiobuttons2" id="radio2" value="female" type="radio" />
-                    <label for="radio2">
-                        Female
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Gender
+                        </legend>
+                        <input name="radiobuttons2" id="radio2" value="female" type="radio" />
+                        <label for="radio2">
+                            Female
+                        </label>
+                        <input name="radiobuttons2" id="radio3" value="male" type="radio" />
+                        <label for="radio3">
+                            Male
+                        </label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Are you a veteran of the United States military?
+                        </legend>
+                        <input name="radiobuttons3" id="radio4" value="1" type="radio" />
+                        <label for="radio4">
+                            Yes
+                        </label>
+                        <input name="radiobuttons3" id="radio5" value="0" type="radio" />
+                        <label for="radio5">
+                            No
+                        </label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu2">
+                        Which event are you planning to attend?
                     </label>
-                    <input name="radiobuttons2" id="radio3" value="male" type="radio" />
-                    <label for="radio3">
-                        Male
+                    <select name="selectmenu2" id="selectmenu2">
+                        <option value="brooklyn">
+                            Brooklyn
+                        </option>
+                        <option value="bronx">
+                            Bronx
+                        </option>
+                        <option value="manhatten">
+                            Manhattan
+                        </option>
+                        <option value="staten-island">
+                            Staten Island
+                        </option>
+                        <option value="queens">
+                            Queens
+                        </option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu3">
+                        Level of Education Completed:
                     </label>
-                </fieldset>
-            </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-type="horizontal">
-                    <legend>
-                        Are you a veteran of the United States military?
-                    </legend>
-                    <input name="radiobuttons3" id="radio4" value="1" type="radio" />
-                    <label for="radio4">
-                        Yes
-                    </label>
-                    <input name="radiobuttons3" id="radio5" value="0" type="radio" />
-                    <label for="radio5">
-                        No
-                    </label>
-                </fieldset>
-            </div>
-            <div data-role="fieldcontain">
-                <label for="selectmenu2">
-                    Which event are you planning to attend?
-                </label>
-                <select name="selectmenu2" id="selectmenu2">
-                    <option value="brooklyn">
-                        Brooklyn
-                    </option>
-                    <option value="bronx">
-                        Bronx
-                    </option>
-                    <option value="manhatten">
-                        Manhattan
-                    </option>
-                    <option value="staten-island">
-                        Staten Island
-                    </option>
-                    <option value="queens">
-                        Queens
-                    </option>
-                </select>
-            </div>
-            <div data-role="fieldcontain">
-                <label for="selectmenu3">
-                    Level of Education Completed:
-                </label>
-                <select name="selectmenu3" id="selectmenu3">
-                    <option value="1">
-                        Less than High School
-                    </option>
-                    <option value="2">
-                        Some High School
-                    </option>
-                    <option value="3">
-                        High School Degree or GED
-                    </option>
-                    <option value="4">
-                        Apprenticeship
-                    </option>
-                    <option value="5">
-                        Vocational Trade School
-                    </option>
-                    <option value="6">
-                        Some College Credits
-                    </option>
-                    <option value="7">
-                        Associate Degree
-                    </option>
-                    <option value="8">
-                        Bachelor's Degree
-                    </option>
-                    <option value="9">
-                        Master Degree
-                    </option>
-                    <option value="10">
-                        Doctorate Degree
-                    </option>
-                </select>
-            </div>
-            <div data-role="controlgroup" data-type="horizontal">
-                <a href="#page1" data-role="button" data-icon="arrow-l">Previous</a>
-                <a href="#page3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+                    <select name="selectmenu3" id="selectmenu3">
+                        <option value="1">
+                            Less than High School
+                        </option>
+                        <option value="2">
+                            Some High School
+                        </option>
+                        <option value="3">
+                            High School Degree or GED
+                        </option>
+                        <option value="4">
+                            Apprenticeship
+                        </option>
+                        <option value="5">
+                            Vocational Trade School
+                        </option>
+                        <option value="6">
+                            Some College Credits
+                        </option>
+                        <option value="7">
+                            Associate Degree
+                        </option>
+                        <option value="8">
+                            Bachelor's Degree
+                        </option>
+                        <option value="9">
+                            Master Degree
+                        </option>
+                        <option value="10">
+                            Doctorate Degree
+                        </option>
+                    </select>
+                </div>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a href="#page1" data-role="button" data-icon="arrow-l">Previous</a>
+                    <a href="#page3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+                </div>
             </div>
         </div>
         <div data-role="page" id="page3">
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-type="vertical">
-                    <legend>
-                        Employment Area of Interest (Check all that apply)
-                    </legend>
-                    <input name="checkbox7" id="checkbox7" type="checkbox" />
-                    <label for="checkbox7">
-                        Agricultural
-                    </label>
-                    <input name="checkbox8" id="checkbox8" type="checkbox" />
-                    <label for="checkbox8">
-                        Construction
-                    </label>
-                    <input name="checkbox9" id="checkbox9" type="checkbox" />
-                    <label for="checkbox9">
-                        Education
-                    </label>
-                    <input name="checkbox10" id="checkbox10" type="checkbox" />
-                    <label for="checkbox10">
-                        Financial Services
-                    </label>
-                    <input name="checkbox11" id="checkbox11" type="checkbox" />
-                    <label for="checkbox11">
-                        Food Service
-                    </label>
-                    <input name="checkbox12" id="checkbox12" type="checkbox" />
-                    <label for="checkbox12">
-                        Health Services
-                    </label>
-                    <input name="checkbox13" id="checkbox13" type="checkbox" />
-                    <label for="checkbox13">
-                        Information Technology
-                    </label>
-                    <input name="checkbox14" id="checkbox14" type="checkbox" />
-                    <label for="checkbox14">
-                        Leisure &amp; Hospitality
-                    </label>
-                    <input name="checkbox15" id="checkbox15" type="checkbox" />
-                    <label for="checkbox15">
-                        Manufacturing
-                    </label>
-                    <input name="checkbox16" id="checkbox16" type="checkbox" />
-                    <label for="checkbox16">
-                        Natural Resources &amp; Mining
-                    </label>
-                    <input name="checkbox17" id="checkbox17" type="checkbox" />
-                    <label for="checkbox17">
-                        Professional &amp; Business Services
-                    </label>
-                    <input name="checkbox18" id="checkbox18" type="checkbox" />
-                    <label for="checkbox18">
-                        Public Administration
-                    </label>
-                    <input name="checkbox19" id="checkbox19" type="checkbox" />
-                    <label for="checkbox19">
-                        Sales &amp; Retail
-                    </label>
-                    <input name="checkbox19" id="checkbox20" type="checkbox" />
-                    <label for="checkbox19">
-                        Security and/or Military
-                    </label>
-                    <input name="checkbox19" id="checkbox21" type="checkbox" />
-                    <label for="checkbox19">
-                        Social Services
-                    </label>
-                    <input name="checkbox19" id="checkbox22" type="checkbox" />
-                    <label for="checkbox19">
-                        Trade, Transportation, &amp; Utilities
-                    </label>
-                </fieldset>
-            </div>
-            <p>
-                <a href="#page2" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
-                    <span class="ui-btn-inner ui-btn-corner-all">
-                        <span class="ui-btn-text">Previous</span>
-                    </span>
-                </a>
-            </p>
-            <div data-role="controlgroup" data-type="horizontal">
-                <a href="#page2" data-role="button" data-icon="arrow-l">Previous</a>
-                <a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Submit</a>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="vertical">
+                        <legend>
+                            Employment Area of Interest (Check all that apply)
+                        </legend>
+                        <input name="checkbox7" id="checkbox7" type="checkbox" />
+                        <label for="checkbox7">
+                            Agricultural
+                        </label>
+                        <input name="checkbox8" id="checkbox8" type="checkbox" />
+                        <label for="checkbox8">
+                            Construction
+                        </label>
+                        <input name="checkbox9" id="checkbox9" type="checkbox" />
+                        <label for="checkbox9">
+                            Education
+                        </label>
+                        <input name="checkbox10" id="checkbox10" type="checkbox" />
+                        <label for="checkbox10">
+                            Financial Services
+                        </label>
+                        <input name="checkbox11" id="checkbox11" type="checkbox" />
+                        <label for="checkbox11">
+                            Food Service
+                        </label>
+                        <input name="checkbox12" id="checkbox12" type="checkbox" />
+                        <label for="checkbox12">
+                            Health Services
+                        </label>
+                        <input name="checkbox13" id="checkbox13" type="checkbox" />
+                        <label for="checkbox13">
+                            Information Technology
+                        </label>
+                        <input name="checkbox14" id="checkbox14" type="checkbox" />
+                        <label for="checkbox14">
+                            Leisure &amp; Hospitality
+                        </label>
+                        <input name="checkbox15" id="checkbox15" type="checkbox" />
+                        <label for="checkbox15">
+                            Manufacturing
+                        </label>
+                        <input name="checkbox16" id="checkbox16" type="checkbox" />
+                        <label for="checkbox16">
+                            Natural Resources &amp; Mining
+                        </label>
+                        <input name="checkbox17" id="checkbox17" type="checkbox" />
+                        <label for="checkbox17">
+                            Professional &amp; Business Services
+                        </label>
+                        <input name="checkbox18" id="checkbox18" type="checkbox" />
+                        <label for="checkbox18">
+                            Public Administration
+                        </label>
+                        <input name="checkbox19" id="checkbox19" type="checkbox" />
+                        <label for="checkbox19">
+                            Sales &amp; Retail
+                        </label>
+                        <input name="checkbox19" id="checkbox20" type="checkbox" />
+                        <label for="checkbox19">
+                            Security and/or Military
+                        </label>
+                        <input name="checkbox19" id="checkbox21" type="checkbox" />
+                        <label for="checkbox19">
+                            Social Services
+                        </label>
+                        <input name="checkbox19" id="checkbox22" type="checkbox" />
+                        <label for="checkbox19">
+                            Trade, Transportation, &amp; Utilities
+                        </label>
+                    </fieldset>
+                </div>
+                <p>
+                    <a href="#page2" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+                        <span class="ui-btn-inner ui-btn-corner-all">
+                            <span class="ui-btn-text">Previous</span>
+                        </span>
+                    </a>
+                </p>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a href="#page2" data-role="button" data-icon="arrow-l">Previous</a>
+                    <a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Submit</a>
+                </div>
             </div>
         </div>
         <script>
