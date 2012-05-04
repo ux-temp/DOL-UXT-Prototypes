@@ -61,11 +61,7 @@
                     </select>
                 </div>
                 <p>
-                    <a href="#page2" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
-                        <span class="ui-btn-inner ui-btn-corner-all">
-                            <span class="ui-btn-text">Continue</span>
-                        </span>
-                    </a>
+                    <a href="#page2" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
                 </p>
             </div>
         </div>
@@ -159,20 +155,10 @@
                     </option>
                 </select>
             </div>
-            <p>
-                <a href="#page3" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
-                    <span class="ui-btn-inner ui-btn-corner-all">
-                        <span class="ui-btn-text">Continue</span>
-                    </span>
-                </a>
-            </p>
-            <p>
-                <a href="#page1" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
-                    <span class="ui-btn-inner ui-btn-corner-all">
-                        <span class="ui-btn-text">Previous</span>
-                    </span>
-                </a>
-            </p>
+            <div data-role="controlgroup">
+                <a href="#page1" data-role="button" data-icon="arrow-l">Previous</a>
+                <a href="#page3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+            </div>
         </div>
         <div data-role="page" id="page3">
             <div data-role="fieldcontain">
@@ -253,11 +239,9 @@
                     </span>
                 </a>
             </p>
-            <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="null" data-iconpos="null" data-theme="b" data-inline="false" data-mini="false" class="ui-btn ui-shadow ui-btn-corner-all ui-fullsize ui-btn-block ui-btn-up-b" aria-disabled="false">
-                <span class="ui-btn-inner ui-btn-corner-all">
-                    <span class="ui-btn-text">Submit</span>
-                </span>
-                <button type="submit" data-theme="b" name="submit" value="submit-value" class="ui-btn-hidden" aria-disabled="false">Submit</button>
+            <div data-role="controlgroup">
+                <a href="#page2" data-role="button" data-icon="arrow-l">Previous</a>
+                <a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Submit</a>
             </div>
         </div>
         <script>
