@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+        </script>
+    </head>
+    <body>
+        <div data-role="page" id="page1">
+            <div data-role="content">
+                <h4>
+                    Job Fair Participant Registration
+                </h4>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput1">
+                        </label>
+                        <input id="textinput1" placeholder="Name" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput2">
+                        </label>
+                        <input id="textinput2" placeholder="Email" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu1">
+                        Age Range?
+                    </label>
+                    <select name="selectmenu1" id="selectmenu1">
+                        <option value="14-17">
+                            14-17
+                        </option>
+                        <option value="18-21">
+                            18-21
+                        </option>
+                        <option value="22-39">
+                            22-39
+                        </option>
+                        <option value="40-54">
+                            40-54
+                        </option>
+                        <option value="55-64">
+                            55-64
+                        </option>
+                        <option value="65plus">
+                            65+
+                        </option>
+                    </select>
+                </div>
+        </div>
+        <div data-role="page" id="page2">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Gender
+                        </legend>
+                        <input name="radiobuttons2" id="radio2" value="female" type="radio" />
+                        <label for="radio2">
+                            Female
+                        </label>
+                        <input name="radiobuttons2" id="radio3" value="male" type="radio" />
+                        <label for="radio3">
+                            Male
+                        </label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Are you a veteran of the United States military?
+                        </legend>
+                        <input name="radiobuttons3" id="radio4" value="1" type="radio" />
+                        <label for="radio4">
+                            Yes
+                        </label>
+                        <input name="radiobuttons3" id="radio5" value="0" type="radio" />
+                        <label for="radio5">
+                            No
+                        </label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu2">
+                        Which event are you planning to attend?
+                    </label>
+                    <select name="selectmenu2" id="selectmenu2">
+                        <option value="brooklyn">
+                            Brooklyn
+                        </option>
+                        <option value="bronx">
+                            Bronx
+                        </option>
+                        <option value="manhatten">
+                            Manhattan
+                        </option>
+                        <option value="staten-island">
+                            Staten Island
+                        </option>
+                        <option value="queens">
+                            Queens
+                        </option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu3">
+                        Level of Education Completed:
+                    </label>
+                    <select name="selectmenu3" id="selectmenu3">
+                        <option value="1">
+                            Less than High School
+                        </option>
+                        <option value="2">
+                            Some High School
+                        </option>
+                        <option value="3">
+                            High School Degree or GED
+                        </option>
+                        <option value="4">
+                            Apprenticeship
+                        </option>
+                        <option value="5">
+                            Vocational Trade School
+                        </option>
+                        <option value="6">
+                            Some College Credits
+                        </option>
+                        <option value="7">
+                            Associate Degree
+                        </option>
+                        <option value="8">
+                            Bachelor's Degree
+                        </option>
+                        <option value="9">
+                            Master Degree
+                        </option>
+                        <option value="10">
+                            Doctorate Degree
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div data-role="page" id="page3">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="vertical">
+                        <legend>
+                            Employment Area of Interest (Check all that apply)
+                        </legend>
+                        <input name="checkbox7" id="checkbox7" type="checkbox" />
+                        <label for="checkbox7">
+                            Agricultural
+                        </label>
+                        <input name="checkbox8" id="checkbox8" type="checkbox" />
+                        <label for="checkbox8">
+                            Construction
+                        </label>
+                        <input name="checkbox9" id="checkbox9" type="checkbox" />
+                        <label for="checkbox9">
+                            Education
+                        </label>
+                        <input name="checkbox10" id="checkbox10" type="checkbox" />
+                        <label for="checkbox10">
+                            Financial Services
+                        </label>
+                        <input name="checkbox11" id="checkbox11" type="checkbox" />
+                        <label for="checkbox11">
+                            Food Service
+                        </label>
+                        <input name="checkbox12" id="checkbox12" type="checkbox" />
+                        <label for="checkbox12">
+                            Health Services
+                        </label>
+                        <input name="checkbox13" id="checkbox13" type="checkbox" />
+                        <label for="checkbox13">
+                            Information Technology
+                        </label>
+                        <input name="checkbox14" id="checkbox14" type="checkbox" />
+                        <label for="checkbox14">
+                            Leisure &amp; Hospitality
+                        </label>
+                        <input name="checkbox15" id="checkbox15" type="checkbox" />
+                        <label for="checkbox15">
+                            Manufacturing
+                        </label>
+                        <input name="checkbox16" id="checkbox16" type="checkbox" />
+                        <label for="checkbox16">
+                            Natural Resources &amp; Mining
+                        </label>
+                        <input name="checkbox17" id="checkbox17" type="checkbox" />
+                        <label for="checkbox17">
+                            Professional &amp; Business Services
+                        </label>
+                        <input name="checkbox18" id="checkbox18" type="checkbox" />
+                        <label for="checkbox18">
+                            Public Administration
+                        </label>
+                        <input name="checkbox19" id="checkbox19" type="checkbox" />
+                        <label for="checkbox19">
+                            Sales &amp; Retail
+                        </label>
+                        <input name="checkbox19" id="checkbox20" type="checkbox" />
+                        <label for="checkbox19">
+                            Security and/or Military
+                        </label>
+                        <input name="checkbox19" id="checkbox21" type="checkbox" />
+                        <label for="checkbox19">
+                            Social Services
+                        </label>
+                        <input name="checkbox19" id="checkbox22" type="checkbox" />
+                        <label for="checkbox19">
+                            Trade, Transportation, &amp; Utilities
+                        </label>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
