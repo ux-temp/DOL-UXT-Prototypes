@@ -986,11 +986,13 @@ var ux = {
 		 ******/
 		// ux-script should always appear on any page inside of the ux template. Because of this, we determine our
 		// resource path from this. script specifically.
+
 		var mainScript = "js/ux-script.min.js"; // for production
 		var devScript = "js-dev/ux-script/ux-object.js"; // for dev
+
 		if ((jQuery( 'script[src$="'+mainScript+'"]' ).length) == 1) {
 
-		uxVar.core.resourcePath = jQuery( 'script[src$="'+mainScript+'"]' ).attr('src')
+		uxVar.core.resourcePath = host
 																		   .substr(0, ( jQuery( 'script[src$="'+mainScript+'"]' )
 																		   .attr('src').indexOf( mainScript )));
 			
@@ -1110,7 +1112,7 @@ var ux = {
 		 * Saves of an array that can be used later for any process that needs to affect all links on the page.
 		 * We do this by default because a lot of our internal functions need to traverse these links.
 		 */
-		this.domSaver('.ux-content-grid a, #dol-footer-inner a',"pageAnchors");
+		this.domSaver('#ux-body a, #ux-footer a',"pageAnchors");
 		/*
 		 * Run linkIcons
 		 */

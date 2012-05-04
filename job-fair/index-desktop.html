@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Job Fair Participant Registration| User Experience (UX) Guide</title>
+
+				<link rel="shortcut icon" href="http://labor.ny.gov/css/apps/v.0.4.2/favicon.ico" type="image/x-icon">
+				<link rel="stylesheet" type="text/css" href="http://labor.ny.gov/css/apps/v.0.4.2/css/ux-style.min.css" >	
+				<script src="http://labor.ny.gov/css/apps/v.0.4.2/js/modernizr.min.js"></script>
+		
+			<!-- Additional <head> items below this line -->
+
+	</head>
+
+	<!--[if lt IE 7 ]> <body class=" ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <body class=" ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <body class=" ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <body class=" ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!--> 
+	<body class=" " >
+	<!--<![endif]-->
+
+		<div id="dol-skip-navigation">
+			<a tabindex="1" id="skip-to-content" href="#content-anchor" class="ux-no-block">Skip to Content</a>	
+			<a tabindex="2" 
+							id="skip-to-nav" href="#navigation-anchor"
+			 class="ux-no-block" >Skip to Navigation</a>
+		</div>
+			
+		<div id="ux-notification-container">
+			<div class="ux-content-wrapper">
+				<div id="ux-action-required-notifications" class="ux-notice-outer">
+						<div class="arn-tray ux-notice-inner">
+						</div>
+				</div>
+				<div id="ux-generic-notifications">
+				</div>
+			</div>
+		</div>
+		
+		<div id="gov-banner-outer" class="container_16">
+			<div id="gov-banner-inner">
+				<a href="http://www.ny.gov/"><img id="nys-image" src="http://labor.ny.gov/css/apps/v.0.4.2/images/banner_img1.png" alt="NY.gov Portal" /></a>
+				<a href="http://www.nysegov.com/citGuide.cfm?superCat=102&cat=449&content=main"><img id="nys-agency-listing" src="http://labor.ny.gov/css/apps/v.0.4.2/images/banner_img2.png" alt="State Agency Listing" /></a>
+				<!-- search graphic-->
+				<a onclick="document.getElementById('sw_searchbox').style.visibility= 'visible'; document.getElementById('searchgraphic').style.visibility= 'hidden';" href="#">
+				<img alt="Search all of NY.gov" src="http://labor.ny.gov/css/apps/v.0.4.2/images/banner_img3.png" style="float: right; border: medium none; visibility: hidden;" id="searchgraphic"></a>
+				<!--state wide search box-->
+				<form method="get" action="http://search.cio.ny.gov/" style="float: right; position: relative; top: 2px; left: 155px; visibility: visible;" id="sw_searchbox" target="_blank">
+					<p>
+						<input type="hidden" name="sort" value="date:D:L:d1" />
+						<input type="hidden" name="output" value="xml_no_dtd" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="hidden" name="oe" value="UTF-8" />
+						<input type="hidden" name="client" value="default_frontend" />
+						<input type="hidden" name="proxystylesheet" value="default_frontend" />
+						<input type="hidden" name="site" value="default_collection" />
+						<label for="searchbox"><input type="text" title="Search" id="searchbox" maxlength="256" name="q" size="15" style="position: relative; top: -10px; cursor: pointer;" /></label>
+						<label for="searchbutton"><input type="submit" value="Search NY.GOV" id="searchbutton" style="position: relative; width: 110px; top: -10px;" /></label>
+					</p>
+				</form>
+			<!--end wide search box-->
+				<script type="text/javascript">
+					// If JavaScript is on, manipulate search control objects.  
+					// Otherwise this will be ignored and search controls will be shown by default
+					document.getElementById('sw_searchbox').style.visibility = 'hidden';
+					document.getElementById('searchgraphic').style.visibility= 'visible';         
+				</script> 
+			</div>
+		</div>
+		<div id="dol-header" class="container_16">
+			<h1 id="dol-header-nys-labor">
+				<a href="http://www.labor.ny.gov" class="accessibility-text">New York State Department of Labor</a>
+				<span id="dol-header-application"></span>
+			</h1>
+			
+						
+			<div id="site-wide-search">
+				<form name="_ipsubmit" id="search-box-form" method="get" action="http://search.cio.ny.gov" autocomplete="off" target="_blank" >
+					<label for="q" id="search-label" class="accessibility-text">Search Department of Labor:</label>
+					<input type="text" id="q" name="q" value="" size="21" title="Input Search" class="text_box site-wide-search-text-box" placeholder="Search DOL" autocomplete="off" />
+					<input type="submit" title="Submit Search" value="GO" name="submit" class="submit site-wide-search-button accessibility-text" id="search-submit" />
+					<input type="hidden" name="entqr" value="0" />
+					<input type="hidden" name="ud" value="1" />
+					<input type="hidden" name="sort" value="date:D:L:d1" />
+					<input type="hidden" name="output" value="xml_no_dtd" />
+					<input type="hidden" name="oe" value="UTF-8" />
+					<input type="hidden" name="ie" value="UTF-8" />
+					<input type="hidden" name="client" value="labor_frontend" />
+					<input type="hidden" name="proxystylesheet" value="labor_frontend" />
+					<input type="hidden" name="site" value="labor_collection" />
+				</form>
+			</div>
+			
+			
+		 	<div id="header-mega-menu">
+		   		<div id="mega-menu">
+		   			<a name="mega-menu-anchor" id="mega-menu-anchor" tabindex="-1"></a>
+		   			<ul id="menu">
+		   			</ul>
+		   		</div>
+			</div>
+		</div>	<!-- Mega menu entry below this line if needed -->
+
+		<div id="page-wrap" class="group">
+			<div id="content" class="container_16 group">
+				<noscript>
+					<div class="grid_16">
+						<div class="ux-msg warning">
+							<ul>
+								<li><strong>Javascript is currently disabled or restricted on your computer. </strong> Certain functionalities of this application may be limited. </li>
+							</ul>
+						</div>
+					</div>
+				</noscript>
+
+			   	<a name="content-anchor" id="content-anchor" tabindex="-1"></a>		
+				<div class="grid_16 ux-content-grid ">
+					<div id="page-info">
+						<ul class="dol-breadcrumbs group">
+							<li class="home breadcrumb-external"><a href="http://www.labor.ny.gov">Home</a></li>
+					        <li>Job Fair Participant Registration</li>
+						</ul>
+					</div>
+					<h2>Job Fair Participant Registration</h2>	
+					<!-- ============================================================= -->
+					<!-- =================== CONTENT STARTS HERE ===================== -->
+					<!-- ============================================================= -->
+
+					<div class="grid_12 prefix_2 suffix_2">
+						<form class="ux-form-top" action="job-fair-process.asp" method="POST">
+
+						    <label>
+						    	<span>Name:</span>
+						    	<input type="text" name="name" id="name" class="width-50" />
+						    </label>
+
+						    <label>
+						    	<span>Email:</span>
+						    	<input type="text" name="email" id="email" class="width-50" />
+						    </label>
+
+						    <fieldset class="multi-input">
+						        <legend>
+						            <span><abbr title="Social Security Number">SSN</abbr>:</span>
+						        </legend>
+						        <div>
+						            <label for="ssn1to3">
+						                <span class="ux-hide-508">digits 1 to 3</span>
+						                <input type="text" size="3" id="ssn1to3" />
+						            </label>
+						            <span class="support-text">-</span>
+						            <label for="ssn4to5">
+						                <span class="ux-hide-508">digits 4 to 5</span>
+						                <input type="text" size="2" id="ssn4to5" />
+						            </label>
+						            <span class="support-text">-</span>
+						            <label for="ssn1to3">
+						                <span class="ux-hide-508">digits 6 to 9</span>
+						                <input type="text" size="4" id="ssn6to9" />
+						            </label>
+						        </div>
+						    </fieldset>
+
+					        <fieldset class="radio-check-list">
+					            <legend>Age range?</legend>
+					            <div>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="radio" id="14-17" name="14-17" /> 
+					                    <label for="14-17">14-17</label>
+					                </span>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="radio" id="18-21" name="18-21" />
+					                    <label for="18-21">18-21</label>
+					                </span>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="radio" id="22-39" name="22-39" />
+					                    <label for="22-39">22-39</label>
+					                </span>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="radio" id="40-54" name="40-54" />
+					                    <label for="40-54">40-54</label>
+					                </span>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="radio" id="55-64" name="55-64" />
+					                    <label for="55-64">55-64</label>
+					                </span>
+					                <span class="left ux-inline-block">
+					                    <input type="radio" id="65plus" name="65plus" />
+					                    <label for="65plus">65+</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+					        <fieldset class="radio-check-list">
+					            <legend>Gender:</legend>
+					            <div>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="radio" id="female" name="female" /> 
+					                    <label for="female">Female</label>
+					                </span>
+					                <span class="left ux-inline-block">
+					                    <input type="radio" id="male" name="male" />
+					                    <label for="male">Male</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+					        <fieldset class="radio-check-list">
+					            <legend>Are you a veteran of the United States military?</legend>
+					            <div>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="radio" id="milYes" name="milYes" /> 
+					                    <label for="milYes">Yes</label>
+					                </span>
+					                <span class="left ux-inline-block">
+					                    <input type="radio" id="milNo" name="milNo" />
+					                    <label for="milNo">No</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+					        <fieldset class="radio-check-list">
+					            <legend>Which evennt are you planning to attend?</legend>
+					            <div>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="checkbox" id="brooklyn" name="brooklyn" /> 
+					                    <label for="brooklyn">Brooklyn</label>
+					                </span>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="checkbox" id="bronx" name="bronx" />
+					                    <label for="bronx">Bronx</label>
+					                </span>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="checkbox" id="manhattan" name="manhattan" />
+					                    <label for="manhattan">Manhattan</label>
+					                </span>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="checkbox" id="staten-island" name="staten-island" />
+					                    <label for="staten-island">Staten Island</label>
+					                </span>
+					                <span class="left ux-inline-block">
+					                    <input type="checkbox" id="queens" name="queens" />
+					                    <label for="queens">Queens</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+					        <fieldset class="radio-check-list">
+					            <legend>Level of Education Completed</legend>
+					            <div class="left width-50">
+					                <span>
+					                    <input type="radio" id="lessHighSchool" name="degree" value="1" /> 
+					                    <label for="lessHighSchool">Less than High School</label>
+					                </span>
+					                <span>
+					                    <input type="radio" id="someHighSchool" name="degree" value="2" />
+					                    <label for="someHighSchool">Some High School</label>
+					                </span>
+					                <span>
+					                    <input type="radio" id="highSchool" name="degree" value="3" /> 
+					                    <label for="highSchool">High School Degree or GED</label>
+					                </span>
+					                <span>
+					                    <input type="radio" id="apprenticeship" name="degree" value="4" />
+					                    <label for="apprenticeship">Apprenticeship</label>
+					                </span>
+					                <span>
+					                    <input type="radio" id="vocational" name="degree" value="5" /> 
+					                    <label for="vocational">Vocational Trade School</label>
+					                </span>
+					            </div>
+					            <div class="left width-50">
+					                <span>
+					                    <input type="radio" id="someCollege" name="degree" value="6"/> 
+					                    <label for="someCollege">Some College Credits</label>
+					                </span>
+					                <span>
+					                    <input type="radio" id="associateDegree" name="degree" value="7"/>
+					                    <label for="associateDegree">Associate Degree</label>
+					                </span>
+					                <span>
+					                    <input type="radio" id="bachelorsDegree" name="degree" value="8"/> 
+					                    <label for="bachelorsDegree">Bachelor's Degree</label>
+					                </span>
+					                <span>
+					                    <input type="radio" id="masteDegree" name="degree" value="9"/>
+					                    <label for="masteDegree">Master's Degree</label>
+					                </span>
+					                <span>
+					                    <input type="radio" id="doctorateDegree" name="degree" value="10"/> 
+					                    <label for="doctorateDegree">Doctorate Degree</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+
+					        <fieldset class="radio-check-list">
+					            <legend>Employment Area of Interest (check all that apply):</legend>
+					            <div class="left width-50">
+					                <span>
+					                    <input type="checkbox" id="agricultureal" name="agricultureal" value="1" /> 
+					                    <label for="agricultureal">Agricultureal</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="construction" name="construction" value="2" />
+					                    <label for="construction">Construction</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="education" name="education" value="3" /> 
+					                    <label for="education">Education</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="financial-service" name="financial-service" value="4" />
+					                    <label for="financial-service">Financial Services</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="food-services" name="food-services" value="5" /> 
+					                    <label for="food-services">Food Service</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="health" name="health" value="6" /> 
+					                    <label for="health">Health Services</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="information" name="information" value="7" />
+					                    <label for="information">Information Technology</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="hospitality" name="hospitality" value="8" /> 
+					                    <label for="hospitality">Leisure &amp; Hospitality</label>
+					                </span>
+					            </div>
+					            <div class="left width-50">
+					                <span>
+					                    <input type="checkbox" id="manufacturing" name="manufacturing" value="9"/> 
+					                    <label for="manufacturing">Manufacturing</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="mining" name="mining" value="10"/>
+					                    <label for="mining">Natural Resources &amp; Mining</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="business" name="business" value="11"/> 
+					                    <label for="business">Professional &amp; Business Services</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="publicAdministration" name="publicAdministration" value="12"/>
+					                    <label for="publicAdministration">Public Administration</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="sales" name="sales" value="13"/> 
+					                    <label for="sales">Sales &amp; Retail</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="security" name="degree" value="11"/> 
+					                    <label for="security">Security and/or Military</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="social" name="social" value="12"/>
+					                    <label for="social">Social Services</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="trade" name="trade" value="13"/> 
+					                    <label for="trade">Trade, Transportation, &amp; Utilities</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+					        <fieldset class="radio-check-list">
+					            <legend>Are you currently collection Unemployment Insurance benefits?</legend>
+					            <div>
+					                <span class="left ux-inline-block padding-right">
+					                    <input type="radio" id="uiYes" name="uiYes" /> 
+					                    <label for="uiYes">Yes</label>
+					                </span>
+					                <span class="left ux-inline-block">
+					                    <input type="radio" id="uiNo" name="uiNo" />
+					                    <label for="uiNo">No</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+						</form>
+					</div>
+
+					<!-- ============================================================= -->
+					<!-- =================== CONTENT ENDS HERE ======================= -->
+					<!-- ============================================================= -->
+
+				</div>
+			</div>
+		</div>	 
+
+		<div id="dol-footer">
+			<div id="dol-footer-inner" class="container_12">
+				<div id="dol-footer-wrapper">
+					<!-- begin global footer area -->
+						<ul id="global-footer-menu">
+							<li><a href="http://labor.ny.gov/secure/contact/" target="_blank">Contact Us</a></li>
+							<li><a href="http://www.labor.ny.gov/agencyinfo/accessibility.shtm" target="_blank">Accessibility Policy</a></li>
+							<li><a href="http://labor.ny.gov/privacy.shtm" target="_blank">Privacy Policy</a></li>
+							<li><a href="http://labor.ny.gov/utilities/document-readers.shtm" target="_blank">Document Readers</a></li>
+						</ul>
+					<!-- end global footer area -->
+				</div>
+			</div>
+		</div> <!-- end #footer -->
+
+						<script type="text/javascript" src="http://labor.ny.gov/css/apps/v.0.4.2/js/ux-script.min.js"></script>
+
+			<!-- Additional scripts below this line -->
+
+	<!-- Additional scripts items below this line -->
+
+		
+	</body>
+</html>

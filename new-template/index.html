@@ -165,6 +165,8 @@
 									<li>jQuery less Modals</li>
 									<li>Utilities</li>
 									<li>Key Value Tables</li>
+									<li>Buttons</li>
+									<li>Call-to-Action</li>
 								</ul>
 								<p class="ux-weak">
 									More to come in time... 
@@ -2040,6 +2042,121 @@
 
 					</div>
 
+					<div class="grid_16 alpha omega">
+						<h3>Special Styles</h3>
+						<div class="grid_12 alpha omega">
+							<ul class="ux-credit-cards ux-block">
+								<li class="master-card">Master Card</li>
+								<li class="american-express">American Express</li>
+								<li class="discover">Discover</li>
+								<li class="visa">Visa</li>
+								<li class="pay-pal">Pay Pal</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="grid_16 alpha omega">
+						<ul class="ux-fake-tabs">
+							<li class="selected">Tab 1</li>
+							<li>
+								<a href="#">Tab 2</a>
+							</li>
+							<li>
+								<a href="#">Tab 3</a>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="grid_16 alpha omega">
+						<h3>Link Icons</h3>
+						<table class="width-75">
+							<caption>Supported Link Icon Document Types</caption>
+							<thead>
+								<tr>
+									<th>
+										Document Type
+									</th>
+									<th>
+										Supported Extensions
+									</th>
+									<th>
+										Example
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Microsoft Word Documents</td>
+									<td>.dox, .docx</td>
+									<td><a href="#.doc">Link</a></td>
+								</tr>
+								<tr>
+									<td>Microsoft Excel Documents</td>
+									<td>.xls, .xlsx</td>
+									<td><a href="#.xls">Link</a></td>				
+								</tr>
+								<tr>
+									<td>Microsoft Power Point Documents</td>
+									<td>.ppt, .pptx</td>
+									<td><a href="#.ppt">Link</a></td>				
+								</tr>
+								<tr>
+									<td>Portable Document File</td>
+									<td>.pdf</td>
+									<td><a href="#.pdf">Link</a></td>				
+								</tr>
+								<tr>
+									<td>Compressed File</td>
+									<td>.zip</td>
+									<td><a href="#.zip">Link</a></td>				
+								</tr>
+								<tr>
+									<td>Text Files</td>
+									<td>.rtf, .txt</td>
+									<td><a href="#.txt">Link</a></td>				
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class="grid_16 alpha omega">
+						<h3>Expandables</h3>
+						<div class="ux-content-expandable">
+						    <ul>
+						        <li class="ux-expandable">
+						            <a href="#">Question 1?</a>
+						            <div>
+						                <p>Answer to question 1.</p>
+						                <ul>
+						                    <li class="ux-expandable">
+						                        <a href="#">Sub-question based on question 1 answer.</a>
+						                        <div>
+						                            <p>
+						                                Answer to sub-question 1.
+						                            </p>
+						                        </div>    
+						                    </li>
+						                </ul>
+						            </div>    
+						        </li>
+						        <li class="ux-expandable">
+						            <a href="#">Question 2?</a>
+						            <div>
+						                <p>Answer to question 2.</p>
+						            </div>                        
+						        </li>
+						        <li class="ux-expandable">
+						            <a href="#">Question 3?</a>
+						            <div>
+						                <p>Answer to question 3.</p>
+						            </div>    
+						        </li>
+						    </ul>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -2059,7 +2176,7 @@
 			$(document).ready(function() {
 				$('.ux-popover').popover();
 
-				ux.load("dataTables");
+				ux.load(["dataTables","expandableContent"]);
 
 			});
 		</script>

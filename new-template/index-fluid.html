@@ -161,9 +161,12 @@
 									<li>Messages</li>
 									<li>Tables</li>
 									<li>jQuery UI</li>
+									<li>jQuery Tool-tips</li>
 									<li>jQuery less Modals</li>
 									<li>Utilities</li>
 									<li>Key Value Tables</li>
+									<li>Buttons</li>
+									<li>Call-to-Action</li>
 								</ul>
 								<p class="ux-weak">
 									More to come in time... 
@@ -177,6 +180,7 @@
 								<ul>
 									<li>Popovers</li>
 									<li>jQDataTables <span style="font-size:9px"> - Mobile filtering issue</span></li>
+									<li>jQuery Tool-tips</li>
 								</ul>
 								<p class="ux-strong">
 									Requires some special re-work in some cases.
@@ -318,10 +322,12 @@
 									</tr>
 								</thead>
 								<tfoot>
-									<td>footer 1</td>
-									<td>footer 2</td>
-									<td>footer 3</td>
-									<td>footer 4</td>
+									<tr>
+										<td>footer 1</td>
+										<td>footer 2</td>
+										<td>footer 3</td>
+										<td>footer 4</td>
+									</tr>
 								</tfoot>
 								<tbody>
 									<tr>
@@ -547,6 +553,55 @@
 
 					</div>
 
+					<div  class="grid_16 alpha omega">
+						<h3>Key Value Tables</h3>
+						<table class="key-value-table">
+							<tr>
+								<th><label for="inputText3">File Info</label></th>
+								<td><input type="text" name="inputText3" id="inputText3"></td>
+							</tr>
+							<tr>
+								<th><label for="selectOneMenu3">More Info</label></th>
+								<td>
+									<select size="1" name="selectOneMenu3" id="selectOneMenu3">
+										<option value="A">Selection A</option>
+										<option value="B">Selection B</option>
+										<option value="C">Selection C</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+
+
+						<table class="key-value-table">
+							<tr>
+								<th>
+									Key 1
+								</th>
+								<td>
+									Value 1
+								</td>
+							</tr>
+							<tr>
+								<th>
+									Key 2
+								</th>
+								<td>
+									Value 2
+								</td> 
+							</tr>
+							<tr>
+								<th>
+									Key 3
+								</th>
+								<td>
+									Value 3
+								</td>
+							</tr>
+						</table>
+
+					</div>
+
 					<div class="grid_16 alpha omega">
 
 						<h3>A-Z Index</h3>
@@ -711,6 +766,1358 @@
 
 						</div>
 
+					</div>
+
+					<div class="grid_16 alpha omega">
+						<h3> Tooltips Examples</h3>
+						<form class="ux-form-top">
+						    <label for="example-item-1">
+						        <span class="ux-main-label">
+						            My Label Text
+						                <abbr class="required" title="Required Field">*</abbr>
+						        </span>
+						        <input type="text" id="example-item-1" />
+						        <div class="ux-contexthelp">Help Information</div>
+						    </label>
+						</form>
+						<p>
+    						Some Text<span class="ux-contexthelp">some contextual information</span>
+						</p>
+						<p>
+						    Here is one for <acronym title="New York State Department of Labor">DOL</acronym> which 
+						    is an <dfn title="New York State agency">agency</dfn>. I really cannot explain why I am 
+						    <abbr title="Rolling On Floor Laughing">ROFL</abbr>.
+						</p>
+					</div>
+
+					<div class="grid_16 alpha omega">
+						<h3>Buttons</h3>
+						<table class="data-table">
+							<caption>
+								Button Demo/Test
+								<a href="#" class="button_mini edit button_header" >Button Test</a>
+							</caption>
+							<tr>
+								<th class="align-left"   style="width:16%">Button</th>
+								<th class="align-left"   style="width:16%">Disabled</th>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button no-icon" >Button</a>
+								</td>
+								<td>
+									<a href="#" class="button no-icon disabled" >Button</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini no-icon" >Button</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini no-icon disabled">Button</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button no-icon" type="submit" value="Button" />
+								</td>
+								<td>
+									<input class="button no-icon disabled" type="submit" value="Button" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini no-icon" type="submit" value="Button"/>
+								</td>
+								<td>
+									<input class="button_mini no-icon disabled" type="submit" value="Button"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button save" >Save</a>
+								</td>
+								<td>
+									<a href="#" class="button save disabled" >Save</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini save" >Save</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini save disabled">Save</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button save" type="submit" value="Save" />
+								</td>
+								<td>
+									<input class="button save disabled" type="submit" value="Save" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini save" type="submit" value="Save"/>
+								</td>
+								<td>
+									<input class="button_mini save disabled" type="submit" value="Save"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button edit" >Edit</a>
+								</td>
+								<td>
+									<a href="#" class="button edit disabled" >Edit</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini edit" >Edit</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini edit disabled">Edit</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button edit" type="submit" value="Edit" />
+								</td>
+								<td>
+									<input class="button edit disabled" type="submit" value="Edit" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini edit" type="submit" value="Edit"/>
+								</td>
+								<td>
+									<input class="button_mini edit disabled" type="submit" value="Edit"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button arrow_up" >Up</a>
+								</td>
+								<td>
+									<a href="#" class="button arrow_up disabled" >Up</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini arrow_up" >Up</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini arrow_up disabled">Up</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button arrow_up" type="submit" value="Up" />
+								</td>
+								<td>
+									<input class="button arrow_up disabled" type="submit" value="Up" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini arrow_up" type="submit" value="Up"/>
+								</td>
+								<td>
+									<input class="button_mini arrow_up disabled" type="submit" value="Up"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button arrow_down" >Down</a>
+								</td>
+								<td>
+									<a href="#" class="button arrow_down disabled" >Down</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini arrow_down" >Down</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini arrow_down disabled">Down</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button arrow_down" type="submit" value="Down" />
+								</td>
+								<td>
+									<input class="button arrow_down disabled" type="submit" value="Down" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini arrow_down" type="submit" value="Down"/>
+								</td>
+								<td>
+									<input class="button_mini arrow_down disabled" type="submit" value="Down"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button arrow_left" >Left</a>
+								</td>
+								<td>
+									<a href="#" class="button arrow_left disabled" >Left</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini arrow_left" >Left</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini arrow_left disabled">Left</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button arrow_left" type="submit" value="Left" />
+								</td>
+								<td>
+									<input class="button arrow_left disabled" type="submit" value="Left" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini arrow_left" type="submit" value="Left"/>
+								</td>
+								<td>
+									<input class="button_mini arrow_left disabled" type="submit" value="Left"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button arrow_right" >Right</a>
+								</td>
+								<td>
+									<a href="#" class="button arrow_right disabled" >Right</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini arrow_right" >Right</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini arrow_right disabled">Right</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button arrow_right" type="submit" value="Right" />
+								</td>
+								<td>
+									<input class="button arrow_right disabled" type="submit" value="Right" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini arrow_right" type="submit" value="Right"/>
+								</td>
+								<td>
+									<input class="button_mini arrow_right disabled" type="submit" value="Right"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button upload" >Upload</a>
+								</td>
+								<td>
+									<a href="#" class="button upload disabled" >Upload</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini upload" >Upload</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini upload disabled">Upload</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button upload" type="submit" value="Upload" />
+								</td>
+								<td>
+									<input class="button upload disabled" type="submit" value="Upload" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini upload" type="submit" value="Upload"/>
+								</td>
+								<td>
+									<input class="button_mini upload disabled" type="submit" value="Upload"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button download" >Download</a>
+								</td>
+								<td>
+									<a href="#" class="button download disabled" >Download</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini download" >Download</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini download disabled">Download</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button download" type="submit" value="Download" />
+								</td>
+								<td>
+									<input class="button download disabled" type="submit" value="Download" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini download" type="submit" value="Download"/>
+								</td>
+								<td>
+									<input class="button_mini download disabled" type="submit" value="Download"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button next" >Next</a>
+								</td>
+								<td>
+									<a href="#" class="button next disabled" >Next</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini next" >Next</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini next disabled">Next</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button next" type="submit" value="Next" />
+								</td>
+								<td>
+									<input class="button next disabled" type="submit" value="Next" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini next" type="submit" value="Next"/>
+								</td>
+								<td>
+									<input class="button_mini next disabled" type="submit" value="Next"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button previous" >Previous</a>
+								</td>
+								<td>
+									<a href="#" class="button previous disabled" >Previous</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini previous" >Previous</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini previous disabled">Previous</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button previous" type="submit" value="Previous" />
+								</td>
+								<td>
+									<input class="button previous disabled" type="submit" value="Previous" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini previous" type="submit" value="Previous"/>
+								</td>
+								<td>
+									<input class="button_mini previous disabled" type="submit" value="Previous"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button refresh" >Refresh</a>
+								</td>
+								<td>
+									<a href="#" class="button refresh disabled" >Refresh</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini refresh" >Refresh</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini refresh disabled">Refresh</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button refresh" type="submit" value="Refresh" />
+								</td>
+								<td>
+									<input class="button refresh disabled" type="submit" value="Refresh" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini refresh" type="submit" value="Refresh"/>
+								</td>
+								<td>
+									<input class="button_mini refresh disabled" type="submit" value="Refresh"/>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<a href="#" class="button arrow_return" >Return</a>
+								</td>
+								<td>
+									<a href="#" class="button arrow_return disabled" >Return</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini arrow_return" >Return</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini arrow_return disabled">Return</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button arrow_return" type="submit" value="Return" />
+								</td>
+								<td>
+									<input class="button arrow_return disabled" type="submit" value="Return" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini arrow_return" type="submit" value="Return"/>
+								</td>
+								<td>
+									<input class="button_mini arrow_return disabled" type="submit" value="Return"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button arrow_turn_left" >Undo</a>
+								</td>
+								<td>
+									<a href="#" class="button arrow_turn_left disabled" >Undo</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini arrow_turn_left" >Undo</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini arrow_turn_left disabled">Undo</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button arrow_turn_left" type="submit" value="Undo" />
+								</td>
+								<td>
+									<input class="button arrow_turn_left disabled" type="submit" value="Undo" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini arrow_turn_left" type="submit" value="Undo"/>
+								</td>
+								<td>
+									<input class="button_mini arrow_turn_left disabled" type="submit" value="Undo"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button arrow_turn_right" >Redo</a>
+								</td>
+								<td>
+									<a href="#" class="button arrow_turn_right disabled" >Redo</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini arrow_turn_right" >Redo</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini arrow_turn_right disabled">Redo</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button arrow_turn_right" type="submit" value="Redo" />
+								</td>
+								<td>
+									<input class="button arrow_turn_right disabled" type="submit" value="Redo" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini arrow_turn_right" type="submit" value="Redo"/>
+								</td>
+								<td>
+									<input class="button_mini arrow_turn_right disabled" type="submit" value="Redo"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button attach" >Attach</a>
+								</td>
+								<td>
+									<a href="#" class="button attach disabled" >Attach</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini attach" >Attach</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini attach disabled">Attach</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button attach" type="submit" value="Attach" />
+								</td>
+								<td>
+									<input class="button attach disabled" type="submit" value="Attach" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini attach" type="submit" value="Attach"/>
+								</td>
+								<td>
+									<input class="button_mini attach disabled" type="submit" value="Attach"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button calculator" >Calculate</a>
+								</td>
+								<td>
+									<a href="#" class="button calculator disabled" >Calculate</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini calculator" >Calculate</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini calculator disabled">Calculate</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button calculator" type="submit" value="Calculate" />
+								</td>
+								<td>
+									<input class="button calculator disabled" type="submit" value="Calculate" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini calculator" type="submit" value="Calculate"/>
+								</td>
+								<td>
+									<input class="button_mini calculator disabled" type="submit" value="Calculate"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button calendar" >calendar</a>
+								</td>
+								<td>
+									<a href="#" class="button calendar disabled" >calendar</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini calendar" >calendar</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini calendar disabled">calendar</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button calendar" type="submit" value="calendar" />
+								</td>
+								<td>
+									<input class="button calendar disabled" type="submit" value="calendar" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini calendar" type="submit" value="calendar"/>
+								</td>
+								<td>
+									<input class="button_mini calendar disabled" type="submit" value="calendar"/>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<a href="#" class="button cancel" >Cancel</a>
+								</td>
+								<td>
+									<a href="#" class="button cancel disabled" >Cancel</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini cancel" >Cancel</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini cancel disabled">Cancel</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button cancel" type="submit" value="Cancel" />
+								</td>
+								<td>
+									<input class="button cancel disabled" type="submit" value="Cancel" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini cancel" type="submit" value="Cancel"/>
+								</td>
+								<td>
+									<input class="button_mini cancel disabled" type="submit" value="Cancel"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button cross" >No</a>
+								</td>
+								<td>
+									<a href="#" class="button cross disabled" >No</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini cross" >No</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini cross disabled">No</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button cross" type="submit" value="No" />
+								</td>
+								<td>
+									<input class="button cross disabled" type="submit" value="No" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini cross" type="submit" value="No"/>
+								</td>
+								<td>
+									<input class="button_mini cross disabled" type="submit" value="No"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button check" >Yes</a>
+								</td>
+								<td>
+									<a href="#" class="button check disabled" >Yes</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini check" >Yes</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini check disabled">Yes</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button check" type="submit" value="Yes" />
+								</td>
+								<td>
+									<input class="button check disabled" type="submit" value="Yes" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini check" type="submit" value="Yes"/>
+								</td>
+								<td>
+									<input class="button_mini check disabled" type="submit" value="Yes"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button add" >Add</a>
+								</td>
+								<td>
+									<a href="#" class="button add disabled" >Add</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini add" >Add</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini add disabled">Add</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button add" type="submit" value="Add" />
+								</td>
+								<td>
+									<input class="button add disabled" type="submit" value="Add" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini add" type="submit" value="Add"/>
+								</td>
+								<td>
+									<input class="button_mini add disabled" type="submit" value="Add"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button delete" >Delete</a>
+								</td>
+								<td>
+									<a href="#" class="button delete disabled" >Delete</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini delete" >Delete</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini delete disabled">Delete</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button delete" type="submit" value="Delete" />
+								</td>
+								<td>
+									<input class="button delete disabled" type="submit" value="Delete" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini delete" type="submit" value="Delete"/>
+								</td>
+								<td>
+									<input class="button_mini delete disabled" type="submit" value="Delete"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button notice" >Error</a>
+								</td>
+								<td>
+									<a href="#" class="button notice disabled" >Error</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini notice" >Error</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini notice disabled">Error</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button notice" type="submit" value="Error" />
+								</td>
+								<td>
+									<input class="button notice disabled" type="submit" value="Error" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini notice" type="submit" value="Error"/>
+								</td>
+								<td>
+									<input class="button_mini notice disabled" type="submit" value="Error"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button exclamation" >Important</a>
+								</td>
+								<td>
+									<a href="#" class="button exclamation disabled" >Important</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini exclamation" >Important</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini exclamation disabled">Important</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button exclamation" type="submit" value="Important" />
+								</td>
+								<td>
+									<input class="button exclamation disabled" type="submit" value="Important" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini exclamation" type="submit" value="Important"/>
+								</td>
+								<td>
+									<input class="button_mini exclamation disabled" type="submit" value="Important"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button stop" >Stop</a>
+								</td>
+								<td>
+									<a href="#" class="button stop disabled" >Stop</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini stop" >Stop</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini stop disabled">Stop</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button stop" type="submit" value="Stop" />
+								</td>
+								<td>
+									<input class="button stop disabled" type="submit" value="Stop" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini stop" type="submit" value="Stop"/>
+								</td>
+								<td>
+									<input class="button_mini stop disabled" type="submit" value="Stop"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button information" >Information</a>
+								</td>
+								<td>
+									<a href="#" class="button information disabled" >Information</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini information" >Information</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini information disabled">Information</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button information" type="submit" value="Information" />
+								</td>
+								<td>
+									<input class="button information disabled" type="submit" value="Information" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini information" type="submit" value="Information"/>
+								</td>
+								<td>
+									<input class="button_mini information disabled" type="submit" value="Information"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button flag" >Flag</a>
+								</td>
+								<td>
+									<a href="#" class="button flag disabled" >Flag</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini flag" >Flag</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini flag disabled">Flag</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button flag" type="submit" value="Flag" />
+								</td>
+								<td>
+									<input class="button flag disabled" type="submit" value="Flag" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini flag" type="submit" value="Flag"/>
+								</td>
+								<td>
+									<input class="button_mini flag disabled" type="submit" value="Flag"/>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button page" >Page</a>
+								</td>
+								<td>
+									<a href="#" class="button page disabled" >Page</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini page" >Page</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini page disabled">Page</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button page" type="submit" value="Page" />
+								</td>
+								<td>
+									<input class="button page disabled" type="submit" value="Page" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini page" type="submit" value="Page"/>
+								</td>
+								<td>
+									<input class="button_mini page disabled" type="submit" value="Page"/>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<a href="#" class="button page_magnify" >View</a>
+								</td>
+								<td>
+									<a href="#" class="button page_magnify disabled" >View</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini page_magnify" >View</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini page_magnify disabled">View</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button page_magnify" type="submit" value="View" />
+								</td>
+								<td>
+									<input class="button page_magnify disabled" type="submit" value="View" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini page_magnify" type="submit" value="View"/>
+								</td>
+								<td>
+									<input class="button_mini page_magnify disabled" type="submit" value="View"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button magnifier" >Search</a>
+								</td>
+								<td>
+									<a href="#" class="button magnifier disabled" >Search</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini magnifier" >Search</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini magnifier disabled">Search</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button magnifier" type="submit" value="Search" />
+								</td>
+								<td>
+									<input class="button magnifier disabled" type="submit" value="Search" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini magnifier" type="submit" value="Search"/>
+								</td>
+								<td>
+									<input class="button_mini magnifier disabled" type="submit" value="Search"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button note" >Note</a>
+								</td>
+								<td>
+									<a href="#" class="button note disabled" >Note</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini note" >Note</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini note disabled">Note</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button note" type="submit" value="Note" />
+								</td>
+								<td>
+									<input class="button note disabled" type="submit" value="Note" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini note" type="submit" value="Note"/>
+								</td>
+								<td>
+									<input class="button_mini note disabled" type="submit" value="Note"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button printer" >Print</a>
+								</td>
+								<td>
+									<a href="#" class="button printer disabled" >Print</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini printer" >Print</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini printer disabled">Print</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button printer" type="submit" value="Print" />
+								</td>
+								<td>
+									<input class="button printer disabled" type="submit" value="Print" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini printer" type="submit" value="Print"/>
+								</td>
+								<td>
+									<input class="button_mini printer disabled" type="submit" value="Print"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button telephone" >Phone</a>
+								</td>
+								<td>
+									<a href="#" class="button telephone disabled" >Phone</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini telephone" >Phone</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini telephone disabled">Phone</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button telephone" type="submit" value="Phone" />
+								</td>
+								<td>
+									<input class="button telephone disabled" type="submit" value="Phone" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini telephone" type="submit" value="Phone"/>
+								</td>
+								<td>
+									<input class="button_mini telephone disabled" type="submit" value="Phone"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button email" >email</a>
+								</td>
+								<td>
+									<a href="#" class="button email disabled" >email</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini email" >email</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini email disabled">email</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button email" type="submit" value="email" />
+								</td>
+								<td>
+									<input class="button email disabled" type="submit" value="email" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini email" type="submit" value="email"/>
+								</td>
+								<td>
+									<input class="button_mini email disabled" type="submit" value="email"/>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<a href="#" class="button wrench" >Preferences</a>
+								</td>
+								<td>
+									<a href="#" class="button wrench disabled" >Preferences</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="button_mini wrench" >Preferences</a>
+								</td>
+								<td>
+									<a href="#" class="button_mini wrench disabled">Preferences</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button wrench" type="submit" value="Preferences" />
+								</td>
+								<td>
+									<input class="button wrench disabled" type="submit" value="Preferences" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="button_mini wrench" type="submit" value="Preferences"/>
+								</td>
+								<td>
+									<input class="button_mini wrench disabled" type="submit" value="Preferences"/>
+								</td>
+							</tr>
+						</table>
+
+						<h4>Text Only Buttons</h4>
+						<div class="ux-button-section clearfix">
+						    <div class="ux-button-container">
+						        <div class="primary-button-set group">
+						            <input class="button save primary" type="submit" name="save" value="Save" />
+						            <input class="button cross" type="submit" name="cancel" value="Cancel" />
+						        </div>
+						        <div class="secondary-button-sets">
+						            <input class="button text-only" type="button"
+						                name="save-return" value="Save and Return Later" />
+						        </div>
+						    </div>
+						</div>
+
+
+						<h4>Icon Only Buttons</h4>
+						<h5>Anchors</h5>
+						<div class="ux-button-section">     
+						    <div class="ux-button-container">
+						        <a href="#" class="button icon-only printer">Print</a>
+						        <a href="#" class="button save icon-only">Save</a>
+						        <a href="#" class="button attach icon-only">Attach</a>
+						        <a href="#" class="button edit icon-only">Edit</a>
+						        <a href="#" class="button calculator icon-only">Calculator</a>
+						        <a href="#" class="button add icon-only">Add</a>
+						        <a href="#" class="button delete icon-only">Delete</a>
+						        <a href="#" class="button page_magnify icon-only">View</a>
+						        <a href="#" class="button magnifier icon-only">Search</a>
+						    </div>
+						</div>
+
+						<h5>Inputs</h5>
+						<div class="ux-button-section">
+						    <div class="ux-button-container">
+						        <input class="button printer icon-only" value="Print"/>
+						        <input class="button save icon-only" value="Save"/>
+						        <input class="button attach icon-only" value="Attach"/>
+						        <input class="button edit icon-only" value="Edit"/>
+						        <input class="button calculator icon-only" value="Calculator"/>
+						        <input class="button add icon-only" value="Add"/>
+						        <input class="button delete icon-only" value="Delete"/>
+						        <input class="button page_magnify icon-only" value="View"/>
+						        <input class="button magnifier icon-only" value="Search"/>
+						    </div>
+						</div>
+
+						<h4>Disabled Buttons</h4>
+						
+						<h5>Anchors</h5>
+						<div class="clearfix">
+							<a href="#" class="button save disabled" >Save</a>
+							<a href="#" class="button_mini save disabled" >Save</a>
+						</div>
+
+						<h5>Inputs</h5>
+						<div class="clearfix">
+							<input class="button save disabled" type="submit" name="save" value="Save" />
+							<input class="button_mini save disabled" type="submit" name="save" value="Save" />
+						</div>
+
+						<h4>Call to action</h4>
+
+						<a href="#" class="call-to-action primary">Call to Action</a>
+						<input type="button" class="call-to-action primary" value="Call to Action" />
+
+						<a href="#" class="call-to-action">Call to Action</a>
+						<input type="button" class="call-to-action" value="Call to Action" />
+
+						<h5>With Subtext</h5>
+						<a href="#" class="call-to-action primary">
+						    Call to Action
+						    <span class="call-sub-text">
+						        With Subtext
+						    </span>
+						</a>
+						<a href="#" class="call-to-action">
+						    Call to Action
+						    <span class="call-sub-text">
+						        With Subtext
+						    </span>
+						</a>
+
+					</div>
+
+					<div class="grid_16 alpha omega clearfix">
+						<h3>Special Styles</h3>
+						<div class="grid_12 alpha omega">
+							<ul class="ux-credit-cards ux-block">
+								<li class="master-card">Master Card</li>
+								<li class="american-express">American Express</li>
+								<li class="discover">Discover</li>
+								<li class="visa">Visa</li>
+								<li class="pay-pal">Pay Pal</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="grid_16 alpha omega margin-top">
+						<ul class="ux-fake-tabs">
+							<li class="selected">Tab 1</li>
+							<li>
+								<a href="#">Tab 2</a>
+							</li>
+							<li>
+								<a href="#">Tab 3</a>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="grid_16 alpha omega">
+						<h3>Link Icons</h3>
+						<table class="width-75">
+							<caption>Supported Link Icon Document Types</caption>
+							<thead>
+								<tr>
+									<th>
+										Document Type
+									</th>
+									<th>
+										Supported Extensions
+									</th>
+									<th>
+										Example
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Microsoft Word Documents</td>
+									<td>.dox, .docx</td>
+									<td><a href="#.doc">Link</a></td>
+								</tr>
+								<tr>
+									<td>Microsoft Excel Documents</td>
+									<td>.xls, .xlsx</td>
+									<td><a href="#.xls">Link</a></td>				
+								</tr>
+								<tr>
+									<td>Microsoft Power Point Documents</td>
+									<td>.ppt, .pptx</td>
+									<td><a href="#.ppt">Link</a></td>				
+								</tr>
+								<tr>
+									<td>Portable Document File</td>
+									<td>.pdf</td>
+									<td><a href="#.pdf">Link</a></td>				
+								</tr>
+								<tr>
+									<td>Compressed File</td>
+									<td>.zip</td>
+									<td><a href="#.zip">Link</a></td>				
+								</tr>
+								<tr>
+									<td>Text Files</td>
+									<td>.rtf, .txt</td>
+									<td><a href="#.txt">Link</a></td>				
+								</tr>
+							</tbody>
+						</table>
 					</div>
 
 				</div>

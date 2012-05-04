@@ -621,7 +621,7 @@ a.button_mini.no-icon, span.button_mini.no-icon, input.button_mini.no-icon, butt
 /* ===================== */
 /* Textual Buttons */
 
-.button.text-only {
+.button.text-only, .button.text-only:hover {
 	background: none;
 	border: none;
 	display: block;
@@ -633,8 +633,6 @@ a.button_mini.no-icon, span.button_mini.no-icon, input.button_mini.no-icon, butt
 }
 
 .button.text-only:hover {
-	background: none;
-	border: none;
 	text-decoration: underline
 }
 
@@ -688,6 +686,9 @@ a.button_mini.next.icon-right, span.button_mini.next.icon-right, input.button_mi
 /* Icon Only */
 .button.icon-only {
 	text-indent: -9999px;
+}
+
+a.button.icon-only, input.button.icon-only {
 	display: block;
 	width: 22px;
 	height: 22px;
@@ -716,7 +717,7 @@ a.button_mini.next.icon-right, span.button_mini.next.icon-right, input.button_mi
 
 a.call-to-action, input.call-to-action {
 	display: inline-block;
-	color: #000 !important;
+	color: #000;
 	margin: 4px;
 	padding: 10px 14px;
 	text-align: center;
@@ -739,17 +740,13 @@ a.call-to-action, input.call-to-action {
 
 /* Overrides */
 
-.firefox input.call-to-action, .safari input.call-to-action {
-	padding: 12px 14px;
+input.call-to-action {
+	border: 0;
+	padding: 12px 14px ;
 }
 
 .chrome input.call-to-action {
 	padding: 13px 11px;
-}
-
-input.call-to-action {
-	border: 0;
-	padding: 12px 14px ;
 }
 
 .ie7 input.call-to-action,
@@ -788,7 +785,7 @@ input.call-to-action {
 
 /* Call to action Primary button */
 .call-to-action.primary {
-	color: #fff !important;
+	color: #fff;
 	text-shadow: 0px -1px #777;
 	background: #415866; 
 	

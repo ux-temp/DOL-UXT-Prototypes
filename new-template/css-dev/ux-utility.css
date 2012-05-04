@@ -263,10 +263,9 @@
 }
 
 .ux-contexthelp-img {
-	margin:0;
-	padding:0 0 0 5px;
+	margin: 0 5px;
 	position:relative;
-	top:3px
+	top:-5px
 }
 
 .required {
