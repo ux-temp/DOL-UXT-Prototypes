@@ -2120,6 +2120,43 @@
 						</table>
 					</div>
 
+
+					<div class="grid_16 alpha omega">
+						<h3>Expandables</h3>
+						<div class="ux-content-expandable">
+						    <ul>
+						        <li class="ux-expandable">
+						            <a href="#">Question 1?</a>
+						            <div>
+						                <p>Answer to question 1.</p>
+						                <ul>
+						                    <li class="ux-expandable">
+						                        <a href="#">Sub-question based on question 1 answer.</a>
+						                        <div>
+						                            <p>
+						                                Answer to sub-question 1.
+						                            </p>
+						                        </div>    
+						                    </li>
+						                </ul>
+						            </div>    
+						        </li>
+						        <li class="ux-expandable">
+						            <a href="#">Question 2?</a>
+						            <div>
+						                <p>Answer to question 2.</p>
+						            </div>                        
+						        </li>
+						        <li class="ux-expandable">
+						            <a href="#">Question 3?</a>
+						            <div>
+						                <p>Answer to question 3.</p>
+						            </div>    
+						        </li>
+						    </ul>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -2139,7 +2176,7 @@
 			$(document).ready(function() {
 				$('.ux-popover').popover();
 
-				ux.load("dataTables");
+				ux.load(["dataTables","expandableContent"]);
 
 			});
 		</script>
