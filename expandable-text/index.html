@@ -9,7 +9,11 @@
 				<script src="http://labor.ny.gov/css/apps/v.0.4.2/js/modernizr.min.js"></script>
 		
 			<!-- Additional <head> items below this line -->
-
+				<style type="text/css">
+					a: link{color: yellow;}
+					a{color: yellow;}
+					.ex1 a {font-size: 9px; color: #969696; background-color: #F0F0F0;-moz-border-radius: 200px; text-decoration: none; border-radius: 200px;}
+				</style>
 	</head>
 
 	<!--[if lt IE 7 ]> <body class=" ie6"> <![endif]-->
@@ -26,7 +30,7 @@
 							id="skip-to-nav" href="#navigation-anchor"
 			 class="ux-no-block" >Skip to Navigation</a>
 		</div>
-			
+		
 		<div id="ux-notification-container">
 			<div class="ux-content-wrapper">
 				<div id="ux-action-required-notifications" class="ux-notice-outer">
@@ -177,12 +181,7 @@
 					  			<th> Column XX </th>
 					  			<th> Column XX </th>
 					  			<th> Column XX </th>
-					  			<th> Column XX </th>
-					  			<th> Column XX </th>
-					  			<th> Column XX </th>
 					  		</tr>
-					  		
-
 						    <tr ><td ><span class="ex1">SC77861</span></td>
 								<td ><span class="ex1">HEALTH CARE ENTERPRISES INC OF AMERICA IS THE BEST HEALTH CARE ENTERPRISE IN THE NORTH</span></td>
 								<td ><span class="ex1">TestingTask- 150</span></td>
@@ -192,24 +191,19 @@
 								<td ><span class="ex1">READY</span></td>
 								<td ><span class="ex1">Lorem ipsum dolor siim ad minim veniam, quis nostrud
 					     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</span></td>
-								<td ><span class="ex1">Lorem ipsum dolor a commodo consequat. Duis aute irure dolor.</span></td>
-								<td ><span class="ex1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
-					     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					     <td ><span class="ex1">Lorem ipsum dolor siim ad minim veniam, quis nostrud
 					     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</span></td>
-								<td ><span class="ex1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
-					     incididunt ut labore et dolore magna aliqua. Ut eommodo consequat. Duis aute irure dolor.</span></td>
+								
 							</tr>
-							<tr ><td ><span class="ex1">SC77861HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
-								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC </span></td>
+							<tr ><td ><span class="ex1">333S<a href="http://www.w3schools.com">Visit W3Schools.com!</a>
+EALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
+								<td ><span class="ex1">Hello </span></td>
 								<td ><span class="ex1">TestingTask- 150</span></td>
 								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
 								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
 								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISLTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
 								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEAARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCREADY</span></td>
 								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
-								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
-								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
-								<td ><span class="ex1">HEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INCHEAS INCHEALTH CARE ENTERPRISES INCClaim|Transfer|Suspend|Terminate|Update</span></td>
 							</tr>
 						</table>
 
@@ -330,7 +324,7 @@
 
 								      // text displayed in a link instead of the hidden part of the element.
 								      // clicking this will expand/show the hidden/collapsed text
-								      expandText: 'more',
+								      expandText: '&nbspmore&#x25BC&nbsp',
 								      expandPrefix: '&hellip; ',
 
 								      expandAfterSummary: false,
@@ -349,15 +343,15 @@
 
 								      // effects for expanding and collapsing
 								      expandEffect: 'slideDown',
-								      expandSpeed: 1,
+								      expandSpeed: 15,
 								      collapseEffect: 'slideUp',
-								      collapseSpeed: 200,
+								      collapseSpeed: 300,
 
 								      // allow the user to re-collapse the expanded text.
 								      userCollapse: true,
 
 								      // text to use for the link to re-collapse the text
-								      userCollapseText: 'less',
+								      userCollapseText: '&nbspless&#x25B2&nbsp',
 								      userCollapsePrefix: ' ',
 
 
@@ -691,6 +685,9 @@
 			   	 });
 				$('div.expandable p').expander();
 				$(".ex1").expander();
+				$(".ex2").expander();
+				$(".ex3").expander();
+				$(".ex4").expander();
 			</script>
 
 		
