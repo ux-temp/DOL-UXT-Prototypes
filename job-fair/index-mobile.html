@@ -62,7 +62,7 @@
                         <option value="55-64">
                             55-64
                         </option>
-                        <option value="65plus">
+                        <option value="65 Plus">
                             65+
                         </option>
                     </select>
@@ -79,12 +79,12 @@
                         <legend>
                             Gender
                         </legend>
-                        <input name="radiobuttons2" id="radio2" value="female" type="radio" />
-                        <label for="radio2">
+                        <input name="gender" id="female" value="F" type="radio" />
+                        <label for="female">
                             Female
                         </label>
-                        <input name="radiobuttons2" id="radio3" value="male" type="radio" />
-                        <label for="radio3">
+                        <input name="gender" id="male" value="M" type="radio" />
+                        <label for="male">
                             Male
                         </label>
                     </fieldset>
@@ -94,12 +94,27 @@
                         <legend>
                             Are you a veteran of the United States military?
                         </legend>
-                        <input name="radiobuttons3" id="radio4" value="1" type="radio" />
-                        <label for="radio4">
+                        <input name="veteran" id="milYes" value="1" type="radio" />
+                        <label for="milYes">
                             Yes
                         </label>
-                        <input name="radiobuttons3" id="radio5" value="0" type="radio" />
-                        <label for="radio5">
+                        <input name="veteran" id="milNo" value="0" type="radio" />
+                        <label for="milNo">
+                            No
+                        </label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Are you currently collecting Unemployment Insurance benefits?
+                        </legend>
+                        <input name="unemployed" id="uiYes" value="1" type="radio" />
+                        <label for="uiYes">
+                            Yes
+                        </label>
+                        <input name="unemployed" id="uiNo" value="0" type="radio" />
+                        <label for="uiNo">
                             No
                         </label>
                     </fieldset>
