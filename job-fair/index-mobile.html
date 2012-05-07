@@ -23,23 +23,30 @@
                 </h4>
                 <div data-role="fieldcontain">
                     <fieldset data-role="controlgroup">
-                        <label for="textinput1">
+                        <label for="fname">
                         </label>
-                        <input id="textinput1" placeholder="First Name" value="" name="fname" type="text" />
+                        <input id="fname" placeholder="First Name" value="" name="fname" type="text" />
                     </fieldset>
                 </div>
                 <div data-role="fieldcontain">
                     <fieldset data-role="controlgroup">
-                        <label for="textinput2">
+                        <label for="lanme">
                         </label>
-                        <input id="textinput2" placeholder="Last Name" value="" name="lname" type="text" />
+                        <input id="lanme" placeholder="Last Name" value="" name="lname" type="text" />
                     </fieldset>
                 </div>
                 <div data-role="fieldcontain">
                     <fieldset data-role="controlgroup">
-                        <label for="textinput3">
+                        <label for="email">
                         </label>
-                        <input id="textinput3" placeholder="Email" value="" name="email" type="text" />
+                        <input id="email" placeholder="Email" value="" name="email" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="ssn">
+                        </label>
+                        <input id="ssn" placeholder="Social Security Number" value="" name="ssn" type="text" />
                     </fieldset>
                 </div>
                 <p>
@@ -49,13 +56,6 @@
         </div>
         <div data-role="page" id="page2">
             <div data-role="content">
-                <div data-role="fieldcontain">
-                    <fieldset data-role="controlgroup">
-                        <label for="textinput4">
-                        </label>
-                        <input id="textinput4" placeholder="Social Security Number" value="" name="ssn" type="text" />
-                    </fieldset>
-                </div>
                 <div data-role="fieldcontain">
                     <label for="selectmenu1">
                         Age Range?
@@ -96,19 +96,7 @@
                         </label>
                     </fieldset>
                 </div>
-                <div class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a href="#page1" data-role="button" data-icon="arrow-l">Previous</a>
-                    </div>
-                    <div class="ui-block-b">
-                        <a href="#page3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div data-role="page" id="page3">
-            <div data-role="content">
-                <div data-role="fieldcontain">
+               <div data-role="fieldcontain">
                     <fieldset data-role="controlgroup" data-type="horizontal">
                         <legend>
                             Are you a veteran of the United States military?
@@ -138,6 +126,18 @@
                         </label>
                     </fieldset>
                 </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a href="#page1" data-role="button" data-icon="arrow-l">Previous</a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#page3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page3">
+            <div data-role="content">
                 <div data-role="fieldcontain">
                     <label for="selectmenu2">
                         Which event are you planning to attend?
