@@ -123,265 +123,268 @@
 						</ul>
 					</div>
 					<h2>Job Fair Participant Registration</h2>	
+
 					<!-- ============================================================= -->
 					<!-- =================== CONTENT STARTS HERE ===================== -->
 					<!-- ============================================================= -->
 
-					<div class="grid_12 prefix_2 suffix_2">
-						<form class="ux-form-top" action="job-fair-process.asp" method="POST">
+							<div class="grid_12 prefix_2 suffix_2">
+								<form class="ux-form-top" action="job-fair-process.asp" method="POST">
 
-						    <label>
-						    	<span>Name:</span>
-						    	<input type="text" name="name" id="name" class="width-50" />
-						    </label>
+									<div class="grid_12 margin-all-none alpha omega">
+										<div class="grid_4 alpha ">
+										    <label>
+										    	<span>First Name:</span>
+										    	<input type="text" name="fname" id="fname" class="width-100" />
+										    </label>
+										</div>
+										<div class="grid_8 omega ">
+										    <label>
+										    	<span>Last Name:</span>
+										    	<input type="text" name="lname" id="lname" class="width-50" />
+										    </label>
+										</div>
+								    <div>
 
-						    <label>
-						    	<span>Email:</span>
-						    	<input type="text" name="email" id="email" class="width-50" />
-						    </label>
+								    <div class="grid_12 margin-all-none alpha omega">
+								    	<div class="grid_6 alpha">
+										    <label>
+										    	<span>Email:</span>
+										    	<input type="text" name="email" id="email" class="width-100" />
+										    </label>
+								    	</div>
+								    	<div class="grid_4 omega">
+										    <label>
+										    	<span>
+										    		<abbr title="Social Security Number">SSN</abbr>:
+										    	</span>
+										    	<input type="text" name="ssn" id="ssn" class="width-50" />
+										    </label>
+										</div>
+									</div>
 
-						    <fieldset class="multi-input">
-						        <legend>
-						            <span><abbr title="Social Security Number">SSN</abbr>:</span>
-						        </legend>
-						        <div>
-						            <label for="ssn1to3">
-						                <span class="ux-hide-508">digits 1 to 3</span>
-						                <input type="text" size="3" id="ssn1to3" />
-						            </label>
-						            <span class="support-text">-</span>
-						            <label for="ssn4to5">
-						                <span class="ux-hide-508">digits 4 to 5</span>
-						                <input type="text" size="2" id="ssn4to5" />
-						            </label>
-						            <span class="support-text">-</span>
-						            <label for="ssn1to3">
-						                <span class="ux-hide-508">digits 6 to 9</span>
-						                <input type="text" size="4" id="ssn6to9" />
-						            </label>
-						        </div>
-						    </fieldset>
+							        <fieldset class="radio-check-list">
+							            <legend>Age range?</legend>
+							            <div>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="14-17" name="age" value="14-17" /> 
+							                    <label for="14-17">14-17</label>
+							                </span>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="18-21" name="age" value="18-21" />
+							                    <label for="18-21">18-21</label>
+							                </span>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="22-39" name="age" />
+							                    <label for="22-39">22-39</label>
+							                </span>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="40-54" name="age" />
+							                    <label for="40-54">40-54</label>
+							                </span>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="55-64" name="age" />
+							                    <label for="55-64">55-64</label>
+							                </span>
+							                <span class="left ux-inline-block">
+							                    <input type="radio" id="65plus" name="age" />
+							                    <label for="65plus">65+</label>
+							                </span>
+							            </div>
+							        </fieldset>
 
-					        <fieldset class="radio-check-list">
-					            <legend>Age range?</legend>
-					            <div>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="radio" id="14-17" name="14-17" /> 
-					                    <label for="14-17">14-17</label>
-					                </span>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="radio" id="18-21" name="18-21" />
-					                    <label for="18-21">18-21</label>
-					                </span>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="radio" id="22-39" name="22-39" />
-					                    <label for="22-39">22-39</label>
-					                </span>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="radio" id="40-54" name="40-54" />
-					                    <label for="40-54">40-54</label>
-					                </span>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="radio" id="55-64" name="55-64" />
-					                    <label for="55-64">55-64</label>
-					                </span>
-					                <span class="left ux-inline-block">
-					                    <input type="radio" id="65plus" name="65plus" />
-					                    <label for="65plus">65+</label>
-					                </span>
-					            </div>
-					        </fieldset>
+							        <fieldset class="radio-check-list">
+							            <legend>Gender:</legend>
+							            <div>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="female" name="gender" value="F" /> 
+							                    <label for="female">Female</label>
+							                </span>
+							                <span class="left ux-inline-block">
+							                    <input type="radio" id="male" name="gender" value="M" />
+							                    <label for="male">Male</label>
+							                </span>
+							            </div>
+							        </fieldset>
 
-					        <fieldset class="radio-check-list">
-					            <legend>Gender:</legend>
-					            <div>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="radio" id="female" name="female" /> 
-					                    <label for="female">Female</label>
-					                </span>
-					                <span class="left ux-inline-block">
-					                    <input type="radio" id="male" name="male" />
-					                    <label for="male">Male</label>
-					                </span>
-					            </div>
-					        </fieldset>
+							        <fieldset class="radio-check-list">
+							            <legend>Are you a veteran of the United States military?</legend>
+							            <div>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="milYes" name="veteran" value="1" /> 
+							                    <label for="milYes">Yes</label>
+							                </span>
+							                <span class="left ux-inline-block">
+							                    <input type="radio" id="milNo" name="veteran" value="0" />
+							                    <label for="milNo">No</label>
+							                </span>
+							            </div>
+							        </fieldset>
 
-					        <fieldset class="radio-check-list">
-					            <legend>Are you a veteran of the United States military?</legend>
-					            <div>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="radio" id="milYes" name="milYes" /> 
-					                    <label for="milYes">Yes</label>
-					                </span>
-					                <span class="left ux-inline-block">
-					                    <input type="radio" id="milNo" name="milNo" />
-					                    <label for="milNo">No</label>
-					                </span>
-					            </div>
-					        </fieldset>
+							        <fieldset class="radio-check-list">
+							            <legend>Are you currently collection Unemployment Insurance benefits?</legend>
+							            <div>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="uiYes" name="unemployed" /> 
+							                    <label for="uiYes">Yes</label>
+							                </span>
+							                <span class="left ux-inline-block">
+							                    <input type="radio" id="uiNo" name="unemployed" />
+							                    <label for="uiNo">No</label>
+							                </span>
+							            </div>
+							        </fieldset>
 
-					        <fieldset class="radio-check-list">
-					            <legend>Which evennt are you planning to attend?</legend>
-					            <div>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="checkbox" id="brooklyn" name="brooklyn" /> 
-					                    <label for="brooklyn">Brooklyn</label>
-					                </span>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="checkbox" id="bronx" name="bronx" />
-					                    <label for="bronx">Bronx</label>
-					                </span>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="checkbox" id="manhattan" name="manhattan" />
-					                    <label for="manhattan">Manhattan</label>
-					                </span>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="checkbox" id="staten-island" name="staten-island" />
-					                    <label for="staten-island">Staten Island</label>
-					                </span>
-					                <span class="left ux-inline-block">
-					                    <input type="checkbox" id="queens" name="queens" />
-					                    <label for="queens">Queens</label>
-					                </span>
-					            </div>
-					        </fieldset>
+							        <fieldset class="radio-check-list">
+							            <legend>Which evennt are you planning to attend?</legend>
+							            <div>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="brooklyn" name="event" value="brooklyn" /> 
+							                    <label for="brooklyn">Brooklyn</label>
+							                </span>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="bronx" name="event" value="bronx" />
+							                    <label for="bronx">Bronx</label>
+							                </span>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="manhattan" name="event" value="manhattan" />
+							                    <label for="manhattan">Manhattan</label>
+							                </span>
+							                <span class="left ux-inline-block padding-right">
+							                    <input type="radio" id="staten-island" name="event" value="staten-island" />
+							                    <label for="staten-island">Staten Island</label>
+							                </span>
+							                <span class="left ux-inline-block">
+							                    <input type="radio" id="queens" name="event" value="queens" />
+							                    <label for="queens">Queens</label>
+							                </span>
+							            </div>
+							        </fieldset>
 
-					        <fieldset class="radio-check-list">
-					            <legend>Level of Education Completed</legend>
-					            <div class="left width-50">
-					                <span>
-					                    <input type="radio" id="lessHighSchool" name="degree" value="1" /> 
-					                    <label for="lessHighSchool">Less than High School</label>
-					                </span>
-					                <span>
-					                    <input type="radio" id="someHighSchool" name="degree" value="2" />
-					                    <label for="someHighSchool">Some High School</label>
-					                </span>
-					                <span>
-					                    <input type="radio" id="highSchool" name="degree" value="3" /> 
-					                    <label for="highSchool">High School Degree or GED</label>
-					                </span>
-					                <span>
-					                    <input type="radio" id="apprenticeship" name="degree" value="4" />
-					                    <label for="apprenticeship">Apprenticeship</label>
-					                </span>
-					                <span>
-					                    <input type="radio" id="vocational" name="degree" value="5" /> 
-					                    <label for="vocational">Vocational Trade School</label>
-					                </span>
-					            </div>
-					            <div class="left width-50">
-					                <span>
-					                    <input type="radio" id="someCollege" name="degree" value="6"/> 
-					                    <label for="someCollege">Some College Credits</label>
-					                </span>
-					                <span>
-					                    <input type="radio" id="associateDegree" name="degree" value="7"/>
-					                    <label for="associateDegree">Associate Degree</label>
-					                </span>
-					                <span>
-					                    <input type="radio" id="bachelorsDegree" name="degree" value="8"/> 
-					                    <label for="bachelorsDegree">Bachelor's Degree</label>
-					                </span>
-					                <span>
-					                    <input type="radio" id="masteDegree" name="degree" value="9"/>
-					                    <label for="masteDegree">Master's Degree</label>
-					                </span>
-					                <span>
-					                    <input type="radio" id="doctorateDegree" name="degree" value="10"/> 
-					                    <label for="doctorateDegree">Doctorate Degree</label>
-					                </span>
-					            </div>
-					        </fieldset>
+							        <fieldset class="radio-check-list">
+							            <legend>Level of Education Completed</legend>
+							            <div class="left width-50">
+							                <span>
+							                    <input type="radio" id="lessHighSchool" name="education" value="Less Than High School" /> 
+							                    <label for="lessHighSchool">Less than High School</label>
+							                </span>
+							                <span>
+							                    <input type="radio" id="someHighSchool" name="education" value="Some High School" />
+							                    <label for="someHighSchool">Some High School</label>
+							                </span>
+							                <span>
+							                    <input type="radio" id="highSchool" name="education" value="High School or GED" /> 
+							                    <label for="highSchool">High School Degree or GED</label>
+							                </span>
+							                <span>
+							                    <input type="radio" id="apprenticeship" name="education" value="Apprenticeship" />
+							                    <label for="apprenticeship">Apprenticeship</label>
+							                </span>
+							                <span>
+							                    <input type="radio" id="vocational" name="education" value="Vocational Trade" /> 
+							                    <label for="vocational">Vocational Trade School</label>
+							                </span>
+							            </div>
+							            <div class="left width-50">
+							                <span>
+							                    <input type="radio" id="someCollege" name="education" value="Some College"/> 
+							                    <label for="someCollege">Some College Credits</label>
+							                </span>
+							                <span>
+							                    <input type="radio" id="associateDegree" name="education" value="Assoiciate"/>
+							                    <label for="associateDegree">Associate Degree</label>
+							                </span>
+							                <span>
+							                    <input type="radio" id="bachelorsDegree" name="education" value="Bachelor"/> 
+							                    <label for="bachelorsDegree">Bachelor's Degree</label>
+							                </span>
+							                <span>
+							                    <input type="radio" id="masteDegree" name="education" value="Masters"/>
+							                    <label for="masteDegree">Master's Degree</label>
+							                </span>
+							                <span>
+							                    <input type="radio" id="doctorateDegree" name="education" value="Doctorate"/> 
+							                    <label for="doctorateDegree">Doctorate Degree</label>
+							                </span>
+							            </div>
+							        </fieldset>
 
 
-					        <fieldset class="radio-check-list">
-					            <legend>Employment Area of Interest (check all that apply):</legend>
-					            <div class="left width-50">
-					                <span>
-					                    <input type="checkbox" id="agricultureal" name="agricultureal" value="1" /> 
-					                    <label for="agricultureal">Agricultureal</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="construction" name="construction" value="2" />
-					                    <label for="construction">Construction</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="education" name="education" value="3" /> 
-					                    <label for="education">Education</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="financial-service" name="financial-service" value="4" />
-					                    <label for="financial-service">Financial Services</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="food-services" name="food-services" value="5" /> 
-					                    <label for="food-services">Food Service</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="health" name="health" value="6" /> 
-					                    <label for="health">Health Services</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="information" name="information" value="7" />
-					                    <label for="information">Information Technology</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="hospitality" name="hospitality" value="8" /> 
-					                    <label for="hospitality">Leisure &amp; Hospitality</label>
-					                </span>
-					            </div>
-					            <div class="left width-50">
-					                <span>
-					                    <input type="checkbox" id="manufacturing" name="manufacturing" value="9"/> 
-					                    <label for="manufacturing">Manufacturing</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="mining" name="mining" value="10"/>
-					                    <label for="mining">Natural Resources &amp; Mining</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="business" name="business" value="11"/> 
-					                    <label for="business">Professional &amp; Business Services</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="publicAdministration" name="publicAdministration" value="12"/>
-					                    <label for="publicAdministration">Public Administration</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="sales" name="sales" value="13"/> 
-					                    <label for="sales">Sales &amp; Retail</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="security" name="degree" value="11"/> 
-					                    <label for="security">Security and/or Military</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="social" name="social" value="12"/>
-					                    <label for="social">Social Services</label>
-					                </span>
-					                <span>
-					                    <input type="checkbox" id="trade" name="trade" value="13"/> 
-					                    <label for="trade">Trade, Transportation, &amp; Utilities</label>
-					                </span>
-					            </div>
-					        </fieldset>
+							        <fieldset class="radio-check-list">
+							            <legend>Employment Area of Interest (check all that apply):</legend>
+							            <div class="left width-50">
+							                <span>
+							                    <input type="checkbox" id="agricultureal" name="tradeAgricultureal" value="1" /> 
+							                    <label for="agricultureal">Agricultureal</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="construction" name="tradeConstruction" value="1" />
+							                    <label for="construction">Construction</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="education" name="tradeEducation" value="1" /> 
+							                    <label for="education">Education</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="financial-service" name="tradeFinancialService" value="1" />
+							                    <label for="financial-service">Financial Services</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="food-services" name="tradeFoodService" value="1" /> 
+							                    <label for="food-services">Food Service</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="health" name="tradeHealthService" value="1" /> 
+							                    <label for="health">Health Services</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="information" name="tradeInfoTech" value="1" />
+							                    <label for="information">Information Technology</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="hospitality" name="tradeLeisureHosp" value="1" /> 
+							                    <label for="hospitality">Leisure &amp; Hospitality</label>
+							                </span>
+							            </div>
+							            <div class="left width-50">
+							                <span>
+							                    <input type="checkbox" id="manufacturing" name="tradeManufacturing" value="1"/> 
+							                    <label for="manufacturing">Manufacturing</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="mining" name="tradeNaturalResourceMining" value="1"/>
+							                    <label for="mining">Natural Resources &amp; Mining</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="business" name="tradeProfessionalBusiness" value="1"/> 
+							                    <label for="business">Professional &amp; Business Services</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="publicAdministration" name="tradePublicAdmin" value="1"/>
+							                    <label for="publicAdministration">Public Administration</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="sales" name="tradeSales" value="1"/> 
+							                    <label for="sales">Sales &amp; Retail</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="security" name="tradeSecurityMilitary" value="1"/> 
+							                    <label for="security">Security and/or Military</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="social" name="tradeSocialService" value="1"/>
+							                    <label for="social">Social Services</label>
+							                </span>
+							                <span>
+							                    <input type="checkbox" id="trade" name="tradeTradeTransportUtilities" value="1"/> 
+							                    <label for="trade">Trade, Transportation, &amp; Utilities</label>
+							                </span>
+							            </div>
+							        </fieldset>
 
-					        <fieldset class="radio-check-list">
-					            <legend>Are you currently collection Unemployment Insurance benefits?</legend>
-					            <div>
-					                <span class="left ux-inline-block padding-right">
-					                    <input type="radio" id="uiYes" name="uiYes" /> 
-					                    <label for="uiYes">Yes</label>
-					                </span>
-					                <span class="left ux-inline-block">
-					                    <input type="radio" id="uiNo" name="uiNo" />
-					                    <label for="uiNo">No</label>
-					                </span>
-					            </div>
-					        </fieldset>
-
-						</form>
+								</form>
+							</div>
+						</div>
 					</div>
 
 					<!-- ============================================================= -->
