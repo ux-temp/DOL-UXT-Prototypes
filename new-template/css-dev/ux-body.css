@@ -133,22 +133,19 @@ div:hover.dol-container {
 
 /* Content Wrappters */
 .ux-content-wrapper,
-.ie7 .dol-container.ux-content-wrapper {
+.ie7 .dol-container.ux-content-wrapper,
+.ie7 .ux-container.ux-content-wrapper {
 	margin:10px
 }
 
-,.ie7 .ux-content-wrapper {
+.ie7 .ux-content-wrapper {
 	margin:0;
 	padding:10px
 }
 
+.ux-content-wrapper .ux-container,
 .ux-content-wrapper .dol-container {
 	margin:0
-}
-
-.dol-container,.ie7 .ux-content-wrapper .dol-container {
-	margin:0;
-	padding:0
 }
 
 
@@ -278,7 +275,9 @@ table .ux-weak {
 	padding:8px 12px
 }
 
+.ux-container .ux-weak,
 .dol-container .ux-weak,
+.ux-container .ux-strong,
 .dol-container .ux-strong {
 	margin-top:10px
 }
@@ -744,21 +743,17 @@ li.ux-jQDT-row-expandable a img {
 /* Link icons
 --------------- */
 
-/**************
-**  Link Icons
-***************/
+.icon-link-span, .icon-link {
+	display:inline;
+	text-decoration:none
+}
+
 .icon-link {
 	display:inline-block;
-	text-decoration:none
 }
 
 .icon-link-text {
 	text-decoration:underline
-}
-
-.icon-link-span {
-	display:inline;
-	text-decoration:none
 }
 
 .ie7 .icon-link-span {

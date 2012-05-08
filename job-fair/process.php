@@ -18,6 +18,9 @@
 
 		}
 
+		// See if we can connect to the database.
+		
+
 	}
 
 	print('<br><br>Processed! ' . $fname);
