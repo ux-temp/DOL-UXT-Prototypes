@@ -16,6 +16,8 @@
         </script>
     </head>
     <body>
+        <!-- http://www.elijahmanor.com/2011/02/jquery-mobile-form-validation.html -->
+        <form action="process.php" method="POST">
         <div data-role="page" id="page1">
             <div data-role="content">
                 <h4>
@@ -285,18 +287,31 @@
                         <a href="#page2" data-role="button" data-icon="arrow-l">Previous</a>
                     </div>
                     <div class="ui-block-b">
-                        <a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Submit</a>  
+                        <a href="#" data-role="button" id="mobile-submit" data-icon="arrow-r" data-iconpos="right" data-theme="b">Submit</a>  
                     </div>
                 </div>
             </div>
         </div>
         <div data-role="page" id="page5">
             <div data-role="content">
-
+                <p>
+                    Your information has been sent to the department. Thanks you for filling out this form.
+                </p>
             </div>
         </div>
+        <div data-role="page" id="hidden">
+            <input type="text" name="robot" id="robot"
+        </div>
+        </form>
         <script>
-            //App custom javascript
+            $(document).ready(function() {
+
+                // Start by binding a click event to the submit button for later
+                $('#mobile-submit').on('click', function(){
+                    $.mobile.changePage( $("#page5"), { transition: "slideup"} );
+                });
+
+            });
         </script>
     </body>
 </html>
