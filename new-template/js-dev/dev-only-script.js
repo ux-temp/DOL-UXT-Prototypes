@@ -8,13 +8,8 @@
  */
  
  // The script that will always be present in dev.
- var devScript = "ux-script/default.js"; // for development
- 
- // Check to see if the dev scripts are present.
- if ( jQuery( 'script[src$="'+devScript+'"]' ).length != 0) {
 	// Change the extention and folder path accordingly.
 	uxVar.core.jsExt = ".js";
 	uxVar.core.jsPath = "js-dev/";
- } else {
- 	alert('test');
- }
+	uxVar.core.resourcePath = "new-template/";
+

@@ -61,8 +61,6 @@
 						left = linkPos.left - (popover.outerWidth()/2) + (link.width()/2) + 10;
 
 						if ($('body').is('fluid')) {
-
-							alert('yes');
 							
 							// Check to make sure if the the left if off the screen if so balance it.
 							if (left <= 0) {

@@ -182,7 +182,7 @@ div:hover.dol-container {
 
 .ux-msg.error {
 	background-color:#F9E5E6;
-	background-image:url(../images/icons/exclamation.png) #F9E5E6;
+	background-image: url(../images/icons/exclamation.png);
 	border-color:#E8AAAD;
 	color:#B50007
 }
@@ -767,7 +767,51 @@ li.ux-jQDT-row-expandable a img {
 	text-decoration:none
 }
 
-#global-footer-menu .icon-link-span-icons {
+#ux-footer .icon-link-span-icons {
 	margin-top:-2px;
 	padding-top:0
+}
+
+/* Flex Grid
+--------------- */
+
+.ux-flex-grid .ux-flex-grid-25,
+.ux-flex-grid .ux-flex-grid-50,
+.ux-flex-grid .ux-flex-grid-75,
+.ux-flex-grid .ux-flex-grid-100 {
+	clear:right;
+	float:left
+}
+
+.ux-flex-grid-25 {
+	width:25%
+}
+
+.ux-flex-grid-50 {
+	width:50%
+}
+
+.ux-flex-grid-75 {
+	width:75%
+}
+
+.ux-flex-grid-100 {
+	width:100%
+}
+
+.ux-flex-grid-row {
+	clear:both
+}
+
+/* overwriting styles that overwrites flex grid within form fieldsets */
+.ie7 div.ux-flex-grid-25,
+.ie7 div.ux-flex-grid-50,
+.ie7 div.ux-flex-grid-75,
+.ie7 div.ux-flex-grid-100 {
+	bottom: auto;
+	float: left;
+	left: auto;
+	position: static;
+	right: auto;
+	top:auto
 }

@@ -17,6 +17,7 @@
 		<!-- Modernizer support -->
 		<script src="js-dev/modernizr.js"></script>
 	</head>
+
 	<!--[if lt IE 7 ]> <body class=" ie ie6"> <![endif]-->
 	<!--[if IE 7 ]>    <body class=" ie ie7"> <![endif]-->
 	<!--[if IE 8 ]>    <body class=" ie ie8"> <![endif]-->
@@ -24,6 +25,7 @@
 	<!--[if (gt IE 9)|!(IE)]><!--> 
 	<body class="fluid">
 	<!--<![endif]-->
+	
 		<a tabindex="1" href="#" id="skipNav" class="skipto ux-hide-508">Skip to Navigation</a>
 		<a tabindex="1" href="#" id="skipContent" class="skipto ux-hide-508">Skip to Content</a>
 
@@ -2042,10 +2044,10 @@
 
 					</div>
 
-					<div class="grid_16 alpha omega clearfix">
+					<div class="grid_16 alpha omega">
 						<h3>Special Styles</h3>
 						<div class="grid_12 alpha omega">
-							<ul class="ux-credit-cards ux-block">
+							<ul class="ux-credit-cards clearfix">
 								<li class="master-card">Master Card</li>
 								<li class="american-express">American Express</li>
 								<li class="discover">Discover</li>
@@ -2055,7 +2057,7 @@
 						</div>
 					</div>
 
-					<div class="grid_16 alpha omega margin-top">
+					<div class="grid_16 alpha omega">
 						<ul class="ux-fake-tabs">
 							<li class="selected">Tab 1</li>
 							<li>
@@ -2120,6 +2122,103 @@
 						</table>
 					</div>
 
+
+					<div class="grid_16 alpha omega">
+						<h3>Expandables</h3>
+						<div class="ux-content-expandable">
+						    <ul>
+						        <li class="ux-expandable">
+						            <a href="#">Question 1?</a>
+						            <div>
+						                <p>Answer to question 1.</p>
+						                <ul>
+						                    <li class="ux-expandable">
+						                        <a href="#">Sub-question based on question 1 answer.</a>
+						                        <div>
+						                            <p>
+						                                Answer to sub-question 1.
+						                            </p>
+						                        </div>    
+						                    </li>
+						                </ul>
+						            </div>    
+						        </li>
+						        <li class="ux-expandable">
+						            <a href="#">Question 2?</a>
+						            <div>
+						                <p>Answer to question 2.</p>
+						            </div>                        
+						        </li>
+						        <li class="ux-expandable">
+						            <a href="#">Question 3?</a>
+						            <div>
+						                <p>Answer to question 3.</p>
+						            </div>    
+						        </li>
+						    </ul>
+						</div>
+					</div>
+
+
+					<div class="grid_16 alpha omega">
+						<h3>Flex Grid</h3>
+						<div class="jQTabs ux-flex-grid">
+						    <ul>
+						        <li><a href="#tabs-1">Flex Grid (Tab) Instructions</a></li>
+						        <li><a href="#tabs-2">Flex Grid Example</a></li>
+						        <li><a href="#tabs-3">Flex Grid Example Source</a></li>
+						    </ul>
+						    <div id="tabs-1">
+						        <div class="ux-content-wrapper">
+						        	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						        </div>
+						    </div>
+						    <div id="tabs-2" class="group">
+						        <div class="ux-flex-grid-row">
+						            <div class="ux-flex-grid-50">
+						                <div class="dol-container ux-content-wrapper">
+						                    <p class="margin-top">Section: 
+						                        <code>ux-flex-grid-50</code></p>
+						                </div>
+						            </div>
+						            <div class="ux-flex-grid-50">
+						                <div class="dol-container ux-content-wrapper">
+						                    <p class="margin-top">Section: 
+						                        <code>ux-flex-grid-50</code></p>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="ux-flex-grid-row">
+						            <div class="ux-flex-grid-100">
+						                <div class="dol-container ux-content-wrapper">
+						                    <p class="margin-top">Section: 
+						                        <code>ux-flex-grid-100</code></p>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="ux-flex-grid-row">
+						            <div class="ux-flex-grid-75">
+						                <div class="dol-container ux-content-wrapper">
+						                    <p class="margin-top">Section: 
+						                        <code>ux-flex-grid-75</code></p>
+						                </div>
+						            </div>
+						            <div class="ux-flex-grid-25">
+						                <div class="dol-container ux-content-wrapper">
+						                    <p class="margin-top">Section: <br />
+						                        <code>ux-flex-grid-25</code></p>
+						                </div>
+						            </div>
+						        </div>
+						    </div>
+						    <div id="tabs-3">
+						        <div class="ux-content-wrapper">
+						        	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						        </div>
+						    </div>
+						</div>	
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -2131,15 +2230,12 @@
 		<script src="js-dev/ux-script/lazyloader.js"></script>
 		<script src="js-dev/ux-script/ux-object.js"></script>
 		<script src="js-dev/ux-script/default.js"></script>
-		<script src="js-dev/dev-only-script.js"></script>
-
-		<script src="js-dev/jquery.open-ux.popovers.js"></script>
 
 		<script>
 			$(document).ready(function() {
-				$('.ux-popover').popover();
+				//$('.ux-popover').popover();
 
-				ux.load("dataTables");
+				ux.load(["dataTables","expandableContent","popover","jqueryTabs"]);
 
 			});
 		</script>

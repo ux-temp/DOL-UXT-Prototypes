@@ -10,9 +10,9 @@ var uxVar = {
 	core: {
 		browser: "",
 		protocol: "",
-		jsExt: ".min.js",
-		jsPath: "/js/",
-		resourcePath: ""
+		jsExt: ".js",
+		jsPath: "js-dev/",
+		resourcePath: "/UX-Prototype/new-template/"
 	},
 	init: {
 		// Special variable used to flag is specific items should load by default or not.
@@ -345,11 +345,15 @@ var uxVar = {
 			loadStatus: false
 		},
 		popover: {
-			scripts: "jquery.open-ux.popovers",
-			defaultElement: ".ux-popovers",
+			script: "jquery.open-ux.popovers",
+			defaultElement: ".ux-popover",
 			defaultFunction: function() {
 				$(this.defaultElement).popover();
 			},
+			loadStatus: false
+		},
+		textExpander: {
+			script: "jquery.expander",
 			loadStatus: false
 		},
 		/*
@@ -905,12 +909,7 @@ var ux = {
 		
 		// determine if we are working with a script or functions
 		if (uxVar.features[request].hasOwnProperty('script')) {
-			
-			// Its a script so we will have to lazy load it.
-			var path= uxVar.core.resourcePath;
-			var script = uxVar.features[request].script;
-			var ext = uxVar.core.jsExt;
-			
+
 			// Lazy load the file
 			LazyLoad.js( uxVar.core.resourcePath + uxVar.core.jsPath + uxVar.features[request].script + uxVar.core.jsExt , function () {
 				// If the default function is listed in the script setting run it!
@@ -980,29 +979,6 @@ var ux = {
 		
 		// Add support for jQuery to determine the difference between safari and chrome.
 		jQuery.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase());
-			
-		/*****
-		 * Determine the resource path
-		 ******/
-		// ux-script should always appear on any page inside of the ux template. Because of this, we determine our
-		// resource path from this. script specifically.
-
-		var mainScript = "js/ux-script.min.js"; // for production
-		var devScript = "js-dev/ux-script/ux-object.js"; // for dev
-
-		if ((jQuery( 'script[src$="'+mainScript+'"]' ).length) == 1) {
-
-		uxVar.core.resourcePath = host
-																		   .substr(0, ( jQuery( 'script[src$="'+mainScript+'"]' )
-																		   .attr('src').indexOf( mainScript )));
-			
-		} else {
-
-		uxVar.core.resourcePath = jQuery( 'script[src$="'+devScript+'"]' ).attr('src')
-																		   .substr(0, ( jQuery( 'script[src$="'+devScript+'"]' )
-																		   .attr('src').indexOf( devScript )));
-			
-		}
 
 		/*****
 		 * Determine the current protocol and resource path.
