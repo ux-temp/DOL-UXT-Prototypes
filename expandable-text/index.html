@@ -12,7 +12,22 @@
 				<style type="text/css">
 					a: link{color: yellow;}
 					a{color: yellow;}
-					.ex1 a {font-size: 9px; color: #969696; background-color: #F0F0F0;-moz-border-radius: 200px; text-decoration: none; border-radius: 200px;}
+					.read-more a, .read-less a {
+						font-size: 9px; 
+						color: #656565; 
+						background-color: #F0F0F0;
+						text-decoration: none; 
+						border-radius: 5px;
+						padding: 2px 3px 2px 4px; 
+					}
+
+					.read-more a:hover, .read-less a:hover {
+						background-color: #DEDEDE;
+						-webkit-transition:background-color .25s ease-in;  
+   						-moz-transition:color 1s ease-in;  
+   						-o-transition:color 1s ease-in;  
+   						transition:color 1s ease-in; 
+					}
 				</style>
 	</head>
 
@@ -182,7 +197,7 @@
 					  			<th> Column XX </th>
 					  			<th> Column XX </th>
 					  		</tr>
-						    <tr ><td ><span class="ex1">SC77861</span></td>
+						    <tr ><td class="width-20" ><span class="ex1">SC77861</span></td>
 								<td ><span class="ex1">HEALTH CARE ENTERPRISES INC OF AMERICA IS THE BEST HEALTH CARE ENTERPRISE IN THE NORTH</span></td>
 								<td ><span class="ex1">TestingTask- 150</span></td>
 								<td ><span class="ex1">Lorem ipsum dolor sit amet, coconsequat. Duis aute irure dolor.</span></td>
@@ -324,7 +339,7 @@ EALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
 
 								      // text displayed in a link instead of the hidden part of the element.
 								      // clicking this will expand/show the hidden/collapsed text
-								      expandText: '&nbspmore&#x25BC&nbsp',
+								      expandText: 'more&#x25BC',
 								      expandPrefix: '&hellip; ',
 
 								      expandAfterSummary: false,
@@ -343,15 +358,15 @@ EALTH CARE ENTERPRISES INCHEALTH CARE ENTERPRISES INC</span></td>
 
 								      // effects for expanding and collapsing
 								      expandEffect: 'slideDown',
-								      expandSpeed: 15,
+								      expandSpeed: 400,
 								      collapseEffect: 'slideUp',
-								      collapseSpeed: 300,
+								      collapseSpeed: 400,
 
 								      // allow the user to re-collapse the expanded text.
 								      userCollapse: true,
 
 								      // text to use for the link to re-collapse the text
-								      userCollapseText: '&nbspless&#x25B2&nbsp',
+								      userCollapseText: 'less&#x25B2',
 								      userCollapsePrefix: ' ',
 
 
