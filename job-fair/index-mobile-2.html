@@ -1,0 +1,410 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Page Title</title> 
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+		<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/jquery.mobile-1.1.0.min.js"></script>
+
+		<style>
+			.msg {
+				font-size: 1.5em;
+				text-align: center;
+			}
+			.msg.success {
+				font-size: 1em;
+				color: #5fD200;
+			}
+			.msg.fail {
+				font-size: 1em;
+				color: #FF0000;
+			}
+		</style>
+
+	</head> 
+	<body> 
+		<form id="mobile-job-fair" name="mobile-job-fair" method="POST" action="process.php">
+			<!-- Page one -->
+			<div data-role="page" id="page1">
+				<div data-role="header">
+					<h1>Job Fair Registration</h1>
+				</div>
+
+				<div data-role="content">	
+	                <div data-role="fieldcontain">
+	                    <fieldset data-role="controlgroup">
+	                        <label for="fname">
+	                        </label>
+	                        <input id="fname" placeholder="First Name" value="" name="fname" type="text" />
+	                    </fieldset>
+	                </div>
+	                <div data-role="fieldcontain">
+	                    <fieldset data-role="controlgroup">
+	                        <label for="lanme">
+	                        </label>
+	                        <input id="lanme" placeholder="Last Name" value="" name="lname" type="text" />
+	                    </fieldset>
+	                </div>
+	                <div data-role="fieldcontain">
+	                    <fieldset data-role="controlgroup">
+	                        <label for="email">
+	                        </label>
+	                        <input id="email" placeholder="Email" value="" name="email" type="text" />
+	                    </fieldset>
+	                </div>
+	                <div data-role="fieldcontain">
+	                    <fieldset data-role="controlgroup">
+	                        <label for="ssn">
+	                        </label>
+	                        <input id="ssn" placeholder="Social Security Number" value="" name="ssn" type="text" />
+	                    </fieldset>
+	                </div>
+	                <p>
+	                    <a href="#page2" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+	                </p>	
+				</div>
+			</div>
+
+			<div data-role="page" id="page2">
+				<div data-role="header">
+					<h1>Job Fair Registration</h1>
+				</div>
+
+				<div data-role="content">	
+	                <div data-role="fieldcontain">
+	                    <fieldset data-role="controlgroup" data-type="horizontal">
+	                        <legend>
+	                            Gender
+	                        </legend>
+	                        <input name="gender" id="female" value="F" type="radio" />
+	                        <label for="female">
+	                            Female
+	                        </label>
+	                        <input name="gender" id="male" value="M" type="radio" />
+	                        <label for="male">
+	                            Male
+	                        </label>
+	                    </fieldset>
+	                </div>
+	               	<div data-role="fieldcontain">
+	                    <fieldset data-role="controlgroup" data-type="horizontal">
+	                        <legend>
+	                            Are you a veteran of the United States military?
+	                        </legend>
+	                        <input name="veteran" id="milYes" value="1" type="radio" />
+	                        <label for="milYes">
+	                            Yes
+	                        </label>
+	                        <input name="veteran" id="milNo" value="0" type="radio" />
+	                        <label for="milNo">
+	                            No
+	                        </label>
+	                    </fieldset>
+	                </div>
+	                <div data-role="fieldcontain">
+	                    <label for="selectmenu1">
+	                        Age Range?
+	                    </label>
+	                    <select name="ageRange" id="ageRange">
+	                        <option value="14-17">
+	                            14-17
+	                        </option>
+	                        <option value="18-21">
+	                            18-21
+	                        </option>
+	                        <option value="22-39">
+	                            22-39
+	                        </option>
+	                        <option value="40-54">
+	                            40-54
+	                        </option>
+	                        <option value="55-64">
+	                            55-64
+	                        </option>
+	                        <option value="65 Plus">
+	                            65+
+	                        </option>
+	                    </select>
+	                </div>
+	                <div class="ui-grid-a">
+	                    <div class="ui-block-a">
+	                        <a href="#page1" data-role="button" data-icon="arrow-l">Previous</a>
+	                    </div>
+	                    <div class="ui-block-b">
+	                        <a href="#page3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+	                    </div>
+	                </div>
+				</div>
+			</div>
+
+			<div data-role="page" id="page3">
+				<div data-role="header">
+					<h1>Job Fair Registration</h1>
+				</div>
+
+				<div data-role="content">	
+	               <div data-role="fieldcontain">
+	                    <fieldset data-role="controlgroup" data-type="horizontal">
+	                        <legend>
+	                            Are you currently collecting Unemployment Insurance benefits?
+	                        </legend>
+	                        <input name="unemployed" id="uiYes" value="1" type="radio" />
+	                        <label for="uiYes">
+	                            Yes
+	                        </label>
+	                        <input name="unemployed" id="uiNo" value="0" type="radio" />
+	                        <label for="uiNo">
+	                            No
+	                        </label>
+	                    </fieldset>
+	                </div>
+	                <div data-role="fieldcontain">
+	                    <label for="event">
+	                        Which event are you planning to attend?
+	                    </label>
+	                    <select name="event" id="event">
+	                        <option value="brooklyn">
+	                            Brooklyn
+	                        </option>
+	                        <option value="bronx">
+	                            Bronx
+	                        </option>
+	                        <option value="manhatten">
+	                            Manhattan
+	                        </option>
+	                        <option value="staten-island">
+	                            Staten Island
+	                        </option>
+	                        <option value="queens">
+	                            Queens
+	                        </option>
+	                    </select>
+	                </div>
+	                <div data-role="fieldcontain">
+	                    <label for="education">
+	                        Level of Education Completed:
+	                    </label>
+	                    <select name="education" id="education">
+	                        <option value="Less Than High School">
+	                            Less than High School
+	                        </option>
+	                        <option value="Some High School">
+	                            Some High School
+	                        </option>
+	                        <option value="High School or GED">
+	                            High School Degree or GED
+	                        </option>
+	                        <option value="Apprenticeship">
+	                            Apprenticeship
+	                        </option>
+	                        <option value="Vocational Trade">
+	                            Vocational Trade School
+	                        </option>
+	                        <option value="Some College">
+	                            Some College Credits
+	                        </option>
+	                        <option value="Assoiciate">
+	                            Associate Degree
+	                        </option>
+	                        <option value="Bachelor">
+	                            Bachelor's Degree
+	                        </option>
+	                        <option value="Masters">
+	                            Master Degree
+	                        </option>
+	                        <option value="Doctorate">
+	                            Doctorate Degree
+	                        </option>
+	                    </select>
+	                </div>
+	                <div class="ui-grid-a">
+	                    <div class="ui-block-a">
+	                        <a href="#page2" data-role="button" data-icon="arrow-l">Previous</a>
+	                    </div>
+	                    <div class="ui-block-b">
+	                        <a href="#page4" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+	                    </div>
+	                </div>
+				</div>
+
+			</div>
+
+			<div data-role="page" id="page4">
+				<div data-role="header">
+					<h1>Job Fair Registration</h1>
+				</div>
+
+				<div data-role="content">	
+					<div data-role="fieldcontain">
+	                    <fieldset data-role="controlgroup" data-type="vertical">
+	                        <legend>
+	                            Employment Area of Interest (Check all that apply)
+	                        </legend>
+	                        <input name="tradeAgricultureal" id="tradeAgricultureal" type="checkbox" value="1"/>
+	                        <label for="tradeAgricultureal">
+	                            Agricultural
+	                        </label>
+	                        <input name="tradeConstruction" id="tradeConstruction" type="checkbox" value="1"/>
+	                        <label for="tradeConstruction">
+	                            Construction
+	                        </label>
+	                        <input name="tradeEducation" id="tradeEducation" type="checkbox" value="1"/>
+	                        <label for="tradeEducation">
+	                            Education
+	                        </label>
+	                        <input name="tradeFinancialService" id="tradeFinancialService" type="checkbox" value="1"/>
+	                        <label for="tradeFinancialService">
+	                            Financial Services
+	                        </label>
+	                        <input name="tradeFoodService" id="tradeFoodService" type="checkbox" value="1"/>
+	                        <label for="tradeFoodService">
+	                            Food Service
+	                        </label>
+	                        <input name="tradeHealthService" id="tradeHealthService" type="checkbox" value="1"/>
+	                        <label for="tradeHealthService">
+	                            Health Services
+	                        </label>
+	                        <input name="tradeInfoTech" id="tradeInfoTech" type="checkbox" value="1"/>
+	                        <label for="tradeInfoTech">
+	                            Information Technology
+	                        </label>
+	                        <input name="tradeLeisureHosp" id="tradeLeisureHosp" type="checkbox" value="1"/>
+	                        <label for="tradeLeisureHosp">
+	                            Leisure &amp; Hospitality
+	                        </label>
+	                        <input name="tradeManufacturing" id="tradeManufacturing" type="checkbox" value="1"/>
+	                        <label for="tradeManufacturing">
+	                            Manufacturing
+	                        </label>
+	                        <input name="tradeNaturalResourceMining" id="tradeNaturalResourceMining" type="checkbox" value="1"/>
+	                        <label for="tradeNaturalResourceMining">
+	                            Natural Resources &amp; Mining
+	                        </label>
+	                        <input name="tradeProfessionalBusiness" id="tradeProfessionalBusiness" type="checkbox" value="1"/>
+	                        <label for="tradeProfessionalBusiness">
+	                            Professional &amp; Business Services
+	                        </label>
+	                        <input name="tradePublicAdmin" id="tradePublicAdmin" type="checkbox" value="1"/>
+	                        <label for="tradePublicAdmin">
+	                            Public Administration
+	                        </label>
+	                        <input name="tradeSales" id="tradeSales" type="checkbox" value="1"/>
+	                        <label for="tradeSales">
+	                            Sales &amp; Retail
+	                        </label>
+	                        <input name="tradeSecurityMilitary" id="tradeSecurityMilitary" type="checkbox" value="1"/>
+	                        <label for="tradeSecurityMilitary">
+	                            Security and/or Military
+	                        </label>
+	                        <input name="tradeSocialService" id="tradeSocialService" type="checkbox" value="1"/>
+	                        <label for="tradeSocialService">
+	                            Social Services
+	                        </label>
+	                        <input name="tradeTradeTransportUtilities" id="tradeTradeTransportUtilities" type="checkbox" value="1" />
+	                        <label for="tradeTradeTransportUtilities">
+	                            Trade, Transportation, &amp; Utilities
+	                        </label>
+	                    </fieldset>
+	                </div>
+	                <div class="ui-grid-a">
+	                    <div class="ui-block-a">
+	                        <a href="#page2" data-role="button" data-icon="arrow-l">Previous</a>
+	                    </div>
+	                    <div class="ui-block-b">
+	                        <a data-role="button" id="submit" data-icon="arrow-r" data-iconpos="right" data-theme="b">Submit</a>
+	                    </div>
+	                </div>
+				</div>
+			</div>
+			<input type="text" name="robot" id="robot" class="access-hide" />
+            <input type="hidden" name="device" id="device" value="mobile" />
+		</form>
+
+		<div data-role="page" id="success">
+			<div data-role="header">
+				<h1>Job Fair Registration</h1>
+			</div>
+
+			<div data-role="content">	
+				<p class="msg success">
+					Your Registration has been recieved!
+				</p>
+				<p class="msg">
+					Thank you for pre-registring for the upcoming job fair. Your confirmation code can be found below. Please keep a copy of this code for personal reference. For better assistance with job placement please send a copy of your resume to <a href="mailto:labor.sm.pt.sd.webmail@labor.ny.gov">labor.sm.pt.sd.webmail@labor.ny.gov</a>.
+				</p>
+				<p class="msg success" id="code">
+
+				</p>
+			</div>
+
+			<div data-role="footer">
+				<h4>Thank You for Registering</h4>
+			</div>
+		</div>
+
+		<div data-role="page" id="fail">
+			<div data-role="header">
+				<h1>Job Fair Registration</h1>
+			</div>
+
+			<div data-role="content">	
+				<p class="msg fail">
+					Your Registration has been recieved!
+				</p>
+				<p class="msg">
+					Thank you for pre-registring for the upcoming job fair. For better assistance with job placement please send a copy of your resume to: <a href="mailto:labor.sm.pt.sd.webmail@labor.ny.gov">labor.sm.pt.sd.webmail@labor.ny.gov</a>.
+				</p>
+			</div>
+
+			<div data-role="footer">
+				<h4>We are sorry for any inconvenience</h4>
+			</div>
+		</div>
+
+
+		<script>
+		    
+			// Loading stat while submitting
+		    $(document).bind('mobileinit', function () {
+		        $.mobile.loadingMessageTheme = 'e';
+		        $.mobile.loadingMessage = 'Sending Data';
+		        $.mobile.loadingMessageTextVisible = false;
+		    	}).delegate('#submit', 'click', function () {
+		        
+		        	// Show loading spinnner
+		        	$.mobile.showPageLoadingMsg();
+
+		        	// Get the form data
+		        	var dataString = $('#mobile-job-fair').serialize();
+
+		        	//console.log(dataString);
+
+		        	// Ajax Form Submittion
+ 					$.ajax({
+                        type: 'POST',
+                        url: 'process.php',
+                        data: dataString,
+                        success: function(data) {
+                        	alert(data);
+
+                        	$('#code').text(data);
+
+                            $.mobile.changePage( $("#success"), { transition: "slideup"} );
+                        },
+                        fail: function(data) { 
+                            //alert(data); 
+                            $.mobile.changePage( $("#fail"), { transition: "slideup"} );
+                        }
+                    });
+
+		    	});
+
+
+	
+		</script>
+
+	</body>
+</html>

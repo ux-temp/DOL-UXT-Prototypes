@@ -292,68 +292,56 @@
                         <a href="#page2" data-role="button" data-icon="arrow-l">Previous</a>
                     </div>
                     <div class="ui-block-b">
-                        <a href="#" data-role="button" id="mobile-submit" data-icon="arrow-r" data-iconpos="right" data-theme="b">Submit</a>  
-                        <a href="#dialog" data-rel="dialog" data-transition="pop" style="display:none;">Dialog Loader</a>
+                        <a href="#page6" data-role="button" id="send-date" data-icon="arrow-r" data-iconpos="right" data-theme="b">Submit</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div data-role="dialog" id="dialog" data-overlay-theme="a">
+        <div data-role="page" id="success" >
+            <div date-role="header">
+                <h1>Sending Data</h1>
+            </div>
             <div data-role="content">
-                <p>
-                    Please wait as your information is sent securely to our servers.
-                </p>
+                <p>Your informations is being set to the Department of Labor securly. Please wait as this make take a few momments.</p>
             </div>
         </div>
-        <div data-role="page" id="page5">
-            <div data-role="content">
-                <p>
-                    Your information has been sent to the department. Thanks you for filling out this form.
-                </p>
-            </div>
-        </div>
+
             <input type="text" name="robot" id="robot" class="access-hide" />
             <input type="hidden" name="device" id="device" value="mobile" />
         </form>
         <script>
+
             $(document).ready(function() {
+                $('#send-date').on("click", function(){
 
-                // Start by binding a click event to the submit button for later
-                $('#mobile-submit').on('click', function(){
+                    // Show Loading button
+                    $(document).bind('mobileinit', function () {
+                        $.mobile.loadingMessageTheme = 'e';
+                        $.mobile.loadingMessageTextVisible = false;
+                        }).delegate('#load', 'click', function () {
+                        $.mobile.showPageLoadingMsg();
+                    });
 
-                        // Get form data
-                       
+                    // Create the data
+                    var dataString = $('#mobile-job-fair').serialize();
 
-                        $.mobile.loading( 'show', {
-                            text: 'foo',
-                            textVisible: true,
-                            theme: 'z',
-                            html: ""
-                        });
-
-                         var dataString = $('#mobile-job-fair').serialize();
-
-                         /*
-                        // AJAX submit the data.
-                        $.ajax({
+                    $.ajax({
                             type: 'POST',
                             url: 'process.php',
                             data: dataString,
                             success: function(data) {
-                                //alert(data); //does nothing
-                                //var t = setTimeout($.mobile.changePage( $("#page5"), { transition: "slideup"} ),5000);
+
                                 //$.mobile.changePage( $("#page5"), { transition: "slideup"} );
                             },
                             fail: function(data) { 
                                 alert(data); 
                             }
                         });
-*/
+    
 
-                    //$.mobile.changePage( $("#page5"), { transition: "slideup"} );
                 });
-
             });
+
         </script>
     </body>
 </html>
