@@ -5,7 +5,8 @@
 		<title>Job Fair Participant Registration| User Experience (UX) Guide</title>
 
 				<link rel="shortcut icon" href="http://labor.ny.gov/css/apps/v.0.4.2/favicon.ico" type="image/x-icon">
-				<link rel="stylesheet" type="text/css" href="http://labor.ny.gov/css/apps/v.0.4.2/css/ux-style.min.css" >	
+				<link rel="stylesheet" type="text/css" href="http://labor.ny.gov/css/apps/v.0.4.2/css/ux-style.min.css">
+				<link rel="stylesheet" type="text/css" href="https://www.labor.ny.gov/css/apps/css/ux-internet-content-utility.css?date=03012012">	
 				<script src="http://labor.ny.gov/css/apps/v.0.4.2/js/modernizr.min.js"></script>
 		
 			<!-- Additional <head> items below this line -->
@@ -131,19 +132,19 @@
 					<!-- ============================================================= -->
 
 							<div class="grid_12 prefix_2 suffix_2">
-								<form class="ux-form-top" action="process.php" method="POST">
+								<form class="ux-form-top" action="process.php" id="job-fair" method="POST">
 
 									<div class="grid_12 margin-all-none alpha omega">
 										<div class="grid_4 alpha ">
 										    <label>
-										    	<span>First Name:</span>
-										    	<input type="text" name="fname" id="fname" class="width-100" />
+										    	<span>First Name:<abbr class="required" title="Required Field">*</abbr></span>
+										    	<input type="text" name="fname" id="fname" class="width-100 validate[required]" />
 										    </label>
 										</div>
 										<div class="grid_8 omega ">
 										    <label>
-										    	<span>Last Name:</span>
-										    	<input type="text" name="lname" id="lname" class="width-50" />
+										    	<span>Last Name:<abbr class="required" title="Required Field">*</abbr></span>
+										    	<input type="text" name="lname" id="lname" class="width-50 validate[required]" />
 										    </label>
 										</div>
 								    <div>
@@ -151,8 +152,8 @@
 								    <div class="grid_12 margin-all-none alpha omega">
 								    	<div class="grid_6 alpha">
 										    <label>
-										    	<span>Email:</span>
-										    	<input type="text" name="email" id="email" class="width-100" />
+										    	<span>Email:<abbr class="required" title="Required Field">*</abbr></span>
+										    	<input type="text" name="email" id="email" class="width-100 validate[required]" />
 										    </label>
 								    	</div>
 								    	<div class="grid_6 omega">
@@ -167,30 +168,30 @@
 
 									<div class="grid_12 margin-all-none alpha omega">
 								        <fieldset class="radio-check-list">
-								            <legend>Age range?</legend>
+								            <legend>Age range?<abbr class="required" title="Required Field">*</abbr></legend>
 								            <div>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="14-17" name="ageRange" value="14-17" /> 
+								                    <input type="radio" id="14-17" name="ageRange" value="14-17" class="validate[required]" /> 
 								                    <label for="14-17">14-17</label>
 								                </span>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="18-21" name="ageRange" value="18-21" />
+								                    <input type="radio" id="18-21" name="ageRange" value="18-21" class="validate[required]" />
 								                    <label for="18-21">18-21</label>
 								                </span>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="22-39" name="ageRange" value="22-39" />
+								                    <input type="radio" id="22-39" name="ageRange" value="22-39" class="validate[required]" />
 								                    <label for="22-39">22-39</label>
 								                </span>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="40-54" name="ageRange" value="40-54" />
+								                    <input type="radio" id="40-54" name="ageRange" value="40-54" class="validate[required]" />
 								                    <label for="40-54">40-54</label>
 								                </span>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="55-64" name="ageRange" value="55-64" />
+								                    <input type="radio" id="55-64" name="ageRange" value="55-64" class="validate[required]" />
 								                    <label for="55-64">55-64</label>
 								                </span>
 								                <span class="left ux-inline-block">
-								                    <input type="radio" id="65plus" name="ageRange" value="65 Plus" />
+								                    <input type="radio" id="65plus" name="ageRange" value="65 Plus" class="validate[required]" />
 								                    <label for="65plus">65+</label>
 								                </span>
 								            </div>
@@ -199,14 +200,14 @@
 
 								    <div class="grid_12 margin-all-none alpha omega">
 								        <fieldset class="radio-check-list">
-								            <legend>Gender:</legend>
+								            <legend>Gender:<abbr class="required" title="Required Field">*</abbr></legend>
 								            <div>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="female" name="gender" value="F" /> 
+								                    <input type="radio" id="female" name="gender" value="F" class="validate[required]" /> 
 								                    <label for="female">Female</label>
 								                </span>
 								                <span class="left ux-inline-block">
-								                    <input type="radio" id="male" name="gender" value="M" />
+								                    <input type="radio" id="male" name="gender" value="M" class="validate[required]" />
 								                    <label for="male">Male</label>
 								                </span>
 								            </div>
@@ -215,14 +216,14 @@
 
 							  		<div class="grid_12 margin-all-none alpha omega">
 								        <fieldset class="radio-check-list">
-								            <legend>Are you a veteran of the United States military?</legend>
+								            <legend>Are you a veteran of the United States military?<abbr class="required" title="Required Field">*</abbr></legend>
 								            <div>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="milYes" name="veteran" value="1" /> 
+								                    <input type="radio" id="milYes" name="veteran" value="1" class="validate[required]" /> 
 								                    <label for="milYes">Yes</label>
 								                </span>
 								                <span class="left ux-inline-block">
-								                    <input type="radio" id="milNo" name="veteran" value="0" />
+								                    <input type="radio" id="milNo" name="veteran" value="0" class="validate[required]" />
 								                    <label for="milNo">No</label>
 								                </span>
 								            </div>
@@ -231,14 +232,14 @@
 
 								    <div class="grid_12 margin-all-none alpha omega">
 								        <fieldset class="radio-check-list">
-								            <legend>Are you currently collecting Unemployment Insurance benefits?</legend>
+								            <legend>Are you currently collecting Unemployment Insurance benefits?<abbr class="required" title="Required Field">*</abbr></legend>
 								            <div>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="uiYes" name="unemployed" value="1" /> 
+								                    <input type="radio" id="uiYes" name="unemployed" value="1" class="validate[required]" /> 
 								                    <label for="uiYes">Yes</label>
 								                </span>
 								                <span class="left ux-inline-block">
-								                    <input type="radio" id="uiNo" name="unemployed" value="0" />
+								                    <input type="radio" id="uiNo" name="unemployed" value="0" class="validate[required]" />
 								                    <label for="uiNo">No</label>
 								                </span>
 								            </div>
@@ -247,26 +248,26 @@
 
 								    <div class="grid_12 margin-all-none alpha omega">
 								        <fieldset class="radio-check-list">
-								            <legend>Which evennt are you planning to attend?</legend>
+								            <legend>Which evennt are you planning to attend?<abbr class="required" title="Required Field">*</abbr></legend>
 								            <div>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="brooklyn" name="event" value="brooklyn" /> 
+								                    <input type="radio" id="brooklyn" name="event" value="brooklyn" class="validate[required]" /> 
 								                    <label for="brooklyn">Brooklyn</label>
 								                </span>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="bronx" name="event" value="bronx" />
+								                    <input type="radio" id="bronx" name="event" value="bronx" class="validate[required]" />
 								                    <label for="bronx">Bronx</label>
 								                </span>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="manhattan" name="event" value="manhattan" />
+								                    <input type="radio" id="manhattan" name="event" value="manhattan" class="validate[required]" />
 								                    <label for="manhattan">Manhattan</label>
 								                </span>
 								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="staten-island" name="event" value="staten-island" />
+								                    <input type="radio" id="staten-island" name="event" value="staten-island" class="validate[required]" />
 								                    <label for="staten-island">Staten Island</label>
 								                </span>
 								                <span class="left ux-inline-block">
-								                    <input type="radio" id="queens" name="event" value="queens" />
+								                    <input type="radio" id="queens" name="event" value="queens" class="validate[required]" />
 								                    <label for="queens">Queens</label>
 								                </span>
 								            </div>
@@ -275,48 +276,48 @@
 
 								    <div class="grid_12 margin-all-none alpha omega">
 								        <fieldset class="radio-check-list">
-								            <legend>Level of Education Completed</legend>
+								            <legend>Level of Education Completed<abbr class="required" title="Required Field">*</abbr></legend>
 								            <div class="left width-50">
 								                <span>
-								                    <input type="radio" id="lessHighSchool" name="education" value="Less Than High School" /> 
+								                    <input type="radio" id="lessHighSchool" name="education" value="Less Than High School" class="validate[required]" /> 
 								                    <label for="lessHighSchool">Less than High School</label>
 								                </span>
 								                <span>
-								                    <input type="radio" id="someHighSchool" name="education" value="Some High School" />
+								                    <input type="radio" id="someHighSchool" name="education" value="Some High School" class="validate[required]" />
 								                    <label for="someHighSchool">Some High School</label>
 								                </span>
 								                <span>
-								                    <input type="radio" id="highSchool" name="education" value="High School or GED" /> 
+								                    <input type="radio" id="highSchool" name="education" value="High School or GED" class="validate[required]"/> 
 								                    <label for="highSchool">High School Degree or GED</label>
 								                </span>
 								                <span>
-								                    <input type="radio" id="apprenticeship" name="education" value="Apprenticeship" />
+								                    <input type="radio" id="apprenticeship" name="education" value="Apprenticeship" class="validate[required]"/>
 								                    <label for="apprenticeship">Apprenticeship</label>
 								                </span>
 								                <span>
-								                    <input type="radio" id="vocational" name="education" value="Vocational Trade" /> 
+								                    <input type="radio" id="vocational" name="education" value="Vocational Trade" class="validate[required]"/> 
 								                    <label for="vocational">Vocational Trade School</label>
 								                </span>
 								            </div>
 								            <div class="left width-50">
 								                <span>
-								                    <input type="radio" id="someCollege" name="education" value="Some College"/> 
+								                    <input type="radio" id="someCollege" name="education" value="Some College" class="validate[required]"/> 
 								                    <label for="someCollege">Some College Credits</label>
 								                </span>
 								                <span>
-								                    <input type="radio" id="associateDegree" name="education" value="Assoiciate"/>
+								                    <input type="radio" id="associateDegree" name="education" value="Assoiciate" class="validate[required]"/>
 								                    <label for="associateDegree">Associate Degree</label>
 								                </span>
 								                <span>
-								                    <input type="radio" id="bachelorsDegree" name="education" value="Bachelor"/> 
+								                    <input type="radio" id="bachelorsDegree" name="education" value="Bachelor" class="validate[required]"/> 
 								                    <label for="bachelorsDegree">Bachelor's Degree</label>
 								                </span>
 								                <span>
-								                    <input type="radio" id="masteDegree" name="education" value="Masters"/>
+								                    <input type="radio" id="masteDegree" name="education" value="Masters" class="validate[required]"/>
 								                    <label for="masteDegree">Master's Degree</label>
 								                </span>
 								                <span>
-								                    <input type="radio" id="doctorateDegree" name="education" value="Doctorate"/> 
+								                    <input type="radio" id="doctorateDegree" name="education" value="Doctorate" class="validate[required]"/> 
 								                    <label for="doctorateDegree">Doctorate Degree</label>
 								                </span>
 								            </div>
@@ -325,75 +326,77 @@
 
 								    <div class="grid_12 margin-all-none alpha omega">
 								        <fieldset class="radio-check-list">
-								            <legend>Employment Area of Interest (check all that apply):</legend>
-								            <div class="left width-50">
-								                <span>
-								                    <input type="checkbox" id="agricultureal" name="tradeAgricultureal" value="1" /> 
-								                    <label for="agricultureal">Agricultureal</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="construction" name="tradeConstruction" value="1" />
-								                    <label for="construction">Construction</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="education" name="tradeEducation" value="1" /> 
-								                    <label for="education">Education</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="financial-service" name="tradeFinancialService" value="1" />
-								                    <label for="financial-service">Financial Services</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="food-services" name="tradeFoodService" value="1" /> 
-								                    <label for="food-services">Food Service</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="health" name="tradeHealthService" value="1" /> 
-								                    <label for="health">Health Services</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="information" name="tradeInfoTech" value="1" />
-								                    <label for="information">Information Technology</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="hospitality" name="tradeLeisureHosp" value="1" /> 
-								                    <label for="hospitality">Leisure &amp; Hospitality</label>
-								                </span>
-								            </div>
-								            <div class="left width-50">
-								                <span>
-								                    <input type="checkbox" id="manufacturing" name="tradeManufacturing" value="1"/> 
-								                    <label for="manufacturing">Manufacturing</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="mining" name="tradeNaturalResourceMining" value="1"/>
-								                    <label for="mining">Natural Resources &amp; Mining</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="business" name="tradeProfessionalBusiness" value="1"/> 
-								                    <label for="business">Professional &amp; Business Services</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="publicAdministration" name="tradePublicAdmin" value="1"/>
-								                    <label for="publicAdministration">Public Administration</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="sales" name="tradeSales" value="1"/> 
-								                    <label for="sales">Sales &amp; Retail</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="security" name="tradeSecurityMilitary" value="1"/> 
-								                    <label for="security">Security and/or Military</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="social" name="tradeSocialService" value="1"/>
-								                    <label for="social">Social Services</label>
-								                </span>
-								                <span>
-								                    <input type="checkbox" id="trade" name="tradeTradeTransportUtilities" value="1"/> 
-								                    <label for="trade">Trade, Transportation, &amp; Utilities</label>
-								                </span>
-								            </div>
+								            <legend>Employment Area of Interest (check all that apply):<abbr class="required" title="Required Field">*</abbr></legend>
+								            <div id="interestedTrades">
+									            <div class="left width-50">
+									                <span>
+									                    <input type="checkbox" id="agricultureal" name="tradeAgricultureal" value="1" class="validate[funcCall[interestedTradeCheck]]" /> 
+									                    <label for="agricultureal">Agricultureal</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="construction" name="tradeConstruction" value="1" />
+									                    <label for="construction">Construction</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="education" name="tradeEducation" value="1" /> 
+									                    <label for="education">Education</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="financial-service" name="tradeFinancialService" value="1" />
+									                    <label for="financial-service">Financial Services</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="food-services" name="tradeFoodService" value="1" /> 
+									                    <label for="food-services">Food Service</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="health" name="tradeHealthService" value="1" /> 
+									                    <label for="health">Health Services</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="information" name="tradeInfoTech" value="1" />
+									                    <label for="information">Information Technology</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="hospitality" name="tradeLeisureHosp" value="1" /> 
+									                    <label for="hospitality">Leisure &amp; Hospitality</label>
+									                </span>
+									            </div>
+									            <div class="left width-50">
+									                <span>
+									                    <input type="checkbox" id="manufacturing" name="tradeManufacturing" value="1" /> 
+									                    <label for="manufacturing">Manufacturing</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="mining" name="tradeNaturalResourceMining" value="1" />
+									                    <label for="mining">Natural Resources &amp; Mining</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="business" name="tradeProfessionalBusiness" value="1" /> 
+									                    <label for="business">Professional &amp; Business Services</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="publicAdministration" name="tradePublicAdmin" value="1" />
+									                    <label for="publicAdministration">Public Administration</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="sales" name="tradeSales" value="1" /> 
+									                    <label for="sales">Sales &amp; Retail</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="security" name="tradeSecurityMilitary" value="1" /> 
+									                    <label for="security">Security and/or Military</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="social" name="tradeSocialService" value="1" />
+									                    <label for="social">Social Services</label>
+									                </span>
+									                <span>
+									                    <input type="checkbox" id="trade" name="tradeTradeTransportUtilities" value="1" /> 
+									                    <label for="trade">Trade, Transportation, &amp; Utilities</label>
+									                </span>
+									            </div>
+								        	</div>
 								        </fieldset>
 							        </div>
 							        <input type="text" class="ux-hide-508" name="robot" id="robot" />
@@ -429,7 +432,28 @@
 			</div>
 		</div> <!-- end #footer -->
 
-						<script type="text/javascript" src="http://labor.ny.gov/css/apps/v.0.4.2/js/ux-script.min.js"></script>
+		<script type="text/javascript" src="http://labor.ny.gov/css/apps/v.0.4.2/js/ux-script.min.js"></script>
+		<script src="https://labor.ny.gov/css/apps/js/ux-internet-content-utility.js"></script>
+		<script>
+
+			$(document).ready(function(){
+				$("#job-fair").validationEngine();
+			});
+
+				// Copy of the awsome function created by victor to check if one or more checkboxes not in the same group have been checked.
+				var interestedTrade = $('#interestedTrades').find("input[type=checkbox]");
+
+				function interestedTradeCheck(){
+					
+					var selectedCheckBoxes = interestedTrade.filter(":checked");
+
+					if (selectedCheckBoxes.length == 0) {
+						return "* Please check at least one.";
+					}
+
+				}
+
+		</script>
 
 			<!-- Additional scripts below this line -->
 
