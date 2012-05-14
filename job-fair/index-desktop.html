@@ -133,37 +133,53 @@
 
 							<div class="grid_12 prefix_2 suffix_2">
 								<form class="ux-form-top" action="process.php" id="job-fair" method="POST">
-
+									<p class="required right">* Indicates required fields</p>
 									<div class="grid_12 margin-all-none alpha omega">
-										<div class="grid_4 alpha ">
+										<div class="grid_4 alpha margin-top-none margin-bottom-none">
 										    <label>
 										    	<span>First Name:<abbr class="required" title="Required Field">*</abbr></span>
-										    	<input type="text" name="fname" id="fname" class="width-100 validate[required]" />
+										    	<input type="text" name="fname" id="fname" class="width-75 validate[required]" />
 										    </label>
 										</div>
-										<div class="grid_8 omega ">
+										<div class="grid_4 omega margin-all-none margin-bottom-none">
 										    <label>
 										    	<span>Last Name:<abbr class="required" title="Required Field">*</abbr></span>
-										    	<input type="text" name="lname" id="lname" class="width-50 validate[required]" />
+										    	<input type="text" name="lname" id="lname" class="width-75 validate[required]" />
 										    </label>
 										</div>
 								    <div>
 
 								    <div class="grid_12 margin-all-none alpha omega">
-								    	<div class="grid_6 alpha">
-										    <label>
-										    	<span>Email:<abbr class="required" title="Required Field">*</abbr></span>
-										    	<input type="text" name="email" id="email" class="width-100 validate[required]" />
-										    </label>
-								    	</div>
-								    	<div class="grid_6 omega">
-										    <label>
-										    	<span>
-										    		<abbr title="Social Security Number">SSN</abbr>:
-										    	</span>
-										    	<input type="text" name="ssn" id="ssn" class="width-50" />
-										    </label>
-										</div>
+									    <label>
+									    	<span>Email:<abbr class="required" title="Required Field">*</abbr></span>
+									    	<input type="text" name="email" id="email" class="width-50 validate[required,custom[email]]" />
+									    </label>
+									</div>
+
+							    	<div class="grid_12 alpha margin-all-none omega">
+									    <label>
+									    	<span>
+									    		<abbr title="Social Security Number">SSN</abbr>:
+									    	</span>
+									    	<input type="text" name="ssn" id="ssn" class="width-15" />
+									    </label>
+									</div>
+
+							    	<div class="grid_12 alpha margin-top-none omega">
+									    <label>
+									    	<span>
+									    		County/Borough where you live
+									    		<abbr class="required" title="Required Field">*</abbr>
+									    	</span>
+									    	<select name="whereYouLive" id="whereYouLive" class="validate[required]">
+									    		<option value="">-- Select your location --</option>
+									    		<option value="brooklyn">Brooklyn</option>
+									    		<option value="bronx">Bronx</option>
+									    		<option value="manhattan">Manhattan</option>
+									    		<option value="staten-island">Staten Island</option>
+									    		<option value="queens">Queens</option>
+									    	</select>
+									    </label>
 									</div>
 
 									<div class="grid_12 margin-all-none alpha omega">
@@ -246,37 +262,42 @@
 								        </fieldset>
 								    </div>
 
-								    <div class="grid_12 margin-all-none alpha omega">
-								        <fieldset class="radio-check-list">
-								            <legend>Which evennt are you planning to attend?<abbr class="required" title="Required Field">*</abbr></legend>
-								            <div>
-								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="brooklyn" name="event" value="brooklyn" class="validate[required]" /> 
-								                    <label for="brooklyn">Brooklyn</label>
-								                </span>
-								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="bronx" name="event" value="bronx" class="validate[required]" />
-								                    <label for="bronx">Bronx</label>
-								                </span>
-								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="manhattan" name="event" value="manhattan" class="validate[required]" />
-								                    <label for="manhattan">Manhattan</label>
-								                </span>
-								                <span class="left ux-inline-block padding-right">
-								                    <input type="radio" id="staten-island" name="event" value="staten-island" class="validate[required]" />
-								                    <label for="staten-island">Staten Island</label>
-								                </span>
-								                <span class="left ux-inline-block">
-								                    <input type="radio" id="queens" name="event" value="queens" class="validate[required]" />
-								                    <label for="queens">Queens</label>
-								                </span>
-								            </div>
-								        </fieldset>
-								    </div>
+							    	<div class="grid_12 alpha margin-top-none omega">
+									    <label>
+									    	<span>
+									    		Which event are you planning to attend?
+									    		<abbr class="required" title="Required Field">*</abbr>
+									    	</span>
+									    	<select name="event" id="event" class="validate[required]">
+									    		<option value="">-- Select event location --</option>
+									    		<optgroup label="June 7">
+									    			<option value="brooklyn-7/7/2012">Brooklyn</option>
+									    			<option value="bronx-7/7/2012">Bronx</option>
+									    			<option value="manhattan-7/7/2012">Manhattan</option>
+									    			<option value="staten-island-7/7/2012">Staten Island</option>
+									    			<option value="queens-7/7/2012">Queens</option>
+									    			<option value="westchester-7/7/2012">Westchester</option>
+									    			<option value="queens-7/7/2012">Syracuse</option>
+									    		</optgroup>
+									    		<optgroup label="June 8">
+									    			<option value="buffalo-7/8/2012">Buffalo</option>
+									    		</optgroup>
+									    		<optgroup label="June 12">
+									    			<option value="utica-7/12/2012">Utica</option>
+									    		</optgroup>
+									    		<optgroup label="June 20">
+									    			<option value="rochester-7/8/2012">Rochester</option>
+									    		</optgroup>
+									    		<optgroup label="June 22">
+									    			<option value="binghamton-7/8/2012">Binghamton</option>
+									    		</optgroup>
+									    	</select>
+									    </label>
+									</div>
 
 								    <div class="grid_12 margin-all-none alpha omega">
 								        <fieldset class="radio-check-list">
-								            <legend>Level of Education Completed<abbr class="required" title="Required Field">*</abbr></legend>
+								            <legend>Highest Level of Education Completed<abbr class="required" title="Required Field">*</abbr></legend>
 								            <div class="left width-50">
 								                <span>
 								                    <input type="radio" id="lessHighSchool" name="education" value="Less Than High School" class="validate[required]" /> 
@@ -401,7 +422,7 @@
 							        </div>
 							        <input type="text" class="ux-hide-508" name="robot" id="robot" />
 							        <div class="grid_12 alpha omega">
-							        	<input type="submit" class="button right no-icon primary" style="margin-right:100px;" value="Submit" />
+							        	<input type="submit" class="button left no-icon primary" style="margin-right:100px;" value="Submit" />
 							        </div>
 							        <input type="hidden" name="device" id="device" value="desktop" />
 								</form>
