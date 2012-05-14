@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
 		<script src="js/jquery-1.7.1.min.js"></script>
 		<script src="js/jquery.mobile-1.1.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://www.labor.ny.gov/css/apps/css/ux-internet-content-utility.css?date=03012012">	
 
 		<style>
 			.msg {
@@ -26,48 +27,49 @@
 
 	</head> 
 	<body> 
-		<form id="mobile-job-fair" name="mobile-job-fair" method="POST" action="process.php">
 			<!-- Page one -->
 			<div data-role="page" id="page1">
 				<div data-role="header">
 					<h1>Job Fair Registration</h1>
 				</div>
 
-				<div data-role="content">	
-	                <div data-role="fieldcontain">
-	                    <fieldset data-role="controlgroup">
-	                        <label for="fname">
-	                        </label>
-	                        <input id="fname" placeholder="First Name" value="" name="fname" type="text" />
-	                    </fieldset>
-	                </div>
-	                <div data-role="fieldcontain">
-	                    <fieldset data-role="controlgroup">
-	                        <label for="lanme">
-	                        </label>
-	                        <input id="lanme" placeholder="Last Name" value="" name="lname" type="text" />
-	                    </fieldset>
-	                </div>
-	                <div data-role="fieldcontain">
-	                    <fieldset data-role="controlgroup">
-	                        <label for="email">
-	                        </label>
-	                        <input id="email" placeholder="Email" value="" name="email" type="text" />
-	                    </fieldset>
-	                </div>
-	                <div data-role="fieldcontain">
-	                    <fieldset data-role="controlgroup">
-	                        <label for="ssn">
-	                        </label>
-	                        <input id="ssn" placeholder="Social Security Number" value="" name="ssn" type="text" />
-	                    </fieldset>
-	                </div>
-	                <p>
-	                    <a href="#page2" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
-	                </p>	
+				<div data-role="content">
+					<form name="job-fair-part1" id="job-fair-part1" action="process.php" method="POST">
+		                <div data-role="fieldcontain">
+		                    <fieldset data-role="controlgroup">
+		                        <label for="fname">
+		                        </label>
+		                        <input id="fname" placeholder="First Name" value="" name="fname" type="text" class="validate[required]"/>
+		                    </fieldset>
+		                </div>
+		                <div data-role="fieldcontain">
+		                    <fieldset data-role="controlgroup">
+		                        <label for="lanme">
+		                        </label>
+		                        <input id="lanme" placeholder="Last Name" value="" name="lname" type="text" class="validate[required]"/>
+		                    </fieldset>
+		                </div>
+		                <div data-role="fieldcontain">
+		                    <fieldset data-role="controlgroup">
+		                        <label for="email">
+		                        </label>
+		                        <input id="email" placeholder="Email" value="" name="email" type="text" class="validate[required]"/>
+		                    </fieldset>
+		                </div>
+		                <div data-role="fieldcontain">
+		                    <fieldset data-role="controlgroup">
+		                        <label for="ssn">
+		                        </label>
+		                        <input id="ssn" placeholder="Social Security Number" value="" name="ssn" type="text" />
+		                    </fieldset>
+		                </div>
+		                <p>
+		                    <a href="#page2" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+		                </p>
+		            </form>
 				</div>
 			</div>
-
+		<form id="mobile-job-fair" name="mobile-job-fair" method="POST" action="process.php">
 			<div data-role="page" id="page2">
 				<div data-role="header">
 					<h1>Job Fair Registration</h1>
@@ -363,10 +365,18 @@
 				<h4>We are sorry for any inconvenience</h4>
 			</div>
 		</div>
-
+		<script>
+			var ux = "";
+		</script>
+		<script src="js/validation-engine.js"></script>
 
 		<script>
 		    
+			$(document).ready(function(){
+				$("#job-fair-part1").validationEngine();
+			});
+
+
 			// Loading stat while submitting
 		    $(document).bind('mobileinit', function () {
 		        $.mobile.loadingMessageTheme = 'e';
@@ -388,9 +398,9 @@
                         url: 'process.php',
                         data: dataString,
                         success: function(data) {
-                        	alert(data);
+                        	alert('posted');
 
-                        	$('#code').text(data);
+                        	//$('#code').text(data);
 
                             $.mobile.changePage( $("#success"), { transition: "slideup"} );
                         },
