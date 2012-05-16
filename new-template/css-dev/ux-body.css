@@ -33,6 +33,169 @@
 	text-decoration:underline
 }
 
+/* Side Navigation
+-------------------- */
+#ux-side-nav {
+	overflow:hidden
+}
+
+#ux-side-nav #ux-side-nav-inner {
+	margin:0 0 0 2px
+}
+
+#ux-side-nav #ux-side-nav-inner .column-container {
+	margin:0 0 20px
+}
+
+#ux-side-nav nav ul {
+	list-style:none;
+	margin:0;
+	padding:0
+}
+
+#ux-side-nav nav ul li {
+	border-bottom:1px solid #E5E5E5;
+	display:block;
+	list-style:none;
+	margin:0;
+	padding:0;
+	width:201px
+}
+
+#ux-side-nav nav ul li a {
+	background:#EFEFEF;
+	color:#3d6683;
+	display:block;
+	font-size:13px;
+	font-weight:700;
+	padding:8px 8px 8px 22px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #FFF
+}
+
+.ie7 #ux-side-nav nav ul li a {
+	display:inline-block
+}
+
+.ie7 #ux-side-nav nav ul li a {
+	display:block
+}
+
+#ux-side-nav nav ul li a:hover {
+	background-color:#E3E3E3
+}
+
+#ux-side-nav nav ul li a.selected {
+	background:#FFF url(../images/background-navigation.gif) no-repeat 0 center!important;
+	width:186px
+}
+
+/*Level 2*/
+#ux-side-nav nav ul li ul {
+	background:#FFF;
+	margin:0
+}
+
+#ux-side-nav nav ul li ul li {
+	border-bottom:none;
+	width:201px
+}
+
+#ux-side-nav nav ul li ul li a {
+	background:#F7F7F7;
+	border-bottom:1px solid #E5E5E5;
+	display:block;
+	font-size:13px;
+	font-weight:400;
+	padding:6px 8px 6px 20px
+}
+
+#ux-side-nav nav ul li ul li a:hover {
+	background-color:#E3E3E3
+}
+
+#ux-side-nav nav ul li ul li a.selected {
+	background:#FFF url(../images/background-navigation.gif) no-repeat 0 6px!important;
+	color:#52595D!important;
+	text-decoration:none;
+	width:186px
+}
+
+/*Level 3*/
+#ux-side-nav nav ul li ul li ul li {
+	border-bottom:1px solid #F0F0F0
+}
+
+#ux-side-nav nav ul li ul li ul li.last-child {
+	border-bottom:none
+}
+
+#ux-side-nav nav ul li ul li ul li a {
+	background:#FFF url(../images/background-navigation-third.png) repeat-x top;
+	border:none;
+	color:#878787;
+	font-size:11px;
+	font-weight:400;
+	padding:6px 8px 6px 20px
+}
+
+#ux-side-nav nav ul li ul li ul li a:hover {
+	background-color:#E3E3E3;
+	background-image:none
+}
+
+#ux-side-nav nav ul li ul li ul li a.selected {
+	background:#FFF url(../images/background-navigation-third-active.png) no-repeat top left!important;
+	color:#3D6683!important;
+	text-decoration:none;
+	width:186px
+}
+
+/*Expandable*/
+#ux-side-nav nav a.contracted,#ux-side-nav nav a.contracted:hover {
+	background-image:url(../images/background-navigation-expandable-right.gif);
+	background-position:200px center;
+	background-repeat:no-repeat
+}
+
+#ux-side-nav nav ul li ul li a.contracted,#ux-side-nav nav ul li ul li a.contracted:hover {
+	background-position:200px 6px
+}
+
+#ux-side-nav nav a.expanded,#ux-side-nav nav a.expanded:hover {
+	background-image:url(../images/background-navigation-expandable-down.gif);
+	background-position:178px 10px;
+	background-repeat:no-repeat;
+	margin:0
+}
+
+#ux-side-nav nav {
+	border:#ececec 2px solid;
+	border-bottom:none;
+	line-height:1.2
+}
+
+#ux-side-nav nav ul li {
+	width: 100%!important
+}
+
+#ux-side-nav nav ul li a {
+	padding:5px 16px!important
+}
+
+#ux-side-nav nav a.expanded,#ux-side-nav nav a.expanded:hover {
+	background-position:194px 9px
+}
+
+a.expandable,
+.js  #ux-side-nav nav a.expandable + ul {
+	display:none
+}
+
+.js nav a.expandable.expanded + ul {
+	display:block
+}
+
 /* DOL Container
 --------------------------------- */
 

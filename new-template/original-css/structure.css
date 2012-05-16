@@ -111,6 +111,6 @@ height:0;
 visibility:hidden
 }
 
-.ie7 .group,.ie7 .dol-container,.ie7 .button-header,.ie7 .ux-button-section,.ie7 p,ie7 .ux-flex-grid div,.ie7 .ux-content-wrapper div {
+.ie7 .group,.ie7 .dol-container,.ie7 .button-header,.ie7 .ux-button-section,.ie7 p,.ie7 .ux-flex-grid div,.ie7 .ux-content-wrapper div {
 min-height:1px
 }

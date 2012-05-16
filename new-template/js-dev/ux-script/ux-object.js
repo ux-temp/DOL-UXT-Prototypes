@@ -627,14 +627,14 @@ var uxVar = {
 		 */
 		sideNavs: {
 			defaultFunction: function(){
-				jQuery('#navigation-vertical .expandable').addClass('contracted').next().hide();
-				jQuery('#navigation-vertical .expanded').removeClass('contracted').next().show();
-				jQuery('#navigation-vertical .contracted').live('click', function(){  // .live enables handlers to lazily attached to elements that may not yet exist
+				jQuery('#ux-side-nav .expandable').addClass('contracted').next().hide();
+				jQuery('#ux-side-nav .expanded').removeClass('contracted').next().show();
+				jQuery('#ux-side-nav .contracted').live('click', function(){  // .live enables handlers to lazily attached to elements that may not yet exist
 					jQuery(this).removeClass('contracted').addClass('expanded').next().slideDown();
 					return false;
 				});
 				
-				jQuery('#navigation-vertical .expanded').live('click', function(){
+				jQuery('#ux-side-nav .expanded').live('click', function(){
 					jQuery(this).removeClass('expanded').addClass('contracted').next().css("display", "block").slideUp();
 					return false;
 				});
@@ -1055,7 +1055,7 @@ var ux = {
 		/*
 		 * Load the side nav only if needed.
 		 */
-		if (jQuery('#navigation-vertical').length > 0) {
+		if (jQuery('#ux-side-nav').length > 0) {
 			this.load("sideNavs");
 		}
 		 
