@@ -22,7 +22,6 @@
 		
 	</head>
 
-	<!--[if lt IE 7 ]> <body class=" ie ie6"> <![endif]-->
 	<!--[if IE 7 ]>    <body class=" ie ie7"> <![endif]-->
 	<!--[if IE 8 ]>    <body class=" ie ie8"> <![endif]-->
 	<!--[if IE 9 ]>    <body class=" ie ie9"> <![endif]-->
@@ -33,13 +32,13 @@
 		<a tabindex="1" href="#" id="skipNav" class="skipto ux-hide-508">Skip to Navigation</a>
 		<a tabindex="1" href="#" id="skipContent" class="skipto ux-hide-508">Skip to Content</a>
 
-		<div id="ux-notification-container">
+		<div id="ux-note-container">
 			<div class="ux-content-wrapper">
-				<div id="ux-action-required-notifications" class="ux-notice-outer">
+				<div id="ux-action-notes" class="ux-notice-outer">
 						<div class="arn-tray ux-notice-inner">
 						</div>
 				</div>
-				<div id="ux-generic-notifications">
+				<div id="ux-generic-notes">
 				</div>
 			</div>
 		</div>
@@ -2234,6 +2233,12 @@
 						</div>	
 					</div>
 
+					<div class="grid_16 alpha omega">
+							<h3>Notifications</h3>
+							<a class="basic-note" href="#">Basic Notification</a><br>
+							<a class="persist-note" href="#">Persistent Notification</a>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -2251,6 +2256,22 @@
 				//$('.ux-popover').popover();
 
 				ux.load(["dataTables","expandableContent","popover","jqueryTabs"]);
+
+			  	ux.load("notifications", function(){
+					$('.basic-note').click(function(e){
+						e.preventDefault();
+						$(this).uxNotice({
+							title:"Basic Notification",
+							message:"This is the message you want you send. You can close me if you want or I will fade away on my own."});
+					});
+					$('.persist-note').click(function(e){
+						e.preventDefault();
+						$(this).uxNotice({
+							type:"required",
+							title:"Persistent Notification",
+							message:"This is the message you want you send. I will stay here; till you close me."});
+					});
+				});   
 
 			});
 		</script>

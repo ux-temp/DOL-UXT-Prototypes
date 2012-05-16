@@ -29,7 +29,7 @@ function addGoogleTranslateDisclaimer() {
 			var defaults = {
 				title: "TITLE",
 				message: "MESSAGE",
-				location: "#ux-generic-notifications",
+				location: "#ux-generic-notes",
 				rollUpTimer: true,
 				outTimer: 5000,
 				type: 'basic',
@@ -43,8 +43,6 @@ function addGoogleTranslateDisclaimer() {
 			
 			// Permit Overriding.
 			var options = $.extend(defaults, options);
-			
-			if ($('body.ie6').length == 0) {
 				
 			// Variables.
 			if (options.type == 'basic') {
@@ -72,7 +70,7 @@ function addGoogleTranslateDisclaimer() {
 			} else {
 				
 				// Force all special items to go into the required actions section
-				options.location = '#ux-action-required-notifications';
+				options.location = '#ux-action-notes';
 				var tray = ".arn-tray";
 				
 				// Test to see if the require notification window is shown, if not open it.
@@ -126,7 +124,6 @@ function addGoogleTranslateDisclaimer() {
 				
 			}
 			
-			}
 		},
 		
 		// Remove Notifications.
@@ -136,8 +133,8 @@ function addGoogleTranslateDisclaimer() {
 					object.remove();
 					
 					// Check to see if we need to hide the required area.
-					if ($('#ux-action-required-notifications .arn-tray').children().length == 0) {
-						$('#ux-action-required-notifications').hide();
+					if ($('#ux-action-notes .arn-tray').children().length == 0) {
+						$('#ux-action-notes').hide();
 					}
 				});
 		}

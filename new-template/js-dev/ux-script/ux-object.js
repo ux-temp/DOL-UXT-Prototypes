@@ -44,12 +44,6 @@ var uxVar = {
 					jQuery(this).find('.ux-jQDT-row-expand-content').hide();
 				});
 				
-				// Apply our own defaults
-				jQuery.extend( $.fn.dataTable.defaults,this.defaultSettings);
-				
-				// Setup the default implementation of dataTables.
-				jQuery(this.defaultElement).dataTable();
-				
 				// Add function for DataTables Expandables
 				function jQDTExpand_FormatDetails ( targetDiv )
 				{
@@ -61,7 +55,7 @@ var uxVar = {
 				var jQDTExpand_icon_closed = uxVar.core.resourcePath + "/images/icons/add.png";
 				var jQDTExpand_icon_opened = uxVar.core.resourcePath + "/images/icons/delete.png";
 				 
-				jQuery('a.ux-jQDT-row-expand-trigger').live('click', function () {	
+				jQuery('a.ux-jQDT-row-expand-trigger').on('click', function () {	
 					var thisTr = jQuery(this).closest( 'tr' );
 					var nTr = thisTr[0]; //needed this "[0]" to pass 'this' instead of $(this)
 
@@ -86,6 +80,12 @@ var uxVar = {
 					
 					return false; // don't send the AHREF
 				});
+
+				// Apply our own defaults
+				jQuery.extend( $.fn.dataTable.defaults,this.defaultSettings);
+				
+				// Setup the default implementation of dataTables.
+				jQuery(this.defaultElement).dataTable();
 				
 			},
 			loadStatus: false
@@ -308,6 +308,13 @@ var uxVar = {
 		},
 		notifications: {
 			script: "jquery.open-ux.notifications",
+			defaultFunction: function() {
+
+				var noteArea = $('<div>').attr('id','ux-note-area');
+
+				$('body').prepend(noteArea);
+
+			},
 			loadStatus: false
 		},
 		navOutWarning: {
