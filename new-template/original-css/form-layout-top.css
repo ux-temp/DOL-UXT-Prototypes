@@ -9,59 +9,59 @@
 
 label textarea {
 	margin-left:0!important;
-	margin-top:0!important
+	margin:0!important
 }
 
-.ux-form-top label span,
-.ux-form-top fieldset.radio-check-list legend,
-.ux-form-top fieldset.jsf-radio-check-list legend,
-.ux-form-top fieldset.radio-check-list legend,
-.ux-form-top fieldset.multi-input legend,
-.ux-form-top fieldset.ux-single-check-box legend,
-.ux-form-top fieldset.multi-input legend {
+.ux-form label span,
+.ux-form fieldset.radio-check-list legend,
+.ux-form fieldset.jsf-radio-check-list legend,
+.ux-form fieldset.radio-check-list legend,
+.ux-form fieldset.multi-input legend,
+.ux-form fieldset.ux-single-check-box legend,
+.ux-form fieldset.multi-input legend {
 	color:#3D6683;
 	font-weight:700;
 	padding:2px 5px 2px 0;
 	white-space:normal
 }
 
-.ux-form-top label {
+.ux-form label {
 	display:block;
 	margin-bottom:5px
 }
 
-.ux-form-top label span {
+.ux-form label span {
 	display:block
 }
 
-.ux-form-top label input,
-.ux-form-top label select,
-.ux-form-top label textarea {
+.ux-form label input,
+.ux-form label select,
+.ux-form label textarea {
 	display:block;
 	margin:3px 0 0
 }
 
-.ux-form-top abbr.required {
+.ux-form abbr.required {
 	border:none;
 	font-size:inherit
 }
 
-.ie7 .ux-form-top abbr.required {
-	margin-top:-10px;
+.ie7 .ux-form abbr.required {
+	margin:-10px;
 	top:1px
 }
 
-.ux-form-top label.ux-date {
+.ux-form label.ux-date {
 	display:inline-block;
 	width:100%
 }
 
-.ux-form-top label.ux-date input {
+.ux-form label.ux-date input {
 	display:inline-block;
 	float:left
 }
 
-.ux-form-top label img.ui-datepicker-trigger {
+.ux-form label img.ui-datepicker-trigger {
 	float:left;
 	top:7px
 }
@@ -71,71 +71,71 @@ label textarea {
 JSF Form checkbox/radio button lists
 =======================================================================================================
 */
-.ux-form-top fieldset.jsf-radio-check-list table,
-.ux-form-top fieldset.jsf-radio-check-list td,
-.ux-form-top fieldset.jsf-radio-check-list th {
+.ux-form fieldset.jsf-radio-check-list table,
+.ux-form fieldset.jsf-radio-check-list td,
+.ux-form fieldset.jsf-radio-check-list th {
 	background:none;
 	border:none;
 	width:inherit
 }
 
-.ux-form-top fieldset.jsf-radio-check-list table {
+.ux-form fieldset.jsf-radio-check-list table {
 	margin-bottom:1px
 }
 
-.ie7 .ux-form-top fieldset.jsf-radio-check-list table {
+.ie7 .ux-form fieldset.jsf-radio-check-list table {
 	margin-bottom:7px;
 	margin-left:-3px;
-	margin-top:-4px;
+	margin:-4px;
 	width:auto
 }
 
-.ux-form-top fieldset.jsf-radio-check-list td,.ux-form-top fieldset.jsf-radio-check-list th {
+.ux-form fieldset.jsf-radio-check-list td,.ux-form fieldset.jsf-radio-check-list th {
 	padding:0
 }
 
-.ie7 .ux-form-top fieldset.jsf-radio-check-list td,
-.ie7 .ux-form-top fieldset.jsf-radio-check-list th {
+.ie7 .ux-form fieldset.jsf-radio-check-list td,
+.ie7 .ux-form fieldset.jsf-radio-check-list th {
 	margin-left:-5px
 }
 
-.ux-form-top fieldset.jsf-radio-check-list td label,
-.ux-form-top fieldset.jsf-radio-check-list th label {
+.ux-form fieldset.jsf-radio-check-list td label,
+.ux-form fieldset.jsf-radio-check-list th label {
 	float:left;
 	margin-right:10px
 }
 
-.ux-form-top fieldset.jsf-radio-check-list.option-label-wrap td label,
-.ux-form-top fieldset.jsf-radio-check-list.option-label-wrap th label {
+.ux-form fieldset.jsf-radio-check-list.option-label-wrap td label,
+.ux-form fieldset.jsf-radio-check-list.option-label-wrap th label {
 	display:block;
 	float:left;
 	margin:-2px 0 3px;
 	width:90%
 }
 
-.ie7 .ux-form-top fieldset.jsf-radio-check-list td label,
-.ie7 .ux-form-top fieldset.jsf-radio-check-list th label,
-.ie8 .ux-form-top fieldset.jsf-radio-check-list td label,
-.ie8 .ux-form-top fieldset.jsf-radio-check-list th label {
-	margin-top:3px
+.ie7 .ux-form fieldset.jsf-radio-check-list td label,
+.ie7 .ux-form fieldset.jsf-radio-check-list th label,
+.ie8 .ux-form fieldset.jsf-radio-check-list td label,
+.ie8 .ux-form fieldset.jsf-radio-check-list th label {
+	margin:3px
 }
 
-.ux-form-top fieldset.jsf-radio-check-list td input,
-.ux-form-top fieldset.jsf-radio-check-list th input {
+.ux-form fieldset.jsf-radio-check-list td input,
+.ux-form fieldset.jsf-radio-check-list th input {
 	float:left;
 	margin-left:1px
 }
 
-.ie7 .ux-form-top fieldset.jsf-radio-check-list legend {
+.ie7 .ux-form fieldset.jsf-radio-check-list legend {
 	margin-left:-8px
 }
 
-.ie7 .ux-form-top fieldset.jsf-radio-check-list legend span {
+.ie7 .ux-form fieldset.jsf-radio-check-list legend span {
 	display:inline-block
 }
 
-.ie7 .ux-form-top fieldset.jsf-radio-check-list td,
-.ie7 .ux-form-top fieldset.jsf-radio-check-list th {
+.ie7 .ux-form fieldset.jsf-radio-check-list td,
+.ie7 .ux-form fieldset.jsf-radio-check-list th {
 	padding:0 15px 0 0
 }
 
@@ -144,8 +144,8 @@ JSF Form checkbox/radio button lists
  Long Label Support
 =========================================
 */
-.ie8 .ux-form-top fieldset.jsf-radio-check-list.option-label-wrap label {
-	margin-top:3px
+.ie8 .ux-form fieldset.jsf-radio-check-list.option-label-wrap label {
+	margin:3px
 }
 
 /*
@@ -153,40 +153,40 @@ JSF Form checkbox/radio button lists
  Normal Checkbox/Radio Button Lists 
 =======================================================================================================
 */
-.ux-form-top fieldset.radio-check-list legend {
+.ux-form fieldset.radio-check-list legend {
 	display:block;
 	padding-bottom:3px
 }
 
-.ux-form-top fieldset.radio-check-list span {
+.ux-form fieldset.radio-check-list span {
 	display:block;
 	margin-bottom:2px
 }
 
-.ux-form-top fieldset.radio-check-list span input {
+.ux-form fieldset.radio-check-list span input {
 	float:left;
 	margin-left:0
 }
 
-.ux-form-top fieldset.radio-check-list span label {
+.ux-form fieldset.radio-check-list span label {
 	display:inline-block
 }
 
-.ie7 .ux-form-top fieldset.radio-check-list span input {
+.ie7 .ux-form fieldset.radio-check-list span input {
 	margin:0 3px 0 0
 }
 
-.ie7 .ux-form-top fieldset.radio-check-list span label {
+.ie7 .ux-form fieldset.radio-check-list span label {
 	margin:2px 0 0
 }
 
-.ie7 .ux-form-top fieldset.radio-check-list {
+.ie7 .ux-form fieldset.radio-check-list {
 	margin-bottom:7px;
-	margin-top:-4px;
+	margin:-4px;
 	width:auto
 }
 
-.ie8 .ux-form-top fieldset.radio-check-list span label {
+.ie8 .ux-form fieldset.radio-check-list span label {
 	margin:3px 0 0
 }
 
@@ -195,11 +195,11 @@ JSF Form checkbox/radio button lists
  Regular Radio / Check list override
 =========================================
 */
-.ux-form-top fieldset.radio-check-list div.ux-list-side span {
+.ux-form fieldset.radio-check-list div.ux-list-side span {
 	display:inline-block
 }
 
-.ux-form-top fieldset.radio-check-list div.ux-list-side span label {
+.ux-form fieldset.radio-check-list div.ux-list-side span label {
 	padding-right:7px
 }
 
@@ -208,7 +208,7 @@ JSF Form checkbox/radio button lists
  Long Label Support
 =========================================
 */
-.ux-form-top fieldset.radio-check-list.option-label-wrap span label {
+.ux-form fieldset.radio-check-list.option-label-wrap span label {
 	display:block;
 	width:90%
 }
@@ -218,38 +218,38 @@ JSF Form checkbox/radio button lists
  Single Check Box Overrides
 =========================================
 */
-.ux-form-top fieldset.ux-single-check-box legend {
+.ux-form fieldset.ux-single-check-box legend {
 	display:block;
 	padding-bottom:3px
 }
 
-.ux-form-top fieldset.ux-single-check-box span {
+.ux-form fieldset.ux-single-check-box span {
 	display:block;
 	margin-bottom:2px
 }
 
-.ux-form-top fieldset.ux-single-check-box span input {
+.ux-form fieldset.ux-single-check-box span input {
 	float:left;
 	margin-left:0
 }
 
-.ux-form-top fieldset.ux-single-check-box span label {
+.ux-form fieldset.ux-single-check-box span label {
 	display:inline-block
 }
 
-.ie7 .ux-form-top fieldset.ux-single-check-box legend {
+.ie7 .ux-form fieldset.ux-single-check-box legend {
 	margin-left:-8px
 }
 
-.ie7 .ux-form-top fieldset.ux-single-check-box span input {
+.ie7 .ux-form fieldset.ux-single-check-box span input {
 	margin:0 3px 0 0
 }
 
-.ie7 .ux-form-top fieldset.ux-single-check-box span label {
+.ie7 .ux-form fieldset.ux-single-check-box span label {
 	margin:2px 0 0
 }
 
-.ie8 .ux-form-top fieldset.ux-single-check-box span label {
+.ie8 .ux-form fieldset.ux-single-check-box span label {
 	margin:3px 0 0
 }
 
@@ -258,21 +258,21 @@ JSF Form checkbox/radio button lists
  Long Label Support
 =========================================
 */
-.ux-form-top fieldset.ux-single-check-box span label {
-	margin-top:-2px;
+.ux-form fieldset.ux-single-check-box span label {
+	margin:-2px;
 	width:90%
 }
 
-.ie7 .ux-form-top fieldset.ux-single-check-box legend {
+.ie7 .ux-form fieldset.ux-single-check-box legend {
 	margin-left:-5px
 }
 
-.ie7 .ux-form-top fieldset.ux-single-check-box span label {
-	margin-top:1px
+.ie7 .ux-form fieldset.ux-single-check-box span label {
+	margin:1px
 }
 
-.ie8 .ux-form-top fieldset.ux-single-check-box span label {
-	margin-top:2px
+.ie8 .ux-form fieldset.ux-single-check-box span label {
+	margin:2px
 }
 
 /*
@@ -280,72 +280,72 @@ JSF Form checkbox/radio button lists
  Multi-Text Box fields.
 =======================================================================================================
 */
-.ux-form-top fieldset.multi-input {
+.ux-form fieldset.multi-input {
 	margin-bottom:5px
 }
 
-.ie7 .ux-form-top fieldset.multi-input legend {
+.ie7 .ux-form fieldset.multi-input legend {
 	margin-left:-7px
 }
 
-.ux-form-top fieldset.multi-input div {
+.ux-form fieldset.multi-input div {
 	display:block;
 	margin-bottom:5px
 }
 
-.ie7 .ux-form-top fieldset.multi-input {
+.ie7 .ux-form fieldset.multi-input {
 	margin-bottom:7px
 }
 
-.ux-form-top fieldset.multi-input div label {
+.ux-form fieldset.multi-input div label {
 	display:block;
 	float:left;
 	width:inherit
 }
 
-.ux-form-top fieldset.multi-input div span abbr.required {
+.ux-form fieldset.multi-input div span abbr.required {
 	display:block;
 	float:left;
 	font-size:inherit
 }
 
-.ux-form-top fieldset.multi-input div span.support-text {
+.ux-form fieldset.multi-input div span.support-text {
 	display:block;
 	float:left;
 	padding:5px 5px 0
 }
 
-.ux-form-top fieldset.multi-input div span input {
+.ux-form fieldset.multi-input div span input {
 	display:block;
 	float:left
 }
 
-.ux-form-top fieldset.multi-input input.button {
+.ux-form fieldset.multi-input input.button {
 	margin:3px 0 0 5px
 }
 
 /* -- */
 /* Static Fields */
-.ux-form-top span.ux-static-field {
+.ux-form span.ux-static-field {
 	display:block;
 	margin-bottom:5px
 }
 
-.ux-form-top span.ux-static-label {
+.ux-form span.ux-static-label {
 	display:block;
 	font-weight:700
 }
 
-.ux-form-top span.ux-static-value {
+.ux-form span.ux-static-value {
 	font-weight:400
 }
 
-.ie7 .ux-form-top span.ux-static-field {
+.ie7 .ux-form span.ux-static-field {
 	margin-bottom:7px
 }
 
 /* Static overrides */
-.ux-form-top label.ux-static-field {
+.ux-form label.ux-static-field {
 	display:inline-block;
 	width:100%
 }
@@ -357,19 +357,19 @@ JSF Form checkbox/radio button lists
 */
 
 /* Static Output Top */
-.ux-static-output-top span.ux-static-output {
+.ux-static-output span.ux-static-output {
 	display:inline-block;
 	padding-left:10px;
 	width:100%
 }
 
-.ux-static-output-top span.ux-static-output span.ux-static-label {
+.ux-static-output span.ux-static-output span.ux-static-label {
 	float:left;
 	font-weight:700;
 	width:100%
 }
 
-.ux-static-output-top span.ux-static-output span.ux-static-value {
+.ux-static-output span.ux-static-output span.ux-static-value {
 	float:left
 }
 
@@ -394,7 +394,7 @@ div.ux-selection-component{
 }
 
 .ux-selection-component-middle {
-	margin-top:50px
+	margin:50px
 }
 
 .ux-selection-component-left select,
@@ -456,14 +456,14 @@ div.ux-selection-component{
 	margin-left:0
 }
 
-.ux-form-top div.ux-form-sub-quest {
+.ux-form div.ux-form-sub-quest {
 	margin:5px 0 15px 25px;
 	padding: 0 0 0 10px;
 }
 
-.ie7 .ux-form-top div.ux-form-sub-quest,
-.ie7 .ux-form-top fieldset,
-.ie7 .ux-form-top fieldset legend span {
+.ie7 .ux-form div.ux-form-sub-quest,
+.ie7 .ux-form fieldset,
+.ie7 .ux-form fieldset legend span {
 	position:relative;
 	zoom:1
 }

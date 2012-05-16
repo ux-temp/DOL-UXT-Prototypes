@@ -2333,6 +2333,36 @@
 
 					</div>
 
+					<div class="grid_16 alpha omega">
+						<h3>Form Layout (Top ONLY)</h3>
+						<form class="ux-form"> 
+							<label for="HTMLinput1">
+					            <span>Text Box Label</span>
+					            <input type="text" id="HTMLinput1" />
+					        </label>
+
+							<label for="textArea1">
+					            <span>Text Area Label</span>
+					            <textarea></textarea>
+					        </label>
+
+					        <fieldset class="radio-check-list">
+					            <legend>Color:</legend>
+					            <div>
+					                <span>
+					                    <input type="radio" id="color-radio-blue1" /> 
+					                    <label for="color-radio-blue1">Blue</label>
+					                </span>
+					                <span>
+					                    <input type="radio" id="color-radio-red1" />
+					                    <label for="color-radio-red1">Red</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+						</form>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -2347,9 +2377,12 @@
 
 		<script>
 			$(document).ready(function() {
-				//$('.ux-popover').popover();
 
-				ux.load(["dataTables","expandableContent","popover","jqueryTabs"]);
+				ux.load(["dataTables",
+						 "expandableContent",
+						 "popover",
+						 "jqueryTabs",
+						 "formEnhancements"]);
 
 			  	ux.load("notifications", function(){
 					$('.basic-note').click(function(e){
