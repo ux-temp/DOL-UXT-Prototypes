@@ -27,8 +27,58 @@
 
 			/* override specifically for jQuery mobile forms */
 			.formError {
-				margin-top: -25px !important;
+				margin-top: -27px !important;
 				left: 0px !important;
+			}
+
+			.ui-radio .formError {
+				margin-top: -13px !important;
+				margin-left: 183px;
+			}
+
+			.milYesformError.formError {
+				margin-left: 143px;
+			}
+
+			.ui-select .ui-btn {
+				overflow: visible;
+			}
+
+			.ageMoreMargin {
+				display: block;
+				margin-bottom: 8px;
+			}
+
+			.ageRangeformError.formError {
+				margin-left: 100px;
+				margin-top: -30px !important;
+			}
+
+			.uiYesformError.formError {
+				margin-left: 140px;
+			}
+
+			.eventformError.formError {
+				margin-left: 184px;
+				margin-top: -30px !important;
+			}
+
+			.educationformError.formError {
+				margin-left: 220px;
+				margin-top: -30px !important;
+			}
+
+			.tradeAgriculturealformError.formError {
+				margin-top: -73px !important;
+			}
+
+			.tradeAgriculturealformError .formErrorArrow {
+				display: none;
+			}
+
+			#hide-access {
+				clip: rect(1px,1px,1px,1px);
+				position: absolute!important;
 			}
 
 		</style>
@@ -72,12 +122,11 @@
 		                    </fieldset>
 		                </div>
 		                <p>
-		                    <a id="first-form" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+		                    <input type="submit" id="firstForm" value="Continue" data-role="submit" data-icon="arrow-r" data-iconpos="right" data-theme="b" />
 		                </p>
 		            </form>
 				</div>
 			</div>
-		<form id="mobile-job-fair" name="mobile-job-fair" method="POST" action="process.php">
 			<div data-role="page" id="page2">
 				<div data-role="header">
 					<h1>Job Fair Registration</h1>
@@ -116,7 +165,7 @@
 		                    </fieldset>
 		                </div>
 		                <div data-role="fieldcontain">
-		                    <label for="selectmenu1">
+		                    <label for="selectmenu1" class="ageMoreMargin">
 		                        Age Range?
 		                    </label>
 		                    <select name="ageRange" id="ageRange" class="validate[required]">
@@ -148,7 +197,7 @@
 		                        <a id="back-to-first" data-role="button" data-icon="arrow-l">Previous</a>
 		                    </div>
 		                    <div class="ui-block-b">
-		                        <a id="second-form" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+		                        <input type="submit" id="secondForm" value="Continue" data-role="submit" data-icon="arrow-r" data-iconpos="right" data-theme="b"  />
 		                    </div>
 		                </div>
 	            	</form>
@@ -160,89 +209,97 @@
 					<h1>Job Fair Registration</h1>
 				</div>
 
-				<div data-role="content">	
-	               <div data-role="fieldcontain">
-	                    <fieldset data-role="controlgroup" data-type="horizontal">
-	                        <legend>
-	                            Are you currently collecting Unemployment Insurance benefits?
-	                        </legend>
-	                        <input name="unemployed" id="uiYes" value="1" type="radio" />
-	                        <label for="uiYes">
-	                            Yes
-	                        </label>
-	                        <input name="unemployed" id="uiNo" value="0" type="radio" />
-	                        <label for="uiNo">
-	                            No
-	                        </label>
-	                    </fieldset>
-	                </div>
-	                <div data-role="fieldcontain">
-	                    <label for="event">
-	                        Which event are you planning to attend?
-	                    </label>
-	                    <select name="event" id="event">
-	                        <option value="brooklyn">
-	                            Brooklyn
-	                        </option>
-	                        <option value="bronx">
-	                            Bronx
-	                        </option>
-	                        <option value="manhatten">
-	                            Manhattan
-	                        </option>
-	                        <option value="staten-island">
-	                            Staten Island
-	                        </option>
-	                        <option value="queens">
-	                            Queens
-	                        </option>
-	                    </select>
-	                </div>
-	                <div data-role="fieldcontain">
-	                    <label for="education">
-	                        Level of Education Completed:
-	                    </label>
-	                    <select name="education" id="education">
-	                        <option value="Less Than High School">
-	                            Less than High School
-	                        </option>
-	                        <option value="Some High School">
-	                            Some High School
-	                        </option>
-	                        <option value="High School or GED">
-	                            High School Degree or GED
-	                        </option>
-	                        <option value="Apprenticeship">
-	                            Apprenticeship
-	                        </option>
-	                        <option value="Vocational Trade">
-	                            Vocational Trade School
-	                        </option>
-	                        <option value="Some College">
-	                            Some College Credits
-	                        </option>
-	                        <option value="Assoiciate">
-	                            Associate Degree
-	                        </option>
-	                        <option value="Bachelor">
-	                            Bachelor's Degree
-	                        </option>
-	                        <option value="Masters">
-	                            Master Degree
-	                        </option>
-	                        <option value="Doctorate">
-	                            Doctorate Degree
-	                        </option>
-	                    </select>
-	                </div>
-	                <div class="ui-grid-a">
-	                    <div class="ui-block-a">
-	                        <a href="#page2" data-role="button" data-icon="arrow-l">Previous</a>
-	                    </div>
-	                    <div class="ui-block-b">
-	                        <a href="#page4" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
-	                    </div>
-	                </div>
+				<div data-role="content">
+					<form name="jfPart3" id="jfPart3" action="process.php" method="POST">
+		               	<div data-role="fieldcontain">
+		                    <fieldset data-role="controlgroup" data-type="horizontal">
+		                        <legend>
+		                            Are you currently collecting Unemployment Insurance benefits?
+		                        </legend>
+		                        <input name="unemployed" id="uiYes" value="1" type="radio" class="validate[required]" />
+		                        <label for="uiYes">
+		                            Yes
+		                        </label>
+		                        <input name="unemployed" id="uiNo" value="0" type="radio" class="validate[required]" />
+		                        <label for="uiNo">
+		                            No
+		                        </label>
+		                    </fieldset>
+		                </div>
+						<div data-role="fieldcontain">
+						    <label for="event">
+						        Which event are you planning to attend?
+						    </label>
+						    <select name="event" id="event" class="validate[required]">
+		                    	<option value="">
+		                            -- Select Event --
+		                        </option>
+						        <option value="brooklyn">
+						            Brooklyn
+						        </option>
+						        <option value="bronx">
+						            Bronx
+						        </option>
+						        <option value="manhatten">
+						            Manhattan
+						        </option>
+						        <option value="staten-island">
+						            Staten Island
+						        </option>
+						        <option value="queens">
+						            Queens
+						        </option>
+						    </select>
+						</div>
+						<div data-role="fieldcontain">
+						    <label for="education">
+						        Level of Education Completed:
+						    </label>
+						    <select name="education" id="education" class="validate[required]">
+		                    	<option value="">
+		                            -- Select Educational Level --
+		                        </option>
+						        <option value="Less Than High School">
+						            Less than High School
+						        </option>
+						        <option value="Some High School">
+						            Some High School
+						        </option>
+						        <option value="High School or GED">
+						            High School Degree or GED
+						        </option>
+						        <option value="Apprenticeship">
+						            Apprenticeship
+						        </option>
+						        <option value="Vocational Trade">
+						            Vocational Trade School
+						        </option>
+						        <option value="Some College">
+						            Some College Credits
+						        </option>
+						        <option value="Assoiciate">
+						            Associate Degree
+						        </option>
+						        <option value="Bachelor">
+						            Bachelor's Degree
+						        </option>
+						        <option value="Masters">
+						            Master Degree
+						        </option>
+						        <option value="Doctorate">
+						            Doctorate Degree
+						        </option>
+						    </select>
+						</div>
+						<div class="ui-grid-a">
+						    <div class="ui-block-a">
+						        <a id="back-to-second" data-role="button" data-icon="arrow-l">Previous</a>
+						    </div>
+						    <div class="ui-block-b">
+						        <input type="submit" id="thirdForm" value="Continue" data-role="submit" data-icon="arrow-r" data-iconpos="right" data-theme="b"  />
+						    </div>
+						</div>
+					</form>
 				</div>
 
 			</div>
@@ -252,91 +309,94 @@
 					<h1>Job Fair Registration</h1>
 				</div>
 
-				<div data-role="content">	
-					<div data-role="fieldcontain">
-	                    <fieldset data-role="controlgroup" data-type="vertical">
-	                        <legend>
-	                            Employment Area of Interest (Check all that apply)
-	                        </legend>
-	                        <input name="tradeAgricultureal" id="tradeAgricultureal" type="checkbox" value="1"/>
-	                        <label for="tradeAgricultureal">
-	                            Agricultural
-	                        </label>
-	                        <input name="tradeConstruction" id="tradeConstruction" type="checkbox" value="1"/>
-	                        <label for="tradeConstruction">
-	                            Construction
-	                        </label>
-	                        <input name="tradeEducation" id="tradeEducation" type="checkbox" value="1"/>
-	                        <label for="tradeEducation">
-	                            Education
-	                        </label>
-	                        <input name="tradeFinancialService" id="tradeFinancialService" type="checkbox" value="1"/>
-	                        <label for="tradeFinancialService">
-	                            Financial Services
-	                        </label>
-	                        <input name="tradeFoodService" id="tradeFoodService" type="checkbox" value="1"/>
-	                        <label for="tradeFoodService">
-	                            Food Service
-	                        </label>
-	                        <input name="tradeHealthService" id="tradeHealthService" type="checkbox" value="1"/>
-	                        <label for="tradeHealthService">
-	                            Health Services
-	                        </label>
-	                        <input name="tradeInfoTech" id="tradeInfoTech" type="checkbox" value="1"/>
-	                        <label for="tradeInfoTech">
-	                            Information Technology
-	                        </label>
-	                        <input name="tradeLeisureHosp" id="tradeLeisureHosp" type="checkbox" value="1"/>
-	                        <label for="tradeLeisureHosp">
-	                            Leisure &amp; Hospitality
-	                        </label>
-	                        <input name="tradeManufacturing" id="tradeManufacturing" type="checkbox" value="1"/>
-	                        <label for="tradeManufacturing">
-	                            Manufacturing
-	                        </label>
-	                        <input name="tradeNaturalResourceMining" id="tradeNaturalResourceMining" type="checkbox" value="1"/>
-	                        <label for="tradeNaturalResourceMining">
-	                            Natural Resources &amp; Mining
-	                        </label>
-	                        <input name="tradeProfessionalBusiness" id="tradeProfessionalBusiness" type="checkbox" value="1"/>
-	                        <label for="tradeProfessionalBusiness">
-	                            Professional &amp; Business Services
-	                        </label>
-	                        <input name="tradePublicAdmin" id="tradePublicAdmin" type="checkbox" value="1"/>
-	                        <label for="tradePublicAdmin">
-	                            Public Administration
-	                        </label>
-	                        <input name="tradeSales" id="tradeSales" type="checkbox" value="1"/>
-	                        <label for="tradeSales">
-	                            Sales &amp; Retail
-	                        </label>
-	                        <input name="tradeSecurityMilitary" id="tradeSecurityMilitary" type="checkbox" value="1"/>
-	                        <label for="tradeSecurityMilitary">
-	                            Security and/or Military
-	                        </label>
-	                        <input name="tradeSocialService" id="tradeSocialService" type="checkbox" value="1"/>
-	                        <label for="tradeSocialService">
-	                            Social Services
-	                        </label>
-	                        <input name="tradeTradeTransportUtilities" id="tradeTradeTransportUtilities" type="checkbox" value="1" />
-	                        <label for="tradeTradeTransportUtilities">
-	                            Trade, Transportation, &amp; Utilities
-	                        </label>
-	                    </fieldset>
-	                </div>
-	                <div class="ui-grid-a">
-	                    <div class="ui-block-a">
-	                        <a href="#page2" data-role="button" data-icon="arrow-l">Previous</a>
-	                    </div>
-	                    <div class="ui-block-b">
-	                        <a data-role="button" id="submit" data-icon="arrow-r" data-iconpos="right" data-theme="b">Submit</a>
-	                    </div>
-	                </div>
+				<div data-role="content">
+					<form name="jfPart4" id="jfPart4" action="process.php" method="GET">
+						<div data-role="fieldcontain">
+		                    <fieldset data-role="controlgroup" data-type="vertical" id="interestedTrades">
+		                        <legend>
+		                            Employment Area of Interest (Check all that apply)
+		                        </legend>
+		                        <input name="tradeAgricultureal" id="tradeAgricultureal" type="checkbox" value="1" class="validate[funcCall[interestedTradeCheck]]"/>
+		                        <label for="tradeAgricultureal">
+		                            Agricultural
+		                        </label>
+		                        <input name="tradeConstruction" id="tradeConstruction" type="checkbox" value="1" />
+		                        <label for="tradeConstruction">
+		                            Construction
+		                        </label>
+		                        <input name="tradeEducation" id="tradeEducation" type="checkbox" value="1" />
+		                        <label for="tradeEducation">
+		                            Education
+		                        </label>
+		                        <input name="tradeFinancialService" id="tradeFinancialService" type="checkbox" value="1" />
+		                        <label for="tradeFinancialService">
+		                            Financial Services
+		                        </label>
+		                        <input name="tradeFoodService" id="tradeFoodService" type="checkbox" value="1" />
+		                        <label for="tradeFoodService">
+		                            Food Service
+		                        </label>
+		                        <input name="tradeHealthService" id="tradeHealthService" type="checkbox" value="1" />
+		                        <label for="tradeHealthService">
+		                            Health Services
+		                        </label>
+		                        <input name="tradeInfoTech" id="tradeInfoTech" type="checkbox" value="1" />
+		                        <label for="tradeInfoTech">
+		                            Information Technology
+		                        </label>
+		                        <input name="tradeLeisureHosp" id="tradeLeisureHosp" type="checkbox" value="1" />
+		                        <label for="tradeLeisureHosp">
+		                            Leisure &amp; Hospitality
+		                        </label>
+		                        <input name="tradeManufacturing" id="tradeManufacturing" type="checkbox" value="1" />
+		                        <label for="tradeManufacturing">
+		                            Manufacturing
+		                        </label>
+		                        <input name="tradeNaturalResourceMining" id="tradeNaturalResourceMining" type="checkbox" value="1" />
+		                        <label for="tradeNaturalResourceMining">
+		                            Natural Resources &amp; Mining
+		                        </label>
+		                        <input name="tradeProfessionalBusiness" id="tradeProfessionalBusiness" type="checkbox" value="1" />
+		                        <label for="tradeProfessionalBusiness">
+		                            Professional &amp; Business Services
+		                        </label>
+		                        <input name="tradePublicAdmin" id="tradePublicAdmin" type="checkbox" value="1" />
+		                        <label for="tradePublicAdmin">
+		                            Public Administration
+		                        </label>
+		                        <input name="tradeSales" id="tradeSales" type="checkbox" value="1" />
+		                        <label for="tradeSales">
+		                            Sales &amp; Retail
+		                        </label>
+		                        <input name="tradeSecurityMilitary" id="tradeSecurityMilitary" type="checkbox" value="1" />
+		                        <label for="tradeSecurityMilitary">
+		                            Security and/or Military
+		                        </label>
+		                        <input name="tradeSocialService" id="tradeSocialService" type="checkbox" value="1" />
+		                        <label for="tradeSocialService">
+		                            Social Services
+		                        </label>
+		                        <input name="tradeTradeTransportUtilities" id="tradeTradeTransportUtilities" type="checkbox" value="1" />
+		                        <label for="tradeTradeTransportUtilities">
+		                            Trade, Transportation, &amp; Utilities
+		                        </label>
+		                    </fieldset>
+		                </div>
+		                <div id="hide-access">
+		                	<input type="text" name="formSecCode" id="formSecCode" />
+		                	<input type="hidden" name="device" id="device" value="mobile" />
+		                </div>
+		                <div class="ui-grid-a">
+		                    <div class="ui-block-a">
+		                        <a id="back-to-third" data-role="button" data-icon="arrow-l">Previous</a>
+		                    </div>
+		                    <div class="ui-block-b">
+		                        <a data-role="button" id="fourthForm" data-icon="arrow-r" data-iconpos="right" data-theme="b">Submit</a>
+		                    </div>
+		                </div>
+		            </form>
 				</div>
 			</div>
-			<input type="text" name="robot" id="robot" class="access-hide" />
-            <input type="hidden" name="device" id="device" value="mobile" />
-		</form>
 
 		<div data-role="page" id="success">
 			<div data-role="header">
@@ -384,35 +444,115 @@
 
 		<script>
 		    
+		    //var form1, form2, form3, form4;
+
+		    // Object to contain form values
+		    var forms = {
+		    	form1: "",
+		    	form2: "",
+		    	form3: "",
+		    	form4: ""
+		    };
+
 			$(document).ready(function(){
 
 				$("#jfPart1").validationEngine();
+				$("#jfPart2").validationEngine();
+				$("#jfPart3").validationEngine();
+				$("#jfPart4").validationEngine();
+
+				/* Page 1 */
 
 				// First form to the second form
-				$('#first-form').on("click",function(e){
+				$('#firstForm').on("click", function(e){
 					
-					/*
-					if( (!$("#jfPart1").validationEngine('validateField', "#fname")) && (!$("#jfPart1").validationEngine('validateField', "#lname")) && (!$("#jfPart1").validationEngine('validateField', "#email"))) {
-						 $.mobile.changePage( $("#page2"), { transition: "slideup"} );
+					e.preventDefault();
+					
+					var firstFormVal = $('#jfPart1').validationEngine('validate');
+
+					if (firstFormVal) {
+					
+						// Save off the form values
+						forms.form1 = $('#jfPart1').serialize();
+
+						//console.log(form1);
+
+						// Move to the next form
+						$.mobile.changePage( $("#page2"), { transition: "slideup"} );
 					}
-					*/
-					$.mobile.changePage( $("#page2"), { transition: "slideup"} );
-					//alert( $("#jfPart1").validationEngine('validateField', "#fname") );
 
 				});
+
+				/* Page 2 */
 
 				// Back to the first form
 				$('#back-to-first').on("click",function(e){
+					// Clear any promts if they are showing
+					jQuery('#jfPart2').validationEngine('hide');
+
+					// Go back to page 1
 					$.mobile.changePage( $("#page1"), { transition: "slidedown"} );
 				});
 
+
 				// Second form to the third form
-				$('#second-form').on("click",function(e){
+				$('#secondForm').on("click", function(e){
 					
-					if( (!$("#jfPart2").validationEngine('validateField', "#gender")) ) {
-						alert('test');
+					e.preventDefault();
+					
+					var secondFormVal = $('#jfPart2').validationEngine('validate');
+
+					if (secondFormVal) {
+
+						// Save off the form values
+						forms.form2 = $('#jfPart2').serialize();
+
+						//console.log(form2);
+
+						$.mobile.changePage( $("#page3"), { transition: "slideup"} );
 					}
+
 				});
+
+				/* Page 3 */
+
+				$('#back-to-second').on("click",function(e){
+					// Clear any promts if they are showing
+					jQuery('#jfPart3').validationEngine('hide');
+
+					// Go back to page 1
+					$.mobile.changePage( $("#page2"), { transition: "slidedown"} );
+				});
+
+				// Third form to the forth form
+				$('#thirdForm').on("click", function(e){
+					
+					e.preventDefault();
+					
+					var thirdFormVal = $('#jfPart3').validationEngine('validate');
+
+					if (thirdFormVal) {
+
+						// Save off the form values
+						forms.form3 = $('#jfPart3').serialize();
+
+						//console.log(form3);
+
+						$.mobile.changePage( $("#page4"), { transition: "slideup"} );
+					}
+
+				});
+
+				/* Page 4 */
+
+				$('#back-to-third').on("click",function(e){
+					// Clear any promts if they are showing
+					jQuery('#jsPart4').validationEngine('hide');
+
+					// Go back to page 1
+					$.mobile.changePage( $("#page3"), { transition: "slidedown"} );
+				});
+
 			});
 
 
@@ -421,36 +561,53 @@
 		        $.mobile.loadingMessageTheme = 'e';
 		        $.mobile.loadingMessage = 'Sending Data';
 		        $.mobile.loadingMessageTextVisible = false;
-		    	}).delegate('#submit', 'click', function () {
-		        
-		        	// Show loading spinnner
-		        	$.mobile.showPageLoadingMsg();
+		    	}).delegate('#fourthForm', 'click', function (e) {
 
-		        	// Get the form data
-		        	var dataString = $('#mobile-job-fair').serialize();
+		    		e.preventDefault();
 
-		        	//console.log(dataString);
+		    		var fourthFormVal = $('#jfPart4').validationEngine('validate');
 
-		        	// Ajax Form Submittion
- 					$.ajax({
-                        type: 'POST',
-                        url: 'process.php',
-                        data: dataString,
-                        success: function(data) {
-                        	alert('posted');
+		    		if (fourthFormVal) {
 
-                        	//$('#code').text(data);
+		    			// Save off the form values
+						forms.form4 = $('#jfPart4').serialize();
 
-                            $.mobile.changePage( $("#success"), { transition: "slideup"} );
-                        },
-                        fail: function(data) { 
-                            //alert(data); 
-                            $.mobile.changePage( $("#fail"), { transition: "slideup"} );
-                        }
-                    });
+			        	// Show loading spinnner
+			        	$.mobile.showPageLoadingMsg();
+
+			        	// Ajax Form Submittion
+	 					$.ajax({
+	                        type: 'POST',
+	                        url: 'process.php',
+	                        data: forms.form1 + "&" + forms.form2 + "&" + forms.form3 + "&" + forms.form4,
+	                        success: function(data) {
+
+	                        	$('#code').text(data);
+
+	                            $.mobile.changePage( $("#success"), { transition: "slideup"} );
+	                        },
+	                        fail: function(data) {
+	                            $.mobile.changePage( $("#fail"), { transition: "slideup"} );
+	                        }
+	                    });
+
+ 					}
 
 		    	});
 
+
+			// Copy of the awsome function created by victor to check if one or more checkboxes not in the same group have been checked.
+			var interestedTrade = $('#interestedTrades').find("input[type=checkbox]");
+
+			function interestedTradeCheck(){
+				
+				var selectedCheckBoxes = interestedTrade.filter(":checked");
+
+				if (selectedCheckBoxes.length == 0) {
+					return "* Please check at least one.";
+				}
+
+			}
 
 	
 		</script>
