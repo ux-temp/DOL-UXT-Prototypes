@@ -6,9 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
 		<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/validation-engine-2.5.3.css">
+
 		<script src="js/jquery-1.7.1.min.js"></script>
 		<script src="js/jquery.mobile-1.1.0.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="https://www.labor.ny.gov/css/apps/css/ux-internet-content-utility.css?date=03012012">	
 
 		<style>
 			.msg {
@@ -23,6 +24,13 @@
 				font-size: 1em;
 				color: #FF0000;
 			}
+
+			/* override specifically for jQuery mobile forms */
+			.formError {
+				margin-top: -25px !important;
+				left: 0px !important;
+			}
+
 		</style>
 
 	</head> 
@@ -34,7 +42,7 @@
 				</div>
 
 				<div data-role="content">
-					<form name="job-fair-part1" id="job-fair-part1" action="process.php" method="POST">
+					<form name="jfPart1" id="jfPart1" action="process.php" method="POST">
 		                <div data-role="fieldcontain">
 		                    <fieldset data-role="controlgroup">
 		                        <label for="fname">
@@ -44,9 +52,9 @@
 		                </div>
 		                <div data-role="fieldcontain">
 		                    <fieldset data-role="controlgroup">
-		                        <label for="lanme">
+		                        <label for="lname">
 		                        </label>
-		                        <input id="lanme" placeholder="Last Name" value="" name="lname" type="text" class="validate[required]"/>
+		                        <input id="lname" placeholder="Last Name" value="" name="lname" type="text" class="validate[required]"/>
 		                    </fieldset>
 		                </div>
 		                <div data-role="fieldcontain">
@@ -64,7 +72,7 @@
 		                    </fieldset>
 		                </div>
 		                <p>
-		                    <a href="#page2" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+		                    <a id="first-form" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
 		                </p>
 		            </form>
 				</div>
@@ -76,69 +84,74 @@
 				</div>
 
 				<div data-role="content">	
-	                <div data-role="fieldcontain">
-	                    <fieldset data-role="controlgroup" data-type="horizontal">
-	                        <legend>
-	                            Gender
-	                        </legend>
-	                        <input name="gender" id="female" value="F" type="radio" />
-	                        <label for="female">
-	                            Female
-	                        </label>
-	                        <input name="gender" id="male" value="M" type="radio" />
-	                        <label for="male">
-	                            Male
-	                        </label>
-	                    </fieldset>
-	                </div>
-	               	<div data-role="fieldcontain">
-	                    <fieldset data-role="controlgroup" data-type="horizontal">
-	                        <legend>
-	                            Are you a veteran of the United States military?
-	                        </legend>
-	                        <input name="veteran" id="milYes" value="1" type="radio" />
-	                        <label for="milYes">
-	                            Yes
-	                        </label>
-	                        <input name="veteran" id="milNo" value="0" type="radio" />
-	                        <label for="milNo">
-	                            No
-	                        </label>
-	                    </fieldset>
-	                </div>
-	                <div data-role="fieldcontain">
-	                    <label for="selectmenu1">
-	                        Age Range?
-	                    </label>
-	                    <select name="ageRange" id="ageRange">
-	                        <option value="14-17">
-	                            14-17
-	                        </option>
-	                        <option value="18-21">
-	                            18-21
-	                        </option>
-	                        <option value="22-39">
-	                            22-39
-	                        </option>
-	                        <option value="40-54">
-	                            40-54
-	                        </option>
-	                        <option value="55-64">
-	                            55-64
-	                        </option>
-	                        <option value="65 Plus">
-	                            65+
-	                        </option>
-	                    </select>
-	                </div>
-	                <div class="ui-grid-a">
-	                    <div class="ui-block-a">
-	                        <a href="#page1" data-role="button" data-icon="arrow-l">Previous</a>
-	                    </div>
-	                    <div class="ui-block-b">
-	                        <a href="#page3" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
-	                    </div>
-	                </div>
+					<form name="jfPart2" id="jfPart2" action="process.php" method="POST">
+		                <div data-role="fieldcontain">
+		                    <fieldset data-role="controlgroup" data-type="horizontal">
+		                        <legend>
+		                            Gender
+		                        </legend>
+		                        <input name="gender" id="female" value="F" type="radio" class="validate[required]" />
+		                        <label for="female">
+		                            Female
+		                        </label>
+		                        <input name="gender" id="male" value="M" type="radio" class="validate[required]" />
+		                        <label for="male">
+		                            Male
+		                        </label>
+		                    </fieldset>
+		                </div>
+		               	<div data-role="fieldcontain">
+		                    <fieldset data-role="controlgroup" data-type="horizontal">
+		                        <legend>
+		                            Are you a veteran of the United States military?
+		                        </legend>
+		                        <input name="veteran" id="milYes" value="1" type="radio" class="validate[required]" />
+		                        <label for="milYes">
+		                            Yes
+		                        </label>
+		                        <input name="veteran" id="milNo" value="0" type="radio" class="validate[required]" />
+		                        <label for="milNo">
+		                            No
+		                        </label>
+		                    </fieldset>
+		                </div>
+		                <div data-role="fieldcontain">
+		                    <label for="selectmenu1">
+		                        Age Range?
+		                    </label>
+		                    <select name="ageRange" id="ageRange" class="validate[required]">
+		                    	<option value="">
+		                            -- Select Age Range --
+		                        </option>
+		                        <option value="14-17">
+		                            14-17
+		                        </option>
+		                        <option value="18-21">
+		                            18-21
+		                        </option>
+		                        <option value="22-39">
+		                            22-39
+		                        </option>
+		                        <option value="40-54">
+		                            40-54
+		                        </option>
+		                        <option value="55-64">
+		                            55-64
+		                        </option>
+		                        <option value="65 Plus">
+		                            65+
+		                        </option>
+		                    </select>
+		                </div>
+		                <div class="ui-grid-a">
+		                    <div class="ui-block-a">
+		                        <a id="back-to-first" data-role="button" data-icon="arrow-l">Previous</a>
+		                    </div>
+		                    <div class="ui-block-b">
+		                        <a id="second-form" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Continue</a>
+		                    </div>
+		                </div>
+	            	</form>
 				</div>
 			</div>
 
@@ -365,15 +378,41 @@
 				<h4>We are sorry for any inconvenience</h4>
 			</div>
 		</div>
-		<script>
-			var ux = "";
-		</script>
-		<script src="js/validation-engine.js"></script>
+
+		<script src="js/validation-engine-2.5.3-en.js"></script>
+		<script src="js/validation-engine-2.5.3.js"></script>
 
 		<script>
 		    
 			$(document).ready(function(){
-				$("#job-fair-part1").validationEngine();
+
+				$("#jfPart1").validationEngine();
+
+				// First form to the second form
+				$('#first-form').on("click",function(e){
+					
+					/*
+					if( (!$("#jfPart1").validationEngine('validateField', "#fname")) && (!$("#jfPart1").validationEngine('validateField', "#lname")) && (!$("#jfPart1").validationEngine('validateField', "#email"))) {
+						 $.mobile.changePage( $("#page2"), { transition: "slideup"} );
+					}
+					*/
+					$.mobile.changePage( $("#page2"), { transition: "slideup"} );
+					//alert( $("#jfPart1").validationEngine('validateField', "#fname") );
+
+				});
+
+				// Back to the first form
+				$('#back-to-first').on("click",function(e){
+					$.mobile.changePage( $("#page1"), { transition: "slidedown"} );
+				});
+
+				// Second form to the third form
+				$('#second-form').on("click",function(e){
+					
+					if( (!$("#jfPart2").validationEngine('validateField', "#gender")) ) {
+						alert('test');
+					}
+				});
 			});
 
 
