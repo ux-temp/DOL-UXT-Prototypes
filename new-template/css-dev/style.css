@@ -1,9 +1,9 @@
-@import url("ux-global-reset.css");
+@import url("ux-global-reset-form-test.css");
 @import url("ux-grid-system.css");
 @import url("ux-typography.css");
 @import url("ux-header.css");
 @import url("ux-global-application-menu.css");
-@import url("ux-body.css");
+@import url("ux-body-form-test.css");
 @import url("ux-buttons.css");
 @import url("jquery-ui.css");
 @import url("jquery-qtip.css");

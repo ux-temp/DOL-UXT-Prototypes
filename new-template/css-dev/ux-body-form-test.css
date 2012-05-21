@@ -1242,459 +1242,54 @@ h6.ux-expandable-header.ux-expanded {
 	position:absolute
 }
 
-label textarea {
-	margin:0
-}
-
 .ux-form label span,
-.ux-form fieldset.radio-check-list legend,
-.ux-form fieldset.jsf-radio-check-list legend,
-.ux-form fieldset.radio-check-list legend,
-.ux-form fieldset.multi-input legend,
-.ux-form fieldset.ux-single-check-box legend,
-.ux-form fieldset.multi-input legend {
+.ux-form fieldset legend {
 	color:#3D6683;
+	display: block;
 	font-weight:700;
-	padding:2px 5px 2px 0;
 	white-space:normal
 }
 
-.ux-form label {
-	display:block;
-	margin-bottom:5px
-}
-
 .ux-form label span {
-	display:block
+	margin: 0 0 3px 0;
 }
 
 .ux-form label input,
 .ux-form label select,
 .ux-form label textarea {
-	display:block;
-	margin:3px 0 0
+	margin-bottom: 10px;
 }
 
-.ux-form abbr.required {
-	border:none;
-	font-size:inherit
-}
-
-.ie7 .ux-form abbr.required {
-	margin:-10px;
-	top:1px
-}
-
-.ux-form label.ux-date {
-	display:inline-block;
-	width:100%
-}
-
-.ux-form label.ux-date input {
-	display:inline-block;
-	float:left
-}
-
-.ux-form label img.ui-datepicker-trigger {
-	float:left;
-	top:7px
+.ux-form fieldset legend {
+	padding-bottom: 3px;
 }
 
 .ux-form fieldset {
-	background: none;
-	border: none;
-	margin: 0;
-	padding: 0;
+	margin-left: -2px;
 }
 
-/*
-=======================================================================================================
-JSF Form checkbox/radio button lists
-=======================================================================================================
-*/
-.ux-form fieldset.jsf-radio-check-list table,
-.ux-form fieldset.jsf-radio-check-list td,
-.ux-form fieldset.jsf-radio-check-list th {
-	background:none;
-	border:none;
-	width:inherit
+.ux-form fieldset div {
+	margin: 0 0 10px 2px;
 }
 
-.ux-form fieldset.jsf-radio-check-list table {
-	margin-bottom:1px
+.ux-form fieldset label {
+	padding-right: 5px;
 }
 
-.ie7 .ux-form fieldset.jsf-radio-check-list table {
-	margin-bottom:7px;
-	margin-left:-3px;
-	margin:-4px;
-	width:auto
+/* Force radio button/check list to be vitrical */
+
+.ux-form fieldset div.vertical-list span {
+	display: block;
 }
 
-.ux-form fieldset.jsf-radio-check-list td,
-.ux-form fieldset.jsf-radio-check-list th {
-	padding:0
+/* IE 7 Fixes ..... */
+
+.ie7 .ux-form fieldset {
+	margin-left: -8px;
 }
 
-.ie7 .ux-form fieldset.jsf-radio-check-list td,
-.ie7 .ux-form fieldset.jsf-radio-check-list th {
-	margin-left:-5px
-}
-
-.ux-form fieldset.jsf-radio-check-list td label,
-.ux-form fieldset.jsf-radio-check-list th label {
-	float:left;
-	margin-right:10px
-}
-
-.ux-form fieldset.jsf-radio-check-list.option-label-wrap td label,
-.ux-form fieldset.jsf-radio-check-list.option-label-wrap th label {
-	display:block;
-	float:left;
-	margin:-2px 0 3px;
-	width:90%
-}
-
-.ie7 .ux-form fieldset.jsf-radio-check-list td label,
-.ie7 .ux-form fieldset.jsf-radio-check-list th label,
-.ie8 .ux-form fieldset.jsf-radio-check-list td label,
-.ie8 .ux-form fieldset.jsf-radio-check-list th label {
-	margin:3px
-}
-
-.ux-form fieldset.jsf-radio-check-list td input,
-.ux-form fieldset.jsf-radio-check-list th input {
-	float:left;
-	margin-left:1px
-}
-
-.ie7 .ux-form fieldset.jsf-radio-check-list legend {
-	margin-left:-8px
-}
-
-.ie7 .ux-form fieldset.jsf-radio-check-list legend span {
-	display:inline-block
-}
-
-.ie7 .ux-form fieldset.jsf-radio-check-list td,
-.ie7 .ux-form fieldset.jsf-radio-check-list th {
-	padding:0 15px 0 0
-}
-
-/*
-=========================================
- Long Label Support
-=========================================
-*/
-.ie8 .ux-form fieldset.jsf-radio-check-list.option-label-wrap label {
-	margin:3px
-}
-
-/*
-=======================================================================================================
- Normal Checkbox/Radio Button Lists 
-=======================================================================================================
-*/
-.ux-form fieldset.radio-check-list legend {
-	display:block;
-	padding-bottom:3px
-}
-
-.ux-form fieldset.radio-check-list span {
-	display:block;
-	margin-bottom:2px
-}
-
-.ux-form fieldset.radio-check-list span input {
-	float:left;
-	margin-left:0
-}
-
-.ux-form fieldset.radio-check-list span label {
-	display:inline-block
-}
-
-.ie7 .ux-form fieldset.radio-check-list span input {
-	margin:0 3px 0 0
-}
-
-.ie7 .ux-form fieldset.radio-check-list span label {
-	margin:2px 0 0
-}
-
-.ie7 .ux-form fieldset.radio-check-list {
-	margin-bottom:7px;
-	margin:-4px;
-	width:auto
-}
-
-.ie8 .ux-form fieldset.radio-check-list span label {
-	margin:3px 0 0
-}
-
-/*
-=========================================
- Regular Radio / Check list override
-=========================================
-*/
-.ux-form fieldset.radio-check-list div.ux-list-side span {
-	display:inline-block
-}
-
-.ux-form fieldset.radio-check-list div.ux-list-side span label {
-	padding-right:7px
-}
-
-/*
-=========================================
- Long Label Support
-=========================================
-*/
-.ux-form fieldset.radio-check-list.option-label-wrap span label {
-	display:block;
-	width:90%
-}
-
-/*
-=========================================
- Single Check Box Overrides
-=========================================
-*/
-.ux-form fieldset.ux-single-check-box legend {
-	display:block;
-	padding-bottom:3px
-}
-
-.ux-form fieldset.ux-single-check-box span {
-	display:block;
-	margin-bottom:2px
-}
-
-.ux-form fieldset.ux-single-check-box span input {
-	float:left;
-	margin-left:0
-}
-
-.ux-form fieldset.ux-single-check-box span label {
-	display:inline-block
-}
-
-.ie7 .ux-form fieldset.ux-single-check-box legend {
-	margin-left:-8px
-}
-
-.ie7 .ux-form fieldset.ux-single-check-box span input {
-	margin:0 3px 0 0
-}
-
-.ie7 .ux-form fieldset.ux-single-check-box span label {
-	margin:2px 0 0
-}
-
-.ie8 .ux-form fieldset.ux-single-check-box span label {
-	margin:3px 0 0
-}
-
-/*
-=========================================
- Long Label Support
-=========================================
-*/
-.ux-form fieldset.ux-single-check-box span label {
-	margin:-2px;
-	width:90%
-}
-
-.ie7 .ux-form fieldset.ux-single-check-box legend {
-	margin-left:-5px
-}
-
-.ie7 .ux-form fieldset.ux-single-check-box span label {
-	margin:1px
-}
-
-.ie8 .ux-form fieldset.ux-single-check-box span label {
-	margin:2px
-}
-
-/*
-=================================
- Multi-Text Box fields.
-=================================
-*/
-.ux-form fieldset.multi-input {
-	margin-bottom:5px
-}
-
-.ie7 .ux-form fieldset.multi-input legend {
-	margin-left:-7px
-}
-
-.ux-form fieldset.multi-input div {
-	display:block;
-	margin-bottom:5px
-}
-
-.ie7 .ux-form fieldset.multi-input {
-	margin-bottom:7px
-}
-
-.ux-form fieldset.multi-input div label,
-.ux-form fieldset.multi-input div span abbr.required,
-.ux-form fieldset.multi-input div span.support-text,
-.ux-form fieldset.multi-input div span input {
-	display:block;
-	float:left
-}
-
-.ux-form fieldset.multi-input div label {
-	width:inherit
-}
-
-.ux-form fieldset.multi-input div span abbr.required {
-	font-size:inherit
-}
-
-.ux-form fieldset.multi-input div span.support-text {
-	padding:5px 5px 0
-}
-
-.ux-form fieldset.multi-input input.button {
-	margin:3px 0 0 5px
-}
-
-/* Static Fields */
-.ux-form span.ux-static-field {
-	display:block;
-	margin-bottom:5px
-}
-
-.ux-form span.ux-static-label {
-	display:block;
-	font-weight:700
-}
-
-.ux-form span.ux-static-value {
-	font-weight:400
-}
-
-.ie7 .ux-form span.ux-static-field {
-	margin-bottom:7px
-}
-
-/* Static overrides */
-.ux-form label.ux-static-field {
-	display:inline-block;
-	width:100%
-}
-
-/*
-=============================================================================
-=== Static Output
-=============================================================================
-*/
-
-/* Static Output Top */
-.ux-static-output span.ux-static-output {
-	display:inline-block;
-	padding-left:10px;
-	width:100%
-}
-
-.ux-static-output span.ux-static-output span.ux-static-label {
-	float:left;
-	font-weight:700;
-	width:100%
-}
-
-/* Form Selection Component
------------------------ */
-
-div.ux-selection-component{
-	display:block;
-	position:relative;
-	vertical-align:top;
-	width:100%
-}
-.ux-selection-component label{
-	display:block;
-	width:100%
-}
-
-.ux-selection-component-left,
-.ux-selection-component-right,
-.ux-selection-component-middle {
-	display:inline-block
-}
-
-.ux-selection-component-middle {
-	margin:50px
-}
-
-.ux-selection-component-left select,
-.ux-selection-component-right select{
-	width:100%
-}
-
-.ux-selection-component-middle .button-container .button,
-.ux-selection-component-middle .button-container .button_mini,
-.ux-selection-component-middle .button-container .icon-right{
-	display:inline-block;
-	float:none;
-	padding:3px 0px 3px 0px !important
-}
-
-.ux-selection-component-middle .button-container{
-	display:block;
-	margin:5px 0;
-	text-align:center;
-	width:100%
-}
-
-/*ie7 fix disappearing select*/
-.ie7 .container_12 .ux-selection-component .grid_1 select{width:60px}
-.ie7 .container_12 .ux-selection-component .grid_2 select{width:140px}
-.ie7 .container_12 .ux-selection-component .grid_4 select{width:300px}
-.ie7 .container_12 .ux-selection-component .grid_5 select{width:380px}
-.ie7 .container_12 .ux-selection-component .grid_7 select{width:540px}
-.ie7 .container_12 .ux-selection-component .grid_8 select{width:620px}
-.ie7 .container_12 .ux-selection-component .grid_10 select{width:780px}
-.ie7 .container_12 .ux-selection-component .grid_11 select{width:860px}
-.ie7 .container_16 .ux-selection-component .grid_1 select{width:40px}
-.ie7 .container_16 .ux-selection-component .grid_2 select{width:100px}
-.ie7 .container_16 .ux-selection-component .grid_3 select{width:160px}
-.ie7 .container_16 .ux-selection-component .grid_5 select{width:280px}
-.ie7 .container_16 .ux-selection-component .grid_6 select{width:340px}
-.ie7 .container_16 .ux-selection-component .grid_7 select{width:400px}
-.ie7 .container_16 .ux-selection-component .grid_9 select{width:520px}
-.ie7 .container_16 .ux-selection-component .grid_10 select{width:580px}
-.ie7 .container_16 .ux-selection-component .grid_11 select{width:640px}
-.ie7 .container_16 .ux-selection-component .grid_13 select{width:760px}
-.ie7 .container_16 .ux-selection-component .grid_14 select{width:820px}
-.ie7 .container_16 .ux-selection-component .grid_15 select{width:880px}
-.ie7 .container_12 .ux-selection-component .grid_12,
-.ie7 .container_16 .ux-selection-component .grid_16{width:940px}
-
-.dol-container fieldset, .ux-container fieldset {
-	margin-left:10px
-}
-
-.dol-container p fieldset,
-.ux-container p fieldset, 
-.ux-content-wrapper fieldset {
-	margin-left:0
-}
-
-.ux-form div.ux-form-sub-quest {
-	margin:5px 0 15px 25px;
-	padding: 0 0 0 10px;
-}
-
-.ie7 .ux-form div.ux-form-sub-quest,
-.ie7 .ux-form fieldset,
-.ie7 .ux-form fieldset legend span {
-	position:relative;
-	zoom:1
+.ie7 .ux-form fieldset div {
+	margin-left: 5px;
 }
 
 /* Form Enhancements

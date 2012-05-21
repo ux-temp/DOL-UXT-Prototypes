@@ -2346,19 +2346,85 @@
 					            <textarea></textarea>
 					        </label>
 
-					        <fieldset class="radio-check-list">
-					            <legend>Color:</legend>
+							<label for="textArea1">
+					            <span>Dropdown Label</span>
+					            <select>
+					            	<option>-- Select Value --</option>
+					            	<option value="1">Value 1</option>
+					            	<option value="2">Value 2</option>
+					            	<option value="3">Value 3</option>
+					            </select>
+					        </label>
+
+					        <fieldset>
+					            <legend>Color Radios:</legend>
 					            <div>
 					                <span>
-					                    <input type="radio" id="color-radio-blue1" /> 
+					                    <input type="radio" name="color-radio" id="color-radio-blue1" /> 
 					                    <label for="color-radio-blue1">Blue</label>
 					                </span>
 					                <span>
-					                    <input type="radio" id="color-radio-red1" />
+					                    <input type="radio" name="color-radio" id="color-radio-red1" />
 					                    <label for="color-radio-red1">Red</label>
 					                </span>
 					            </div>
 					        </fieldset>
+
+					        <fieldset>
+					            <legend>Color Radios (vertical-list):</legend>
+					            <div class="vertical-list">
+					                <span>
+					                    <input type="radio" name="color-radiovl" id="color-radiovl-blue1" /> 
+					                    <label for="color-radiovl-blue1">Blue</label>
+					                </span>
+					                <span>
+					                    <input type="radio" name="color-radiovl" id="color-radiovl-red1" />
+					                    <label for="color-radiovl-red1">Red</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+					        <fieldset>
+					            <legend>Color Checkbox:</legend>
+					            <div>
+					                <span>
+					                    <input type="checkbox" id="color-checkbox-blue1" /> 
+					                    <label for="color-checkbox-blue1">Blue</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="color-checkbox-red1" />
+					                    <label for="color-checkbox-red1">Red</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+					        <fieldset>
+					            <legend>Color Checkbox (vertical-list):</legend>
+					            <div class="vertical-list">
+					                <span>
+					                    <input type="checkbox" id="color-checkboxvl-blue1" /> 
+					                    <label for="color-checkboxvl-blue1">Blue</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="color-checkboxvl-red1" />
+					                    <label for="color-checkboxvl-red1">Red</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+							<fieldset>
+							    <legend>
+							        Terms of Service Example
+							    </legend>
+							    <div>
+							        <span>
+							            <input type="checkbox" value="y" id="selectBooleanBox2" />
+							            <label id="selectBooleanBox1Labe2" for="selectBooleanBox2" >
+							                This is an example of a check box that contains a large amount of text. This is to simulate the occurance of an application group or static web form that might contain require exccessivly long text in the label of a check box. This most likly will happen on any screens that require a user to accept some form of Terms of Service or as a way to provide an e-signiture.  
+							            </label>
+							        </span>
+							    </div>
+							</fieldset>   
 
 						</form>
 					</div>
