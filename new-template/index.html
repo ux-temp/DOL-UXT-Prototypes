@@ -2459,6 +2459,40 @@
 		<script>
 			$(document).ready(function() {
 
+
+				var keyboardShortcuts = {
+			        legendList: [
+			            {legend:{
+			                id:"page-shortcuts",
+			                title:"Page Shortcuts"
+			            }}
+			        ],
+			        shortcutList: [
+			            {shortcut:{
+			                key_description:"Show page keyboard shortcuts",
+			                key_combo:"shift+/",
+			                key_method: "keydown",
+			                key_scope: document,
+			                key_function: function(){
+			                    $( '#page-shortcuts' ).dialog({ 
+			                        modal: true, 
+			                        height: 95
+			                    });
+			                }
+			            }},
+			            {shortcut:{
+			                key_description:"Says Hello!",
+			                key_combo:"shift+n",
+			                key_method: "keydown",
+			                key_scope: document,
+			                key_function: function(){
+			                    alert('Hello keyboard shortcut user!');
+			                },
+			                key_legend:"page-shortcuts"
+			            }}
+			        ]
+			    }
+
 				ux.load(["dataTables",
 						 "expandableContent",
 						 "popover",
@@ -2471,6 +2505,12 @@
 					    placement: 'right'
 					});
 				});
+
+
+		        ux.load("keyboardShortcuts",function(){
+		            shortcutProcessor(keyboardShortcuts);
+		        });
+
 
 			  	ux.load("notifications", function(){
 					$('.basic-note').click(function(e){

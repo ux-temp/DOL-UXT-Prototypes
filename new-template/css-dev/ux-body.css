@@ -1,3 +1,8 @@
+/* Items that should appear hidden by default */
+
+
+
+
 /* Breadcrumb
 --------------------------------- */
 
@@ -269,12 +274,7 @@ div:hover.dol-container {
 .ux-container .ux-container, 	
 .dol-container .dol-container,
 .ux-container .ux-msg,
-.dol-container .ux-msg {
-	margin:10px
-}
-
-
-/* Content Wrappters */
+.dol-container .ux-msg,
 .ux-content-wrapper,
 .ie7 .dol-container.ux-content-wrapper,
 .ie7 .ux-container.ux-content-wrapper {
@@ -569,19 +569,19 @@ li.ux-jqdt-row-expandable {
 ----------------------- */
 
 .key-value-table td {
-border-right:none
+	border-right:none
 }
 
 .key-value-table th,
 .key-value-table .column-label {
-text-align:right;
-width:25%
+	text-align:right;
+	width:25%
 }
 
 .key-value-table thead th,
 .key-value-table thead .column-label {
-width:auto;
-text-align:left
+	text-align:left;
+	width: auto
 }
 
 .chrome .key-value-table caption .button_header,
@@ -1341,7 +1341,8 @@ h6.ux-expandable-header.ux-expanded {
 	bottom: -20px
 }
 
-.char-limit-text-box.clt-right {
+.char-limit-text-box.clt-right,
+.char-limit-display.cld-right {
 	text-align: right
 }
 
@@ -1356,10 +1357,55 @@ h6.ux-expandable-header.ux-expanded {
 	width: auto
 }
 
-.char-limit-display.cld-right{
-	text-align: right;
-}
-
 .char-display-box {
 	border: 1px solid #000;
+}
+
+/* Keyboard Shortcuts
+----------------------- */
+
+.keyboard-shortcut-legend {
+	display: none;
+	font-size: 12px
+}
+
+.keyboard-shortcut-legend dl {
+	margin: 10px 0 0 0;
+	padding: 0;
+	zoom: 1
+}
+
+.keyboard-shortcut-legend dt {
+	float: left;
+	text-align: right;
+	width: 40%;
+	margin: 0;
+	padding: 0
+}
+
+.keyboard-shortcut-legend dt kbd {
+	border: 1px solid #5a5a5a;
+	background: #ddd;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 0 3px;
+	padding: 2px 4px
+}
+
+.keyboard-shortcut-legend dd {
+	float: left;
+	width: 50%;
+	padding: 3px 0 0 7px
+}
+
+/* Outbound Notification Plugin
+-------------------------------- */
+
+#genericMsg .primary-msg {
+	margin-top: 10px;
+}
+
+.ie7 #genericMsg .primary-msg {
+	margin-top: 15px;
+	width: 180px;
 }
