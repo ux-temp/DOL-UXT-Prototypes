@@ -1160,18 +1160,18 @@ h6.ux-expandable-header.ux-expanded {
 	display:none
 }
 
+.ux-notice p,
 .ux-notice h3 {
 	color:#FFF;
-	margin:0;
 	padding:10px
 }
 
-.ux-notice p {
-	color:#FFF;
-	margin: 10px;
+.ux-notice h3 {
+	margin:0;
 }
 
-.ux-notice p img {
+.ux-notice p img,
+.ux-notice:hover img  {
 	display: block
 }
 
@@ -1187,10 +1187,6 @@ h6.ux-expandable-header.ux-expanded {
 .ux-notice:hover {
 	background:#000;
 	border:1px solid #FFF
-}
-
-.ux-notice:hover img {
-	display:block
 }
 
 #ux-action-notes {
@@ -1364,18 +1360,18 @@ h6.ux-expandable-header.ux-expanded {
 /* Keyboard Shortcuts
 ----------------------- */
 
-.keyboard-shortcut-legend {
+.ksl {
 	display: none;
 	font-size: 12px
 }
 
-.keyboard-shortcut-legend dl {
+.ksl dl {
 	margin: 10px 0 0 0;
 	padding: 0;
 	zoom: 1
 }
 
-.keyboard-shortcut-legend dt {
+.ksl dt {
 	float: left;
 	text-align: right;
 	width: 40%;
@@ -1383,7 +1379,7 @@ h6.ux-expandable-header.ux-expanded {
 	padding: 0
 }
 
-.keyboard-shortcut-legend dt kbd {
+.ksl dt kbd {
 	border: 1px solid #5a5a5a;
 	background: #ddd;
 	border-radius: 3px;
@@ -1392,7 +1388,7 @@ h6.ux-expandable-header.ux-expanded {
 	padding: 2px 4px
 }
 
-.keyboard-shortcut-legend dd {
+.ksl dd {
 	float: left;
 	width: 50%;
 	padding: 3px 0 0 7px
