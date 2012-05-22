@@ -1,0 +1,91 @@
+<mockup version="1.0" skin="sketch" measuredW="1159" measuredH="892" mockupW="600" mockupH="860">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="559" y="32" w="600" h="860" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="560" y="32" w="599" h="60" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="559" y="815" w="599" h="77" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="574" y="842" w="218" h="22" measuredW="218" measuredH="22" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>New%20York%20State%20Department%20of%20Labor</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="__group__" x="1049" y="836" w="95" h="34" measuredW="95" measuredH="34" zOrder="4" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="-1" h="-1" measuredW="95" measuredH="19" zOrder="0" locked="false" isInGroup="6">
+          <controlProperties>
+            <size>10</size>
+            <text>Accessibility%20Policy</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="23" y="15" w="-1" h="-1" measuredW="72" measuredH="19" zOrder="1" locked="false" isInGroup="6">
+          <controlProperties>
+            <size>10</size>
+            <text>Privacy%20Policy</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Title" x="574" y="49" w="-1" h="-1" measuredW="300" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>New%20York%20State%20Department%20of%20Labor</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Title" x="574" y="107" w="-1" h="-1" measuredW="483" measuredH="33" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>User%20Experience%20Template%20v.0.4.5%20Released%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Title" x="574" y="155" w="-1" h="-1" measuredW="209" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Whats%20going%20on%20in%20v.0.4.5</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::VRule" x="857" y="155" w="-1" h="411" measuredW="5" measuredH="100" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::TextArea" x="574" y="182" w="274" h="172" measuredW="200" measuredH="140" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <text>Over%20the%20last%208%20weeks%20the%20UX%20group%20has%20been%20working%20hard%20on%20bring%20some%20key%20features%20into%20the%20UX%20Template.%20Based%20on%20request%20from%20different%20groups%20we%20have%20included%20some%20exciting%20new%20functionality%20such%20as%20Popovers%20and%20DynaTree.%20We%20have%20also%20been%20working%20hard%20on%20the%20documentation%20attempting%20to%20clear%20up%20any%20misconceptions%20and%20issues%20brought%20to%20our%20attention.</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Title" x="874" y="155" w="-1" h="-1" measuredW="148" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>New%20Functionality</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="874" y="182" w="270" h="41" measuredW="422" measuredH="22" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5BjQuery%20DynaTree%5D%20-%20Plugin%20used%20to%20present%20information%20in%20a%20tree%20structure.</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Label" x="874" y="229" w="270" h="59" measuredW="711" measuredH="22" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5BjQuery%20Popovers%5D%20-%20A%20enhanced%20version%20of%20the%20tool%20tips%20plugin%20providing%20additional%20functionality%20such%20as%20seconday%20navigation.</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="874" y="293" w="270" h="41" measuredW="494" measuredH="22" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5BjQuery%20TextExpander%5D%20-%20Provides%20developers%20with%20a%20way%20to%20preform%20inline%20text%20hidding.%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Title" x="874" y="343" w="-1" h="-1" measuredW="167" measuredH="27" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>New%20Documentation</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Label" x="874" y="370" w="259" h="114" measuredW="1227" measuredH="22" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%5BProcess%2C%20Patterns%20%26%20Principles%5D%20-%20A%20new%20section%20to%20the%20user%20experience%20guide%20to%20assist%20developers%20and%20wireframes%20in%20the%20process%20of%20building%20screens%20to%20globally%20accessible%20standards%20and%20and%20recognizable%20patterns.</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Title" x="574" y="354" w="-1" h="-1" measuredW="242" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Whats%20Cooking%20in%20the%20Kitchen</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

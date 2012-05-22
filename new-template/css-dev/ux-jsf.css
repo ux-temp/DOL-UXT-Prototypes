@@ -128,7 +128,7 @@ margin:1px 0 0;
 padding:2px 6px 3px
 }
 
-.ie6 input.pagergoto,.ie7 input.pagergoto {
+.ie7 input.pagergoto {
 margin:-24px 0 0 -10px!important;
 padding:1px 3px 0
 }
@@ -136,10 +136,6 @@ padding:1px 3px 0
 span.pagergoto {
 float:left;
 width:75px
-}
-
-.ie6 span.pagergoto {
-width:80px
 }
 
 .pagergoto input {
@@ -246,33 +242,7 @@ list-style-type:none
 /**
 * Dialog boxes
 */
-/* this chunk of CSS is deprecated by modal-background
-
-
-#HX_DLG_SCRATCH_0, #HX_DLG_SCRATCH_1, #HX_DLG_SCRATCH_2, #HX_DLG_SCRATCH_3, #HX_DLG_SCRATCH_4, #HX_DLG_SCRATCH_5, #HX_DLG_SCRATCH_6, #HX_DLG_SCRATCH_7, #HX_DLG_SCRATCH_8, #HX_DLG_SCRATCH_9 {
-	background-color:#000000 !important;
-	opacity:0.4 !important;
-
-}
-
-.ie6 #HX_DLG_SCRATCH_0, .ie6 #HX_DLG_SCRATCH_1, .ie6 #HX_DLG_SCRATCH_2, .ie6 #HX_DLG_SCRATCH_3, .ie6 #HX_DLG_SCRATCH_4, .ie6 #HX_DLG_SCRATCH_5, .ie6 #HX_DLG_SCRATCH_6, .ie6 #HX_DLG_SCRATCH_7, .ie6 #HX_DLG_SCRATCH_8, .ie6 #HX_DLG_SCRATCH_9, .ie7 #HX_DLG_SCRATCH_0, .ie7 #HX_DLG_SCRATCH_1, .ie7 #HX_DLG_SCRATCH_2, .ie7 #HX_DLG_SCRATCH_3, .ie7 #HX_DLG_SCRATCH_4, .ie7 #HX_DLG_SCRATCH_5, .ie7 #HX_DLG_SCRATCH_6, .ie7 #HX_DLG_SCRATCH_7, .ie7 #HX_DLG_SCRATCH_8, .ie7 #HX_DLG_SCRATCH_9 {
-	filter: alpha(opacity = 40) !important;					// TODO: JS live listener for HX_DLG_SCRATCH_XX and add .dol-modal-background
-}																									// this current solution will only work for up to 10 dialogs per page
-*/
-div.dol-dialog {
-/*
-	background-color: #ffffff;
-	border-color: #abcdef;
-	border-style: solid;
-	border-width: 2px;
-	position: absolute;
-	*/
-/*	border:1px solid #d5d5d5;
-	font-weight: normal;
-	margin-bottom:10px;
-	padding:10px
-	*/
-}
+/* this chunk of CSS is deprecated by modal-background */
 
 .dol-dialog_titlebar {
 background-color:#EFEFEF;
