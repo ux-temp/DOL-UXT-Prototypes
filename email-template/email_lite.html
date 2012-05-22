@@ -110,82 +110,13 @@
 	    		mso-table-rspace:0pt; 
 	    	}
 
-			/* Styling your links has become much simpler with the new Yahoo.  In fact, it falls in line with the main credo of styling in email and make sure to bring your styles inline.  Your link colors will be uniform across clients when brought inline.
-			Bring inline: Yes. */
-			a {
-				color: orange;
-			}
-
-
-			/***************************************************
-			****************************************************
-			MOBILE TARGETING
-			****************************************************
-			***************************************************/
-			@media only screen and (max-device-width: 480px) {
-				/* Part one of controlling phone number linking for mobile. */
-				a[href^="tel"], 
-				a[href^="sms"] {
-					text-decoration: none;
-					color: blue; /* or whatever your want */
-					pointer-events: none;
-					cursor: default;
-				}
-
-				.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
-					text-decoration: default;
-					color: orange !important;
-					pointer-events: auto;
-					cursor: default;
-				}
-
-			}
-
-			/* More Specific Targeting */
-
-			@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-			/* You guessed it, ipad (tablets, smaller screens, etc) */
-				/* repeating for the ipad */
-				a[href^="tel"], a[href^="sms"] {
-					text-decoration: none;
-					color: blue; /* or whatever your want */
-					pointer-events: none;
-					cursor: default;
-				}
-
-				.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
-					text-decoration: default;
-					color: orange !important;
-					pointer-events: auto;
-					cursor: default;
-				}
-			}
-
-			@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-				/* Put your iPhone 4g styles in here */ 
-			}
-
-			/* Android targeting */
-			@media only screen and (-webkit-device-pixel-ratio:.75){
-				/* Put CSS for low density (ldpi) Android layouts in here */
-			}
-
-			@media only screen and (-webkit-device-pixel-ratio:1){
-				/* Put CSS for medium density (mdpi) Android layouts in here */
-			}
-
-			@media only screen and (-webkit-device-pixel-ratio:1.5){
-				/* Put CSS for high density (hdpi) Android layouts in here */
-			}
-			/* end Android targeting */
 
 		</style>
 
 		<!-- Targeting Windows Mobile -->
 		<!--[if IEMobile 7]>
-		<style type="text/css">-->
+		<style type="text/css">
 		
-		<!--[if IEMobile 7]>
 		</style>
 		<![endif]-->   
 
@@ -207,7 +138,7 @@
 			<!-- Header -->
 			<tr>
 				<td valign="middle" style="background:#771C2D;color:#FFF;text-align:center;padding:20px 0;" colspan="3"> 
-					<font style="font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif;font-size:1.5em;">
+					<font style="font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif; font-size:1.5em; line-height:1.5em;">
 						User Experience Email Template v.0.0.1
 					</font>
 				</td>
@@ -223,30 +154,51 @@
 			</tr>
 
 			<!-- Footer -->
-			<tr style="">
-				<td valign="top" class="footer-credits" style="width:25%" width="25%">
-					<ul style="font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif;font-size:12px;padding-left:5px;">
-						<li>Luke Charde</li>
-						<li>Keith Dyer</li>
-						<li>Jeff Herb</li>
-						<li>Paul Pulcher</li>
-					</ul>
+			<tr class="footer-part-1" style="background-color:#003366">
+				<td valign="top" class="footer-credits" style="width:25%" width="12.25%">
+					<p style="color:#FFF; font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif; font-size:14px; font-weight:700; text-align:center;">
+						Developers
+					</p>
+					<p style="text-align:center; font-size:10px;">
+						<a href="mailto:luke.charde@labor.ny.gov" style="color:#FFF;">Luke Charde</a><br>
+						<a href="mailto:keith.dyer@labor.ny.gov" style="color:#FFF;">Keith Dyer</a><br>
+						<a href="mailto:jeffrey.herb@labor.ny.gov" style="color:#FFF;">Jeff Herb</a><br>
+						<a href="mailto:paul.pulcher@labor.ny.gov" style="color:#FFF;">Paul Pulcher</a>
+					</p>
 				</td>
-				<td valign="top" class="footer-qoute" style="width:50%" width="50%" stlye="padding:0 5px;">
-					<span style="display:block;padding:10px;">
-						<font style="font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif;">
-							The UX Guide serves as invaluable development tool to achieve quick, modern, attractive and consistant web developing across DOL.
-						</font>
-					</span>
+				<td valign="top" class="footer-qoute" style="width:50%" width="75%" stlye="padding:0 5px;">
+						<p style="color:#FFF; text-align: center;">
+							<font style="font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif; text-align:center;">
+								The UX Guide serves as invaluable development tool to achieve quick, modern, attractive and consistant web developing across DOL.
+							</font>
+						</p>
+						<p style="color:#FFF; padding: 10px;text-align:right">
+							<font style="font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif; font-size: 10px;">
+								- The UX Team
+							</font>
+						</p>
 				</td>
-				<td valign="top" class="footer-upcoming" style="width:25%" width="25%">
-					<font style="font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif;font-size:12px;">
+				<td valign="top" class="footer-upcoming" style="width:25%" width="12.25%">
+					<p style="color:#FFF; font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif; font-size:14px; font-weight:700; text-align:center;">
 						So what is coming to UX Soon?
-					</font>
-					<ul style="font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif;font-size:12px;">
+					</p>
+					<ul style="color:#FFF; font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif;font-size:12px; text-align:center;">
 						<li style="padding:0px;">Responsive Web Design</li>
 						<li style="padding:0px;">jQuery Mobile enabled web forms</li>
 					</ul>
+				</td>
+			</tr>
+			<tr style="background-color:#062942">
+				<td>
+					<p style="color: #FFF; font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif; font-size:10px; font-weight:700; padding-left: 10px;">
+							New York State Department of Labor
+					</p>
+				</td>
+				<td colspan="2">
+					<p style="color: #FFF; font-family:'Lucida Grande', Tahoma, Arial, Verdana, sans-serif;font-size:10px;text-align:right;padding-right: 10px;">
+						<a href="#" style="color: #FFF;padding-right:5px;">Accessibility Policiy</a>
+						<a href="#" style="color: #FFF;">Privacy Policiy</a>
+					</p>
 				</td>
 			</tr>
 		</table>  
