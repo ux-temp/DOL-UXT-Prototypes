@@ -1242,54 +1242,459 @@ h6.ux-expandable-header.ux-expanded {
 	position:absolute
 }
 
+label textarea {
+	margin:0
+}
+
 .ux-form label span,
-.ux-form fieldset legend {
+.ux-form fieldset.radio-check-list legend,
+.ux-form fieldset.jsf-radio-check-list legend,
+.ux-form fieldset.radio-check-list legend,
+.ux-form fieldset.multi-input legend,
+.ux-form fieldset.ux-single-check-box legend,
+.ux-form fieldset.multi-input legend {
 	color:#3D6683;
-	display: block;
 	font-weight:700;
+	padding:2px 5px 2px 0;
 	white-space:normal
 }
 
+.ux-form label {
+	display:block;
+	margin-bottom:5px
+}
+
 .ux-form label span {
-	margin: 0 0 3px 0;
+	display:block
 }
 
 .ux-form label input,
 .ux-form label select,
 .ux-form label textarea {
-	margin-bottom: 10px;
+	display:block;
+	margin:3px 0 0
 }
 
-.ux-form fieldset legend {
-	padding-bottom: 3px;
+.ux-form abbr.required {
+	border:none;
+	font-size:inherit
+}
+
+.ie7 .ux-form abbr.required {
+	margin:-10px;
+	top:1px
+}
+
+.ux-form label.ux-date {
+	display:inline-block;
+	width:100%
+}
+
+.ux-form label.ux-date input {
+	display:inline-block;
+	float:left
+}
+
+.ux-form label img.ui-datepicker-trigger {
+	float:left;
+	top:7px
 }
 
 .ux-form fieldset {
-	margin-left: -2px;
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
 }
 
-.ux-form fieldset div {
-	margin: 0 0 10px 2px;
+/*
+=======================================================================================================
+JSF Form checkbox/radio button lists
+=======================================================================================================
+*/
+.ux-form fieldset.jsf-radio-check-list table,
+.ux-form fieldset.jsf-radio-check-list td,
+.ux-form fieldset.jsf-radio-check-list th {
+	background:none;
+	border:none;
+	width:inherit
 }
 
-.ux-form fieldset label {
-	padding-right: 5px;
+.ux-form fieldset.jsf-radio-check-list table {
+	margin-bottom:1px
 }
 
-/* Force radio button/check list to be vitrical */
-
-.ux-form fieldset div.vertical-list span {
-	display: block;
+.ie7 .ux-form fieldset.jsf-radio-check-list table {
+	margin-bottom:7px;
+	margin-left:-3px;
+	margin:-4px;
+	width:auto
 }
 
-/* IE 7 Fixes ..... */
-
-.ie7 .ux-form fieldset {
-	margin-left: -8px;
+.ux-form fieldset.jsf-radio-check-list td,
+.ux-form fieldset.jsf-radio-check-list th {
+	padding:0
 }
 
-.ie7 .ux-form fieldset div {
-	margin-left: 5px;
+.ie7 .ux-form fieldset.jsf-radio-check-list td,
+.ie7 .ux-form fieldset.jsf-radio-check-list th {
+	margin-left:-5px
+}
+
+.ux-form fieldset.jsf-radio-check-list td label,
+.ux-form fieldset.jsf-radio-check-list th label {
+	float:left;
+	margin-right:10px
+}
+
+.ux-form fieldset.jsf-radio-check-list.option-label-wrap td label,
+.ux-form fieldset.jsf-radio-check-list.option-label-wrap th label {
+	display:block;
+	float:left;
+	margin:-2px 0 3px;
+	width:90%
+}
+
+.ie7 .ux-form fieldset.jsf-radio-check-list td label,
+.ie7 .ux-form fieldset.jsf-radio-check-list th label,
+.ie8 .ux-form fieldset.jsf-radio-check-list td label,
+.ie8 .ux-form fieldset.jsf-radio-check-list th label {
+	margin:3px
+}
+
+.ux-form fieldset.jsf-radio-check-list td input,
+.ux-form fieldset.jsf-radio-check-list th input {
+	float:left;
+	margin-left:1px
+}
+
+.ie7 .ux-form fieldset.jsf-radio-check-list legend {
+	margin-left:-8px
+}
+
+.ie7 .ux-form fieldset.jsf-radio-check-list legend span {
+	display:inline-block
+}
+
+.ie7 .ux-form fieldset.jsf-radio-check-list td,
+.ie7 .ux-form fieldset.jsf-radio-check-list th {
+	padding:0 15px 0 0
+}
+
+/*
+=========================================
+ Long Label Support
+=========================================
+*/
+.ie8 .ux-form fieldset.jsf-radio-check-list.option-label-wrap label {
+	margin:3px
+}
+
+/*
+=======================================================================================================
+ Normal Checkbox/Radio Button Lists 
+=======================================================================================================
+*/
+.ux-form fieldset.radio-check-list legend {
+	display:block;
+	padding-bottom:3px
+}
+
+.ux-form fieldset.radio-check-list span {
+	display:block;
+	margin-bottom:2px
+}
+
+.ux-form fieldset.radio-check-list span input {
+	float:left;
+	margin-left:0
+}
+
+.ux-form fieldset.radio-check-list span label {
+	display:inline-block
+}
+
+.ie7 .ux-form fieldset.radio-check-list span input {
+	margin:0 3px 0 0
+}
+
+.ie7 .ux-form fieldset.radio-check-list span label {
+	margin:2px 0 0
+}
+
+.ie7 .ux-form fieldset.radio-check-list {
+	margin-bottom:7px;
+	margin:-4px;
+	width:auto
+}
+
+.ie8 .ux-form fieldset.radio-check-list span label {
+	margin:3px 0 0
+}
+
+/*
+=========================================
+ Regular Radio / Check list override
+=========================================
+*/
+.ux-form fieldset.radio-check-list div.ux-list-side span {
+	display:inline-block
+}
+
+.ux-form fieldset.radio-check-list div.ux-list-side span label {
+	padding-right:7px
+}
+
+/*
+=========================================
+ Long Label Support
+=========================================
+*/
+.ux-form fieldset.radio-check-list.option-label-wrap span label {
+	display:block;
+	width:90%
+}
+
+/*
+=========================================
+ Single Check Box Overrides
+=========================================
+*/
+.ux-form fieldset.ux-single-check-box legend {
+	display:block;
+	padding-bottom:3px
+}
+
+.ux-form fieldset.ux-single-check-box span {
+	display:block;
+	margin-bottom:2px
+}
+
+.ux-form fieldset.ux-single-check-box span input {
+	float:left;
+	margin-left:0
+}
+
+.ux-form fieldset.ux-single-check-box span label {
+	display:inline-block
+}
+
+.ie7 .ux-form fieldset.ux-single-check-box legend {
+	margin-left:-8px
+}
+
+.ie7 .ux-form fieldset.ux-single-check-box span input {
+	margin:0 3px 0 0
+}
+
+.ie7 .ux-form fieldset.ux-single-check-box span label {
+	margin:2px 0 0
+}
+
+.ie8 .ux-form fieldset.ux-single-check-box span label {
+	margin:3px 0 0
+}
+
+/*
+=========================================
+ Long Label Support
+=========================================
+*/
+.ux-form fieldset.ux-single-check-box span label {
+	margin:-2px;
+	width:90%
+}
+
+.ie7 .ux-form fieldset.ux-single-check-box legend {
+	margin-left:-5px
+}
+
+.ie7 .ux-form fieldset.ux-single-check-box span label {
+	margin:1px
+}
+
+.ie8 .ux-form fieldset.ux-single-check-box span label {
+	margin:2px
+}
+
+/*
+=================================
+ Multi-Text Box fields.
+=================================
+*/
+.ux-form fieldset.multi-input {
+	margin-bottom:5px
+}
+
+.ie7 .ux-form fieldset.multi-input legend {
+	margin-left:-7px
+}
+
+.ux-form fieldset.multi-input div {
+	display:block;
+	margin-bottom:5px
+}
+
+.ie7 .ux-form fieldset.multi-input {
+	margin-bottom:7px
+}
+
+.ux-form fieldset.multi-input div label,
+.ux-form fieldset.multi-input div span abbr.required,
+.ux-form fieldset.multi-input div span.support-text,
+.ux-form fieldset.multi-input div span input {
+	display:block;
+	float:left
+}
+
+.ux-form fieldset.multi-input div label {
+	width:inherit
+}
+
+.ux-form fieldset.multi-input div span abbr.required {
+	font-size:inherit
+}
+
+.ux-form fieldset.multi-input div span.support-text {
+	padding:5px 5px 0
+}
+
+.ux-form fieldset.multi-input input.button {
+	margin:3px 0 0 5px
+}
+
+/* Static Fields */
+.ux-form span.ux-static-field {
+	display:block;
+	margin-bottom:5px
+}
+
+.ux-form span.ux-static-label {
+	display:block;
+	font-weight:700
+}
+
+.ux-form span.ux-static-value {
+	font-weight:400
+}
+
+.ie7 .ux-form span.ux-static-field {
+	margin-bottom:7px
+}
+
+/* Static overrides */
+.ux-form label.ux-static-field {
+	display:inline-block;
+	width:100%
+}
+
+/*
+=============================================================================
+=== Static Output
+=============================================================================
+*/
+
+/* Static Output Top */
+.ux-static-output span.ux-static-output {
+	display:inline-block;
+	padding-left:10px;
+	width:100%
+}
+
+.ux-static-output span.ux-static-output span.ux-static-label {
+	float:left;
+	font-weight:700;
+	width:100%
+}
+
+/* Form Selection Component
+----------------------- */
+
+div.ux-selection-component{
+	display:block;
+	position:relative;
+	vertical-align:top;
+	width:100%
+}
+.ux-selection-component label{
+	display:block;
+	width:100%
+}
+
+.ux-selection-component-left,
+.ux-selection-component-right,
+.ux-selection-component-middle {
+	display:inline-block
+}
+
+.ux-selection-component-middle {
+	margin:50px
+}
+
+.ux-selection-component-left select,
+.ux-selection-component-right select{
+	width:100%
+}
+
+.ux-selection-component-middle .button-container .button,
+.ux-selection-component-middle .button-container .button_mini,
+.ux-selection-component-middle .button-container .icon-right{
+	display:inline-block;
+	float:none;
+	padding:3px 0px 3px 0px !important
+}
+
+.ux-selection-component-middle .button-container{
+	display:block;
+	margin:5px 0;
+	text-align:center;
+	width:100%
+}
+
+/*ie7 fix disappearing select*/
+.ie7 .container_12 .ux-selection-component .grid_1 select{width:60px}
+.ie7 .container_12 .ux-selection-component .grid_2 select{width:140px}
+.ie7 .container_12 .ux-selection-component .grid_4 select{width:300px}
+.ie7 .container_12 .ux-selection-component .grid_5 select{width:380px}
+.ie7 .container_12 .ux-selection-component .grid_7 select{width:540px}
+.ie7 .container_12 .ux-selection-component .grid_8 select{width:620px}
+.ie7 .container_12 .ux-selection-component .grid_10 select{width:780px}
+.ie7 .container_12 .ux-selection-component .grid_11 select{width:860px}
+.ie7 .container_16 .ux-selection-component .grid_1 select{width:40px}
+.ie7 .container_16 .ux-selection-component .grid_2 select{width:100px}
+.ie7 .container_16 .ux-selection-component .grid_3 select{width:160px}
+.ie7 .container_16 .ux-selection-component .grid_5 select{width:280px}
+.ie7 .container_16 .ux-selection-component .grid_6 select{width:340px}
+.ie7 .container_16 .ux-selection-component .grid_7 select{width:400px}
+.ie7 .container_16 .ux-selection-component .grid_9 select{width:520px}
+.ie7 .container_16 .ux-selection-component .grid_10 select{width:580px}
+.ie7 .container_16 .ux-selection-component .grid_11 select{width:640px}
+.ie7 .container_16 .ux-selection-component .grid_13 select{width:760px}
+.ie7 .container_16 .ux-selection-component .grid_14 select{width:820px}
+.ie7 .container_16 .ux-selection-component .grid_15 select{width:880px}
+.ie7 .container_12 .ux-selection-component .grid_12,
+.ie7 .container_16 .ux-selection-component .grid_16{width:940px}
+
+.dol-container fieldset, .ux-container fieldset {
+	margin-left:10px
+}
+
+.dol-container p fieldset,
+.ux-container p fieldset, 
+.ux-content-wrapper fieldset {
+	margin-left:0
+}
+
+.ux-form div.ux-form-sub-quest {
+	margin:5px 0 15px 25px;
+	padding: 0 0 0 10px;
+}
+
+.ie7 .ux-form div.ux-form-sub-quest,
+.ie7 .ux-form fieldset,
+.ie7 .ux-form fieldset legend span {
+	position:relative;
+	zoom:1
 }
 
 /* Form Enhancements
@@ -1298,6 +1703,7 @@ h6.ux-expandable-header.ux-expanded {
 /* Show/Hide Password 
 ---------------------- */
 .password-wrapper .show-hide-control {
+	float: none;
 	margin-left: 15px
 }
 
@@ -1354,3 +1760,620 @@ h6.ux-expandable-header.ux-expanded {
 .char-display-box {
 	border: 1px solid #000;
 }
+
+/* Full Calendar
+----------------- */
+
+/*
+ * FullCalendar v1.5.2 Stylesheet
+ *
+ * Copyright (c) 2011 Adam Shaw
+ * Dual licensed under the MIT and GPL licenses, located in
+ * MIT-LICENSE.txt and GPL-LICENSE.txt respectively.
+ *
+ * Date: Sun Aug 21 22:06:09 2011 -0700
+ *
+ */
+
+.fc {
+	direction: ltr;
+	text-align: left;
+	}
+	
+.fc table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+	
+html .fc,
+.fc table {
+	font-size: 1em;
+	}
+	
+.fc td,
+.fc th {
+	padding: 0;
+	vertical-align: top;
+	}
+
+/* Header
+------------------------------------------------------------------------*/
+
+.fc-header td {
+	white-space: nowrap;
+	}
+
+.fc-header-left {
+	width: 25%;
+	text-align: left;
+	}
+	
+.fc-header-center {
+	text-align: center;
+	}
+	
+.fc-header-right {
+	width: 25%;
+	text-align: right;
+	}
+	
+.fc-header-title {
+	display: inline-block;
+	vertical-align: top;
+	}
+	
+.fc-header-title h2 {
+	margin-top: 0;
+	white-space: nowrap;
+	}
+	
+.fc .fc-header-space {
+	padding-left: 10px;
+	}
+	
+.fc-header .fc-button {
+	margin-bottom: 1em;
+	vertical-align: top;
+	}
+	
+/* buttons edges butting together */
+
+.fc-header .fc-button {
+	margin-right: -1px;
+	}
+	
+.fc-header .fc-corner-right {
+	margin-right: 1px; /* back to normal */
+	}
+	
+.fc-header .ui-corner-right {
+	margin-right: 0; /* back to normal */
+	}
+	
+/* button layering (for border precedence) */
+	
+.fc-header .fc-state-hover,
+.fc-header .ui-state-hover {
+	z-index: 2;
+	}
+	
+.fc-header .fc-state-down {
+	z-index: 3;
+	}
+
+.fc-header .fc-state-active,
+.fc-header .ui-state-active {
+	z-index: 4;
+	}
+	
+	
+	
+/* Content
+------------------------------------------------------------------------*/
+	
+.fc-content {
+	clear: both;
+}
+	
+.fc-view {
+	width: 100%; /* needed for view switching (when view is absolute) */
+	overflow: hidden;
+}
+	
+	
+
+/* Cell Styles
+------------------------------------------------------------------------*/
+
+.fc-widget-header,    /* <th>, usually */
+.fc-widget-content {  /* <td>, usually */
+	border: 1px solid #ccc;
+	}
+	
+.fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
+	background: #ffc;
+	}
+	
+.fc-cell-overlay { /* semi-transparent rectangle while dragging */
+	background: #9cf;
+	opacity: .2;
+	filter: alpha(opacity=20); /* for IE */
+	}
+	
+
+
+/* Buttons
+------------------------------------------------------------------------*/
+
+.fc-button {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	}
+	
+.fc-state-default { /* non-theme */
+	border-style: solid;
+	border-width: 1px 0;
+	}
+	
+.fc-button-inner {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	}
+	
+.fc-state-default .fc-button-inner { /* non-theme */
+	border-style: solid;
+	border-width: 0 1px;
+	}
+	
+.fc-button-content {
+	position: relative;
+	float: left;
+	height: 1.9em;
+	line-height: 1.9em;
+	padding: 0 .6em;
+	white-space: nowrap;
+	}
+	
+/* icon (for jquery ui) */
+	
+.fc-button-content .fc-icon-wrap {
+	position: relative;
+	float: left;
+	top: 50%;
+	}
+	
+.fc-button-content .ui-icon {
+	position: relative;
+	float: left;
+	margin-top: -50%;
+	*margin-top: 0;
+	*top: -50%;
+	}
+	
+/* gloss effect */
+	
+.fc-state-default .fc-button-effect {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	}
+	
+.fc-state-default .fc-button-effect span {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 500px;
+	height: 100px;
+	border-width: 100px 0 0 1px;
+	border-style: solid;
+	border-color: #fff;
+	background: #444;
+	opacity: .09;
+	filter: alpha(opacity=9);
+	}
+	
+/* button states (determines colors)  */
+	
+.fc-state-default,
+.fc-state-default .fc-button-inner {
+	border-style: solid;
+	border-color: #ccc #bbb #aaa;
+	background: #F3F3F3;
+	color: #000;
+	}
+	
+.fc-state-hover,
+.fc-state-hover .fc-button-inner {
+	border-color: #999;
+	}
+	
+.fc-state-down,
+.fc-state-down .fc-button-inner {
+	border-color: #555;
+	background: #777;
+	}
+	
+.fc-state-active,
+.fc-state-active .fc-button-inner {
+	border-color: #555;
+	background: #777;
+	color: #fff;
+	}
+	
+.fc-state-disabled,
+.fc-state-disabled .fc-button-inner {
+	color: #999;
+	border-color: #ddd;
+	}
+	
+.fc-state-disabled {
+	cursor: default;
+	}
+	
+.fc-state-disabled .fc-button-effect {
+	display: none;
+	}
+	
+	
+
+/* Global Event Styles
+------------------------------------------------------------------------*/
+	 
+.fc-event {
+	border-style: solid;
+	border-width: 0;
+	font-size: .85em;
+	cursor: default;
+	}
+	
+a.fc-event,
+.fc-event-draggable {
+	cursor: pointer;
+	}
+	
+a.fc-event {
+	text-decoration: none;
+	}
+	
+.fc-rtl .fc-event {
+	text-align: right;
+	}
+	
+.fc-event-skin {
+	border-color: #36c;     /* default BORDER color */
+	background-color: #36c; /* default BACKGROUND color */
+	color: #fff;            /* default TEXT color */
+	}
+	
+.fc-event-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-width: 0;
+	overflow: hidden;
+	}
+	
+.fc-event-time,
+.fc-event-title {
+	padding: 0 1px;
+	}
+	
+.fc .ui-resizable-handle { /*** TODO: don't use ui-resizable anymore, change class ***/
+	display: block;
+	position: absolute;
+	z-index: 99999;
+	overflow: hidden; /* hacky spaces (IE6/7) */
+	font-size: 300%;  /* */
+	line-height: 50%; /* */
+	}
+	
+	
+	
+/* Horizontal Events
+------------------------------------------------------------------------*/
+
+.fc-event-hori {
+	border-width: 1px 0;
+	margin-bottom: 1px;
+	}
+	
+/* resizable */
+	
+.fc-event-hori .ui-resizable-e {
+	top: 0           !important; /* importants override pre jquery ui 1.7 styles */
+	right: -3px      !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: e-resize;
+	}
+	
+.fc-event-hori .ui-resizable-w {
+	top: 0           !important;
+	left: -3px       !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: w-resize;
+	}
+	
+.fc-event-hori .ui-resizable-handle {
+	_padding-bottom: 14px; /* IE6 had 0 height */
+	}
+	
+	
+	
+/* Fake Rounded Corners (for buttons and events)
+------------------------------------------------------------*/
+	
+.fc-corner-left {
+	margin-left: 1px;
+	}
+	
+.fc-corner-left .fc-button-inner,
+.fc-corner-left .fc-event-inner {
+	margin-left: -1px;
+	}
+	
+.fc-corner-right {
+	margin-right: 1px;
+	}
+	
+.fc-corner-right .fc-button-inner,
+.fc-corner-right .fc-event-inner {
+	margin-right: -1px;
+	}
+	
+.fc-corner-top {
+	margin-top: 1px;
+	}
+	
+.fc-corner-top .fc-event-inner {
+	margin-top: -1px;
+	}
+	
+.fc-corner-bottom {
+	margin-bottom: 1px;
+	}
+	
+.fc-corner-bottom .fc-event-inner {
+	margin-bottom: -1px;
+	}
+	
+	
+	
+/* Fake Rounded Corners SPECIFICALLY FOR EVENTS
+-----------------------------------------------------------------*/
+	
+.fc-corner-left .fc-event-inner {
+	border-left-width: 1px;
+	}
+	
+.fc-corner-right .fc-event-inner {
+	border-right-width: 1px;
+	}
+	
+.fc-corner-top .fc-event-inner {
+	border-top-width: 1px;
+	}
+	
+.fc-corner-bottom .fc-event-inner {
+	border-bottom-width: 1px;
+	}
+	
+	
+	
+/* Reusable Separate-border Table
+------------------------------------------------------------*/
+
+table.fc-border-separate {
+	border-collapse: separate;
+	}
+	
+.fc-border-separate th,
+.fc-border-separate td {
+	border-width: 1px 0 0 1px;
+	}
+	
+.fc-border-separate th.fc-last,
+.fc-border-separate td.fc-last {
+	border-right-width: 1px;
+	}
+	
+.fc-border-separate tr.fc-last th,
+.fc-border-separate tr.fc-last td {
+	border-bottom-width: 1px;
+	}
+	
+.fc-border-separate tbody tr.fc-first td,
+.fc-border-separate tbody tr.fc-first th {
+	border-top-width: 0;
+	}
+	
+	
+
+/* Month View, Basic Week View, Basic Day View
+------------------------------------------------------------------------*/
+
+.fc-grid th {
+	text-align: center;
+	}
+	
+.fc-grid .fc-day-number {
+	float: right;
+	padding: 0 2px;
+	}
+	
+.fc-grid .fc-other-month .fc-day-number {
+	opacity: 0.3;
+	filter: alpha(opacity=30); /* for IE */
+	/* opacity with small font can sometimes look too faded
+	   might want to set the 'color' property instead
+	   making day-numbers bold also fixes the problem */
+	}
+	
+.fc-grid .fc-day-content {
+	clear: both;
+	padding: 2px 2px 1px; /* distance between events and day edges */
+	}
+	
+/* event styles */
+	
+.fc-grid .fc-event-time {
+	font-weight: bold;
+	}
+	
+/* right-to-left */
+	
+.fc-rtl .fc-grid .fc-day-number {
+	float: left;
+	}
+	
+.fc-rtl .fc-grid .fc-event-time {
+	float: right;
+	}
+	
+	
+
+/* Agenda Week View, Agenda Day View
+------------------------------------------------------------------------*/
+
+.fc-agenda table {
+	border-collapse: separate;
+	}
+	
+.fc-agenda-days th {
+	text-align: center;
+	}
+	
+.fc-agenda .fc-agenda-axis {
+	width: 50px;
+	padding: 0 4px;
+	vertical-align: middle;
+	text-align: right;
+	white-space: nowrap;
+	font-weight: normal;
+	}
+	
+.fc-agenda .fc-day-content {
+	padding: 2px 2px 1px;
+	}
+	
+/* make axis border take precedence */
+	
+.fc-agenda-days .fc-agenda-axis {
+	border-right-width: 1px;
+	}
+	
+.fc-agenda-days .fc-col0 {
+	border-left-width: 0;
+	}
+	
+/* all-day area */
+	
+.fc-agenda-allday th {
+	border-width: 0 1px;
+	}
+	
+.fc-agenda-allday .fc-day-content {
+	min-height: 34px; /* TODO: doesnt work well in quirksmode */
+	_height: 34px;
+	}
+	
+/* divider (between all-day and slots) */
+	
+.fc-agenda-divider-inner {
+	height: 2px;
+	overflow: hidden;
+	}
+	
+.fc-widget-header .fc-agenda-divider-inner {
+	background: #eee;
+	}
+	
+/* slot rows */
+	
+.fc-agenda-slots th {
+	border-width: 1px 1px 0;
+	}
+	
+.fc-agenda-slots td {
+	border-width: 1px 0 0;
+	background: none;
+	}
+	
+.fc-agenda-slots td div {
+	height: 20px;
+	}
+	
+.fc-agenda-slots tr.fc-slot0 th,
+.fc-agenda-slots tr.fc-slot0 td {
+	border-top-width: 0;
+	}
+
+.fc-agenda-slots tr.fc-minor th,
+.fc-agenda-slots tr.fc-minor td {
+	border-top-style: dotted;
+	}
+	
+.fc-agenda-slots tr.fc-minor th.ui-widget-header {
+	*border-top-style: solid; /* doesn't work with background in IE6/7 */
+	}
+	
+/* Vertical Events
+------------------------------------------------------------------------*/
+
+.fc-event-vert {
+	border-width: 0 1px;
+	}
+	
+.fc-event-vert .fc-event-head,
+.fc-event-vert .fc-event-content {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	overflow: hidden;
+	}
+	
+.fc-event-vert .fc-event-time {
+	white-space: nowrap;
+	font-size: 10px;
+	}
+	
+.fc-event-vert .fc-event-bg { /* makes the event lighter w/ a semi-transparent overlay  */
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: .3;
+	filter: alpha(opacity=30);
+	}
+	
+.fc .ui-draggable-dragging .fc-event-bg, /* TODO: something nicer like .fc-opacity */
+.fc-select-helper .fc-event-bg {
+	display: none\9; /* for IE6/7/8. nested opacity filters while dragging don't work */
+	}
+	
+/* resizable */
+	
+.fc-event-vert .ui-resizable-s {
+	bottom: 0        !important; /* importants override pre jquery ui 1.7 styles */
+	width: 100%      !important;
+	height: 8px      !important;
+	overflow: hidden !important;
+	line-height: 8px !important;
+	font-size: 11px  !important;
+	font-family: monospace;
+	text-align: center;
+	cursor: s-resize;
+	}
+	
+.fc-agenda .ui-resizable-resizing { /* TODO: better selector */
+	_overflow: hidden;
+	}
+	
+	

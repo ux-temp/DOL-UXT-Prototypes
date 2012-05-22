@@ -221,24 +221,11 @@ td {
 /* Inputs
 -------------------- */
 
-input,
-select,
-textarea {
+input,select,textarea {
 	font-family:Arial,Helvetica,sans-serif;
 	font-size:12px;
-	margin:0;
-	padding: 3px
-}
-
-textarea {
-	resize: none;
-	width: 92%;
-}
-
-fieldset {
-	border: 0;
-	margin: 0;
-	padding: 0;
+	margin:2px 5px 2px 0;
+	padding:3px 2px
 }
 
 input[type='text'],input[type='password'],input[type='file'],select,textarea {
@@ -261,6 +248,15 @@ input[type="text"]:focus,input[type='password']:focus,.inputfocus,textarea:focus
 	outline:0
 }
 
+textarea {
+	border-color:#A5A5A5;
+	border-style:solid;
+	border-width:1px;
+	margin:1% 1% 1% 2%;
+	padding:5px;
+	resize:none;
+	width:94%
+}
 
 /* psuedo classes
 -------------------- */

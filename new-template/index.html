@@ -2429,6 +2429,21 @@
 						</form>
 					</div>
 
+					<div class="grid_16 alpha omega">
+						<h3>Form Layout (Special Functionality)</h3>
+						<form class="ux-form">
+						    <label for="pass1">
+						        <span>Show/Hide Password Example</span>
+						        <input type="password" id="pass1" class="ux-password-show-hide" />
+						    </label>
+
+						    <label for="charDisplay">
+						        <span>Character Text Display Example</span>
+						        <textarea id="charDisplay"></textarea>
+						    </label>
+						</form>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -2447,8 +2462,15 @@
 				ux.load(["dataTables",
 						 "expandableContent",
 						 "popover",
-						 "jqueryTabs",
-						 "formEnhancements"]);
+						 "jqueryTabs"]);
+
+				ux.load("formEnhancements",function(){
+					$('#charDisplay').characterCounter({
+					    limit: 1000,
+					    position: 'top',
+					    placement: 'right'
+					});
+				});
 
 			  	ux.load("notifications", function(){
 					$('.basic-note').click(function(e){
