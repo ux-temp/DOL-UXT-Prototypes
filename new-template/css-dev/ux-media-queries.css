@@ -209,7 +209,7 @@
 	----------------------------------- */
 
 	.fluid .ux-mobile-only {
-		display: block;
+		display: block !important;
 	}
 
 	.fluid #ux-show-side-nav {

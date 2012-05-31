@@ -158,6 +158,10 @@ header a, header a:link, header a:visited {
 	height: 28px;
 }
 
+.ie7 #global-nav ul li {
+	display: inline;
+}
+
 #global-nav ul li a {
 	color: #4c4c4c;
 	display:block;
@@ -171,10 +175,15 @@ header a, header a:link, header a:visited {
 }
 
 #global-nav ul li a span:after {
-	xbackground: url(../images/drop3.png) no-repeat right 5px transparent;
 	content: "\25BC";
 	font-size: 10px;
 	padding: 0 0 0 3px;
+}
+
+.ie7 #global-nav ul li a span {
+	/* Fall back for IE to display drop down arrows */
+	background: url(../images/drop.png) no-repeat right 5px transparent;
+	padding-right: 10px;
 }
 
 /* Mega menu hover */

@@ -228,7 +228,7 @@
 .ux-preload-wrapper, 
 .ux-preload-wrapper img,
 .ux-mobile-only {
-	display: none;
+	display: none !important;
 	speak: none
 }
 
