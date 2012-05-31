@@ -45,32 +45,32 @@
 	margin-top: 10px;
 }
 
-#ux-side-nav nav {
+#ux-side-nav {
 	border:#ececec 2px solid;
 	border-bottom:none;
 	line-height:1.2
 }
 
 
-#ux-side-nav nav ul,
-#ux-side-nav nav ul li {
+#ux-side-nav ul,
+#ux-side-nav ul li {
 	list-style:none;
 	margin:0;
 	padding:0
 }
 
-#ux-side-nav nav ul li {
+#ux-side-nav ul li {
 	border-bottom:1px solid #E5E5E5;
 	display:block;
 	overflow: hidden;
 	width: 100%
 }
 
-.ie7 #ux-side-nav nav ul li {
+.ie7 #ux-side-nav ul li {
 	margin-left: -16px;
 }
 
-#ux-side-nav nav ul li a {
+#ux-side-nav ul li a {
 	background:#EFEFEF;
 	color:#3d6683;
 	display:block;
@@ -81,25 +81,25 @@
 	text-shadow:0 1px 0 #FFF
 }
 
-#ux-side-nav nav ul li a:hover {
+#ux-side-nav ul li a:hover {
 	background-color:#E3E3E3
 }
 
-#ux-side-nav nav ul li a.selected {
+#ux-side-nav ul li a.selected {
 	background: url(../images/background-navigation2.gif) no-repeat 0 center #FFF;
 }
 
 /*Level 2*/
-#ux-side-nav nav ul li ul {
+#ux-side-nav ul li ul {
 	background:#FFF;
 	margin:0
 }
 
-#ux-side-nav nav ul li ul li {
+#ux-side-nav ul li ul li {
 	border-bottom:none;
 }
 
-#ux-side-nav nav ul li ul li a {
+#ux-side-nav ul li ul li a {
 	background:#F7F7F7;
 	border-bottom:1px solid #E5E5E5;
 	display:block;
@@ -108,26 +108,26 @@
 	padding:6px 8px 6px 20px
 }
 
-#ux-side-nav nav ul li ul li a:hover {
+#ux-side-nav ul li ul li a:hover {
 	background-color:#E3E3E3
 }
 
-#ux-side-nav nav ul li ul li a.selected {
+#ux-side-nav ul li ul li a.selected {
 	background-position: 0 6px;
 	color:#52595D;
 	text-decoration:none;
 }
 
 /*Level 3*/
-#ux-side-nav nav ul li ul li ul li {
+#ux-side-nav ul li ul li ul li {
 	border-bottom:1px solid #F0F0F0
 }
 
-#ux-side-nav nav ul li ul li ul li.last-child {
+#ux-side-nav ul li ul li ul li.last-child {
 	border-bottom:none
 }
 
-#ux-side-nav nav ul li ul li ul li a {
+#ux-side-nav ul li ul li ul li a {
 	background:#FFF url(../images/background-navigation-third.png) repeat-x top;
 	border:none;
 	color:#878787;
@@ -136,27 +136,27 @@
 	padding:6px 8px 6px 20px
 }
 
-#ux-side-nav nav ul li ul li ul li a:hover {
+#ux-side-nav ul li ul li ul li a:hover {
 	background-color:#E3E3E3;
 	background-image:none
 }
 
-#ux-side-nav nav ul li ul li ul li a.selected {
+#ux-side-nav ul li ul li ul li a.selected {
 	background:#FFF url(../images/background-navigation-third-active.png) no-repeat top left;
 	color:#3D6683!important;
 	text-decoration:none;
 }
 
 /*Expandable*/
-#ux-side-nav nav a.contracted,
-#ux-side-nav nav a.contracted:hover {
+#ux-side-nav a.contracted,
+#ux-side-nav a.contracted:hover {
 	background-image:url(../images/background-navigation-expandable-right2.gif);
 	background-position: right center;
 	background-repeat:no-repeat
 }
 
-#ux-side-nav nav a.expanded,
-#ux-side-nav nav a.expanded:hover {
+#ux-side-nav a.expanded,
+#ux-side-nav a.expanded:hover {
 	background-image:url(../images/background-navigation-expandable-down2.gif);
 	background-position: right 10px;
 	background-repeat:no-repeat;
@@ -164,11 +164,11 @@
 }
 
 a.expandable,
-.js  #ux-side-nav nav a.expandable + ul {
+.js  #ux-side-nav a.expandable + ul {
 	display:none
 }
 
-.js nav a.expandable.expanded + ul {
+.js #ux-side-nav a.expandable.expanded + ul {
 	display:block
 }
 

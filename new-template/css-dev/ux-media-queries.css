@@ -174,7 +174,8 @@
 
 	.fluid #global-nav ul {
 		float: none;
-		list-style: disc;
+		list-style-type: none;
+		height: auto;
 		text-align: center;
 	}
 
@@ -188,14 +189,6 @@
 		font-size: 14px;
 	}	
 
-	.fluid #global-nav ul li:after {
-		content: "\2022";
-	}	
-
-	.fluid #global-nav ul li:last-child:after {
-		content: none;
-	}
-
 	.fluid #global-nav ul li a span {
 		background: none;
 		padding: 0 0 0 5px;
@@ -207,23 +200,10 @@
 		display: none;
 	}
 
-	.fluid #ux-body h2 {
-		margin-top: 5px;
-	}
-
-	.fluid #page-wrap {
-		position: relative;
-	}
-
 	.fluid #ux-side-nav {
-		position: absolute;
-		bottom: 0;
+		display: none;
+		margin-bottom: 15px;
 	}
-
-	.fluid #ux-contents {
-		position: absolute;
-	}
-
 
 	/* Mobile Only Content
 	----------------------------------- */
@@ -232,10 +212,25 @@
 		display: block;
 	}
 
+	.fluid #ux-show-side-nav {
+		float: none;
+		text-align: center;
+		margin: 20px 2.5%;
+		width: 95%;
+	}
+
 }
 
 @media handheld, only screen and (min-width: 600px) {
 	
+	.fluid .ux-mobile-only {
+		display: none;
+	}
+
+	.fluid #ux-side-nav {
+		display: block !important;
+	}
+
 	.fluid #page-wrap, .fluid .ux-content {
 		width: 600px !important;
 	}
@@ -245,12 +240,13 @@
 	}
 
 	.fluid #global-nav ul {
-		margin: 3px 0 0 8px;
+		margin-top: -3px;
 	}
 
-	body.fluid {
-		xbackground: red;
+	.fluid #global-nav ul li a {
+		padding: 5px 5px 0;
 	}
+
 }
 
 @media screen and (min-width: 768px) {
@@ -265,9 +261,10 @@
 		margin-top: 15px;
 	}
 
-	body.fluid {
-		xbackground: black;
+	.fluid #global-nav ul li a {
+		padding: 5px 10px 0;
 	}
+
 }
 
 @media screen and (min-width: 960px) {
@@ -282,12 +279,9 @@
 	}
 
 	.fluid #global-nav ul {
-		margin: 7px 0 0 8px;
+		margin-top: 0;
 	}
 
-	body.fluid {
-		xbackground: orange;
-	}
 }
 
 
@@ -302,7 +296,4 @@
 		margin: 10px 0 0 20px;
 	}
 
-	body.fluid {
-		xbackground: blue;
-	}
 }

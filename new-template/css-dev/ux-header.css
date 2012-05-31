@@ -148,25 +148,39 @@ header a, header a:link, header a:visited {
 
 #global-nav ul {
 	float: left;
+	height: 28px;
 	list-style: none;
-	margin: 7px 0 0 10px;
+	margin: 0 0 0 10px;
 }
 
 #global-nav ul li {
-	display: inline;
+	display: inline-block;
+	height: 28px;
 }
 
 #global-nav ul li a {
 	color: #4c4c4c;
+	display:block;
 	font-size: 12px;
 	font-weight: bold;
-	padding-right: 7px;
-	text-shadow: 1px 1px 2px #FFF;
+	height: 100%;
+	padding: 5px 10px 0;
+	overflow: hidden;
+	text-align: center;
+	text-shadow: 0 1px 0 #FFF;
 }
 
-#global-nav ul li a span {
-	background: url(../images/drop3.png) no-repeat right 5px transparent;
-	padding: 0 15px;
+#global-nav ul li a span:after {
+	xbackground: url(../images/drop3.png) no-repeat right 5px transparent;
+	content: "\25BC";
+	font-size: 10px;
+	padding: 0 0 0 3px;
+}
+
+/* Mega menu hover */
+
+#global-nav ul li:hover {
+	background: #FFF;
 }
 
 /* Tiny Header Goes Here
