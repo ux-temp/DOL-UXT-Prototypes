@@ -41,7 +41,8 @@
 /* Side Navigation
 -------------------- */
 #ux-side-nav {
-	overflow:hidden
+	overflow:hidden;
+	margin-top: 10px;
 }
 
 #ux-side-nav nav {
@@ -85,7 +86,7 @@
 }
 
 #ux-side-nav nav ul li a.selected {
-	background: url(../images/background-navigation.gif) no-repeat 0 center #FFF;
+	background: url(../images/background-navigation2.gif) no-repeat 0 center #FFF;
 }
 
 /*Level 2*/
@@ -149,27 +150,17 @@
 /*Expandable*/
 #ux-side-nav nav a.contracted,
 #ux-side-nav nav a.contracted:hover {
-	background-image:url(../images/background-navigation-expandable-right.gif);
-	background-position:200px center;
+	background-image:url(../images/background-navigation-expandable-right2.gif);
+	background-position: right center;
 	background-repeat:no-repeat
 }
 
-#ux-side-nav nav ul li ul li a.contracted,
-#ux-side-nav nav ul li ul li a.contracted:hover {
-	background-position:200px 6px
-}
-
 #ux-side-nav nav a.expanded,
 #ux-side-nav nav a.expanded:hover {
-	background-image:url(../images/background-navigation-expandable-down.gif);
-	background-position:178px 10px;
+	background-image:url(../images/background-navigation-expandable-down2.gif);
+	background-position: right 10px;
 	background-repeat:no-repeat;
 	margin:0
-}
-
-#ux-side-nav nav a.expanded,
-#ux-side-nav nav a.expanded:hover {
-	background-position:194px 9px
 }
 
 a.expandable,
@@ -211,11 +202,6 @@ a.expandable,
 .dol-container ul ul, .dol-container ul ul ul {
 	margin-bottom: 0;
 }
-
-div:hover.ux-container,
-div:hover.dol-container { 
-	background-color: #FBFBFB; 
-} 
 
 .ux-container h3, .ux-container h4, .ux-container h5, .ux-container h6,
 .dol-container h3, .dol-container h4, .dol-container h5, .dol-container h6 {
@@ -745,7 +731,8 @@ li.ux-jQDT-row-expandable a img {
 	zoom:1
 }
 
-.ie7 #modal-background,.ie7 .modal-background {
+.ie7 #modal-background,
+.ie7 .modal-background {
 	position:fixed
 }
 

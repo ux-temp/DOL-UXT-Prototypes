@@ -136,8 +136,13 @@ header a, header a:link, header a:visited {
 /* Global Navigation
 ----------------------- */
 
-#global-nav, #global-nav .ux-content {
-	background: #3C3C3C;;
+#global-nav {
+	border-bottom: 1px solid #CCC;
+}
+
+#global-nav, 
+#global-nav .ux-content {
+	background: #e9e9e9;;
 	height: 28px;
 }
 
@@ -152,14 +157,16 @@ header a, header a:link, header a:visited {
 }
 
 #global-nav ul li a {
-	color: #FFF;
+	color: #4c4c4c;
 	font-size: 12px;
+	font-weight: bold;
 	padding-right: 7px;
+	text-shadow: 1px 1px 2px #FFF;
 }
 
 #global-nav ul li a span {
-	background: url(../images/icons/arrow-down.png) no-repeat right 7px transparent;
-	padding-right: 10px;
+	background: url(../images/drop3.png) no-repeat right 5px transparent;
+	padding: 0 15px;
 }
 
 /* Tiny Header Goes Here

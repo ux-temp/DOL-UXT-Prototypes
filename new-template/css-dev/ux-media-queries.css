@@ -169,6 +169,7 @@
 	.fluid #global-nav,
 	.fluid #global-nav .ux-content {
 		background: none;
+		border: none;
 	}
 
 	.fluid #global-nav ul {
@@ -197,7 +198,7 @@
 
 	.fluid #global-nav ul li a span {
 		background: none;
-		padding: 0;
+		padding: 0 0 0 5px;
 	}
 
 	/* Page Body Overrides
@@ -208,6 +209,19 @@
 
 	.fluid #ux-body h2 {
 		margin-top: 5px;
+	}
+
+	.fluid #page-wrap {
+		position: relative;
+	}
+
+	.fluid #ux-side-nav {
+		position: absolute;
+		bottom: 0;
+	}
+
+	.fluid #ux-contents {
+		position: absolute;
 	}
 
 
@@ -231,11 +245,11 @@
 	}
 
 	.fluid #global-nav ul {
-		margin: 1px 0 0 8px;
+		margin: 3px 0 0 8px;
 	}
 
 	body.fluid {
-		background: red;
+		xbackground: red;
 	}
 }
 
@@ -251,12 +265,8 @@
 		margin-top: 15px;
 	}
 
-	.fluid #global-nav ul {
-		margin: 7px 0 0 8px;
-	}
-
 	body.fluid {
-		background: black;
+		xbackground: black;
 	}
 }
 
@@ -271,8 +281,12 @@
 		margin: 10px 0 0 20px;
 	}
 
+	.fluid #global-nav ul {
+		margin: 7px 0 0 8px;
+	}
+
 	body.fluid {
-		background: orange;
+		xbackground: orange;
 	}
 }
 
@@ -288,11 +302,7 @@
 		margin: 10px 0 0 20px;
 	}
 
-	.fluid #global-nav ul {
-		margin: 7px 0 0 12px;
-	}
-
 	body.fluid {
-		background: blue;
+		xbackground: blue;
 	}
 }
