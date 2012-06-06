@@ -14,8 +14,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" href="//www.labor.ny.gov/css/apps/v.0.4.5/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="theme/css/oftloginInbox.css" >
-<link rel="stylesheet" type="text/css" href="https://www.labor.ny.gov/css/apps/v.0.4.5/css/joyride-1.0.3.css">
-
+<link rel="stylesheet" href="//www.labor.ny.gov/css/apps/css/jquery.joyride.css" >
 
 <style>
 
@@ -579,16 +578,14 @@
 	<script defer src="http://www.labor.ny.gov/css/apps/ux-data/live-menu.js"></script>
 	<script defer src="http://www.labor.ny.gov/css/apps/v.0.4.2/js/mega-menu.min.js"></script>
 
-	<script src="https://www.labor.ny.gov/css/apps/v.0.4.5/js/jquery.joyride-1.0.3.js"></script>
+	<script src="https://www.labor.ny.gov/css/apps/js/jquery.joyride.js"></script>
 
 	<script type="text/javascript">
 		// Will not run on IE7 and down!
 		$(window).load(function() {
-			if (Modernizr.borderradius) {
-				$(this).joyride({
-					'cookieMonster': true
-				});
-			}
+			$(this).joyride({
+				'cookieMonster': true
+			});
 		});
 	</script>
 
