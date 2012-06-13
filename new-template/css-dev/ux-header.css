@@ -136,30 +136,60 @@ header a, header a:link, header a:visited {
 /* Global Navigation
 ----------------------- */
 
-#global-nav, #global-nav .ux-content {
-	background: #3C3C3C;;
+#global-nav {
+	border-bottom: 1px solid #CCC;
+}
+
+#global-nav, 
+#global-nav .ux-content {
+	background: #e9e9e9;;
 	height: 28px;
 }
 
 #global-nav ul {
 	float: left;
+	height: 28px;
 	list-style: none;
-	margin: 7px 0 0 10px;
+	margin: 0 0 0 10px;
 }
 
 #global-nav ul li {
+	display: inline-block;
+	height: 28px;
+}
+
+.ie7 #global-nav ul li {
 	display: inline;
 }
 
 #global-nav ul li a {
-	color: #FFF;
+	color: #4c4c4c;
+	display:block;
 	font-size: 12px;
-	padding-right: 7px;
+	font-weight: bold;
+	height: 100%;
+	padding: 5px 10px 0;
+	overflow: hidden;
+	text-align: center;
+	text-shadow: 0 1px 0 #FFF;
 }
 
-#global-nav ul li a span {
-	background: url(../images/icons/arrow-down.png) no-repeat right 7px transparent;
+#global-nav ul li a span:after {
+	content: "\25BC";
+	font-size: 10px;
+	padding: 0 0 0 3px;
+}
+
+.ie7 #global-nav ul li a span {
+	/* Fall back for IE to display drop down arrows */
+	background: url(../images/drop.png) no-repeat right 5px transparent;
 	padding-right: 10px;
+}
+
+/* Mega menu hover */
+
+#global-nav ul li:hover {
+	background: #FFF;
 }
 
 /* Tiny Header Goes Here

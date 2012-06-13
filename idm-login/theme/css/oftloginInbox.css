@@ -1,0 +1,96 @@
+.loginboxcontent {
+	line-height: 1.2em;
+	display:block;
+	width: 100%;
+	font-family: Hevetica, Arial, sans-serif;
+}
+
+.loginboxcontent .dol-container h3 {
+	height: 48px;
+	text-align: left;
+	background: #003463 10px 5px no-repeat url("../images/ny_map.png");
+	position: relative;
+	
+	color: #ffffff;
+	text-shadow: 1px 2px 1px black;
+		
+}
+.loginboxcontent .dol-container h3 span.title {
+	position: absolute;
+	left: 80px;
+	top: 15px;	
+	
+	
+	font-family:"Times New Roman", Times, serif;
+	font-size: 25px;
+	font-weight: 500;
+	
+}
+.loginboxcontent .dol-container h3 span.subtitle {
+	position: absolute;
+	left: 80px;
+	top: 32px;
+	font-size: 14px;
+}
+
+
+.loginboxcontent label {
+	display: block;
+	padding: 0;
+}
+.loginboxcontent .labeltext {
+	font-weight:bold;
+	color: #3D6683;
+}
+
+.loginboxcontent p {
+	margin: 0;
+}
+.loginbox {
+	padding: 5px 5px 5px 5px;
+}
+.loginbox label input {
+	width:182px;
+	margin-left: 0;
+	margin-right: 0;
+}
+.loginbox .signinButtonDiv {
+	margin-top:12px;
+}
+.loginbox .signinButtonDiv input {
+	width: 100%;
+}
+.loginbox .forgot {
+	font-size: 11px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+
+#create-account-div {
+	display:block;
+	width: 185px;
+	margin: 10px 10px;
+	padding:0;
+}
+#account-pre-text {
+	margin: 0 10px;
+	font-size: 11px;
+	text-align: center;
+}
+
+.signinButton, #create-account-button {
+	display:block;
+	width:100%;
+	margin: 0 !important;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+	float: none;
+}
+
+#create-account-div .call-sub-text{
+	display:block;
+	width: 100%;
+}
+

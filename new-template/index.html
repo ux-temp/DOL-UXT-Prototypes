@@ -127,19 +127,19 @@
 				<div class="ux-content">
 					<ul>
 						<li>
-							<a href="#"><span>Option 1</span></a>
+							<a href="#">Home</a>
 						</li>
 						<li>
-							<a href="#"><span>Option 2</span></a>
+							<a href="#"><span>Individuals</span></a>
 						</li>
 						<li>
-							<a href="#"><span>Option 3</span></a>
+							<a href="#"><span>Businesses</span></a>
 						</li>
 						<li>
-							<a href="#"><span>Option 4</span></a>
+							<a href="#"><span>Government &amp; Research</span></a>
 						</li>
 						<li>
-							<a href="#"><span>Option 5</span></a>
+							<a href="#"><span>Other Information</span></a>
 						</li>
 					</ul>
 				</div>
@@ -162,6 +162,19 @@
 							</li>
 						</ul>
 					</div>
+
+					<noscript>
+						<div class="grid_16">
+							<p class=" ux-msg warning margin-bottom-none">
+								<strong>
+									JavaScript is currently disabled in your web browser. 
+								</strong> 
+								<br />For full functionality of this site, it is necessary to enable JavaScript. 
+								Here are <a href="http://www.enable-javascript.com/" target="_blank">
+		 						instructions how to enable JavaScript</a>.
+							<p>
+						</div>	
+					</noscript>
 
 					<h2>Welcome to the New User Experience Template</h2>
 
@@ -2333,6 +2346,117 @@
 
 					</div>
 
+					<div class="grid_16 alpha omega">
+						<h3>Form Layout (Top ONLY)</h3>
+						<form class="ux-form"> 
+							<label for="HTMLinput1">
+					            <span>Text Box Label</span>
+					            <input type="text" id="HTMLinput1" />
+					        </label>
+
+							<label for="textArea1">
+					            <span>Text Area Label</span>
+					            <textarea></textarea>
+					        </label>
+
+							<label for="textArea1">
+					            <span>Dropdown Label</span>
+					            <select>
+					            	<option>-- Select Value --</option>
+					            	<option value="1">Value 1</option>
+					            	<option value="2">Value 2</option>
+					            	<option value="3">Value 3</option>
+					            </select>
+					        </label>
+
+					        <fieldset>
+					            <legend>Color Radios:</legend>
+					            <div>
+					                <span>
+					                    <input type="radio" name="color-radio" id="color-radio-blue1" /> 
+					                    <label for="color-radio-blue1">Blue</label>
+					                </span>
+					                <span>
+					                    <input type="radio" name="color-radio" id="color-radio-red1" />
+					                    <label for="color-radio-red1">Red</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+					        <fieldset>
+					            <legend>Color Radios (vertical-list):</legend>
+					            <div class="vertical-list">
+					                <span>
+					                    <input type="radio" name="color-radiovl" id="color-radiovl-blue1" /> 
+					                    <label for="color-radiovl-blue1">Blue</label>
+					                </span>
+					                <span>
+					                    <input type="radio" name="color-radiovl" id="color-radiovl-red1" />
+					                    <label for="color-radiovl-red1">Red</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+					        <fieldset>
+					            <legend>Color Checkbox:</legend>
+					            <div>
+					                <span>
+					                    <input type="checkbox" id="color-checkbox-blue1" /> 
+					                    <label for="color-checkbox-blue1">Blue</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="color-checkbox-red1" />
+					                    <label for="color-checkbox-red1">Red</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+					        <fieldset>
+					            <legend>Color Checkbox (vertical-list):</legend>
+					            <div class="vertical-list">
+					                <span>
+					                    <input type="checkbox" id="color-checkboxvl-blue1" /> 
+					                    <label for="color-checkboxvl-blue1">Blue</label>
+					                </span>
+					                <span>
+					                    <input type="checkbox" id="color-checkboxvl-red1" />
+					                    <label for="color-checkboxvl-red1">Red</label>
+					                </span>
+					            </div>
+					        </fieldset>
+
+							<fieldset>
+							    <legend>
+							        Terms of Service Example
+							    </legend>
+							    <div>
+							        <span>
+							            <input type="checkbox" value="y" id="selectBooleanBox2" />
+							            <label id="selectBooleanBox1Labe2" for="selectBooleanBox2" >
+							                This is an example of a check box that contains a large amount of text. This is to simulate the occurance of an application group or static web form that might contain require exccessivly long text in the label of a check box. This most likly will happen on any screens that require a user to accept some form of Terms of Service or as a way to provide an e-signiture.  
+							            </label>
+							        </span>
+							    </div>
+							</fieldset>   
+
+						</form>
+					</div>
+
+					<div class="grid_16 alpha omega">
+						<h3>Form Layout (Special Functionality)</h3>
+						<form class="ux-form">
+						    <label for="pass1">
+						        <span>Show/Hide Password Example</span>
+						        <input type="password" id="pass1" class="ux-password-show-hide" />
+						    </label>
+
+						    <label for="charDisplay">
+						        <span>Character Text Display Example</span>
+						        <textarea id="charDisplay"></textarea>
+						    </label>
+						</form>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -2347,9 +2471,59 @@
 
 		<script>
 			$(document).ready(function() {
-				//$('.ux-popover').popover();
 
-				ux.load(["dataTables","expandableContent","popover","jqueryTabs"]);
+
+				var keyboardShortcuts = {
+			        legendList: [
+			            {legend:{
+			                id:"page-shortcuts",
+			                title:"Page Shortcuts"
+			            }}
+			        ],
+			        shortcutList: [
+			            {shortcut:{
+			                key_description:"Show page keyboard shortcuts",
+			                key_combo:"shift+/",
+			                key_method: "keydown",
+			                key_scope: document,
+			                key_function: function(){
+			                    $( '#page-shortcuts' ).dialog({ 
+			                        modal: true, 
+			                        height: 95
+			                    });
+			                }
+			            }},
+			            {shortcut:{
+			                key_description:"Says Hello!",
+			                key_combo:"shift+n",
+			                key_method: "keydown",
+			                key_scope: document,
+			                key_function: function(){
+			                    alert('Hello keyboard shortcut user!');
+			                },
+			                key_legend:"page-shortcuts"
+			            }}
+			        ]
+			    }
+
+				ux.load(["dataTables",
+						 "expandableContent",
+						 "popover",
+						 "jqueryTabs"]);
+
+				ux.load("formEnhancements",function(){
+					$('#charDisplay').characterCounter({
+					    limit: 1000,
+					    position: 'top',
+					    placement: 'right'
+					});
+				});
+
+
+		        ux.load("keyboardShortcuts",function(){
+		            shortcutProcessor(keyboardShortcuts);
+		        });
+
 
 			  	ux.load("notifications", function(){
 					$('.basic-note').click(function(e){

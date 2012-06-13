@@ -1,0 +1,2379 @@
+/* Breadcrumb
+--------------------------------- */
+
+#ux-breadcrumbs {
+	color:#888;
+	font-size:9px;
+	line-height:1.2;
+	margin: 3px 0 7px 0;
+	padding:0;
+	vertical-align:top
+}
+
+#ux-breadcrumbs ul {
+	margin-bottom: 10px;
+}
+
+#ux-breadcrumbs li {
+	color:#696969;
+	float:left;
+	list-style:none;
+	padding:0
+}
+
+#ux-breadcrumbs li a {
+	background:url(../images/breadcrumb-icon.gif) no-repeat scroll right 2px transparent;
+	color:#696969;
+	margin-right:3px;
+	padding-right:8px
+}
+
+#ux-breadcrumbs li a:hover {
+	color:#6491B0;
+	text-decoration:underline
+}
+
+/* Side Navigation
+-------------------- */
+#ux-side-nav {
+	overflow:hidden
+}
+
+#ux-side-nav nav {
+	border:#ececec 2px solid;
+	border-bottom:none;
+	line-height:1.2
+}
+
+
+#ux-side-nav nav ul,
+#ux-side-nav nav ul li {
+	list-style:none;
+	margin:0;
+	padding:0
+}
+
+#ux-side-nav nav ul li {
+	border-bottom:1px solid #E5E5E5;
+	display:block;
+	overflow: hidden;
+	width: 100%
+}
+
+.ie7 #ux-side-nav nav ul li {
+	margin-left: -16px;
+}
+
+#ux-side-nav nav ul li a {
+	background:#EFEFEF;
+	color:#3d6683;
+	display:block;
+	font-size:13px;
+	font-weight:700;
+	padding:5px 16px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #FFF
+}
+
+#ux-side-nav nav ul li a:hover {
+	background-color:#E3E3E3
+}
+
+#ux-side-nav nav ul li a.selected {
+	background: url(../images/background-navigation.gif) no-repeat 0 center #FFF;
+}
+
+/*Level 2*/
+#ux-side-nav nav ul li ul {
+	background:#FFF;
+	margin:0
+}
+
+#ux-side-nav nav ul li ul li {
+	border-bottom:none;
+}
+
+#ux-side-nav nav ul li ul li a {
+	background:#F7F7F7;
+	border-bottom:1px solid #E5E5E5;
+	display:block;
+	font-size:13px;
+	font-weight:400;
+	padding:6px 8px 6px 20px
+}
+
+#ux-side-nav nav ul li ul li a:hover {
+	background-color:#E3E3E3
+}
+
+#ux-side-nav nav ul li ul li a.selected {
+	background-position: 0 6px;
+	color:#52595D;
+	text-decoration:none;
+}
+
+/*Level 3*/
+#ux-side-nav nav ul li ul li ul li {
+	border-bottom:1px solid #F0F0F0
+}
+
+#ux-side-nav nav ul li ul li ul li.last-child {
+	border-bottom:none
+}
+
+#ux-side-nav nav ul li ul li ul li a {
+	background:#FFF url(../images/background-navigation-third.png) repeat-x top;
+	border:none;
+	color:#878787;
+	font-size:11px;
+	font-weight:400;
+	padding:6px 8px 6px 20px
+}
+
+#ux-side-nav nav ul li ul li ul li a:hover {
+	background-color:#E3E3E3;
+	background-image:none
+}
+
+#ux-side-nav nav ul li ul li ul li a.selected {
+	background:#FFF url(../images/background-navigation-third-active.png) no-repeat top left;
+	color:#3D6683!important;
+	text-decoration:none;
+}
+
+/*Expandable*/
+#ux-side-nav nav a.contracted,
+#ux-side-nav nav a.contracted:hover {
+	background-image:url(../images/background-navigation-expandable-right.gif);
+	background-position:200px center;
+	background-repeat:no-repeat
+}
+
+#ux-side-nav nav ul li ul li a.contracted,
+#ux-side-nav nav ul li ul li a.contracted:hover {
+	background-position:200px 6px
+}
+
+#ux-side-nav nav a.expanded,
+#ux-side-nav nav a.expanded:hover {
+	background-image:url(../images/background-navigation-expandable-down.gif);
+	background-position:178px 10px;
+	background-repeat:no-repeat;
+	margin:0
+}
+
+#ux-side-nav nav a.expanded,
+#ux-side-nav nav a.expanded:hover {
+	background-position:194px 9px
+}
+
+a.expandable,
+.js  #ux-side-nav nav a.expandable + ul {
+	display:none
+}
+
+.js nav a.expandable.expanded + ul {
+	display:block
+}
+
+/* DOL Container
+--------------------------------- */
+
+/****************************
+
+	DEPRICATEDING dol-container for ux-container
+
+	Remove in template v.0.8.0 | v.1.0
+
+****************************/
+
+.ux-container,
+.dol-container { 
+	background-color: #FFF;
+	border:1px solid #d5d5d5; 
+	border-radius: 3px;
+	font-weight: normal; 
+	margin-bottom:10px;
+	min-height: 1px; /* IE7 Collapse margin-bottom fix */
+}
+
+.ux-container ul, .ux-container p, .ux-container ol, 
+.dol-container ul, .dol-container p, .dol-container ol { 
+	margin: 0 10px 10px 10px; 
+} 
+
+.ux-container ul ul, .ux-container ul ul ul,
+.dol-container ul ul, .dol-container ul ul ul {
+	margin-bottom: 0;
+}
+
+div:hover.ux-container,
+div:hover.dol-container { 
+	background-color: #FBFBFB; 
+} 
+
+.ux-container h3, .ux-container h4, .ux-container h5, .ux-container h6,
+.dol-container h3, .dol-container h4, .dol-container h5, .dol-container h6 {
+	background-color:#EFEFEF;
+	line-height: 1.1;
+	margin-top: 0px;  
+	padding: 5px; 
+	text-align: center; 
+}
+
+.ux-container .button_header, 
+.dol-container .button_header { 
+	float: right; 
+	position: relative; 
+	right: -4px; 
+	top: 2px; 
+}
+
+.ux-container .ux-header-plain,
+.dol-container .ux-header-plain {
+	background:none;
+	margin-left:5px;
+	text-align:left
+}
+
+.ux-container ul.link-list,
+.dol-container ul.link-list {
+	color:#F33;
+	font-weight:700;
+	padding:6px 2px 4px 4px
+}
+
+.ux-container li.link,
+.dol-container li.link {
+	background:url(../images/icons/arrow_right.png) no-repeat 0 .1em transparent;
+	list-style-type:none;
+	padding:.2em .2em .2em 1.6em
+}
+
+.ux-container li.link-list.disabled,
+.dol-container li.link.disabled {
+	background: url(../images/icons/arrow_right_disabled.png);
+}
+
+.ux-container li.link.disabled a,
+.dol-container li.link.disabled a {
+	color:#c4c4c4
+}
+
+.ux-container .data-table, .ux-container .key-value-table,
+.dol-container .data-table,.dol-container .key-value-table {
+	margin: 15px auto;
+	width:96%
+}
+
+.ux-container .ux-container, 	
+.dol-container .dol-container,
+.ux-container .ux-msg,
+.dol-container .ux-msg {
+	margin:10px
+}
+
+
+/* Content Wrappters */
+.ux-content-wrapper,
+.ie7 .dol-container.ux-content-wrapper,
+.ie7 .ux-container.ux-content-wrapper {
+	margin:10px
+}
+
+.ie7 .ux-content-wrapper {
+	margin:0;
+	padding:10px
+}
+
+.ux-content-wrapper .ux-container,
+.ux-content-wrapper .dol-container {
+	margin:0
+}
+
+
+/* Messages
+--------------------------------- */
+
+.ux-msg {
+	box-shadow:0 0 2px rgba(0,0,0,0.10)
+}
+
+.ux-msg,.ux-inline-msg {
+	background:#E5ECF9 url(../images/icons/information.png) no-repeat 8px 7px;
+	border:#AAC6E8 1px solid;
+	border-radius:4px;
+	color:#0055B5;
+	margin:10px 0;
+	padding:6px 6px 6px 30px
+}
+
+.ux-msg a {
+	color:#0055B5
+}
+
+.ux-msg ul {
+	list-style:none;
+	margin:0 0 -5px;
+	padding:0 0 0 5px
+}
+
+.ux-msg ul li {
+	font-weight:700;
+	margin:0 0 4px
+}
+
+.ux-msg.error {
+	background-color:#F9E5E6;
+	background-image: url(../images/icons/exclamation.png);
+	border-color:#E8AAAD;
+	color:#B50007
+}
+
+.ux-msg.error a {
+	color:#B50007
+}
+
+.ux-msg.success {
+	background-color:#E9F9E5;
+	background-image:url(../images/icons/tick.png);
+	border-color:#B4E8AA;
+	color:#1C8400
+}
+
+.ux-msg.success a {
+	color:#1C8400
+}
+
+.ux-msg.system {
+	background-color:#FCF3DE;
+	background-image:url(../images/icons/wrench.png) ;
+	border-color:#E5C47B;
+	color:#A5874A
+}
+
+.ux-msg.system a {
+	color:#A5874A
+}
+
+.ux-msg.warning,.ux-inline-msg.mandatory {
+	background-color:#F9F9E5;
+	background-image:url(../images/icons/warning.png);
+	border-color:#E8E3AA;
+	color:#828400
+}
+
+.ux-msg.warning a {
+	color:#828400
+}
+
+.ux-msg.access,.ux-inline-msg.optional {
+	background-color:#F0F0F0;
+	background-image:url(../images/icons/accessibility.png);
+	border-color:#B4B4B4;
+	color:#3C3C3C
+}
+
+.ux-msg.access a {
+	color:#3C3C3C
+}
+
+.ux-inline-msg {
+	background-image:none!important;
+	display:inline-block;
+	font-size:10px;
+	margin:0 6px;
+	padding:0 5px
+}
+
+.ux-msg a:hover {
+	color:#5683A2
+}
+
+.ux-weak {
+	background:none repeat scroll 0 0 #F6F6F6;
+	border:1px solid #CCC;
+	border-radius:3px;
+	color:#4c4c4c;
+	font-size:10px;
+	margin-bottom:15px;
+	padding:5px 7px
+}
+
+table .ux-weak {
+	border:none;
+	display:block;
+	font-weight:400;
+	margin:0;
+	padding:0;
+	text-align:left
+}
+
+.ux-strong {
+	background:none repeat scroll 0 0 #EFEFEF;
+	border:2px solid #CCC;
+	border-radius:3px;
+	font-weight:700;
+	margin-bottom:15px;
+	padding:8px 12px
+}
+
+.ux-container .ux-weak,
+.dol-container .ux-weak,
+.ux-container .ux-strong,
+.dol-container .ux-strong {
+	margin-top:10px
+}
+
+/* Form inline message */
+.ux-msg.ux-msg-inline {
+	background-position: 3px 3px;
+	display: inline-block;
+	margin: 2px 0;
+	padding: 2px 6px 1px 24px;
+}
+
+legend .ux-msg.ux-msg-inline {
+	display: block;
+}
+
+/* Tables
+------------------- */
+
+table {
+	margin-bottom: 10px;
+	width:100%
+}
+
+table thead th, table caption {
+	text-shadow: 0 1px 0 #FFF;
+	text-transform: capitalize
+}
+
+table, th, td, caption {
+	border:1px solid #D5D5D5
+}
+
+
+table tr {
+	background-color:#FFF
+}
+
+table th,.column-label,.column-input {
+	color: #656565;
+	padding: 4px 7px;
+	vertical-align: top
+}
+
+table th,.column-label, table caption {
+	background-color:#EFEFEF;
+	font-weight:700;
+	text-align:left
+}
+
+table caption {
+	color:#3D6683;
+	font-size:14px;
+	line-height:1.1;
+	padding:5px;
+	text-align:center;
+}
+
+table th {
+	padding:4px
+}
+
+table td {
+	overflow: hidden;
+	padding: 3px 6px;
+	vertical-align: middle
+}
+
+/* Data Tables / Key Value
+----------------------------- */
+
+.data-table,
+.key-value-table {
+	table-layout: fixed;
+	word-wrap: break-word
+}
+
+.data-table tr.table-row-even, .dataTables_wrapper tr.even {
+	background-color:#F7F7F7
+}
+
+.data-table tr:hover,
+.dataTables_wrapper tr:hover {
+	background-color: #FFFFE5
+}
+
+/*on-hover image on table rows. Just a subtle difference to make the current row noticeable*/
+.data-table thead th,
+.data-table thead .column-label {
+	width:auto
+}
+
+.data-table td.numeric {
+	text-align:right
+}
+
+.data-table caption .button_header,
+.key-value-table caption .button_header {
+	float:right;
+	margin-left:-1000px;
+	position:relative;
+	right:-4px
+}
+
+.data-table tfoot,
+.ie7 .data-table tfoot tr:first-child td {
+	border-top:solid 2px #D5D5D5!important
+}
+
+/* jqDataTable Specific */
+.datatables_wrapper thead th {
+	background-color:#EFEFEF
+}
+
+.sortheaderspan {
+	cursor:pointer
+}
+
+/* override */
+.ie7 .data-table caption .button_header,
+.ie7 .key-value-table caption .button_header {
+	margin-left:0
+}
+
+/* jqDataTables */
+.ux-jqdt-row-expandable img {
+	left:-4px;
+	margin:0;
+	position:relative;
+	top:3px
+}
+
+.ux-jqdt-row-expandable .ux-jqdt-row-expand-trigger {
+	text-decoration:none
+}
+
+li.ux-jqdt-row-expandable {
+	list-style:none
+}
+
+.js .ux-jqdt-row-expandable .ux-jqdt-row-expand-content {
+	display:none
+}
+
+/* Key Value Table
+----------------------- */
+
+.key-value-table td {
+border-right:none
+}
+
+.key-value-table th,
+.key-value-table .column-label {
+text-align:right;
+width:25%
+}
+
+.key-value-table thead th,
+.key-value-table thead .column-label {
+width:auto;
+text-align:left
+}
+
+.chrome .key-value-table caption .button_header,
+.safari .key-value-table caption .button_header {
+	top:-2px
+}
+
+
+/* Data Tables (jQ)
+----------------------- */
+.dataTables_length, 
+.dataTables_filter,
+.dataTables_info, 
+.dataTables_paginate {
+	float: left;
+	display: inline-block;
+	margin: 3px 0;
+	text-align: left;
+	width: 45%
+}
+
+.dataTables_length {
+	padding-left: 5px;
+}
+
+.dataTables_filter {
+	float: right;
+	text-align: right;
+}
+
+.dataTables_info, .dataTables_paginate {
+	padding: 3px 0 0 10px;
+}
+
+.datatables_length {
+	float:left;
+	left:10px;
+	position:relative;
+	top:2px
+}
+
+.dataTables_paginate {
+	float: right;
+	text-align: right;
+}
+
+.datatables_paginate .ui-buttonset .ui-button {
+	padding:2px 5px!important
+}
+
+
+.DataTables_sort_wrapper img {
+	margin:0;
+}
+
+.DataTables_sort_wrapper .DataTables_sort_icon {
+	display:inline;
+}
+
+.DataTables_sort_wrapper {
+	position:relative;
+}
+
+.DataTables_sort_wrapper .ui-icon {
+	position:absolute;
+	right:-6px;
+	top:0;
+}
+
+.dataTables_wrapper table {
+	margin-bottom:0
+}
+
+div.dataTables_wrapper {
+	margin-bottom:10px
+}
+
+
+li.ux-jQDT-row-expandable {
+	list-style: none;
+}
+
+li.ux-jQDT-row-expandable a {
+	text-decoration: none;
+}
+
+li.ux-jQDT-row-expandable a img {
+    margin: 0 0 -3px;
+    padding-right: 5px;
+}
+
+
+/* A-Z Index
+------------------------- */
+.ux-a-z-index {
+	display:block;
+	text-align:center
+}
+
+.ux-a-z-index a {
+	background:#EFEFEF;
+	border:1px solid #D2D2D2;
+	border-radius:3px;
+	color:#3D6683;
+	display:inline-block;
+	font-size:14px;
+	font-weight:700;
+	margin-bottom: 3px;
+	padding-top:2px;
+	text-decoration:none;
+	width:20px
+}
+
+.ux-a-z-index a.selected {
+	background:#3D6683;
+	color:#FFF
+}
+
+.ux-a-z-item-container {
+	display:none;
+	padding:15px 25px
+}
+
+.no-js .ux-a-z-item-container,
+.ux-a-z-item-container.selected {
+	display:block;
+}
+
+.ux-a-z-item-container .ux-weak {
+	margin:25px auto;
+	width:300px
+}
+
+.ux-a-z-item-container ul {
+	list-style:none;
+	padding-left:0
+}
+
+.ux-a-z-index a:hover {
+	background:#D2D2D2;
+	border:1px solid #B4B4B4;
+	box-shadow:0 0 1px #A5A5A5;
+}
+
+/* jQueryless Modal
+--------------------- */
+
+#modal-background,.modal-background {
+	background-color:#000;
+	filter:alpha(opacity=50);
+	height:100%;
+	left:0;
+	margin:0;
+	min-height:100%;
+	opacity:0.6;
+	position:absolute;
+	text-align:center;
+	top:0;
+	width:100%;
+	z-index:600;
+	zoom:1
+}
+
+.ie7 #modal-background,.ie7 .modal-background {
+	position:fixed
+}
+
+#modal-div {
+	background-color:#FFF;
+	border-radius:6px;
+	position:absolute;
+	text-align:center;
+	width:200px;
+	z-index:650
+}
+
+#loading-div {
+	margin:40px 10px
+}
+
+#loading-div p {
+	font-weight:700;
+	margin:20px 0
+}
+
+#new-mediaspace {
+	left:30px;
+	position:relative;
+	top:30px
+}
+
+#close-button {
+	cursor:pointer;
+	position:absolute;
+	z-index:35
+}
+
+
+/* Credit Card Styling
+------------------------ */
+.ux-credit-cards {
+	padding: 0;
+}
+
+.ux-credit-cards li {
+	background: url(../images/icons/icon-master-sprite.gif) no-repeat #FFF;
+	height: 32px;
+	float: left;
+	list-style: none;
+	text-indent: -9999px;
+	margin: 0 5px 0 0;
+	width: 32px
+}
+
+.ux-credit-cards li.master-card {
+	background-position: 0 0
+}
+
+.ux-credit-cards li.master-card-disabled {
+	background-position: 0 -32px
+}
+
+.ux-credit-cards li.visa {
+	background-position: -32px 0
+}
+
+.ux-credit-cards li.visa-disabled {
+	background-position: -32px -32px
+}
+
+.ux-credit-cards li.american-express {
+	background-position: -64px 0
+}
+
+.ux-credit-cards li.american-express-disabled {
+	background-position: -64px -32px
+}
+
+.ux-credit-cards li.discover {
+	background-position: -96px 0
+}
+
+.ux-credit-cards li.discover-disabled {
+	background-position: -96px -32px
+}
+
+.ux-credit-cards li.pay-pal {
+	background-position: -128px 0
+}
+
+.ux-credit-cards li.pay-pal-disabled {
+	background-position: -128px -32px
+}
+
+
+/* Fake Tabs
+-------------- */
+
+.ux-fake-tabs {
+	margin: 0 0 5px 0;
+	min-height: 0;
+	border-bottom: 1px solid #999;
+	display: block
+}
+
+.ux-fake-tabs:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.ux-fake-tabs li {
+	background: #FFF;
+	border: 1px solid #E1E1E1;
+	border-bottom: none;
+	border-radius: 4px 4px 0 0;
+	float: left;
+	list-style: none;
+	margin: 0 0.2em 0 0;
+	position: relative
+}
+
+.ux-fake-tabs li.selected {
+	border-color: #999 #999 #FFF #999;
+	padding: 0.5em 1em;
+	top: 1px
+}
+
+.ux-fake-tabs li a {
+	background: #FBFBFB;
+	display: block;
+	padding: 0.5em 1em
+}
+
+.ux-fake-tabs li:hover {
+	border-color: #B4B4B4;
+}
+
+.ux-fake-tabs li a:hover {
+	background: #E1E1E1;
+}
+
+/* Link icons
+--------------- */
+
+.icon-link-span, .icon-link {
+	display:inline;
+	text-decoration:none
+}
+
+.icon-link {
+	display:inline-block;
+}
+
+.icon-link-text {
+	text-decoration:underline
+}
+
+.ie7 .icon-link-span {
+	width:auto
+}
+
+.icon-link-span-icons {
+	margin:0 3px -2px 0;
+	padding-left:3px;
+	text-align:right;
+	text-decoration:none
+}
+
+#ux-footer .icon-link-span-icons {
+	margin-top:-2px;
+	padding-top:0
+}
+
+/* Flex Grid
+--------------- */
+
+.ux-flex-grid .ux-flex-grid-25,
+.ux-flex-grid .ux-flex-grid-50,
+.ux-flex-grid .ux-flex-grid-75,
+.ux-flex-grid .ux-flex-grid-100 {
+	clear:right;
+	float:left
+}
+
+.ux-flex-grid-25 {
+	width:25%
+}
+
+.ux-flex-grid-50 {
+	width:50%
+}
+
+.ux-flex-grid-75 {
+	width:75%
+}
+
+.ux-flex-grid-100 {
+	width:100%
+}
+
+.ux-flex-grid-row {
+	clear:both
+}
+
+/* overwriting styles that overwrites flex grid within form fieldsets */
+.ie7 div.ux-flex-grid-25,
+.ie7 div.ux-flex-grid-50,
+.ie7 div.ux-flex-grid-75,
+.ie7 div.ux-flex-grid-100 {
+	bottom: auto;
+	float: left;
+	left: auto;
+	position: static;
+	right: auto;
+	top:auto
+}
+
+
+/* Content Expandables
+----------------------- */
+
+.dol-container .ux-content-expandable ul,
+.ux-container .ux-content-expandable ul,
+.dol-container .ux-content-expandable ol,
+.ux-container .ux-content-expandable ol,
+.dol-container .ux-content-expandable p,
+.ux-container .ux-content-expandable p {
+	margin-left:0
+}
+
+.ux-expandable {
+	list-style-type: none
+}
+
+.ux-content-expandable {
+	list-style: none;
+	margin:0;
+	padding:0
+}
+
+.dol-container .ux-content-expandable,
+.ux-container .ux-content-expandable {
+	margin-left:3px
+}
+
+.ux-content-expandable ul,
+.ux-content-expandable ol,
+.ux-content-expandable dl {
+	margin-left:18px
+}
+
+.ux-content-expandable ul li ul,
+.ux-content-expandable ol li ul,
+.ux-content-expandable dl li ul,
+.ux-content-expandable ol li ul,
+.ux-content-expandable ol li ol,
+.ux-content-expandable ol li dl,
+.ux-content-expandable dl li ul,
+.ux-content-expandable dl li ol,
+.ux-content-expandable dl li dl,
+.ux-content-expandable ul li dl {
+	margin-left:0
+}
+
+.ux-expandable ul li,
+.ux-expandable ol li,
+.ux-expandable dl li {
+	margin-left:-7px
+}
+
+li.ux-expandable div {
+	margin-left:18px
+}
+
+.ux-a-expandable {
+	margin-left:-18px;
+	padding-left:18px
+}
+
+.ux-a-expandable h3,
+.ux-a-expandable h4,
+.ux-a-expandable h5,
+.ux-a-expandable h6 {
+	margin-bottom:0
+}
+
+.ux-a-expandable h3 {
+	margin-top:-5px
+}
+
+.ux-a-expandable h4 {
+	margin-top:-3px
+}
+
+.ux-a-expandable h5 {
+	margin-top:-2px
+}
+
+.ux-a-expandable h6 {
+	margin-top:-1px
+}
+
+/* Over rides */
+.ie7 .ux-a-expandable {
+	margin-left:-19px;
+	padding-left:18px
+}
+
+.ux-arrow-open {
+	background:url(../images/icons/expandable-ux-arrows-gray-close.gif) no-repeat left 0 transparent
+}
+
+.ux-arrow-close {
+	background:url(../images/icons/expandable-ux-arrows-gray-open.gif) no-repeat left 0 transparent
+}
+
+.js .ux-expandable > div {
+	display:none
+}
+
+.js .ux-a-expandable.ux-expanded > div {
+	display:block
+}
+
+/* Container Expandables
+------------------------- */
+
+.ux-container-expandable-icon {
+	background:url(../images/icons/wrench.png) no-repeat scroll 0 3px #EFEFEF;
+	display:block
+}
+
+.ux-container-expandable h3,
+.ux-container-expandable h4,
+.ux-container-expandable h5,
+.ux-container-expandable h6 {
+	margin:0;
+	text-align:left;
+	padding-left:30px
+}
+
+a.ux-expandable-click {
+	text-decoration:none
+}
+
+h3.ux-expandable-header,
+h4.ux-expandable-header,
+h5.ux-expandable-header,
+h6.ux-expandable-header {
+	background:url(../images/icons/expandable-ux-arrows-gray-close.gif) no-repeat scroll 0 0 #EFEFEF
+}
+
+a.ux-expandable-click h3.ux-expandable-header,
+a.ux-expandable-click h3.ux-expandable-header.ux-expanded {
+	background-position:6px 5px
+}
+
+a.ux-expandable-click h4.ux-expandable-header,
+a.ux-expandable-click h4.ux-expandable-header.ux-expanded {
+	background-position:6px 4px
+}
+
+a.ux-expandable-click h5.ux-expandable-header,
+a.ux-expandable-click h5.ux-expandable-header.ux-expanded,
+a.ux-expandable-click h6.ux-expandable-header,
+a.ux-expandable-click h6.ux-expandable-header.ux-expanded {
+	background-position:6px 2px
+}
+
+h3.ux-expandable-header.ux-expanded,
+h4.ux-expandable-header.ux-expanded,
+h5.ux-expandable-header.ux-expanded,
+h6.ux-expandable-header.ux-expanded {
+	background:url(../images/icons/expandable-ux-arrows-gray-open.gif) no-repeat scroll 0 0 #EFEFEF
+}
+
+.ux-container-expandable div {
+	margin-top:10px
+}
+
+.ux-container-expandable div div {
+	margin-top:0
+}
+
+.js .ux-container-expandable.ux-closed > div {
+	display:none
+}
+
+
+/* Notifications
+------------------ */
+
+#ux-note-container {
+	border:none;
+	position:fixed;
+	right:0;
+	top:0;
+	width:220px;
+	z-index:550
+}
+
+.ux-notice {
+	background:url(../images/transparent-png/transpBlack75.png) repeat scroll 0 0 transparent;
+	border-radius:10px;
+	border:1px solid transparent;
+	box-shadow:3px 3px 4px rgba(0,0,0,.5);
+	margin-top:10px;
+	position: relative;
+	width:100%
+}
+
+.ux-notice img {
+	display:none
+}
+
+.ux-notice h3 {
+	color:#FFF;
+	margin:0;
+	padding:10px
+}
+
+.ux-notice p {
+	color:#FFF;
+	margin: 10px;
+}
+
+.ux-notice p img {
+	display: block
+}
+
+.ux-notice .ux-notice-close {
+	position:absolute;
+	top: 10px;
+	right: 10px;
+	margin:0;
+	padding:0;
+	z-index:10;
+}
+
+.ux-notice:hover {
+	background:#000;
+	border:1px solid #FFF
+}
+
+.ux-notice:hover img {
+	display:block
+}
+
+#ux-action-notes {
+	background:url(../images/transparent-png/transpBlack50.png) repeat scroll 0 0 transparent;
+	border-radius:0 0 10px 10px;
+	border:none;
+	box-shadow:3px 3px 4px rgba(0,0,0,.5);
+	display:none;
+	position:relative;
+	top:-15px
+}
+
+.arn-tray {
+	padding:15px 10px 10px
+}
+
+/* Tweeks to line up the Google Translate drop down and contents. */
+.goog-te-gadget {
+	margin-left:13px
+}
+
+.goog-te-gadget-icon {
+	margin:0
+}
+
+.goog-te-gadget p {
+	font-size:10px;
+	padding-left:0
+}
+
+.goog-te-gadget p a {
+	color:#FFF
+}
+
+.goog-te-menu-value span {
+	font-size:11px
+}
+
+.translated-ltr #ux-notification-container {
+	top:40px
+}
+
+/* Form Layout
+--------------- */
+
+.ie7 .input[hidden] {
+	display:none;
+	margin:0;
+	position:absolute
+}
+
+label textarea {
+	margin:0
+}
+
+.ux-form label span,
+.ux-form fieldset.radio-check-list legend,
+.ux-form fieldset.jsf-radio-check-list legend,
+.ux-form fieldset.radio-check-list legend,
+.ux-form fieldset.multi-input legend,
+.ux-form fieldset.ux-single-check-box legend,
+.ux-form fieldset.multi-input legend {
+	color:#3D6683;
+	font-weight:700;
+	padding:2px 5px 2px 0;
+	white-space:normal
+}
+
+.ux-form label {
+	display:block;
+	margin-bottom:5px
+}
+
+.ux-form label span {
+	display:block
+}
+
+.ux-form label input,
+.ux-form label select,
+.ux-form label textarea {
+	display:block;
+	margin:3px 0 0
+}
+
+.ux-form abbr.required {
+	border:none;
+	font-size:inherit
+}
+
+.ie7 .ux-form abbr.required {
+	margin:-10px;
+	top:1px
+}
+
+.ux-form label.ux-date {
+	display:inline-block;
+	width:100%
+}
+
+.ux-form label.ux-date input {
+	display:inline-block;
+	float:left
+}
+
+.ux-form label img.ui-datepicker-trigger {
+	float:left;
+	top:7px
+}
+
+.ux-form fieldset {
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+=======================================================================================================
+JSF Form checkbox/radio button lists
+=======================================================================================================
+*/
+.ux-form fieldset.jsf-radio-check-list table,
+.ux-form fieldset.jsf-radio-check-list td,
+.ux-form fieldset.jsf-radio-check-list th {
+	background:none;
+	border:none;
+	width:inherit
+}
+
+.ux-form fieldset.jsf-radio-check-list table {
+	margin-bottom:1px
+}
+
+.ie7 .ux-form fieldset.jsf-radio-check-list table {
+	margin-bottom:7px;
+	margin-left:-3px;
+	margin:-4px;
+	width:auto
+}
+
+.ux-form fieldset.jsf-radio-check-list td,
+.ux-form fieldset.jsf-radio-check-list th {
+	padding:0
+}
+
+.ie7 .ux-form fieldset.jsf-radio-check-list td,
+.ie7 .ux-form fieldset.jsf-radio-check-list th {
+	margin-left:-5px
+}
+
+.ux-form fieldset.jsf-radio-check-list td label,
+.ux-form fieldset.jsf-radio-check-list th label {
+	float:left;
+	margin-right:10px
+}
+
+.ux-form fieldset.jsf-radio-check-list.option-label-wrap td label,
+.ux-form fieldset.jsf-radio-check-list.option-label-wrap th label {
+	display:block;
+	float:left;
+	margin:-2px 0 3px;
+	width:90%
+}
+
+.ie7 .ux-form fieldset.jsf-radio-check-list td label,
+.ie7 .ux-form fieldset.jsf-radio-check-list th label,
+.ie8 .ux-form fieldset.jsf-radio-check-list td label,
+.ie8 .ux-form fieldset.jsf-radio-check-list th label {
+	margin:3px
+}
+
+.ux-form fieldset.jsf-radio-check-list td input,
+.ux-form fieldset.jsf-radio-check-list th input {
+	float:left;
+	margin-left:1px
+}
+
+.ie7 .ux-form fieldset.jsf-radio-check-list legend {
+	margin-left:-8px
+}
+
+.ie7 .ux-form fieldset.jsf-radio-check-list legend span {
+	display:inline-block
+}
+
+.ie7 .ux-form fieldset.jsf-radio-check-list td,
+.ie7 .ux-form fieldset.jsf-radio-check-list th {
+	padding:0 15px 0 0
+}
+
+/*
+=========================================
+ Long Label Support
+=========================================
+*/
+.ie8 .ux-form fieldset.jsf-radio-check-list.option-label-wrap label {
+	margin:3px
+}
+
+/*
+=======================================================================================================
+ Normal Checkbox/Radio Button Lists 
+=======================================================================================================
+*/
+.ux-form fieldset.radio-check-list legend {
+	display:block;
+	padding-bottom:3px
+}
+
+.ux-form fieldset.radio-check-list span {
+	display:block;
+	margin-bottom:2px
+}
+
+.ux-form fieldset.radio-check-list span input {
+	float:left;
+	margin-left:0
+}
+
+.ux-form fieldset.radio-check-list span label {
+	display:inline-block
+}
+
+.ie7 .ux-form fieldset.radio-check-list span input {
+	margin:0 3px 0 0
+}
+
+.ie7 .ux-form fieldset.radio-check-list span label {
+	margin:2px 0 0
+}
+
+.ie7 .ux-form fieldset.radio-check-list {
+	margin-bottom:7px;
+	margin:-4px;
+	width:auto
+}
+
+.ie8 .ux-form fieldset.radio-check-list span label {
+	margin:3px 0 0
+}
+
+/*
+=========================================
+ Regular Radio / Check list override
+=========================================
+*/
+.ux-form fieldset.radio-check-list div.ux-list-side span {
+	display:inline-block
+}
+
+.ux-form fieldset.radio-check-list div.ux-list-side span label {
+	padding-right:7px
+}
+
+/*
+=========================================
+ Long Label Support
+=========================================
+*/
+.ux-form fieldset.radio-check-list.option-label-wrap span label {
+	display:block;
+	width:90%
+}
+
+/*
+=========================================
+ Single Check Box Overrides
+=========================================
+*/
+.ux-form fieldset.ux-single-check-box legend {
+	display:block;
+	padding-bottom:3px
+}
+
+.ux-form fieldset.ux-single-check-box span {
+	display:block;
+	margin-bottom:2px
+}
+
+.ux-form fieldset.ux-single-check-box span input {
+	float:left;
+	margin-left:0
+}
+
+.ux-form fieldset.ux-single-check-box span label {
+	display:inline-block
+}
+
+.ie7 .ux-form fieldset.ux-single-check-box legend {
+	margin-left:-8px
+}
+
+.ie7 .ux-form fieldset.ux-single-check-box span input {
+	margin:0 3px 0 0
+}
+
+.ie7 .ux-form fieldset.ux-single-check-box span label {
+	margin:2px 0 0
+}
+
+.ie8 .ux-form fieldset.ux-single-check-box span label {
+	margin:3px 0 0
+}
+
+/*
+=========================================
+ Long Label Support
+=========================================
+*/
+.ux-form fieldset.ux-single-check-box span label {
+	margin:-2px;
+	width:90%
+}
+
+.ie7 .ux-form fieldset.ux-single-check-box legend {
+	margin-left:-5px
+}
+
+.ie7 .ux-form fieldset.ux-single-check-box span label {
+	margin:1px
+}
+
+.ie8 .ux-form fieldset.ux-single-check-box span label {
+	margin:2px
+}
+
+/*
+=================================
+ Multi-Text Box fields.
+=================================
+*/
+.ux-form fieldset.multi-input {
+	margin-bottom:5px
+}
+
+.ie7 .ux-form fieldset.multi-input legend {
+	margin-left:-7px
+}
+
+.ux-form fieldset.multi-input div {
+	display:block;
+	margin-bottom:5px
+}
+
+.ie7 .ux-form fieldset.multi-input {
+	margin-bottom:7px
+}
+
+.ux-form fieldset.multi-input div label,
+.ux-form fieldset.multi-input div span abbr.required,
+.ux-form fieldset.multi-input div span.support-text,
+.ux-form fieldset.multi-input div span input {
+	display:block;
+	float:left
+}
+
+.ux-form fieldset.multi-input div label {
+	width:inherit
+}
+
+.ux-form fieldset.multi-input div span abbr.required {
+	font-size:inherit
+}
+
+.ux-form fieldset.multi-input div span.support-text {
+	padding:5px 5px 0
+}
+
+.ux-form fieldset.multi-input input.button {
+	margin:3px 0 0 5px
+}
+
+/* Static Fields */
+.ux-form span.ux-static-field {
+	display:block;
+	margin-bottom:5px
+}
+
+.ux-form span.ux-static-label {
+	display:block;
+	font-weight:700
+}
+
+.ux-form span.ux-static-value {
+	font-weight:400
+}
+
+.ie7 .ux-form span.ux-static-field {
+	margin-bottom:7px
+}
+
+/* Static overrides */
+.ux-form label.ux-static-field {
+	display:inline-block;
+	width:100%
+}
+
+/*
+=============================================================================
+=== Static Output
+=============================================================================
+*/
+
+/* Static Output Top */
+.ux-static-output span.ux-static-output {
+	display:inline-block;
+	padding-left:10px;
+	width:100%
+}
+
+.ux-static-output span.ux-static-output span.ux-static-label {
+	float:left;
+	font-weight:700;
+	width:100%
+}
+
+/* Form Selection Component
+----------------------- */
+
+div.ux-selection-component{
+	display:block;
+	position:relative;
+	vertical-align:top;
+	width:100%
+}
+.ux-selection-component label{
+	display:block;
+	width:100%
+}
+
+.ux-selection-component-left,
+.ux-selection-component-right,
+.ux-selection-component-middle {
+	display:inline-block
+}
+
+.ux-selection-component-middle {
+	margin:50px
+}
+
+.ux-selection-component-left select,
+.ux-selection-component-right select{
+	width:100%
+}
+
+.ux-selection-component-middle .button-container .button,
+.ux-selection-component-middle .button-container .button_mini,
+.ux-selection-component-middle .button-container .icon-right{
+	display:inline-block;
+	float:none;
+	padding:3px 0px 3px 0px !important
+}
+
+.ux-selection-component-middle .button-container{
+	display:block;
+	margin:5px 0;
+	text-align:center;
+	width:100%
+}
+
+/*ie7 fix disappearing select*/
+.ie7 .container_12 .ux-selection-component .grid_1 select{width:60px}
+.ie7 .container_12 .ux-selection-component .grid_2 select{width:140px}
+.ie7 .container_12 .ux-selection-component .grid_4 select{width:300px}
+.ie7 .container_12 .ux-selection-component .grid_5 select{width:380px}
+.ie7 .container_12 .ux-selection-component .grid_7 select{width:540px}
+.ie7 .container_12 .ux-selection-component .grid_8 select{width:620px}
+.ie7 .container_12 .ux-selection-component .grid_10 select{width:780px}
+.ie7 .container_12 .ux-selection-component .grid_11 select{width:860px}
+.ie7 .container_16 .ux-selection-component .grid_1 select{width:40px}
+.ie7 .container_16 .ux-selection-component .grid_2 select{width:100px}
+.ie7 .container_16 .ux-selection-component .grid_3 select{width:160px}
+.ie7 .container_16 .ux-selection-component .grid_5 select{width:280px}
+.ie7 .container_16 .ux-selection-component .grid_6 select{width:340px}
+.ie7 .container_16 .ux-selection-component .grid_7 select{width:400px}
+.ie7 .container_16 .ux-selection-component .grid_9 select{width:520px}
+.ie7 .container_16 .ux-selection-component .grid_10 select{width:580px}
+.ie7 .container_16 .ux-selection-component .grid_11 select{width:640px}
+.ie7 .container_16 .ux-selection-component .grid_13 select{width:760px}
+.ie7 .container_16 .ux-selection-component .grid_14 select{width:820px}
+.ie7 .container_16 .ux-selection-component .grid_15 select{width:880px}
+.ie7 .container_12 .ux-selection-component .grid_12,
+.ie7 .container_16 .ux-selection-component .grid_16{width:940px}
+
+.dol-container fieldset, .ux-container fieldset {
+	margin-left:10px
+}
+
+.dol-container p fieldset,
+.ux-container p fieldset, 
+.ux-content-wrapper fieldset {
+	margin-left:0
+}
+
+.ux-form div.ux-form-sub-quest {
+	margin:5px 0 15px 25px;
+	padding: 0 0 0 10px;
+}
+
+.ie7 .ux-form div.ux-form-sub-quest,
+.ie7 .ux-form fieldset,
+.ie7 .ux-form fieldset legend span {
+	position:relative;
+	zoom:1
+}
+
+/* Form Enhancements
+--------------------- */
+
+/* Show/Hide Password 
+---------------------- */
+.password-wrapper .show-hide-control {
+	float: none;
+	margin-left: 15px
+}
+
+/* Character Display Containter
+-------------------------------- */
+.count-input-container {
+	position: relative;
+	display: block
+}
+.char-limit-text-box {
+	position: absolute;
+	display: block;
+	font-size: 11px;
+	text-align: right
+}
+
+.count-input-container.posy-bottom {
+	margin-bottom: 20px; /*add some space when bottom*/
+}
+.posx-right .char-limit-text-box {
+	right: 0
+}
+
+.posx-left .char-limit-text-box {
+	left: 0
+}
+
+.posy-top .char-limit-text-box {
+	top:-20px
+}
+.posy-bottom .char-limit-text-box {
+	bottom: -20px
+}
+
+.char-limit-text-box.clt-right {
+	text-align: right
+}
+
+.char-limit-display {
+	border: 1px solid #000;
+	display: inline;
+	font-size: 11px;
+	height: 12px;
+	margin: 5px 0 0 5px;
+	padding: 0px 5px;
+	text-align: center;
+	width: auto
+}
+
+.char-limit-display.cld-right{
+	text-align: right;
+}
+
+.char-display-box {
+	border: 1px solid #000;
+}
+
+/* Full Calendar
+----------------- */
+
+/*
+ * FullCalendar v1.5.2 Stylesheet
+ *
+ * Copyright (c) 2011 Adam Shaw
+ * Dual licensed under the MIT and GPL licenses, located in
+ * MIT-LICENSE.txt and GPL-LICENSE.txt respectively.
+ *
+ * Date: Sun Aug 21 22:06:09 2011 -0700
+ *
+ */
+
+.fc {
+	direction: ltr;
+	text-align: left;
+	}
+	
+.fc table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+	
+html .fc,
+.fc table {
+	font-size: 1em;
+	}
+	
+.fc td,
+.fc th {
+	padding: 0;
+	vertical-align: top;
+	}
+
+/* Header
+------------------------------------------------------------------------*/
+
+.fc-header td {
+	white-space: nowrap;
+	}
+
+.fc-header-left {
+	width: 25%;
+	text-align: left;
+	}
+	
+.fc-header-center {
+	text-align: center;
+	}
+	
+.fc-header-right {
+	width: 25%;
+	text-align: right;
+	}
+	
+.fc-header-title {
+	display: inline-block;
+	vertical-align: top;
+	}
+	
+.fc-header-title h2 {
+	margin-top: 0;
+	white-space: nowrap;
+	}
+	
+.fc .fc-header-space {
+	padding-left: 10px;
+	}
+	
+.fc-header .fc-button {
+	margin-bottom: 1em;
+	vertical-align: top;
+	}
+	
+/* buttons edges butting together */
+
+.fc-header .fc-button {
+	margin-right: -1px;
+	}
+	
+.fc-header .fc-corner-right {
+	margin-right: 1px; /* back to normal */
+	}
+	
+.fc-header .ui-corner-right {
+	margin-right: 0; /* back to normal */
+	}
+	
+/* button layering (for border precedence) */
+	
+.fc-header .fc-state-hover,
+.fc-header .ui-state-hover {
+	z-index: 2;
+	}
+	
+.fc-header .fc-state-down {
+	z-index: 3;
+	}
+
+.fc-header .fc-state-active,
+.fc-header .ui-state-active {
+	z-index: 4;
+	}
+	
+	
+	
+/* Content
+------------------------------------------------------------------------*/
+	
+.fc-content {
+	clear: both;
+}
+	
+.fc-view {
+	width: 100%; /* needed for view switching (when view is absolute) */
+	overflow: hidden;
+}
+	
+	
+
+/* Cell Styles
+------------------------------------------------------------------------*/
+
+.fc-widget-header,    /* <th>, usually */
+.fc-widget-content {  /* <td>, usually */
+	border: 1px solid #ccc;
+	}
+	
+.fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
+	background: #ffc;
+	}
+	
+.fc-cell-overlay { /* semi-transparent rectangle while dragging */
+	background: #9cf;
+	opacity: .2;
+	filter: alpha(opacity=20); /* for IE */
+	}
+	
+
+
+/* Buttons
+------------------------------------------------------------------------*/
+
+.fc-button {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	}
+	
+.fc-state-default { /* non-theme */
+	border-style: solid;
+	border-width: 1px 0;
+	}
+	
+.fc-button-inner {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	}
+	
+.fc-state-default .fc-button-inner { /* non-theme */
+	border-style: solid;
+	border-width: 0 1px;
+	}
+	
+.fc-button-content {
+	position: relative;
+	float: left;
+	height: 1.9em;
+	line-height: 1.9em;
+	padding: 0 .6em;
+	white-space: nowrap;
+	}
+	
+/* icon (for jquery ui) */
+	
+.fc-button-content .fc-icon-wrap {
+	position: relative;
+	float: left;
+	top: 50%;
+	}
+	
+.fc-button-content .ui-icon {
+	position: relative;
+	float: left;
+	margin-top: -50%;
+	*margin-top: 0;
+	*top: -50%;
+	}
+	
+/* gloss effect */
+	
+.fc-state-default .fc-button-effect {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	}
+	
+.fc-state-default .fc-button-effect span {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 500px;
+	height: 100px;
+	border-width: 100px 0 0 1px;
+	border-style: solid;
+	border-color: #fff;
+	background: #444;
+	opacity: .09;
+	filter: alpha(opacity=9);
+	}
+	
+/* button states (determines colors)  */
+	
+.fc-state-default,
+.fc-state-default .fc-button-inner {
+	border-style: solid;
+	border-color: #ccc #bbb #aaa;
+	background: #F3F3F3;
+	color: #000;
+	}
+	
+.fc-state-hover,
+.fc-state-hover .fc-button-inner {
+	border-color: #999;
+	}
+	
+.fc-state-down,
+.fc-state-down .fc-button-inner {
+	border-color: #555;
+	background: #777;
+	}
+	
+.fc-state-active,
+.fc-state-active .fc-button-inner {
+	border-color: #555;
+	background: #777;
+	color: #fff;
+	}
+	
+.fc-state-disabled,
+.fc-state-disabled .fc-button-inner {
+	color: #999;
+	border-color: #ddd;
+	}
+	
+.fc-state-disabled {
+	cursor: default;
+	}
+	
+.fc-state-disabled .fc-button-effect {
+	display: none;
+	}
+	
+	
+
+/* Global Event Styles
+------------------------------------------------------------------------*/
+	 
+.fc-event {
+	border-style: solid;
+	border-width: 0;
+	font-size: .85em;
+	cursor: default;
+	}
+	
+a.fc-event,
+.fc-event-draggable {
+	cursor: pointer;
+	}
+	
+a.fc-event {
+	text-decoration: none;
+	}
+	
+.fc-rtl .fc-event {
+	text-align: right;
+	}
+	
+.fc-event-skin {
+	border-color: #36c;     /* default BORDER color */
+	background-color: #36c; /* default BACKGROUND color */
+	color: #fff;            /* default TEXT color */
+	}
+	
+.fc-event-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-width: 0;
+	overflow: hidden;
+	}
+	
+.fc-event-time,
+.fc-event-title {
+	padding: 0 1px;
+	}
+	
+.fc .ui-resizable-handle { /*** TODO: don't use ui-resizable anymore, change class ***/
+	display: block;
+	position: absolute;
+	z-index: 99999;
+	overflow: hidden; /* hacky spaces (IE6/7) */
+	font-size: 300%;  /* */
+	line-height: 50%; /* */
+	}
+	
+	
+	
+/* Horizontal Events
+------------------------------------------------------------------------*/
+
+.fc-event-hori {
+	border-width: 1px 0;
+	margin-bottom: 1px;
+	}
+	
+/* resizable */
+	
+.fc-event-hori .ui-resizable-e {
+	top: 0           !important; /* importants override pre jquery ui 1.7 styles */
+	right: -3px      !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: e-resize;
+	}
+	
+.fc-event-hori .ui-resizable-w {
+	top: 0           !important;
+	left: -3px       !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: w-resize;
+	}
+	
+.fc-event-hori .ui-resizable-handle {
+	_padding-bottom: 14px; /* IE6 had 0 height */
+	}
+	
+	
+	
+/* Fake Rounded Corners (for buttons and events)
+------------------------------------------------------------*/
+	
+.fc-corner-left {
+	margin-left: 1px;
+	}
+	
+.fc-corner-left .fc-button-inner,
+.fc-corner-left .fc-event-inner {
+	margin-left: -1px;
+	}
+	
+.fc-corner-right {
+	margin-right: 1px;
+	}
+	
+.fc-corner-right .fc-button-inner,
+.fc-corner-right .fc-event-inner {
+	margin-right: -1px;
+	}
+	
+.fc-corner-top {
+	margin-top: 1px;
+	}
+	
+.fc-corner-top .fc-event-inner {
+	margin-top: -1px;
+	}
+	
+.fc-corner-bottom {
+	margin-bottom: 1px;
+	}
+	
+.fc-corner-bottom .fc-event-inner {
+	margin-bottom: -1px;
+	}
+	
+	
+	
+/* Fake Rounded Corners SPECIFICALLY FOR EVENTS
+-----------------------------------------------------------------*/
+	
+.fc-corner-left .fc-event-inner {
+	border-left-width: 1px;
+	}
+	
+.fc-corner-right .fc-event-inner {
+	border-right-width: 1px;
+	}
+	
+.fc-corner-top .fc-event-inner {
+	border-top-width: 1px;
+	}
+	
+.fc-corner-bottom .fc-event-inner {
+	border-bottom-width: 1px;
+	}
+	
+	
+	
+/* Reusable Separate-border Table
+------------------------------------------------------------*/
+
+table.fc-border-separate {
+	border-collapse: separate;
+	}
+	
+.fc-border-separate th,
+.fc-border-separate td {
+	border-width: 1px 0 0 1px;
+	}
+	
+.fc-border-separate th.fc-last,
+.fc-border-separate td.fc-last {
+	border-right-width: 1px;
+	}
+	
+.fc-border-separate tr.fc-last th,
+.fc-border-separate tr.fc-last td {
+	border-bottom-width: 1px;
+	}
+	
+.fc-border-separate tbody tr.fc-first td,
+.fc-border-separate tbody tr.fc-first th {
+	border-top-width: 0;
+	}
+	
+	
+
+/* Month View, Basic Week View, Basic Day View
+------------------------------------------------------------------------*/
+
+.fc-grid th {
+	text-align: center;
+	}
+	
+.fc-grid .fc-day-number {
+	float: right;
+	padding: 0 2px;
+	}
+	
+.fc-grid .fc-other-month .fc-day-number {
+	opacity: 0.3;
+	filter: alpha(opacity=30); /* for IE */
+	/* opacity with small font can sometimes look too faded
+	   might want to set the 'color' property instead
+	   making day-numbers bold also fixes the problem */
+	}
+	
+.fc-grid .fc-day-content {
+	clear: both;
+	padding: 2px 2px 1px; /* distance between events and day edges */
+	}
+	
+/* event styles */
+	
+.fc-grid .fc-event-time {
+	font-weight: bold;
+	}
+	
+/* right-to-left */
+	
+.fc-rtl .fc-grid .fc-day-number {
+	float: left;
+	}
+	
+.fc-rtl .fc-grid .fc-event-time {
+	float: right;
+	}
+	
+	
+
+/* Agenda Week View, Agenda Day View
+------------------------------------------------------------------------*/
+
+.fc-agenda table {
+	border-collapse: separate;
+	}
+	
+.fc-agenda-days th {
+	text-align: center;
+	}
+	
+.fc-agenda .fc-agenda-axis {
+	width: 50px;
+	padding: 0 4px;
+	vertical-align: middle;
+	text-align: right;
+	white-space: nowrap;
+	font-weight: normal;
+	}
+	
+.fc-agenda .fc-day-content {
+	padding: 2px 2px 1px;
+	}
+	
+/* make axis border take precedence */
+	
+.fc-agenda-days .fc-agenda-axis {
+	border-right-width: 1px;
+	}
+	
+.fc-agenda-days .fc-col0 {
+	border-left-width: 0;
+	}
+	
+/* all-day area */
+	
+.fc-agenda-allday th {
+	border-width: 0 1px;
+	}
+	
+.fc-agenda-allday .fc-day-content {
+	min-height: 34px; /* TODO: doesnt work well in quirksmode */
+	_height: 34px;
+	}
+	
+/* divider (between all-day and slots) */
+	
+.fc-agenda-divider-inner {
+	height: 2px;
+	overflow: hidden;
+	}
+	
+.fc-widget-header .fc-agenda-divider-inner {
+	background: #eee;
+	}
+	
+/* slot rows */
+	
+.fc-agenda-slots th {
+	border-width: 1px 1px 0;
+	}
+	
+.fc-agenda-slots td {
+	border-width: 1px 0 0;
+	background: none;
+	}
+	
+.fc-agenda-slots td div {
+	height: 20px;
+	}
+	
+.fc-agenda-slots tr.fc-slot0 th,
+.fc-agenda-slots tr.fc-slot0 td {
+	border-top-width: 0;
+	}
+
+.fc-agenda-slots tr.fc-minor th,
+.fc-agenda-slots tr.fc-minor td {
+	border-top-style: dotted;
+	}
+	
+.fc-agenda-slots tr.fc-minor th.ui-widget-header {
+	*border-top-style: solid; /* doesn't work with background in IE6/7 */
+	}
+	
+/* Vertical Events
+------------------------------------------------------------------------*/
+
+.fc-event-vert {
+	border-width: 0 1px;
+	}
+	
+.fc-event-vert .fc-event-head,
+.fc-event-vert .fc-event-content {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	overflow: hidden;
+	}
+	
+.fc-event-vert .fc-event-time {
+	white-space: nowrap;
+	font-size: 10px;
+	}
+	
+.fc-event-vert .fc-event-bg { /* makes the event lighter w/ a semi-transparent overlay  */
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: .3;
+	filter: alpha(opacity=30);
+	}
+	
+.fc .ui-draggable-dragging .fc-event-bg, /* TODO: something nicer like .fc-opacity */
+.fc-select-helper .fc-event-bg {
+	display: none\9; /* for IE6/7/8. nested opacity filters while dragging don't work */
+	}
+	
+/* resizable */
+	
+.fc-event-vert .ui-resizable-s {
+	bottom: 0        !important; /* importants override pre jquery ui 1.7 styles */
+	width: 100%      !important;
+	height: 8px      !important;
+	overflow: hidden !important;
+	line-height: 8px !important;
+	font-size: 11px  !important;
+	font-family: monospace;
+	text-align: center;
+	cursor: s-resize;
+	}
+	
+.fc-agenda .ui-resizable-resizing { /* TODO: better selector */
+	_overflow: hidden;
+	}
+	
+	

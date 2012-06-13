@@ -1030,11 +1030,9 @@ var ux = {
 		jQuery('table.row-stripe tr:odd').addClass('table-row-odd');
 		jQuery('table.row-stripe tr:even').addClass('table-row-even');
 		
-		if (temp == "ie") {
-			if (jQuery('body').hasClass('ie7')) {
-				jQuery('.ie7 tfoot tr:last-child').addClass('last-child');
-				jQuery('.ie7 .ux-wizard li:last-child').addClass('last-child');
-			}
+		if (jQuery('body').hasClass('ie7')) {
+			jQuery('.ie7 tfoot tr:last-child').addClass('last-child');
+			jQuery('.ie7 .ux-wizard li:last-child').addClass('last-child');
 		}
 		
 		/*****
@@ -1110,6 +1108,24 @@ var ux = {
 		 * Default load popover
 		 */
 		this.load("popovers");
+
+		/*
+		 * Setup mobile show nav button
+		 */
+		if(jQuery('#ux-show-side-nav').length) {
+			
+			// Enable show hide toggle
+			jQuery('#ux-show-side-nav').on('click', function() {
+				var sidebarState = false // True = block, False = hidden
+				if (jQuery('#ux-side-nav').is(':visible')) {
+					jQuery('#ux-side-nav').hide();
+					jQuery('#ux-show-side-nav').text('Show Page Navigation');
+				} else { 
+					jQuery('#ux-side-nav').show();
+					jQuery('#ux-show-side-nav').text('Hide Page Navigation');
+				}
+			});
+		}
 	}
 };
 

@@ -169,11 +169,13 @@
 	.fluid #global-nav,
 	.fluid #global-nav .ux-content {
 		background: none;
+		border: none;
 	}
 
 	.fluid #global-nav ul {
 		float: none;
-		list-style: disc;
+		list-style-type: none;
+		height: auto;
 		text-align: center;
 	}
 
@@ -187,17 +189,9 @@
 		font-size: 14px;
 	}	
 
-	.fluid #global-nav ul li:after {
-		content: "\2022";
-	}	
-
-	.fluid #global-nav ul li:last-child:after {
-		content: none;
-	}
-
 	.fluid #global-nav ul li a span {
 		background: none;
-		padding: 0;
+		padding: 0 0 0 5px;
 	}
 
 	/* Page Body Overrides
@@ -206,22 +200,37 @@
 		display: none;
 	}
 
-	.fluid #ux-body h2 {
-		margin-top: 5px;
+	.fluid #ux-side-nav {
+		display: none;
+		margin-bottom: 15px;
 	}
-
 
 	/* Mobile Only Content
 	----------------------------------- */
 
 	.fluid .ux-mobile-only {
-		display: block;
+		display: block !important;
+	}
+
+	.fluid #ux-show-side-nav {
+		float: none;
+		text-align: center;
+		margin: 20px 2.5%;
+		width: 95%;
 	}
 
 }
 
 @media handheld, only screen and (min-width: 600px) {
 	
+	.fluid .ux-mobile-only {
+		display: none;
+	}
+
+	.fluid #ux-side-nav {
+		display: block !important;
+	}
+
 	.fluid #page-wrap, .fluid .ux-content {
 		width: 600px !important;
 	}
@@ -231,12 +240,13 @@
 	}
 
 	.fluid #global-nav ul {
-		margin: 1px 0 0 8px;
+		margin-top: -3px;
 	}
 
-	body.fluid {
-		background: red;
+	.fluid #global-nav ul li a {
+		padding: 5px 5px 0;
 	}
+
 }
 
 @media screen and (min-width: 768px) {
@@ -251,13 +261,10 @@
 		margin-top: 15px;
 	}
 
-	.fluid #global-nav ul {
-		margin: 7px 0 0 8px;
+	.fluid #global-nav ul li a {
+		padding: 5px 10px 0;
 	}
 
-	body.fluid {
-		background: black;
-	}
 }
 
 @media screen and (min-width: 960px) {
@@ -271,9 +278,10 @@
 		margin: 10px 0 0 20px;
 	}
 
-	body.fluid {
-		background: orange;
+	.fluid #global-nav ul {
+		margin-top: 0;
 	}
+
 }
 
 
@@ -288,11 +296,4 @@
 		margin: 10px 0 0 20px;
 	}
 
-	.fluid #global-nav ul {
-		margin: 7px 0 0 12px;
-	}
-
-	body.fluid {
-		background: blue;
-	}
 }

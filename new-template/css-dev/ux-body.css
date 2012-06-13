@@ -1,3 +1,8 @@
+/* Items that should appear hidden by default */
+
+
+
+
 /* Breadcrumb
 --------------------------------- */
 
@@ -36,72 +41,65 @@
 /* Side Navigation
 -------------------- */
 #ux-side-nav {
-	overflow:hidden
+	overflow:hidden;
+	margin-top: 10px;
 }
 
-#ux-side-nav #ux-side-nav-inner {
-	margin:0 0 0 2px
+#ux-side-nav {
+	border:#ececec 2px solid;
+	border-bottom:none;
+	line-height:1.2
 }
 
-#ux-side-nav #ux-side-nav-inner .column-container {
-	margin:0 0 20px
-}
 
-#ux-side-nav nav ul {
+#ux-side-nav ul,
+#ux-side-nav ul li {
 	list-style:none;
 	margin:0;
 	padding:0
 }
 
-#ux-side-nav nav ul li {
+#ux-side-nav ul li {
 	border-bottom:1px solid #E5E5E5;
 	display:block;
-	list-style:none;
-	margin:0;
-	padding:0;
-	width:201px
+	overflow: hidden;
+	width: 100%
 }
 
-#ux-side-nav nav ul li a {
+.ie7 #ux-side-nav ul li {
+	margin-left: -16px;
+}
+
+#ux-side-nav ul li a {
 	background:#EFEFEF;
 	color:#3d6683;
 	display:block;
 	font-size:13px;
 	font-weight:700;
-	padding:8px 8px 8px 22px;
+	padding:5px 16px;
 	text-decoration:none;
 	text-shadow:0 1px 0 #FFF
 }
 
-.ie7 #ux-side-nav nav ul li a {
-	display:inline-block
-}
-
-.ie7 #ux-side-nav nav ul li a {
-	display:block
-}
-
-#ux-side-nav nav ul li a:hover {
+#ux-side-nav ul li a:hover {
 	background-color:#E3E3E3
 }
 
-#ux-side-nav nav ul li a.selected {
-	background:#FFF url(../images/background-navigation.gif) no-repeat 0 center!important;
-	width:186px
+#ux-side-nav ul li a.selected {
+	background: url(../images/background-navigation2.gif) no-repeat 0 center #FFF;
 }
 
 /*Level 2*/
-#ux-side-nav nav ul li ul {
+#ux-side-nav ul li ul {
 	background:#FFF;
 	margin:0
 }
 
-#ux-side-nav nav ul li ul li {
+#ux-side-nav ul li ul li {
 	border-bottom:none;
-	width:201px
 }
 
-#ux-side-nav nav ul li ul li a {
+#ux-side-nav ul li ul li a {
 	background:#F7F7F7;
 	border-bottom:1px solid #E5E5E5;
 	display:block;
@@ -110,27 +108,26 @@
 	padding:6px 8px 6px 20px
 }
 
-#ux-side-nav nav ul li ul li a:hover {
+#ux-side-nav ul li ul li a:hover {
 	background-color:#E3E3E3
 }
 
-#ux-side-nav nav ul li ul li a.selected {
-	background:#FFF url(../images/background-navigation.gif) no-repeat 0 6px!important;
-	color:#52595D!important;
+#ux-side-nav ul li ul li a.selected {
+	background-position: 0 6px;
+	color:#52595D;
 	text-decoration:none;
-	width:186px
 }
 
 /*Level 3*/
-#ux-side-nav nav ul li ul li ul li {
+#ux-side-nav ul li ul li ul li {
 	border-bottom:1px solid #F0F0F0
 }
 
-#ux-side-nav nav ul li ul li ul li.last-child {
+#ux-side-nav ul li ul li ul li.last-child {
 	border-bottom:none
 }
 
-#ux-side-nav nav ul li ul li ul li a {
+#ux-side-nav ul li ul li ul li a {
 	background:#FFF url(../images/background-navigation-third.png) repeat-x top;
 	border:none;
 	color:#878787;
@@ -139,60 +136,39 @@
 	padding:6px 8px 6px 20px
 }
 
-#ux-side-nav nav ul li ul li ul li a:hover {
+#ux-side-nav ul li ul li ul li a:hover {
 	background-color:#E3E3E3;
 	background-image:none
 }
 
-#ux-side-nav nav ul li ul li ul li a.selected {
-	background:#FFF url(../images/background-navigation-third-active.png) no-repeat top left!important;
+#ux-side-nav ul li ul li ul li a.selected {
+	background:#FFF url(../images/background-navigation-third-active.png) no-repeat top left;
 	color:#3D6683!important;
 	text-decoration:none;
-	width:186px
 }
 
 /*Expandable*/
-#ux-side-nav nav a.contracted,#ux-side-nav nav a.contracted:hover {
-	background-image:url(../images/background-navigation-expandable-right.gif);
-	background-position:200px center;
+#ux-side-nav a.contracted,
+#ux-side-nav a.contracted:hover {
+	background-image:url(../images/background-navigation-expandable-right2.gif);
+	background-position: right center;
 	background-repeat:no-repeat
 }
 
-#ux-side-nav nav ul li ul li a.contracted,#ux-side-nav nav ul li ul li a.contracted:hover {
-	background-position:200px 6px
-}
-
-#ux-side-nav nav a.expanded,#ux-side-nav nav a.expanded:hover {
-	background-image:url(../images/background-navigation-expandable-down.gif);
-	background-position:178px 10px;
+#ux-side-nav a.expanded,
+#ux-side-nav a.expanded:hover {
+	background-image:url(../images/background-navigation-expandable-down2.gif);
+	background-position: right 10px;
 	background-repeat:no-repeat;
 	margin:0
 }
 
-#ux-side-nav nav {
-	border:#ececec 2px solid;
-	border-bottom:none;
-	line-height:1.2
-}
-
-#ux-side-nav nav ul li {
-	width: 100%!important
-}
-
-#ux-side-nav nav ul li a {
-	padding:5px 16px!important
-}
-
-#ux-side-nav nav a.expanded,#ux-side-nav nav a.expanded:hover {
-	background-position:194px 9px
-}
-
 a.expandable,
-.js  #ux-side-nav nav a.expandable + ul {
+.js  #ux-side-nav a.expandable + ul {
 	display:none
 }
 
-.js nav a.expandable.expanded + ul {
+.js #ux-side-nav a.expandable.expanded + ul {
 	display:block
 }
 
@@ -226,11 +202,6 @@ a.expandable,
 .dol-container ul ul, .dol-container ul ul ul {
 	margin-bottom: 0;
 }
-
-div:hover.ux-container,
-div:hover.dol-container { 
-	background-color: #FBFBFB; 
-} 
 
 .ux-container h3, .ux-container h4, .ux-container h5, .ux-container h6,
 .dol-container h3, .dol-container h4, .dol-container h5, .dol-container h6 {
@@ -289,12 +260,7 @@ div:hover.dol-container {
 .ux-container .ux-container, 	
 .dol-container .dol-container,
 .ux-container .ux-msg,
-.dol-container .ux-msg {
-	margin:10px
-}
-
-
-/* Content Wrappters */
+.dol-container .ux-msg,
 .ux-content-wrapper,
 .ie7 .dol-container.ux-content-wrapper,
 .ie7 .ux-container.ux-content-wrapper {
@@ -519,7 +485,7 @@ table td {
 }
 
 .data-table tr.table-row-even, .dataTables_wrapper tr.even {
-	background-color:#f7f7f7
+	background-color:#F7F7F7
 }
 
 .data-table tr:hover,
@@ -589,17 +555,19 @@ li.ux-jqdt-row-expandable {
 ----------------------- */
 
 .key-value-table td {
-border-right:none
+	border-right:none
 }
 
-.key-value-table th,.key-value-table .column-label {
-text-align:right;
-width:25%
+.key-value-table th,
+.key-value-table .column-label {
+	text-align:right;
+	width:25%
 }
 
-.key-value-table thead th,.key-value-table thead .column-label {
-width:auto;
-text-align:left
+.key-value-table thead th,
+.key-value-table thead .column-label {
+	text-align:left;
+	width: auto
 }
 
 .chrome .key-value-table caption .button_header,
@@ -752,7 +720,7 @@ li.ux-jQDT-row-expandable a img {
 	filter:alpha(opacity=50);
 	height:100%;
 	left:0;
-	margin:0 px;
+	margin:0;
 	min-height:100%;
 	opacity:0.6;
 	position:absolute;
@@ -763,7 +731,8 @@ li.ux-jQDT-row-expandable a img {
 	zoom:1
 }
 
-.ie7 #modal-background,.ie7 .modal-background {
+.ie7 #modal-background,
+.ie7 .modal-background {
 	position:fixed
 }
 
@@ -1126,10 +1095,7 @@ a.ux-expandable-click h4.ux-expandable-header.ux-expanded {
 }
 
 a.ux-expandable-click h5.ux-expandable-header,
-a.ux-expandable-click h5.ux-expandable-header.ux-expanded  {
-	background-position:6px 2px
-}
-
+a.ux-expandable-click h5.ux-expandable-header.ux-expanded,
 a.ux-expandable-click h6.ux-expandable-header,
 a.ux-expandable-click h6.ux-expandable-header.ux-expanded {
 	background-position:6px 2px
@@ -1181,18 +1147,18 @@ h6.ux-expandable-header.ux-expanded {
 	display:none
 }
 
+.ux-notice p,
 .ux-notice h3 {
 	color:#FFF;
-	margin:0;
 	padding:10px
 }
 
-.ux-notice p {
-	color:#FFF;
-	margin: 10px;
+.ux-notice h3 {
+	margin:0;
 }
 
-.ux-notice p img {
+.ux-notice p img,
+.ux-notice:hover img  {
 	display: block
 }
 
@@ -1208,10 +1174,6 @@ h6.ux-expandable-header.ux-expanded {
 .ux-notice:hover {
 	background:#000;
 	border:1px solid #FFF
-}
-
-.ux-notice:hover img {
-	display:block
 }
 
 #ux-action-notes {
@@ -1252,4 +1214,181 @@ h6.ux-expandable-header.ux-expanded {
 
 .translated-ltr #ux-notification-container {
 	top:40px
+}
+
+/* Form Layout
+--------------- */
+
+.ie7 .input[hidden] {
+	display:none;
+	margin:0;
+	position:absolute
+}
+
+.ux-form label span,
+.ux-form fieldset legend {
+	color:#3D6683;
+	display: block;
+	font-weight:700;
+	white-space:normal
+}
+
+.ux-form label span {
+	margin: 0 0 3px 0;
+}
+
+.ux-form label input,
+.ux-form label select,
+.ux-form label textarea {
+	margin-bottom: 10px;
+}
+
+.ux-form fieldset legend {
+	padding-bottom: 3px;
+}
+
+.ux-form fieldset {
+	margin-left: -2px;
+}
+
+.ux-form fieldset div {
+	margin: 0 0 10px 2px;
+}
+
+.ux-form fieldset label {
+	padding-right: 5px;
+}
+
+/* Force radio button/check list to be vitrical */
+
+.ux-form fieldset div.vertical-list span {
+	display: block;
+}
+
+/* IE 7 Fixes ..... */
+
+.ie7 .ux-form fieldset {
+	margin-left: -8px;
+}
+
+.ie7 .ux-form fieldset div {
+	margin-left: 5px;
+}
+
+/* Form Enhancements
+--------------------- */
+
+/* Show/Hide Password 
+---------------------- */
+.ux-form .show-hide-control {
+	display: inline-block;
+	float: none;
+	height: inherit;
+	margin: -3px 0 0 15px;
+	vertical-align: middle;
+	width: inherit;
+}
+
+.ie7 .ux-form .show-hide-control {
+	margin-top: -8px;
+}
+
+/* Character Display Containter
+-------------------------------- */
+.count-input-container {
+	position: relative;
+	display: block
+}
+.char-limit-text-box {
+	position: absolute;
+	display: block;
+	font-size: 11px;
+	text-align: right
+}
+
+.count-input-container.posy-bottom {
+	margin-bottom: 20px; /*add some space when bottom*/
+}
+.posx-right .char-limit-text-box {
+	right: 0
+}
+
+.posx-left .char-limit-text-box {
+	left: 0
+}
+
+.posy-top .char-limit-text-box {
+	top:-20px
+}
+.posy-bottom .char-limit-text-box {
+	bottom: -20px
+}
+
+.char-limit-text-box.clt-right,
+.char-limit-display.cld-right {
+	text-align: right
+}
+
+.char-limit-display {
+	border: 1px solid #000;
+	display: inline !important;
+	font-size: 11px;
+	height: 12px;
+	margin: 5px 0 0 5px;
+	padding: 0px 5px;
+	text-align: center;
+	width: auto
+}
+
+.char-display-box {
+	border: 1px solid #000;
+}
+
+/* Keyboard Shortcuts
+----------------------- */
+
+.ksl {
+	display: none;
+	font-size: 12px
+}
+
+.ksl dl {
+	margin: 10px 0 0 0;
+	padding: 0;
+	zoom: 1
+}
+
+.ksl dt {
+	float: left;
+	text-align: right;
+	width: 40%;
+	margin: 0;
+	padding: 0
+}
+
+.ksl dt kbd {
+	border: 1px solid #5a5a5a;
+	background: #ddd;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 0 3px;
+	padding: 2px 4px
+}
+
+.ksl dd {
+	float: left;
+	width: 50%;
+	padding: 3px 0 0 7px
+}
+
+/* Outbound Notification Plugin
+-------------------------------- */
+
+#genericMsg .primary-msg {
+	margin-top: 10px;
+}
+
+.ie7 #genericMsg .primary-msg {
+	margin-top: 15px;
+	width: 180px;
 }

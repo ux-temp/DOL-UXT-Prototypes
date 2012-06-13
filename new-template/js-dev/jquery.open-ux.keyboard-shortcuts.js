@@ -36,9 +36,9 @@ function shortcutProcessor(kbs){
 
 				// Add Custom Classes if listed
 				if (this.legend.customClasses){
-					newLegend.addClass('keyboard-shortcut-legend ' + this.legend.customClasses);
+					newLegend.addClass('ksl ' + this.legend.customClasses);
 				} else {
-					newLegend.addClass('keyboard-shortcut-legend');
+					newLegend.addClass('ksl');
 				}
 
 				$(newLegendList).appendTo(newLegend);
