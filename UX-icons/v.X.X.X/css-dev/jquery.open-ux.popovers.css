@@ -1,0 +1,176 @@
+/*MY ACCOUNT*/
+
+.ux-popover-alignment {
+  display: inline-block;
+  padding: 0 5px;
+  position: relative;
+}
+
+.ie7 .ux-popover-alignment {
+  display: inline;
+}
+
+
+.ux-popover.icon {
+  background-repeat: no-repeat;
+  background-position: 0 1px;
+  padding: 4px 0 0 18px;
+}
+
+.ux-popover.icon.person {
+  background-image: url(icon_person.png);
+}
+
+.ux-popover.icon.mail {
+  background-image: url(mail.png);
+  background-position: 0 4px;
+}
+
+.ux-popover.icon.signout {
+    background-image: url(signout.png);
+    background-position: 0 2px;
+    padding: 2px 0 0 20px;
+}
+
+.ux-popover.icon.apps {
+    background-image: url(apps.png);
+}
+
+/*POPOVER*/
+
+.ux-popover-container {
+  display:none;
+}
+
+.popover ul li ul {
+  display:none;
+}
+
+.popover, .arrow:after {
+  background: #2f2f2f;
+  border: 1px solid #5b5b5b;
+}
+
+.popover {
+  display: inline-block;
+  position: absolute;
+  border-radius: 5px;
+  margin-top: 10px;
+  min-width: 100px;
+  text-align: center;
+  box-shadow: 0 1px 1px 0px rgba(0,0,0, .5);
+  z-index: 600;
+}
+
+.ie7 .popover, .i8 .popover {
+  margin-top: 5px;
+}
+
+.popover ul {
+	list-style: none;
+	margin: 0;
+	padding: 5px 0 5px 0;
+  line-height: 24px;
+}
+
+.popover ul li {
+  margin: 0;
+  text-align: left;
+}
+
+.popover ul li a {
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  padding: 3px 10px;
+  text-decoration: none;
+}
+
+.popover ul li a:hover {
+  background: #4c4c4c;
+  cursor: pointer;
+}
+
+.popover ul li:first-child a {
+  border-top: none;
+}
+
+.arrow {
+  width: 70px;
+  height: 32px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  margin-top: -32px;
+  top: 0;
+}
+
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 25px;
+  width: 10px;
+  height: 10px;
+  box-shadow: 6px 5px 9px -9px black,
+              5px 6px 9px -9px black;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+}
+
+.arrow-down {
+  background: url(arrow-down.png) no-repeat transparent;
+  background-position: right 6px;
+}
+
+.ie7 .arrow-down {
+  background-position: right 5px;
+}
+
+.arrow-down .ux-popover {
+  padding-right: 10px;
+}
+
+/* Badge Messages */
+.badge {
+  display: inline-block;
+  position: absolute;
+  pointer-events: none;
+  background-color: #336699;
+  border-radius: 10px;
+  font-size: 8px;
+  height: 10px;
+  min-width: 10px;
+  top: -6px;
+  left: 11px;
+  padding: 2px 2px 0px 2px;
+  text-align: center;
+  letter-spacing: 1px;
+  vertical-align: middle;
+}
+
+.badge-large {
+  display: inline-block;
+  background-color: #369;
+  border-radius: 10px;
+  height: 22px;
+  min-width: 10px;
+  text-align: center;
+  margin-left: 3px;
+  padding: 0 6px;
+}
+
+.ie7 .badge-large {
+  display: inline;
+  height: 16px;
+  width: 16px;
+}
+
+.ie7 .new-mail {
+  line-height: 15px;
+}

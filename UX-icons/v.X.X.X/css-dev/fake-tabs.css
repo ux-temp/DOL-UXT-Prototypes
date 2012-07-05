@@ -1,0 +1,49 @@
+.ux-fake-tabs {
+	margin: 0 0 5px 0;
+	min-height: 0;
+	border-bottom: 1px solid #999;
+	display: block
+}
+
+.ie6 .ux-fake-tabs {
+	height: 1%
+}
+
+.ux-fake-tabs:after {
+	clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+.ux-fake-tabs li {
+	background: #fff;
+	border: 1px solid #E1E1E1;
+	border-bottom: none;
+	border-radius: 4px 4px 0 0;
+	float: left;
+	list-style: none;
+	margin: 0 0.2em 0 0;
+	position: relative
+}
+
+.ux-fake-tabs li.selected {
+	border-color: #999 #999 #FFF #999;
+	padding: 0.5em 1em;
+	top: 1px
+}
+
+.ux-fake-tabs li a {
+	background: #FBFBFB;
+	display: block;
+	padding: 0.5em 1em
+}
+
+.ux-fake-tabs li:hover {
+	border-color: #B4B4B4;
+}
+
+.ux-fake-tabs li a:hover {
+	background: #E1E1E1;
+}

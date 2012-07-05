@@ -1,0 +1,182 @@
+.data-table {
+table-layout:fixed;
+word-wrap:break-word
+}
+
+.data-table tr.table-row-odd, .dataTables_wrapper tr.odd {
+background-color:#FFF
+}
+
+.data-table tr.table-row-even, .dataTables_wrapper tr.even {
+background-color:#f7f7f7
+}
+
+.data-table tr.table-row-odd:hover,
+.data-table tr.table-row-odd:hover th,
+.data-table tr.table-row-even:hover,
+.data-table tr.table-row-even:hover th,
+.dataTables_wrapper tr.odd:hover,
+.dataTables_wrapper tr.odd:hover th,datatables_wrapper,
+.dataTables_wrapper tr.even:hover,
+.dataTables_wrapper tr.even:hover th {
+	background-color:#FFFFE5!important
+}
+
+/*on-hover image on table rows. Just a subtle difference to make the current row noticeable*/
+.data-table thead th,.data-table thead .column-label {
+text-align:left;
+width:auto
+}
+
+.data-table td.numeric {
+text-align:right
+}
+
+.data-table caption .button_header {
+float:right;
+margin-left:-1000px;
+position:relative;
+right:-4px
+}
+
+.data-table tfoot {
+border-top:solid 2px #D5D5D5!important
+}
+
+.ie7 .data-table tfoot tr:first-child td {
+border-top:solid 2px #D5D5D5!important
+}
+
+.ie6 .data-table tfoot tr.first-child td {
+border-top:solid 2px #D5D5D5!important
+}
+
+/* jqDataTable Specific */
+.datatables_wrapper thead th {
+background-color:#EFEFEF
+}
+
+.sortheaderspan {
+cursor:pointer
+}
+
+/* override */
+.ie7 .data-table caption .button_header,.ie6 .data-table caption .button_header {
+margin-left:0
+}
+
+/* jqDataTables */
+.ux-jqdt-row-expandable img {
+left:-4px;
+margin:0;
+position:relative;
+top:3px
+}
+
+.ux-jqdt-row-expandable .ux-jqdt-row-expand-trigger {
+text-decoration:none
+}
+
+li.ux-jqdt-row-expandable {
+list-style:none
+}
+
+.js .ux-jqdt-row-expandable .ux-jqdt-row-expand-content {
+display:none
+}
+
+/* ======================= */
+/* = Widget : DataTables = */
+/* ======================= */
+.dataTables_length {
+	float: left;
+	display: inline-block;
+	margin: 3px 0;
+	text-align: left;
+	padding-left: 5px;
+	width: 45%
+}
+
+.dataTables_filter {
+	float: right;
+	display: inline-block;
+	margin: 3px 0;
+	text-align: right;
+	width: 45%
+}
+
+.DataTables_sort_wrapper img {
+	margin:0;
+}
+
+.DataTables_sort_wrapper .DataTables_sort_icon {
+	display:inline;
+}
+
+.DataTables_sort_wrapper {
+	position:relative;
+}
+
+.DataTables_sort_wrapper .ui-icon {
+	position:absolute;
+	right:-6px;
+	top:0;
+}
+
+.ie6 .DataTables_sort_wrapper .ui-icon {
+	right:0;
+}
+
+.dataTables_wrapper table {
+	margin-bottom:0
+}
+
+div.dataTables_wrapper {
+	margin-bottom:10px
+}
+
+.datatables_length {
+	float:left;
+	left:10px;
+	position:relative;
+	top:2px
+}
+
+.dataTables_info {
+	float: left;
+	padding: 3px 0 0 10px;
+	text-align: left;
+	width: 45%;
+}
+
+.dataTables_paginate {
+	float: right;
+	text-align: right;
+	padding: 3px 0 10px 0;
+	width: 45%;
+}
+
+.datatables_paginate .ui-buttonset .ui-button {
+	padding:2px 5px!important
+}
+
+
+li.ux-jQDT-row-expandable {
+	list-style: none;
+}
+
+li.ux-jQDT-row-expandable a {
+	text-decoration: none;
+}
+
+li.ux-jQDT-row-expandable a img {
+    margin: 0 0 -3px;
+    padding-right: 5px;
+}
+
+
+/* Form layout table fix (top) */
+.ux-form-top .dataTables_filter label input {
+	display: inline !important;
+	margin: 3px 4px 0 0 !important;
+}

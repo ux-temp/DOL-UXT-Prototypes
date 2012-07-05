@@ -1,0 +1,88 @@
+/**************
+**  Content Expandables
+***************/
+.dol-container .ux-content-expandable ul,
+.dol-container .ux-content-expandable ol,
+.dol-container .ux-content-expandable p {
+	margin-left:0!important
+}
+
+.ux-content-expandable .ux-expandable {
+	background:url(../images/icons/expandable-ux-arrows-gray-close.gif) no-repeat left 0 transparent !important;
+	padding-left: 20px;
+}
+
+.ux-content-expandable .ux-expandable.expanded {
+	background:url(../images/icons/expandable-ux-arrows-gray-open.gif) no-repeat left 0 transparent !important;
+}
+
+.ux-content-expandable .ux-expandable + div {
+	display: none;
+	padding-left: 20px;
+}
+
+.ux-content-expandable,
+.expandable-list {
+	list-style: none;
+}
+
+.ux-content-expandable {
+	margin:0;
+	padding:0
+}
+
+.expandable-list {
+	margin-left: -20px;
+}
+
+.ux-container-expandable .ux-content-expandable > ul {
+	margin-left:3px;
+	padding-left: 5px;
+}
+
+/**************
+**  Container Expandables
+***************/
+
+.ux-expandable h3,
+.ux-expandable h4,
+.ux-expandable h5,
+.ux-expandable h6 {
+	background: none;
+	margin:0;
+	text-align:left;
+	padding-left:30px
+}
+
+.ux-container-expandable > div > ul,
+.ux-container-expandable > div > ol,
+.ux-container-expandable > div > dl,
+.ux-container-expandable > div > p {
+	margin-top: 10px;
+}
+
+.ux-container-expandable a.ux-expandable {
+	background:url(../images/icons/expandable-ux-arrows-gray-close.gif) no-repeat scroll 6px 45% #EFEFEF;
+	display: block;
+	text-decoration:none
+}
+
+.ux-container-expandable a.ux-expandable.expanded {
+	background:url(../images/icons/expandable-ux-arrows-gray-open.gif) no-repeat scroll 6px 45% #EFEFEF
+}
+
+.js .ux-container-expandable.ux-closed > div {
+	display:none
+}
+
+/*
+Overrides for expandable content in expandable containers
+*/
+.ux-container-expandable .ux-content-expandable .ux-expandable,
+.ux-container-expandable .ux-content-expandable .ux-expandable.expanded  {
+	background-position: left 0;
+}
+
+.ux-container-expandable .ux-content-expandable .expandable-list {
+	margin-left: 0;
+}

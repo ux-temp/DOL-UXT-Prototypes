@@ -1,0 +1,61 @@
+/**************
+**  A-Z Index Component
+***************/
+.ux-a-z-index {
+display:block;
+text-align:center
+}
+
+.ux-a-z-index a {
+background:#EFEFEF;
+border:1px solid #D2D2D2;
+border-radius:3px;
+color:#3D6683;
+display:inline-block;
+font-size:14px;
+font-weight:700;
+padding-top:2px;
+text-align:center;
+text-decoration:none;
+width:20px!important
+}
+
+.ux-a-z-index a.selected {
+background:#3D6683!important;
+bottom-border:none;
+color:#FFF!important
+}
+
+.ux-a-z-item-container {
+display:none;
+min-height:4px 0;
+padding:15px 25px
+}
+
+.no-js .ux-a-z-item-container {
+display:block;
+min-height:0;
+padding:15px 25px
+}
+
+.ux-a-z-item-container .ux-weak {
+margin:25px auto;
+text-align:center;
+width:300px
+}
+
+.ux-a-z-item-container ul {
+list-style:none;
+padding-left:0
+}
+
+.ux-a-z-item-container.selected {
+display:block
+}
+
+.ux-a-z-index a:hover {
+background:#D2D2D2;
+border:1px solid #B4B4B4;
+box-shadow:0 0 1px #A5A5A5;
+color:#3D6683
+}

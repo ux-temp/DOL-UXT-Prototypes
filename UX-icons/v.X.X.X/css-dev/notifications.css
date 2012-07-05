@@ -1,0 +1,104 @@
+/**************
+**  Notifications
+***************/
+
+#ux-notification-container {
+border:none;
+position:fixed;
+right:0;
+top:0;
+width:220px;
+z-index:550
+}
+
+.ie6 #ux-notification-container {
+display:none;
+speak:none
+}
+
+.ux-notice {
+background:url(../images/transparent-png/transpBlack75.png) repeat scroll 0 0 transparent;
+border-radius:10px;
+border:1px solid transparent;
+box-shadow:3px 3px 4px rgba(0,0,0,.5);
+margin-top:10px;
+position: relative;
+width:100%
+}
+
+.ux-notice img {
+display:none
+}
+
+.ux-notice h3 {
+color:#FFF;
+margin:0;
+padding:10px
+}
+
+.ux-notice p {
+color:#FFF;
+margin: 10px;
+}
+
+.ux-notice p img {
+display: block
+}
+
+.ux-notice .ux-notice-close {
+position:absolute;
+top: 10px;
+right: 10px;
+margin:0;
+padding:0;
+z-index:10;
+}
+
+.ux-notice:hover {
+background:#000;
+border:1px solid #FFF
+}
+
+.ux-notice:hover img {
+display:block
+}
+
+#ux-action-required-notifications {
+background:url(../images/transparent-png/transpBlack50.png) repeat scroll 0 0 transparent;
+border-radius:0 0 10px 10px;
+border:none;
+box-shadow:3px 3px 4px rgba(0,0,0,.5);
+display:none;
+position:relative;
+top:-15px
+}
+
+.arn-tray {
+padding:15px 10px 10px
+}
+
+/* Tweeks to line up the Google Translate drop down and contents. */
+.goog-te-gadget {
+margin-left:13px
+}
+
+.goog-te-gadget-icon {
+margin:0
+}
+
+.goog-te-gadget p {
+font-size:10px;
+padding-left:0
+}
+
+.goog-te-gadget p a {
+color:#FFF
+}
+
+.goog-te-menu-value span {
+font-size:11px
+}
+
+.translated-ltr #ux-notification-container {
+top:40px
+}

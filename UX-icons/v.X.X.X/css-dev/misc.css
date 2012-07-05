@@ -1,0 +1,77 @@
+/*
+	Additional fonts
+*/
+
+@font-face { 
+	font-family: 'Copse'; 
+	src: url('../fonts/Copse-Regular.ttf') format('opentype'); 
+}
+
+.access-link-icon {
+background:url(../images/icons/accessibility.png) no-repeat right -1px transparent;
+padding-right:18px
+}
+
+.ux-placeholder {
+color:#bbb
+}
+
+.ie6 .ux-content-grid {
+overflow:hidden
+}
+
+/* Context Help */
+.js .ux-contexthelp {
+display:none;
+font-size:10px;
+font-weight:400
+}
+
+.ux-contexthelp-img {
+margin:0;
+padding:0 0 0 5px;
+position:relative;
+top:3px
+}
+
+.required {
+	color:#DD0B00!important;
+	display:inline-block;
+	font-size:12px;
+	left:0;
+	position:relative;
+	top:-2px
+}
+
+abbr.required {
+border-bottom:none
+}
+
+/*
+Pull and Blockqoute
+*/
+.ux-blockquote { 
+	color: 000;
+	font-size: 17px;
+	font-family: 'Copse', Georgia, Baskerville, TimesNewRoman, serif;
+	background: url(../images/icons/qoute.jpg) no-repeat 0 0 transparent;
+	padding: 2px 20px 5px 40px;
+	margin: 25px 20px;
+}
+
+.ux-blockquote.ux-pullquote { 
+	padding: 30px 15px;
+	float: right;
+	width: 200px;
+	margin: 0 10px 0 20px;
+}
+
+/*
+HTML5 Video
+*/
+video, .video,
+.video embed,
+.video object,
+.video iframe {
+	width: 100%;
+}

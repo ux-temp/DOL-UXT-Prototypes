@@ -1,0 +1,56 @@
+/**************
+**  Credit Card List
+***************/
+.ux-credit-cards {
+	padding: 0;
+}
+
+.ux-credit-cards li {
+	background: url(../images/icons/icon-master-sprite.gif) no-repeat #FFF;
+	height: 32px;
+	float: left;
+	list-style: none;
+	text-indent: -9999px;
+	margin: 0 5px 0 0;
+	width: 32px
+}
+
+.ux-credit-cards li.master-card {
+	background-position: 0 0
+}
+
+.ux-credit-cards li.master-card-disabled {
+	background-position: 0 -32px
+}
+
+.ux-credit-cards li.visa {
+	background-position: -32px 0
+}
+
+.ux-credit-cards li.visa-disabled {
+	background-position: -32px -32px
+}
+
+.ux-credit-cards li.american-express {
+	background-position: -64px 0
+}
+
+.ux-credit-cards li.american-express-disabled {
+	background-position: -64px -32px
+}
+
+.ux-credit-cards li.discover {
+	background-position: -96px 0
+}
+
+.ux-credit-cards li.discover-disabled {
+	background-position: -96px -32px
+}
+
+.ux-credit-cards li.pay-pal {
+	background-position: -128px 0
+}
+
+.ux-credit-cards li.pay-pal-disabled {
+	background-position: -128px -32px
+}
