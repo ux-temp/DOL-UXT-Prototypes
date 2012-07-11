@@ -1,0 +1,55 @@
+#ux-page-rating a {
+	display: inline-block;
+	height: 20px;
+	font-size: 11px;
+	padding-left: 20px;
+}
+
+#ux-page-rating .h6 {
+	color: #4b4b4b;
+}
+
+#ux-page-rating ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#ux-page-rating .upvote {
+	background: url(../images/icons/thumb_up.png) no-repeat left 0 transparent;
+}
+
+
+#ux-page-rating .downvote {
+	background: url(../images/icons/thumb_down.png) no-repeat left 4px transparent;
+}
+
+#ux-page-rating .vote a {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#ux-page-rating .vote .upvote {
+	color: green;
+	background-position: left 4px;
+}
+
+#ux-page-rating .vote .downvote {
+	color: red;
+}
+
+
+#ux-page-rating #written-feedback {
+	display: none;
+}
+
+#ux-page-rating a.change-rating {
+	font-size: 9px;
+	font-weight: normal;
+	padding: 5px 0 0 10px;
+	text-decoration: none;
+}
+
+#page-rating-thank-you {
+	display: none;
+}
+
