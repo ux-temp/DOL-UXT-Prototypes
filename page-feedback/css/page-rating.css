@@ -3,6 +3,7 @@
 	height: 20px;
 	font-size: 11px;
 	padding-left: 20px;
+	text-decoration: none;
 }
 
 #ux-page-rating .h6 {
@@ -20,7 +21,7 @@
 
 
 #ux-page-rating .downvote {
-	background: url(../images/icons/thumb_down.png) no-repeat left 4px transparent;
+	background: url(../images/icons/thumb_down.png) no-repeat left 1px transparent;
 }
 
 #ux-page-rating .vote a {

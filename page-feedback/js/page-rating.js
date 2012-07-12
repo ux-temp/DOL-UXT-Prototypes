@@ -24,6 +24,11 @@ $(document).ready(function(){
 
 			$('#written-feedback').slideDown().animate({ opacity: 1 }, {duration: 500, queue: false});
 
+			var scroll = window.pageYOffset + 175;
+
+			// Scroll down to the location, but dont change the X axis
+			window.scrollBy(window.pageXOffset, scroll);
+
 		} else {
 			thankThem();
 		}
@@ -39,6 +44,7 @@ $(document).ready(function(){
 		currentSelection.removeClass('vote').siblings().slideDown().animate({ opacity: 1 }, {duration: 500, queue: false});
 
 		if (written) {
+
 			$('#written-feedback').slideUp().animate({ opacity: 0 }, {duration: 500, queue: false});
 		}
 
@@ -62,7 +68,9 @@ $(document).ready(function(){
 
 		e.preventDefault();
 
-		removeOtherRating(upvote, false);
+		if ( !$(this).parent().hasClass('vote') ) {
+			removeOtherRating(upvote, false);
+		}
 
 	});
 
@@ -70,7 +78,9 @@ $(document).ready(function(){
 
 		e.preventDefault();
 
-		removeOtherRating(downvote, true);
+		if ( !$(this).parent().hasClass('vote') ) {
+			removeOtherRating(downvote, true);
+		}
 
 	});
 
