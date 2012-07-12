@@ -2,6 +2,7 @@
 	display: inline-block;
 	height: 20px;
 	font-size: 11px;
+	padding-top: 2px;
 	padding-left: 20px;
 	text-decoration: none;
 }
@@ -16,12 +17,20 @@
 }
 
 #ux-page-rating .upvote {
-	background: url(../images/icons/thumb_up.png) no-repeat left 0 transparent;
+	background: url(../images/icons/thumb_up_sprite.png) no-repeat 0 -29px transparent;
+}
+
+#ux-page-rating .upvote:hover {
+	background-position: 0 0;
 }
 
 
 #ux-page-rating .downvote {
-	background: url(../images/icons/thumb_down.png) no-repeat left 1px transparent;
+	background: url(../images/icons/thumb_down_sprite.png) no-repeat 0 -28px transparent;
+}
+
+#ux-page-rating .downvote:hover {
+	background-position: 0 1px;
 }
 
 #ux-page-rating .vote a {
@@ -31,11 +40,12 @@
 
 #ux-page-rating .vote .upvote {
 	color: green;
-	background-position: left 4px;
+	background-position: 0 3px;
 }
 
 #ux-page-rating .vote .downvote {
 	color: red;
+	background-position: 0 3px;
 }
 
 
@@ -47,7 +57,6 @@
 	font-size: 9px;
 	font-weight: normal;
 	padding: 5px 0 0 10px;
-	text-decoration: none;
 }
 
 #page-rating-thank-you {

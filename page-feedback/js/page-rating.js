@@ -27,7 +27,7 @@ $(document).ready(function(){
 			var scroll = window.pageYOffset + 175;
 
 			// Scroll down to the location, but dont change the X axis
-			window.scrollBy(window.pageXOffset, scroll);
+			window.scroll(window.pageXOffset, scroll);
 
 		} else {
 			thankThem();
