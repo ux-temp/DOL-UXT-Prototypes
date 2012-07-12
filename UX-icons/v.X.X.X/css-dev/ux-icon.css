@@ -1,6 +1,7 @@
 .ux-icon {
 	background: url(../images/icons/add.png) no-repeat 0 0 transparent;
-	padding-left: 17px;
+	padding: 0 0 1px 20px;
+     
 }
 
 .ux-icon.ux-icon-save {
