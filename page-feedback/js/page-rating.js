@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	// Function used to hide all rating options and mark selection
 	function removeOtherRating(rating, upDown){
 		var listParent = rating.parent();
 
@@ -8,12 +9,7 @@ $(document).ready(function(){
 			e.preventDefault();
 			e.stopPropagation();
 
-			if (upDown) {
-
-				restorOtherRating(upDown);
-			} else {
-				restorOtherRating(upDown);
-			}
+			restorOtherRating(upDown);
 
 		});	
 
@@ -37,7 +33,14 @@ $(document).ready(function(){
 
 	}
 
+	// Function is used to restore all rating options and deselect selection
 	function restorOtherRating(written){
+
+		// Check to see if the thank you is being show, If so hide it
+		if ( $('#page-rating-thank-you').is(':visible') ) {
+			$('#page-rating-thank-you').hide();
+		}
+
 		var changeLinks = $('.change-rating');
 		var currentSelection = changeLinks.parents('li.vote');
 
@@ -53,9 +56,10 @@ $(document).ready(function(){
 
 	}
 
+	// Shows the thank you message for giving feedback
 	function thankThem() {
 		$('#page-rating-thank-you').fadeIn(600, function(){
-			$(this).delay(650).fadeOut();
+			$(this).delay(2500).fadeOut(600);
 		});
 	}
 
@@ -64,6 +68,8 @@ $(document).ready(function(){
 	var downvote = $('#ux-page-rating .downvote');
 	var feedback = $('#feedBackSubmit');
 
+
+	// Setup click events.
 	upvote.on('click', function(e){
 
 		e.preventDefault();
@@ -85,6 +91,9 @@ $(document).ready(function(){
 	});
 
 	feedback.on('click', function(){
+
+		$('#written-feedback').slideUp().animate({ opacity: 0 }, {duration: 500, queue: false});
+
 		thankThem();
 	});
 

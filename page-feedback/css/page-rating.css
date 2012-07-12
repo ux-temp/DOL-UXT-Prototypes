@@ -14,6 +14,7 @@
 #ux-page-rating ul {
 	list-style: none;
 	padding-left: 0;
+	margin-bottom: 0;
 }
 
 #ux-page-rating .upvote {
@@ -23,7 +24,6 @@
 #ux-page-rating .upvote:hover {
 	background-position: 0 0;
 }
-
 
 #ux-page-rating .downvote {
 	background: url(../images/icons/thumb_down_sprite.png) no-repeat 0 -28px transparent;
