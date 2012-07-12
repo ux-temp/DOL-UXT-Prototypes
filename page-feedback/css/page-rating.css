@@ -5,10 +5,12 @@
 	padding-top: 2px;
 	padding-left: 20px;
 	text-decoration: none;
+	color: #787878;
 }
 
 #ux-page-rating .h6 {
-	color: #4b4b4b;
+	color: #787878;
+	margin-bottom: 5px;
 }
 
 #ux-page-rating ul {
@@ -44,7 +46,7 @@
 }
 
 #ux-page-rating .vote .downvote {
-	color: red;
+	color: #A4003E;
 	background-position: 0 3px;
 }
 
@@ -53,14 +55,21 @@
 	display: none;
 }
 
+#ux-page-rating #written-feedback label span {
+	color: #787878;
+}
+
 #ux-page-rating a.change-rating {
 	font-size: 9px;
 	font-weight: normal;
 	padding: 5px 0 0 10px;
+	text-decoration: underline;
 }
 
 #page-rating-thank-you {
 	display: none;
+	color: green !important;
+	font-weight: normal;
 }
 
 #feedBackSubmit {
