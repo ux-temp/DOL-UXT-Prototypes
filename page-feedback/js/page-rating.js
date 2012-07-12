@@ -24,6 +24,8 @@ $(document).ready(function(){
 
 			$('#written-feedback').slideDown().animate({ opacity: 1 }, {duration: 500, queue: false});
 
+		} else {
+			thankThem();
 		}
 
 
@@ -45,9 +47,16 @@ $(document).ready(function(){
 
 	}
 
+	function thankThem() {
+		$('#page-rating-thank-you').fadeIn(600, function(){
+			$(this).delay(650).fadeOut();
+		});
+	}
+
 
 	var upvote = $('#ux-page-rating .upvote');
 	var downvote = $('#ux-page-rating .downvote');
+	var feedback = $('#feedBackSubmit');
 
 	upvote.on('click', function(e){
 
@@ -63,6 +72,10 @@ $(document).ready(function(){
 
 		removeOtherRating(downvote, true);
 
+	});
+
+	feedback.on('click', function(){
+		thankThem();
 	});
 
 });
