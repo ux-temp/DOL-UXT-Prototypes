@@ -26,7 +26,7 @@ $(document).ready(function(){
 			window.scroll(window.pageXOffset, scroll);
 
 		} else {
-			thankThem();
+			thankThem(200);
 		}
 
 
@@ -57,8 +57,8 @@ $(document).ready(function(){
 	}
 
 	// Shows the thank you message for giving feedback
-	function thankThem() {
-		$('#page-rating-thank-you').fadeIn(600, function(){
+	function thankThem(delay) {
+		$('#page-rating-thank-you').delay(delay).fadeIn(600, function(){
 			$(this).delay(2500).fadeOut(600);
 		});
 	}
@@ -92,9 +92,8 @@ $(document).ready(function(){
 
 	feedback.on('click', function(){
 
-		$('#written-feedback').slideUp().animate({ opacity: 0 }, {duration: 500, queue: false});
+		$('#written-feedback').slideUp().animate({ opacity: 0 }, {duration: 500, queue: false, complete: thankThem(350)});
 
-		thankThem();
 	});
 
 });
