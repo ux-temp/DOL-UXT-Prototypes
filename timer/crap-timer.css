@@ -1,0 +1,52 @@
+#counter p {
+	font-weight: bold;
+	text-align: center;
+}
+
+#counter,
+#counter-numbers,
+#day-container,
+#hours-container,
+#minutes-container,
+#seconds-container {
+	display: inline-block;
+}
+
+#day-container span,
+#hours-container span,
+#minutes-container span,
+#seconds-container span {
+	text-align: center;
+	font-weight: bold;
+	display: block;
+}
+
+#day-container span.title,
+#hours-container span.title {
+	margin: 0 10px;
+}
+
+#minutes-container span.title {
+	margin: 0 7px;
+}
+
+#seconds-container span.title {
+	margin: 0 5px;
+}
+
+#rdays, #rhours, #rmins, #rsecs {
+	background: #000;
+	color: #FFF;
+	border-radius: 5px;
+	padding: 3px;
+	width: 25px;
+	margin: 0 auto;
+}
+
+#minutes-container {
+	margin-left: -3px;
+}
+
+#seconds-container {
+	margin-left: -5px;
+}

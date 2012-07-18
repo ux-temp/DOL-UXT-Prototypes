@@ -1,13 +1,3 @@
-#ux-page-rating a {
-	display: inline-block;
-	height: 20px;
-	font-size: 11px;
-	padding-top: 2px;
-	padding-left: 20px;
-	text-decoration: none;
-	color: #787878;
-}
-
 #ux-page-rating .h6 {
 	color: #787878;
 	margin-bottom: 5px;
@@ -17,62 +7,56 @@
 	list-style: none;
 	padding-left: 0;
 	margin-bottom: 0;
+	float: left;
+}
+
+#ux-page-rating ul li {
+	display: inline;
+	float: left;
+	padding-right: 15px;
+}
+
+#ux-page-rating ul li a {
+	display: inline-block;
+	height: 20px;
+	font-size: 11px;
+	padding: 3px 7px 0 23px;
+	text-decoration: none;
+	color: #787878;
 }
 
 #ux-page-rating .upvote {
-	background: url(../images/icons/thumb_up_sprite.png) no-repeat 0 -29px transparent;
-}
-
-#ux-page-rating .upvote:hover {
-	background-position: 0 0;
+	background: url(../images/icons/thumb_up_sprite.png) no-repeat 3px -28px transparent;
 }
 
 #ux-page-rating .downvote {
-	background: url(../images/icons/thumb_down_sprite.png) no-repeat 0 -28px transparent;
+	background: url(../images/icons/thumb_down_sprite.png) no-repeat 3px -28px transparent;
 }
 
-#ux-page-rating .downvote:hover {
-	background-position: 0 1px;
+#ux-page-rating .vote a,
+#ux-page-rating ul li a:hover {
+	color: #FFF;
+	background-position: 3px 1px;
+	border-radius: 5px;	
 }
 
-#ux-page-rating .vote a {
+#ux-page-rating .vote .upvote,
+#ux-page-rating ul li a.upvote:hover {
+	background-color: green;
+}
+
+#ux-page-rating .vote .downvote,
+#ux-page-rating ul li a.downvote:hover {
+	background-color: red;
+}
+
+#xux-page-rating .vote a {
+	color: #FFF;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-#ux-page-rating .vote .upvote {
-	color: green;
-	background-position: 0 3px;
-}
-
-#ux-page-rating .vote .downvote {
-	color: #A4003E;
-	background-position: 0 3px;
-}
-
-
+#page-rating-thank-you, 
 #ux-page-rating #written-feedback {
 	display: none;
 }
-
-#ux-page-rating #written-feedback label span {
-	color: #787878;
-}
-
-#ux-page-rating a.change-rating {
-	font-size: 9px;
-	font-weight: normal;
-	padding: 5px 0 0 10px;
-	text-decoration: underline;
-}
-
-#page-rating-thank-you {
-	display: none;
-	color: green !important;
-	font-weight: normal;
-}
-
-#feedBackSubmit {
-	display: inline-block;
-}
-
