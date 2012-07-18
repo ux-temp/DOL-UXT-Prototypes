@@ -4,7 +4,8 @@ $(document).ready(function(){
 	function removeOtherRating(rating, upDown){
 		var listParent = rating.parent();
 
-		listParent.addClass('vote').siblings().animate({ "opacity": 0, "width": 0, "padding-right": 0 }, {duration: 500, queue: false});
+		listParent.addClass('vote').animate({"padding-right": 0 }, {duration: 500, queue: false})
+			.siblings().animate({ "opacity": 0, "width": 0, "padding-right": 0 }, {duration: 500, queue: false});
 		rating.animate({backgroundColor: "#f6f6f6"}, {duration: 1000, queue: false})
 
 

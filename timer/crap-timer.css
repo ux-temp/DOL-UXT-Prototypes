@@ -12,12 +12,12 @@
 	display: inline-block;
 }
 
+
 #day-container span,
 #hours-container span,
 #minutes-container span,
 #seconds-container span {
 	text-align: center;
-	font-weight: bold;
 	display: block;
 }
 
@@ -49,4 +49,41 @@
 
 #seconds-container {
 	margin-left: -5px;
+}
+
+.ie7 #counter {
+	width: 300px;
+	text-align: center;
+}
+
+.ie7 .counter-numbers {
+	width: 225px;
+}
+
+.ie7 #day-container,
+.ie7 #hours-container,
+.ie7 #minutes-container,
+.ie7 #seconds-container {
+	width: 55px;
+	float: left;
+}
+
+.ie7 #day-container span.title,
+.ie7 #hours-container span.title,
+.ie7 #minutes-container span.title,
+.ie7 #seconds-container span.title {
+	margin: 0 10px;
+}
+
+.ie7 #minutes-container span.title {
+	margin: 0 5px;
+}
+
+.ie7 #seconds-container span.title {
+	margin: 0 5px;
+}
+
+.ie7 #minutes-container,
+.ie7 #seconds-container {
+	margin: 0;
 }
