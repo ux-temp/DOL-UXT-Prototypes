@@ -1,63 +1,52 @@
-#ux-page-rating .h6 {
-	color: #787878;
-	margin-bottom: 5px;
+#ux-page-rating p {
+	height: 21px;
+	margin: 0;
 }
 
-#ux-page-rating ul {
-	list-style: none;
-	padding-left: 0;
-	margin-bottom: 0;
-	float: left;
-}
-
-#ux-page-rating ul li {
-	display: inline;
-	float: left;
-	padding-right: 15px;
-}
-
-
-#ux-page-rating ul li a {
-	display: inline-block;
-	height: 20px;
+#ux-page-rating a {
 	font-size: 11px;
-	padding: 3px 7px 0 23px;
+	display: inline-block;
+	height: 24px;
 	text-decoration: none;
-	color: #787878;
+	white-space: nowrap;
 }
 
-#ux-page-rating .upvote {
+#ux-page-rating a .text {
+	display: inline-block;
+	height: 24px;
+	padding: 4px 7px 3px 25px;
+}
+
+#ux-page-rating a.upvote .text {
 	background: url(../images/icons/thumb_up_sprite.png) no-repeat 3px -28px transparent;
 }
 
-#ux-page-rating .downvote {
+#ux-page-rating a.downvote .text {
 	background: url(../images/icons/thumb_down_sprite.png) no-repeat 3px -28px transparent;
+	padding-left: 24px;
 }
 
-#ux-page-rating .vote a,
-#ux-page-rating ul li a:hover {
-	color: #FFF;
+#ux-page-rating a.vote .text,
+#ux-page-rating a:hover .text {
 	background-position: 3px 1px;
-	border-radius: 5px;	
+	color: white;
 }
 
-#ux-page-rating .vote .upvote,
-#ux-page-rating ul li a.upvote:hover {
-	background-color: green;
+#ux-page-rating a.upvote.vote,
+#ux-page-rating a.upvote:hover {
+	background: green;
+	border-radius: 5px;
 }
 
-#ux-page-rating .vote .downvote,
-#ux-page-rating ul li a.downvote:hover {
-	background-color: red;
+
+#ux-page-rating a.downvote.vote,
+#ux-page-rating a.downvote:hover {
+	background: red;
+	border-radius: 5px;
 }
 
-#xux-page-rating .vote a {
-	color: #FFF;
-	font-size: 14px;
-	font-weight: bold;
-}
-
-#page-rating-thank-you, 
-#ux-page-rating #written-feedback {
-	display: none;
+#ux-page-rating #change-link {
+	font-size: 9px;
+	height: 12px;
+	margin-left: 7px;
 }
