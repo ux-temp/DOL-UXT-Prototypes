@@ -42,6 +42,7 @@
 }
 
 #page-rating-thank-you, 
-#ux-page-rating #written-feedback {
+#ux-page-rating #written-feedback,
+#additional-info {
 	display: none;
 }
