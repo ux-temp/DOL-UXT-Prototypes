@@ -1,0 +1,98 @@
+<mockup version="1.0" skin="sketch" measuredW="982" measuredH="543" mockupW="640" mockupH="446">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="536" y="130" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10027008</color>
+        <icon>ThumbsDownIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="536" y="97" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>2575891</color>
+        <icon>ThumbsUpIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="566" y="102" w="351" h="19" measuredW="200" measuredH="140" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>2575891</color>
+        <text>This%20page%20was%20orderly%2C%20well%20written%20and%20understandable</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Paragraph" x="566" y="131" w="351" h="19" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10027008</color>
+        <text>This%20page%20needs%20improvement%20in%20organization%20and%20clarity</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextArea" x="551" y="291" w="381" h="69" measuredW="200" measuredH="140" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="551" y="270" w="386" h="21" measuredW="210" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>What%20could%20be%20improved%3F%20%28Optional%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="818" y="370" w="-1" h="-1" measuredW="114" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>472931</color>
+        <text>Send%20Feedback</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Paragraph" x="549" y="461" w="389" h="82" measuredW="200" measuredH="140" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Thanks%20for%20the%20feedback%21%20%20It%20helps%20us%20improve%20your%20experience.%0A%20%0AIf%20you%20need%20personal%20assistance%20with%20a%20problem%20please%20call%201-800-800-9000%20or%20%26Contact%20Us%26</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Arrow" x="560" y="114" w="42" h="87" measuredW="150" measuredH="100" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>top</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Arrow" x="893" y="135" w="32" h="158" measuredW="150" measuredH="100" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>top</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Arrow" x="917" y="399" w="10" h="60" measuredW="150" measuredH="100" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>top</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::VCurly" x="342" y="97" w="186" h="61" measuredW="180" measuredH="140" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>right</direction>
+        <text>State%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::VCurly" x="342" y="184" w="186" h="61" measuredW="180" measuredH="140" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>right</direction>
+        <text>State%202A</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::VCurly" x="342" y="291" w="186" h="61" measuredW="180" measuredH="140" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>right</direction>
+        <text>State%202B</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::VCurly" x="350" y="446" w="186" h="82" measuredW="180" measuredH="140" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>right</direction>
+        <text>State%203</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Paragraph" x="549" y="201" w="433" h="26" measuredW="200" measuredH="140" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Thanks%20for%20the%20feedback%21%20%20It%20helps%20us%20improve%20your%20experience.</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
