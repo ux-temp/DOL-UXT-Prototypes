@@ -1,6 +1,6 @@
 #ux-page-rating  #ratings p {
 	height: 21px;
-	margin: 0;
+	margin: 50px 0 0 0;
 }
 
 #ux-page-rating a {
@@ -9,11 +9,13 @@
 	height: 24px;
 	text-decoration: none;
 	white-space: nowrap;
+	margin: 0 0 0 7px;
 }
 
 #ux-page-rating .title,
 #written-feedback label span {
 	color: #8a8a8a;
+	margin-right: 10px;
 }
 
 #ux-page-rating a .text {
@@ -33,31 +35,49 @@
 
 #ux-page-rating a.vote .text,
 #ux-page-rating a:hover .text {
-	background-position: 3px 1px;
+	background-position: 4px 2px;
 	color: white;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
+
+
 }
 
 #ux-page-rating a.upvote.vote,
 #ux-page-rating a.upvote:hover {
-	background: green;
+	background: #368D4D;
 	border-radius: 5px;
 
-	-webkit-transition:background .6s ease-in;
-	-moz-transition:background .6s ease-in;
-	-o-transition:background .6s ease-in;
-	transition:background .6s ease-in;
+/*	-webkit-transition:background .2s ease-in;
+	-moz-transition:background .2s ease-in;
+	-o-transition:background .2s ease-in;
+	transition:background .2s ease-in;*/
+
+	-webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2),inset 0 2px 0 rgba(255, 255, 255, .25);
+	-moz-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2),inset 0 2px 0 rgba(255,255,255,.25);
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2),inset 0 2px 0 rgba(255, 255, 255, .25);
 
 }
 
+
 #ux-page-rating a.downvote.vote,
 #ux-page-rating a.downvote:hover {
-	background: red;
+	background: #C64249;
 	border-radius: 5px;
 
-	-webkit-transition:background .6s ease-in;
-	-moz-transition:background .6s ease-in;
-	-o-transition:background .6s ease-in;
-	transition:background .6s ease-in;
+/*	-webkit-transition:background .2s ease-in;
+	-moz-transition:background .2s ease-in;
+	-o-transition:background .2s ease-in;
+	transition:background .2s ease-in;*/
+
+	-webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2),inset 0 2px 0 rgba(255, 255, 255, .25);
+	-moz-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2),inset 0 2px 0 rgba(255,255,255,.25);
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2),inset 0 2px 0 rgba(255, 255, 255, .25);
+
+}
+
+#ux-page-rating a.upvote.vote, #ux-page-rating a.downvote.vote {
+	box-shadow: none;
+	cursor: default;
 }
 
 #ux-page-rating #change-link,
@@ -74,17 +94,27 @@
 }
 
 #additional-info {
-	margin: 0 0 0 5px;
+	margin: 7px 0 0 0;
+}
+
+#rating-improve {
+	font-size: 11px;
 }
 
 #written-feedback {
 	display: none;
 }
 
+#rating-submit {
+	padding-right:12px;
+	margin: 10px 0 0 0;
+}
+
 #pr-thank-you {
 	display:none;
+	font-size: 11px;
 	height: 0;
-	margin: 0 0 0 -5px;
+	margin: 0;
 	opacity: 0;
 	float: left;
 }
