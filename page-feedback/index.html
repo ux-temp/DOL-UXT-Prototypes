@@ -159,12 +159,12 @@
 						Fusce convallis nunc in velit feugiat sodales. Phasellus eros augue, scelerisque sed lobortis et, iaculis in enim. Suspendisse potenti. Etiam mollis metus in est cursus molestie. Donec eget eros massa. Aenean sed urna sapien. Etiam tempus fermentum purus et scelerisque.
 					</p>
 
-					<div id="ux-page-rating" class="grid_12">
+					<div id="ux-page-rating" class="grid_12 alpha omega">
 						<div id="ratings" class="group margin-bottom">
 							<p>
 								<span class="title h6">This Page...</span>
 								<a class="upvote" href="#">
-									<span class="text" >Was easy to use</span>
+									<span class="text" >Was Helpful</span>
 								</a>
 								<a class="downvote" href="#">
 									<span class="text" >Needs Improvement</span>
@@ -174,15 +174,15 @@
 						<div class="grid_7 group" id="additional-info">
 							<form id="written-feedback" class="ux-form-top">
 								<label>	
-									<span>
-										What could use improvement? (Optional)
+									<span id="rating-improve">
+										What could be improved? 
 									</span>
-									<textarea name="" placeholder="Page content doesn't make sence."></textarea>
+									<textarea name=""></textarea>
 								</label>
-								<span style="display: block;padding-right:12px;">
-									<a href="#" class="no-comment right">Dont leave comment</a>
-									<input type="button" id="feedBackSubmit" class="button_mini no-icon right" value="Send Feedback" />
-								</span>
+								<div id="rating-submit">
+									<a href="#" class="no-comment">Don't leave comment</a>
+									<input type="button" id="feedBackSubmit" class="button_mini no-icon primary" value="Send Feedback" />
+								</div>
 							</form>
 							<p id="pr-thank-you" class="h6 title ux-msg-inline success">
 								Thanks for the feedback!  It will help us improve your experience.
