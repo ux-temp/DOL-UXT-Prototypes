@@ -154,9 +154,16 @@
         <p>     
 				<label for="textarea1" >
 					<span>Please state the nature of the medical emergency.</span>
-                <textarea id="textarea1" name="textarea1" cols="80" rows="10"> Yes Doctor</textarea>
+                <textarea id="textarea1" name="textarea1" cols="20" rows="10"> Yes Doctor</textarea>
                 </label>
+				
+				
         </p>
+<div class="ux-button-section">
+    <div class="ux-button-container">
+		<input type="submit" id="button1" name="Submit" class="primary button no-icon">
+	</div>
+</div>
 </form>
 					
 					
