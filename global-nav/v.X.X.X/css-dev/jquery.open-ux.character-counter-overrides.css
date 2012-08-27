@@ -1,0 +1,57 @@
+.grid_16 .posx-right .char-limit-text-box {
+	right: 4.3%;
+}
+
+.grid_15 .posx-right .char-limit-text-box,
+.grid_14 .posx-right .char-limit-text-box {
+	right: 4.1%;
+}
+
+.grid_13 .posx-right .char-limit-text-box {
+	right: 3.9%;
+}
+
+.grid_12 .posx-right .char-limit-text-box {
+	right: 3.7%;
+}
+
+.grid_11 .posx-right .char-limit-text-box {
+	right: 3.5%;
+}
+
+.grid_10 .posx-right .char-limit-text-box {
+	right: 3.2%;
+}
+
+.grid_9 .posx-right .char-limit-text-box {
+	right: 2.9%;
+}
+
+.grid_8 .posx-right .char-limit-text-box {
+	right: 2.6%;
+}
+
+.grid_7 .posx-right .char-limit-text-box {
+	right: 1.9%;
+}
+
+.grid_6 .posx-right .char-limit-text-box {
+	right: 1.4%;
+}
+
+.grid_5 .posx-right .char-limit-text-box {
+	right: 0.3%;
+}
+
+.grid_4 .posx-right .char-limit-text-box {
+	right: -1.5%;
+}
+
+.grid_3 .posx-right .char-limit-text-box {
+	right: -4.7%;
+}
+
+.grid_1 .posx-right .char-limit-text-box
+.grid_2 .posx-right .char-limit-text-box, {
+	display: none;
+}

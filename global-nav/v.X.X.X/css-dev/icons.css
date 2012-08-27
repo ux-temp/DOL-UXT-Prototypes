@@ -1,0 +1,181 @@
+/**************
+**  Link Icons
+***************/
+.icon-link {
+display:inline-block;
+text-decoration:none
+}
+
+.icon-link-text {
+text-decoration:underline
+}
+
+.icon-link-span {
+display:inline;
+text-decoration:none
+}
+
+.ie7 .icon-link-span {
+width:auto
+}
+
+.icon-link-span-icons {
+margin:0 3px -2px 0;
+padding-left:3px;
+text-align:right;
+text-decoration:none
+}
+
+#global-footer-menu .icon-link-span-icons {
+margin-top:-2px;
+padding-top:0
+}
+
+/**************
+**  UX Icons
+***************/
+.ux-icon {
+	background: url(../images/icons/add.png) no-repeat 0 0 transparent;
+	padding: 0 0 1px 20px;
+}
+
+.ux-icon.ux-icon-save {
+	background-image: url(../images/icons/disk.png);
+}
+
+.ux-icon.ux-icon-edit {
+	background-image: url(../images/icons/application_edit.png);
+}
+
+.ux-icon.ux-icon-up {
+	background-image: url(../images/icons/arrow_up.png);
+}
+
+.ux-icon.ux-icon-down {
+	background-image: url(../images/icons/arrow_down.png);
+}
+
+.ux-icon.ux-icon-left {
+	background-image: url(../images/icons/arrow_left.png);
+}
+
+.ux-icon.ux-icon-right {
+	background-image: url(../images/icons/arrow_right.png);
+}
+
+.ux-icon.ux-icon-upload {
+	background-image: url(../images/icons/upload.png);
+}
+
+.ux-icon.ux-icon-download {
+	background-image: url(../images/icons/download.png);
+}
+
+.ux-icon.ux-icon-next {
+	background-image: url(../images/icons/next.png);
+}
+
+.ux-icon.ux-icon-refresh {
+	background-image: url(../images/icons/arrow_refresh.png);
+}
+
+.ux-icon.ux-icon-arrow_return {
+	background-image: url(../images/icons/arrow_return.png);
+}
+
+.ux-icon.ux-icon-arrow_turn_left {
+	background-image: url(../images/icons/arrow_turn_left.png);
+}
+
+.ux-icon.ux-icon-arrow_turn_right {
+	background-image: url(../images/icons/arrow_turn_right.png);
+}
+
+.ux-icon.ux-icon-attach {
+	background-image: url(../images/icons/attach.png);
+}
+
+.ux-icon.ux-icon-calculator {
+	background-image: url(../images/icons/calculator.png);
+}
+
+.ux-icon.ux-icon-cross {
+	background-image: url(../images/icons/cross.png);
+}
+
+.ux-icon.ux-icon-check {
+	background-image: url(../images/icons/check.png);
+}
+
+.ux-icon.ux-icon-add {
+	background-image: url(../images/icons/add.png);
+}
+
+.ux-icon.ux-icon-delete {
+	background-image: url(../images/icons/delete.png);
+}
+
+.ux-icon.ux-icon-notice {
+	background-image: url(../images/icons/notice.png);
+}
+
+.ux-icon.ux-icon-exclamation {
+	background-image: url(../images/icons/exclamation.png);
+}
+
+.ux-icon.ux-icon-stop {
+	background-image: url(../images/icons/stop.png);
+}
+
+.ux-icon.ux-icon-inform~1 {
+	background-image: url(../images/icons/inform~1.png);
+}
+
+.ux-icon.ux-icon-flag {
+	background-image: url(../images/icons/flag.png);
+}
+
+.ux-icon.ux-icon-page {
+	background-image: url(../images/icons/page.png);
+}
+
+.ux-icon.ux-icon-magnifier {
+	background-image: url(../images/icons/magnifier.png);
+}
+
+.ux-icon.ux-icon-note {
+	background-image: url(../images/icons/note.png);
+}
+
+.ux-icon.ux-icon-printer {
+	background-image: url(../images/icons/printer.png);
+}
+
+.ux-icon.ux-icon-telephone {
+	background-image: url(../images/icons/telephone.png);
+}
+
+.ux-icon.ux-icon-email {
+	background-image: url(../images/icons/email.png);
+}
+
+.ux-icon.ux-icon-wrench {
+	background-image: url(../images/icons/wrench.png);
+}
+
+.ux-icon.ux-icon-group {
+	background-image: url(../images/icons/group.png);
+}
+
+.ux-icon.ux-icon-urgent {
+	background-image: url(../images/icons/urgent.png);
+}
+
+.ux-icon.ux-icon-folder {
+	background-image: url(../images/icons/folder.png);
+}
+
+.ux-icon.ux-icon-user {
+	background-image: url(../images/icons/icon_person.png);
+	padding-left: 18px;
+}
