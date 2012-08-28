@@ -1,0 +1,357 @@
+html { 
+	font-size: 100%; overflow-y: scroll; 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%; 
+	/* HTML5 Boilerplate: prevent scroll bar jumping, and mobile browsers from adjusting font size */
+}
+
+/* Background image to current theme */
+body {
+background:#EDF2F5 url(../images/background-header.jpg) repeat-x;
+color:#4B4B4B;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+line-height:1;
+margin:0
+}
+
+body.internal {
+	background:#EDF2F5 url(../images/background-header-internal.jpg) repeat-x 0 0
+}
+
+#dol-header {
+	height: 133px;
+}
+
+
+/* 
+ * Shared Styles
+ */
+
+#gov-banner,
+#domain-menu {
+	height: 28px;
+}
+
+#dol-header a {
+	text-decoration: none;
+}
+
+.ux-search-form > div {
+	float: right;
+	background: #FFF;
+	border-radius: 9px;
+	height: 21px;
+	width: 175px;
+	margin-right: 10px;
+}
+
+.ux-search-form .ux-search-input {
+	background:none repeat scroll 0 0 #FFF;
+	border: none;
+	display: block;
+	float: left;
+	height: 12px;
+	margin: 2px 0 0 10px;
+	padding-left: 7px;
+	width: 130px;
+}
+
+.ux-search-form .ux-search-input:focus {
+    box-shadow: none;
+}
+
+.ux-search-form .ux-search-button {
+	background: url(../images/icons/magnifier_disabled.png) no-repeat 0 0 transparent;
+	border: 0;
+	float: left;
+	height: 16px;
+	line-height:999px;
+	margin: 3px 0 0 0;
+	overflow: hidden;
+	width: 16px;
+}
+
+
+/*
+ * Gov Bannor
+ */
+
+#gov-banner a {
+	background: url(../images/nys-banner-img.png) no-repeat 0 0;
+	display: block;
+	float: left;
+	height:28px;
+}
+
+a#gov-link-1 {
+	width: 185px;
+	margin-left: -7px;
+}
+
+a#gov-link-2 {
+	background-position: 0 -28px;
+	width: 135px;
+	margin-left: 19px;
+}
+
+a#gov-link-3 {
+	background-position: 0 -56px;
+	float: right;
+	width: 145px;
+	margin-right: 8px;
+}
+
+#nys-search {
+	float: right;
+	height: 28px;
+	overflow: hidden;
+	width: 250px;
+}
+
+#nys-search > div {
+	margin-top: 3px;
+}
+
+
+/* 
+ * DOL Header Bar
+ */
+
+#ux-header-bar {
+	color:#FFF;
+	height: 77px;
+}
+
+#dol-logo {
+	background: url(../images/background-header-logo.jpg) no-repeat 0 0 transparent;
+	display: block;
+	float: left;
+	height: 77px;
+	line-height:999px;
+	margin-left: -37px;
+	overflow: hidden;
+	width: 186px;
+}
+
+#ux-app-name {
+	width: 50%;
+	display:block;
+	float: left;
+	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	font-size:26px;
+	font-weight:700;
+	margin: 24px 0 0 49px;
+	text-shadow:1px 2px 1px #000
+}
+
+#ux-global-functions {
+	float: right;
+	height:77px;
+}
+
+#ux-header-user {
+	float: right;
+	margin: 10px 10px 6px 0;
+}
+
+#ux-header-user a {
+	color: #FFF;
+	font-size: 10px;
+}
+
+/*
+ * Domain Menu (Mega Menu)
+ */
+
+#domain-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#domain-menu ul li {
+	display: inline;
+	float: left;
+}
+
+#domain-menu ul li > div {
+	background: #FFF;
+	position: absolute;
+}
+
+
+/* Breadcrumb */
+.dol-breadcrumbs {
+color:#888;
+font-size:9px;
+line-height:1.2;
+margin:0 0 7px;
+padding:0;
+vertical-align:top
+}
+
+.dol-breadcrumbs li {
+color:#696969;
+float:left;
+list-style:none;
+padding:0
+}
+
+.dol-breadcrumbs li a {
+background:url(../images/breadcrumb-icon.gif) no-repeat scroll right 2px transparent;
+color:#696969;
+margin-right:3px;
+padding-right:8px
+}
+
+.dol-breadcrumbs li a:hover {
+color:#787878;
+text-decoration:underline
+}
+
+#page-info h2 {
+clear:both;
+margin:0
+}
+
+#content-navigation {
+background:#BBB;
+height:100px
+}
+
+#content-main {
+height:400px
+}
+
+#page-wrap {
+	background:#FFF;
+	border:2px solid #ECECEC;
+	border-top:none;
+	line-height:1.6;
+	margin:0 auto;
+	padding-top:3px;
+	padding:0 0 20px;
+	width:976px
+}
+
+/* Standard Footer */
+#dol-footer {
+	background:none;
+	clear:both;
+	color:#5B717F;
+	font-size:11px;
+	left:0;
+	margin:auto;
+	position:relative;
+	width:960px;
+	z-index:1
+}
+
+#dol-footer-inner {
+	padding:0;
+	margin-bottom:10px;
+	text-align:right
+}
+
+#dol-footer-wrapper {
+	display:inline;
+	float:right;
+	margin-right:-20px
+}
+
+#dol-footer a {
+	color:#5B717F;
+	text-decoration:none
+}
+
+#dol-footer a:hover {
+	color:#2F4C5F;
+	text-decoration:underline
+}
+
+#dol-footer {
+	margin-top:15px
+}
+
+#dol-footer ul {
+	margin:0 0 5px;
+	padding-left:15px;
+	width:960px
+}
+
+#dol-footer ul#global-footer-menu {
+	display:inline
+}
+
+#dol-footer ul li {
+	border-right:1px solid #7794A8;
+	display:inline-block;
+	float:left;
+	list-style:none;
+	margin-bottom:20px;
+	padding:0 8px 0 6px
+}
+
+#dol-footer ul li:last-child,
+.ie7 #dol-footer ul li.last-child {
+	border-right:none;
+	margin-right:0
+}
+
+#dol-footer a {
+	display:inline-block
+}
+
+/* Skip Navigation */
+#dol-skip-navigation a,
+#dol-skip-navigation a:hover,
+#dol-skip-navigation a:visited {
+	color:#FFF;
+	height:1px;
+	left:0;
+	overflow:hidden;
+	position:absolute;
+	top:-500px;
+	width:1px
+}
+
+#dol-skip-navigation a:active,#dol-skip-navigation a:focus {
+	background:#000;
+	background:rgba(0,0,0,.5);
+	border-color:rgba(190,190,190,.5);
+	border-radius:7px;
+	border:2px solid #9F9F9F;
+	color:#FFF;
+	height:auto;
+	margin:4px;
+	padding:4px;
+	top:0;
+	width:auto;
+	z-index:50
+}
+
+/* Google Translate Fix */
+.translated-ltr body {
+background-position:0 40px
+}
+
+/* Auto Clearing of floats */
+.ux-button-section:after,
+.group:after,
+.dol-container:after,
+.button-header:after,
+p:after,
+.ux-flex-grid div:after,
+.ux-content-wrapper:after {
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden
+}
+
+.ie7 .group,.ie7 .dol-container,.ie7 .button-header,.ie7 .ux-button-section,.ie7 p,ie7 .ux-flex-grid div,.ie7 .ux-content-wrapper div {
+min-height:1px
+}
