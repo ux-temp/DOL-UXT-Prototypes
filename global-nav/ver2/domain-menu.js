@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	// Select only the first level items
-	$('#domain-menu li > a').each(function(){
+	$('#domain-menu > ul > li > a').each(function(){
 		
 		menu = $(this);
 
@@ -11,7 +11,9 @@ $(document).ready(function(){
 			// Add class to implement the drop down arrow.
 			menu.addClass('ux-submenu');
 		
-			menu.on('click', function(){
+			menu.on('click', function(e){
+
+				e.preventDefault()
 
 				// Sub container
 				var menuSub = $(this).next('div:first')
