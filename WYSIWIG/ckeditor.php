@@ -165,6 +165,12 @@
 	</div>
 </div>
 </form>
+
+
+				<label for="textarea1" >
+					<span>Please state the nature of the medical emergency.</span>
+                <textarea id="textarea-Custom" name="textarea1" cols="20" rows="10"> Yes Doctor</textarea>
+                </label>
 					
 					
 					
@@ -203,7 +209,25 @@
 <script type="text/javascript" src="js/ckeditor/ckeditor.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
-	     CKEDITOR.replace( 'textarea1' ) ;
+		CKEDITOR.replace( 'textarea1' );
+		
+		
+		CKEDITOR.replace( 'textarea-Custom',
+			{
+				toolbar: 
+				[
+				{ name: 'clipboard', items : [ 'Undo','Redo','-','Cut','Copy','Paste','PasteText','PasteFromWord' ] },
+				{ name: 'editing', items : [ 'Find','Replace','-','SelectAll','-','SpellChecker','Scayt' ] },
+				{ name: 'insert', items : [ 'SpecialChar' ] },
+				{ name: 'document', items : [ 'Maximize','Source','Preview' ] },
+						'/',
+				{ name: 'basicstyles', items : [ 'Bold','Italic','Underline','-','RemoveFormat' ] },
+				{ name: 'paragraph', items : [ 'JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','NumberedList','BulletedList','-','Outdent','Indent','-','Blockquote','CreateDiv' ] },
+				{ name: 'links', items : [ 'Link','Unlink','Anchor' ] },
+				]
+				
+			});
+		
 	});
 </script>
 	</body>
