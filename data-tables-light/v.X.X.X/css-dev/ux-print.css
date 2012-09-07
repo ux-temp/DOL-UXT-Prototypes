@@ -1,0 +1,123 @@
+/* Print Stylesheet */
+
+* {
+/* All: background = white; text = black; */
+	-ms-filter:none!important;
+	background:transparent!important;
+	color:#000!important;
+	filter:none!important;
+	font-size:1em!important;
+	text-shadow:none!important
+}
+
+/* 
+ * Hide the following sections on print. 
+ * Selections by ID's are template specific.
+ * Selections by classes are content or functionality.
+ */
+
+#ux-side-nav,
+#gov-banner,
+#ux-header-functions,
+#ux-domain-menu,
+#ux-footer,
+.ux-hide-print,
+.ux-notification-container,
+.show-hide-control,
+.char-limit-text-box,
+.button, /* Buttons */
+.button_mini, /* Mini Buttons */ {
+	display: none !important;
+}
+
+#dol-content-navigation, /* Side Nav OLD - Needs Updated */ 
+#dol-header-user, 
+.dol-breadcrumbs  {
+	display:none!important
+}
+
+#dol-header {
+	height:50px;
+	margin-bottom:25px
+}
+
+#dol-header-nys-labor {
+	display:block;
+	height:25px!important;
+	margin:0!important
+}
+
+.accessibility-text,
+#dol-header-application {
+	left:0!important;
+	margin:0!important;
+	position:relative;
+}
+
+.accessibility-text {
+	text-indent:0;
+	top:0
+}
+
+#dol-header-application {
+	font-size:24px!important;
+	top:-45px!important
+}
+
+#dol-content-main {
+	float:none;
+	width:100%
+}
+
+#dol-header-nys-labor a {
+	text-align:left;
+	width:100%
+}
+
+.dol-container {
+	border:none
+}
+
+.ux-content-expandable, 
+li.ux-expandable div,
+div.ux-container-expandable div {
+	display:block!important
+}
+
+/* fix the grid system for printing */
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.ie6 .grid_10,.grid_11,.grid_12,.grid_13,.grid_14,.grid_15,.grid_16 {
+	display:block!important;
+	float:none!important;
+	margin-left:0!important;
+	margin-right:0!important;
+	position:static!important;
+	width:auto!important
+}
+
+.container_12,.container_16 {
+	width:auto!important
+}
+
+/* urls after links */
+a:link:after {
+	content:" (" attr(href) ") ";
+	font-size:90%
+}
+
+a[href^="javascript:"]:after,
+a[href^="#"]:after,
+a.button:link:after,
+a.button:visited:after,
+a.button_mini:link:after,
+a.button_mini:visited:after,
+a.ux-expandable-click:link:after,
+a.ux-expandable-click:visited:after,
+a.ux-a-expandable:link:after,
+a.ux-a-expandable:visited:after,
+a.ux-contexthelp-anchor:link:after,
+a.ux-contexthelp-anchor:visited:after,
+.data-table a:link:after,
+.data-table a:visited:after {
+	content:"";
+	font-size:100%
+}

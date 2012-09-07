@@ -1,0 +1,2772 @@
+/**************
+**  DOL Containers
+***************/
+.dol-container { 
+	background-color: #FFF;
+	border:1px solid #d5d5d5; 
+	border-radius: 3px;
+	font-weight: normal; 
+	margin-bottom:10px; 
+}
+	
+.dol-container .dol-container { 
+	margin: 10px; 
+}
+
+.dol-container ul, 
+.dol-container p, 
+.dol-container ol { 
+	margin: 0 10px 10px 10px; 
+} 
+
+.dol-container h3, 
+.dol-container h4, 
+.dol-container h5, 
+.dol-container h6 {
+	background-color:#EFEFEF;
+	line-height: 1.1;
+	margin-top: 0px;  
+	padding: 5px; 
+	text-align: center; 
+}
+
+.dol-container .button_header { 
+	float: right; 
+	position: relative; 
+	right: -4px; 
+	top: 2px; 
+}
+
+.dol-container .ux-header-plain {
+	background:none;
+	margin-left:5px;
+	text-align:left
+}
+
+.dol-container ul.link-list {
+	color:#F33;
+	font-weight:700;
+	padding:6px 2px 4px 4px
+}
+
+.dol-container li.link {
+	background-image:url(../images/icons/arrow_right.png);
+	background-position:0 .1em;
+	background-repeat:no-repeat;
+	list-style-type:none;
+	padding:.2em .2em .2em 1.6em
+}
+
+.dol-container li.link.disabled {
+	background-image:url(../images/icons/arrow_right_disabled.png);
+}
+
+.dol-container li.link.disabled a {
+	color:#c4c4c4
+}
+
+.dol-container .data-table,.dol-container .key-value-table {
+	margin: 0 auto 15px auto;
+	width:96%
+}
+
+/**************
+**  Messages
+***************/
+.ux-msg {
+	box-shadow:0 0 2px rgba(0,0,0,0.10)
+}
+
+.ux-msg,.ux-inline-msg {
+	background:#E5ECF9 url(../images/icons/information.png) no-repeat 8px 7px;
+	border:#AAC6E8 1px solid;
+	border-radius:4px;
+	color:#0055B5;
+	margin:10px 0;
+	padding:6px 6px 6px 30px
+}
+
+.dol-container .ux-msg {
+	margin:10px
+}
+
+.ux-msg a {
+	color:#0055B5
+}
+
+.ux-msg ul {
+	list-style:none;
+	margin:0 0 -5px;
+	padding:0 0 0 5px
+}
+
+.ux-msg ul li {
+	font-weight:700;
+	margin:0 0 4px
+}
+
+.ux-msg.error {
+	background-color:#F9E5E6;
+	background-image:url(../images/icons/exclamation.png);
+	border-color:#E8AAAD;
+	color:#B50007
+}
+
+.ux-msg.error a {
+	color:#B50007
+}
+
+.ux-msg.success {
+	background-color:#E9F9E5;
+	background-image:url(../images/icons/tick.png);
+	border-color:#B4E8AA;
+	color:#1C8400
+}
+
+.ux-msg.success a {
+	color:#1C8400
+}
+
+.ux-msg.system {
+	background-color:#FCF3DE;
+	background-image:url(../images/icons/wrench.png);
+	border-color:#E5C47B;
+	color:#A5874A
+}
+
+.ux-msg.system a {
+	color:#A5874A
+}
+
+.ux-msg.warning,.ux-inline-msg.mandatory {
+	background-color:#F9F9E5;
+	background-image:url(../images/icons/warning.png);
+	border-color:#E8E3AA;
+	color:#828400
+}
+
+.ux-msg.warning a {
+	color:#828400
+}
+
+.ux-msg.access,.ux-inline-msg.optional {
+	background-color:#F0F0F0;
+	background-image:url(../images/icons/accessibility.png);
+	border-color:#B4B4B4;
+	color:#3C3C3C
+}
+
+.ux-msg.access a {
+	color:#3C3C3C
+}
+
+.ux-inline-msg {
+	background-image:none!important;
+	display:inline-block;
+	font-size:10px;
+	margin:0 6px;
+	padding:0 5px
+}
+
+.ux-msg a:hover,
+.ux-msg.error a:hover,
+.ux-msg.success a:hover,
+.ux-msg.system a:hover,
+.ux-msg.warning a:hover,
+.ux-msg.access a:hover {
+	color:#5683A2
+}
+
+.ux-weak {
+	background:none repeat scroll 0 0 #F6F6F6;
+	border:1px solid #CCC;
+	border-radius:3px;
+	color:#4c4c4c;
+	font-size:10px;
+	margin-bottom:15px;
+	padding:5px 7px
+}
+
+table .ux-weak {
+	background:none;
+	border:none;
+	display:block;
+	font-weight:400;
+	margin:0;
+	padding:0;
+	text-align:left
+}
+
+.ux-strong {
+	background:none repeat scroll 0 0 #EFEFEF;
+	border:2px solid #CCC;
+	border-radius:3px;
+	font-weight:700;
+	margin-bottom:15px;
+	padding:8px 12px
+}
+
+.dol-container .ux-weak,.dol-container .ux-strong {
+	margin-top:10px
+}
+
+
+/* ========================= */
+/* = BUTTON basic styles   = */
+/* ========================= */
+
+
+
+
+a.button, input.button, span.button, a.button_mini, input.button_mini, span.button_mini, button.button, button.button_mini, input.pagerGoto {
+	background: url(../images/icons/icon-button-sprite.png) no-repeat #f5f5f5;
+	border-left:1px solid #EEE;
+	border-top:1px solid #EEE;
+	border:1px solid #DEDEDE;
+	border-radius: 3px;
+	color: #369;
+	cursor: pointer;
+	display:block;
+    float:left; 
+	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	font-size:12px;
+    font-weight: bold;
+	line-height:130%;
+    margin:0 7px 0 0;
+	overflow:visible;
+	text-decoration:none;
+	word-wrap: normal
+}
+
+.button:last-child, .button_mini:last-child {
+	margin-right: 0px
+}
+
+a.button_mini, input.button_mini, span.button_mini, button.button_mini {
+    font-size:10px;
+    font-weight: normal
+}
+
+/* hover */
+a.button:hover, a.button:focus, input.button:hover, input.button:focus, span.button:hover, span.button:focus, button.button:hover {
+    background-color:#EEE;
+    border:1px solid #E5E5E5;
+    outline: 0
+}
+a.button_mini:hover, a.button_mini:focus, input.button_mini:hover, input.button_mini:focus, span.button_mini:hover, span.button_mini:focus, button.button_mini:hover {
+    background-color:#EEE;
+    border:1px solid #C3C3C3;
+    outline: 0
+}
+
+/* spacing regular */
+a.button, span.button, input.button, button.button{
+	padding: 3px 3px 3px 23px
+}
+	/* override */
+	.ie7 a.button, .ie7 span.button {
+		padding: 4px 3px 3px 23px
+	}
+	.ie7 input.button, .ie7 button.button{
+		padding: 3px 2px 1px 22px
+	}
+		
+/* spacing regular no-icon */	
+a.button.no-icon, span.button.no-icon, input.button.no-icon, button.button.no-icon { 
+	background-image: none !important;
+	padding-left: 8px !important; 
+	padding-right: 6px !important
+}
+	/* override */
+	.ie7 input.button.no-icon, .ie7 button.button.no-icon {
+		padding-left: 7px !important; 
+		padding-right: 6px !important 
+	}
+
+/* spacing mini */
+a.button_mini, span.button_mini, input.button_mini, button.button_mini {
+	padding: 1px 3px 2px 19px
+}
+	/* override */
+	.ie7 a.button_mini, .ie7 span.button_mini {
+	    padding: 2px 3px 2px 19px
+	}
+	.ie7 input.button_mini, .ie7 button.button_mini {
+		padding: 1px 2px 0 18px
+	}
+	
+/* Spacing in a caption tag with IE */
+/* overide */
+.ie7 caption a.button_mini,
+.ie7 caption span.button_mini, 
+.ie7 caption input.button_mini,
+.ie7 caption button.button_mini {
+	float: right !important;
+	margin-top: -15px;
+	vertical-align: middle
+}
+	
+/* spacing mini no-icon */
+a.button_mini.no-icon, span.button_mini.no-icon, input.button_mini.no-icon, button.button_mini.no-icon { 
+	background-image: none !important;
+	padding-left: 8px !important; 
+	padding-right: 6px !important
+}
+	/* override */
+	.ie7 input.button_mini.no-icon, .ie7 button.button_mini.no-icon {
+		padding-left: 7px !important; 
+		padding-right: 5px !important
+	}
+
+/* disabled */
+.button[disabled], .button_mini[disabled], .button.disabled, .button_mini.disabled, span.button, span.button_mini {
+	color: #CCC !important; 
+	cursor:not-allowed
+}  
+.button[disabled]:hover, .button[disabled]:focus, .button_mini[disabled]:hover, .button_mini[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button_mini.disabled:hover, .button_mini.disabled:focus {
+	background-color:#f5f5f5; 
+	color: #CCC
+}
+
+.button.primary, .button_mini.primary {
+	background-color: #7096AF;
+	border-color: #44687D;
+	color: #FFF
+}
+
+.button.primary:hover, .button.primary:focus, .button_mini.primary:hover, .button_mini.primary:focus {
+	background-color: #688BA0; 
+	border-color: #6D94AF
+}
+
+/* =========== */
+/* == Icons == */
+/* =========== */
+
+/* Save */
+.button.save {
+	background-position: 3px -29px
+}
+.button[disabled].save, .button.save.disabled, span.button.save {
+	background-position: 3px -61px
+}
+.button_mini.save  {
+	background-position: 2px -96px
+}
+.button_mini[disabled].save, .button_mini.save.disabled, span.button_mini.save {
+	background-position: 2px -128px
+}
+
+/* Edit */
+
+.button.edit {
+	background-position: 3px -157px
+}
+.button[disabled].edit, .button.edit.disabled, span.button.edit {
+	background-position: 3px -189px
+}
+.button_mini.edit {
+	background-position: 2px -223px
+}
+.button_mini[disabled].edit, .button_mini.edit.disabled, span.button_mini.edit {
+	background-position: 2px -255px
+}
+
+/* Up */
+
+.button.arrow_up {
+	background-position: 3px -285px
+}
+.button[disabled].arrow_up, .button.arrow_up.disabled, span.button.arrow_up {
+	background-position: 3px -317px
+}
+.button_mini.arrow_up {
+	background-position: 2px -352px
+}
+.button_mini[disabled].arrow_up, .button_mini.arrow_up.disabled, span.button_mini.arrow_up {
+	background-position: 2px -384px
+}
+
+/* Down */
+
+.button.arrow_down {
+	background-position: 3px -413px
+}
+.button[disabled].arrow_down, .button.arrow_down.disabled, span.button.arrow_down {
+	background-position: 3px -445px
+}
+.button_mini.arrow_down {
+	background-position: 2px -479px
+}
+.button_mini[disabled].arrow_down, .button_mini.arrow_down.disabled, span.button_mini.arrow_down {
+	background-position: 2px -511px
+}
+
+/* Left */
+.button.arrow_left {
+	background-position: 3px -540px
+}
+.button[disabled].arrow_left, .button.arrow_left.disabled, span.button.arrow_left {
+	background-position: 3px -572px
+}
+.button_mini.arrow_left {
+	background-position: 2px -607px
+}
+.button_mini[disabled].arrow_left, .button_mini.arrow_left.disabled, span.button_mini.arrow_left {
+	background-position: 2px -639px
+}
+
+/* Right */
+.button.arrow_right {
+	background-position: 3px -668px
+}
+.button[disabled].arrow_right, .button.arrow_right.disabled, span.button.arrow_right {
+	background-position: 3px -700px
+}
+.button_mini.arrow_right {
+	background-position: 2px -735px
+}
+.button_mini[disabled].arrow_right, .button_mini.arrow_right.disabled, span.button_mini.arrow_right {
+	background-position: 2px -767px
+}
+
+/* Upload */
+.button.upload {
+	background-position: 3px -765px
+}
+.button[disabled].upload, .button.upload.disabled, span.button.upload {
+	background-position: 3px -797px
+}
+.button_mini.upload {
+	background-position: 2px -831px
+}
+.button_mini[disabled].upload, .button_mini.upload.disabled, span.button_mini.upload {
+	background-position: 2px -863px
+}
+
+/* Download */
+.button.download {
+	background-position: 3px -893px
+}
+.button[disabled].download, .button.download.disabled, span.button.download {
+	background-position: 3px -925px
+}
+.button_mini.download {
+	background-position: 2px -959px
+}
+.button_mini[disabled].download, .button_mini.download.disabled, span.button_mini.download {
+	background-position: 2px -991px
+}
+
+/* Next */
+.button.next {
+	background-position: 3px -1021px
+}
+.button[disabled].next, .button.next.disabled, span.button.next {
+	background-position: 3px -1053px
+}
+.button_mini.next {
+	background-position: 2px -1088px
+}
+.button_mini[disabled].next, .button_mini.next.disabled, span.button_mini.next {
+	background-position: 2px -1120px
+}
+
+/* Previous */
+.button.previous {
+	background-position: 3px -1148px
+}
+.button[disabled].previous, .button.previous.disabled, span.button.previous {
+	background-position: 3px -1180px
+}
+.button_mini.previous {
+	background-position: 2px -1215px
+}
+.button_mini[disabled].previous, .button_mini.previous.disabled, span.button_mini.previous {
+	background-position: 2px -1247px
+}
+
+/* Refreash */
+.button.refresh {
+	background-position: 3px -1277px
+}
+.button[disabled].refresh, .button.refresh.disabled, span.button.refresh {
+	background-position: 3px -1309px
+}
+.button_mini.refresh {
+	background-position: 2px -1343px
+}
+.button[disabled].refresh, .button_mini.refresh.disabled, span.button_mini.refresh {
+	background-position: 2px -1375px
+}
+
+/* Return */
+.button.arrow_return {
+	background-position: 3px -1405px
+}
+.button[disabled].arrow_return, .button.arrow_return.disabled, span.button.arrow_return {
+	background-position: 3px -1437px
+}
+.button_mini.arrow_return {
+	background-position: 2px -1471px
+}
+.button[disabled].arrow_return, .button_mini.arrow_return.disabled, span.button_mini.arrow_return {
+	background-position: 2px -1503px
+}
+
+/* Undo */
+.button.arrow_turn_left {
+	background-position: 3px -1533px
+}
+.button[disabled].arrow_turn_left, .button.arrow_turn_left.disabled, span.button.arrow_turn_left {
+	background-position: 3px -1565px
+}
+.button_mini.arrow_turn_left {
+	background-position: 2px -1600px
+}
+.button_mini[disabled].arrow_turn_left, .button_mini.arrow_turn_left.disabled, span.button_mini.arrow_turn_left {
+	background-position: 2px -1632px
+}
+
+/* Redo */
+.button.arrow_turn_right {
+	background-position: 3px -1661px
+}
+.button[disabled].arrow_turn_right, .button.arrow_turn_right.disabled, span.button.arrow_turn_right {
+	background-position: 3px -1693px
+}
+.button_mini.arrow_turn_right {
+	background-position: 2px -1728px
+}
+.button[disabled].arrow_turn_right, .button_mini.arrow_turn_right.disabled, span.button_mini.arrow_turn_right {
+	background-position: 2px -1760px
+}
+
+/* Attach */
+.button.attach, .button[disabled].attach, .button.attach.disabled, span.button.attach {
+	background-position: 3px -1788px
+}
+.button_mini.attach, .button_mini[disabled].attach, .button_mini.attach.disabled, span.button_mini.attach {
+	background-position: 2px -1823px
+}
+
+/* Calculator */
+.button.calculator {
+	background-position: 3px -1853px
+}
+.button[disabled].calculator, .button.calculator.disabled, span.button.calculator {
+	background-position: 3px -1885px
+}
+.button_mini.calculator {
+	background-position: 2px -1924px
+}
+.button[disabled].calculator, .button_mini.calculator.disabled, span.button_mini.calculator {
+	background-position: 2px -1951px
+}
+
+/* Calandar */
+.button.calendar {
+	background-position: 3px -1981px
+}
+.button[disabled].calendar, .button.calendar.disabled, span.button.calendar {
+	background-position: 3px -2013px
+}
+.button_mini.calendar {
+	background-position: 2px -2048px
+}
+.button_mini[disabled].calendar, .button_mini.calendar.disabled, span.button_mini.calendar {
+	background-position: 2px -2080px
+}
+
+/* Cancel */
+.button.cancel {
+	background-position: 3px -2109px
+}
+.button[disabled].cancel, .button.cancel.disabled, span.button.cancel {
+	background-position: 3px -2141px
+}
+.button_mini.cancel  {
+	background-position: 2px -2175px
+}
+.button_mini[disabled].cancel, .button_mini.cancel.disabled, span.button_mini.cancel {
+	background-position: 2px -2207px
+}
+
+/* No */
+.button.cross {
+	background-position: 3px -2237px
+}
+.button[disabled].cross, .button.cross.disabled, span.button.cross {
+	background-position: 3px -2269px
+}
+.button_mini.cross {
+	background-position: 2px -2303px
+}
+.button_mini[disabled].cross, .button_mini.cross.disabled, span.button_mini.cross {
+	background-position: 2px -2335px
+}
+
+/* Yes */
+.button.check {
+	background-position: 3px -2365px
+}
+.button[disabled].check, .button.check.disabled, span.button.check {
+	background-position: 3px -2396px
+}
+.button_mini.check  {
+	background-position: 2px -2432px
+}
+.button_mini[disabled].check, .button_mini.check.disabled, span.button_mini.check {
+	background-position: 2px -2464px
+}
+
+/* Add */
+.button.add {
+	background-position: 3px -2493px
+}
+.button[disabled].add, .button.add.disabled, span.button.add {
+	background-position: 3px -2525px
+}
+.button_mini.add {
+	background-position: 2px -2560px
+}
+.button_mini[disabled].add, .button_mini.add.disabled, span.button_mini.add {
+	background-position: 2px -2592px
+}
+
+/* Delete */
+.button.delete {
+	background-position: 3px -2621px
+}
+.button[disabled].delete, .button.delete.disabled, span.button.delete {
+	background-position: 3px -2653px
+}
+.button_mini.delete	{
+	background-position: 2px -2687px
+}
+.button_mini[disabled].delete, .button_mini.delete.disabled, span.button_mini.delete {
+	background-position: 2px -2719px
+}
+
+/* Error */
+.button.notice {
+	background-position: 3px -2749px
+}
+.button[disabled].notice, .button.notice.disabled, span.button.notice {
+	background-position: 3px -2783px
+}
+.button_mini.notice	{
+	background-position: 2px -2816px
+}
+.button_mini[disabled].notice, .button_mini.notice.disabled, span.button_mini.notice {
+	background-position: 2px -2848px
+}
+
+/* Important */
+.button.exclamation {
+	background-position: 3px -2877px
+}
+.button[disabled].exclamation, .button.exclamation.disabled, span.button.exclamation {
+	background-position: 3px -2909px
+}
+.button_mini.exclamation {
+	background-position: 2px -2944px
+}
+.button_mini[disabled].exclamation, .button_mini.exclamation.disabled, span.button_mini.exclamation {
+	background-position: 2px -2976px
+}
+
+/* Stop */
+.button.stop {
+	background-position: 3px -3005px
+}
+.button[disabled].stop, .button.stop.disabled, span.button.stop {
+	background-position: 3px -3037px
+}
+.button_mini.stop {
+	background-position: 2px -3071px
+}
+.button_mini[disabled].stop, .button_mini.stop.disabled, span.button_mini.stop {
+	background-position: 2px -3103px
+}
+
+/* Information */
+.button.information {
+	background-position: 3px -3133px
+}
+.button[disabled].information, .button.information.disabled, span.button.information {
+	background-position: 3px -3165px
+}
+.button_mini.information {
+	background-position: 2px -3200px
+}
+.button_mini[disabled].information, .button_mini.information.disabled, span.button_mini.information {
+	background-position: 2px -3232px
+}
+
+/* Flag */
+.button.flag {
+	background-position: 3px -3261px
+}
+.button[disabled].flag, .button.flag.disabled, span.button.flag {
+	background-position: 3px -3293px
+}
+.button_mini.flag {
+	background-position: 2px -3328px
+}
+.button_mini[disabled].flag, .button_mini.flag.disabled, span.button_mini.flag {
+	background-position: 2px -3360px
+}
+
+/* Page */
+.button.page {
+	background-position: 3px -3389px
+}
+.button[disabled].page, .button.page.disabled, span.button.page {
+	background-position: 3px -3421px
+}
+.button_mini.page {
+	background-position: 2px -3456px
+}
+.button_mini[disabled].page, .button_mini.page.disabled, span.button_mini.page {
+	background-position: 2px -3488px
+}
+
+/* View */
+.button.page_magnify {
+	background-position: 3px -3517px
+}
+.button[disabled].page_magnify, .button.page_magnify.disabled, span.button.page_magnify {
+	background-position: 3px -3549px
+}
+.button_mini.page_magnify {
+	background-position: 2px -3584px
+}
+.button_mini[disabled].page_magnify, .button_mini.page_magnify.disabled, span.button_mini.page_magnify {
+	background-position: 2px -3616px
+}
+
+/* Search */
+.button.magnifier {
+	background-position: 3px -3645px
+}
+.button[disabled].magnifier, .button.magnifier.disabled, span.button.magnifier {
+	background-position: 3px -3677px
+}
+.button_mini.magnifier {
+	background-position: 2px -3711px
+}
+.button_mini[disabled].magnifier, .button_mini.magnifier.disabled, span.button_mini.magnifier {
+	background-position: 2px -3743px
+}
+
+/* Note */
+.button.note {
+	background-position: 3px -3773px
+}
+.button[disabled].note, .button.note.disabled, span.button.note {
+	background-position: 3px -3805px
+}
+.button_mini.note {
+	background-position: 2px -3839px
+}
+.button_mini[disabled].note, .button_mini.note.disabled, span.button_mini.note {
+	background-position: 2px -3871px
+}
+
+/* Print */
+.button.printer {
+	background-position: 3px -3901px
+}
+.button[disabled].printer, .button.printer.disabled, span.button.printer {
+	background-position: 3px -3933px
+}
+.button_mini.printer {
+	background-position: 2px -3967px
+}
+.button_mini[disabled].printer, .button_mini.printer.disabled, span.button_mini.printer {
+	background-position: 2px -3999px
+}
+
+/* Phone */
+.button.telephone {
+	background-position: 3px -4029px
+}
+.button[disabled].telephone, .button.telephone.disabled, span.button.telephone {
+	background-position: 3px -4061px
+}
+.button_mini.telephone {
+	background-position: 2px -4095px
+}
+.button_mini[disabled].telephone, .button_mini.telephone.disabled, span.button_mini.telephone {
+	background-position: 2px -4127px
+}
+
+/* Email */
+.button.email {
+	background-position: 3px -4155px
+}
+.button[disabled].email, .button.email.disabled, span.button.email {
+	background-position: 3px -4187px
+}
+.button_mini.email {
+	background-position: 2px -4222px
+}
+.button_mini[disabled].email, .button_mini.email.disabled, span.button_mini.email {
+	background-position: 2px -4254px
+}
+
+/* Preferences */
+.button.wrench {
+	background-position: 3px -4285px
+}
+.button[disabled].wrench, .button.wrench.disabled, span.button.wrench {
+	background-position: 3px -4317px
+}
+.button_mini.wrench {
+	background-position: 2px -4351px
+}
+.button_mini[disabled].wrench, .button_mini.wrench.disabled, span.button_mini.wrench {
+	background-position: 2px -4383px
+}
+
+/* Special icons some dont have disabled or minis */
+.button.group {
+	background: url(../images/icons/group.png) no-repeat 3px 3px #f5f5f5;	
+}
+
+.button[disabled].group, .button.group.disabled, span.button.group {
+	background: url(../images/icons/group_disabled.png) no-repeat -1px -2px #f5f5f5;
+}
+
+.button.folder {
+	background: url(../images/icons/folder.png) no-repeat 3px 3px #f5f5f5;	
+}
+
+.button.urgent {
+	background: url(../images/icons/urgent.png) no-repeat 3px 3px #f5f5f5;	
+}
+
+
+/* ===================== */
+/* Textual Buttons */
+
+.button.text-only {
+	background: none;
+	border: none;
+	display: block;
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0 !important;
+	padding: 0 !important;
+	text-align: left
+}
+
+.button.text-only:hover {
+	background: none;
+	border: none;
+	text-decoration: underline
+}
+
+/* overrides */
+
+.primary-button-set {
+	display: block;
+	margin-bottom: 5px
+}
+
+.secondary-button-sets {
+	display: block
+}
+
+/* ===================== */
+/* icons on right side */
+
+.button.next.icon-right{ 
+	background-image: url(../images/icons/next_icon-right.png);
+}
+.button[disabled].next.icon-right, .button.next.icon-right.disabled, span.button.next.icon-right{ 
+	background-image: url(../images/icons/next_icon-right_disabled.png);
+}
+.button_mini.next.icon-right { 
+	background-image: url(../images/icons/next_icon-right_mini.png);
+}
+.button_mini[disabled].next.icon-right, .button_mini.next.icon-right.disabled, span.button_mini.next.icon-right { 
+	background-image: url(../images/icons/next_icon-right_disabled_mini.png);
+}
+a.button.next.icon-right, span.button.next.icon-right, input.button.next.icon-right{
+	background-position: right center;
+	background-repeat: no-repeat;
+	padding: 3px 20px 3px 6px; 
+}
+	/* override */
+	.ie7 a.button.next.icon-right, .ie7 span.button.next.icon-right {
+		padding: 4px 21px 3px 6px;
+	}
+	.ie7 input.button.next.icon-right {
+		background-position: right center;
+		padding: 3px 20px 1px 6px;
+	}	
+	
+a.button_mini.next.icon-right, span.button_mini.next.icon-right, input.button_mini.next.icon-right{
+	background-position: right center;
+	background-repeat: no-repeat;
+	padding: 2px 16px 2px 5px;
+}
+	/* override */
+	.ie7 a.button_mini.next.icon-right, .ie7 span.button_mini.next.icon-right {
+	    padding: 2px 16px 2px 5px;
+	}
+	.ie7 input.button_mini.next.icon-right {
+		background-position: right center;
+		padding: 1px 16px 0 4px; 
+	}
+
+/* ===================== */
+/* ==== Icons Only  ==== */
+/* ===================== */
+.button.icon-only {
+	text-indent: -9999px;
+}
+
+a.button.icon-only, input.button.icon-only {
+	display: block;
+	width: 22px;
+	height: 22px;
+	padding: 0;
+}
+
+/* ===================== */
+/* = Button containers = */
+/* ===================== */
+
+.ux-button-section {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	clear: both
+}
+
+.ux-button-container {
+	float: right;
+	margin:0
+}
+
+.dol-container .ux-button-container {
+	margin: 0 15px
+}
+
+
+
+/*
+ * Call to action buttons
+ */
+
+a.call-to-action, 
+input.call-to-action {
+	display: inline-block;
+	color: #000 !important;
+	margin: 4px;
+	padding: 10px 14px;
+	text-align: center;
+	vertical-align: text-middle;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px #888;
+	cursor: pointer;
+	text-decoration: none;
+	text-shadow: 0px 0px #777;
+	background: #a1a1a1; 
+	
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #D5D5D5 0%, #a1a1a1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D5D5D5), color-stop(100%,#a1a1a1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #D5D5D5 0%,#a1a1a1 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #D5D5D5 0%,#a1a1a1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D5D5D5', endColorstr='#a1a1a1',GradientType=0 ); /* IE6-8 */
+}
+
+.chrome input.call-to-action {
+	padding: 13px 11px;
+}
+
+.ie7 .call-to-action,
+.ie8 .call-to-action,
+.firefox .call-to-action, 
+.safari .call-to-action {
+	padding: 10px 14px;
+}
+
+input.call-to-action,
+.firefox input.call-to-action, 
+.safari input.call-to-action {
+	border: 0;
+	padding: 12px 14px;
+}
+ 
+.ie7 input.call-to-action,
+.ie8 input.call-to-action
+{
+	margin-top: 0;
+	margin-bottom: 1px;
+	padding: 12px 0 10px 0px;
+}
+
+.call-to-action span.call-sub-text {
+	display: block;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.call-to-action:hover {
+	background: #888; /* IE-9 */
+	background: -moz-linear-gradient(top, #D5D5D5 0%, #888 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D5D5D5), color-stop(100%,#888)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #D5D5D5 0%,#888 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #D5D5D5 0%,#888 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D5D5D5', endColorstr='#878787',GradientType=0 ); /* IE6-8 */
+}
+
+.call-to-action:active {
+	background: #D5D5D5; /* IE-9 */
+	background: -moz-linear-gradient(top, #a1a1a1 0%, #D5D5D5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a1a1a1), color-stop(100%,#D5D5D5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a1a1a1 0%,#D5D5D5 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #a1a1a1 0%,#D5D5D5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1a1a1', endColorstr='#D5D5D5',GradientType=0 ); /* IE6-8 */
+	position: relative;
+	top: 1px;
+}
+
+/* Call to action Primary button */
+.call-to-action.primary {
+	color: #fff !important;
+	text-shadow: 0px -1px #777;
+	background: #415866; 
+	
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #688BA0 0%, #415866 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#688BA0), color-stop(100%,#415866)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #688BA0 0%,#415866 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #688BA0 0%,#415866 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#688BA0', endColorstr='#415866',GradientType=0 ); /* IE6-8 */
+}
+
+.call-to-action.primary:hover {
+	background: #374B57; /* IE9 */
+	background: -moz-linear-gradient(top, #688BA0 0%, #374B57 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#688BA0), color-stop(100%,#374B57)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #688BA0 0%,#374B57 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #688BA0 0%,#374B57 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#688BA0', endColorstr='#374B57',GradientType=0 ); /* IE6-8 */
+}
+
+.call-to-action.primary:active {
+	background: #688BA0; /* IE9 */
+	background: -moz-linear-gradient(top, #415866 0%, #688BA0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#415866), color-stop(100%,#688BA0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #415866 0%,#688BA0 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #415866 0%,#688BA0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#415866', endColorstr='#688BA0',GradientType=0 ); /* IE6-8 */
+}
+
+/**************
+**  Link Icons
+***************/
+.icon-link,
+footer .icon-link-text {
+	display:inline-block;
+	text-decoration:none
+}
+
+.icon-link-text {
+	text-decoration:underline
+}
+
+.icon-link-span {
+	display:inline;
+	text-decoration:none
+}
+
+.ie7 .icon-link-span {
+	width:auto
+}
+
+.icon-link-span-icons {
+	margin:0 3px -2px 0;
+	padding-left:3px;
+	text-align:right;
+	text-decoration:none
+}
+
+#global-footer-menu .icon-link-span-icons {
+	margin-top:-2px;
+	padding-top:0
+}
+
+/**************
+**  UX Icons
+***************/
+.ux-icon {
+	background: url(../images/icons/add.png) no-repeat 0 0 transparent;
+	padding: 0 0 1px 20px;
+}
+
+.ux-icon.ux-icon-save {
+	background-image: url(../images/icons/disk.png);
+}
+
+.ux-icon.ux-icon-edit {
+	background-image: url(../images/icons/application_edit.png);
+}
+
+.ux-icon.ux-icon-up {
+	background-image: url(../images/icons/arrow_up.png);
+}
+
+.ux-icon.ux-icon-down {
+	background-image: url(../images/icons/arrow_down.png);
+}
+
+.ux-icon.ux-icon-left {
+	background-image: url(../images/icons/arrow_left.png);
+}
+
+.ux-icon.ux-icon-right {
+	background-image: url(../images/icons/arrow_right.png);
+}
+
+.ux-icon.ux-icon-upload {
+	background-image: url(../images/icons/upload.png);
+}
+
+.ux-icon.ux-icon-download {
+	background-image: url(../images/icons/download.png);
+}
+
+.ux-icon.ux-icon-next {
+	background-image: url(../images/icons/next.png);
+}
+
+.ux-icon.ux-icon-refresh {
+	background-image: url(../images/icons/arrow_refresh.png);
+}
+
+.ux-icon.ux-icon-arrow_return {
+	background-image: url(../images/icons/arrow_return.png);
+}
+
+.ux-icon.ux-icon-arrow_turn_left {
+	background-image: url(../images/icons/arrow_turn_left.png);
+}
+
+.ux-icon.ux-icon-arrow_turn_right {
+	background-image: url(../images/icons/arrow_turn_right.png);
+}
+
+.ux-icon.ux-icon-attach {
+	background-image: url(../images/icons/attach.png);
+}
+
+.ux-icon.ux-icon-calculator {
+	background-image: url(../images/icons/calculator.png);
+}
+
+.ux-icon.ux-icon-cross {
+	background-image: url(../images/icons/cross.png);
+}
+
+.ux-icon.ux-icon-check {
+	background-image: url(../images/icons/check.png);
+}
+
+.ux-icon.ux-icon-add {
+	background-image: url(../images/icons/add.png);
+}
+
+.ux-icon.ux-icon-delete {
+	background-image: url(../images/icons/delete.png);
+}
+
+.ux-icon.ux-icon-notice {
+	background-image: url(../images/icons/notice.png);
+}
+
+.ux-icon.ux-icon-exclamation {
+	background-image: url(../images/icons/exclamation.png);
+}
+
+.ux-icon.ux-icon-stop {
+	background-image: url(../images/icons/stop.png);
+}
+
+.ux-icon.ux-icon-inform~1 {
+	background-image: url(../images/icons/inform~1.png);
+}
+
+.ux-icon.ux-icon-flag {
+	background-image: url(../images/icons/flag.png);
+}
+
+.ux-icon.ux-icon-page {
+	background-image: url(../images/icons/page.png);
+}
+
+.ux-icon.ux-icon-magnifier {
+	background-image: url(../images/icons/magnifier.png);
+}
+
+.ux-icon.ux-icon-note {
+	background-image: url(../images/icons/note.png);
+}
+
+.ux-icon.ux-icon-printer {
+	background-image: url(../images/icons/printer.png);
+}
+
+.ux-icon.ux-icon-telephone {
+	background-image: url(../images/icons/telephone.png);
+}
+
+.ux-icon.ux-icon-email {
+	background-image: url(../images/icons/email.png);
+}
+
+.ux-icon.ux-icon-wrench {
+	background-image: url(../images/icons/wrench.png);
+}
+
+.ux-icon.ux-icon-group {
+	background-image: url(../images/icons/group.png);
+}
+
+.ux-icon.ux-icon-urgent {
+	background-image: url(../images/icons/urgent.png);
+}
+
+.ux-icon.ux-icon-folder {
+	background-image: url(../images/icons/folder.png);
+}
+
+.ux-icon.ux-icon-user {
+	background-image: url(../images/icons/icon_person.png);
+	padding-left: 18px;
+}
+
+/* 
+ * Context Help 
+ */
+
+.js .ux-contexthelp {
+	display:none;
+	font-size:10px;
+	font-weight:400
+}
+
+.ux-contexthelp-img {
+	margin:0;
+	padding:0 0 0 5px;
+	position:relative;
+	top:3px
+}
+
+.required {
+	color:#DD0B00!important;
+	display:inline-block;
+	font-size:12px;
+	left:0;
+	position:relative;
+	top:-2px
+}
+
+abbr.required {
+	border-bottom:none
+}
+
+/* Form inline message */
+.ux-msg.ux-msg-inline,
+legend .ux-msg.ux-msg-inline {
+	background-position: 3px 3px;
+	margin: 2px 0;
+	padding: 2px 6px 1px 24px;
+}
+
+.ux-msg.ux-msg-inline {
+	display: inline-block;
+	font-weight: bold;
+}
+
+legend .ux-msg.ux-msg-inline {
+	display: block;
+}
+
+/**************
+**  A-Z Index Component
+***************/
+.ux-a-z-index,
+.ux-a-z-item-container.selected {
+	display:block;
+}
+
+.ux-a-z-index
+.ux-a-z-index a {
+	text-align:center
+}
+
+.ux-a-z-index a {
+	background:#EFEFEF;
+	border:1px solid #D2D2D2;
+	border-radius:3px;
+	color:#3D6683;
+	display:inline-block;
+	font-size:14px;
+	font-weight:700;
+	padding-top:2px;
+	text-decoration:none;
+	width:20px!important
+}
+
+.ux-a-z-index a.selected {
+	background:#3D6683!important;
+	bottom-border:none;
+	color:#FFF!important
+}
+
+.ux-a-z-item-container {
+	display:none;
+	min-height:4px 0;
+	padding:15px 25px
+}
+
+.no-js .ux-a-z-item-container {
+	display:block;
+	min-height:0;
+	padding:15px 25px
+}
+
+.ux-a-z-item-container .ux-weak {
+	margin:25px auto;
+	text-align:center;
+	width:300px
+}
+
+.ux-a-z-item-container ul {
+	list-style:none;
+	padding-left:0
+}
+
+.ux-a-z-index a:hover {
+	background:#D2D2D2;
+	border:1px solid #B4B4B4;
+	box-shadow:0 0 1px #A5A5A5;
+	color:#3D6683
+}
+
+/*
+ * Pull and Blockqoute
+ */
+
+.ux-blockquote { 
+	color: 000;
+	font-size: 17px;
+	font-family: 'Copse', Georgia, Baskerville, TimesNewRoman, serif;
+	background: url(../images/icons/qoute.jpg) no-repeat 0 0 transparent;
+	padding: 2px 20px 5px 40px;
+	margin: 25px 20px;
+}
+
+.ux-blockquote.ux-pullquote { 
+	padding: 30px 15px;
+	float: right;
+	width: 200px;
+	margin: 0 10px 0 20px;
+}
+
+/*
+ * HTML5 Video
+ */
+video, .video,
+.video embed,
+.video object,
+.video iframe {
+	width: 100%;
+}
+
+/*
+ *	Misc
+ */
+
+@font-face { 
+	font-family: 'Copse'; 
+	src: url('../fonts/Copse-Regular.ttf') format('opentype'); 
+}
+
+.access-link-icon {
+background:url(../images/icons/accessibility.png) no-repeat right -1px transparent;
+padding-right:18px
+}
+
+.ux-placeholder {
+color:#bbb
+}
+
+/**************
+**  Credit Card List
+***************/
+.ux-credit-cards {
+	padding: 0;
+}
+
+.ux-credit-cards li {
+	background: url(../images/icons/icon-master-sprite.gif) no-repeat #FFF;
+	height: 32px;
+	float: left;
+	list-style: none;
+	text-indent: -9999px;
+	margin: 0 5px 0 0;
+	width: 32px
+}
+
+.ux-credit-cards li.master-card {
+	background-position: 0 0
+}
+
+.ux-credit-cards li.master-card-disabled {
+	background-position: 0 -32px
+}
+
+.ux-credit-cards li.visa {
+	background-position: -32px 0
+}
+
+.ux-credit-cards li.visa-disabled {
+	background-position: -32px -32px
+}
+
+.ux-credit-cards li.american-express {
+	background-position: -64px 0
+}
+
+.ux-credit-cards li.american-express-disabled {
+	background-position: -64px -32px
+}
+
+.ux-credit-cards li.discover {
+	background-position: -96px 0
+}
+
+.ux-credit-cards li.discover-disabled {
+	background-position: -96px -32px
+}
+
+.ux-credit-cards li.pay-pal {
+	background-position: -128px 0
+}
+
+.ux-credit-cards li.pay-pal-disabled {
+	background-position: -128px -32px
+}
+
+/* 
+ * Fake Tabs
+ */
+.ux-fake-tabs {
+	margin: 0 0 5px 0;
+	min-height: 0;
+	border-bottom: 1px solid #999;
+	display: block
+}
+
+.ux-fake-tabs:after {
+	clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+
+.ux-fake-tabs li {
+	background: #fff;
+	border: 1px solid #E1E1E1;
+	border-bottom: none;
+	border-radius: 4px 4px 0 0;
+	float: left;
+	list-style: none;
+	margin: 0 0.2em 0 0;
+	position: relative
+}
+
+.ux-fake-tabs li.selected {
+	border-color: #999 #999 #FFF #999;
+	padding: 0.5em 1em;
+	top: 1px
+}
+
+.ux-fake-tabs li a {
+	background: #FBFBFB;
+	display: block;
+	padding: 0.5em 1em
+}
+
+.ux-fake-tabs li:hover {
+	border-color: #B4B4B4;
+}
+
+.ux-fake-tabs li a:hover {
+	background: #E1E1E1;
+}
+
+/*
+ * Modal
+ */
+
+#modal-background,
+.modal-background {
+	position:absolute;
+	text-align:center;
+}
+
+#modal-background,
+.modal-background {
+	background-color:#000;
+	filter:alpha(opacity=50);
+	height:100%;
+	left:0;
+	margin:0 px;
+	min-height:100%;
+	opacity:0.6;
+	top:0;
+	width:100%;
+	z-index:600;
+	zoom:1
+}
+
+#modal-div {
+	background-color:#FFF;
+	border-radius:6px;
+	width:200px;
+	z-index:650
+}
+
+.ie7 #modal-background,
+.ie7 .modal-background {
+	position:fixed
+}
+
+#loading-div {
+	margin:40px 10px
+}
+
+#loading-div p {
+	font-weight:700;
+	margin:20px 0
+}
+
+#new-mediaspace {
+	left:30px;
+	position:relative;
+	top:30px
+}
+
+#close-button {
+	cursor:pointer;
+	position:absolute;
+	z-index:35
+}
+
+/**************
+**  Content Expandables
+***************/
+.dol-container .ux-content-expandable ul,
+.dol-container .ux-content-expandable ol,
+.dol-container .ux-content-expandable p {
+	margin-left:0!important
+}
+
+.ux-content-expandable .ux-expandable {
+	background:url(../images/icons/expandable-ux-arrows-gray-close.gif) no-repeat left 0 transparent !important;
+	padding-left: 20px;
+}
+
+.ux-content-expandable .ux-expandable.expanded {
+	background:url(../images/icons/expandable-ux-arrows-gray-open.gif) no-repeat left 0 transparent !important;
+}
+
+.ux-content-expandable .ux-expandable + div {
+	display: none;
+	padding-left: 20px;
+}
+
+.ux-content-expandable,
+.expandable-list {
+	list-style: none;
+}
+
+.ux-content-expandable {
+	margin:0;
+	padding:0
+}
+
+.expandable-list {
+	margin-left: -20px;
+}
+
+.ux-container-expandable .ux-content-expandable > ul {
+	margin-left:3px;
+	padding-left: 5px;
+}
+
+.ux-content-expandable > ul > li {
+
+	margin-left: 22px;
+}
+
+/**************
+**  Container Expandables
+***************/
+
+.ux-expandable h3,
+.ux-expandable h4,
+.ux-expandable h5,
+.ux-expandable h6 {
+	background: none;
+	margin:0;
+	text-align:left;
+	padding-left:30px
+}
+
+.ux-container-expandable > div > ul,
+.ux-container-expandable > div > ol,
+.ux-container-expandable > div > dl,
+.ux-container-expandable > div > p {
+	margin-top: 10px;
+}
+
+.ux-container-expandable a.ux-expandable {
+	background:url(../images/icons/expandable-ux-arrows-gray-close.gif) no-repeat scroll 6px 45% #EFEFEF;
+	display: block;
+	text-decoration:none
+}
+
+.ux-container-expandable a.ux-expandable.expanded {
+	background:url(../images/icons/expandable-ux-arrows-gray-open.gif) no-repeat scroll 6px 45% #EFEFEF
+}
+
+.js .ux-container-expandable.ux-closed > div {
+	display:none
+}
+
+/*
+Overrides for expandable content in expandable containers
+*/
+.ux-container-expandable .ux-content-expandable .ux-expandable,
+.ux-container-expandable .ux-content-expandable .ux-expandable.expanded  {
+	background-position: left 0;
+}
+
+.ux-container-expandable .ux-content-expandable .expandable-list {
+	margin-left: 0;
+}
+
+/*
+ * Form Layout
+ */
+
+/*
+=======================================================================================================
+Side by side approach
+=======================================================================================================
+*/
+.ie7 .input[hidden] {
+	display:none;
+	margin:0;
+	position:absolute
+}
+
+.ux-form-side label {
+	display:inline-block;
+	width:100%
+}
+
+.ux-form-side label.ux-date {
+	margin-bottom:3px
+}
+
+.ux-form-side label span {
+	display:inline-block;
+	float:left;
+	width:150px
+}
+
+.ux-form-side label input,.ux-form-side label select,.ux-form-side label textarea {
+	display:inline;
+	float:left;
+	margin:0 0 10px
+}
+
+label textarea {
+	margin-left:0!important;
+	margin-top:0!important
+}
+
+.ie7 .ux-form-side label input,
+.ie7 .ux-form-side label select,
+.ie7 .ux-form-side label textarea {
+	display:block;
+	float:none;
+	margin-bottom:15px
+}
+
+.ie7 .ux-form-side label.ux-date input {
+	display:inline
+}
+
+.ux-form-side label span,
+.ux-form-top label span,
+.ux-form-side fieldset.radio-check-list legend,
+.ux-form-top fieldset.radio-check-list legend,
+.ux-form-side fieldset.jsf-radio-check-list legend,
+.ux-form-top fieldset.jsf-radio-check-list legend,
+.ux-form-side fieldset.radio-check-list legend,
+.ux-form-top fieldset.radio-check-list legend,
+.ux-form-side fieldset.multi-input legend,
+.ux-form-top fieldset.multi-input legend,
+.ux-form-side fieldset.ux-single-check-box legend,
+.ux-form-top fieldset.ux-single-check-box legend,
+.ux-form-side fieldset.multi-input legend,
+.ux-form-top fieldset.multi-input legend {
+	color:#3D6683;
+	font-weight:700;
+	padding:2px 5px 2px 0;
+	white-space:normal
+}
+
+.ux-form-side abbr.required {
+	border:none;
+	font-size:inherit
+}
+
+.ie7 .ux-form-side abbr.required {
+	margin-top:-10px;
+	top:1px
+}
+
+.ux-form-side label img.ui-datepicker-trigger {
+	top:4px
+}
+
+
+/*
+========================================================================================================================================
+ Regular Checkbox / Radio Buttons 
+========================================================================================================================================
+*/
+.ux-form-side fieldset.radio-check-list legend {
+	display:block
+}
+
+.ux-form-side fieldset.radio-check-list span {
+	display:inline-block
+}
+
+.ux-form-side fieldset.radio-check-list input {
+	float:left;
+	margin-top:2px
+}
+
+.ux-form-side fieldset.radio-check-list label {
+	float:left;
+	margin:0 7px 0 4px;
+	width:inherit
+}
+
+.ie7 .ux-form-side fieldset.radio-check-list input {
+	margin-top:0
+}
+
+.ie7 .ux-form-side fieldset.radio-check-list label {
+	margin-top:1px;
+	width:auto
+}
+
+.ie7 .ux-form-side fieldset.radio-check-list {
+	margin-bottom:7px;
+	margin-top:-4px;
+	width:auto
+}
+
+/*
+=========================================
+ Regular Radio / Check list override
+=========================================
+*/
+.ux-form-side fieldset.radio-check-list div.ux-list-top span {
+	display:block;
+	width:100%
+}
+
+.ux-form-side fieldset.radio-check-list div.ux-list-top label {
+	display:inline;
+	float:none;
+	width:100%
+}
+
+.ux-form-side fieldset.radio-check-list div.ux-list-top input {
+	padding:0
+}
+
+.ie7 .ux-form-side fieldset.radio-check-list div.ux-list-top label {
+	float:left;
+	width:90%
+}
+
+/*
+=========================================
+ Long Label Support
+=========================================
+*/
+.ux-form-side fieldset.radio-check-list.option-label-wrap input {
+	float:left;
+	margin-left:0
+}
+
+.ux-form-side fieldset.radio-check-list.option-label-wrap label {
+	display:block;
+	width:90%
+}
+
+.ie7 .ux-form-side fieldset.radio-check-list.option-label-wrap label,
+.ie8 .ux-form-side fieldset.radio-check-list.option-label-wrap label {
+	width:90%
+}
+
+/*
+=========================================
+ Single Check Box Overrides
+=========================================
+*/
+.ux-form-side fieldset.ux-single-check-box legend {
+	display:block;
+	padding-bottom:3px
+}
+
+.ux-form-side fieldset.ux-single-check-box span {
+	display:block;
+	margin-bottom:2px
+}
+
+.ux-form-side fieldset.ux-single-check-box span input {
+	float:left;
+	margin-left:0
+}
+
+.ux-form-side fieldset.ux-single-check-box span label {
+	display:inline-block;
+	width:90%
+}
+
+.ie7 .ux-form-side fieldset.ux-single-check-box legend {
+	margin-left:-8px
+}
+
+.ie7 .ux-form-side fieldset.ux-single-check-box span input {
+	margin:0 3px 0 0
+}
+
+.ie7 .ux-form-side fieldset.ux-single-check-box span label {
+	margin:2px 0 0
+}
+
+.ie8 .ux-form-side fieldset.ux-single-check-box span label {
+	margin:3px 0 0
+}
+
+/*
+========================================================================================================================================
+Multi-Text Box fields 
+========================================================================================================================================
+*/
+.ux-form-side fieldset.multi-input {
+	display:inline-block;
+	width:100%
+}
+
+.ux-form-side fieldset.multi-input legend {
+	float:left;
+	width:150px
+}
+
+.ie7 .ux-form-side fieldset.multi-input legend {
+	margin-left:-7px
+}
+
+.ux-form-side fieldset.multi-input div {
+	display:inline-block;
+	float:left
+}
+
+.ux-form-side fieldset.multi-input.ux-under-legend legend {
+	margin-bottom:8px;
+	width:100%
+}
+
+.ie7 .ux-form-side fieldset.multi-input.ux-under-legend legend {
+	margin-bottom:-3px;
+	margin-left:-7px!important
+}
+
+.ie7 .ux-form-side fieldset.multi-input div {
+	left:155px;
+	position:relative;
+	top:-25px
+}
+
+.ie7 .ux-form-side fieldset.multi-input.ux-under-legend div {
+	left:0;
+	top:0
+}
+
+.ux-form-side fieldset.multi-input div label {
+	display:block;
+	float:left;
+	width:auto
+}
+
+.ux-form-side fieldset.multi-input div span abbr.required {
+	display:block;
+	float:left;
+	font-size:inherit
+}
+
+.ux-form-side fieldset.multi-input div span.support-text {
+	display:block;
+	float:left;
+	padding:5px 5px 0
+}
+
+.ux-form-side fieldset.multi-input div span input {
+	display:block;
+	float:left
+}
+
+.ux-form-side fieldset.multi-input div input.button {
+margin:-1px 0 0 10px
+}
+
+/* fixes for IE using relative+absolute positioning */
+.ie7 .ux-form-side fieldset.multi-input {
+	position:relative;
+	vertical-align:top
+}
+
+.ie7 .ux-form-side fieldset.multi-input legend {
+	position:relative;
+	top:-5px!important
+}
+
+.ie7 .ux-form-side fieldset.multi-input legend {
+	margin-bottom:10px
+}
+
+.ie7 .ux-form-side fieldset.multi-input div {
+	position:absolute;
+	top:0
+}
+
+/* -- */
+/*
+========================================================================================================================================
+ Overrides to turn a side by side input into a top-align 
+========================================================================================================================================
+*/
+.ux-form-side label.ux-top {
+	display:inline-block;
+	margin-bottom:5px
+}
+
+.ux-form-side label.ux-top span {
+	display:block;
+	width:100%
+}
+
+.ie7 .ux-form-side label.ux-top {
+	margin-bottom:8px
+}
+
+.ux-form-side label.ux-top input,
+.ux-form-side label.ux-top select,
+.ux-form-side label.ux-top textarea {
+	display:block;
+	margin:3px 0 0
+}
+
+.ux-form-side label.ux-top abbr {
+	top:1px
+}
+
+.ux-form-side fieldset legend abbr.required {
+	border:none;
+	font-size:inherit
+}
+
+.ux-form-side label.ux-top.ux-date {
+	display:inline-block;
+	width:100%
+}
+
+.ux-form-side label.ux-top.ux-date span {
+	display:block
+}
+
+.ux-form-side label.ux-top.ux-date input {
+	display:inline-block;
+	float:left
+}
+
+.ux-form-side label.ux-top img.ui-datepicker-trigger {
+	float:left;
+	top:7px
+}
+
+/*
+=========================================
+ Multi-input overrides
+=========================================
+*/
+.ux-form-side fieldset.multi-input.ux-top legend {
+	display:block;
+	width:100%
+}
+
+.ux-form-side fieldset.multi-input.ux-top div {
+	display:block;
+	margin-bottom:5px;
+	left:0;
+	top:0
+}
+
+.ux-form-side fieldset.multi-input.ux-top div label {
+	display:block;
+	float:left;
+	width:inherit
+}
+
+.ux-form-side fieldset.multi-input.ux-top div span abbr.required {
+	display:block;
+	float:left;
+	font-size:inherit
+}
+
+.ux-form-side fieldset.multi-input.ux-top div span.support-text {
+	display:block;
+	float:left;
+	padding:5px 5px 0
+}
+
+.ux-form-side fieldset.multi-input.ux-top div span input {
+	display:block;
+	float:left
+}
+
+/*
+=========================================
+ Single Check Box Overrides
+=========================================
+*/
+.ux-form-side fieldset.ux-single-check-box.ux-top div {
+	display:inline-block;
+	float:none;
+	width:100%
+}
+
+.ux-form-side fieldset.ux-single-check-box.ux-top div label {
+	float:none
+}
+
+/*
+=========================================
+ Static Fields 
+=========================================
+*/
+.ux-form-side span.ux-static-field {
+	display:inline-block;
+	margin-bottom:5px
+}
+
+.ux-form-side span.ux-static-label {
+	float:left;
+	font-weight:700;
+	margin-right:5px;
+	width:150px
+}
+
+.ux-form-side span.ux-static-value {
+	float:left;
+	font-weight:400
+}
+
+.ie7 .ux-form-side span.ux-static-field {
+	margin-bottom:15px
+}
+
+/*
+=========================================
+ Static Overrides
+=========================================
+*/
+.ux-form-side span.ux-static-field.ux-top {
+	display:inline-block;
+	width:100%
+}
+
+.ux-form-side span.ux-static-field.ux-top span.ux-static-label {
+	float:none;
+	width:100%
+}
+
+.ux-form-side span.ux-static-field.ux-top span.ux-static-value {
+	float:none
+}
+
+/*
+=======================================================================================================
+Top Align approach
+=======================================================================================================
+*/
+.ux-form-top label {
+	display:block;
+	margin-bottom:5px
+}
+
+.ux-form-top label span {
+	display:block
+}
+
+.ux-form-top label input,
+.ux-form-top label select,
+.ux-form-top label textarea {
+	display:block;
+	margin:3px 0 0
+}
+
+.ux-form-top abbr.required {
+	border:none;
+	font-size:inherit
+}
+
+.ie7 .ux-form-top abbr.required {
+	margin-top:-10px;
+	top:1px
+}
+
+.ux-form-top label.ux-date {
+	display:inline-block;
+	width:100%
+}
+
+.ux-form-top label.ux-date input {
+	display:inline-block;
+	float:left
+}
+
+.ux-form-top label img.ui-datepicker-trigger {
+	float:left;
+	top:7px
+}
+
+/*
+=======================================================================================================
+ Normal Checkbox/Radio Button Lists 
+=======================================================================================================
+*/
+.ux-form-top fieldset.radio-check-list legend {
+	display:block;
+	padding-bottom:3px
+}
+
+.ux-form-top fieldset.radio-check-list span {
+	display:block;
+	margin-bottom:2px
+}
+
+.ux-form-top fieldset.radio-check-list span input {
+	float:left;
+	margin-left:0
+}
+
+.ux-form-top fieldset.radio-check-list span label {
+	display:inline-block
+}
+
+.ie7 .ux-form-top fieldset.radio-check-list span input {
+	margin:0 3px 0 0
+}
+
+.ie7 .ux-form-top fieldset.radio-check-list span label {
+	margin:2px 0 0
+}
+
+.ie7 .ux-form-top fieldset.radio-check-list {
+	margin-bottom:7px;
+	margin-top:-4px;
+	width:auto
+}
+
+.ie8 .ux-form-top fieldset.radio-check-list span label {
+	margin:3px 0 0
+}
+
+/*
+=========================================
+ Regular Radio / Check list override
+=========================================
+*/
+.ux-form-top fieldset.radio-check-list div.ux-list-side span {
+	display:inline-block
+}
+
+.ux-form-top fieldset.radio-check-list div.ux-list-side span label {
+	padding-right:7px
+}
+
+/*
+=========================================
+ Long Label Support
+=========================================
+*/
+.ux-form-top fieldset.radio-check-list.option-label-wrap span label {
+	display:block;
+	width:90%
+}
+
+/*
+=========================================
+ Single Check Box Overrides
+=========================================
+*/
+.ux-form-top fieldset.ux-single-check-box legend {
+	display:block;
+	padding-bottom:3px
+}
+
+.ux-form-top fieldset.ux-single-check-box span {
+	display:block;
+	margin-bottom:2px
+}
+
+.ux-form-top fieldset.ux-single-check-box span input {
+	float:left;
+	margin-left:0
+}
+
+.ux-form-top fieldset.ux-single-check-box span label {
+	display:inline-block
+}
+
+.ie7 .ux-form-top fieldset.ux-single-check-box legend {
+	margin-left:-8px
+}
+
+.ie7 .ux-form-top fieldset.ux-single-check-box span input {
+	margin:0 3px 0 0
+}
+
+.ie7 .ux-form-top fieldset.ux-single-check-box span label {
+	margin:2px 0 0
+}
+
+.ie8 .ux-form-top fieldset.ux-single-check-box span label {
+	margin:3px 0 0
+}
+
+/*
+=========================================
+ Long Label Support
+=========================================
+*/
+.ux-form-top fieldset.ux-single-check-box span label {
+	margin-top:-2px;
+	width:90%
+}
+
+.ie7 .ux-form-top fieldset.ux-single-check-box legend {
+	margin-left:-5px
+}
+
+.ie7 .ux-form-top fieldset.ux-single-check-box span label {
+	margin-top:1px
+}
+
+.ie8 .ux-form-top fieldset.ux-single-check-box span label {
+	margin-top:2px
+}
+
+/*
+=======================================================================================================
+ Multi-Text Box fields.
+=======================================================================================================
+*/
+.ux-form-top fieldset.multi-input {
+	margin-bottom:5px
+}
+
+.ie7 .ux-form-top fieldset.multi-input legend {
+	margin-left:-7px
+}
+
+.ux-form-top fieldset.multi-input div {
+	display:block;
+	margin-bottom:5px
+}
+
+.ie7 .ux-form-top fieldset.multi-input {
+	margin-bottom:7px
+}
+
+.ux-form-top fieldset.multi-input div label {
+	display:block;
+	float:left;
+	width:inherit
+}
+
+.ux-form-top fieldset.multi-input div span abbr.required {
+	display:block;
+	float:left;
+	font-size:inherit
+}
+
+.ux-form-top fieldset.multi-input div span.support-text {
+	display:block;
+	float:left;
+	padding:5px 5px 0
+}
+
+.ux-form-top fieldset.multi-input div span input {
+	display:block;
+	float:left
+}
+
+.ux-form-top fieldset.multi-input input.button {
+	margin:3px 0 0 5px
+}
+
+/* Overrides to turn a top align input into a side by side */
+.ux-form-top label.ux-side {
+	display:inline-block;
+	width:100%
+}
+
+.ux-form-top label.ux-side span {
+	display:inline-block;
+	width:150px
+}
+
+.ux-form-top label.ux-side input,.ux-form-top label.ux-side select {
+	display:inline;
+	margin:3px 0 5px
+}
+
+.ux-form-top label.ux-side abbr {
+	border:none;
+	top:1px
+}
+
+.ux-form-top label.ux-side.ux-date span {
+	float:left
+}
+
+.ux-form-top label.ux-side.ux-date img.ui-datepicker-trigger {
+	top:7px
+}
+
+/* Multi-text box override */
+.ux-form-top fieldset.multi-input.ux-side {
+	display:inline-block;
+	margin-bottom:0;
+	width:100%
+}
+
+.ux-form-top fieldset.multi-input.ux-side legend {
+	float:left;
+	margin-bottom:0;
+	width:150px
+}
+
+.ux-form-top fieldset.multi-input.ux-side div {
+	display:inline-block;
+	float:left;
+	margin-bottom:2px;
+	margin-left:0;
+	margin-top:-3px
+}
+
+.ux-form-top fieldset.multi-input.ux-side div.multi-input label,
+.ux-form-top fieldset.multi-input.ux-side div.multi-input span abbr.required,
+.ux-form-top fieldset.multi-input.ux-side div.multi-input span.support-text,
+.ux-form-top fieldset.multi-input.ux-side div.multi-input span input {
+	display:block;
+	float:left
+}
+
+.ux-form-top fieldset.multi-input.ux-side div.multi-input label {
+	width:inherit
+}
+
+.ux-form-top fieldset.multi-input.ux-side div.multi-input span abbr.required {
+	font-size:inherit
+}
+
+.ux-form-top fieldset.multi-input.ux-side div.multi-input span.support-text {
+	padding:5px 5px 0
+}
+
+
+/* fixes for IE using relative+absolute positioning */
+.ie7 .ux-form-top fieldset.multi-input.ux-side {
+	position:relative;
+	vertical-align:top
+}
+
+.ie7 .ux-form-top fieldset.multi-input.ux-side legend {
+	position:relative;
+	top:-5px!important;
+	margin-left:-8px
+}
+
+.ie7 .ux-form-top fieldset.multi-input.ux-side legend {
+	margin-bottom:10px
+}
+
+.ie7 .ux-form-top fieldset.multi-input.ux-side div {
+	margin:0 3px 1px;
+	position:absolute;
+	top:-3px
+	}
+
+.ie7 .ux-form-top fieldset.multi-input.ux-side div {
+	left:155px
+}
+
+/* -- */
+/* Static Fields */
+.ux-form-top span.ux-static-field {
+	display:block;
+	margin-bottom:5px
+}
+
+.ux-form-top span.ux-static-label {
+	display:block;
+	font-weight:700
+}
+
+.ux-form-top span.ux-static-value {
+	font-weight:400
+}
+
+.ie7 .ux-form-top span.ux-static-field {
+	margin-bottom:7px
+}
+
+/* Static overrides */
+.ux-form-top label.ux-static-field {
+	display:inline-block;
+	width:100%
+}
+
+.ux-form-top label.ux-static-field.ux-side span.ux-static-label {
+	float:left;
+	font-weight:700;
+	width:150px
+}
+
+.ux-form-top label.ux-static-field.ux-side span.ux-static-output {
+	float:left
+}
+
+/*
+=============================================================================
+=== Static Output
+=============================================================================
+*/
+/* Static Output Side */
+.ux-static-output-side span.ux-static-output {
+	display:inline-block;
+	padding-left:10px;
+	width:100%
+}
+
+.ux-static-output-side span.ux-static-output span.ux-static-label {
+	float:left;
+	font-weight:700;
+	width:150px
+}
+
+.ux-static-output-side span.ux-static-output span.ux-static-value {
+	float:left
+}
+
+.ux-static-output-side span.ux-static-output.ux-top span.ux-static-label,
+.ux-static-output-top span.ux-static-output span.ux-static-label  {
+	float:left;
+	font-weight:700;
+	width:100%
+}
+
+.ux-static-output-side span.ux-static-output.ux-top span.ux-static-value,
+.ux-static-output-top span.ux-static-output.ux-side span.ux-static-value {
+	float:none
+}
+
+/* Static Output Top */
+.ux-static-output-top span.ux-static-output {
+	display:inline-block;
+	padding-left:10px;
+	width:100%
+}
+
+.ux-static-output-top span.ux-static-output span.ux-static-value {
+	float:left
+}
+
+.ux-static-output-top span.ux-static-output.ux-side span.ux-static-label {
+	float:left;
+	font-weight:700;
+	width:150px
+}
+
+
+/*
+=============================================================================
+=== Selection Component
+=============================================================================
+*/
+
+
+div.ux-selection-component {
+	position:relative;
+	vertical-align:top;
+}
+
+div.ux-selection-component,
+.ux-selection-component label{
+	display:block;
+	width:100%
+}
+.ux-form-side .ux-selection-component label span{
+	width:auto
+}
+
+.ux-selection-component-left,
+.ux-selection-component-right,
+.ux-selection-component-middle {
+	display:inline-block
+}
+
+.ux-selection-component-middle {
+	margin-top:50px
+}
+
+.ux-selection-component-left select,.ux-selection-component-right select{
+	width:100%
+}
+.ux-selection-component-middle .button-container .button,
+.ux-selection-component-middle .button-container .button_mini,
+.ux-selection-component-middle .button-container .icon-right{
+	display:inline-block;
+	float:none;
+	padding:3px 0px 3px 0px !important
+}
+
+.ux-selection-component-middle .button-container{
+	display:block;
+	margin:5px 0;
+	text-align:center;
+	width:100%
+}
+
+/*ie7 fix disappearing select*/
+.ie7 .container_12 .ux-selection-component .grid_1 select{width:60px}
+.ie7 .container_12 .ux-selection-component .grid_2 select{width:140px}
+.ie7 .container_12 .ux-selection-component .grid_4 select{width:300px}
+.ie7 .container_12 .ux-selection-component .grid_5 select{width:380px}
+.ie7 .container_12 .ux-selection-component .grid_7 select{width:540px}
+.ie7 .container_12 .ux-selection-component .grid_8 select{width:620px}
+.ie7 .container_12 .ux-selection-component .grid_10 select{width:780px}
+.ie7 .container_12 .ux-selection-component .grid_11 select{width:860px}
+.ie7 .container_16 .ux-selection-component .grid_1 select{width:40px}
+.ie7 .container_16 .ux-selection-component .grid_2 select{width:100px}
+.ie7 .container_16 .ux-selection-component .grid_3 select{width:160px}
+.ie7 .container_16 .ux-selection-component .grid_5 select{width:280px}
+.ie7 .container_16 .ux-selection-component .grid_6 select{width:340px}
+.ie7 .container_16 .ux-selection-component .grid_7 select{width:400px}
+.ie7 .container_16 .ux-selection-component .grid_9 select{width:520px}
+.ie7 .container_16 .ux-selection-component .grid_10 select{width:580px}
+.ie7 .container_16 .ux-selection-component .grid_11 select{width:640px}
+.ie7 .container_16 .ux-selection-component .grid_13 select{width:760px}
+.ie7 .container_16 .ux-selection-component .grid_14 select{width:820px}
+.ie7 .container_16 .ux-selection-component .grid_15 select{width:880px}
+.ie7 .container_12 .ux-selection-component .grid_12,
+.ie7 .container_16 .ux-selection-component .grid_16{width:940px}
+
+/*
+=============================================================================
+=== Misu Styles
+=============================================================================
+*/
+.dol-container fieldset, .ux-container fieldset {
+	margin-left:10px
+}
+
+.dol-container p fieldset, .ux-container p fieldset, .ux-content-wrapper fieldset {
+	margin-left:0
+}
+
+.ux-form-top div.ux-form-sub-quest,.ux-form-side div.ux-form-sub-quest {
+	margin:5px 0 15px 25px;
+	padding: 0 0 0 10px;
+}
+
+.ie7 .ux-form-top div.ux-form-sub-quest,
+.ie7 .ux-form-side div.ux-form-sub-quest,
+.ie7 .ux-form-top fieldset,
+.ie7 .ux-form-top fieldset legend span,
+.ie7 .ux-form-side fieldset,
+.ie7 .ux-form-side fieldset legend span {
+	position:relative;
+	zoom:1
+}
+
+/*
+ * Wizard
+ */ 
+
+
+.ux-wiz-wrapper {
+	text-align: center;
+}
+
+.ux-wiz-wrapper:after, .ux-wiz-primary .ux-wiz:after {
+	clear: both;
+    content: " ";
+    display: inline-block;
+    height: 0;
+    visibility: hidden;
+}
+
+.ux-wiz-primary, .ux-wiz-sub {
+	margin-top: 10px;
+	width: 99%;
+	text-align: center;
+}
+.ux-wiz-primary {
+	z-index:100;
+}
+
+.ux-wiz-sub {
+	z-index:99;
+	overflow: hidden;
+}
+
+.ux-wiz {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.ie7 .ux-wiz {
+	display:inline;
+	padding: 0 5px 5px 5px;
+}
+
+.ux-wiz-sub .ux-wiz {
+	margin: 0 5px 5px 5px;
+}
+
+.ux-wiz li {
+	border-bottom: 3px solid #909090;
+	display: inline-block;
+	float: left;
+	padding: 0 8px 5px 7px;
+	margin: 0 0 0 1px; /* white space right */
+	height: 25px;
+	width: 85px;
+	position: relative;
+    text-align: center;
+	line-height: 1.2em;
+	color: #909090; /* faded color */
+	
+	vertical-align: bottom;
+}
+
+.ux-wiz li.reached, .ux-wiz li a {
+	color: #4c4c4c; /* link = reached = navi-able */
+	text-decoration: none;
+}
+.ux-wiz li.current, .ux-wiz li.current a {
+	color: #3D6683; /* current color */
+}
+.ux-wiz li a:hover { /* on hover */ 
+	color: #3D6683; 
+	text-decoration: underline;
+}
+
+/* primary's font is bigger than sub */
+.ux-wiz-primary .ux-wiz li.current {
+	font-weight: bold;
+}
+.ux-wiz-sub .ux-wiz li {
+	font-size: 10px;
+	height: 23px;
+}
+.ux-wiz-sub .ux-wiz li.current {
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.ux-wiz li.current:after { /* draws the triangle, doesn't work in ie7 */
+	content:" ";
+    border-color: transparent transparent #707070 transparent ;
+    border-style: solid;
+    border-width: 7px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: -10px;
+    left: 50%; /* center */
+    margin-left: -7px; /* and pull back */
+    z-index: 5;
+}
+.ie7 .ux-wiz li.current {
+	border-bottom: 5px; 
+	margin-bottom: 0px;
+}
+.ie7 .ux-wiz-sub .ux-wiz li {
+	overflow: hidden;
+}
+
+.ux-wiz li span {
+	display: block;
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.ux-wiz-sub .ux-wiz li span {
+	bottom: 3px;
+}
+
+.ux-wiz li span a span { /*reset*/
+	display:inline;
+	left:0; top:0;
+	margin:0;padding:0;
+	position:relative;
+}
+
+/* Progress */
+
+.ux-wiz li.current {
+	border-bottom: 3px solid #3D6683;
+}
+.ux-wiz li.reached {
+	border-bottom: 3px solid #3D6683;
+}

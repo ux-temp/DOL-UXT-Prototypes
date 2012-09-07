@@ -1,0 +1,393 @@
+/*
+ * Shared styles
+ */
+
+.ux-mobile-only {
+    display: none;
+}
+
+#gov-banner,
+#gov-banner .ux-content,
+#ux-domain-menu,
+#ux-domain-menu nav {
+        height: 28px;
+}
+
+#ux-site-header,
+#ux-site-header a,
+#ux-site-header a:hover,
+#ux-site-header a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Skip Navigation */
+#ux-skip-nav a,
+#ux-skip-nav a:hover,
+#ux-skip-nav a:visited {
+    height:1px;
+    left:0;
+    overflow:hidden;
+    position:absolute;
+    top:-500px;
+    width:1px
+}
+ 
+#ux-skip-nav a:active,
+#ux-skip-nav a:focus {
+    background:#000;
+    background:rgba(0,0,0,.5);
+    border-color:rgba(190,190,190,.5);
+    border-radius:5px;
+    border:2px solid #9F9F9F;
+    color: #FFF;
+    height:auto;
+    margin:4px;
+    padding:4px;
+    top:0;
+    width:auto;
+    z-index:50
+}
+
+/* 
+ * Site Search Style
+ */
+ 
+.ux-search-form > div {
+    background: #FFF;
+    border-radius: 5px;
+    float: right;
+    height: 21px;
+    margin-top: 3px;
+    width: 175px;
+}
+
+.ux-search-form .ux-search-input {
+    background:none repeat scroll 0 0 #FFF;
+    border: none;
+    display: block;
+    float: left;
+    height: 12px;
+    margin: 2px 0 0 10px;
+    padding-left: 7px;
+    width: 130px;
+}
+
+.ux-search-form .ux-search-input:focus {
+    box-shadow: none;
+}
+
+.ux-search-form .ux-search-button {
+    background: url(../images/icons/magnifier_disabled.png) no-repeat 0 0 transparent;
+    border: 0;
+    float: left;
+    height: 16px;
+    line-height:999px;
+    margin: 3px 0 0 0;
+    overflow: hidden;
+    width: 16px;
+}
+
+.ie7 .ux-search-form .ux-search-input,
+.ie8 .ux-search-form .ux-search-input {
+    padding-top: 1px;
+}
+
+
+
+/*
+ * Govoner Banner
+ */ 
+
+#gov-banner{
+        background: #036;
+}
+
+.gov-img {
+    background: url(../images/nys-banner-img.png) no-repeat 0 0 transparent;
+    display: block;
+    float: left;
+    height: 28px;
+}
+
+#gov-link1 {
+    margin-left: -8px;
+    width: 185px;
+}
+
+#gov-link2,
+#gov-link3 {
+    background-position: 0 -28px;
+    width: 144px;
+}
+
+#gov-link3 {
+    background-position: 0 -56px;
+}
+
+#gov-link3,
+#nys-search {
+    float: right;
+}
+
+/*
+ * Site Header
+ */ 
+
+#ux-site-header {
+    background: #771C2D;
+    height: 64px;
+}
+
+.internal #ux-site-header {
+    background: #416275;
+}
+
+#ux-site-logo {
+    background: url(../images/dol-header-sprite.png) no-repeat 0 0 transparent;
+    color: #FFF;
+    display: block;
+    float: left;
+    height: 64px;
+    width: 150px;
+}
+
+#ux-site-title {
+    display: inline-block;
+    float: left;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:20px;
+    font-weight:700;
+    padding: 20px 0 0 25px;
+    text-shadow:1px 2px 1px #000
+}
+
+#ux-universal-menu nav,
+#ux-header-functions {
+    float: right;
+}
+
+#ux-header-functions {
+    width: 300px;
+}
+
+#ux-universal-menu {
+    height: 12px;
+}
+
+#ux-universal-menu ul {
+    font-size: 10px;
+    list-style: none;
+    margin: 5px 0;
+}
+
+#ux-universal-menu ul li {
+    float: left;
+    margin: 3px 0 0 10px;
+}
+
+#ux-site-search{
+    margin-top: 11px;
+}
+
+/*
+ * Domain Menu
+ */
+
+#ux-domain-menu {
+    background: #EEE;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.ie7 #ux-domain-menu nav {
+    z-index: 200;
+}
+
+#ux-domain-menu nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#ux-domain-menu nav > ul > li {
+    display: block;
+    float: left;
+    margin: 0;
+}
+
+#ux-domain-menu nav > ul > li > a {
+    color: #4C4C4C;
+    display: block;
+    font-weight: 700;
+    padding: 9px 13px 8px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFF;
+}
+
+#ux-domain-menu nav > ul > li > div {
+    background: #FFF;
+    border: 1px solid #D3D3D3;
+    box-shadow: 6px 5px 9px -9px black,
+              5px 6px 9px -9px black;
+    display: none;
+    margin-top: 2px;
+    position: absolute;
+    top: auto;
+    z-index: 200;
+}
+
+#ux-domain-menu nav > ul > li.selected > div {
+    display: block; 
+}
+
+#ux-domain-menu nav > ul > li > div ul {
+    float: left;
+    padding: 0;
+    overflow: hidden;
+}
+
+#ux-domain-menu nav > ul > li > div li {
+    display: block;
+    list-style: none;
+}
+
+#ux-domain-menu nav > ul > li > div a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+#ux-domain-menu nav > ul > li > a.ux-submenu:after {
+    content: "\25BC";
+    font-size: 6px;
+    line-height: 10px;
+    padding-left: 3px;
+}
+
+.ie7 #ux-domain-menu nav > ul > li > a.ux-submenu {
+    background:url(../images/drop.png) no-repeat scroll right 14px transparent;
+    margin-right:3px;
+    padding-right:10px
+}
+
+#ux-domain-menu nav > ul > li > div a:hover {
+    background: #41657d;
+    color: #FFF;
+}
+
+#ux-domain-menu nav > ul > li.selected {
+    margin-top: -12px;
+    height: 28px;
+}
+
+.ie7 #ux-domain-menu nav > ul > li.selected {
+    margin-top: 0px;
+}
+
+.ie7 #ux-domain-menu nav > ul > li.selected > a {
+    color: #3D6683;
+}
+
+#ux-domain-menu nav > ul > li.selected:before {
+    position: relative;
+    display: inline-block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #D3D3D3;
+    left: 20%;
+    top: 36px;
+    content: '\0020';
+    z-index: 200;
+}
+
+#ux-domain-menu nav > ul > li.selected:after {
+    position: relative;
+    display: inline-block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FFF;
+    left: 20%;
+    top: -5px;
+    content: '\0020';
+    z-index: 200;
+}
+
+.ie7 #ux-domain-menu nav > ul > li.selected > div {
+    margin-top: -3px;
+}
+
+
+/*
+ * Page Container
+ */
+
+#ux-page {
+    background: #FFF;
+    line-height: 1.6;
+    padding: 3px 0 20px 0;
+    width: 100%
+}
+
+/*
+ * UX Breadcrumb
+ */
+
+#ux-breadcrumbs {
+    color:#888;
+    font-size:9px;
+    line-height:1.2;
+    margin: 3px 0 7px 0;
+    padding:0;
+    vertical-align:top
+}
+
+#ux-breadcrumbs ul {
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#ux-breadcrumbs li {
+    color:#696969;
+    float:left;
+    list-style:none;
+    padding:0
+}
+
+#ux-breadcrumbs li a {
+    background:url(../images/breadcrumb-icon.gif) no-repeat scroll right 2px transparent;
+    color:#696969;
+    margin-right:3px;
+    padding-right:8px
+}
+
+#ux-breadcrumbs li a:hover {
+    color:#6491B0;
+    text-decoration:underline
+}
+
+/*
+ * Site Footer
+ */ 
+
+footer {
+    background: #EEE;
+    border-top: 1px solid #DEDEDE;
+    min-height: 150px;
+    max-height: 100%;
+}
+
+footer ul {
+    float: right;
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer ul li {
+    display: inline-block;
+    float: left;
+    padding-left: 8px;
+}
+
+footer ul li a {
+    text-decoration: none;
+}

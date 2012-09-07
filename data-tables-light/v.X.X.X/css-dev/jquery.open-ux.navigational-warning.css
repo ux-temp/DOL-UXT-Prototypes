@@ -1,0 +1,14 @@
+/*
+ Styling for the default implementation of Out-bound navigation
+*/
+
+#genericMsg .primary-msg {
+	margin-top: 10px;
+}
+
+.ie7 #genericMsg .primary-msg {
+	margin-top: 15px;
+	width: 180px;
+}
+
+

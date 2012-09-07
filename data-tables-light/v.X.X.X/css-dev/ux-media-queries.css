@@ -1,0 +1,319 @@
+@media handheld, only screen and (min-width: 200px) and (max-width: 599px) {
+	
+	/* Shared Header Classes
+	-------------------------- */
+	.fluid #gov-banner .ux-content,
+	.fluid #gov-banner,
+	.fluid #ux-site-header .ux-content,
+	.fluid #ux-site-header,
+	.fluid #global-nav .ux-content,
+	.fluid #global-nav,
+	.fluid #ux-page {
+		height: auto;
+		width: auto;
+	}
+
+	.fluid #gov-banner a {
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	.fluid #ux-page {
+		width: 100%;
+	}
+
+	.fluid .page-content {
+		margin: 0 10px;
+	}
+
+	.fluid .container_12 [class*="suffix_"],
+	.fluid .container_16 [class*="suffix_"],
+	.fluid .container_24 [class*="suffix_"] {
+		padding-right: 0;
+	}
+
+	.fluid .container_12 [class*="grid_"],
+	.fluid .container_16 [class*="grid_"],
+	.fluid .container_24 [class*="grid_"] {
+		display: block;
+		float: none;
+		width: auto;
+		margin: 0 5%;
+	}
+
+	.fluid .container_12 [class*="prefix_"],
+	.fluid .container_16 [class*="prefix_"],
+	.fluid .container_24 [class*="prefix_"] {
+		padding-left: 0;
+	}
+
+	.fluid .container_12 [class*="push_"],
+	.fluid .container_16 [class*="push_"],
+	.fluid .container_24 [class*="push_"],
+	.fluid .container_12 [class*="pull_"],
+	.fluid .container_16 [class*="pull_"],
+	.fluid .container_24 [class*="pull_"] {
+		left: 0;
+	}
+
+	/* Fix margin of grids in grids */
+	.fluid [class*="grid_"] [class*="grid_"] {
+		margin: 0;
+	}
+
+	.fluid .gov-img span,
+	.fluid h1 span {
+		clip: auto;
+		position: relative;
+	}
+	
+	/* Govoner Banner
+	----------------------------------- */
+
+	.fluid .gov-img {
+		background: none;
+		height: auto;
+	}
+
+	.fluid #gov-links {
+		height: 20px;
+	}
+
+	.fluid #gov-links a {
+		padding: 0 5px;
+	}
+
+	.fluid #gov-link1 {
+		float: left;
+		width: auto;
+	}
+
+	.fluid #gov-link2 {
+		float: right;
+		width: auto;
+	}
+
+	.fluid #gov-link3 {
+		display: block;
+		padding-bottom: 3px;
+		text-align: center;
+	}
+
+	.fluid #gov-link3,
+	.fluid #nys-search,
+	.fluid #nys-search > div {
+		float: none;
+		margin: 0;
+		width: auto;
+	}
+
+	.fluid #nys-search {
+		height: auto;
+		padding-bottom: 5px;
+		margin: 5px 5px 0 5px;
+	}
+
+	.fluid #nys-search .ux-search-input,
+	.fluid #ux-site-search .ux-search-input {
+		width: 85%;
+	}
+
+	/* Department Header
+	----------------------------------- */
+
+	.fluid #ux-site-logo {
+		background: none;
+		display: block;
+		float: none;
+		height: auto;
+		text-align: center;
+		width: 100%;
+	}
+
+	.fluid #ux-site-logo h1 {
+		margin: 0;
+	}
+
+	.fluid #ux-site-logo span {
+		font-size: 14px;
+	}
+
+	.fluid #ux-site-title {
+		display: none;
+	}
+
+	.fluid #ux-header-functions,
+	.fluid #ux-universal-menu nav {
+		float: none;
+		padding-bottom: 7px;
+		width: 100%;
+	}
+
+	.fluid #ux-universal-menu,
+	.fluid #ux-universal-menu ul li,
+	.fluid #ux-site-search,
+	.fluid #ux-site-search > div {
+		float: none;
+	}
+
+	.fluid #ux-universal-menu ul {
+		text-align: center;
+		margin-top: 0;
+		padding: 0;
+	}
+
+	.fluid #ux-universal-menu ul li,
+	.fluid #ux-universal-menu ul li.ux-mobile-only {
+		display: inline-block !important;
+	}
+
+
+	.fluid #ux-site-search,
+	.fluid #ux-site-search > div {
+		width: auto;
+	}
+
+	.fluid #ux-site-search {
+		display: none;
+		padding-bottom: 5px;
+		margin: 5px 5px 0 5px;
+	}
+
+	/* Global Navigation
+	----------------------------------- */
+
+	.fluid #global-nav,
+	.fluid #global-nav .ux-content {
+		background: none;
+		border: none;
+	}
+
+	.fluid #global-nav ul {
+		float: none;
+		list-style-type: none;
+		height: auto;
+		text-align: center;
+	}
+
+	.fluid #global-nav ul li a {
+		color: #3C3C3C;
+		font-size: 14px;
+	}
+
+	.fluid #global-nav ul li a span {
+		background: none;
+		padding: 0 0 0 5px;
+	}
+
+	/* Page Body Overrides
+	----------------------------------- */
+	.fluid #ux-breadcrumbs {
+		display: none;
+	}
+
+	.fluid #ux-side-nav {
+		display: none;
+		margin-bottom: 15px;
+	}
+
+	/* Mobile Only Content
+	----------------------------------- */
+
+	.fluid .ux-mobile-only {
+		display: block !important;
+	}
+
+}
+
+@media handheld, only screen and (min-width: 600px) {
+	
+	.fluid .ux-mobile-only {
+		display: none;
+	}
+
+	.fluid #ux-side-nav {
+		display: block !important;
+	}
+
+	.fluid #ux-page, .fluid .ux-content {
+		width: 600px !important;
+		margin: 0 auto;
+	}
+
+	.fluid #ux-site-title {
+		display: none;
+	}
+
+	.fluid #ux-header-menu ul {
+		float: left;
+	}
+
+	.fluid #global-nav ul {
+		margin-top: -3px;
+	}
+
+	.fluid #global-nav ul li a {
+		padding: 5px 5px 0;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.fluid #ux-page, .fluid .ux-content {
+		width: 768px !important;
+	}
+
+	.fluid #ux-site-title {
+		display: block;
+		font-size: 16px;
+		margin-top: 15px;
+		padding: 10px 0 0 15px;
+	}
+
+	.fluid #ux-header-menu {
+		float: right;
+		margin-top: 5px;
+	}
+
+	.fluid #ux-header-menu ul {
+		float: right;
+		margin: 0;
+		padding: 0;
+	}
+
+	.fluid #ux-site-search {
+		float: none;
+	}
+
+	.fluid #global-nav ul li a {
+		padding: 5px 10px 0;
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+
+	.fluid #ux-page, .fluid .ux-content {
+		width: 960px !important;
+	}
+
+	.fluid #ux-site-title {
+		font-size: 20px;
+		margin: 10px 0 0 20px;
+	}
+
+	.fluid #global-nav ul {
+		margin-top: 0;
+	}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+	.fluid #ux-page, .fluid .ux-content {
+		width: 1200px !important;
+	}
+
+}
