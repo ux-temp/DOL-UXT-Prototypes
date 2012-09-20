@@ -10,7 +10,8 @@
 
 		<!-- Styles -->
 		<link rel="shortcut icon" href="<?php echo $versionPath ?>/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" media="screen" href="<?php echo $versionPath ?>/css/ux-style.min.css" >		
+		<link rel="stylesheet" type="text/css" media="screen" href="<?php echo $versionPath ?>/css/ux-style.min.css" >
+		<link rel="stylesheet" type="text/css" media="screen" href="ckeditor-override.css" >		
 		<link rel="stylesheet" type="text/css" media="print" href="<?php echo $versionPath ?>/css/print.min.css" >
 
 		<!-- Scripts -->
@@ -152,9 +153,9 @@
 					
 <form method="post" action="show.php" class="ux-form-top">
         <p>     
-				<label for="textarea1" >
+				<label for="textarea1" class="ck-editor" >
 					<span>Please state the nature of the medical emergency.</span>
-                <textarea id="textarea1" name="textarea1" cols="20" rows="10"> Yes Doctor</textarea>
+                	<textarea id="textarea1" name="textarea1" cols="20" rows="10"> Yes Doctor</textarea>
                 </label>
 				
 				
@@ -214,8 +215,7 @@
 		
 		CKEDITOR.replace( 'textarea-Custom',
 			{
-				toolbar: 
-				[
+				toolbar: [
 				{ name: 'clipboard', items : [ 'Undo','Redo','-','Cut','Copy','Paste','PasteText','PasteFromWord' ] },
 				{ name: 'editing', items : [ 'Find','Replace','-','SelectAll','-','SpellChecker','Scayt' ] },
 				{ name: 'insert', items : [ 'SpecialChar' ] },
@@ -225,7 +225,6 @@
 				{ name: 'paragraph', items : [ 'JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','NumberedList','BulletedList','-','Outdent','Indent','-','Blockquote','CreateDiv' ] },
 				{ name: 'links', items : [ 'Link','Unlink','Anchor' ] },
 				]
-				
 			});
 		
 	});

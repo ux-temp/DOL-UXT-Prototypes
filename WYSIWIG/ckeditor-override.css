@@ -1,0 +1,44 @@
+.ux-form-top label.ck-editor span {
+	float: left !important;
+	padding: 0;
+	margin: 0;
+}
+
+.ux-form-top label.ck-editor .cke_button {
+	padding: 2px;
+}
+
+.ux-form-top label.ck-editor .cke_toolbox {
+	padding-top: 4px;
+}
+
+.ux-form-top label.ck-editor .cke_toolgroup {
+	margin: 0 5px 7px 5px;
+}
+
+/*
+.ux-form-top label.ck-editor .cke_skin_kama,
+.ux-form-top label.ck-editor .cke_toolbar,
+.ux-form-top label.ck-editor .cke_button,
+.ux-form-top label.ck-editor .cke_label,
+.ux-form-top label.ck-editor .cke_icon {
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+
+.ux-form-top label.ck-editor .cke_button {
+	height: 20px;
+}
+
+.ux-form-top label.ck-editor a,
+.ux-form-top label.ck-editor a:hover,
+.ux-form-top label.ck-editor a:link,
+.ux-form-top label.ck-editor a:visited {
+	color: #4C4C4C !important;
+}
+
+.ux-form-top label.ck-editor .cke_browser_webkit {
+	padding: 0;
+}
+*/
