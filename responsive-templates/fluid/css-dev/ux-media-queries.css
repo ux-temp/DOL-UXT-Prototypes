@@ -1,0 +1,299 @@
+@media handheld, only screen and (min-width: 200px) and (max-width: 599px) {
+	
+	/* Shared Header Classes
+	-------------------------- */
+	.fluid #gov-bar .ux-content,
+	.fluid #gov-bar,
+	.fluid #ux-main .ux-content,
+	.fluid #ux-main,
+	.fluid #global-nav .ux-content,
+	.fluid #global-nav,
+	.fluid #page-wrap {
+		height: auto;
+		width: auto;
+	}
+
+	.fluid #page-wrap {
+		width: 100%;
+	}
+
+	.fluid .page-content {
+		margin: 0 10px;
+	}
+
+	.fluid .container_12 [class*="suffix_"],
+	.fluid .container_16 [class*="suffix_"],
+	.fluid .container_24 [class*="suffix_"] {
+		padding-right: 0;
+	}
+
+	.fluid .container_12 [class*="grid_"],
+	.fluid .container_16 [class*="grid_"],
+	.fluid .container_24 [class*="grid_"] {
+		display: block;
+		float: none;
+		width: auto;
+		margin: 0 5%;
+	}
+
+	.fluid .container_12 [class*="prefix_"],
+	.fluid .container_16 [class*="prefix_"],
+	.fluid .container_24 [class*="prefix_"] {
+		padding-left: 0;
+	}
+
+	.fluid .container_12 [class*="push_"],
+	.fluid .container_16 [class*="push_"],
+	.fluid .container_24 [class*="push_"],
+	.fluid .container_12 [class*="pull_"],
+	.fluid .container_16 [class*="pull_"],
+	.fluid .container_24 [class*="pull_"] {
+		left: 0;
+	}
+
+	/* Fix margin of grids in grids */
+	.fluid [class*="grid_"] [class*="grid_"] {
+		margin: 0;
+	}
+
+
+	.fluid .gov-img span,
+	.fluid h1 span {
+		clip: auto;
+		position: relative;
+	}
+	
+	/* Govoner Banner
+	----------------------------------- */
+
+	.fluid .gov-img {
+		background: none;
+		height: auto;
+	}
+
+	.fluid #gov-links {
+		height: 20px;
+	}
+
+	.fluid #gov-links a {
+		padding: 0 5px;
+	}
+
+	.fluid #gov-link1 {
+		float: left;
+		width: auto;
+	}
+
+	.fluid #gov-link2 {
+		float: right;
+		width: auto;
+	}
+
+	.fluid #gov-link3 {
+		display: block;
+		padding-bottom: 3px;
+	}
+
+	.fluid #gov-link3,
+	.fluid #gov-search-form {
+		float: none;
+		margin: 0;
+		text-align: center;
+		width: auto;
+	}
+
+	.fluid #gov-search {
+		height: auto;
+	}
+
+	.fluid #gov-search-form {
+		padding: 0 0 5px 0;
+	}
+
+	/* Department Header
+	----------------------------------- */
+
+	.fluid #ux-logo a {
+		background: none;
+		display: block;
+		height: auto;
+		text-align: center;
+		width: 100%;
+	}
+
+	.fluid #ux-logo a span {
+		font-size: 14px;
+	}
+
+	.fluid #ux-app-name {
+		display: none;
+	}
+
+	.fluid #ux-global-menu,
+	.fluid #ux-global-menu li,
+	.fluid #ux-site-search {
+		float: none;
+		text-align: center;
+	}
+
+	.fluid #ux-global-menu {
+		margin: 0;
+	}
+
+	.fluid #ux-site-search {
+		margin: 5px 0 0 0;
+		padding-bottom: 3px;
+	}
+
+	.fluid #gov-search-wrap,
+	.fluid #ux-search-wrap {
+		border-radius: 10px;
+		width: 90%;
+	}
+
+	.fluid #gov-search-box,
+	.fluid #ux-search-box {
+		font-size: 18px;
+		padding: 5px 0;
+		width: 94%;
+	}
+
+	.fluid #gov-search-button,
+	.fluid #ux-search-button {
+		margin: 8px 0 0 0;
+	}
+
+	/* Global Navigation
+	----------------------------------- */
+
+	.fluid #global-nav,
+	.fluid #global-nav .ux-content {
+		background: none;
+		border: none;
+	}
+
+	.fluid #global-nav ul {
+		float: none;
+		list-style-type: none;
+		height: auto;
+		text-align: center;
+	}
+
+	.fluid #global-nav ul li a {
+		color: #3C3C3C;
+		font-size: 14px;
+	}
+
+	.fluid #global-nav ul li a {
+		color: #3C3C3C;
+		font-size: 14px;
+	}	
+
+	.fluid #global-nav ul li a span {
+		background: none;
+		padding: 0 0 0 5px;
+	}
+
+	/* Page Body Overrides
+	----------------------------------- */
+	.fluid #ux-breadcrumbs {
+		display: none;
+	}
+
+	.fluid #ux-side-nav {
+		display: none;
+		margin-bottom: 15px;
+	}
+
+	/* Mobile Only Content
+	----------------------------------- */
+
+	.fluid .ux-mobile-only {
+		display: block !important;
+	}
+
+	.fluid #ux-show-side-nav {
+		float: none;
+		text-align: center;
+		margin: 20px 2.5%;
+		width: 95%;
+	}
+
+}
+
+@media handheld, only screen and (min-width: 600px) {
+	
+	.fluid .ux-mobile-only {
+		display: none;
+	}
+
+	.fluid #ux-side-nav {
+		display: block !important;
+	}
+
+	.fluid #page-wrap, .fluid .ux-content {
+		width: 600px !important;
+	}
+
+	.fluid #ux-app-name {
+		display: none;
+	}
+
+	.fluid #global-nav ul {
+		margin-top: -3px;
+	}
+
+	.fluid #global-nav ul li a {
+		padding: 5px 5px 0;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.fluid #page-wrap, .fluid .ux-content {
+		width: 768px !important;
+	}
+
+	.fluid #ux-app-name {
+		display: block;
+		font-size: 16px;
+		margin-top: 15px;
+	}
+
+	.fluid #global-nav ul li a {
+		padding: 5px 10px 0;
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+
+	.fluid #page-wrap, .fluid .ux-content {
+		width: 960px !important;
+	}
+
+	.fluid #ux-app-name {
+		font-size: 20px;
+		margin: 10px 0 0 20px;
+	}
+
+	.fluid #global-nav ul {
+		margin-top: 0;
+	}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+	.fluid #page-wrap, .fluid .ux-content {
+		width: 1200px !important;
+	}
+
+	.fluid #ux-app-name {
+		font-size: 20px;
+		margin: 10px 0 0 20px;
+	}
+
+}

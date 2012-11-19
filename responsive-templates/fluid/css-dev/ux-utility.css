@@ -1,0 +1,282 @@
+/* Floating elements
+----------------------- */
+.right {
+	float: right !important
+}
+
+.left {
+	float: left !important
+}
+
+.ux-clear {
+	clear: both !important
+}
+
+.float-none {
+	float: none !important
+}
+
+/* Margins
+----------------- */
+.margin-bottom {
+	margin-bottom: 10px !important
+}
+
+.margin-bottom-none {
+	margin-bottom: 0 !important
+}
+
+.margin-top {
+	margin-top:10px !important
+}
+
+.margin-top-none {
+	margin-top: 0 !important
+}
+
+.margin-right {
+	margin-right: 10px !important
+}
+
+.margin-right-none {
+	margin-right: 0 !important
+}
+
+.margin-left {
+	margin-left: 10px !important
+}
+
+.margin-left-none {
+	margin-left: 0 !important
+}
+
+.margin-all {
+	margin: 10px !important
+}
+
+.margin-all-none {
+	margin: 0 !important
+}
+
+/* Padding */
+.padding-bottom {
+	padding-bottom: 10px !important
+}
+
+.padding-bottom-none {
+	padding-bottom: 0 !important
+}
+
+.padding-top {
+	padding-top: 10px !important
+}
+
+.padding-top-none {
+	padding-top: 0 !important
+}
+
+.padding-right {
+	padding-right: 10px !important
+}
+
+.padding-right-none {
+	padding-right: 0 !important
+}
+
+.padding-left {
+	padding-left: 10px !important
+}
+
+.padding-left-none {
+	padding-left: 0 !important
+}
+
+.padding-all {
+	padding: 10px !important
+}
+
+.padding-all-none {
+	padding: 0 !important
+}
+
+
+/* Text Treatments 
+------------------- */
+
+.align-left,.label-align-left {
+	text-align: left !important
+}
+
+.align-center,.label-align-center {
+	text-align: center !important
+}
+
+.align-right,.numeric,.label-align-right {
+	text-align: right !important
+}
+
+/* Restore text to normal font styling and weight */
+.ux-font-normal {
+	font-style: normal;
+	font-weight: normal
+}
+
+.ux-remove-bullets {
+	list-style: none !important
+}
+
+.disabled-link {
+	color: #CCC !important;
+	cursor: not-allowed
+}
+
+.ux-placeholder {
+	color:#bbb
+}
+
+
+/* Widths
+--------------- */
+.width-05 {
+	width: 5% !important
+}
+
+.width-10 {
+	width: 10% !important
+}
+
+.width-15 {
+	width: 15% !important
+}
+
+.width-20 {
+	width: 20% !important
+}
+
+.width-25 {
+	width: 25% !important
+}
+
+.width-30 {
+	width: 30% !important
+}
+
+.width-35 {
+	width: 35% !important
+}
+
+.width-40 {
+	width: 40% !important
+}
+
+.width-45 {
+	width: 45% !important
+}
+
+.width-50 {
+	width: 50% !important
+}
+
+.width-55 {
+	width: 55% !important
+}
+
+.width-60 {
+	width: 60% !important
+}
+
+.width-65 {
+	width: 65% !important
+}
+
+.width-70 {
+	width: 70% !important
+}
+
+.width-75 {
+	width: 75% !important
+}
+
+.width-80 {
+	width: 80% !important
+}
+
+.width-85 {
+	width: 85% !important
+}
+
+.width-90 {
+	width: 90% !important
+}
+
+.width-95 {
+	width: 95% !important
+}
+
+.width-100 {
+	width: 100% !important
+}
+
+
+/* Controling visibility of elements
+--------------------------------------- */
+
+/* Hide content and make sure it stay hidden from screen readers */
+.js .ux-hide-js,
+.no-js .ux-hide-nojs, 
+.ux-hide-always, 
+.ux-preload-wrapper, 
+.ux-preload-wrapper img,
+.ux-mobile-only {
+	display: none !important;
+	speak: none
+}
+
+/* Hide text but still make it accessible for screen readers */
+.ux-hide-508 {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE7 fix */
+	clip: rect(1px, 1px, 1px, 1px)
+}
+
+.ux-inline {
+	display: inline !important
+}
+
+.ux-block {
+	display: block !important
+}
+
+.ux-inline-block {
+	display: inline-block !important
+}
+
+/* STUFF */
+.negativeamount {
+	color:red
+}
+
+.js .ux-contexthelp {
+	display:none;
+	font-size:10px;
+	font-weight:400
+}
+
+.ux-contexthelp-img {
+	margin: 0 5px;
+	position:relative;
+	top:-5px
+}
+
+.required {
+	color:#DD0B00!important;
+	display:inline-block;
+	font-size:12px;
+	left:0;
+	position:relative;
+	top:-2px
+}
+
+abbr.required {
+	border-bottom:none
+}

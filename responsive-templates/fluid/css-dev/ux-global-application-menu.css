@@ -1,0 +1,48 @@
+#ux-global-menu .icon {
+	background: url(../images/icons/16x16-icons.png) no-repeat 0 0 transparent;
+	display: inline-block;
+	padding: 0 10px 0 20px;
+}
+
+#ux-global-menu li:last-child .icon {
+	padding: 0 5px 0 20px;
+}
+
+#ux-global-menu .icon span {
+	background: url(../images/icons/arrow-down.png) no-repeat right 7px transparent;
+	cursor: pointer;
+	padding-right: 10px;
+	pointer-events: none;
+}
+
+
+
+/* Small Icons (defualt for large header).
+-----------------------------------------------------*/
+#ux-global-menu .icon.person {
+	background-position: 0 -4px;
+}
+
+#ux-global-menu .icon.gear {
+	background-position: 0 -26px;
+}
+
+#ux-global-menu .icon.door {
+	background-position: 0 -48px;
+}
+
+#ux-global-menu .icon.apps {
+	background-position: 0 -70px;
+}
+
+#ux-global-menu .icon.message {
+	background-position: 0 -91px;
+}
+
+#ux-global-menu .icon.translate {
+	background-position: 0 -113px;
+}
+
+#ux-global-menu .icon.index {
+	background-position: 0 -136px;
+}

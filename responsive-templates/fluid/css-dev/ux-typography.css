@@ -1,0 +1,85 @@
+/* Fonts to load
+---------------------------- */
+
+@font-face { 
+	font-family: 'Copse'; 
+	src: url('../fonts/Copse-Regular.ttf') format('opentype'); 
+}
+
+
+/* Header Styling
+---------------------------- */
+
+h1 { 
+	margin:0; 
+}
+
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
+	color: #3D6683;
+	margin:20px 0 10px
+}
+
+header {
+	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+}
+
+h2, .h2 {
+	font-size:20px;
+	line-height:1;
+	margin:0 0 20px
+}
+
+h3, .h3 {
+	font-size:16px
+}
+
+h4, .h4 {
+	font-size:14px;
+	font-weight:700
+}
+
+h5, h6, .h5, .h6 {
+	font-size:12px;
+	font-weight:700
+}
+
+.ux-header-subtitle {
+	color:#696969;
+	display:block;
+	font-size:.6em;
+	font-style:italic;
+	font-weight:400;
+	margin:5px 0 10px
+}
+
+h3 .ux-header-subtitle {
+	font-size:.75em;
+	margin:0 0 10px
+}
+
+h4 .ux-header-subtitle {
+	font-size:.85em
+}
+
+h5 .ux-header-subtitle {
+	font-size:.95em
+}
+
+/* Pull and Blockqoutes
+-------------------------- */
+
+.ux-blockquote { 
+	color: 000;
+	font-size: 17px;
+	font-family: 'Copse', Georgia, Baskerville, TimesNewRoman, serif;
+	background: url(../images/icons/qoute.jpg) no-repeat 0 0 transparent;
+	padding: 2px 20px 5px 40px;
+	margin: 25px 20px;
+}
+
+.ux-blockquote.ux-pullquote { 
+	padding: 30px 15px;
+	float: right;
+	width: 200px;
+	margin: 0 10px 0 20px;
+}
