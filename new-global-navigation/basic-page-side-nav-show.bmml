@@ -1,0 +1,78 @@
+<mockup version="1.0" skin="sketch" fontFace="Arial" measuredW="1451" measuredH="811" mockupW="1044" mockupH="782">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="435" y="29" w="1016" h="782" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="435" y="100" w="1016" h="97" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="435" y="191" w="1016" h="36" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Title" x="749" y="244" w="-1" h="-1" measuredW="95" measuredH="29" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>20</size>
+        <text>Page%20Title</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="572" y="198" w="-1" h="-1" measuredW="95" measuredH="22" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Level%201%20Item%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="682" y="198" w="-1" h="-1" measuredW="95" measuredH="22" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Level%201%20Item%202</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="792" y="198" w="-1" h="-1" measuredW="95" measuredH="22" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <href>basic-page-global-level-2%26bm%3Bbasic-page-global-level-2.bmml%26bm%3Bbasic-page-global-level-2.bmml%26bm%3Bbasic-page-global-level-2.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22385%2C169%2C480%2C191%22%20href%3D%22basic-page-global-level-2.bmml%22%20alt%3D%22basic-page-global-level-2%22%20id%3D%226%22/%3E</map>
+        <text>Level%201%20Item%203</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="902" y="198" w="-1" h="-1" measuredW="95" measuredH="22" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Level%201%20Item%204</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="1012" y="198" w="-1" h="-1" measuredW="95" measuredH="22" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Level%201%20Item%205</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="1122" y="198" w="-1" h="-1" measuredW="95" measuredH="22" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Level%201%20Item%206</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Canvas" x="572" y="243" w="162" h="30" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::IconLabel" x="584" y="246" w="-1" h="-1" measuredW="121" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>basic-page%26bm%3Bbasic-page.bmml%26bm%3Bbasic-page.bmml%26bm%3Bbasic-page.bmml</href>
+        <icon>BulletsIcon%7Csmall</icon>
+        <labelPosition>right</labelPosition>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22177%2C217%2C298%2C241%22%20href%3D%22basic-page.bmml%22%20alt%3D%22basic-page%22%20id%3D%2211%22/%3E</map>
+        <text>Side%20Navigation</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::TabBar" x="572" y="301" w="774" h="189" measuredW="219" measuredH="100" zOrder="12" locked="false" isInGroup="-1"/>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Title" x="592" y="378" w="-1" h="-1" measuredW="143" measuredH="51" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Content</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::DataGrid" x="572" y="513" w="774" h="210" measuredW="356" measuredH="210" zOrder="14" locked="false" isInGroup="-1"/>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::List" x="572" y="267" w="162" h="223" measuredW="100" measuredH="212" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Side%20Nav%20Level%201%0ASide%20Nav%20Level%201%0ASide%20Nav%20Level%201%0ASide%20Nav%20Level%201%0ASide%20Nav%20Level%201%0ASide%20Nav%20Level%201%0ASide%20Nav%20Level%201%0ASide%20Nav%20Level%201%0ASide%20Nav%20Level%201%0ASide%20Nav%20Level%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::StickyNote" x="407" y="255" w="150" h="108" measuredW="109" measuredH="123" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Click%20%22Side%20Navigation%22%20again%20to%20close%20it.</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
