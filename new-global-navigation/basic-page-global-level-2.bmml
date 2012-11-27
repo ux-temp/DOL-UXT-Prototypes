@@ -48,11 +48,11 @@
       </controlProperties>
     </control>
     <control controlID="22" controlTypeID="com.balsamiq.mockups::Canvas" x="572" y="243" w="162" h="30" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="-1"/>
-    <control controlID="23" controlTypeID="com.balsamiq.mockups::IconLabel" x="584" y="246" w="-1" h="-1" measuredW="121" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::IconLabel" x="584" y="246" w="-1" h="-1" measuredW="126" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>BulletsIcon%7Csmall</icon>
         <labelPosition>right</labelPosition>
-        <text>Side%20Navigation</text>
+        <text>Local%20Navigation</text>
       </controlProperties>
     </control>
     <control controlID="25" controlTypeID="com.balsamiq.mockups::TabBar" x="572" y="301" w="774" h="189" measuredW="219" measuredH="100" zOrder="12" locked="false" isInGroup="-1"/>

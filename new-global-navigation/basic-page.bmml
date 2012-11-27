@@ -48,13 +48,13 @@
       </controlProperties>
     </control>
     <control controlID="15" controlTypeID="com.balsamiq.mockups::Canvas" x="572" y="243" w="162" h="30" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="-1"/>
-    <control controlID="16" controlTypeID="com.balsamiq.mockups::IconLabel" x="584" y="246" w="-1" h="-1" measuredW="121" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::IconLabel" x="584" y="246" w="-1" h="-1" measuredW="126" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <href>basic-page-side-nav-show%26bm%3Bbasic-page-side-nav-show.bmml%26bm%3Bbasic-page-side-nav-show.bmml%26bm%3Bbasic-page-side-nav-show.bmml</href>
         <icon>BulletsIcon%7Csmall</icon>
         <labelPosition>right</labelPosition>
-        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22173%2C217%2C294%2C241%22%20href%3D%22basic-page-side-nav-show.bmml%22%20alt%3D%22basic-page-side-nav-show%22%20id%3D%2216%22/%3E</map>
-        <text>Side%20Navigation</text>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22173%2C217%2C299%2C241%22%20href%3D%22basic-page-side-nav-show.bmml%22%20alt%3D%22basic-page-side-nav-show%22%20id%3D%2216%22/%3E</map>
+        <text>Local%20Navigation</text>
       </controlProperties>
     </control>
     <control controlID="17" controlTypeID="com.balsamiq.mockups::StickyNote" x="1262" y="197" w="174" h="123" measuredW="109" measuredH="123" zOrder="12" locked="false" isInGroup="-1">
@@ -72,6 +72,17 @@
     <control controlID="21" controlTypeID="com.balsamiq.mockups::StickyNote" x="411" y="244" w="146" h="119" measuredW="109" measuredH="123" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Click%20%22Side%20Navigation%22%20to%20open%20the%20side%20nav.</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Label" x="516" y="129" w="-1" h="-1" measuredW="76" measuredH="22" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Global%20Nav</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Arrow" x="592" y="144" w="105" h="53" measuredW="150" measuredH="100" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <leftArrow>false</leftArrow>
       </controlProperties>
     </control>
   </controls>
