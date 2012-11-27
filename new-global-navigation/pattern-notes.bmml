@@ -1,3 +1,19 @@
-<mockup version="1.0" skin="sketch" fontFace="Arial" measuredW="0" measuredH="0" mockupW="0" mockupH="0">
-  <controls/>
+<mockup version="1.0" skin="sketch" fontFace="Arial" measuredW="991" measuredH="604" mockupW="388" mockupH="437">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::StickyNote" x="640" y="167" w="165" h="137" measuredW="109" measuredH="123" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Domain%20Nav%28s%29%20level%201%20and%202%20should%20have%20very%20concise%20working%20%281-2%20words%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::StickyNote" x="826" y="287" w="165" h="123" measuredW="109" measuredH="123" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>DomainNav%20level%203%20is%20limited%20to%20%284%29%20columns.</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::StickyNote" x="603" y="421" w="210" h="183" measuredW="109" measuredH="123" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Local%20Navigation%20should%20only%20be%20hidden%20when%20the%20full%20width%20of%20the%20page%20is%20required.</text>
+      </controlProperties>
+    </control>
+  </controls>
 </mockup>
