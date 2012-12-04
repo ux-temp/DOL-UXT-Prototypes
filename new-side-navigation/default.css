@@ -1,0 +1,71 @@
+/*
+ * Side Navigation
+ */
+
+#ux-side-nav {
+    margin: 15px 0 0 0;
+}
+
+#ux-side-nav ul {
+    list-style: none;
+    padding-left: 13px
+}
+
+#ux-side-nav li {
+    margin: 5px 0;
+    line-height: 1.2;
+    font-size: 16px
+}
+
+#ux-side-nav li li {
+    font-size: 14px
+}
+
+#ux-side-nav li li li {
+    font-size: 12px
+}
+
+#ux-side-nav a {
+    color: #4C4C4C;
+    display: block;
+    text-decoration: none;
+    padding: 3px;
+}
+
+#ux-side-nav a:hover {
+    text-decoration: underline;
+}
+
+#ux-side-nav ul ul ul a {
+    font-size: 11px;
+}
+
+#ux-side-nav .expandable-list {
+    margin-left: 0;
+}
+
+#ux-side-nav .ux-expandable {
+    background: url(../images/side-nav-left.png) no-repeat 0 center transparent;
+    padding-left: 15px;
+    margin-left: -13px
+}
+
+#ux-side-nav .ux-expandable.expanded {
+    background: url(../images/side-nav-down.png) no-repeat 0 center transparent;
+}
+
+#ux-side-nav a.ux-expandable + ul {
+    display: none;
+}
+
+#ux-side-nav a.selected {
+    color: #3D6683;
+    font-weight: 700;
+    border-left: 7px solid #CCC;
+    margin-left: -12px;
+    padding-left: 7px;
+}
+
+#ux-side-nav a.ux-expandable.expanded + ul {
+    display: block;
+}

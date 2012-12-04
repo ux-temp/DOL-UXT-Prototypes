@@ -53,13 +53,13 @@
 }
 
 #ux-side-nav .ux-expandable {
-    background: url(full-list-arrow.png) no-repeat 3px center transparent;
+    background: url(list-arrow.png) no-repeat 3px center transparent;
     padding-left: 20px;
     margin-left: -14px;
 }
 
 #ux-side-nav .ux-expandable.expanded {
-    background: url(full-list-arrow-down.png) no-repeat 3px center transparent;
+    background: url(list-arrow-down.png) no-repeat 3px center transparent;
 }
 
 #ux-side-nav .expanded:hover {
