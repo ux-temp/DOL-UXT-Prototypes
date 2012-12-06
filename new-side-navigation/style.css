@@ -7,12 +7,8 @@
 }
 
 #ux-side-nav {
-	border-radius: 6px;
-  border: 1px solid #e5e5e5;
   border-top: none;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
 	width: 200px;
-  overflow: hidden;
 }
 
 #ux-side-nav ul {
@@ -20,6 +16,7 @@
   list-style: none;
 	font-size: 16px;
 	margin-bottom: -6px;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 #ux-side-nav li {
@@ -30,16 +27,8 @@
   font-size: 12px;
 }
 
-#ux-side-nav li li a {
-  padding-left: 30px;
-}
-
 #ux-side-nav li li li {
   font-size: 11px;
-}
-
-#ux-side-nav li li li a {
-  padding-left: 40px;
 }
 
 #ux-side-nav  li a {
@@ -87,7 +76,6 @@
 	background-color: #3D6683;
   text-decoration: none;
 	font-weight: normal;
-  border-left: none;
 }
 
 #ux-side-nav a:hover {
@@ -96,31 +84,14 @@
   text-decoration: none;
 }
 
-#ux-side-nav .ux-expandable {
+/*#ux-side-nav .ux-expandable {
   background: url(full-list-arrow.png) no-repeat 3px center transparent;
   padding-left: 20px;
 }
 
 #ux-side-nav .ux-expandable.expanded {
   background: url(full-list-arrow-down.png) no-repeat 3px center transparent;
-}
-
-#ux-side-nav ul ul li a {
-  padding-left: 30px !important;
-}
-
-
-#ux-side-nav ul ul li a.ux-expandable{
-  background: url(full-list-arrow.png) no-repeat 14px center transparent !important;
-}
-
-#ux-side-nav ul ul li a.ux-expandable.expanded{
-  background: url(full-list-arrow-down.png) no-repeat 14px center transparent !important;
-}
-
-#ux-side-nav ul ul ul li a {
-  padding-left: 40px !important;
-}
+} */
 
 #ux-side-nav .ux-expandable:hover {
   background-color: #E5E5E5 !important;
