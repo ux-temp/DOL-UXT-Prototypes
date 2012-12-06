@@ -2,85 +2,130 @@
  * Side Navigation
  */
 
+ ul li {
+  margin: none;
+}
+
 #ux-side-nav {
-    margin: 20px 0 0 0;
+	border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+	width: 200px;
+  overflow: hidden;
 }
 
 #ux-side-nav ul {
-    list-style: none;
-    padding-left: 13px
+  display: block;
+  list-style: none;
+	font-size: 16px;
+	margin-bottom: -6px;
 }
 
 #ux-side-nav li {
-    margin: 5px 0;
-    line-height: 1.2;
-    font-size: 14px
+  font-size: 14px;
 }
 
 #ux-side-nav li li {
-    font-size: 12px
+  font-size: 12px;
+}
+
+#ux-side-nav li li a {
+  padding-left: 30px;
 }
 
 #ux-side-nav li li li {
-    font-size: 10px
+  font-size: 11px;
 }
 
-#ux-side-nav a {
-    color: #4C4C4C;
-    display: inline-block;
-    text-decoration: none;
-    padding: 5px;
+#ux-side-nav li li li a {
+  padding-left: 40px;
 }
 
-.ie7 #ux-side-nav a {
-    display: inline;
-	position: relative;
+#ux-side-nav  li a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -6px; 
+  padding: 8px 14px;
+  border-bottom: none;
+  border-top: 1px solid #E5E5E5;
 }
 
-#ux-side-nav a:hover {
-	background-color: #E5E5E5;
-	border-radius: 5px;
-	padding: 5 5 5 20px;
-    text-decoration: none;
+#ux-side-nav  li li a {
+  margin: 4px -2px -5px;
 }
 
-#ux-side-nav ul ul ul a {
-    font-size: 11px;
+#ux-side-nav ul ul {
+  padding-left: 20px;
+	font-size: 14px;
+  padding: 0 !important;
 }
 
-#ux-side-nav .expandable-list {
-    margin-left: 0;
-}
-
-#ux-side-nav .ux-expandable {
-    background: url(full-list-arrow.png) no-repeat 3px center transparent;
-    padding-left: 20px;
-    margin-left: -14px;
-}
-
-#ux-side-nav .ux-expandable.expanded {
-    background: url(full-list-arrow-down.png) no-repeat 3px center transparent;
-}
-
-#ux-side-nav .expanded:hover {
-    background-color: #E5E5E5;
+#ux-side-nav ul ul ul {
+  padding-left: 20px;
+	font-size: 12px;
 }
 
 #ux-side-nav a.ux-expandable + ul {
-    display: none;
+  display: none;
+  border: 1px solid transparent; /* DO NOT REMOVE, THIS FIXES THE JQUERY SLIDE DOWN JUMPYNESS! */
+}
+
+/*
+ * Courteny Side Nav Changes
+ */
+
+#ux-side-nav a {
+  color: #4C4C4C;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
 }
 
 #ux-side-nav a.selected {
-    color: #FFF;
-	background-color: #08C;
-	padding: 5px;
-    text-decoration: none;
+  color: #FFF;
+	background-color: #3D6683;
+  text-decoration: none;
 	font-weight: normal;
-    border-left: none;
-	border-radius: 5px;
-	margin-left: 0;
+  border-left: none;
 }
 
-#ux-side-nav a.ux-expandable.expanded + ul {
-    display: block;
+#ux-side-nav a:hover {
+	background-color: #EFEFEF;
+	padding: 5 5 5 20px;
+  text-decoration: none;
+}
+
+#ux-side-nav .ux-expandable {
+  background: url(full-list-arrow.png) no-repeat 3px center transparent;
+  padding-left: 20px;
+}
+
+#ux-side-nav .ux-expandable.expanded {
+  background: url(full-list-arrow-down.png) no-repeat 3px center transparent;
+}
+
+#ux-side-nav ul ul li a {
+  padding-left: 30px !important;
+}
+
+
+#ux-side-nav ul ul li a.ux-expandable{
+  background: url(full-list-arrow.png) no-repeat 14px center transparent !important;
+}
+
+#ux-side-nav ul ul li a.ux-expandable.expanded{
+  background: url(full-list-arrow-down.png) no-repeat 14px center transparent !important;
+}
+
+#ux-side-nav ul ul ul li a {
+  padding-left: 40px !important;
+}
+
+#ux-side-nav .ux-expandable:hover {
+  background-color: #E5E5E5 !important;
+}
+
+#ux-side-nav .ux-expandable.expanded:hover {
+  background-color: #E5E5E5 !important;
 }
