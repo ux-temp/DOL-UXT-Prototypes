@@ -84,14 +84,14 @@
   text-decoration: none;
 }
 
-/*#ux-side-nav .ux-expandable {
-  background: url(full-list-arrow.png) no-repeat 3px center transparent;
+#ux-side-nav .ux-expandable {
+  background: url(list-arrow.png) no-repeat 182px center transparent;
   padding-left: 20px;
 }
 
 #ux-side-nav .ux-expandable.expanded {
-  background: url(full-list-arrow-down.png) no-repeat 3px center transparent;
-} */
+  background: url(list-arrow-down.png) no-repeat 182px center transparent;
+} 
 
 #ux-side-nav .ux-expandable:hover {
   background-color: #E5E5E5 !important;
