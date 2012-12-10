@@ -108,9 +108,10 @@
 	background-color: #3D6683;
 	text-decoration: none;
 	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
 }
 
-#ux-side-nav a:hover {
+#ux-side-nav  a.selected  a:hover {
 	background-color: #EFEFEF;
 	padding: 5 5 5 20px;
 	text-decoration: none;
