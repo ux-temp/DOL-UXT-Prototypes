@@ -1,101 +1,133 @@
 /*
- * Side Navigation
- */
+* PopOver Navigation Edits
+*/
 
- ul li {
-  margin: none;
+#ux-side-nav-container #ux-side-nav {
+	margin-top: 0;
+	margin-bottom: 10px;
 }
 
-#ux-side-nav {
-  border-top: none;
-	width: 200px;
+#ux-side-nav-container #ux-side-nav ul {
+	margin-left: 0 !important;
 }
 
-#ux-side-nav ul {
-  display: block;
-  list-style: none;
-	font-size: 16px;
-	margin-bottom: -6px;
-  border-bottom: 1px solid #E5E5E5;
+#ux-side-nav-container #ux-side-nav  > ul  > li:last-child  a{
+	border-bottom: 0;
 }
 
-#ux-side-nav li {
-  font-size: 14px;
+#ux-side-nav-container #ux-side-nav ul ul li a {
+	margin-right: 1px;
 }
 
-#ux-side-nav li li {
-  font-size: 12px;
-}
-
-#ux-side-nav li li li {
-  font-size: 11px;
-}
-
-#ux-side-nav  li a {
-  display: block;
-  width: 190px \9;
-  margin: 0 0 -6px; 
-  padding: 8px 14px;
-  border-bottom: none;
-  border-top: 1px solid #E5E5E5;
-}
-
-#ux-side-nav ul ul {
-  padding-left: 20px;
-	font-size: 14px;
-  padding: 0 !important;
-}
-
-#ux-side-nav ul ul li a{
-  padding-left: 25px;
-}
-
-#ux-side-nav ul ul ul {
-  padding-left: 20px;
-	font-size: 12px;
-}
-
-#ux-side-nav a.ux-expandable + ul {
-  display: none;
-  border: 1px solid transparent; /* DO NOT REMOVE, THIS FIXES THE JQUERY SLIDE DOWN JUMPYNESS! */
+#ux-side-nav-container #ux-side-nav ul ul ul li a {
+	margin-right: 2px;
+	margin-left: -2px;
 }
 
 /*
- * Courteny Side Nav Changes
+ * Side Navigation
  */
 
+#ux-side-nav {
+	width: 100%;
+}
+
+#ux-side-nav ul li a{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#ux-side-nav ul {
+	display: block;
+	list-style: none;
+	font-size: 16px;
+	margin-bottom: -6px;
+}
+
+#ux-side-nav li {
+	font-size: 14px;
+}
+
+#ux-side-nav ul li a{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#ux-side-nav li li {
+	font-size: 12px;
+}
+
+#ux-side-nav li li li {
+	font-size: 11px;
+}
+
+#ux-side-nav  li a {
+	display: block;
+	margin: 5px 1px -6px; 
+	padding: 8px 14px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+#ux-side-nav ul ul {
+	padding-left: 20px;
+	font-size: 14px;
+	padding: 0 !important;
+	width: 100%;
+}
+
+#ux-side-nav ul ul li a{
+	padding-left: 28px;
+	margin-left: -1px;
+}
+
+#ux-side-nav ul ul ul {
+	padding-left: 20px;
+	font-size: 12px;
+	width: 100%;
+}
+
+#ux-side-nav ul ul ul li a {
+	margin-left: -2px;
+	padding-left: 38px;
+}
+
+#ux-side-nav a.ux-expandable + ul {
+	display: none;
+	border: 1px solid transparent; /* DO NOT REMOVE, THIS FIXES THE JQUERY SLIDE DOWN JUMPYNESS! */
+}
+
 #ux-side-nav a {
-  color: #4C4C4C;
-  display: inline-block;
-  text-decoration: none;
-  padding: 5px;
+	color: #4C4C4C;
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
 }
 
 #ux-side-nav a.selected {
-  color: #FFF;
+	color: #FFF;
 	background-color: #3D6683;
-  text-decoration: none;
+	text-decoration: none;
 	font-weight: normal;
 }
 
 #ux-side-nav a:hover {
 	background-color: #EFEFEF;
 	padding: 5 5 5 20px;
-  text-decoration: none;
+	text-decoration: none;
 }
 
 #ux-side-nav .ux-expandable {
-  background: url(list-arrow.png) no-repeat 182px center transparent;
+	background: url(list-arrow2.png) no-repeat 90% center transparent;
 }
 
 #ux-side-nav .ux-expandable.expanded {
-  background: url(list-arrow-down.png) no-repeat 182px center transparent;
+	background: url(list-arrow-down2.png) no-repeat 90% center transparent;
 } 
 
 #ux-side-nav .ux-expandable:hover {
-  background-color: #E5E5E5 !important;
+	background-color: #E5E5E5 !important;
 }
 
 #ux-side-nav .ux-expandable.expanded:hover {
-  background-color: #E5E5E5 !important;
+	background-color: #E5E5E5 !important;
 }
