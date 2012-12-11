@@ -11,7 +11,7 @@
 	margin-left: 0 !important;
 }
 
-#ux-side-nav-container #ux-side-nav  > ul  > li:last-child  a{
+#ux-side-nav-container #ux-side-nav > ul > li:last-child a {
 	border-bottom: 0;
 }
 
@@ -48,11 +48,6 @@
 	font-size: 14px;
 }
 
-#ux-side-nav ul li a{
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
 #ux-side-nav li li {
 	font-size: 12px;
 }
@@ -68,22 +63,19 @@
 	border-bottom: 1px solid #E5E5E5;
 }
 
-#ux-side-nav ul ul {
+#ux-side-nav ul ul,
+#ux-side-nav ul ul ul {
 	padding-left: 20px;
-	font-size: 14px;
-	padding: 0 !important;
 	width: 100%;
+}
+
+#ux-side-nav ul ul {
+	padding: 0 !important;
 }
 
 #ux-side-nav ul ul li a{
 	padding-left: 28px;
 	margin-left: -1px;
-}
-
-#ux-side-nav ul ul ul {
-	padding-left: 20px;
-	font-size: 12px;
-	width: 100%;
 }
 
 #ux-side-nav ul ul ul li a {
@@ -111,24 +103,19 @@
 	text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
 }
 
-#ux-side-nav  a.selected  a:hover {
-	background-color: #EFEFEF;
-	padding: 5 5 5 20px;
-	text-decoration: none;
-}
 
 #ux-side-nav .ux-expandable {
-	background: url(list-arrow2.png) no-repeat 90% center transparent;
+	background: url(list-arrow2.png) no-repeat 94% center transparent;
 }
 
 #ux-side-nav .ux-expandable.expanded {
-	background: url(list-arrow-down2.png) no-repeat 90% center transparent;
+	background: url(list-arrow-down2.png) no-repeat 94% center transparent;
 } 
 
-#ux-side-nav .ux-expandable:hover {
+#ux-side-nav a:hover {
 	background-color: #E5E5E5 !important;
 }
 
-#ux-side-nav .ux-expandable.expanded:hover {
-	background-color: #E5E5E5 !important;
+#ux-side-nav a.selected:hover {
+	background-color: #3D6683 !important;
 }
