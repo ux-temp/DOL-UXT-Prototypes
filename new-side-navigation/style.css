@@ -74,11 +74,13 @@
 }
 
 #ux-side-nav ul ul li a{
+	color: #787878;
 	padding-left: 28px;
 	margin-left: -1px;
 }
 
 #ux-side-nav ul ul ul li a {
+	color: #A5A5A5;
 	margin-left: -2px;
 	padding-left: 38px;
 }
