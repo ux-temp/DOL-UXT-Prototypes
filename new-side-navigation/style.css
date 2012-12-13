@@ -45,15 +45,15 @@
 }
 
 #ux-side-nav li {
-	font-size: 14px;
-}
-
-#ux-side-nav li li {
 	font-size: 12px;
 }
 
-#ux-side-nav li li li {
+#ux-side-nav li li {
 	font-size: 11px;
+}
+
+#ux-side-nav li li li {
+	font-size: 10px;
 }
 
 #ux-side-nav  li a {
@@ -106,7 +106,7 @@
 	color: #4C4C4C;
 	background-color: #DDD;
 	text-decoration: none;
-	font-weight: normal;
+	font-weight: bold;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, .15);
 }
 
