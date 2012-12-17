@@ -1,0 +1,59 @@
+#ux-side-nav-toggle {
+    background: #EEE;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    float: left;
+    margin: 13px 12px 0 0 ;
+    padding: 2px 8px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+
+#ux-side-nav-toggle.active {
+    background: #DDD;
+}
+
+#ux-side-nav-toggle.active:before {
+    border: 10px solid;
+    border-color: transparent;
+    border-bottom-color: #AAA;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 200;
+    margin: 12px 0 0 -4px;
+}
+
+#ux-side-nav-toggle.active:after {
+    border: 10px solid;
+    border-color: transparent;
+    border-bottom-color: #FFF;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 351;
+    margin: 13px 0 0 -18px;
+}
+
+#ux-side-nav-container {
+    background: #FFF;
+    box-shadow: 1px 1px 5px #000;
+    position: absolute;
+    margin-top: 48px;
+    width: 220px;
+    z-index: 200;
+}
+
+.ie7 #ux-side-nav-container {
+    border: 1px solid #DDD;
+    margin: 43px 0 0 -44px;
+    zoom: 1;
+}
+
+#ux-side-nav-container #ux-side-nav ul {
+    margin-left: 10px;
+}
