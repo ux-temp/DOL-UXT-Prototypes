@@ -443,7 +443,7 @@
 				<div class="grid_12 group">
 
 					<h2>Page Title</h2>	
-
+				<div>
 					<table>
 						<caption>
 							Table Caption
@@ -573,12 +573,241 @@
 							</tr>
 						</tbody>
 						<tfoot>
-							<tr>
-								<td colspan="6">Table Footer</td>
-							</tr>	
 						</tfoot>
 					</table>
-
+				</div>
+				<h3>Example 2: Data Table</h3>
+				<div>
+					<table>
+						<caption>
+							Table Caption
+						</caption>
+						<thead>
+							<tr>
+								<th>
+									Column 1
+								</th>
+								<th>
+									Column 2
+								</th>
+								<th>
+									Column 3
+								</th>
+								<th>
+									Column 4
+								</th>
+								<th>
+									Column 5
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									1,1
+								</td>
+								<td>
+									1,2
+								</td>
+								<td>
+									1,3
+								</td>
+								<td>
+									1,4
+								</td>
+								<td>
+									1,5
+								</td>
+							</tr>
+							<tr>
+								<td>
+									2,1
+								</td>
+								<td>
+									2,2
+								</td>
+								<td>
+									2,3
+								</td>
+								<td>
+									2,4
+								</td>
+								<td>
+									2,5
+								</td>
+							</tr>
+							<tr>
+								<td>
+									3,1
+								</td>
+								<td>
+									3,2
+								</td>
+								<td>
+									3,3
+								</td>
+								<td>
+									3,4
+								</td>
+								<td>
+									3,5
+								</td>
+							</tr>
+							<tr>
+								<td>
+									4,1
+								</td>
+								<td>
+									4,2
+								</td>
+								<td>
+									4,3
+								</td>
+								<td>
+									4,4
+								</td>
+								<td>
+									4,5
+								</td>
+							</tr>
+							<tr>
+								<td>
+									5,1
+								</td>
+								<td>
+									5,2
+								</td>
+								<td>
+									5,3
+								</td>
+								<td>
+									5,4
+								</td>
+								<td>
+									5,5
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+						</tfoot>
+					</table>	
+				</div>
+				<h3>Example 3: Client Side Data Tables</h3>
+				<div>
+					<table id="example3" class="dataTables jQDataTables">
+						<caption>
+							Table Caption
+						</caption>
+						<thead>
+							<tr>
+								<th>
+									Column 1
+								</th>
+								<th>
+									Column 2
+								</th>
+								<th>
+									Column 3
+								</th>
+								<th>
+									Column 4
+								</th>
+								<th>
+									Column 5
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									1,1
+								</td>
+								<td>
+									1,2
+								</td>
+								<td>
+									1,3
+								</td>
+								<td>
+									1,4
+								</td>
+								<td>
+									1,5
+								</td>
+							</tr>
+							<tr>
+								<td>
+									2,1
+								</td>
+								<td>
+									2,2
+								</td>
+								<td>
+									2,3
+								</td>
+								<td>
+									2,4
+								</td>
+								<td>
+									2,5
+								</td>
+							</tr>
+							<tr>
+								<td>
+									3,1
+								</td>
+								<td>
+									3,2
+								</td>
+								<td>
+									3,3
+								</td>
+								<td>
+									3,4
+								</td>
+								<td>
+									3,5
+								</td>
+							</tr>
+							<tr>
+								<td>
+									4,1
+								</td>
+								<td>
+									4,2
+								</td>
+								<td>
+									4,3
+								</td>
+								<td>
+									4,4
+								</td>
+								<td>
+									4,5
+								</td>
+							</tr>
+							<tr>
+								<td>
+									5,1
+								</td>
+								<td>
+									5,2
+								</td>
+								<td>
+									5,3
+								</td>
+								<td>
+									5,4
+								</td>
+								<td>
+									5,5
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+						</tfoot>
+					</table>
+				</div>	
 					<h3> Popovers test </h3>
 					
 					<a href="#" class="ux-popover">Test Popover</a>
@@ -614,7 +843,7 @@
 		<script>
 			$(document).ready(function(){
 
-				ux.load('popover');
+				ux.load(['popover', 'dataTables']);
 				
 			});
 		</script>

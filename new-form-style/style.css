@@ -154,15 +154,14 @@ table,caption,th,td {
 
 
 caption {
-	background-color:#3D6683;
+	background-color:#CCC;
 	border-bottom:none;
-	color:#FFF;
-	font-size:16px;
-	font-weight: normal;
+	color:#656565;
+	font-size:14px;
+	font-weight: thick;
 	line-height:1.1;
 	padding:5px;
 	text-align:center;
-	border-radius: 20px 20px 0 0;
 }
 
 tr,
@@ -180,7 +179,7 @@ tr:nth-child(even) {
 /* Old polyfill */
 tr.table-row-even,
 .dataTables_wrapper tr.even {
-	background-color:#FFF;
+	background-color:#EFF5F9;
 }
 
 tr.table-row-odd:hover,
@@ -191,9 +190,12 @@ tr.table-row-even:hover th,
 .dataTables_wrapper tr.odd:hover th,
 .dataTables_wrapper tr.even:hover,
 .dataTables_wrapper tr.even:hover th {
-	background-color:#EEE!important;
+	background-color:#EEE !important;
 }
 
+tr:hover {
+	background-color: #d2e3ee;
+}
 
 table th,
 .column-label,
@@ -207,7 +209,7 @@ table th,
 
 table th,
 .column-label {
-	background-color:#EEE;
+	background-color:#F0F0F0;
 	font-weight:700;
 	text-align:left;
 }
