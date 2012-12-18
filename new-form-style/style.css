@@ -143,7 +143,7 @@ table {
 caption,
 table thead th {
 	text-align:left;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+	text-shadow: none;
 	text-transform:capitalize;
 	border:1px solid #CCC;
 }
@@ -154,11 +154,11 @@ table,caption,th,td {
 
 
 caption {
-	background-color:#CCC;
+	background-color:#8AB;
 	border-bottom:none;
-	color:#656565;
+	color:#FFF;
 	font-size:14px;
-	font-weight: thick;
+	font-weight: normal;
 	line-height:1.1;
 	padding:5px;
 	text-align:center;
