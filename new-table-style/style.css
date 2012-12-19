@@ -130,38 +130,23 @@
 /* ***********************************
 ----------  Table Styles  ------------
 ************************************ */
-
-table {
-	border-collapse:collapse;
-	border-spacing:1px;
-	table-layout:fixed;
-	width:100%;
-	word-wrap:break-word;
-	border:1px solid #CCC !important;
+table, 
+caption, 
+th, 
+td {
+	border: 1px solid #D5D5D5;
 }
-
-caption,
-table thead th {
-	text-align:left;
-	text-shadow: none;
-	text-transform:capitalize;
-	border:1px solid #CCC;
-}
-
-table,caption,th,td {
-	border: none;
-}
-
 
 caption {
-	background-color:#8AB;
-	border-bottom:none;
-	color:#FFF;
+	background-color:#CCC;
+	color:#656565;
 	font-size:14px;
-	font-weight: normal;
+	font-weight: thick;
 	line-height:1.1;
 	padding:5px;
 	text-align:center;
+	border-bottom:0;
+	text-shadow: none !important;
 }
 
 tr,
@@ -190,12 +175,12 @@ tr.table-row-even:hover th,
 .dataTables_wrapper tr.odd:hover th,
 .dataTables_wrapper tr.even:hover,
 .dataTables_wrapper tr.even:hover th {
-	background-color:#EEE !important;
+	background-color:#ffffe5 !important;
 }
 
 tr:hover {
-	background-color: #d2e3ee;
-}
+	background-color: #ffffe5;
+} 
 
 table th,
 .column-label,
@@ -203,8 +188,6 @@ table th,
 	color:#656565;
 	padding:4px 7px!important;
 	vertical-align:top!important;
-	border-bottom: 1px solid #CCC;
-	border-right: 1px solid #CCC;
 }
 
 table th,
@@ -222,18 +205,11 @@ table td {
 	overflow:hidden;
 	padding:3px 6px;
 	vertical-align:middle;
-	border:1px solid #CCC;
-}
-
-table td table {
-	border:none;
-	margin:0;
-	padding:0;
 }
 
 /* WebKit fix! */
 table tr.section-start {
-	border-top:3px solid #D5D5D5;
+	border-top: 3px solid #D5D5D5;
 }
 
 table ul,
