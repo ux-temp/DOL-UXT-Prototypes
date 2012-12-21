@@ -1,90 +1,240 @@
 /*
+* PopOver Navigation Edits
+*/
+
+#ux-side-nav-container #ux-side-nav {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+#ux-side-nav-container #ux-side-nav ul {
+	margin-left: 0 !important;
+}
+
+#ux-side-nav-container #ux-side-nav > ul > li:last-child a {
+	border-bottom: 0;
+}
+
+#ux-side-nav-container #ux-side-nav ul ul li a {
+	margin-right: 1px;
+}
+
+#ux-side-nav-container #ux-side-nav ul ul ul li a {
+	margin-right: 2px;
+	margin-left: -2px;
+}
+
+/*
  * Side Navigation
  */
 
 #ux-side-nav {
-    margin: 20px 0 0 0;
+	width: 100%;
+}
+
+#ux-side-nav ul li a{
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 #ux-side-nav ul {
-    list-style: none;
-    padding-left: 13px
+	display: block;
+	list-style: none;
+	font-size: 16px;
+	margin-bottom: -6px;
 }
 
 #ux-side-nav li {
-    margin: 5px 0;
-    line-height: 1.2;
-    font-size: 14px
+	font-size: 12px;
 }
 
 #ux-side-nav li li {
-    font-size: 12px
+	font-size: 11px;
 }
 
 #ux-side-nav li li li {
-    font-size: 10px
+	font-size: 10px;
 }
 
-#ux-side-nav a {
-    color: #4C4C4C;
-    display: inline-block;
-    text-decoration: none;
-    padding: 5px;
+#ux-side-nav  li a {
+	display: block;
+	margin: 5px 1px -6px; 
+	padding: 8px 14px;
+	border-bottom: 1px solid #E5E5E5;
+}
+#ux-side-nav ul li a {
+	font-weight: bold;
 }
 
-.ie7 #ux-side-nav a {
-    display: inline;
-	position: relative;
+#ux-side-nav ul ul,
+#ux-side-nav ul ul ul {
+	padding-left: 20px;
+	width: 100%;
 }
 
-#ux-side-nav a:hover {
-	background-color: #E5E5E5;
-	border-radius: 5px;
-	padding: 5 5 5 20px;
-    text-decoration: none;
+#ux-side-nav ul ul {
+	padding: 0 !important;
 }
 
-#ux-side-nav ul ul ul a {
-    font-size: 11px;
+#ux-side-nav ul ul li a{
+	color: #787878;
+	font-weight: bolder;
+	padding-left: 28px;
+	margin-left: -1px;
 }
 
-#ux-side-nav .expandable-list {
-    margin-left: 0;
-}
-
-#ux-side-nav .ux-expandable {
-    background: url(full-list-arrow.png) no-repeat 3px center transparent;
-    padding-left: 20px;
-    margin-left: -14px;
-}
-
-#ux-side-nav .ux-expandable.expanded {
-    background: url(full-list-arrow-down.png) no-repeat 3px center transparent;
-}
-
-#ux-side-nav .expanded:hover {
-    background-color: #E5E5E5;
+#ux-side-nav ul ul ul li a {
+	color: #A5A5A5;
+	font-weight: normal;
+	margin-left: -2px;
+	padding-left: 38px;
 }
 
 #ux-side-nav a.ux-expandable + ul {
-    display: none;
+	display: none;
+	border: 1px solid transparent; /* DO NOT REMOVE, THIS FIXES THE JQUERY SLIDE DOWN JUMPYNESS! */
+}
+
+#ux-side-nav a {
+	color: #4C4C4C;
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
 }
 
 #ux-side-nav a.selected {
-    color: #FFF;
-	background-color: #08C;
-	padding: 5px;
-    text-decoration: none;
-	font-weight: normal;
-    border-left: none;
-	border-radius: 5px;
-	margin-left: 0;
-}
-
-#ux-side-nav a.ux-expandable.expanded + ul {
-    display: block;
+	color: #4C4C4C;
+	background-color: #DDD;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .15);
 }
 
 
+#ux-side-nav .ux-expandable {
+	background: url(list-arrow2.png) no-repeat 94% center transparent;
+}
+
+#ux-side-nav .ux-expandable.expanded {
+	background: url(list-arrow-down2.png) no-repeat 94% center transparent;
+} 
+
+#ux-side-nav a:hover {
+	background-color: #EEE !important;
+}
+
+#ux-side-nav a.selected:hover {
+	background-color: #DDD !important;
+}
+
+/* ***********************************
+----------  Table Styles  ------------
+************************************ */
+table, 
+caption, 
+th, 
+td {
+	border: 1px solid #D5D5D5;
+}
+
+caption {
+	background-color:#CCC;
+	color:#656565;
+	font-size:14px;
+	font-weight: thick;
+	line-height:1.1;
+	padding:5px;
+	text-align:center;
+	border-bottom:0;
+	text-shadow: none !important;
+}
+
+tr,
+tr.table-row-odd,
+.dataTables_wrapper tr.odd {
+	background-color:#FFF;
+}
 
 
+/* CSS3 Rule for zebra stripping */
+tr:nth-child(even) {
+   background-color: #EFF5F9;
+}
+
+/* Old polyfill */
+tr.table-row-even,
+.dataTables_wrapper tr.even {
+	background-color:#EFF5F9;
+}
+
+tr.table-row-odd:hover,
+tr.table-row-odd:hover th,
+tr.table-row-even:hover,
+tr.table-row-even:hover th,
+.dataTables_wrapper tr.odd:hover,
+.dataTables_wrapper tr.odd:hover th,
+.dataTables_wrapper tr.even:hover,
+.dataTables_wrapper tr.even:hover th {
+	background-color:#ffffe5 !important;
+}
+
+tr:hover {
+	background-color: #ffffe5;
+} 
+
+table th,
+.column-label,
+.column-input {
+	color:#656565;
+	padding:4px 7px!important;
+	vertical-align:top!important;
+}
+
+table th,
+.column-label {
+	background-color:#F0F0F0;
+	font-weight:700;
+	text-align:left;
+}
+
+table th {
+	padding:4px;
+}
+
+table td {
+	overflow:hidden;
+	padding:3px 6px;
+	vertical-align:middle;
+}
+
+/* WebKit fix! */
+table tr.section-start {
+	border-top: 3px solid #D5D5D5;
+}
+
+table ul,
+table li {
+	margin:0;
+}
+
+thead th,
+thead .column-label {
+	text-align:left;
+	width:auto;
+}
+
+td.numeric {
+	text-align:right;
+}
+
+caption .button_header {
+	float:right;
+	margin-left:-1000px;
+	position:relative;
+	right:-4px;
+}
+
+tfoot,
+.ie7 tfoot tr:first-child td {
+	border-top: solid 1px #DDD !important;
+}
