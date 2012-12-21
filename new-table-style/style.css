@@ -35,6 +35,8 @@
 #ux-side-nav ul li a{
 	margin-left: 0px;
 	margin-right: 0px;
+	padding-top: 8px;
+	padding-bottom: 7px;	
 }
 
 #ux-side-nav ul {
@@ -81,6 +83,8 @@
 	font-weight: bolder;
 	padding-left: 28px;
 	margin-left: -1px;
+	padding-top: 6px;
+	padding-bottom: 5px;
 }
 
 #ux-side-nav ul ul ul li a {
@@ -88,6 +92,8 @@
 	font-weight: normal;
 	margin-left: -2px;
 	padding-left: 38px;
+	padding-top: 4px;
+	padding-bottom: 3px;
 }
 
 #ux-side-nav a.ux-expandable + ul {
@@ -138,7 +144,7 @@ td {
 }
 
 caption {
-	background-color:#CCC;
+	background-color:#F0F0F0;
 	color:#656565;
 	font-size:14px;
 	font-weight: thick;
