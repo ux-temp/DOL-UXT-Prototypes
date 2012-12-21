@@ -28,3 +28,17 @@
  * Side Navigation
  */
 
+#ux-side-nav ul li a {
+	padding-top: 8px;
+	padding-bottom: 7px;	
+}
+
+#ux-side-nav ul ul li a {	
+	padding-top: 6px;
+	padding-bottom: 5px;
+}
+
+#ux-side-nav ul ul ul li a {
+	padding-top: 4px;
+	padding-bottom: 3px;
+}
