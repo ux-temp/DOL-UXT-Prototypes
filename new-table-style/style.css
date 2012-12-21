@@ -161,7 +161,6 @@ tr.table-row-odd,
 	background-color:#FFF;
 }
 
-
 /* CSS3 Rule for zebra stripping */
 tr:nth-child(even) {
    background-color: #EFF5F9;
@@ -170,18 +169,21 @@ tr:nth-child(even) {
 /* Old polyfill */
 tr.table-row-even,
 .dataTables_wrapper tr.even {
-	background-color:#EFF5F9;
+	background-color: #EFF5F9;
+}
+
+tr.table-row-odd:hover th,
+tr.table-row-even:hover th {
+	background-color: #F0F0F0 !important;
 }
 
 tr.table-row-odd:hover,
-tr.table-row-odd:hover th,
 tr.table-row-even:hover,
-tr.table-row-even:hover th,
 .dataTables_wrapper tr.odd:hover,
 .dataTables_wrapper tr.odd:hover th,
 .dataTables_wrapper tr.even:hover,
 .dataTables_wrapper tr.even:hover th {
-	background-color:#ffffe5 !important;
+	background-color:#ffffe5;
 }
 
 tr:hover {
