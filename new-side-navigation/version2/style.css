@@ -1,0 +1,90 @@
+/*
+ * Side Navigation
+ */
+
+#ux-side-nav {
+    margin: 20px 0 0 0;
+}
+
+#ux-side-nav ul {
+    list-style: none;
+    padding-left: 13px
+}
+
+#ux-side-nav li {
+    margin: 5px 0;
+    line-height: 1.2;
+    font-size: 14px
+}
+
+#ux-side-nav li li {
+    font-size: 12px
+}
+
+#ux-side-nav li li li {
+    font-size: 10px
+}
+
+#ux-side-nav a {
+    color: #4C4C4C;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.ie7 #ux-side-nav a {
+    display: inline;
+	position: relative;
+}
+
+#ux-side-nav a:hover {
+	background-color: #E5E5E5;
+	border-radius: 5px;
+	padding: 5 5 5 20px;
+    text-decoration: none;
+}
+
+#ux-side-nav ul ul ul a {
+    font-size: 11px;
+}
+
+#ux-side-nav .expandable-list {
+    margin-left: 0;
+}
+
+#ux-side-nav .ux-expandable {
+    background: url(full-list-arrow.png) no-repeat 3px center transparent;
+    padding-left: 20px;
+    margin-left: -14px;
+}
+
+#ux-side-nav .ux-expandable.expanded {
+    background: url(full-list-arrow-down.png) no-repeat 3px center transparent;
+}
+
+#ux-side-nav .expanded:hover {
+    background-color: #E5E5E5;
+}
+
+#ux-side-nav a.ux-expandable + ul {
+    display: none;
+}
+
+#ux-side-nav a.selected {
+    color: #FFF;
+	background-color: #08C;
+	padding: 5px;
+    text-decoration: none;
+	font-weight: normal;
+    border-left: none;
+	border-radius: 5px;
+	margin-left: 0;
+}
+
+#ux-side-nav a.ux-expandable.expanded + ul {
+    display: block;
+}
+
+
+
+
