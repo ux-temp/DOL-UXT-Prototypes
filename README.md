@@ -1,0 +1,1 @@
+This is the User Experience Toolkit (UXT) Framework Prototyping section. This is used by the Department of Labor Web/UX staff to create sandbox prototypes of new functionality that does not belong in a repo on its own at the current time. Much of the work inside is later intergrated into the UXT-Framework.
